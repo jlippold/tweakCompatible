@@ -1,0 +1,3 @@
+@interface CyteWebView : UIWebView
+
+@end
