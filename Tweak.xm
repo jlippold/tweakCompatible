@@ -1,7 +1,7 @@
-#import "Cydia/CYPackageController.h"
-#import "Cydia/MIMEAddress.h"
-#import "Cydia/Package.h"
-#import "Cydia/Source.h"
+#import "CydiaHeaders/CYPackageController.h"
+#import "CydiaHeaders/MIMEAddress.h"
+#import "CydiaHeaders/Package.h"
+#import "CydiaHeaders/Source.h"
 #import <UIKit/UIAlertView+Private.h>
 
 %hook CYPackageController
