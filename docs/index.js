@@ -12,19 +12,16 @@ $(document).ready(function () {
                     iOSVersionIndex: 0,
                     allowedCategories: [],
                     iOSVersions: [],
-                    allowedDevices: [],
+                    devices: [],
                     packages: []
                 }
             };
-        },
-        beforeMount: function () {
         },
         mounted: function () {
             var c = this;
             this.fetch();
         },
         computed: {
-            
             filteredPackages: function () {
                 var data = this.data;
                 var iOSVersion = data.iOSVersions[data.iOSVersionIndex];
@@ -100,6 +97,13 @@ $(document).ready(function () {
             }
         },
         methods: {
+            getDeviceName: function(deviceId) {
+                var devices = this.data.devices;
+                var found = devices.find(function(device) {
+                    return device.deviceId == deviceId;
+                });
+                return found ? found.deviceName : "Unknown device";
+            },
             selectOSFilter: function (event, index) {
                 this.data.iOSVersionIndex = index;
             },
@@ -108,7 +112,7 @@ $(document).ready(function () {
                 $.getJSON("tweaks.json", function (data) {
                     c.data.allowedCategories = data.allowedCategories.slice();
                     c.data.iOSVersions = data.iOSVersions.slice();
-                    c.data.allowedDevices = data.allowedDevices.slice();
+                    c.data.devices = data.devices.slice();
                     c.data.packages = data.packages.slice();
                     if (done) { done(); }
                 });

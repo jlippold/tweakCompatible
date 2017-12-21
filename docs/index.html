@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Jailbreak community driven compatibilty checker">
+    <meta name="author" content="Jed Lippold">
 
     <title>Tweak Compatibilty Checker</title>
 
@@ -32,7 +32,7 @@
                 <div class="container-fluid">
                     <form class="navbar-form navbar-search" role="search">
                         <div class="input-group" style="min-width: 80%">
-                            <input type="text" class="form-control" v-model="data.searchTerm" placeholder="filter packages">
+                            <input type="text" class="form-control" v-model="data.searchTerm" placeholder="filter">
                     
                             <div class="input-group-btn">
                                 <button type="button" class="btn btn-search btn-success">
@@ -78,23 +78,21 @@
                                 {{ package.name }} 
                             </strong>
 
-                            
-
                             <p>
                                 <span class="label pull-right" v-bind:class="package.outcome.classObject">
                                     Status: {{ package.outcome.status }}
                                 </span>
                                  {{ package.depiction }}
                             </p>
-                            <p class="bg-success">{{ package.outcome.counts.good }} device(s) at {{ package.outcome.percentage }}% reported this package as working on iOS
+                            <p v-if="package.outcome.counts.good > 0"class="bg-success">{{ package.outcome.counts.good }} device(s) at {{ package.outcome.percentage }}% reported this package as working on iOS
                                 {{ package.iOSVersion }}.
                             </p>
-                            <p class="bg-danger">{{ package.outcome.counts.bad }} device(s) at {{ 100-package.outcome.percentage }}% reported this package as <strong>not working</strong> on iOS
+                            <p v-if="package.outcome.counts.bad > 0" class="bg-danger">{{ package.outcome.counts.bad }} device(s) at {{ 100-package.outcome.percentage }}% reported this package as <strong>not working</strong> on iOS
                                 {{ package.iOSVersion }}.
                             </p>
                             <div v-if="package.notes" class="well">
                                 <p v-for="(note, index) in package.notes">
-                                    <span class="label label-info">{{note.device}}</span> reported ths tweak as
+                                    <span class="label label-info">{{ getDeviceName(note.device) }}</span> reported ths tweak as
                                     <span v-if="note.status == 'Working'" class="label label-success">Working</span>
                                     <span v-else class="label label-danger">Not Working</span>
                                     on {{note.date}}
