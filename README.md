@@ -4,7 +4,7 @@ Previously when a new jailbreak was released, the community manages a large goog
 
 ## What does it do
 
-![Screenshot](docs/screenshot1.jpg?raw=true "Screenshot")
+![Screenshot](docs/screenshot1.jpg?raw=true&r=1 "Screenshot")
 
 In the spirit of open source and to give back, I spent some time writing this tweak for Cydia that adds a search button to the right of the package details page. When clicked, it displays community driven compatibility info into an alert box.
 
