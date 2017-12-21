@@ -22,87 +22,82 @@
 </head>
 
 <body>
+    <div id="app">
+        <tweaklist ref="tweaklist"></tweaklist>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                    aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Tweak Compatible</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse pull-right">
-                <form class="navbar-form navbar-search" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control">
-                        <div class="input-group-btn">
-                            <button type="button" class="btn btn-search btn-success">
-                                <span class="glyphicon glyphicon-search"></span>
-                                <span class="label-icon">iOS 10.2</span>
-                            </button>
-                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu pull-right" role="menu">
-                                <li>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-phone"></span>
-                                        <span class="label-icon">10.2</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="glyphicon glyphicon-phone"></span>
-                                        <span class="label-icon">10.2.1</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container-fluid">
-
-        
-        <div class="row">
-            <div class="col-md-12 main">
-                <h2 class="sub-header">Tweak List</h2>
-                <div class="row-fluid">
-                    <div class=" pull-left">
-                        <span class="label label-success">Working</span> 
-                        <span class="label label-success">1.9.12</span>
-                    </div>
-                    <h4>Activator</h4>
-                    <p>Centralized gestures, button and shortcut management for iOS</p>
-                </div>
-                <div class="row-fluid">
-                    <div class=" pull-left">
-                        <span class="label label-success">Working</span>
-                        <span class="label label-success">1.9.12</span>
-                    </div>
-                    <h4>Activator</h4>
-                    <p>Centralized gestures, button and shortcut management for iOS</p>
-                </div>
-            </div>
-        </div>
     </div>
+    <template id="tweaklist-template">
+        <div>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Tweak Compatible</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse pull-right">
+                        <form class="navbar-form navbar-search" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" v-model="data.searchTerm">
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    
-    <!-- Latest compiled and minified JavaScript -->
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-search btn-success">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        <span v-for="(iOSVersion, index) in data.iOSVersions" class="label-icon">
+                                            <span v-if="data.iOSVersionIndex == index">
+                                                 iOS {{iOSVersion}}
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right" role="menu">
+                                        <li v-for="(iOSVersion, index) in data.iOSVersions">
+                                            <a href="#" v-on:click="selectOSFilter($event, index)" >
+                                                <span class="glyphicon glyphicon-phone"></span>
+                                                <span class="label-icon">iOS {{iOSVersion}}</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 main">
+                        <h2 class="sub-header">
+                            Tweak List
+                            <span class="badge">{{filteredPackages.length}} package found</span>
+                        </h2>
+            
+                        <div v-for="(package, index) in filteredPackages" class="row-fluid">
+                            <div class=" pull-left">
+                                <span class="label label-success">Working</span>
+                                <span class="label label-success">1.9.12</span>
+                            </div>
+                            <h4>
+                                {{ package.name }}
+                            </h4>
+                            <p>
+                                {{ package.depiction }}
+                            </p>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/async/2.6.0/async.min.js"></script>
+
 
     <script src="index.js"></script>
 </body>
