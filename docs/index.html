@@ -36,7 +36,7 @@
                     <div id="navbar" class="navbar-collapse collapse pull-right">
                         <form class="navbar-form navbar-search" role="search">
                             <div class="input-group">
-                                <input type="text" class="form-control" v-model="data.searchTerm">
+                                <input type="text" class="form-control" v-model="data.searchTerm" placeholder="filter packages">
 
                                 <div class="input-group-btn">
                                     <button type="button" class="btn btn-search btn-success">
@@ -74,18 +74,34 @@
                         </h2>
             
                         <div v-for="(package, index) in filteredPackages" class="row-fluid">
-                            <div class=" pull-left">
-                                <span class="label label-success">Working</span>
-                                <span class="label label-success">1.9.12</span>
-                            </div>
-                            <h4>
-                                {{ package.name }}
-                            </h4>
+
+                            <strong>
+                                <span class="label pull-right" v-bind:class="package.outcome.classObject"> 
+                                     Latest Version:
+                                    {{package.latest}} 
+                                </span>
+                                {{ package.name }} 
+                            </strong>
+
+                            
+
                             <p>
-                                {{ package.depiction }}
+                                <span class="label pull-right" v-bind:class="package.outcome.classObject">
+                                    Status: {{ package.outcome.status }}
+                                </span>
+                                 {{ package.depiction }}
                             </p>
+                            <p class="bg-success">{{ package.outcome.counts.good }} device(s) at {{ package.outcome.percentage }}% reported this package as working on iOS
+                                {{ package.iOSVersion }}.
+                            </p>
+                            <p class="bg-danger">{{ package.outcome.counts.bad }} device(s) at {{ 100-package.outcome.percentage }}% reported this package as <strong>not working</strong> on iOS
+                                {{ package.iOSVersion }}.
+                            </p>
+                            <div v-if=" package.notes" class="well">
+
+                            </div>
                         </div>
-            
+                        <hr />
                     </div>
                 </div>
             </div>
