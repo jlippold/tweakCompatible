@@ -4,13 +4,15 @@ Previously when a new jailbreak was released, the community manages a large goog
 
 ## What does it do
 
-In the spirit of open source, I spent some time writing this tweak for Cydia that adds a search button to the right of the package details page. When clicked, it displays community driven compatibility info into an alert box.
+![Screenshot](docs/screenshot1.png?raw=true "Screenshot")
+
+In the spirit of open source and to give back, I spent some time writing this tweak for Cydia that adds a search button to the right of the package details page. When clicked, it displays community driven compatibility info into an alert box.
 
 With the iOS 11 jailbreak approaching, I rushed to finish this. I will be improving upon it and submitting to bigboss.
 
 ## Contributing
 
-I openly accept pull requests. To add compatible tweaks edit `/docs/tweaks.json` following my format.
+I openly accept pull requests. To add compatible tweaks edit [/docs/tweaks.json](/docs/tweaks.json), following my format.
 
 I am building a web frontend, https://jlippold.github.io/tweakCompatible/  which will simplify the pull request / submission process.
 
