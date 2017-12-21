@@ -24,10 +24,9 @@
 %new - (void)_compat_check:(UIBarButtonItem *)sender {
 
 	Package *package = MSHookIvar<Package *>(self, "package_");
-    NSString *iOSVersion = [[UIDevice currentDevice] systemVersion];
+    //NSString *iOSVersion = [[UIDevice currentDevice] systemVersion];
 
-	NSURL *url = [NSURL URLWithString:
-                         [NSString stringWithFormat:@"https://raw.githubusercontent.com/jlippold/tweakCompatible/%@/compatibilty.json", iOSVersion]];
+	NSURL *url = [NSURL URLWithString:@"https://jlippold.github.io/tweakCompatible/tweaks.json"];
 
 	
 	[NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:url]
@@ -36,50 +35,100 @@
                                                NSData *data,
                                                NSError *connectionError)
      {
-		 NSString *isCompat = @"Unknown";
+		 
          if (data.length > 0 && connectionError == nil) {
-             NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-             
-             if (json[@"packages"]) {
-                 for (id item in json[@"packages"]) {
-					NSString *itemId = [NSString stringWithFormat:@"%@", [item objectForKey:@"id"]];
-					//NSString *itemVersion = [NSString stringWithFormat:@"%@", [item objectForKey:@"version"]];
-					NSString *itemStatus = [NSString stringWithFormat:@"%@", [item objectForKey:@"status"]];
+			NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
 
-					if ([itemId isEqualToString:package.id]) {
-						isCompat = itemStatus;
+			id foundItem = nil;
+			if (json[@"packages"]) {
+				for (id item in json[@"packages"]) {
+					NSString *thisPackageId = [NSString stringWithFormat:@"%@", [item objectForKey:@"id"]];
+					if ([thisPackageId isEqualToString:package.id]) {
+						foundItem = item;
+						break;
 					}
-				 }
-             }
-
-			NSString *message = [NSString stringWithFormat:@"Sorry, no compatibility found for: %@", package.name];
-			if ([isCompat isEqualToString:@"Compatible"]) {
-				message = [NSString stringWithFormat:@"%@ is compatible with iOS %@! ", package.name, iOSVersion];
-			}
-			if ([isCompat isEqualToString:@"Incompatible"]) {
-				message = [NSString stringWithFormat:@"%@ is not compatible with iOS %@! ", package.name, iOSVersion];
+				}
 			}
 
-			UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Compatibilty Check"
-									message:message
-									preferredStyle:UIAlertControllerStyleAlert];
+			if (foundItem) {
 
-			UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Got it!" style:UIAlertActionStyleDefault
-											handler:^(UIAlertAction * action) {}];
-					
-			[alert addAction:defaultAction];
-			[self.navigationController presentViewController:alert animated:YES completion:nil];
+				NSString *message = @"";
+				NSString *testedVersion = [NSString stringWithFormat:@"%@", [foundItem objectForKey:@"latest"]];
+				if (![package.latest isEqualToString:testedVersion]) {
+					message = [message stringByAppendingString:
+						[NSString stringWithFormat:@"⚠️ Warning: The last reviewed version was %@" 
+									", version %@ in cydia has not yet been reviewed by the community. "
+									"Here are the older results for version %@ \n", testedVersion, package.latest, testedVersion]];
+				}
+
+				id status = foundItem[@"status"];
+				if (status[@"good"]) {
+					for (id item in status[@"good"]) {
+						message = [message stringByAppendingString:
+							[NSString stringWithFormat:@"✅ Works on %@ running %@ \n\n", item[@"device"], item[@"iOS"]]];
+					}
+				}
+				
+				if (status[@"bad"]) {
+					for (id item in status[@"bad"]) {
+						message = [message stringByAppendingString:
+							[NSString stringWithFormat:@"🚫 Not Working on %@ running %@ \n\n", item[@"device"], item[@"iOS"]]];
+					}
+				}
+				
+				if (status[@"partial"]) {
+					for (id item in status[@"partial"]) {
+						message = [message stringByAppendingString:
+							[NSString stringWithFormat:@"⚠️ Partially Working on %@ running %@ \n", item[@"device"], item[@"iOS"]]];
+						if (item[@"notes"]) {
+							message = [message stringByAppendingString:[NSString stringWithFormat:@"Notes: %@ \n", item[@"notes"]]];
+						}
+					}
+				}
+
+				UIAlertController *results = 
+					[UIAlertController alertControllerWithTitle:@"tweakCompatible Results"
+						message:message
+						preferredStyle:UIAlertControllerStyleAlert];
+
+				UIAlertAction *defaultAction = 
+					[UIAlertAction actionWithTitle:@"Ok" 
+						style:UIAlertActionStyleDefault
+						handler:^(UIAlertAction * action) {}];
+						
+				[results addAction:defaultAction];
+				[self.navigationController presentViewController:results 
+					animated:YES completion:nil];
+
+			} else {
+				UIAlertController *notFoundMessage = 
+					[UIAlertController alertControllerWithTitle:@"tweakCompatible 404"
+						message:@"This package has not yet been reviewed by the community"
+						preferredStyle:UIAlertControllerStyleAlert];
+
+				UIAlertAction *defaultAction = 
+					[UIAlertAction actionWithTitle:@"Ok" 
+						style:UIAlertActionStyleDefault
+						handler:^(UIAlertAction * action) {}];
+						
+				[notFoundMessage addAction:defaultAction];
+				[self.navigationController presentViewController:notFoundMessage 
+					animated:YES completion:nil];
+			}
          } else {
+				UIAlertController *downloadErrorMessage = 
+					[UIAlertController alertControllerWithTitle:@"tweakCompatible 500"
+						message:@"Error downloading compatible tweak list"
+						preferredStyle:UIAlertControllerStyleAlert];
 
-			UIAlertController *error = [UIAlertController alertControllerWithTitle:@"Error"
-									message:@"Your iOS version is not yet supported"
-									preferredStyle:UIAlertControllerStyleAlert];
-
-			UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault
-											handler:^(UIAlertAction * action) {}];
-					
-			[error addAction:defaultAction];
-			[self.navigationController presentViewController:error animated:YES completion:nil];
+				UIAlertAction *defaultAction = 
+					[UIAlertAction actionWithTitle:@"Ok" 
+						style:UIAlertActionStyleDefault
+						handler:^(UIAlertAction * action) {}];
+						
+				[downloadErrorMessage addAction:defaultAction];
+				[self.navigationController presentViewController:downloadErrorMessage 
+					animated:YES completion:nil];
 		 }
 	}];
 }
