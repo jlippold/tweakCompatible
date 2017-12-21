@@ -26,4 +26,4 @@ Licensed under [Apache License, version 2.0](https://www.apache.org/licenses/LIC
 
 ## Credits
 
-Thanks to [https://github.com/hbang](HASHBANG Productions) for open sourcing the now defunct tweak Pheromone. I learned and took a lot from them.
+Thanks to [HASHBANG](https://github.com/hbang) for open sourcing the now defunct tweak Pheromone. I learned and took a lot from them.
