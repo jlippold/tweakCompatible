@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tweak Compatible</title>
+    <title>Tweak Compatibilty Checker</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
@@ -30,38 +30,33 @@
         <div>
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">Tweak Compatible</a>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse pull-right">
-                        <form class="navbar-form navbar-search" role="search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" v-model="data.searchTerm" placeholder="filter packages">
-
-                                <div class="input-group-btn">
-                                    <button type="button" class="btn btn-search btn-success">
-                                        <span class="glyphicon glyphicon-search"></span>
-                                        <span v-for="(iOSVersion, index) in data.iOSVersions" class="label-icon">
-                                            <span v-if="data.iOSVersionIndex == index">
-                                                 iOS {{iOSVersion}}
-                                            </span>
+                    <form class="navbar-form navbar-search" role="search">
+                        <div class="input-group" style="min-width: 80%">
+                            <input type="text" class="form-control" v-model="data.searchTerm" placeholder="filter packages">
+                    
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-search btn-success">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                    <span v-for="(iOSVersion, index) in data.iOSVersions" class="label-icon">
+                                        <span v-if="data.iOSVersionIndex == index">
+                                            iOS {{iOSVersion}}
                                         </span>
-                                    </button>
-                                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu pull-right" role="menu">
-                                        <li v-for="(iOSVersion, index) in data.iOSVersions">
-                                            <a href="#" v-on:click="selectOSFilter($event, index)" >
-                                                <span class="glyphicon glyphicon-phone"></span>
-                                                <span class="label-icon">iOS {{iOSVersion}}</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                    </span>
+                                </button>
+                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li v-for="(iOSVersion, index) in data.iOSVersions">
+                                        <a href="#" v-on:click="selectOSFilter($event, index)">
+                                            <span class="glyphicon glyphicon-phone"></span>
+                                            <span class="label-icon">iOS {{iOSVersion}}</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </nav>
             
@@ -69,8 +64,8 @@
                 <div class="row">
                     <div class="col-md-12 main">
                         <h2 class="sub-header">
-                            Tweak List
-                            <span class="badge">{{filteredPackages.length}} package found</span>
+                            Tweak Compatibilty Checker
+                            <span class="badge">{{filteredPackages.length}} package(s) found</span>
                         </h2>
             
                         <div v-for="(package, index) in filteredPackages" class="row-fluid">
@@ -97,8 +92,15 @@
                             <p class="bg-danger">{{ package.outcome.counts.bad }} device(s) at {{ 100-package.outcome.percentage }}% reported this package as <strong>not working</strong> on iOS
                                 {{ package.iOSVersion }}.
                             </p>
-                            <div v-if=" package.notes" class="well">
-
+                            <div v-if="package.notes" class="well">
+                                <p v-for="(note, index) in package.notes">
+                                    <span class="label label-info">{{note.device}}</span> reported ths tweak as
+                                    <span v-if="note.status == 'Working'" class="label label-success">Working</span>
+                                    <span v-else class="label label-danger">Not Working</span>
+                                    on {{note.date}}
+                                    <span v-if="note.issues">- {{note.issues}}</span>
+                                     
+                                </p>
                             </div>
                         </div>
                         <hr />

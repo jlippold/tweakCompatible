@@ -41,6 +41,7 @@ $(document).ready(function () {
 
                 return filtered.map(function (package) {
                     package.iOSVersion = iOSVersion;
+                    package.notes = [];
                     package.outcome = {
                         status: "",
                         percentage: 100,
@@ -53,14 +54,22 @@ $(document).ready(function () {
                     if (package.status.hasOwnProperty("good")) {
                         package.status.good.forEach(function (report) {
                             if (report.iOS == iOSVersion && report.tweakVersion == package.latest) {
-                                package.outcome.counts.good += 1;
+                                package.outcome.counts.good += report.users.length;
+                                var notes = report.users.forEach(function(userReport) {
+                                    userReport.status = "Working";
+                                    package.notes.push(userReport);
+                                });
                             }
                         });
                     }
                     if (package.status.hasOwnProperty("bad")) {
                         package.status.bad.forEach(function (report) {
                             if (report.iOS == iOSVersion && report.tweakVersion == package.latest) {
-                                package.outcome.counts.bad += 1;
+                                package.outcome.counts.bad += report.users.length;
+                                var notes = report.users.forEach(function (userReport) {
+                                    userReport.status = "Not Working";
+                                    package.notes.push(userReport);
+                                });
                             }
                         });
                     }
