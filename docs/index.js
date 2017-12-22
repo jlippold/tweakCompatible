@@ -1,7 +1,10 @@
 var vm;
 var tweakList;
+var userDetails;
 
 $(document).ready(function () {
+
+    checkAction();
 
     var TweakList = Vue.extend({
         template: "#tweaklist-template",
@@ -110,23 +113,96 @@ $(document).ready(function () {
         }
     });
 
+    var Submission = Vue.extend({
+        template: "#submission-template",
+        data: function () {
+            var d = {
+                data: userDetails
+            };
+            if (userDetails.action == "working") {
+                d.data.chosenStatus = "working";
+            } else {
+                d.data.chosenStatus = "notworking";
+            }
+            d.data.notes = "";
+            return d;
+        },
+        methods: {
+            github: function() {
+                $('#github').submit();
+            }
+        },
+        computed: {
+            issueTitle: function() {
+                return this.data.userInfo.packageName + 
+                    " on iOS " + 
+                    this.data.userInfo.iOSVersion;
+            },
+            issueBody: function () {
+                return "```\n" + JSON.stringify(this.data, null, 2) + "\n```"
+            }
+        }
+    });
+
     vm = new Vue({
         el: "#app",
         data: {},
         components: {
-            tweaklist: TweakList
+            tweaklist: TweakList,
+            submission: Submission
         }
     });
 
     $(".input-group-btn .dropdown-menu li a").click(function () {
-
         var selText = $(this).html();
-
-        //working version - for single button //
-        //$('.btn:first-child').html(selText+'<span class="caret"></span>');  
-
-        //working version - for multiple buttons //
         $(this).parents('.input-group-btn').find('.btn-search').html(selText);
-
     });
+
+    if (userDetails) {
+        switch (userDetails.action) {
+            case "details":
+                alert("Loading details");
+                break;
+            case "working":
+                $('#submitReview').modal();
+                break;
+            case "notworking":
+                $('#submitReview').modal();
+                break;
+        }
+    }
+    
 });
+
+function checkAction() {
+
+    var hash = window.location.hash;
+    var packageId, action, userInfo, base64;
+    if (hash) {
+        hash = hash.substring(3);
+        var parts = hash.split("/");
+        if (parts.length == 3) {
+            packageId = parts[0];
+            action = parts[1];
+            userInfo;
+            try {
+                base64 = parts[2];
+                userInfo = JSON.parse(atob(base64));
+            } catch (err) {
+                userInfo = null;
+            }
+        }
+    }
+
+    if (packageId && action && userInfo && base64) {
+        
+        // window.location.hash = "#";
+
+        userDetails = {
+            packageId: packageId,
+            action: action,
+            userInfo: userInfo,
+            base64: base64
+        };
+    }
+}

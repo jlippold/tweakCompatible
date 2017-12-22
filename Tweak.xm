@@ -66,7 +66,6 @@
 
 		NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
 		
-		
 		id foundItem = nil; //package on website
 		id allVersions = nil; //all versions on website
 		id foundVersion = nil; //version on website
@@ -150,8 +149,8 @@
 		if (foundVersion) { //pull exact match status from website
 			packageStatus = foundVersion[@"outcome"][@"calculatedStatus"];
 			packageStatusExplaination = [NSString stringWithFormat:
-				@"This package version has been marked as %@ based on feedback from users in the community."
-				"The current positive rating is at %@ or %@ positive user reports.", 
+				@"This package version has been marked as %@ based on feedback from users in the community. "
+				"The current positive rating is %@%% with %@ working reports.", 
 					packageStatus,
 					foundVersion[@"outcome"][@"percentage"],
 					foundVersion[@"outcome"][@"good"]];
@@ -173,7 +172,7 @@
 
 						packageStatusExplaination = [NSString stringWithFormat:
 							@"A review of %@ version %@ was not found, but version %@ "
-							"has been marked as %@ based on feedback from users in the community."
+							"has been marked as %@ based on feedback from users in the community. "
 							"Install at your own risk, see website for further details", 
 								package.name,
 								thisTweakVersion,
