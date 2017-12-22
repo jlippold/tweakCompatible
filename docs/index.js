@@ -4,7 +4,6 @@ var userDetails;
 
 $(document).ready(function () {
 
-    window.onhashchange = checkAction;
     checkAction();
 
     var TweakList = Vue.extend({
@@ -130,9 +129,8 @@ $(document).ready(function () {
         },
         methods: {
             github: function() {
-                $('#submitReview').modal("hide");
+                window.location.href = "thanks.html"
                 $('#github').submit();
-                
             }
         },
         computed: {
@@ -199,7 +197,6 @@ function checkAction() {
     }
 
     if (packageId && action && userInfo && base64) {
-        window.location.hash = "#";
         userDetails = {
             packageId: packageId,
             action: action,
