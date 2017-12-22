@@ -134,7 +134,8 @@ $(document).ready(function () {
         },
         computed: {
             issueTitle: function() {
-                return this.data.userInfo.packageName + 
+                return "`" + this.data.userInfo.packageName + "`" + 
+                    " " + this.data.chosenStatus + 
                     " on iOS " + 
                     this.data.userInfo.iOSVersion;
             },
@@ -195,9 +196,7 @@ function checkAction() {
     }
 
     if (packageId && action && userInfo && base64) {
-        
-        // window.location.hash = "#";
-
+        window.location.hash = "#";
         userDetails = {
             packageId: packageId,
             action: action,
