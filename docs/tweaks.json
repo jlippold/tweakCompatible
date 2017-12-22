@@ -1,29 +1,273 @@
 {
+    "categories": [
+        "System",
+        "Tweaks",
+        "Addons",
+        "Networking",
+        "Utilities",
+        "Development"
+    ],
+    "iOSVersions": [
+        "10.2",
+        "9.3.3"
+    ],
+    "devices": [
+        {
+            "deviceId": "i386",
+            "deviceName": "Simulator"
+        },
+        {
+            "deviceId": "x86_64",
+            "deviceName": "Simulator"
+        },
+        {
+            "deviceId": "iPod1,1",
+            "deviceName": "iPod Touch"
+        },
+        {
+            "deviceId": "iPod2,1",
+            "deviceName": "iPod Touch"
+        },
+        {
+            "deviceId": "iPod3,1",
+            "deviceName": "iPod Touch"
+        },
+        {
+            "deviceId": "iPod4,1",
+            "deviceName": "iPod Touch"
+        },
+        {
+            "deviceId": "iPod7,1",
+            "deviceName": "iPod Touch"
+        },
+        {
+            "deviceId": "iPhone1,1",
+            "deviceName": "iPhone"
+        },
+        {
+            "deviceId": "iPhone1,2",
+            "deviceName": "iPhone"
+        },
+        {
+            "deviceId": "iPhone2,1",
+            "deviceName": "iPhone"
+        },
+        {
+            "deviceId": "iPad1,1",
+            "deviceName": "iPad"
+        },
+        {
+            "deviceId": "iPad2,1",
+            "deviceName": "iPad 2"
+        },
+        {
+            "deviceId": "iPad3,1",
+            "deviceName": "iPad"
+        },
+        {
+            "deviceId": "iPhone3,1",
+            "deviceName": "iPhone 4"
+        },
+        {
+            "deviceId": "iPhone3,3",
+            "deviceName": "iPhone 4"
+        },
+        {
+            "deviceId": "iPhone4,1",
+            "deviceName": "iPhone 4S"
+        },
+        {
+            "deviceId": "iPhone5,1",
+            "deviceName": "iPhone 5"
+        },
+        {
+            "deviceId": "iPhone5,2",
+            "deviceName": "iPhone 5"
+        },
+        {
+            "deviceId": "iPad3,4",
+            "deviceName": "iPad"
+        },
+        {
+            "deviceId": "iPad2,5",
+            "deviceName": "iPad Mini"
+        },
+        {
+            "deviceId": "iPhone5,3",
+            "deviceName": "iPhone 5c"
+        },
+        {
+            "deviceId": "iPhone5,4",
+            "deviceName": "iPhone 5c"
+        },
+        {
+            "deviceId": "iPhone6,1",
+            "deviceName": "iPhone 5s"
+        },
+        {
+            "deviceId": "iPhone6,2",
+            "deviceName": "iPhone 5s"
+        },
+        {
+            "deviceId": "iPhone7,1",
+            "deviceName": "iPhone 6 Plus"
+        },
+        {
+            "deviceId": "iPhone7,2",
+            "deviceName": "iPhone 6"
+        },
+        {
+            "deviceId": "iPhone8,1",
+            "deviceName": "iPhone 6S"
+        },
+        {
+            "deviceId": "iPhone8,2",
+            "deviceName": "iPhone 6S Plus"
+        },
+        {
+            "deviceId": "iPhone8,4",
+            "deviceName": "iPhone SE"
+        },
+        {
+            "deviceId": "iPhone9,1",
+            "deviceName": "iPhone 7"
+        },
+        {
+            "deviceId": "iPhone9,3",
+            "deviceName": "iPhone 7"
+        },
+        {
+            "deviceId": "iPhone9,2",
+            "deviceName": "iPhone 7 Plus"
+        },
+        {
+            "deviceId": "iPhone9,4",
+            "deviceName": "iPhone 7 Plus"
+        },
+        {
+            "deviceId": "iPhone10,1",
+            "deviceName": "iPhone 8"
+        },
+        {
+            "deviceId": "iPhone10,4",
+            "deviceName": "iPhone 8"
+        },
+        {
+            "deviceId": "iPhone10,2",
+            "deviceName": "iPhone 8 Plus"
+        },
+        {
+            "deviceId": "iPhone10,5",
+            "deviceName": "iPhone 8 Plus"
+        },
+        {
+            "deviceId": "iPhone10,3",
+            "deviceName": "iPhone X"
+        },
+        {
+            "deviceId": "iPhone10,6",
+            "deviceName": "iPhone X"
+        },
+        {
+            "deviceId": "iPad4,1",
+            "deviceName": "iPad Air"
+        },
+        {
+            "deviceId": "iPad4,2",
+            "deviceName": "iPad Air"
+        },
+        {
+            "deviceId": "iPad4,4",
+            "deviceName": "iPad Mini"
+        },
+        {
+            "deviceId": "iPad4,5",
+            "deviceName": "iPad Mini"
+        },
+        {
+            "deviceId": "iPad4,7",
+            "deviceName": "iPad Mini"
+        },
+        {
+            "deviceId": "iPad6,7",
+            "deviceName": "iPad Pro (12.9)"
+        },
+        {
+            "deviceId": "iPad6,8",
+            "deviceName": "iPad Pro (12.9)"
+        },
+        {
+            "deviceId": "iPad6,3",
+            "deviceName": "iPad Pro (9.7)"
+        },
+        {
+            "deviceId": "iPad6,4",
+            "deviceName": "iPad Pro (9.7)"
+        }
+    ],
     "packages": [
         {
             "id": "libactivator",
+            "name": "Activator",
             "latest": "1.9.13~beta1",
-            "status": {
-                "good": [
-                    {
-                        "device": "iPhone 6S",
-                        "iOS": "10.2"
-                    }
-                ],
-                "bad": [
-                    {
-                        "device": "iPad",
-                        "iOS": "10.2"
-                    }
-                ],
-                "partial": [
-                    {
-                        "device": "iPhone X",
-                        "iOS": "11.1",
-                        "notes": "I have no idea, it's not jailbroken fully!"
-                    }
-                ]
-            }
+            "repository": "BigBoss",
+            "url": "http://apt.thebigboss.org/onepackage.php?bundleid=libactivator",
+            "depiction": "Centralized gestures, button and shortcut management for iOS",
+            "category": "System",
+            "versions": [
+                {
+                    "tweakVersion": "1.9.13~beta1",
+                    "iOSVersion": "10.2",
+                    "outcome": {
+                        "calculatedStatus": "working",
+                        "percentage": 100,
+                        "good": 2,
+                        "bad": 0
+                    },
+                    "users": [
+                        {
+                            "status": "working",
+                            "device": "iPhone10,6",
+                            "issues": "face unlock isn't working yet",
+                            "date": "2017-02-04"
+                        },
+                        {
+                            "status": "working",
+                            "device": "iPhone9,3",
+                            "date": "2017-02-04"
+                        }
+                    ]
+                },
+                {
+                    "tweakVersion": "1.9.13~beta1",
+                    "iOSVersion": "9.3.3",
+                    "outcome": {
+                        "calculatedStatus": "likely working",
+                        "percentage": 100,
+                        "good": 2,
+                        "bad": 1
+                    },
+                    "users": [
+                        {
+                            "status": "working",
+                            "device": "iPhone10,6",
+                            "issues": "face unlock isn't working yet",
+                            "date": "2017-02-04"
+                        },
+                        {
+                            "status": "working",
+                            "device": "iPhone9,3",
+                            "date": "2017-02-04"
+                        },
+                        {
+                            "status": "not working",
+                            "device": "iPad4,7",
+                            "issues": "caused bootloop",
+                            "date": "2017-02-02"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

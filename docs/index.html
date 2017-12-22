@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Jailbreak community driven compatibilty checker">
+    <meta name="author" content="Jed Lippold">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>Tweak Compatibilty Checker</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
@@ -23,259 +23,193 @@
 
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                    aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Project name</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="#">Settings</a>
-                    </li>
-                    <li>
-                        <a href="#">Profile</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-                <form class="navbar-form navbar-right">
-                    <input type="text" class="form-control" placeholder="Search...">
-                </form>
-            </div>
+    <div id="app">
+        <tweaklist></tweaklist>
+
+        <div id="submitReview" class="modal" tabindex="-1" role="dialog">
+            <submission></submission>
         </div>
-    </nav>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-3 col-md-2 sidebar">
-                <ul class="nav nav-sidebar">
-                    <li class="active">
-                        <a href="#">Overview
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">Reports</a>
-                    </li>
-                    <li>
-                        <a href="#">Analytics</a>
-                    </li>
-                    <li>
-                        <a href="#">Export</a>
-                    </li>
-                </ul>
-                <ul class="nav nav-sidebar">
-                    <li>
-                        <a href="">Nav item</a>
-                    </li>
-                    <li>
-                        <a href="">Nav item again</a>
-                    </li>
-                    <li>
-                        <a href="">One more nav</a>
-                    </li>
-                    <li>
-                        <a href="">Another nav item</a>
-                    </li>
-                    <li>
-                        <a href="">More navigation</a>
-                    </li>
-                </ul>
-                <ul class="nav nav-sidebar">
-                    <li>
-                        <a href="">Nav item again</a>
-                    </li>
-                    <li>
-                        <a href="">One more nav</a>
-                    </li>
-                    <li>
-                        <a href="">Another nav item</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <h1 class="page-header">Dashboard</h1>
-
-                <div class="row placeholders">
-                    <div class="col-xs-6 col-sm-3 placeholder">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive"
-                            alt="Generic placeholder thumbnail">
-                        <h4>Label</h4>
-                        <span class="text-muted">Something else</span>
-                    </div>
-                    <div class="col-xs-6 col-sm-3 placeholder">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive"
-                            alt="Generic placeholder thumbnail">
-                        <h4>Label</h4>
-                        <span class="text-muted">Something else</span>
-                    </div>
-                    <div class="col-xs-6 col-sm-3 placeholder">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive"
-                            alt="Generic placeholder thumbnail">
-                        <h4>Label</h4>
-                        <span class="text-muted">Something else</span>
-                    </div>
-                    <div class="col-xs-6 col-sm-3 placeholder">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive"
-                            alt="Generic placeholder thumbnail">
-                        <h4>Label</h4>
-                        <span class="text-muted">Something else</span>
-                    </div>
-                </div>
-
-                <h2 class="sub-header">Section title</h2>
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Header</th>
-                                <th>Header</th>
-                                <th>Header</th>
-                                <th>Header</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1,001</td>
-                                <td>Lorem</td>
-                                <td>ipsum</td>
-                                <td>dolor</td>
-                                <td>sit</td>
-                            </tr>
-                            <tr>
-                                <td>1,002</td>
-                                <td>amet</td>
-                                <td>consectetur</td>
-                                <td>adipiscing</td>
-                                <td>elit</td>
-                            </tr>
-                            <tr>
-                                <td>1,003</td>
-                                <td>Integer</td>
-                                <td>nec</td>
-                                <td>odio</td>
-                                <td>Praesent</td>
-                            </tr>
-                            <tr>
-                                <td>1,003</td>
-                                <td>libero</td>
-                                <td>Sed</td>
-                                <td>cursus</td>
-                                <td>ante</td>
-                            </tr>
-                            <tr>
-                                <td>1,004</td>
-                                <td>dapibus</td>
-                                <td>diam</td>
-                                <td>Sed</td>
-                                <td>nisi</td>
-                            </tr>
-                            <tr>
-                                <td>1,005</td>
-                                <td>Nulla</td>
-                                <td>quis</td>
-                                <td>sem</td>
-                                <td>at</td>
-                            </tr>
-                            <tr>
-                                <td>1,006</td>
-                                <td>nibh</td>
-                                <td>elementum</td>
-                                <td>imperdiet</td>
-                                <td>Duis</td>
-                            </tr>
-                            <tr>
-                                <td>1,007</td>
-                                <td>sagittis</td>
-                                <td>ipsum</td>
-                                <td>Praesent</td>
-                                <td>mauris</td>
-                            </tr>
-                            <tr>
-                                <td>1,008</td>
-                                <td>Fusce</td>
-                                <td>nec</td>
-                                <td>tellus</td>
-                                <td>sed</td>
-                            </tr>
-                            <tr>
-                                <td>1,009</td>
-                                <td>augue</td>
-                                <td>semper</td>
-                                <td>porta</td>
-                                <td>Mauris</td>
-                            </tr>
-                            <tr>
-                                <td>1,010</td>
-                                <td>massa</td>
-                                <td>Vestibulum</td>
-                                <td>lacinia</td>
-                                <td>arcu</td>
-                            </tr>
-                            <tr>
-                                <td>1,011</td>
-                                <td>eget</td>
-                                <td>nulla</td>
-                                <td>Class</td>
-                                <td>aptent</td>
-                            </tr>
-                            <tr>
-                                <td>1,012</td>
-                                <td>taciti</td>
-                                <td>sociosqu</td>
-                                <td>ad</td>
-                                <td>litora</td>
-                            </tr>
-                            <tr>
-                                <td>1,013</td>
-                                <td>torquent</td>
-                                <td>per</td>
-                                <td>conubia</td>
-                                <td>nostra</td>
-                            </tr>
-                            <tr>
-                                <td>1,014</td>
-                                <td>per</td>
-                                <td>inceptos</td>
-                                <td>himenaeos</td>
-                                <td>Curabitur</td>
-                            </tr>
-                            <tr>
-                                <td>1,015</td>
-                                <td>sodales</td>
-                                <td>ligula</td>
-                                <td>in</td>
-                                <td>libero</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+        
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    
-    <!-- Latest compiled and minified JavaScript -->
+    <template id="tweaklist-template">
+        <div>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <form class="navbar-form navbar-search" role="search">
+                        <div class="input-group" style="min-width: 80%">
+                            <input type="text" class="form-control" v-model="data.searchTerm" placeholder="filter">
+                    
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-search btn-success">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                    <span v-for="(iOSVersion, index) in data.iOSVersions" class="label-icon">
+                                        <span v-if="data.iOSVersionIndex == index">
+                                            iOS {{iOSVersion}}
+                                        </span>
+                                    </span>
+                                </button>
+                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li v-for="(iOSVersion, index) in data.iOSVersions">
+                                        <a href="#" v-on:click="selectOSFilter($event, index)">
+                                            <span class="glyphicon glyphicon-phone"></span>
+                                            <span class="label-icon">iOS {{iOSVersion}}</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 main">
+                        <h2 class="sub-header">
+                            Tweak Compatibilty Checker
+                            <span class="badge">{{filteredPackages.length}} package(s) found</span>
+                        </h2>
+            
+                        <div v-for="(package, index) in filteredPackages" class="row-fluid">
+                            <div v-for="version in package.versions">
+                                <div v-if="version.current">
+
+                                    <strong>
+                                        <span class="label pull-right" v-bind:class="version.classObject">
+                                            Latest Version: {{package.latest}}
+                                        </span>
+                                        {{ package.name }}
+                                    </strong>
+                                
+                                    <p>
+                                        <span class="label pull-right" v-bind:class="version.classObject">
+                                            Status: {{ version.outcome.calculatedStatus }}
+                                        </span>
+                                        {{ package.depiction }}
+                                    </p>
+                                    <p v-if="version.outcome.good > 0" class="bg-success">
+                                        {{ version.outcome.good }} device(s) at 
+                                        {{ version.outcome.percentage }}% reported this package as working on
+                                        iOS {{ package.iOSVersion }}.
+                                    </p>
+                                    <p v-if="version.outcome.bad > 0" class="bg-danger">
+                                        {{ version.outcome.bad }} device(s) at 
+                                        {{ 100-version.outcome.percentage }}% reported this package as
+                                        <strong>not working</strong> on 
+                                        iOS {{ package.iOSVersion }}.
+                                    </p>
+                                    <div v-if="package.notes" class="well">
+                                        <p v-for="(note, index) in package.notes">
+                                            <span class="label label-info">{{ getDeviceName(note.device) }}</span> user reported ths tweak as
+                                            <span v-if="note.status == 'Working'" class="label label-success">Working</span>
+                                            <span v-else class="label label-danger">Not Working</span>
+                                            on {{note.date}}
+                                            <span v-if="note.issues">- {{note.issues}}</span>
+                                
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="submission-template">
+        <div class="modal-dialog" role="document" v-if="data">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Submit `{{data.userInfo.packageName}}` Review</h4>
+                </div>
+                <div class="modal-body">
+        
+                    <h5>Activator</h5>
+        
+                    <form>
+                        <div class="form-group">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="working" :disabled="data.action != 'working'" v-model="data.chosenStatus" :checked="data.action == 'working'">
+                                    Tweak is working on iOS {{data.userInfo.iOSVersion}}
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="partial" :disabled="data.action != 'working'" v-model="data.chosenStatus">
+                                    Tweak is partially working on iOS {{data.userInfo.iOSVersion}}
+                                </label>
+                            </div>
+                            <div class="radio disabled">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="not working" :disabled="data.action == 'working'" :checked="data.action != 'working'" v-model="data.chosenStatus">
+                                    Tweak is not working on iOS {{data.userInfo.iOSVersion}}
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="review">Notes</label>
+                            <input type="text" class="form-control" id="review" v-model="data.notes" placeholder="Optional review notes">
+                        </div>
+                    </form>
+                            
+                    <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                        <p>
+                            Once you click next, you will be redirect to github issues to finalize this submission. 
+                            You <strong>need a github account</strong> to submit reviews! Just click submit on the created
+                            github issue and your review will be posted.
+                        </p>
+                    </div>
+
+                    <div id="userDetails" class="collapse">
+                        <dl class="dl-horizontal">
+                            <div v-for="item in Object.keys(data.userInfo)">
+                                <dt>
+                                    {{item}}
+                                </dt>
+                                <dd>
+                                    {{ data.userInfo[item] }}
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button role="button" class="btn btn-primary" v-on:click="github()">Next</button>
+                    <a class="btn btn-default pull-left" role="button" data-toggle="collapse" href="#userDetails" aria-expanded="false" aria-controls="collapseExample">
+                        User Details
+                    </a>
+                </div>
+
+                <form id="github" method="GET" target="_blank" action="https://github.com/jlippold/tweakCompatible/issues/new">
+                    <input type="hidden" :value="issueTitle" name="title" />
+                    <input type="hidden" :value="issueBody" name="body" />
+                    <input type="hidden" :value="'user-submission,' + data.chosenStatus" name="labels" />
+                </form>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+    </template>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/async/2.6.0/async.min.js"></script>
+
 
     <script src="index.js"></script>
 </body>

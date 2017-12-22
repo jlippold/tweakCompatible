@@ -32,69 +32,13 @@
 	//calc device type: https://stackoverflow.com/a/20062141
     struct utsname systemInfo;
     uname(&systemInfo);
-    NSString* code = [NSString stringWithCString:systemInfo.machine
+    NSString *deviceId = [NSString stringWithCString:systemInfo.machine
                                         encoding:NSUTF8StringEncoding];
-
-	NSDictionary *deviceNamesByCode = @{@"i386"      : @"Simulator",
-                              @"x86_64"    : @"Simulator",
-                              @"iPod1,1"   : @"iPod Touch",        // (Original)
-                              @"iPod2,1"   : @"iPod Touch",        // (Second Generation)
-                              @"iPod3,1"   : @"iPod Touch",        // (Third Generation)
-                              @"iPod4,1"   : @"iPod Touch",        // (Fourth Generation)
-                              @"iPod7,1"   : @"iPod Touch",        // (6th Generation)       
-                              @"iPhone1,1" : @"iPhone",            // (Original)
-                              @"iPhone1,2" : @"iPhone",            // (3G)
-                              @"iPhone2,1" : @"iPhone",            // (3GS)
-                              @"iPad1,1"   : @"iPad",              // (Original)
-                              @"iPad2,1"   : @"iPad 2",            //
-                              @"iPad3,1"   : @"iPad",              // (3rd Generation)
-                              @"iPhone3,1" : @"iPhone 4",          // (GSM)
-                              @"iPhone3,3" : @"iPhone 4",          // (CDMA/Verizon/Sprint)
-                              @"iPhone4,1" : @"iPhone 4S",         //
-                              @"iPhone5,1" : @"iPhone 5",          // (model A1428, AT&T/Canada)
-                              @"iPhone5,2" : @"iPhone 5",          // (model A1429, everything else)
-                              @"iPad3,4"   : @"iPad",              // (4th Generation)
-                              @"iPad2,5"   : @"iPad Mini",         // (Original)
-                              @"iPhone5,3" : @"iPhone 5c",         // (model A1456, A1532 | GSM)
-                              @"iPhone5,4" : @"iPhone 5c",         // (model A1507, A1516, A1526 (China), A1529 | Global)
-                              @"iPhone6,1" : @"iPhone 5s",         // (model A1433, A1533 | GSM)
-                              @"iPhone6,2" : @"iPhone 5s",         // (model A1457, A1518, A1528 (China), A1530 | Global)
-                              @"iPhone7,1" : @"iPhone 6 Plus",     //
-                              @"iPhone7,2" : @"iPhone 6",          //
-                              @"iPhone8,1" : @"iPhone 6S",         //
-                              @"iPhone8,2" : @"iPhone 6S Plus",    //
-                              @"iPhone8,4" : @"iPhone SE",         //
-                              @"iPhone9,1" : @"iPhone 7",          //
-                              @"iPhone9,3" : @"iPhone 7",          //
-                              @"iPhone9,2" : @"iPhone 7 Plus",     //
-                              @"iPhone9,4" : @"iPhone 7 Plus",     //
-                              @"iPhone10,1": @"iPhone 8",          // CDMA
-                              @"iPhone10,4": @"iPhone 8",          // GSM
-                              @"iPhone10,2": @"iPhone 8 Plus",     // CDMA
-                              @"iPhone10,5": @"iPhone 8 Plus",     // GSM
-                              @"iPhone10,3": @"iPhone X",          // CDMA
-                              @"iPhone10,6": @"iPhone X",          // GSM
-                              @"iPad4,1"   : @"iPad Air",          // 5th Generation iPad (iPad Air) - Wifi
-                              @"iPad4,2"   : @"iPad Air",          // 5th Generation iPad (iPad Air) - Cellular
-                              @"iPad4,4"   : @"iPad Mini",         // (2nd Generation iPad Mini - Wifi)
-                              @"iPad4,5"   : @"iPad Mini",         // (2nd Generation iPad Mini - Cellular)
-                              @"iPad4,7"   : @"iPad Mini",         // (3rd Generation iPad Mini - Wifi (model A1599))
-                              @"iPad6,7"   : @"iPad Pro (12.9\")", // iPad Pro 12.9 inches - (model A1584) 
-                              @"iPad6,8"   : @"iPad Pro (12.9\")", // iPad Pro 12.9 inches - (model A1652) 
-                              @"iPad6,3"   : @"iPad Pro (9.7\")",  // iPad Pro 9.7 inches - (model A1673)
-                              @"iPad6,4"   : @"iPad Pro (9.7\")"   // iPad Pro 9.7 inches - (models A1674 and A1675)
-                              };
-    
-
-    NSString* deviceName = [deviceNamesByCode objectForKey:code];
 	NSString *iOSVersion = [[UIDevice currentDevice] systemVersion];
 	
-    if (!deviceName) {
-    	deviceName = @"Unknown";
-    }
-
 	//download tweak list
-	NSURL *url = [NSURL URLWithString:@"https://jlippold.github.io/tweakCompatible/tweaks.json"];
+	//NSURL *url = [NSURL URLWithString:@"https://jlippold.github.io/tweakCompatible/tweaks.json"];
+	NSURL *url = [NSURL URLWithString:@"https://raw.githubusercontent.com/jlippold/tweakCompatible/dev/docs/tweaks.json"];
 	[NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:url]
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse *response,
@@ -102,86 +46,8 @@
                                                NSError *connectionError)
      {
 		 
-         if (data.length > 0 && connectionError == nil) {
-			NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-
-			id foundItem = nil;
-			if (json[@"packages"]) {
-				for (id item in json[@"packages"]) {
-					NSString *thisPackageId = [NSString stringWithFormat:@"%@", [item objectForKey:@"id"]];
-					if ([thisPackageId isEqualToString:package.id]) {
-						foundItem = item;
-						break;
-					}
-				}
-			}
-
-			if (foundItem) {
-
-				NSString *message = [NSString stringWithFormat:@"You are running %@ %@ \n\n", deviceName, iOSVersion];
-				NSString *testedVersion = [NSString stringWithFormat:@"%@", [foundItem objectForKey:@"latest"]];
-				if (![package.latest isEqualToString:testedVersion]) {
-					message = [message stringByAppendingString:
-						[NSString stringWithFormat:@"⚠️ Warning: The last reviewed version was %@" 
-									", version %@ in cydia has not yet been reviewed by the community. "
-									"Here are the older results for version %@ \n", testedVersion, package.latest, testedVersion]];
-				}
-
-				id status = foundItem[@"status"];
-				if (status[@"good"]) {
-					for (id item in status[@"good"]) {
-						message = [message stringByAppendingString:
-							[NSString stringWithFormat:@"✅ Works on %@ running %@ \n\n", item[@"device"], item[@"iOS"]]];
-					}
-				}
-				
-				if (status[@"bad"]) {
-					for (id item in status[@"bad"]) {
-						message = [message stringByAppendingString:
-							[NSString stringWithFormat:@"🚫 Not Working on %@ running %@ \n\n", item[@"device"], item[@"iOS"]]];
-					}
-				}
-				
-				if (status[@"partial"]) {
-					for (id item in status[@"partial"]) {
-						message = [message stringByAppendingString:
-							[NSString stringWithFormat:@"⚠️ Partially Working on %@ running %@ \n", item[@"device"], item[@"iOS"]]];
-						if (item[@"notes"]) {
-							message = [message stringByAppendingString:[NSString stringWithFormat:@"Notes: %@ \n", item[@"notes"]]];
-						}
-					}
-				}
-
-				UIAlertController *results = 
-					[UIAlertController alertControllerWithTitle:@"tweakCompatible Results"
-						message:message
-						preferredStyle:UIAlertControllerStyleAlert];
-
-				UIAlertAction *defaultAction = 
-					[UIAlertAction actionWithTitle:@"Ok" 
-						style:UIAlertActionStyleDefault
-						handler:^(UIAlertAction * action) {}];
-						
-				[results addAction:defaultAction];
-				[self.navigationController presentViewController:results 
-					animated:YES completion:nil];
-
-			} else {
-				UIAlertController *notFoundMessage = 
-					[UIAlertController alertControllerWithTitle:@"tweakCompatible 404"
-						message:@"This package has not yet been reviewed by the community"
-						preferredStyle:UIAlertControllerStyleAlert];
-
-				UIAlertAction *defaultAction = 
-					[UIAlertAction actionWithTitle:@"Ok" 
-						style:UIAlertActionStyleDefault
-						handler:^(UIAlertAction * action) {}];
-						
-				[notFoundMessage addAction:defaultAction];
-				[self.navigationController presentViewController:notFoundMessage 
-					animated:YES completion:nil];
-			}
-         } else {
+		 //download error
+         if (data.length == 0 || connectionError) {
 				UIAlertController *downloadErrorMessage = 
 					[UIAlertController alertControllerWithTitle:@"tweakCompatible 500"
 						message:@"Error downloading compatible tweak list"
@@ -195,7 +61,249 @@
 				[downloadErrorMessage addAction:defaultAction];
 				[self.navigationController presentViewController:downloadErrorMessage 
 					animated:YES completion:nil];
+				return;
 		 }
+
+		NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+		
+		id foundItem = nil; //package on website
+		id allVersions = nil; //all versions on website
+		id foundVersion = nil; //version on website
+		
+		BOOL packageExists = NO; 
+		BOOL versionExists = NO;
+
+		//find matching product and version on the website
+		if (json[@"packages"]) {
+			for (id item in json[@"packages"]) {
+				NSString *thisPackageId = [NSString stringWithFormat:@"%@", [item objectForKey:@"id"]];
+				if ([thisPackageId isEqualToString:package.id]) {
+					foundItem = item;
+					packageExists = YES;
+					
+					id allVersions = foundItem[@"versions"];
+					for (id version in allVersions) {
+						NSString *thisTweakVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"tweakVersion"]];
+						NSString *thisiOSVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"iOSVersion"]];
+						if ([thisTweakVersion isEqualToString:package.latest] && 
+							[thisiOSVersion isEqualToString:iOSVersion]) {
+							foundVersion = version;
+							versionExists = YES;
+							break;
+						}
+					}
+					break;
+				}
+			}
+		}
+		
+		//is it installed in cydia
+		BOOL installed = NO;
+		if (package.installed) {
+			installed = YES;
+		}
+		
+		//pull the package homepage url
+		NSArray *BuiltInRepositories = @[
+			@"http://apt.saurik.com/",
+			@"http://apt.thebigboss.org/repofiles/cydia/",
+			@"http://apt.modmyi.com/",
+			@"http://cydia.zodttd.com/repo/cydia/"
+		];
+
+		NSURL *url;
+		if ([BuiltInRepositories containsObject:package.source.rooturi]) {
+			url = [NSURL URLWithString:[NSString stringWithFormat:@"http://cydia.saurik.com/package/%@/", package.id]];
+		} else if (package.homepage && ![package.homepage isEqualToString:@"http://myrepospace.com/"]) {
+			url = [NSURL URLWithString:package.homepage];
+		} else {
+			url = [NSURL URLWithString:package.source.rooturi];
+		}
+
+		//check if iOS Version is allowed on website
+		BOOL allowediOSVersion = NO;
+		if (json[@"iOSVersions"]) {
+			for (NSString *thisIOSVersion in json[@"iOSVersions"]) {
+				if ([thisIOSVersion isEqualToString:iOSVersion]) {
+					allowediOSVersion = YES;
+					break;
+				}
+			}
+		}
+
+		//check if category can be submitted on website
+		BOOL allowedCategory = NO;
+		if (json[@"categories"]) {
+			for (NSString *thisCategory in json[@"categories"]) {
+				if ([thisCategory isEqualToString:package.section]) {
+					allowedCategory = YES;
+					break;
+				}
+			}
+		}
+
+		//calculate status of tweak
+		NSString *packageStatus = @"Unknown";
+		NSString *packageStatusExplaination = @"This tweak has not been reviewed. Please submit a review if you choose to install.";
+
+		if (foundVersion) { //pull exact match status from website
+			packageStatus = foundVersion[@"outcome"][@"calculatedStatus"];
+			packageStatusExplaination = [NSString stringWithFormat:
+				@"This package version has been marked as %@ based on feedback from users in the community. "
+				"The current positive rating is %@%% with %@ working reports.", 
+					packageStatus,
+					foundVersion[@"outcome"][@"percentage"],
+					foundVersion[@"outcome"][@"good"]];
+		} else {
+			if (packageExists) {
+				//check if other versions of this tweak have been reviewed against this iOS version
+				for (id version in allVersions) {
+					NSString *thisTweakVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"tweakVersion"]];
+					NSString *thisiOSVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"iOSVersion"]];
+
+					if ([thisiOSVersion isEqualToString:iOSVersion] && 
+						([packageStatus isEqualToString:@"likely working"] || [packageStatus isEqualToString:@"working"])) {
+
+						packageStatus = version[@"outcome"][@"calculatedStatus"];
+						if ([packageStatus isEqualToString:@"working"]) { 
+							//downgrade working to likely since it's an older match
+							packageStatus = @"likely working";
+						}
+
+						packageStatusExplaination = [NSString stringWithFormat:
+							@"A review of %@ version %@ was not found, but version %@ "
+							"has been marked as %@ based on feedback from users in the community. "
+							"Install at your own risk, see website for further details", 
+								package.name,
+								thisTweakVersion,
+								package.latest,
+								packageStatus];
+						break;
+					}
+				}
+
+				if ([packageStatus isEqualToString:@"Unknown"]) { 
+					packageStatusExplaination = @"A matching version of this tweak for this iOS version could not be found. "
+						"Please submit a review if you choose to install.";
+				}
+			}
+		}
+
+		//build a dict with all found properties
+		NSDictionary *userInfo = @{
+			@"deviceId" : deviceId, 
+			@"iOSVersion" : iOSVersion,
+			@"packageIndexed": @(packageExists),
+			@"packageVersionIndexed": @(versionExists),
+			@"packageStatus": packageStatus,
+			@"packageStatusExplaination": packageStatusExplaination,
+			@"packageId": package.id,
+			@"packageName": package.name,
+			@"packageLatest": package.latest,
+			@"packageCommercial": @(package.isCommercial),
+			@"packageCategory": package.section,
+			@"packageDepiction": package.shortDescription,
+			@"iOSVersionAllowed": @(allowediOSVersion),
+			@"packageCategoryAllowed": @(allowedCategory),
+			@"packageInstalled": @(installed),
+			@"packageRepo": [package.source name],
+			@"packageAuthor": package.author.name,
+			@"packageStatus": packageStatus,
+			@"packageHomepage": [NSString stringWithFormat:@"%@", url],
+		};
+		
+
+	
+		//gather user info for post to github
+		NSString *userInfoJson = @"";
+		NSString *userInfoBase64 = @"";
+		NSError *jsonError; 
+		NSData *jsonData = [NSJSONSerialization dataWithJSONObject:userInfo options:kNilOptions error:&jsonError];
+		if (jsonData) {
+			userInfoJson = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+			userInfoBase64 = [jsonData base64EncodedStringWithOptions:0];
+		}
+		
+		//create message for user
+		UIAlertController *results = 
+			[UIAlertController 
+				alertControllerWithTitle:[NSString stringWithFormat:@"Status: %@", packageStatus] 
+				message:packageStatusExplaination
+				preferredStyle:UIAlertControllerStyleAlert];
+
+
+		//determine what buttons will be displayed
+		BOOL showViewPackage = NO; //Allow the user to open in safari
+		BOOL showRequestReview = NO; //Allow the user to request a review
+		BOOL showAddWorkingReview = NO; //Allow to user to submit a new working review
+		BOOL showAddNotWorkingReview = NO; //Allow to user to submit a new not working review
+
+		showAddNotWorkingReview = YES; //always allow not working review
+		if ([userInfo objectForKey:@"packageInstalled"]) {
+			showAddWorkingReview = YES; //can only submit working review if tweak is installed
+		}
+		if ([userInfo objectForKey:@"packageIndexed"]) {
+			showViewPackage = YES;
+		} else {
+			showRequestReview = YES;
+		}
+		NSString *baseURI = @"https://jlippold.github.io/tweakCompatible/";
+
+		if (showViewPackage) {
+			[results addAction:
+				[UIAlertAction actionWithTitle:@"More information" 
+				style:UIAlertActionStyleDefault
+				handler:^(UIAlertAction * action) {
+					[[UIApplication sharedApplication] 
+						openURL:[NSURL URLWithString:[NSString stringWithFormat:
+									@"%@#!/%@/details/%@", 
+									baseURI, 
+									package.id,
+									userInfoBase64
+					]]];
+				}]];
+		}
+
+		if (showAddWorkingReview) {
+			[results addAction:
+				[UIAlertAction actionWithTitle:@"This package works!" 
+				style:UIAlertActionStyleDefault
+				handler:^(UIAlertAction * action) {
+					[[UIApplication sharedApplication] 
+						openURL:[NSURL URLWithString:[NSString stringWithFormat:
+									@"%@#!/%@/working/%@", 
+									baseURI, 
+									package.id,
+									userInfoBase64
+					]]];
+				}]];
+		}
+
+		if (showAddNotWorkingReview) {
+			[results addAction:
+				[UIAlertAction actionWithTitle:@"This package doesn't work!" 
+				style:UIAlertActionStyleDefault
+				handler:^(UIAlertAction * action) {
+					[[UIApplication sharedApplication] 
+						openURL:[NSURL URLWithString:[NSString stringWithFormat:
+									@"%@#!/%@/notworking/%@", 
+									baseURI, 
+									package.id,
+									userInfoBase64
+					]]];
+				}]];
+		}
+
+		if (showRequestReview) {
+			//tbd
+		}
+
+		//close button
+		[results addAction:
+			[UIAlertAction actionWithTitle:@"Close" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}]];
+
+		[self.navigationController presentViewController:results animated:YES completion:nil];
+		
 	}];
 }
 
