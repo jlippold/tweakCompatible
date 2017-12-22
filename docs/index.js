@@ -129,7 +129,9 @@ $(document).ready(function () {
         },
         methods: {
             github: function() {
+                $('#submitReview').modal("hide");
                 $('#github').submit();
+                
             }
         },
         computed: {
