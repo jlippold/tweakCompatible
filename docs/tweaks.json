@@ -8,7 +8,8 @@
         "Development"
     ],
     "iOSVersions": [
-        "10.2"
+        "10.2",
+        "9.3.3"
     ],
     "devices": [
         {
@@ -213,54 +214,60 @@
             "url": "http://apt.thebigboss.org/onepackage.php?bundleid=libactivator",
             "depiction": "Centralized gestures, button and shortcut management for iOS",
             "category": "System",
-            "date": "2017-02-04",
-            "status": {
-                "good": [
-                    {
-                        "iOS": "10.1",
-                        "tweakVersion": "1.9.13~beta1",
-                        "released": "2017-02-04",
-                        "users": [
-                            {
-                                "device": "iPhone10,6",
-                                "issues": "face unlock isn't working yet",
-                                "date": "2017-02-04"
-                            },
-                            {
-                                "device": "iPhone9,3",
-                                "issues": null,
-                                "date": "2017-02-04"
-                            }
-                        ]
+            "versions": [
+                {
+                    "tweakVersion": "1.9.13~beta1",
+                    "iOSVersion": "10.2",
+                    "outcome": {
+                        "calculatedStatus": "Working",
+                        "percentage": 100,
+                        "good": 2,
+                        "bad": 0
                     },
-                    {
-                        "iOS": "9.3.3",
-                        "tweakVersion": "1.9.13~beta1",
-                        "released": "2017-02-04",
-                        "users": [
-                            {
-                                "device": "iPhone9,3",
-                                "issues": null,
-                                "date": "2017-02-04"
-                            }
-                        ]
-                    }
-                ],
-                "bad": [
-                    {
-                        "iOS": "9.3.3",
-                        "tweakVersion": "1.9.13~beta1",
-                        "released": "2017-02-04",
-                        "users": [
-                            {
-                                "device": "iPad4,7",
-                                "issues": "caused bootloop",
-                                "date": "2017-02-02"
-                            }
-                        ]
-                    }
-                ]
-            }
+                    "users": [
+                        {
+                            "status": "working",
+                            "device": "iPhone10,6",
+                            "issues": "face unlock isn't working yet",
+                            "date": "2017-02-04"
+                        },
+                        {
+                            "status": "working",
+                            "device": "iPhone9,3",
+                            "date": "2017-02-04"
+                        }
+                    ]
+                },
+                {
+                    "tweakVersion": "1.9.13~beta1",
+                    "iOSVersion": "9.3.3",
+                    "outcome": {
+                        "calculatedStatus": "Likely working",
+                        "percentage": 100,
+                        "good": 2,
+                        "bad": 1
+                    },
+                    "users": [
+                        {
+                            "status": "working",
+                            "device": "iPhone10,6",
+                            "issues": "face unlock isn't working yet",
+                            "date": "2017-02-04"
+                        },
+                        {
+                            "status": "working",
+                            "device": "iPhone9,3",
+                            "date": "2017-02-04"
+                        },
+                        {
+                            "status": "not working",
+                            "device": "iPad4,7",
+                            "issues": "caused bootloop",
+                            "date": "2017-02-02"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

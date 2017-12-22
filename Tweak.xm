@@ -46,170 +46,8 @@
                                                NSError *connectionError)
      {
 		 
-         if (data.length > 0 && connectionError == nil) {
-			NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-			
-			//Check if package in on the website
-			id foundItem = nil;
-			BOOL exists = NO;
-			if (json[@"packages"]) {
-				for (id item in json[@"packages"]) {
-					NSString *thisPackageId = [NSString stringWithFormat:@"%@", [item objectForKey:@"id"]];
-					if ([thisPackageId isEqualToString:package.id]) {
-						foundItem = item;
-						exists = YES;
-						break;
-					}
-				}
-			}
-			
-			//is it installed in cydia
-			BOOL installed = NO;
-			if (package.installed) {
-				installed = YES;
-			}
-			
-			//pull the package homepage url
-			NSArray *BuiltInRepositories = @[
-				@"http://apt.saurik.com/",
-				@"http://apt.thebigboss.org/repofiles/cydia/",
-				@"http://apt.modmyi.com/",
-				@"http://cydia.zodttd.com/repo/cydia/"
-			];
-
-			NSURL *url;
-			if ([BuiltInRepositories containsObject:package.source.rooturi]) {
-				url = [NSURL URLWithString:[NSString stringWithFormat:@"http://cydia.saurik.com/package/%@/", package.id]];
-			} else if (package.homepage && ![package.homepage isEqualToString:@"http://myrepospace.com/"]) {
-				url = [NSURL URLWithString:package.homepage];
-			} else {
-				url = [NSURL URLWithString:package.source.rooturi];
-			}
-
-			//check if iOS Version can be submitted
-			BOOL allowediOSVersion = NO;
-			if (json[@"iOSVersions"]) {
-				for (NSString *thisIOSVersion in json[@"iOSVersions"]) {
-					if ([thisIOSVersion isEqualToString:iOSVersion]) {
-						allowediOSVersion = YES;
-						break;
-					}
-				}
-			}
-
-			//check if category can be submitted
-			BOOL allowedCategory = NO;
-			if (json[@"categories"]) {
-				for (NSString *thisCategory in json[@"categories"]) {
-					if ([thisCategory isEqualToString:package.section]) {
-						allowedCategory = YES;
-						break;
-					}
-				}
-			}
-			//build a dict with all found properties
-			NSDictionary *userInfo = @{
-				@"deviceId" : deviceId, 
-				@"iOSVersion" : iOSVersion,
-				@"indexed": @(exists),
-				@"packageId": package.id,
-				@"packageName": package.name,
-				@"packageLatest": package.latest,
-				@"packageCommercial": @(package.isCommercial),
-				@"packageCategory": package.section,
-				@"packageDepiction": package.shortDescription,
-				@"iOSVersionAllowed": @(allowediOSVersion),
-				@"packageCategoryAllowed": @(allowedCategory),
-				@"packageInstalled": @(installed),
-				@"packageRepo": [package.source name],
-				@"packageAuthor": package.author.name,
-				@"packageHomepage": [NSString stringWithFormat:@"%@", url],
-			};
-			
-			//create json string of all properties
-			NSString *userInfoJson = @"";
-			NSString *message = @"";
-			NSError *jsonError; 
-			NSData *jsonData = [NSJSONSerialization dataWithJSONObject:userInfo options:kNilOptions error:&jsonError];
-			if (!jsonData) {
-				NSLog(@"Got a json error: %@", jsonError);
-				message = [NSString stringWithFormat:@"Got a json error: %@", jsonError];
-			} else {
-				userInfoJson = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-				message = [NSString stringWithFormat:@"%@ \n\n", userInfoJson];
-			}
-			
-
-			
-			UIAlertController *results = 
-				[UIAlertController alertControllerWithTitle:@"tweakCompatible Results"
-					message:message
-					preferredStyle:UIAlertControllerStyleAlert];
-
-			UIAlertAction *defaultAction = 
-				[UIAlertAction actionWithTitle:@"Ok" 
-					style:UIAlertActionStyleDefault
-					handler:^(UIAlertAction * action) {}];
-					
-			[results addAction:defaultAction];
-			[self.navigationController presentViewController:results 
-				animated:YES completion:nil];
-			return;
-
-			if (foundItem) {
-
-				
-				NSString *testedVersion = [NSString stringWithFormat:@"%@", [foundItem objectForKey:@"latest"]];
-				if (![package.latest isEqualToString:testedVersion]) {
-					message = [message stringByAppendingString:
-						[NSString stringWithFormat:@"⚠️ Warning: The last reviewed version was %@" 
-									", version %@ in cydia has not yet been reviewed by the community. "
-									"Here are the older results for version %@ \n", testedVersion, package.latest, testedVersion]];
-				}
-
-				id status = foundItem[@"status"];
-				if (status[@"good"]) {
-					for (id item in status[@"good"]) {
-						message = [message stringByAppendingString:
-							[NSString stringWithFormat:@"✅ Works on %@ running %@ \n\n", item[@"device"], item[@"iOS"]]];
-					}
-				}
-				
-				if (status[@"bad"]) {
-					for (id item in status[@"bad"]) {
-						message = [message stringByAppendingString:
-							[NSString stringWithFormat:@"🚫 Not Working on %@ running %@ \n\n", item[@"device"], item[@"iOS"]]];
-					}
-				}
-				
-				if (status[@"partial"]) {
-					for (id item in status[@"partial"]) {
-						message = [message stringByAppendingString:
-							[NSString stringWithFormat:@"⚠️ Partially Working on %@ running %@ \n", item[@"device"], item[@"iOS"]]];
-						if (item[@"notes"]) {
-							message = [message stringByAppendingString:[NSString stringWithFormat:@"Notes: %@ \n", item[@"notes"]]];
-						}
-					}
-				}
-
-
-
-			} else {
-				UIAlertController *notFoundMessage = 
-					[UIAlertController alertControllerWithTitle:@"tweakCompatible 404"
-						message:@"This package has not yet been reviewed by the community"
-						preferredStyle:UIAlertControllerStyleAlert];
-
-				UIAlertAction *defaultAction = 
-					[UIAlertAction actionWithTitle:@"Ok" 
-						style:UIAlertActionStyleDefault
-						handler:^(UIAlertAction * action) {}];
-						
-				[notFoundMessage addAction:defaultAction];
-				[self.navigationController presentViewController:notFoundMessage 
-					animated:YES completion:nil];
-			}
-         } else {
+		 //download error
+         if (data.length == 0 || connectionError) {
 				UIAlertController *downloadErrorMessage = 
 					[UIAlertController alertControllerWithTitle:@"tweakCompatible 500"
 						message:@"Error downloading compatible tweak list"
@@ -223,7 +61,250 @@
 				[downloadErrorMessage addAction:defaultAction];
 				[self.navigationController presentViewController:downloadErrorMessage 
 					animated:YES completion:nil];
+				return;
 		 }
+
+		NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+		
+		
+		id foundItem = nil; //package on website
+		id allVersions = nil; //all versions on website
+		id foundVersion = nil; //version on website
+		
+		BOOL packageExists = NO; 
+		BOOL versionExists = NO;
+
+		//find matching product and version on the website
+		if (json[@"packages"]) {
+			for (id item in json[@"packages"]) {
+				NSString *thisPackageId = [NSString stringWithFormat:@"%@", [item objectForKey:@"id"]];
+				if ([thisPackageId isEqualToString:package.id]) {
+					foundItem = item;
+					packageExists = YES;
+					
+					id allVersions = foundItem[@"versions"];
+					for (id version in allVersions) {
+						NSString *thisTweakVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"tweakVersion"]];
+						NSString *thisiOSVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"iOSVersion"]];
+						if ([thisTweakVersion isEqualToString:package.latest] && 
+							[thisiOSVersion isEqualToString:iOSVersion]) {
+							foundVersion = version;
+							versionExists = YES;
+							break;
+						}
+					}
+					break;
+				}
+			}
+		}
+		
+		//is it installed in cydia
+		BOOL installed = NO;
+		if (package.installed) {
+			installed = YES;
+		}
+		
+		//pull the package homepage url
+		NSArray *BuiltInRepositories = @[
+			@"http://apt.saurik.com/",
+			@"http://apt.thebigboss.org/repofiles/cydia/",
+			@"http://apt.modmyi.com/",
+			@"http://cydia.zodttd.com/repo/cydia/"
+		];
+
+		NSURL *url;
+		if ([BuiltInRepositories containsObject:package.source.rooturi]) {
+			url = [NSURL URLWithString:[NSString stringWithFormat:@"http://cydia.saurik.com/package/%@/", package.id]];
+		} else if (package.homepage && ![package.homepage isEqualToString:@"http://myrepospace.com/"]) {
+			url = [NSURL URLWithString:package.homepage];
+		} else {
+			url = [NSURL URLWithString:package.source.rooturi];
+		}
+
+		//check if iOS Version is allowed on website
+		BOOL allowediOSVersion = NO;
+		if (json[@"iOSVersions"]) {
+			for (NSString *thisIOSVersion in json[@"iOSVersions"]) {
+				if ([thisIOSVersion isEqualToString:iOSVersion]) {
+					allowediOSVersion = YES;
+					break;
+				}
+			}
+		}
+
+		//check if category can be submitted on website
+		BOOL allowedCategory = NO;
+		if (json[@"categories"]) {
+			for (NSString *thisCategory in json[@"categories"]) {
+				if ([thisCategory isEqualToString:package.section]) {
+					allowedCategory = YES;
+					break;
+				}
+			}
+		}
+
+		//calculate status of tweak
+		NSString *packageStatus = @"Unknown";
+		NSString *packageStatusExplaination = @"This tweak has not been reviewed. Please submit a review if you choose to install.";
+
+		if (foundVersion) { //pull exact match status from website
+			packageStatus = foundVersion[@"outcome"][@"calculatedStatus"];
+			packageStatusExplaination = [NSString stringWithFormat:
+				@"This package version has been marked as %@ based on feedback from users in the community."
+				"The current positive rating is at %@ or %@ positive user reports.", 
+					packageStatus,
+					foundVersion[@"outcome"][@"percentage"],
+					foundVersion[@"outcome"][@"good"]];
+		} else {
+			if (packageExists) {
+				//check if other versions of this tweak have been reviewed against this iOS version
+				for (id version in allVersions) {
+					NSString *thisTweakVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"tweakVersion"]];
+					NSString *thisiOSVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"iOSVersion"]];
+
+					if ([thisiOSVersion isEqualToString:iOSVersion] && 
+						([packageStatus isEqualToString:@"likely working"] || [packageStatus isEqualToString:@"working"])) {
+
+						packageStatus = version[@"outcome"][@"calculatedStatus"];
+						if ([packageStatus isEqualToString:@"working"]) { 
+							//downgrade working to likely since it's an older match
+							packageStatus = @"likely working";
+						}
+
+						packageStatusExplaination = [NSString stringWithFormat:
+							@"A review of %@ version %@ was not found, but version %@ "
+							"has been marked as %@ based on feedback from users in the community."
+							"Install at your own risk, see website for further details", 
+								package.name,
+								thisTweakVersion,
+								package.latest,
+								packageStatus];
+						break;
+					}
+				}
+
+				if ([packageStatus isEqualToString:@"Unknown"]) { 
+					packageStatusExplaination = @"A matching version of this tweak for this iOS version could not be found. "
+						"Please submit a review if you choose to install.";
+				}
+			}
+		}
+
+		//build a dict with all found properties
+		NSDictionary *userInfo = @{
+			@"deviceId" : deviceId, 
+			@"iOSVersion" : iOSVersion,
+			@"packageIndexed": @(packageExists),
+			@"packageVersionIndexed": @(versionExists),
+			@"packageStatus": packageStatus,
+			@"packageStatusExplaination": packageStatusExplaination,
+			@"packageId": package.id,
+			@"packageName": package.name,
+			@"packageLatest": package.latest,
+			@"packageCommercial": @(package.isCommercial),
+			@"packageCategory": package.section,
+			@"packageDepiction": package.shortDescription,
+			@"iOSVersionAllowed": @(allowediOSVersion),
+			@"packageCategoryAllowed": @(allowedCategory),
+			@"packageInstalled": @(installed),
+			@"packageRepo": [package.source name],
+			@"packageAuthor": package.author.name,
+			@"packageStatus": packageStatus,
+			@"packageHomepage": [NSString stringWithFormat:@"%@", url],
+		};
+		
+
+	
+		//gather user info for post to github
+		NSString *userInfoJson = @"";
+		NSString *userInfoBase64 = @"";
+		NSError *jsonError; 
+		NSData *jsonData = [NSJSONSerialization dataWithJSONObject:userInfo options:kNilOptions error:&jsonError];
+		if (jsonData) {
+			userInfoJson = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+			userInfoBase64 = [jsonData base64EncodedStringWithOptions:0];
+		}
+		
+		//create message for user
+		UIAlertController *results = 
+			[UIAlertController 
+				alertControllerWithTitle:[NSString stringWithFormat:@"Status: %@", packageStatus] 
+				message:packageStatusExplaination
+				preferredStyle:UIAlertControllerStyleAlert];
+
+
+		//determine what buttons will be displayed
+		BOOL showViewPackage = NO; //Allow the user to open in safari
+		BOOL showRequestReview = NO; //Allow the user to request a review
+		BOOL showAddWorkingReview = NO; //Allow to user to submit a new working review
+		BOOL showAddNotWorkingReview = NO; //Allow to user to submit a new not working review
+
+		showAddNotWorkingReview = YES; //always allow not working review
+		if ([userInfo objectForKey:@"packageInstalled"]) {
+			showAddWorkingReview = YES; //can only submit working review if tweak is installed
+		}
+		if ([userInfo objectForKey:@"packageIndexed"]) {
+			showViewPackage = YES;
+		} else {
+			showRequestReview = YES;
+		}
+		NSString *baseURI = @"https://jlippold.github.io/tweakCompatible/";
+
+		if (showViewPackage) {
+			[results addAction:
+				[UIAlertAction actionWithTitle:@"More information" 
+				style:UIAlertActionStyleDefault
+				handler:^(UIAlertAction * action) {
+					[[UIApplication sharedApplication] 
+						openURL:[NSURL URLWithString:[NSString stringWithFormat:
+									@"%@#!/%@/details/%@", 
+									baseURI, 
+									package.id,
+									userInfoBase64
+					]]];
+				}]];
+		}
+
+		if (showAddWorkingReview) {
+			[results addAction:
+				[UIAlertAction actionWithTitle:@"This package works!" 
+				style:UIAlertActionStyleDefault
+				handler:^(UIAlertAction * action) {
+					[[UIApplication sharedApplication] 
+						openURL:[NSURL URLWithString:[NSString stringWithFormat:
+									@"%@#!/%@/working/%@", 
+									baseURI, 
+									package.id,
+									userInfoBase64
+					]]];
+				}]];
+		}
+
+		if (showAddNotWorkingReview) {
+			[results addAction:
+				[UIAlertAction actionWithTitle:@"This package doesn't work!" 
+				style:UIAlertActionStyleDefault
+				handler:^(UIAlertAction * action) {
+					[[UIApplication sharedApplication] 
+						openURL:[NSURL URLWithString:[NSString stringWithFormat:
+									@"%@#!/%@/notworking/%@", 
+									baseURI, 
+									package.id,
+									userInfoBase64
+					]]];
+				}]];
+		}
+
+		if (showRequestReview) {
+			//tbd
+		}
+
+		//close button
+		[results addAction:
+			[UIAlertAction actionWithTitle:@"Close" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}]];
+
+		[self.navigationController presentViewController:results animated:YES completion:nil];
+		
 	}];
 }
 

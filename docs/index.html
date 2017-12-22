@@ -69,37 +69,47 @@
                         </h2>
             
                         <div v-for="(package, index) in filteredPackages" class="row-fluid">
+                            <div v-for="version in package.versions">
+                                <div v-if="version.current">
 
-                            <strong>
-                                <span class="label pull-right" v-bind:class="package.outcome.classObject"> 
-                                     Latest Version:
-                                    {{package.latest}} 
-                                </span>
-                                {{ package.name }} 
-                            </strong>
-
-                            <p>
-                                <span class="label pull-right" v-bind:class="package.outcome.classObject">
-                                    Status: {{ package.outcome.status }}
-                                </span>
-                                 {{ package.depiction }}
-                            </p>
-                            <p v-if="package.outcome.counts.good > 0"class="bg-success">{{ package.outcome.counts.good }} device(s) at {{ package.outcome.percentage }}% reported this package as working on iOS
-                                {{ package.iOSVersion }}.
-                            </p>
-                            <p v-if="package.outcome.counts.bad > 0" class="bg-danger">{{ package.outcome.counts.bad }} device(s) at {{ 100-package.outcome.percentage }}% reported this package as <strong>not working</strong> on iOS
-                                {{ package.iOSVersion }}.
-                            </p>
-                            <div v-if="package.notes" class="well">
-                                <p v-for="(note, index) in package.notes">
-                                    <span class="label label-info">{{ getDeviceName(note.device) }}</span> user reported ths tweak as
-                                    <span v-if="note.status == 'Working'" class="label label-success">Working</span>
-                                    <span v-else class="label label-danger">Not Working</span>
-                                    on {{note.date}}
-                                    <span v-if="note.issues">- {{note.issues}}</span>
-                                     
-                                </p>
+                                    <strong>
+                                        <span class="label pull-right" v-bind:class="version.classObject">
+                                            Latest Version: {{package.latest}}
+                                        </span>
+                                        {{ package.name }}
+                                    </strong>
+                                
+                                    <p>
+                                        <span class="label pull-right" v-bind:class="version.classObject">
+                                            Status: {{ version.outcome.calculatedStatus }}
+                                        </span>
+                                        {{ package.depiction }}
+                                    </p>
+                                    <p v-if="version.outcome.good > 0" class="bg-success">
+                                        {{ version.outcome.good }} device(s) at 
+                                        {{ version.outcome.percentage }}% reported this package as working on
+                                        iOS {{ package.iOSVersion }}.
+                                    </p>
+                                    <p v-if="version.outcome.bad > 0" class="bg-danger">
+                                        {{ version.outcome.bad }} device(s) at 
+                                        {{ 100-version.outcome.percentage }}% reported this package as
+                                        <strong>not working</strong> on 
+                                        iOS {{ package.iOSVersion }}.
+                                    </p>
+                                    <div v-if="package.notes" class="well">
+                                        <p v-for="(note, index) in package.notes">
+                                            <span class="label label-info">{{ getDeviceName(note.device) }}</span> user reported ths tweak as
+                                            <span v-if="note.status == 'Working'" class="label label-success">Working</span>
+                                            <span v-else class="label label-danger">Not Working</span>
+                                            on {{note.date}}
+                                            <span v-if="note.issues">- {{note.issues}}</span>
+                                
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
+
+
                         </div>
                         <hr />
                     </div>
