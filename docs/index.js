@@ -4,6 +4,7 @@ var userDetails;
 
 $(document).ready(function () {
 
+    window.onhashchange = checkAction;
     checkAction();
 
     var TweakList = Vue.extend({
