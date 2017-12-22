@@ -34,11 +34,11 @@
     uname(&systemInfo);
     NSString *deviceId = [NSString stringWithCString:systemInfo.machine
                                         encoding:NSUTF8StringEncoding];
-
 	NSString *iOSVersion = [[UIDevice currentDevice] systemVersion];
 	
 	//download tweak list
-	NSURL *url = [NSURL URLWithString:@"https://jlippold.github.io/tweakCompatible/tweaks.json"];
+	//NSURL *url = [NSURL URLWithString:@"https://jlippold.github.io/tweakCompatible/tweaks.json"];
+	NSURL *url = [NSURL URLWithString:@"https://raw.githubusercontent.com/jlippold/tweakCompatible/dev/docs/tweaks.json"];
 	[NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:url]
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse *response,
@@ -48,21 +48,117 @@
 		 
          if (data.length > 0 && connectionError == nil) {
 			NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-
+			
+			//Check if package in on the website
 			id foundItem = nil;
+			BOOL exists = NO;
 			if (json[@"packages"]) {
 				for (id item in json[@"packages"]) {
 					NSString *thisPackageId = [NSString stringWithFormat:@"%@", [item objectForKey:@"id"]];
 					if ([thisPackageId isEqualToString:package.id]) {
 						foundItem = item;
+						exists = YES;
+						break;
+					}
+				}
+			}
+			
+			//is it installed in cydia
+			BOOL installed = NO;
+			if (package.installed) {
+				installed = YES;
+			}
+			
+			//pull the package homepage url
+			NSArray *BuiltInRepositories = @[
+				@"http://apt.saurik.com/",
+				@"http://apt.thebigboss.org/repofiles/cydia/",
+				@"http://apt.modmyi.com/",
+				@"http://cydia.zodttd.com/repo/cydia/"
+			];
+
+			NSURL *url;
+			if ([BuiltInRepositories containsObject:package.source.rooturi]) {
+				url = [NSURL URLWithString:[NSString stringWithFormat:@"http://cydia.saurik.com/package/%@/", package.id]];
+			} else if (package.homepage && ![package.homepage isEqualToString:@"http://myrepospace.com/"]) {
+				url = [NSURL URLWithString:package.homepage];
+			} else {
+				url = [NSURL URLWithString:package.source.rooturi];
+			}
+
+			//check if iOS Version can be submitted
+			BOOL allowediOSVersion = NO;
+			if (json[@"iOSVersions"]) {
+				for (NSString *thisIOSVersion in json[@"iOSVersions"]) {
+					if ([thisIOSVersion isEqualToString:iOSVersion]) {
+						allowediOSVersion = YES;
 						break;
 					}
 				}
 			}
 
+			//check if category can be submitted
+			BOOL allowedCategory = NO;
+			if (json[@"categories"]) {
+				for (NSString *thisCategory in json[@"categories"]) {
+					if ([thisCategory isEqualToString:package.section]) {
+						allowedCategory = YES;
+						break;
+					}
+				}
+			}
+			//build a dict with all found properties
+			NSDictionary *userInfo = @{
+				@"deviceId" : deviceId, 
+				@"iOSVersion" : iOSVersion,
+				@"indexed": @(exists),
+				@"packageId": package.id,
+				@"packageName": package.name,
+				@"packageLatest": package.latest,
+				@"packageCommercial": @(package.isCommercial),
+				@"packageCategory": package.section,
+				@"packageDepiction": package.shortDescription,
+				@"iOSVersionAllowed": @(allowediOSVersion),
+				@"packageCategoryAllowed": @(allowedCategory),
+				@"packageInstalled": @(installed),
+				@"packageRepo": [package.source name],
+				@"packageAuthor": package.author.name,
+				@"packageHomepage": [NSString stringWithFormat:@"%@", url],
+			};
+			
+			//create json string of all properties
+			NSString *userInfoJson = @"";
+			NSString *message = @"";
+			NSError *jsonError; 
+			NSData *jsonData = [NSJSONSerialization dataWithJSONObject:userInfo options:kNilOptions error:&jsonError];
+			if (!jsonData) {
+				NSLog(@"Got a json error: %@", jsonError);
+				message = [NSString stringWithFormat:@"Got a json error: %@", jsonError];
+			} else {
+				userInfoJson = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+				message = [NSString stringWithFormat:@"%@ \n\n", userInfoJson];
+			}
+			
+
+			
+			UIAlertController *results = 
+				[UIAlertController alertControllerWithTitle:@"tweakCompatible Results"
+					message:message
+					preferredStyle:UIAlertControllerStyleAlert];
+
+			UIAlertAction *defaultAction = 
+				[UIAlertAction actionWithTitle:@"Ok" 
+					style:UIAlertActionStyleDefault
+					handler:^(UIAlertAction * action) {}];
+					
+			[results addAction:defaultAction];
+			[self.navigationController presentViewController:results 
+				animated:YES completion:nil];
+			return;
+
 			if (foundItem) {
 
-				NSString *message = [NSString stringWithFormat:@"You are running %@ %@ \n\n", deviceId, iOSVersion];
+				
 				NSString *testedVersion = [NSString stringWithFormat:@"%@", [foundItem objectForKey:@"latest"]];
 				if (![package.latest isEqualToString:testedVersion]) {
 					message = [message stringByAppendingString:
@@ -96,19 +192,7 @@
 					}
 				}
 
-				UIAlertController *results = 
-					[UIAlertController alertControllerWithTitle:@"tweakCompatible Results"
-						message:message
-						preferredStyle:UIAlertControllerStyleAlert];
 
-				UIAlertAction *defaultAction = 
-					[UIAlertAction actionWithTitle:@"Ok" 
-						style:UIAlertActionStyleDefault
-						handler:^(UIAlertAction * action) {}];
-						
-				[results addAction:defaultAction];
-				[self.navigationController presentViewController:results 
-					animated:YES completion:nil];
 
 			} else {
 				UIAlertController *notFoundMessage = 

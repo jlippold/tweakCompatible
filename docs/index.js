@@ -10,7 +10,7 @@ $(document).ready(function () {
                 data: {
                     searchTerm: "",
                     iOSVersionIndex: 0,
-                    allowedCategories: [],
+                    categories: [],
                     iOSVersions: [],
                     devices: [],
                     packages: []
@@ -110,7 +110,7 @@ $(document).ready(function () {
             fetch: function (done) {
                 var c = this;
                 $.getJSON("tweaks.json", function (data) {
-                    c.data.allowedCategories = data.allowedCategories.slice();
+                    c.data.categories = data.categories.slice();
                     c.data.iOSVersions = data.iOSVersions.slice();
                     c.data.devices = data.devices.slice();
                     c.data.packages = data.packages.slice();

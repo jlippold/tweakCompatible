@@ -92,7 +92,7 @@
                             </p>
                             <div v-if="package.notes" class="well">
                                 <p v-for="(note, index) in package.notes">
-                                    <span class="label label-info">{{ getDeviceName(note.device) }}</span> reported ths tweak as
+                                    <span class="label label-info">{{ getDeviceName(note.device) }}</span> user reported ths tweak as
                                     <span v-if="note.status == 'Working'" class="label label-success">Working</span>
                                     <span v-else class="label label-danger">Not Working</span>
                                     on {{note.date}}
