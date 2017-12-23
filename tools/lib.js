@@ -29,14 +29,9 @@ module.exports.closeIssue = function (issueNumber, callback) {
         cwd: path.join(__dirname, "../");
     });
     
-    stream.on('close', (code) => {
-        //remove from lookup array
-        var index = liveStreams.indexOf(cam.name);
-        if (index !== -1) {
-            liveStreams.splice(index, 1);
-        }
+    git.on('close', (code) => {
+        callback();
     });
-
 }
 
 module.exports.getTweakList = function (callback) {
