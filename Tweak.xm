@@ -37,8 +37,8 @@
 	NSString *iOSVersion = [[UIDevice currentDevice] systemVersion];
 	
 	//download tweak list
-	//NSURL *url = [NSURL URLWithString:@"https://jlippold.github.io/tweakCompatible/tweaks.json"];
-	NSURL *url = [NSURL URLWithString:@"https://raw.githubusercontent.com/jlippold/tweakCompatible/dev/docs/tweaks.json"];
+	NSURL *url = [NSURL URLWithString:@"https://jlippold.github.io/tweakCompatible/tweaks.json"];
+	
 	[NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:url]
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse *response,
