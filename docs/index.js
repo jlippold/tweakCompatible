@@ -135,7 +135,7 @@ $(document).ready(function () {
             github: function () {
                 $('#github').submit();
                 setTimeout(function (params) {
-                    window.location.href = ""; //reload    
+                    window.location.href = "thanks.html";
                 }, 100);
             }
         },
