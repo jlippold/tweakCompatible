@@ -60,33 +60,6 @@ $(document).ready(function () {
 
                 return filteredPackageList;
 
-
-                /*
-
-
-
-                
-
-                package.outcome.counts.total = package.outcome.counts.good + package.outcome.counts.bad;
-                package.outcome.percentage = package.outcome.counts.total == 0 ? 0 : Math.floor((package.outcome.counts.good / package.outcome.counts.total) * 100);
-                package.outcome.status = "Not working";
-                if (package.outcome.percentage == 0) {
-                    package.outcome.status = "Unknown";
-                }
-                if (package.outcome.percentage > 40) {
-                    package.outcome.status = "Likely working";
-                }
-                if (package.outcome.percentage > 75) {
-                    package.outcome.status = "Working";
-                }
-                package.outcome.classObject = {
-                    "label-success": (package.outcome.status == "Working"),
-                    "label-danger": (package.outcome.status == "Not working"),
-                    "label-warning": (package.outcome.status == "Likely working"),
-                    "label-default": (package.outcome.status == "Unknown")
-                };
-                */
-
             }
         },
         methods: {
