@@ -36,6 +36,7 @@ function init(callback) {
                 }],
                 commit: ['calculate', function (results, next) {
                     //closes #44
+                    
                 }]
             }, function (err, result) {
                 nextIssue(err);
@@ -84,7 +85,11 @@ function addTweaks(tweaks, change, callback) {
         var package = new Package(change);
         console.log(JSON.stringify(package, null, 2));
         packages.push(package);
-        callback(null, packages);
+        
+        addLabelsToIssue(change.issueNumber, ['user-submission', 'new-package'], function() {
+            callback(null, packages);
+        });
+
     } else {
         console.log("Editing package: ", package.id);
         console.log(JSON.stringify(package, null, 2));
@@ -100,6 +105,10 @@ function addTweaks(tweaks, change, callback) {
             //create version with review
             var v = new Version(change);
             package.versions.push(v);
+
+            addLabelsToIssue(change.issueNumber, ['user-submission', 'new-version'], function () {
+                callback(null, packages);
+            });
         } else {
 
             //add review to version
@@ -108,12 +117,16 @@ function addTweaks(tweaks, change, callback) {
                 console.log("Adding review to version");
                 var u = new User(change);
                 version.users.push(u);
+                addLabelsToIssue(change.issueNumber, ['user-submission', 'new-review'], function () {
+                    callback(null, packages);
+                });
             } else {
                 console.log("review already in system", user);
+                callback(null, packages);
             }
-        }
 
-        callback(null, packages);
+        }
+        
     }
 }
 
@@ -151,6 +164,11 @@ function reCalculate(packages, callback) {
         package.versions = reCalculated.slice();
     });
     callback(null, packages);
+}
+
+
+function addLabelsToIssue(number, labels, callback)  {
+    github.issues.addLabels({owner, repo, number, labels }, callback);
 }
 
 init(function(err) {

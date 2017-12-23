@@ -1,5 +1,6 @@
 const jsonfile = require('jsonfile');
 const path = require('path');
+var spawn = require('child_process').execFile;
 const tweakListPath = path.join(__dirname, "../docs/tweaks.json");
 
 module.exports.getPackageById = function (id, packages) {
@@ -20,6 +21,22 @@ module.exports.findReviewForUserInVersion = function (userName, device, version)
         return user.userName == userName &&
             user.device == device;
     });
+}
+
+module.exports.closeIssue = function (issueNumber, callback) {
+    var args = ["commit", "-am", "fixes #" + issueNumber]
+    var git = spawn("git", args, {
+        cwd: path.join(__dirname, "../");
+    });
+    
+    stream.on('close', (code) => {
+        //remove from lookup array
+        var index = liveStreams.indexOf(cam.name);
+        if (index !== -1) {
+            liveStreams.splice(index, 1);
+        }
+    });
+
 }
 
 module.exports.getTweakList = function (callback) {
