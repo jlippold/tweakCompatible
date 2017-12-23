@@ -35,7 +35,6 @@ function init(callback) {
                     lib.writeTweakList(results.tweaks, next);
                 }],
                 commit: ['calculate', function (results, next) {
-                    //closes #44
                     lib.commitAgainstIssue(change.issueNumber, next);
                 }]
             }, function (err, result) {

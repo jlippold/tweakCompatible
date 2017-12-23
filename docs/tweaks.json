@@ -9,7 +9,14 @@
   ],
   "iOSVersions": [
     "10.2",
-    "9.3.3"
+    "10.3.3",
+    "11.0",
+    "11.0.1",
+    "11.0.2",
+    "11.0.3",
+    "11.1",
+    "11.1.1",
+    "11.1.2"
   ],
   "devices": [
     {
@@ -205,111 +212,5 @@
       "deviceName": "iPad Pro (9.7)"
     }
   ],
-  "packages": [
-    {
-      "id": "libactivator",
-      "name": "Activator",
-      "latest": "1.9.13~beta1",
-      "repository": "BigBoss",
-      "url": "http://apt.thebigboss.org/onepackage.php?bundleid=libactivator",
-      "depiction": "Centralized gestures, button and shortcut management for iOS",
-      "category": "System",
-      "versions": [
-        {
-          "tweakVersion": "1.9.13~beta1",
-          "iOSVersion": "10.2",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 3,
-            "bad": 0,
-            "total": 3
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone10,6",
-              "issues": "face unlock isn't working yet",
-              "date": "2017-02-04"
-            },
-            {
-              "status": "working",
-              "device": "iPhone9,3",
-              "date": "2017-02-04"
-            },
-            {
-              "status": "working",
-              "device": "iPhone8,1",
-              "issues": "",
-              "date": "2017-12-23T17:04:02Z",
-              "userName": "jlippold"
-            }
-          ]
-        },
-        {
-          "tweakVersion": "1.9.13~beta1",
-          "iOSVersion": "9.3.3",
-          "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 66,
-            "good": 2,
-            "bad": 0,
-            "total": 3
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone10,6",
-              "issues": "face unlock isn't working yet",
-              "date": "2017-02-04"
-            },
-            {
-              "status": "working",
-              "device": "iPhone9,3",
-              "date": "2017-02-04"
-            },
-            {
-              "status": "not working",
-              "device": "iPad4,7",
-              "issues": "caused bootloop",
-              "date": "2017-02-02"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "info.rpdev.betterfiveicondock",
-      "name": "betterFiveIconDock",
-      "latest": "1.0.4",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/info.rpdev.betterfiveicondock/",
-      "depiction": "Five Icon Dock with proper spacing!",
-      "category": "Tweaks",
-      "author": "Redpandadev",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.0.4",
-          "iOSVersion": "10.2",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1
-          },
-          "users": [
-            {
-              "status": "partial",
-              "device": "iPhone8,1",
-              "issues": "Yup",
-              "date": "2017-12-23T16:18:38Z",
-              "userName": "jlippold"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  "packages": []
 }
