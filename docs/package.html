@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Jailbreak community driven compatibilty checker">
+    <meta name="author" content="Jed Lippold">
+
+    <title>Tweak Compatibilty Checker</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div id="app" class="container">
+        <submission></submission>
+    </div>
+
+    <template id="submission-template">
+
+        <div>
+            <h4>Submit Tweak Review</h4>
+            <h5>{{data.userInfo.packageName}}</h5>
+
+            <form>
+
+                <div class="form-group">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="working" :disabled="data.action != 'working'" v-model="data.chosenStatus"
+                                :checked="data.action == 'working'"> Tweak is working on iOS {{data.userInfo.iOSVersion}}
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="partial" :disabled="data.action != 'working'" v-model="data.chosenStatus"> Tweak is partially working on iOS {{data.userInfo.iOSVersion}}
+                        </label>
+                    </div>
+                    <div class="radio disabled">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="not working" :disabled="data.action == 'working'" :checked="data.action != 'working'"
+                                v-model="data.chosenStatus"> Tweak is not working on iOS {{data.userInfo.iOSVersion}}
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="review">Notes</label>
+                    <input type="text" class="form-control" id="review" v-model="data.notes" placeholder="Optional review notes">
+                </div>
+            </form>
+
+            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                <p>
+                    Once you click next, you will be redirected to github issues to finalize this submission. You
+                    <strong>need a github account</strong> to submit reviews! Just click submit on the created github issue and your
+                    review will be posted.
+                </p>
+            </div>
+
+
+            <div class="pull-right">
+                <a class="btn btn-danger" role="button" href=".">
+                    Cancel
+                </a>
+                <button role="button" class="btn btn-primary" v-on:click="github()">
+                    Next
+                </button>
+            </div>
+
+            <form id="github" method="GET" target="_blank" action="https://github.com/jlippold/tweakCompatible/issues/new">
+                <input type="hidden" :value="issueTitle" name="title" />
+                <input type="hidden" :value="issueBody" name="body" />
+            </form>
+        </div>
+
+    </template>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/async/2.6.0/async.min.js"></script>
+
+
+    <script src="submit.js"></script>
+</body>
+
+</html>

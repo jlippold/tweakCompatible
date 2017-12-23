@@ -241,10 +241,10 @@
 		BOOL showAddNotWorkingReview = NO; //Allow to user to submit a new not working review
 
 		showAddNotWorkingReview = YES; //always allow not working review
-		if ([userInfo objectForKey:@"packageInstalled"]) {
+		if (installed) {
 			showAddWorkingReview = YES; //can only submit working review if tweak is installed
 		}
-		if ([userInfo objectForKey:@"packageIndexed"]) {
+		if (packageExists) {
 			showViewPackage = YES;
 		} else {
 			showRequestReview = YES;
@@ -258,7 +258,7 @@
 				handler:^(UIAlertAction * action) {
 					[[UIApplication sharedApplication] 
 						openURL:[NSURL URLWithString:[NSString stringWithFormat:
-									@"%@#!/%@/details/%@", 
+									@"%@package.html#!/%@/details/%@", 
 									baseURI, 
 									package.id,
 									userInfoBase64
@@ -273,7 +273,7 @@
 				handler:^(UIAlertAction * action) {
 					[[UIApplication sharedApplication] 
 						openURL:[NSURL URLWithString:[NSString stringWithFormat:
-									@"%@#!/%@/working/%@", 
+									@"%@submit.html#!/%@/working/%@", 
 									baseURI, 
 									package.id,
 									userInfoBase64
@@ -288,7 +288,7 @@
 				handler:^(UIAlertAction * action) {
 					[[UIApplication sharedApplication] 
 						openURL:[NSURL URLWithString:[NSString stringWithFormat:
-									@"%@#!/%@/notworking/%@", 
+									@"%@submit.html#!/%@/notworking/%@", 
 									baseURI, 
 									package.id,
 									userInfoBase64
