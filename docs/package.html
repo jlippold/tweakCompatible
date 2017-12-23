@@ -20,64 +20,70 @@
 <body>
 
     <div id="app" class="container">
-        <submission></submission>
+        <tweak></tweak>
     </div>
 
-    <template id="submission-template">
+    <template id="tweak-template">
 
         <div>
-            <h4>Submit Tweak Review</h4>
-            <h5>{{data.userInfo.packageName}}</h5>
+            <h3>{{package.name}}</h3>
+            <dl class="dl-horizontal">
+                <div v-for="item in Object.keys(package)">
+                    <div v-if="item !== 'versions'">
+                    <dt>
+                        {{item}}
+                    </dt>
+                    <dd>
+                        {{ package[item] }}
+                    </dd>
+                    </div>
+                </div>
+            </dl>
 
             <form>
-
                 <div class="form-group">
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="working" :disabled="data.action != 'working'" v-model="data.chosenStatus"
-                                :checked="data.action == 'working'"> Tweak is working on iOS {{data.userInfo.iOSVersion}}
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="partial" :disabled="data.action != 'working'" v-model="data.chosenStatus"> Tweak is partially working on iOS {{data.userInfo.iOSVersion}}
-                        </label>
-                    </div>
-                    <div class="radio disabled">
-                        <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="not working" :disabled="data.action == 'working'" :checked="data.action != 'working'"
-                                v-model="data.chosenStatus"> Tweak is not working on iOS {{data.userInfo.iOSVersion}}
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="review">Notes</label>
-                    <input type="text" class="form-control" id="review" v-model="data.notes" placeholder="Optional review notes">
+                    <label for="sel1">Tweak Version</label>
+                    <select class="form-control" v-model="currentVersion">
+                        <option v-for="version in package.versions" v-bind:value="version.tweakVersion">
+                            {{version.tweakVersion}}
+                        </option>
+                    </select>
                 </div>
             </form>
 
-            <div class="alert alert-danger alert-dismissible fade in" role="alert">
-                <p>
-                    Once you click next, you will be redirected to github issues to finalize this submission. You
-                    <strong>need a github account</strong> to submit reviews! Just click submit on the created github issue and your
-                    review will be posted.
-                </p>
+            <div v-for="version in package.versions">
+
+                <div class="panel panel-success" v-if="version.tweakVersion == currentVersion" >
+                    <div class="panel-heading">
+                        iOS {{version.iOSVersion}} - {{version.outcome.calculatedStatus}}
+                        <span class="badge pull-right">
+                            {{version.outcome.percentage}}%
+                        </span>
+                    </div>
+
+                    <div class="panel-body">
+                        <p>
+                            {{ version.outcome.good }} device(s) reported this package as
+                            <strong>working</strong> on iOS {{ package.iOSVersion }}.
+                        </p>
+                        
+                        <p v-for="(user, index) in version.users">
+                            {{ relativeDate(user.date) }}, 
+                            <a target=_blank v-bind:href="'https://github.com/' + user.userName">
+                                {{user.userName}}
+                            </a> reported this tweak as
+                            <span v-if="user.status == 'working'" class="label label-success">Working</span>
+                            <span v-else-if="user.status == 'partial'" class="label label-warning">Partially Working</span>
+                            <span v-else class="label label-danger">Not Working</span>
+                            from an {{ getDeviceName(user.device)}}. 
+                            <span v-if="user.issues">- {{user.issues}}</span>
+                        </p>
+                        
+                    </div>
+                
+                </div>
+
             </div>
-
-
-            <div class="pull-right">
-                <a class="btn btn-danger" role="button" href=".">
-                    Cancel
-                </a>
-                <button role="button" class="btn btn-primary" v-on:click="github()">
-                    Next
-                </button>
-            </div>
-
-            <form id="github" method="GET" target="_blank" action="https://github.com/jlippold/tweakCompatible/issues/new">
-                <input type="hidden" :value="issueTitle" name="title" />
-                <input type="hidden" :value="issueBody" name="body" />
-            </form>
         </div>
 
     </template>
@@ -86,10 +92,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/async/2.6.0/async.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 
 
-    <script src="submit.js"></script>
+    <script src="common.js"></script>
+    <script src="package.js"></script>
 </body>
 
 </html>

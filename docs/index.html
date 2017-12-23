@@ -66,7 +66,6 @@
                     <div class="col-md-12 main">
                         <h2 class="sub-header">
                             Tweak Compatibilty Checker
-                            <span class="badge">{{filteredPackages.length}} package(s) found</span>
                         </h2>
             
                         <div v-for="(package, index) in filteredPackages" class="row-fluid">
@@ -77,7 +76,9 @@
                                         <span class="label pull-right" v-bind:class="version.classObject">
                                             Latest Version: {{package.latest}}
                                         </span>
-                                        {{ package.name }}
+                                        <a v-bind:href="'package.html#!/' + package.id + '/details/'">
+                                            {{ package.name }}
+                                        </a>
                                     </strong>
                                 
                                     <p>
@@ -127,6 +128,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/async/2.6.0/async.min.js"></script>
 
 
+    <script src="common.js"></script>
     <script src="index.js"></script>
 </body>
 
