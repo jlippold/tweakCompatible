@@ -133,8 +133,10 @@ $(document).ready(function () {
         },
         methods: {
             github: function () {
-                window.location.href = ""; //reload
                 $('#github').submit();
+                setTimeout(function (params) {
+                    window.location.href = ""; //reload    
+                }, 100);
             }
         },
         computed: {
