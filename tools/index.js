@@ -121,7 +121,16 @@ function addTweaks(tweaks, change, callback) {
                 });
             } else {
                 console.log("review already in system", user);
-                callback(null, packages);
+                addLabelsToIssue(change.issueNumber, ['user-submission', 'duplicate'], function () {
+                    var opts = {
+                        owner, repo,
+                        number: change.issueNumber,
+                        state: "closed"
+                    };
+                    github.issues.edit(opts, function() {
+                        callback(null, packages);
+                    });
+                });
             }
 
         }
