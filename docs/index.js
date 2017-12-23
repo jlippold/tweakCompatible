@@ -26,11 +26,11 @@ $(document).ready(function () {
         },
         computed: {
             filteredPackages: function () {
-                
+
                 var data = this.data;
                 var iOSVersion = data.iOSVersions[data.iOSVersionIndex];
                 var searchTerm = data.searchTerm.toLowerCase();
-                
+
                 var filteredPackageList = data.packages.filter(function (package) {
                     if (searchTerm == "") {
                         return true;
@@ -41,12 +41,12 @@ $(document).ready(function () {
                     );
                 });
 
-                
+
 
                 //reformat the object for display purposes
-                filteredPackageList.forEach(function(package) {
+                filteredPackageList.forEach(function (package) {
                     package.versions.forEach(function (item) {
-                        
+
                         item.current = (item.iOSVersion == iOSVersion && item.tweakVersion == package.latest);
                         item.classObject = {
                             "label-success": (item.outcome.calculatedStatus == "Working"),
@@ -60,7 +60,7 @@ $(document).ready(function () {
 
                 return filteredPackageList;
 
-            
+
                 /*
 
 
@@ -86,13 +86,13 @@ $(document).ready(function () {
                     "label-default": (package.outcome.status == "Unknown")
                 };
                 */
-                
+
             }
         },
         methods: {
-            getDeviceName: function(deviceId) {
+            getDeviceName: function (deviceId) {
                 var devices = this.data.devices;
-                var found = devices.find(function(device) {
+                var found = devices.find(function (device) {
                     return device.deviceId == deviceId;
                 });
                 return found ? found.deviceName : "Unknown device";
@@ -116,32 +116,42 @@ $(document).ready(function () {
     var Submission = Vue.extend({
         template: "#submission-template",
         data: function () {
-            var d = {
-                data: userDetails
-            };
-            if (userDetails.action == "working") {
-                d.data.chosenStatus = "working";
-            } else {
-                d.data.chosenStatus = "notworking";
+            var d = {};
+            d.data = {};
+            if (userDetails) {
+                d.data = userDetails;
             }
+
+            d.data.chosenStatus = "working";
             d.data.notes = "";
+            if (userDetails && userDetails.action) {
+                if (userDetails.action != "working") {
+                    d.data.chosenStatus = "notworking";
+                }
+            }
             return d;
         },
         methods: {
-            github: function() {
-                window.location.href = "thanks.html"
+            github: function () {
+                window.location.href = ""; //reload
                 $('#github').submit();
             }
         },
         computed: {
-            issueTitle: function() {
-                return "`" + this.data.userInfo.packageName + "`" + 
-                    " " + this.data.chosenStatus + 
-                    " on iOS " + 
-                    this.data.userInfo.iOSVersion;
+            issueTitle: function () {
+                if (this.data && this.data.action) {
+                    return "`" + this.data.userInfo.packageName + "`" +
+                        " " + this.data.chosenStatus +
+                        " on iOS " +
+                        this.data.userInfo.iOSVersion;
+                }
+                return "";
             },
             issueBody: function () {
-                return "```\n" + JSON.stringify(this.data, null, 2) + "\n```"
+                if (this.data && this.data.action) {
+                    return "```\n" + JSON.stringify(this.data, null, 2) + "\n```"
+                }
+                return "";
             }
         }
     });
@@ -173,7 +183,7 @@ $(document).ready(function () {
                 break;
         }
     }
-    
+
 });
 
 function checkAction() {
