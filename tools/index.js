@@ -36,7 +36,7 @@ function init(callback) {
                 }],
                 commit: ['calculate', function (results, next) {
                     //closes #44
-                    
+                    lib.commitAgainstIssue(change.issueNumber, next);
                 }]
             }, function (err, result) {
                 nextIssue(err);

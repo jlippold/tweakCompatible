@@ -23,13 +23,14 @@ module.exports.findReviewForUserInVersion = function (userName, device, version)
     });
 }
 
-module.exports.closeIssue = function (issueNumber, callback) {
+module.exports.commitAgainstIssue = function (issueNumber, callback) {
     var args = ["commit", "-am", "fixes #" + issueNumber]
     var git = spawn("git", args, {
-        cwd: path.join(__dirname, "../");
+        cwd: path.join(__dirname, "../")
     });
     
     git.on('close', (code) => {
+        console.log(code);
         callback();
     });
 }
