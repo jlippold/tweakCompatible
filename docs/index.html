@@ -31,43 +31,34 @@
         <div>
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container-fluid">
-                    <form class="navbar-form navbar-search" role="search">
-                        <div class="input-group" style="min-width: 80%">
-                            <input type="text" class="form-control" v-model="data.searchTerm" placeholder="filter">
-                    
-                            <div class="input-group-btn">
-                                <button type="button" class="btn btn-search btn-success">
-                                    <span class="glyphicon glyphicon-search"></span>
-                                    <span v-for="(iOSVersion, index) in data.iOSVersions" class="label-icon">
-                                        <span v-if="data.iOSVersionIndex == index">
-                                            iOS {{iOSVersion}}
-                                        </span>
-                                    </span>
-                                </button>
-                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li v-for="(iOSVersion, index) in data.iOSVersions">
-                                        <a href="#" v-on:click="selectOSFilter($event, index)">
-                                            <span class="glyphicon glyphicon-phone"></span>
-                                            <span class="label-icon">iOS {{iOSVersion}}</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="https://jlippold.github.io/tweakCompatible/">tweakCompatible</a>
+                    </div>
                 </div>
             </nav>
             
             <div class="container-fluid">
-                <div class="row">
+                <div class="row main">
+
+                    <div class="col-xs-9 col-sm-8 col-md-8 main">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Search</label>
+                            <input type="test" class="form-control" v-model="data.searchTerm">
+                        </div>
+                    </div>
+
+                    <div class="col-xs-3 col-sm-4 col-md-4 main">
+                        <div class="form-group">
+                            <label>iOS</label>
+                            <select class="form-control" v-model="data.iOSVersionIndex">
+                                <option v-for="(iOSVersion, index) in data.iOSVersions" v-bind:value="index">
+                                    {{iOSVersion}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
                     <div class="col-md-12 main">
-                        <h2 class="sub-header">
-                            Tweak Compatibilty Checker
-                        </h2>
-            
                         <div v-for="(package, index) in filteredPackages" class="row-fluid">
                             <div v-for="version in package.versions">
                                 <div v-if="version.current">
