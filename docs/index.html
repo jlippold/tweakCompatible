@@ -37,28 +37,30 @@
                 </div>
             </nav>
             
-            <div class="container-fluid">
-                <div class="row main">
-
-                    <div class="col-xs-9 col-sm-8 col-md-8 main">
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Search</label>
-                            <input type="test" class="form-control" v-model="data.searchTerm">
+            <div class="container-fluid main">
+                <div class="row">
+                    <form>
+                        <div class="col-xs-8 col-sm-8 col-md-8">
+                            <div class="form-group">
+                                <label>Search</label>
+                                <input type="test" class="form-control" v-model="data.searchTerm" />
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-xs-3 col-sm-4 col-md-4 main">
-                        <div class="form-group">
-                            <label>iOS</label>
-                            <select class="form-control" v-model="data.iOSVersionIndex">
-                                <option v-for="(iOSVersion, index) in data.iOSVersions" v-bind:value="index">
-                                    {{iOSVersion}}
-                                </option>
-                            </select>
+                        <div class="col-xs-4 col-sm-4 col-md-4">
+                            <div class="form-group">
+                                <label>iOS</label>
+                                <select class="form-control" v-model="data.iOSVersionIndex">
+                                    <option v-for="(iOSVersion, index) in data.iOSVersions" v-bind:value="index">
+                                        {{iOSVersion}}
+                                    </option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-12 main">
+                    </form>
+                </div>
+                <div class="row"></div>
+                    <div class="col-md-12">
                         <div v-for="(package, index) in filteredPackages" class="row-fluid">
                             <div v-for="version in package.versions">
                                 <div v-if="version.current">
@@ -101,10 +103,7 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
-                        <hr />
                     </div>
                 </div>
             </div>
