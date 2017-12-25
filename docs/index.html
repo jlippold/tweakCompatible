@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Jailbreak community driven compatibilty checker">
     <meta name="author" content="Jed Lippold">
-
+    
     <title>Tweak Compatibilty Checker</title>
 
     <!-- Latest compiled and minified CSS -->
@@ -82,42 +82,22 @@
                     <div class="col-md-12">
                         <div v-for="(package, index) in filteredPackages" class="row-fluid">
                             <div v-for="version in package.versions">
-                                <div v-if="version.current">
-
-                                    <strong>
-                                        <span class="label pull-right" v-bind:class="version.classObject">
-                                            Latest Version: {{package.latest}}
-                                        </span>
+                                <div v-if="version.current" class="media" style="padding: 10px 0;">
+                                    <div class="media-left media-middle" style="">
+                                        <span v-if="version.outcome.calculatedStatus == 'Working'" style="font-size: 2em; width: 36px; color: #5cb85c" class="glyphicon glyphicon-ok media-object"></span>
+                                        <span v-if="version.outcome.calculatedStatus == 'Not working'" style="font-size: 2em; width: 36px; color: #d9534f" class="glyphicon glyphicon-remove media-object"></span>
+                                        <span v-if="version.outcome.calculatedStatus == 'Likely working'" style="font-size: 2em; width: 36px; color: #f0ad4e" class="glyphicon glyphicon-time media-object"></span>
+                                        <span v-if="version.outcome.calculatedStatus == 'Unknown'" style="font-size: 2em; width: 36px; color: #f0ad4e" class="glyphicon glyphicon-question-sign media-object"></span>
+                                    </div>
+                                    <div class="media-body">
                                         <a v-bind:href="'package.html#!/' + package.id + '/details/'">
-                                            {{ package.name }}
+                                            <h4 class="media-heading">{{ package.name }} v.{{package.latest}}</h4>
                                         </a>
-                                    </strong>
-                                
-                                    <p>
-                                        <span class="label pull-right" v-bind:class="version.classObject">
-                                            Status: {{ version.outcome.calculatedStatus }}
-                                        </span>
-                                        {{ package.depiction }}
-                                    </p>
-                                    <p v-if="version.outcome.good > 0" class="bg-success">
-                                        {{ version.outcome.good }} device(s) at 
-                                        {{ version.outcome.percentage }}% reported this package as working on
-                                        iOS {{ package.iOSVersion }}.
-                                    </p>
-                                    <p v-if="version.outcome.bad > 0" class="bg-danger">
-                                        {{ version.outcome.bad }} device(s) at 
-                                        {{ 100-version.outcome.percentage }}% reported this package as
-                                        <strong>not working</strong> on 
-                                        iOS {{ package.iOSVersion }}.
-                                    </p>
-                                    <div v-if="package.notes" class="well">
-                                        <p v-for="(note, index) in package.notes">
-                                            <span class="label label-info">{{ getDeviceName(note.device) }}</span> user reported ths tweak as
-                                            <span v-if="note.status == 'Working'" class="label label-success">Working</span>
-                                            <span v-else class="label label-danger">Not Working</span>
-                                            on {{note.date}}
-                                            <span v-if="note.issues">- {{note.issues}}</span>
-                                
+                                        <p>
+                                            <span class="label pull-right" style="font-size: 0.7em" v-bind:class="version.classObject">
+                                                {{ version.outcome.calculatedStatus }}
+                                            </span>
+                                            {{ package.depiction }}
                                         </p>
                                     </div>
                                 </div>
@@ -134,9 +114,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/async/2.6.0/async.min.js"></script>
-
-
+    
     <script src="common.js"></script>
     <script src="index.js"></script>
 </body>

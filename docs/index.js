@@ -10,7 +10,7 @@ $(document).ready(function () {
             return {
                 data: {
                     searchTerm: "",
-                    iOSVersionIndex: 0,
+                    iOSVersionIndex: 2,
                     categories: [],
                     iOSVersions: [],
                     devices: [],
@@ -40,12 +40,12 @@ $(document).ready(function () {
                 });
 
 
-
                 //reformat the object for display purposes
                 filteredPackageList.forEach(function (package) {
                     package.versions.forEach(function (item) {
 
-                        item.current = (item.iOSVersion == iOSVersion && item.tweakVersion == package.latest);
+                        item.current = (item.iOSVersion == iOSVersion &&
+                             item.tweakVersion == package.latest);
                         item.classObject = {
                             "label-success": (item.outcome.calculatedStatus == "Working"),
                             "label-danger": (item.outcome.calculatedStatus == "Not working"),

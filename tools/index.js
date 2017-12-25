@@ -157,7 +157,7 @@ function reCalculate(packages, callback) {
                 Math.floor((version.outcome.good / version.outcome.total) * 100);
 
             version.outcome.calculatedStatus = "Not working";
-            if (version.outcome.percentage == 0) {
+            if (version.outcome.total == 0) {
                 version.outcome.calculatedStatus = "Unknown";
             }
             if (version.outcome.percentage > 40) {
