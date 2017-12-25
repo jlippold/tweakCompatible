@@ -79,10 +79,10 @@
                     </form>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div v-for="(package, index) in filteredPackages" class="row-fluid">
+                    <div class="col-md-12 packages">
+                        <div v-for="(package, index) in filteredPackages" class="row-fluid packages">
                             <div v-for="version in package.versions">
-                                <div v-if="version.current" class="media" style="padding: 10px 0;">
+                                <div v-if="version.current" class="media package" style="padding: 10px 0;">
                                     <div class="media-left media-middle" style="">
                                         <span v-if="version.outcome.calculatedStatus == 'Working'" style="font-size: 2em; width: 36px; color: #5cb85c" class="glyphicon glyphicon-ok media-object"></span>
                                         <span v-if="version.outcome.calculatedStatus == 'Not working'" style="font-size: 2em; width: 36px; color: #d9534f" class="glyphicon glyphicon-remove media-object"></span>
