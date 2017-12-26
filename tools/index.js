@@ -36,7 +36,8 @@ function init(callback) {
                     reCalculate(packages, next);
                 }],
                 save: ['calculate', function (results, next) {
-                    results.tweaks.packages = results.calculate.slice();
+                    results.tweaks.packages = results.calculate.pacakages.slice();
+                    results.tweaks.iOSVersions = results.calculate.iOSVersions.slice();
                     lib.writeTweakList(results.tweaks, next);
                 }],
                 commit: ['calculate', function (results, next) {
@@ -59,7 +60,7 @@ function getIssues(callback) {
         if (err) return callback(err);
         var validIssues = [];
         issues.data.forEach(function (issue) {
-            if (issue.body.substring(0, 3) == "```") {
+            if (issue.body.substring(0, 3) == "```" && issue.body.indexOf("packageStatusExplaination") > -1) {
                 var json = lib.parseJSON(issue.body.replace(/```/g, ""));
                 if (json) {
                     var thisIssue = lib.parseJSON(Buffer.from(json.base64, 'base64').toString());
@@ -144,9 +145,15 @@ function addTweaks(tweaks, change, callback) {
 }
 
 function reCalculate(packages, callback) {
+    var iOSVersions = [];
     packages.forEach(function(package) {
         var reCalculated = [];
         package.versions.forEach(function(version) {
+
+            if (iOSVersions.indexOf(version.iOSVersion) == -1) {
+                iOSVersions.push(version.iOSVersion);
+            }
+
             version.outcome.total = version.users.length;
 
             version.outcome.good = version.users.filter(function(user) {
@@ -176,7 +183,7 @@ function reCalculate(packages, callback) {
         })
         package.versions = reCalculated.slice();
     });
-    callback(null, packages);
+    callback(null, {packages: packages, iOSVersions: iOSVersions});
 }
 
 
