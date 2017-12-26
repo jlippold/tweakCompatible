@@ -9,19 +9,19 @@ Previously when a new jailbreak was released, the community manages a large goog
 
 In the spirit of open source and to give back, I spent some time writing this tweak for Cydia that adds a search button to the right of the package details page. When clicked, it displays community driven compatibility info into an alert box.
 
-Users can also go to the frontend website @ https://jlippold.github.io/tweakCompatible/ to view and user submissions.
+Users can also go to the frontend website @ https://jlippold.github.io/tweakCompatible/ to view user submissions.
 
 ## Submissions
 
-In order to submit whether a tweak works with an iOS version, you need to submit a review via cydia. If you click the serach button, then the `This Package Works!` button, you will be redirected to github issues with a pre-populated issues created (github account required).
+In order to submit whether a tweak works with an iOS version, you need to submit a review via Cydia. If you click the search button, then the `This Package Works!` button, you will be redirected to github issues with a pre-populated issue created. A github account is required to submit reviews.
 
-Every hour, I pull any open issues, update `docs/tweaks.json`, and close the ticket.
+Every hour, I pull any open issues, update `docs/tweaks.json`, and close the ticket. This is done by cron.
 
 ## Scripting
 
-This repo also contains a node js script that pulls open issues from github and updates the tweaks.json file. Just run `npm install`, then `npm start`. If changes were found, commits will be made, then just `git push` to remote.
+This repo also contains a nodejs script, `tools\index.js`, that pulls open issues from github and updates the tweaks.json file. Just run `npm install`, then `npm start`. If changes were found, commits will be made, then just `git push` to remote.
 
-To use the script the env variable `GITHUB_API_TOKEN` must be set.
+To use the script, the env variable `GITHUB_API_TOKEN` must be set.
 
 ## Calculations
 
