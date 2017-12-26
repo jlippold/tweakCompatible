@@ -10,7 +10,7 @@ $(document).ready(function () {
             return {
                 data: {
                     searchTerm: "",
-                    iOSVersionIndex: 2,
+                    iOSVersionIndex: 0,
                     categories: [],
                     iOSVersions: [],
                     devices: [],

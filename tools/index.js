@@ -23,7 +23,7 @@ function init(callback) {
             console.log("Working on: " + change.issueTitle);
             async.auto({
                 tweaks: lib.getTweakList,
-                add: ['tweaks', function(results, next) {
+                add: ['tweaks', function (results, next) {
                     addTweaks(results.tweaks, change, next);
                 }],
                 calculate: ['add', function (results, next) {
@@ -90,8 +90,8 @@ function addTweaks(tweaks, change, callback) {
         var package = new Package(change);
         console.log(JSON.stringify(package, null, 2));
         packages.push(package);
-        
-        addLabelsToIssue(change.issueNumber, ['user-submission', 'new-package'], function() {
+
+        addLabelsToIssue(change.issueNumber, ['user-submission', 'new-package'], function () {
             callback(null, packages);
         });
 
@@ -133,22 +133,22 @@ function addTweaks(tweaks, change, callback) {
                         number: change.issueNumber,
                         state: "closed"
                     };
-                    github.issues.edit(opts, function() {
+                    github.issues.edit(opts, function () {
                         callback(null, packages);
                     });
                 });
             }
 
         }
-        
+
     }
 }
 
 function reCalculate(packages, callback) {
     var iOSVersions = [];
-    packages.forEach(function(package) {
+    packages.forEach(function (package) {
         var reCalculated = [];
-        package.versions.forEach(function(version) {
+        package.versions.forEach(function (version) {
 
             if (iOSVersions.indexOf(version.iOSVersion) == -1) {
                 iOSVersions.push(version.iOSVersion);
@@ -156,7 +156,7 @@ function reCalculate(packages, callback) {
 
             version.outcome.total = version.users.length;
 
-            version.outcome.good = version.users.filter(function(user) {
+            version.outcome.good = version.users.filter(function (user) {
                 return user.status == "working" || user.status == "partial";
             }).length;
 
@@ -164,9 +164,9 @@ function reCalculate(packages, callback) {
                 return user.status == "notworking";
             }).length;
 
-            version.outcome.percentage = 
-                version.outcome.total == 0 ? 0 : 
-                Math.floor((version.outcome.good / version.outcome.total) * 100);
+            version.outcome.percentage =
+                version.outcome.total == 0 ? 0 :
+                    Math.floor((version.outcome.good / version.outcome.total) * 100);
 
             version.outcome.calculatedStatus = "Not working";
             if (version.outcome.total == 0) {
@@ -183,14 +183,18 @@ function reCalculate(packages, callback) {
         })
         package.versions = reCalculated.slice();
     });
-    callback(null, {packages: packages, iOSVersions: iOSVersions});
+
+    callback(null, {
+        packages: packages,
+        iOSVersions: iOSVersions.reverse()
+    });
 }
 
 
-function addLabelsToIssue(number, labels, callback)  {
-    github.issues.addLabels({owner, repo, number, labels }, callback);
+function addLabelsToIssue(number, labels, callback) {
+    github.issues.addLabels({ owner, repo, number, labels }, callback);
 }
 
-init(function(err) {
+init(function (err) {
     console.error(err);
 });
