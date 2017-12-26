@@ -36,7 +36,7 @@ function init(callback) {
                     reCalculate(packages, next);
                 }],
                 save: ['calculate', function (results, next) {
-                    results.tweaks.packages = results.calculate.pacakages.slice();
+                    results.tweaks.packages = results.calculate.packages.slice();
                     results.tweaks.iOSVersions = results.calculate.iOSVersions.slice();
                     lib.writeTweakList(results.tweaks, next);
                 }],
