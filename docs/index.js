@@ -45,7 +45,7 @@ $(document).ready(function () {
                     package.versions.forEach(function (item) {
 
                         item.current = (item.iOSVersion == iOSVersion &&
-                             item.tweakVersion == package.latest);
+                            item.tweakVersion == package.latest);
                         item.classObject = {
                             "label-success": (item.outcome.calculatedStatus == "Working"),
                             "label-danger": (item.outcome.calculatedStatus == "Not working"),
@@ -71,14 +71,22 @@ $(document).ready(function () {
             selectOSFilter: function (event, index) {
                 this.data.iOSVersionIndex = index;
             },
-            fetch: function (done) {
+            fetch: function () {
                 var c = this;
                 $.getJSON("tweaks.json", function (data) {
                     c.data.categories = data.categories.slice();
                     c.data.iOSVersions = data.iOSVersions.slice();
                     c.data.devices = data.devices.slice();
                     c.data.packages = data.packages.slice();
-                    if (done) { done(); }
+                    //detect ios version from useragent
+                    var v = iOSVersion();
+                    if (v) {
+                        c.data.iOSVersions.forEach(function (vers, idx) {
+                            if (v == vers) {
+                                c.data.iOSVersionIndex = idx;
+                            }
+                        });
+                    }
                 });
             }
         }
@@ -93,10 +101,26 @@ $(document).ready(function () {
         }
     });
 
-    $(".input-group-btn .dropdown-menu li a").click(function () {
-        var selText = $(this).html();
-        $(this).parents('.input-group-btn').find('.btn-search').html(selText);
-    });
-
-
 });
+
+
+function iOSVersion() {
+    if (window.MSStream) {
+        // There is some iOS in Windows Phone...
+        // https://msdn.microsoft.com/en-us/library/hh869301(v=vs.85).aspx
+        return false;
+    }
+    var match = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
+        version;
+
+    if (match !== undefined && match !== null) {
+        version = [
+            parseInt(match[1], 10),
+            parseInt(match[2], 10),
+            parseInt(match[3] || 0, 10)
+        ];
+        return parseFloat(version.join('.'));
+    }
+
+    return false;
+}
