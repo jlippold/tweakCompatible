@@ -9,19 +9,31 @@ Previously when a new jailbreak was released, the community manages a large goog
 
 In the spirit of open source and to give back, I spent some time writing this tweak for Cydia that adds a search button to the right of the package details page. When clicked, it displays community driven compatibility info into an alert box.
 
-With the iOS 11 jailbreak approaching, I rushed to finish this. I will be improving upon it and submitting to bigboss.
+Users can also go to the frontend website @ https://jlippold.github.io/tweakCompatible/ to view and user submissions.
 
-## Contributing
+## Submissions
 
-I openly accept pull requests. To add compatible tweaks edit [/docs/tweaks.json](/docs/tweaks.json), following my format.
+In order to submit whether a tweak works with an iOS version, you need to submit a review via cydia. If you click the serach button, then the `This Package Works!` button, you will be redirected to github issues with a pre-populated issues created (github account required).
 
-I am building a web frontend, https://jlippold.github.io/tweakCompatible/  which will simplify the pull request / submission process.
+Every hour, I pull any open issues, update `docs/tweaks.json`, and close the ticket.
 
-I also gladly welcome pull requests to the code base.
+## Scripting
+
+This repo also contains a node js script that pulls open issues from github and updates the tweaks.json file. Just run `npm install`, then `npm start`. If changes were found, commits will be made, then just `git push` to remote.
+
+To use the script the env variable `GITHUB_API_TOKEN` must be set.
+
+## Calculations
+
+I wanted to make this automated, community driven, with minimal human dependencies. Here is how the statuses are calculated:
+
+ - `Working`: if 75% of the users say it's working. 
+ - `Likely working`: if 40% of the users say it's working. 
+ - `Not working`: if < 40% say it's working
 
 ## Installing
 
-Currently, an alpha deb is available here: https://github.com/jlippold/tweakCompatible/releases
+This tweak can be installed via the big boss repo.
 
 ## License
 
@@ -29,4 +41,4 @@ Licensed under [Apache License, version 2.0](https://www.apache.org/licenses/LIC
 
 ## Credits
 
-Thanks to [HASHBANG](https://github.com/hbang) for open sourcing the now defunct tweak Pheromone. I learned and took a lot from them.
+Thanks to [HASHBANG](https://github.com/hbang) for open sourcing the now defunct tweak Pheromone.
