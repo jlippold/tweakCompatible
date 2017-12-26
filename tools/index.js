@@ -29,8 +29,8 @@ function init(callback) {
                 calculate: ['add', function (results, next) {
                     var packages = results.add.slice();
                     packages.sort(function compare(a, b) {
-                        if (a.name < b.name) return -1;
-                        if (a.name > b.name) return 1;
+                        if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+                        if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
                         return 0;
                     });
                     reCalculate(packages, next);
