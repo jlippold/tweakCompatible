@@ -8,10 +8,10 @@
     "Development"
   ],
   "iOSVersions": [
-    "10.2.1",
     "10.1.1",
     "10.3.3",
-    "10.2"
+    "10.2",
+    "10.2.1"
   ],
   "devices": [
     {
@@ -208,6 +208,39 @@
     }
   ],
   "packages": [
+    {
+      "id": "org.rdharris.activatecommand",
+      "name": "Activate Command",
+      "latest": "1.4.2-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.rdharris.activatecommand/",
+      "depiction": "Run shell commands using activator actions.",
+      "category": "Tweaks",
+      "author": "rjharris",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.4.2-1",
+          "iOSVersion": "10.2.1",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone8,1",
+              "issues": "",
+              "date": "2017-12-27T22:40:05Z",
+              "userName": "tw9ak"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "libactivator",
       "name": "Activator",
