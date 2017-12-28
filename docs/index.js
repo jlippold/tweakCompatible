@@ -35,7 +35,7 @@ $(document).ready(function () {
                     }
                     return (
                         package.name.toLowerCase().indexOf(searchTerm) > -1 ||
-                        package.depiction.toLowerCase().indexOf(searchTerm) > -1
+                        package.shortDescription.toLowerCase().indexOf(searchTerm) > -1
                     );
                 });
 

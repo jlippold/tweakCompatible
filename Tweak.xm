@@ -205,6 +205,7 @@
 			@"commercial": @(package.isCommercial),
 			@"category": package.section,
 			@"depiction": package.shortDescription,
+			@"shortDescription": package.shortDescription,
 			@"iOSVersionAllowed": @(allowediOSVersion),
 			@"packageCategoryAllowed": @(allowedCategory),
 			@"packageInstalled": @(installed),

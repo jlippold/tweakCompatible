@@ -18,7 +18,7 @@ $(document).ready(function () {
                     latest: "",
                     repository: "",
                     url: "",
-                    depiction: "",
+                    shortDescription: "",
                     category: "",
                     author: "",
                     commercial: false,

@@ -6,7 +6,7 @@ function Package(props) {
     this.latest = null;
     this.repository = null;
     this.url = null;
-    this.depiction = null;
+    this.shortDescription = props.depiction;
     this.category = null;
     this.author = null;
     this.commercial = null;

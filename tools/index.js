@@ -99,9 +99,9 @@ function addTweaks(tweaks, change, callback) {
         console.log("Editing package: ", package.id);
         console.log(JSON.stringify(package, null, 2));
 
-        //edit packing info
+        //edit package info
         package.latest = change.latest;
-        package.depiction = change.depiction;
+        package.shortDescription = change.shortDescription;
 
         //find version
         var version = lib.findVersionForPackageByOS(change.latest, change.iOSVersion, package);
