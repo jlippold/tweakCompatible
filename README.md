@@ -33,7 +33,20 @@ I wanted to make this automated, community driven, with minimal human dependenci
 
 ## Installing
 
-This tweak can be installed via the big boss repo.
+This tweak can be installed with Cydia via the [big boss](http://apt.thebigboss.org/onepackage.php?bundleid=bz.jed.tweakcompatible) repo.
+
+## To-Do
+
+ - Add moderation tools
+    - block package / lock package
+    - block user
+    - block cydia repo
+    - delete review
+ - Never ending scroll, more filters
+ - `rebuild` command to rebuild index from closed issues
+ - add pagination issue looper
+ - minimize json, and split by ios version
+ - add webhook processing
 
 ## License
 
