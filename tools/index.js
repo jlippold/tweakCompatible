@@ -56,7 +56,7 @@ function init(callback) {
 }
 
 function getIssues(callback) {
-    github.issues.getForRepo({ owner, repo }, function (err, issues) {
+    github.issues.getForRepo({ owner, repo, per_page: 100 }, function (err, issues) {
         if (err) return callback(err);
         var validIssues = [];
         issues.data.forEach(function (issue) {
