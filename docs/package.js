@@ -31,7 +31,13 @@ $(document).ready(function () {
             this.fetch();
         },
         computed: {
-
+            uniqueVersions: function() {
+                return this.package.versions.map(function(v) {
+                    return v.tweakVersion;
+                }).filter(function (version, idx, self) {
+                    return self.indexOf(version) === idx;
+                }); 
+            }
         },
         methods: {
             getDeviceName: function (deviceId) {
