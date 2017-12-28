@@ -17,8 +17,28 @@ github.authenticate({
     token: process.env.GITHUB_API_TOKEN
 });
 
+var mode;
+if (process.argv.length == 2) {
+    mode = "process"; //get new open issues
+} else if (process.argv.length == 3) {
+    if (process.argv[2] == "rebuild") {
+        mode = "rebuild"; //re-import closed issues
+    } else {
+        return console.error("bad args");
+    }
+} else {
+    return console.error("bad args");
+}
+
+
+
 function init(callback) {
     getIssues(function (err, issues) {
+        if (mode == "rebuild") {
+            //wipe out old items
+            lib.wipePackages();
+        }
+
         async.eachOfLimit(issues, 1, function (change, idx, nextIssue) {
             console.log("Working on: " + change.issueTitle);
             async.auto({
@@ -41,7 +61,11 @@ function init(callback) {
                     lib.writeTweakList(results.tweaks, next);
                 }],
                 commit: ['calculate', function (results, next) {
+                    if (mode == "rebuild") {
+                        return next();
+                    } 
                     lib.commitAgainstIssue(change.issueNumber, next);
+                    //
                 }]
             }, function (err, result) {
                 nextIssue(err);
@@ -55,53 +79,34 @@ function init(callback) {
 
 }
 
-function getIssues(callback) {
-    github.issues.getForRepo({ owner, repo, per_page: 100 }, function (err, issues) {
-        if (err) return callback(err);
-        var validIssues = [];
-        issues.data.forEach(function (issue) {
-            if (issue.body.substring(0, 3) == "```" && issue.body.indexOf("packageStatusExplaination") > -1) {
-                var json = lib.parseJSON(issue.body.replace(/```/g, ""));
-                if (json) {
-                    var thisIssue = lib.parseJSON(Buffer.from(json.base64, 'base64').toString());
-                    if (thisIssue) {
-                        thisIssue.issueId = issue.id;
-                        thisIssue.issueNumber = issue.number;
-                        thisIssue.date = issue.created_at;
-                        thisIssue.issueTitle = issue.title;
-                        thisIssue.userNotes = json.notes;
-                        thisIssue.userChosenStatus = json.chosenStatus;
-                        thisIssue.userName = issue.user.login;
-                        validIssues.push(thisIssue);
-                    }
-                }
-            }
-        });
-        callback(null, validIssues, []);
-    });
-}
-
 function addTweaks(tweaks, change, callback) {
     var packages = tweaks.packages.slice();
     var package = lib.getPackageById(change.packageId, packages);
 
     if (!package) {
         console.log("New package creation: ", change.packageId);
-        var package = new Package(change);
-        console.log(JSON.stringify(package, null, 2));
-        packages.push(package);
 
+        var package = new Package(change);
+        
+        if (!package.id) {
+            console.error("Bad package Id", package, change)
+            return callback("Bad package Id");
+        }
+
+        packages.push(package);
+        if (mode == "rebuild") {
+            return callback(null, packages);
+        }
         addLabelsToIssue(change.issueNumber, ['user-submission', 'new-package'], function () {
             callback(null, packages);
         });
 
     } else {
         console.log("Editing package: ", package.id);
-        console.log(JSON.stringify(package, null, 2));
-
+        
         //edit package info
         package.latest = change.latest;
-        package.shortDescription = change.shortDescription;
+        package.shortDescription = change.depiction || change.shortDescription;
 
         //find version
         var version = lib.findVersionForPackageByOS(change.latest, change.iOSVersion, package);
@@ -110,7 +115,9 @@ function addTweaks(tweaks, change, callback) {
             //create version with review
             var v = new Version(change);
             package.versions.push(v);
-
+            if (mode == "rebuild") {
+                return callback(null, packages);
+            }
             addLabelsToIssue(change.issueNumber, ['user-submission', 'new-version'], function () {
                 callback(null, packages);
             });
@@ -122,11 +129,17 @@ function addTweaks(tweaks, change, callback) {
                 console.log("Adding review to version");
                 var u = new User(change);
                 version.users.push(u);
+                if (mode == "rebuild") {
+                    return callback(null, packages);
+                }
                 addLabelsToIssue(change.issueNumber, ['user-submission', 'new-review'], function () {
                     callback(null, packages);
                 });
             } else {
-                console.log("review already in system", user);
+                console.log("review already in system");
+                if (mode == "rebuild") {
+                    return callback(null, packages);
+                }
                 addLabelsToIssue(change.issueNumber, ['user-submission', 'duplicate'], function () {
                     var opts = {
                         owner, repo,
@@ -195,6 +208,74 @@ function addLabelsToIssue(number, labels, callback) {
     github.issues.addLabels({ owner, repo, number, labels }, callback);
 }
 
+
+function getIssues(callback) {
+    var allIssues = [];
+    var nextPage = true;
+
+    var options = {
+        owner, repo,
+        per_page: 100,
+        page: 1,
+        state: (mode == "rebuild" ? "closed" : "open"),
+        sort: "created",
+        direction: (mode == "rebuild" ? "asc" : "desc")
+    };
+
+    //loop all issues
+    async.until(
+        function () {
+            return nextPage == false
+        },
+        function (next) {
+            github.issues.getForRepo(options, function (err, result) {
+                result.data.forEach(function(issue) {
+                    var shouldSkip = issue.labels.find(function(label) {
+                        return label.name == "bypass"
+                    });
+                    if (!shouldSkip) {
+                        allIssues.push(issue);
+                    }
+                })
+                
+                if (github.hasNextPage(result)) {
+                    options.page++;
+                    nextPage = true;
+                } else {
+                    nextPage = false;
+                }
+                next(err);
+            });
+        },
+        function (err) {
+            var validIssues = [];
+            allIssues.forEach(function (issue) {
+                if (issue.body.substring(0, 3) == "```" && issue.body.indexOf("packageStatusExplaination") > -1) {
+                    var json = lib.parseJSON(issue.body.replace(/```/g, ""));
+                    if (json) {
+                        var thisIssue = lib.parseJSON(Buffer.from(json.base64, 'base64').toString());
+                        if (thisIssue) {
+                            thisIssue.issueId = issue.id;
+                            thisIssue.issueNumber = issue.number;
+                            thisIssue.date = issue.created_at;
+                            thisIssue.issueTitle = issue.title;
+                            thisIssue.userNotes = json.notes;
+                            thisIssue.userChosenStatus = json.chosenStatus;
+                            thisIssue.userName = issue.user.login;
+                            validIssues.push(thisIssue);
+                        }
+                    }
+                }
+            });
+            callback(null, validIssues, []);
+        }
+    );
+
+}
+
+
 init(function (err) {
-    console.error(err);
+    if (err) {
+        console.error(err);
+    }
 });

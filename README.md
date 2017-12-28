@@ -44,8 +44,6 @@ This tweak can be installed with Cydia via the [big boss](http://apt.thebigboss.
     - delete review
  - Add request feature
  - Never ending scroll, more filters
- - `rebuild` command to rebuild index from closed issues
- - add pagination issue looper
  - minimize json, and split by ios version
  - add webhook processing
 

@@ -4,6 +4,7 @@ function User(props) {
     this.issues = props.userNotes;
     this.date = props.date;
     this.userName = props.userName;
+    this.issueNumber = props.issueNumber;
 }
 
 module.exports = User;

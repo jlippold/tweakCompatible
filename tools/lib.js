@@ -35,6 +35,13 @@ module.exports.commitAgainstIssue = function (issueNumber, callback) {
     });
 }
 
+module.exports.wipePackages = function () {
+    var jsonfile = require('jsonfile')
+    var file = jsonfile.readFileSync(tweakListPath);
+    file.packages = [];
+    jsonfile.writeFileSync(tweakListPath, file, { spaces: 2 });
+}
+
 module.exports.getTweakList = function (callback) {
     var jsonfile = require('jsonfile')
     jsonfile.readFile(tweakListPath, callback);

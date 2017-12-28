@@ -8,6 +8,7 @@
     "Development"
   ],
   "iOSVersions": [
+    "8.3",
     "10.0.1",
     "10.0.2",
     "10.3.3",
@@ -244,6 +245,7 @@
         {
           "tweakVersion": "1.0-6",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -257,7 +259,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:21:59Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 316
             }
           ]
         }
@@ -277,6 +280,7 @@
         {
           "tweakVersion": "5.9.10",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -290,7 +294,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:06:06Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 249
             }
           ]
         }
@@ -310,6 +315,7 @@
         {
           "tweakVersion": "1.4.2-1",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -323,7 +329,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:40:05Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 159
             }
           ]
         }
@@ -333,42 +340,17 @@
       "id": "libactivator",
       "name": "Activator",
       "latest": "1.9.13~beta1",
-      "repository": "rpetrich repo",
-      "url": "https://rpetri.ch/repo/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/libactivator/",
+      "shortDescription": "Centralized gestures, button and shortcut management for iOS",
       "category": "System",
       "author": "Ryan Petrich",
       "commercial": false,
       "versions": [
         {
-          "tweakVersion": "1.9.13~beta1",
-          "iOSVersion": "10.2",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone8,1",
-              "issues": "",
-              "date": "2017-12-23T19:30:31Z",
-              "userName": "jlippold"
-            },
-            {
-              "status": "working",
-              "device": "iPhone8,1",
-              "issues": "",
-              "date": "2017-12-27T19:09:50Z",
-              "userName": "dareal68"
-            }
-          ]
-        },
-        {
           "tweakVersion": "1.9.12",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -382,13 +364,37 @@
               "device": "iPhone5,4",
               "issues": "Haven't tested it fully, but most of the actions seems to work",
               "date": "2017-12-25T23:16:17Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 38
+            }
+          ]
+        },
+        {
+          "tweakVersion": "1.9.13~beta1",
+          "iOSVersion": "10.2",
+          "repository": "rpetrich repo",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone8,1",
+              "issues": "",
+              "date": "2017-12-27T19:09:50Z",
+              "userName": "dareal68",
+              "issueNumber": 49
             }
           ]
         },
         {
           "tweakVersion": "1.9.13~beta1",
           "iOSVersion": "10.1.1",
+          "repository": "rpetrich repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -402,20 +408,23 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:47:13Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 60
             },
             {
               "status": "working",
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:26:56Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 325
             }
           ]
         },
         {
           "tweakVersion": "1.9.13~beta1",
           "iOSVersion": "10.2.1",
+          "repository": "rpetrich repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -429,13 +438,15 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:40:21Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 161
             }
           ]
         },
         {
           "tweakVersion": "1.9.13~beta1",
           "iOSVersion": "10.0.2",
+          "repository": "rpetrich repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -449,7 +460,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:30:26Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 355
             }
           ]
         }
@@ -469,6 +481,7 @@
         {
           "tweakVersion": "1.1-4",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -482,7 +495,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:47:32Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 61
             }
           ]
         }
@@ -502,6 +516,7 @@
         {
           "tweakVersion": "1.0.5",
           "iOSVersion": "10.2",
+          "repository": "Alfhaily APT",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -515,7 +530,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T19:10:24Z",
-              "userName": "dareal68"
+              "userName": "dareal68",
+              "issueNumber": 50
             }
           ]
         }
@@ -535,6 +551,7 @@
         {
           "tweakVersion": "1.0.6r1",
           "iOSVersion": "10.2",
+          "repository": "Spark's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -548,7 +565,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:05:46Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 256
             }
           ]
         }
@@ -568,6 +586,7 @@
         {
           "tweakVersion": "1.3",
           "iOSVersion": "10.3.3",
+          "repository": "ModMyi (Archive)",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -581,7 +600,8 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-25T23:51:37Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 39
             }
           ]
         }
@@ -601,6 +621,7 @@
         {
           "tweakVersion": "1.0.2-1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -614,7 +635,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:05:58Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 257
             }
           ]
         }
@@ -634,6 +656,7 @@
         {
           "tweakVersion": "1.0",
           "iOSVersion": "10.2",
+          "repository": "Rishanan's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -647,7 +670,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:06:09Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 258
             }
           ]
         }
@@ -667,6 +691,7 @@
         {
           "tweakVersion": "2.0.4",
           "iOSVersion": "10.0.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -679,8 +704,9 @@
               "status": "working",
               "device": "iPhone9,1",
               "issues": "",
-              "date": "2017-12-28T17:38:05Z",
-              "userName": "nbrunette"
+              "date": "2017-12-28T17:37:29Z",
+              "userName": "nbrunette",
+              "issueNumber": 381
             }
           ]
         }
@@ -700,6 +726,7 @@
         {
           "tweakVersion": "2.1.4-3",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -713,7 +740,8 @@
               "device": "iPhone5,4",
               "issues": "Just crashes the springboard",
               "date": "2017-12-25T19:59:52Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 30
             }
           ]
         }
@@ -733,6 +761,7 @@
         {
           "tweakVersion": "1.6.3",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -746,7 +775,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:06:22Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 259
             }
           ]
         }
@@ -766,6 +796,7 @@
         {
           "tweakVersion": "1.0",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -779,7 +810,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:47:47Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 62
             }
           ]
         }
@@ -791,6 +823,7 @@
       "latest": "1.0r-71",
       "repository": "beta.unlimapps.com",
       "url": "https://beta.unlimapps.com/",
+      "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
       "category": "System",
       "author": "UnlimApps Inc.",
       "commercial": false,
@@ -798,6 +831,7 @@
         {
           "tweakVersion": "1.0r-71",
           "iOSVersion": "10.3.3",
+          "repository": "beta.unlimapps.com",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -811,20 +845,23 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-25T23:08:05Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 37
             },
             {
               "status": "working",
               "device": "iPad3,6",
               "issues": "",
               "date": "2017-12-27T21:33:04Z",
-              "userName": "cazxtc"
+              "userName": "cazxtc",
+              "issueNumber": 131
             }
           ]
         },
         {
           "tweakVersion": "1.0r-71",
           "iOSVersion": "10.1.1",
+          "repository": "beta.unlimapps.com",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -838,13 +875,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:48:07Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 63
             }
           ]
         },
         {
           "tweakVersion": "1.0r-71",
           "iOSVersion": "10.2.1",
+          "repository": "beta.unlimapps.com",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -858,13 +897,15 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:40:38Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 162
             }
           ]
         },
         {
           "tweakVersion": "1.0r-71",
           "iOSVersion": "10.0.2",
+          "repository": "beta.unlimapps.com",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -878,7 +919,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:31:49Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 356
             }
           ]
         }
@@ -898,6 +940,7 @@
         {
           "tweakVersion": "1.1-6",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -911,7 +954,8 @@
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:28:43Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 326
             }
           ]
         }
@@ -931,6 +975,7 @@
         {
           "tweakVersion": "2.0.2",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -944,7 +989,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:32:40Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 357
             }
           ]
         }
@@ -964,6 +1010,7 @@
         {
           "tweakVersion": "1.0.3-1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -977,7 +1024,8 @@
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:29:28Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 327
             }
           ]
         }
@@ -989,6 +1037,7 @@
       "latest": "1.6.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.mileskabal.appinfo/",
+      "shortDescription": "display informations about installed apps",
       "category": "Utilities",
       "author": "Miles",
       "commercial": false,
@@ -996,6 +1045,7 @@
         {
           "tweakVersion": "1.6.2",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1009,13 +1059,15 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-25T23:58:12Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 41
             }
           ]
         },
         {
           "tweakVersion": "1.6.2",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1029,7 +1081,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:33:36Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 358
             }
           ]
         }
@@ -1049,6 +1102,7 @@
         {
           "tweakVersion": "1.2",
           "iOSVersion": "10.3.3",
+          "repository": "Cydia/Telesphoreo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1062,13 +1116,15 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-25T19:45:30Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 27
             }
           ]
         },
         {
           "tweakVersion": "1.2",
           "iOSVersion": "10.1.1",
+          "repository": "Cydia/Telesphoreo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1082,13 +1138,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:48:25Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 64
             }
           ]
         },
         {
           "tweakVersion": "1.2",
           "iOSVersion": "10.2.1",
+          "repository": "Cydia/Telesphoreo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1102,13 +1160,15 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:40:56Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 163
             }
           ]
         },
         {
           "tweakVersion": "1.2",
           "iOSVersion": "10.2",
+          "repository": "Cydia/Telesphoreo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1122,7 +1182,8 @@
               "device": "iPhone6,1",
               "issues": "",
               "date": "2017-12-28T11:07:51Z",
-              "userName": "legitcomputerwhisperer"
+              "userName": "legitcomputerwhisperer",
+              "issueNumber": 350
             }
           ]
         }
@@ -1142,6 +1203,7 @@
         {
           "tweakVersion": "1.5.13",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1155,13 +1217,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:48:38Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 65
             }
           ]
         },
         {
           "tweakVersion": "1.5.13",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1175,7 +1239,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:06:49Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 260
             }
           ]
         }
@@ -1195,6 +1260,7 @@
         {
           "tweakVersion": "2.5",
           "iOSVersion": "10.1.1",
+          "repository": "ModMyi (Archive)",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1208,7 +1274,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:48:53Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 66
             }
           ]
         }
@@ -1228,6 +1295,7 @@
         {
           "tweakVersion": "6.0.2",
           "iOSVersion": "10.1.1",
+          "repository": "Karen's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1241,7 +1309,8 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-28T00:06:42Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 251
             }
           ]
         }
@@ -1261,6 +1330,7 @@
         {
           "tweakVersion": "1.8",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1274,7 +1344,8 @@
               "device": "iPhone6,2",
               "issues": "",
               "date": "2017-12-25T11:00:24Z",
-              "userName": "newenglander"
+              "userName": "newenglander",
+              "issueNumber": 23
             }
           ]
         }
@@ -1286,6 +1357,7 @@
       "latest": "2.6",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/net.erike.audioexplorerplus/",
+      "shortDescription": "find & use audio from your device files",
       "category": "Multimedia",
       "author": "Erik E.",
       "commercial": true,
@@ -1293,6 +1365,7 @@
         {
           "tweakVersion": "2.6",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1306,13 +1379,15 @@
               "device": "iPhone6,2",
               "issues": "",
               "date": "2017-12-24T12:06:19Z",
-              "userName": "newenglander"
+              "userName": "newenglander",
+              "issueNumber": 22
             }
           ]
         },
         {
           "tweakVersion": "2.6",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1326,7 +1401,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:34:30Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 359
             }
           ]
         }
@@ -1346,6 +1422,7 @@
         {
           "tweakVersion": "1.5-143",
           "iOSVersion": "10.1.1",
+          "repository": "limneos.net",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1359,7 +1436,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:29:38Z",
-              "userName": "kaser2010"
+              "userName": "kaser2010",
+              "issueNumber": 56
             }
           ]
         }
@@ -1379,6 +1457,7 @@
         {
           "tweakVersion": "1.0.0~rc1",
           "iOSVersion": "10.2",
+          "repository": "ShadeZepheri Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1392,7 +1471,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:08:10Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 261
             }
           ]
         }
@@ -1412,6 +1492,7 @@
         {
           "tweakVersion": "1.0.5-1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1425,13 +1506,15 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T19:11:04Z",
-              "userName": "dareal68"
+              "userName": "dareal68",
+              "issueNumber": 51
             }
           ]
         },
         {
           "tweakVersion": "1.0.5-1",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -1445,7 +1528,8 @@
               "device": "iPhone6,1",
               "issues": "",
               "date": "2017-12-27T20:34:50Z",
-              "userName": "aukeba"
+              "userName": "aukeba",
+              "issueNumber": 129
             }
           ]
         }
@@ -1465,6 +1549,7 @@
         {
           "tweakVersion": "0.1",
           "iOSVersion": "10.1.1",
+          "repository": "julioverne's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1478,7 +1563,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:49:25Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 67
             }
           ]
         }
@@ -1498,6 +1584,7 @@
         {
           "tweakVersion": "3.6.1-1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1511,7 +1598,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:49:54Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 68
             }
           ]
         }
@@ -1531,6 +1619,7 @@
         {
           "tweakVersion": "1.5.4.1",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1544,7 +1633,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T09:57:29Z",
-              "userName": "lucky77665t"
+              "userName": "lucky77665t",
+              "issueNumber": 344
             }
           ]
         }
@@ -1564,6 +1654,7 @@
         {
           "tweakVersion": "3.5",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1577,7 +1668,8 @@
               "device": "iPhone6,1",
               "issues": "",
               "date": "2017-12-27T20:35:22Z",
-              "userName": "aukeba"
+              "userName": "aukeba",
+              "issueNumber": 130
             }
           ]
         }
@@ -1597,6 +1689,7 @@
         {
           "tweakVersion": "1.8.1.1-1",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1610,7 +1703,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:34:48Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 360
             }
           ]
         }
@@ -1630,6 +1724,7 @@
         {
           "tweakVersion": "0.7.0",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1643,7 +1738,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:08:26Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 262
             }
           ]
         }
@@ -1663,6 +1759,7 @@
         {
           "tweakVersion": "1.7.0",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1676,13 +1773,15 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:41:22Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 164
             }
           ]
         },
         {
           "tweakVersion": "1.7.0",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1696,13 +1795,15 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-28T00:10:47Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 252
             }
           ]
         },
         {
           "tweakVersion": "1.7.0",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1716,7 +1817,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:23:42Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 317
             }
           ]
         }
@@ -1736,6 +1838,7 @@
         {
           "tweakVersion": "0.3.1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1749,7 +1852,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:50:45Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 69
             }
           ]
         }
@@ -1769,6 +1873,7 @@
         {
           "tweakVersion": "1.3.9",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1782,7 +1887,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:41:53Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 165
             }
           ]
         }
@@ -1802,6 +1908,7 @@
         {
           "tweakVersion": "1.0.7~beta7",
           "iOSVersion": "10.1.1",
+          "repository": "tateu's repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1815,7 +1922,8 @@
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:31:45Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 328
             }
           ]
         }
@@ -1835,6 +1943,7 @@
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1848,7 +1957,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:08:38Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 263
             }
           ]
         }
@@ -1860,6 +1970,7 @@
       "latest": "1.0.4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/info.rpdev.betterfiveicondock/",
+      "shortDescription": "Five Icon Dock with proper spacing!",
       "category": "Tweaks",
       "author": "Redpandadev",
       "commercial": false,
@@ -1867,6 +1978,7 @@
         {
           "tweakVersion": "1.0.4",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1880,13 +1992,15 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:08:50Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 264
             }
           ]
         },
         {
           "tweakVersion": "1.0.4",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1900,7 +2014,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:35:05Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 361
             }
           ]
         }
@@ -1920,6 +2035,7 @@
         {
           "tweakVersion": "1.1",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1933,13 +2049,15 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-27T08:04:28Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 43
             }
           ]
         },
         {
           "tweakVersion": "1.1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1953,7 +2071,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:51:47Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 70
             }
           ]
         }
@@ -1973,6 +2092,7 @@
         {
           "tweakVersion": "2.1-295",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1986,7 +2106,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T09:56:59Z",
-              "userName": "lucky77665t"
+              "userName": "lucky77665t",
+              "issueNumber": 343
             }
           ]
         }
@@ -2006,6 +2127,7 @@
         {
           "tweakVersion": "0.1.2-1",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2019,7 +2141,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:35:21Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 362
             }
           ]
         }
@@ -2039,6 +2162,7 @@
         {
           "tweakVersion": "1.17-1",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Likely working",
             "percentage": 50,
@@ -2052,14 +2176,16 @@
               "device": "iPhone5,4",
               "issues": "Some links may be opened through safary, but mostly works",
               "date": "2017-12-27T08:06:15Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 44
             },
             {
               "status": "not working",
               "device": "iPad3,6",
               "issues": "",
               "date": "2017-12-27T21:34:13Z",
-              "userName": "cazxtc"
+              "userName": "cazxtc",
+              "issueNumber": 133
             }
           ]
         }
@@ -2079,6 +2205,7 @@
         {
           "tweakVersion": "2.0-1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2092,13 +2219,15 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:09:14Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 265
             }
           ]
         },
         {
           "tweakVersion": "2.0-1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2112,7 +2241,8 @@
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:32:11Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 329
             }
           ]
         }
@@ -2132,6 +2262,7 @@
         {
           "tweakVersion": "1.1.3",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2145,20 +2276,23 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-23T23:20:23Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 18
             },
             {
               "status": "working",
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:32:43Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 330
             }
           ]
         },
         {
           "tweakVersion": "1.1.3",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2172,7 +2306,8 @@
               "device": "iPhone5,1",
               "issues": "",
               "date": "2017-12-27T23:53:47Z",
-              "userName": "johnnotdaniel"
+              "userName": "johnnotdaniel",
+              "issueNumber": 208
             }
           ]
         }
@@ -2192,6 +2327,7 @@
         {
           "tweakVersion": "3.1.5",
           "iOSVersion": "10.3.3",
+          "repository": "ModMyi (Archive)",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -2205,7 +2341,8 @@
               "device": "iPhone5,4",
               "issues": "Crashes upon launch",
               "date": "2017-12-27T08:03:55Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 42
             }
           ]
         }
@@ -2225,6 +2362,7 @@
         {
           "tweakVersion": "1.1.7",
           "iOSVersion": "10.2",
+          "repository": "BytaFont",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2238,7 +2376,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-23T22:03:28Z",
-              "userName": "Ernest0-Production"
+              "userName": "Ernest0-Production",
+              "issueNumber": 16
             }
           ]
         }
@@ -2258,6 +2397,7 @@
         {
           "tweakVersion": "0.1",
           "iOSVersion": "10.1.1",
+          "repository": "rpetrich repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2271,13 +2411,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:53:05Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 71
             }
           ]
         },
         {
           "tweakVersion": "0.1",
           "iOSVersion": "10.2",
+          "repository": "rpetrich repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2291,7 +2433,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:10:02Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 267
             }
           ]
         }
@@ -2311,6 +2454,7 @@
         {
           "tweakVersion": "1.3-169",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2324,7 +2468,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:10:15Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 268
             }
           ]
         }
@@ -2344,6 +2489,7 @@
         {
           "tweakVersion": "3.2-3",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2357,7 +2503,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:53:25Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 72
             }
           ]
         }
@@ -2377,6 +2524,7 @@
         {
           "tweakVersion": "1.4",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2390,13 +2538,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:53:38Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 73
             }
           ]
         },
         {
           "tweakVersion": "1.4",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2410,7 +2560,8 @@
               "device": "iPhone5,1",
               "issues": "",
               "date": "2017-12-27T23:54:40Z",
-              "userName": "johnnotdaniel"
+              "userName": "johnnotdaniel",
+              "issueNumber": 210
             }
           ]
         }
@@ -2430,6 +2581,7 @@
         {
           "tweakVersion": "0.0.2",
           "iOSVersion": "10.1.1",
+          "repository": "Skylerk99",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2443,7 +2595,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:53:50Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 74
             }
           ]
         }
@@ -2463,6 +2616,7 @@
         {
           "tweakVersion": "1.0-6",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2476,7 +2630,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:54:02Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 75
             }
           ]
         }
@@ -2496,6 +2651,7 @@
         {
           "tweakVersion": "1.0-2",
           "iOSVersion": "10.1.1",
+          "repository": "r3st1t0u's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2509,40 +2665,8 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-23T23:21:19Z",
-              "userName": "sevenpastzeero"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "net.bearlike.celatus",
-      "name": "Celatus",
-      "latest": "0.2-6",
-      "repository": "Bearlike.net",
-      "url": "http://repo.bearlike.net/",
-      "shortDescription": "A tweak/switch to hide apps from Springboard.",
-      "category": "Tweaks",
-      "author": "fecaleagle",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "0.2-6",
-          "iOSVersion": "10.2",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone8,1",
-              "issues": "",
-              "date": "2017-12-23T19:37:11Z",
-              "userName": "jlippold"
+              "userName": "sevenpastzeero",
+              "issueNumber": 19
             }
           ]
         }
@@ -2562,6 +2686,7 @@
         {
           "tweakVersion": "1.0.1-1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2575,7 +2700,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:10:33Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 269
             }
           ]
         }
@@ -2595,6 +2721,7 @@
         {
           "tweakVersion": "1.1",
           "iOSVersion": "10.2.1",
+          "repository": "CP Digital Darkroom Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2608,7 +2735,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:42:13Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 166
             }
           ]
         }
@@ -2628,6 +2756,7 @@
         {
           "tweakVersion": "0.0.1-9",
           "iOSVersion": "10.3.3",
+          "repository": "CoolStar's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2641,7 +2770,8 @@
               "device": "iPhone5,2",
               "issues": "",
               "date": "2017-12-28T02:18:39Z",
-              "userName": "TheRecluse"
+              "userName": "TheRecluse",
+              "issueNumber": 321
             }
           ]
         }
@@ -2661,6 +2791,7 @@
         {
           "tweakVersion": "2.0.1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2674,13 +2805,15 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-23T22:03:04Z",
-              "userName": "Ernest0-Production"
+              "userName": "Ernest0-Production",
+              "issueNumber": 15
             }
           ]
         },
         {
           "tweakVersion": "2.0.1",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2694,7 +2827,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:42:33Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 167
             }
           ]
         }
@@ -2714,6 +2848,7 @@
         {
           "tweakVersion": "1.1.3",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2727,13 +2862,15 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-28T00:11:14Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 253
             }
           ]
         },
         {
           "tweakVersion": "1.1.3",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2747,7 +2884,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:10:42Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 270
             }
           ]
         }
@@ -2767,6 +2905,7 @@
         {
           "tweakVersion": "1.0.2",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2780,7 +2919,8 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-23T23:22:18Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 21
             }
           ]
         }
@@ -2800,6 +2940,7 @@
         {
           "tweakVersion": "1.0alpha7-2+debug",
           "iOSVersion": "10.2",
+          "repository": "CreatureSurvive's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2813,7 +2954,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:11:07Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 271
             }
           ]
         }
@@ -2833,6 +2975,7 @@
         {
           "tweakVersion": "1.0.9",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2846,7 +2989,8 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-28T00:00:58Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 219
             }
           ]
         }
@@ -2858,6 +3002,7 @@
       "latest": "1.15.0-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/crash-reporter/",
+      "shortDescription": "Send useful crash info to developers.",
       "category": "System",
       "author": "Lance Fetters (ashikase)",
       "commercial": false,
@@ -2865,6 +3010,7 @@
         {
           "tweakVersion": "1.15.0-1",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2878,13 +3024,15 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:42:56Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 168
             }
           ]
         },
         {
           "tweakVersion": "1.15.0-1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2898,13 +3046,15 @@
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:33:00Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 331
             }
           ]
         },
         {
           "tweakVersion": "1.15.0-1",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2918,7 +3068,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:37:08Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 363
             }
           ]
         }
@@ -2938,6 +3089,7 @@
         {
           "tweakVersion": "1.1-1",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2951,7 +3103,8 @@
               "device": "iPhone5,1",
               "issues": "",
               "date": "2017-12-27T23:59:12Z",
-              "userName": "johnnotdaniel"
+              "userName": "johnnotdaniel",
+              "issueNumber": 214
             }
           ]
         }
@@ -2971,6 +3124,7 @@
         {
           "tweakVersion": "1.0-1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2984,13 +3138,15 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-23T23:21:54Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 20
             }
           ]
         },
         {
           "tweakVersion": "1.0-1",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3004,7 +3160,8 @@
               "device": "iPhone5,1",
               "issues": "",
               "date": "2017-12-27T23:55:03Z",
-              "userName": "johnnotdaniel"
+              "userName": "johnnotdaniel",
+              "issueNumber": 211
             }
           ]
         }
@@ -3024,6 +3181,7 @@
         {
           "tweakVersion": "6.8.8",
           "iOSVersion": "10.3.3",
+          "repository": "julioverne",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -3037,7 +3195,8 @@
               "device": "iPhone5,2",
               "issues": "",
               "date": "2017-12-28T15:09:20Z",
-              "userName": "ber84130"
+              "userName": "ber84130",
+              "issueNumber": 352
             }
           ]
         }
@@ -3056,27 +3215,8 @@
       "versions": [
         {
           "tweakVersion": "1.2.0-1",
-          "iOSVersion": "10.2",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone8,1",
-              "issues": "",
-              "date": "2017-12-23T20:09:08Z",
-              "userName": "jlippold"
-            }
-          ]
-        },
-        {
-          "tweakVersion": "1.2.0-1",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3090,13 +3230,15 @@
               "device": "iPhone5,1",
               "issues": "",
               "date": "2017-12-27T23:59:45Z",
-              "userName": "johnnotdaniel"
+              "userName": "johnnotdaniel",
+              "issueNumber": 215
             }
           ]
         },
         {
           "tweakVersion": "1.2.0-1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3110,7 +3252,8 @@
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:33:27Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 332
             }
           ]
         }
@@ -3130,6 +3273,7 @@
         {
           "tweakVersion": "1.3-11",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3143,7 +3287,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:11:28Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 272
             }
           ]
         }
@@ -3163,6 +3308,7 @@
         {
           "tweakVersion": "1.0.3",
           "iOSVersion": "10.1.1",
+          "repository": "tateu's repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3176,7 +3322,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:54:22Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 76
             }
           ]
         }
@@ -3196,6 +3343,7 @@
         {
           "tweakVersion": "1.1.1",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3209,13 +3357,15 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:44:31Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 169
             }
           ]
         },
         {
           "tweakVersion": "1.1.1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3229,7 +3379,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:11:38Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 273
             }
           ]
         }
@@ -3249,6 +3400,7 @@
         {
           "tweakVersion": "2.1.1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3262,13 +3414,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:54:35Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 77
             }
           ]
         },
         {
           "tweakVersion": "2.1.1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3282,7 +3436,8 @@
               "device": "iPhone6,1",
               "issues": "",
               "date": "2017-12-28T11:00:24Z",
-              "userName": "legitcomputerwhisperer"
+              "userName": "legitcomputerwhisperer",
+              "issueNumber": 345
             }
           ]
         }
@@ -3302,6 +3457,7 @@
         {
           "tweakVersion": "1.5.2",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3315,7 +3471,8 @@
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:33:45Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 333
             }
           ]
         }
@@ -3335,6 +3492,7 @@
         {
           "tweakVersion": "1.0",
           "iOSVersion": "10.2",
+          "repository": "D4ni's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3348,7 +3506,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:45:15Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 153
             }
           ]
         }
@@ -3368,6 +3527,7 @@
         {
           "tweakVersion": "1.3-5",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3381,7 +3541,8 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-28T00:01:37Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 223
             }
           ]
         }
@@ -3401,6 +3562,7 @@
         {
           "tweakVersion": "1.1-2",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3414,7 +3576,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:44:49Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 170
             }
           ]
         }
@@ -3434,6 +3597,7 @@
         {
           "tweakVersion": "1.0.3",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3447,13 +3611,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:54:48Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 78
             }
           ]
         },
         {
           "tweakVersion": "1.0.3",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3467,7 +3633,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:45:04Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 171
             }
           ]
         }
@@ -3487,6 +3654,7 @@
         {
           "tweakVersion": "1.0.5",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3500,7 +3668,8 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-28T01:13:27Z",
-              "userName": "eskoze"
+              "userName": "eskoze",
+              "issueNumber": 279
             }
           ]
         }
@@ -3520,6 +3689,7 @@
         {
           "tweakVersion": "0.0.2",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3533,7 +3703,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:45:26Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 172
             }
           ]
         }
@@ -3553,6 +3724,7 @@
         {
           "tweakVersion": "0.0.4",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3566,7 +3738,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:45:35Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 154
             }
           ]
         }
@@ -3586,6 +3759,7 @@
         {
           "tweakVersion": "1.1.4",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3599,7 +3773,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:38:36Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 364
             }
           ]
         }
@@ -3619,6 +3794,7 @@
         {
           "tweakVersion": "0.0~beta2",
           "iOSVersion": "10.2",
+          "repository": "julioverne's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3632,7 +3808,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:46:05Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 155
             }
           ]
         }
@@ -3652,6 +3829,7 @@
         {
           "tweakVersion": "0.3",
           "iOSVersion": "10.2",
+          "repository": "julioverne's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3665,7 +3843,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:46:40Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 157
             }
           ]
         }
@@ -3685,6 +3864,7 @@
         {
           "tweakVersion": "0.0.23",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3698,7 +3878,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:35:27Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 135
             }
           ]
         }
@@ -3718,6 +3899,7 @@
         {
           "tweakVersion": "4.1",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3731,14 +3913,16 @@
               "device": "iPad3,4",
               "issues": "",
               "date": "2017-12-27T20:29:36Z",
-              "userName": "freskeeeh"
+              "userName": "freskeeeh",
+              "issueNumber": 123
             },
             {
               "status": "working",
               "device": "iPad3,6",
               "issues": "",
               "date": "2017-12-27T21:34:58Z",
-              "userName": "cazxtc"
+              "userName": "cazxtc",
+              "issueNumber": 134
             }
           ]
         }
@@ -3758,6 +3942,7 @@
         {
           "tweakVersion": "0.0~beta2",
           "iOSVersion": "10.2",
+          "repository": "julioverne's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3771,7 +3956,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:36:31Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 138
             }
           ]
         }
@@ -3791,6 +3977,7 @@
         {
           "tweakVersion": "1.3.12",
           "iOSVersion": "10.1.1",
+          "repository": "PoomSmart's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3804,7 +3991,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:55:24Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 79
             }
           ]
         }
@@ -3824,6 +4012,7 @@
         {
           "tweakVersion": "1.0.12",
           "iOSVersion": "10.1.1",
+          "repository": "PoomSmart's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3837,7 +4026,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:55:38Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 80
             }
           ]
         }
@@ -3857,6 +4047,7 @@
         {
           "tweakVersion": "1.1.12",
           "iOSVersion": "10.1.1",
+          "repository": "PoomSmart's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3870,7 +4061,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:55:50Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 81
             }
           ]
         }
@@ -3890,6 +4082,7 @@
         {
           "tweakVersion": "2.0.4",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3903,7 +4096,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:11:50Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 274
             }
           ]
         }
@@ -3923,6 +4117,7 @@
         {
           "tweakVersion": "0.4.1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3936,7 +4131,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:12:01Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 275
             }
           ]
         }
@@ -3956,6 +4152,7 @@
         {
           "tweakVersion": "1.2.1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3969,7 +4166,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:12:12Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 276
             }
           ]
         }
@@ -3989,6 +4187,7 @@
         {
           "tweakVersion": "1.3",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4002,7 +4201,8 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-28T01:17:10Z",
-              "userName": "eskoze"
+              "userName": "eskoze",
+              "issueNumber": 296
             }
           ]
         }
@@ -4022,6 +4222,7 @@
         {
           "tweakVersion": "1.2",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4035,7 +4236,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:12:24Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 277
             }
           ]
         }
@@ -4055,6 +4257,7 @@
         {
           "tweakVersion": "2.5.2",
           "iOSVersion": "10.2",
+          "repository": "Thireus Repository",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4068,7 +4271,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:12:35Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 278
             }
           ]
         }
@@ -4088,6 +4292,7 @@
         {
           "tweakVersion": "0.3.4",
           "iOSVersion": "10.1.1",
+          "repository": "repo.incendo.ws",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4101,13 +4306,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:56:03Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 82
             }
           ]
         },
         {
           "tweakVersion": "0.3.4",
           "iOSVersion": "10.2.1",
+          "repository": "repo.incendo.ws",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4121,7 +4328,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:45:51Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 173
             }
           ]
         }
@@ -4141,6 +4349,7 @@
         {
           "tweakVersion": "0.9988",
           "iOSVersion": "10.3.3",
+          "repository": "Cydia/Telesphoreo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4154,7 +4363,8 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-27T08:54:03Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 46
             }
           ]
         }
@@ -4174,6 +4384,7 @@
         {
           "tweakVersion": "1.6r-36",
           "iOSVersion": "10.1.1",
+          "repository": "beta.unlimapps.com",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4187,13 +4398,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:56:16Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 83
             }
           ]
         },
         {
           "tweakVersion": "1.6r-36",
           "iOSVersion": "10.3.3",
+          "repository": "beta.unlimapps.com",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4207,7 +4420,8 @@
               "device": "iPad3,6",
               "issues": "",
               "date": "2017-12-27T21:38:19Z",
-              "userName": "cazxtc"
+              "userName": "cazxtc",
+              "issueNumber": 142
             }
           ]
         }
@@ -4227,6 +4441,7 @@
         {
           "tweakVersion": "1.0.4",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4240,7 +4455,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:56:32Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 84
             }
           ]
         }
@@ -4260,6 +4476,7 @@
         {
           "tweakVersion": "0.3",
           "iOSVersion": "10.2",
+          "repository": "CreatureSurvive's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4273,7 +4490,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:36:56Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 139
             }
           ]
         }
@@ -4285,6 +4503,7 @@
       "latest": "3.3.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
+      "shortDescription": "File Manager for iOS. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -4292,6 +4511,7 @@
         {
           "tweakVersion": "3.3.2",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4305,20 +4525,23 @@
               "device": "iPhone5,3",
               "issues": "",
               "date": "2017-12-25T19:26:33Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 24
             },
             {
               "status": "working",
               "device": "iPad3,6",
               "issues": "",
               "date": "2017-12-27T21:33:34Z",
-              "userName": "cazxtc"
+              "userName": "cazxtc",
+              "issueNumber": 132
             }
           ]
         },
         {
           "tweakVersion": "3.3.2",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4332,13 +4555,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:56:48Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 85
             }
           ]
         },
         {
           "tweakVersion": "3.3.2",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4352,13 +4577,15 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:46:14Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 174
             }
           ]
         },
         {
           "tweakVersion": "3.3.2",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4372,7 +4599,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:40:15Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 365
             }
           ]
         }
@@ -4392,6 +4620,7 @@
         {
           "tweakVersion": "1.3",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4405,20 +4634,23 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-25T19:49:46Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 29
             },
             {
               "status": "working",
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-28T01:52:58Z",
-              "userName": "eskoze"
+              "userName": "eskoze",
+              "issueNumber": 320
             }
           ]
         },
         {
           "tweakVersion": "1.3",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4432,13 +4664,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:57:02Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 86
             }
           ]
         },
         {
           "tweakVersion": "1.3",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4452,13 +4686,15 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:47:01Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 175
             }
           ]
         },
         {
           "tweakVersion": "1.3",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4472,7 +4708,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:13:29Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 280
             }
           ]
         }
@@ -4492,6 +4729,7 @@
         {
           "tweakVersion": "3~Beta36",
           "iOSVersion": "10.3.3",
+          "repository": "Delta",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -4505,13 +4743,15 @@
               "device": "iPad3,6",
               "issues": "",
               "date": "2017-12-27T21:35:40Z",
-              "userName": "cazxtc"
+              "userName": "cazxtc",
+              "issueNumber": 136
             }
           ]
         },
         {
           "tweakVersion": "3~Beta36",
           "iOSVersion": "10.2.1",
+          "repository": "Delta",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4525,13 +4765,15 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:47:17Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 176
             }
           ]
         },
         {
           "tweakVersion": "3~Beta36",
           "iOSVersion": "10.1.1",
+          "repository": "Delta",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4545,7 +4787,8 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-28T00:02:50Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 228
             }
           ]
         }
@@ -4565,6 +4808,7 @@
         {
           "tweakVersion": "1.4",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4578,7 +4822,8 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-28T00:03:10Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 230
             }
           ]
         }
@@ -4590,6 +4835,7 @@
       "latest": "1.0.4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.rpetrich.flipcontrolcenter/",
+      "shortDescription": "Customizable Control Center Switches",
       "category": "Tweaks",
       "author": "Ryan Petrich",
       "commercial": false,
@@ -4597,6 +4843,7 @@
         {
           "tweakVersion": "1.0.4",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4610,13 +4857,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:57:13Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 87
             }
           ]
         },
         {
           "tweakVersion": "1.0.4",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4630,7 +4879,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:41:48Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 366
             }
           ]
         }
@@ -4650,6 +4900,7 @@
         {
           "tweakVersion": "0.0~beta1",
           "iOSVersion": "10.2",
+          "repository": "julioverne's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4663,7 +4914,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:13:41Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 281
             }
           ]
         }
@@ -4683,6 +4935,7 @@
         {
           "tweakVersion": "2.0-5",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4696,7 +4949,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:13:53Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 282
             }
           ]
         }
@@ -4716,6 +4970,7 @@
         {
           "tweakVersion": "1.0-1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4729,7 +4984,8 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-28T00:03:38Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 233
             }
           ]
         }
@@ -4749,6 +5005,7 @@
         {
           "tweakVersion": "1.0.3",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -4762,7 +5019,8 @@
               "device": "iPhone5,3",
               "issues": "",
               "date": "2017-12-28T15:54:22Z",
-              "userName": "jtassen"
+              "userName": "jtassen",
+              "issueNumber": 380
             }
           ]
         }
@@ -4782,6 +5040,7 @@
         {
           "tweakVersion": "1.3",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4795,7 +5054,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:57:24Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 88
             }
           ]
         }
@@ -4815,6 +5075,7 @@
         {
           "tweakVersion": "1.1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4828,7 +5089,8 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-28T00:11:48Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 254
             }
           ]
         }
@@ -4848,6 +5110,7 @@
         {
           "tweakVersion": "1.1",
           "iOSVersion": "10.1.1",
+          "repository": "ModMyi (Archive)",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4861,7 +5124,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:57:36Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 89
             }
           ]
         }
@@ -4881,6 +5145,7 @@
         {
           "tweakVersion": "1.1.5",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4894,7 +5159,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:14:05Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 283
             }
           ]
         }
@@ -4914,6 +5180,7 @@
         {
           "tweakVersion": "0.0~beta3a",
           "iOSVersion": "10.2",
+          "repository": "julioverne's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4927,7 +5194,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:14:15Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 284
             }
           ]
         }
@@ -4947,6 +5215,7 @@
         {
           "tweakVersion": "1.6.1",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4960,7 +5229,43 @@
               "device": "iPhone5,4",
               "issues": "Some actions, like rotating while on split view can crash the springboard",
               "date": "2017-12-27T08:46:54Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "org.thebigboss.handydialer",
+      "name": "handyDialer",
+      "latest": "1.6.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.handydialer/",
+      "shortDescription": "enhanced dialer for quick contacts search",
+      "category": "Tweaks",
+      "author": "whynot",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "1.6.1",
+          "iOSVersion": "8.3",
+          "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone7,2",
+              "issues": "",
+              "date": "2017-12-27T19:21:55Z",
+              "userName": "viberstore",
+              "issueNumber": 53
             }
           ]
         }
@@ -4980,6 +5285,7 @@
         {
           "tweakVersion": "1.4.1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4993,7 +5299,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:57:50Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 90
             }
           ]
         }
@@ -5013,6 +5320,7 @@
         {
           "tweakVersion": "1.1",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -5026,13 +5334,15 @@
               "device": "iPad3,4",
               "issues": "",
               "date": "2017-12-27T20:30:34Z",
-              "userName": "freskeeeh"
+              "userName": "freskeeeh",
+              "issueNumber": 127
             }
           ]
         },
         {
           "tweakVersion": "1.1",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5046,13 +5356,15 @@
               "device": "iPhone8,1",
               "issues": "Various settings seem to not work such as Carrier String (for Searching... and No Service) and various Lockscreen strings",
               "date": "2017-12-27T22:50:48Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 178
             }
           ]
         },
         {
           "tweakVersion": "1.1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5066,7 +5378,43 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:14:26Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 285
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "isklikas.hold2speak",
+      "name": "Hold2Speak",
+      "latest": "1.2.1",
+      "repository": "ModMyi (Archive)",
+      "url": "http://cydia.saurik.com/package/isklikas.hold2speak/",
+      "shortDescription": "answer your calls, while activating your speaker.",
+      "category": "Tweaks",
+      "author": "isklikas",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.2.1",
+          "iOSVersion": "8.3",
+          "repository": "ModMyi (Archive)",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone7,2",
+              "issues": "",
+              "date": "2017-12-27T19:22:55Z",
+              "userName": "viberstore",
+              "issueNumber": 54
             }
           ]
         }
@@ -5086,6 +5434,7 @@
         {
           "tweakVersion": "2.1.1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5099,7 +5448,8 @@
               "device": "iPhone9,3",
               "issues": "",
               "date": "2017-12-27T21:46:21Z",
-              "userName": "neuro-mantik"
+              "userName": "neuro-mantik",
+              "issueNumber": 156
             }
           ]
         }
@@ -5119,6 +5469,7 @@
         {
           "tweakVersion": "1.0-1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5132,7 +5483,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:14:37Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 286
             }
           ]
         }
@@ -5152,6 +5504,7 @@
         {
           "tweakVersion": "1.2.1",
           "iOSVersion": "10.2",
+          "repository": "Zane Helton's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5165,7 +5518,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:37:28Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 141
             }
           ]
         }
@@ -5185,6 +5539,7 @@
         {
           "tweakVersion": "10.0",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5198,7 +5553,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:51:18Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 179
             }
           ]
         }
@@ -5218,6 +5574,7 @@
         {
           "tweakVersion": "7.6.2",
           "iOSVersion": "10.3.3",
+          "repository": "Karen's Repo",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -5231,13 +5588,15 @@
               "device": "iPhone5,4",
               "issues": "Crashes when opened",
               "date": "2017-12-25T20:18:38Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 33
             }
           ]
         },
         {
           "tweakVersion": "7.6.2",
           "iOSVersion": "10.2.1",
+          "repository": "Ivano Bilenchi's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5251,13 +5610,15 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:51:35Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 180
             }
           ]
         },
         {
           "tweakVersion": "7.6.2",
           "iOSVersion": "10.1.1",
+          "repository": "Karen's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5271,13 +5632,15 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-28T00:04:01Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 234
             }
           ]
         },
         {
           "tweakVersion": "7.6.2",
           "iOSVersion": "10.2",
+          "repository": "Karen's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5291,7 +5654,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:14:49Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 287
             }
           ]
         }
@@ -5311,6 +5675,7 @@
         {
           "tweakVersion": "1.4-1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5324,7 +5689,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:58:02Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 91
             }
           ]
         }
@@ -5344,6 +5710,7 @@
         {
           "tweakVersion": "2.2.0-1",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -5357,7 +5724,8 @@
               "device": "iPhone5,2",
               "issues": "",
               "date": "2017-12-28T15:10:58Z",
-              "userName": "ber84130"
+              "userName": "ber84130",
+              "issueNumber": 353
             }
           ]
         }
@@ -5377,6 +5745,7 @@
         {
           "tweakVersion": "1.3.2",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5390,7 +5759,8 @@
               "device": "iPhone6,2",
               "issues": "",
               "date": "2017-12-28T18:23:52Z",
-              "userName": "newenglander"
+              "userName": "newenglander",
+              "issueNumber": 384
             }
           ]
         }
@@ -5410,6 +5780,7 @@
         {
           "tweakVersion": "1.8r-105",
           "iOSVersion": "10.1.1",
+          "repository": "beta.unlimapps.com",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5423,13 +5794,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:58:14Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 92
             }
           ]
         },
         {
           "tweakVersion": "1.8r-105",
           "iOSVersion": "10.3.3",
+          "repository": "beta.unlimapps.com",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5443,7 +5816,8 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-28T01:18:32Z",
-              "userName": "eskoze"
+              "userName": "eskoze",
+              "issueNumber": 301
             }
           ]
         }
@@ -5463,6 +5837,7 @@
         {
           "tweakVersion": "1.2.2",
           "iOSVersion": "10.2",
+          "repository": "Thireus Repository",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5476,7 +5851,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:15:24Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 288
             }
           ]
         }
@@ -5496,6 +5872,7 @@
         {
           "tweakVersion": "1.2",
           "iOSVersion": "10.2.1",
+          "repository": "CODYQX4's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5509,7 +5886,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:51:52Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 181
             }
           ]
         }
@@ -5529,6 +5907,7 @@
         {
           "tweakVersion": "1.2",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5542,7 +5921,8 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-28T01:15:42Z",
-              "userName": "eskoze"
+              "userName": "eskoze",
+              "issueNumber": 290
             }
           ]
         }
@@ -5562,6 +5942,7 @@
         {
           "tweakVersion": "2.3",
           "iOSVersion": "10.1.1",
+          "repository": "ModMyi (Archive)",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5575,7 +5956,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:58:27Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 93
             }
           ]
         }
@@ -5595,6 +5977,7 @@
         {
           "tweakVersion": "1.0.2",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5608,13 +5991,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:58:40Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 94
             }
           ]
         },
         {
           "tweakVersion": "1.0.2",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5628,7 +6013,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:15:40Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 289
             }
           ]
         }
@@ -5648,6 +6034,7 @@
         {
           "tweakVersion": "1.0.2",
           "iOSVersion": "10.1.1",
+          "repository": "Karen's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5661,7 +6048,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:58:52Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 95
             }
           ]
         }
@@ -5681,6 +6069,7 @@
         {
           "tweakVersion": "0.0.4",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5694,7 +6083,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:01:39Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 96
             }
           ]
         }
@@ -5714,6 +6104,7 @@
         {
           "tweakVersion": "1.4.0-1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5727,7 +6118,8 @@
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:34:44Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 334
             }
           ]
         }
@@ -5747,6 +6139,7 @@
         {
           "tweakVersion": "0.1.2",
           "iOSVersion": "10.2.1",
+          "repository": "Skylerk99",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5760,7 +6153,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:56:51Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 183
             }
           ]
         }
@@ -5780,6 +6174,7 @@
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "10.2.1",
+          "repository": "CP Digital Darkroom Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5793,7 +6188,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:57:06Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 184
             }
           ]
         }
@@ -5813,6 +6209,7 @@
         {
           "tweakVersion": "0.1",
           "iOSVersion": "10.2.1",
+          "repository": "rpetrich repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5826,7 +6223,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:57:29Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 185
             }
           ]
         }
@@ -5846,6 +6244,7 @@
         {
           "tweakVersion": "0.1.16",
           "iOSVersion": "10.2.1",
+          "repository": "Ryley's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5859,13 +6258,15 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:57:57Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 186
             }
           ]
         },
         {
           "tweakVersion": "0.1.16",
           "iOSVersion": "10.2",
+          "repository": "Ryley's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5879,7 +6280,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:15:51Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 291
             }
           ]
         }
@@ -5899,6 +6301,7 @@
         {
           "tweakVersion": "1.3",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5912,7 +6315,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:16:17Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 292
             }
           ]
         }
@@ -5932,6 +6336,7 @@
         {
           "tweakVersion": "1.4-2",
           "iOSVersion": "10.3.3",
+          "repository": "BiteYourApple",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5945,7 +6350,8 @@
               "device": "iPad3,4",
               "issues": "",
               "date": "2017-12-27T20:28:56Z",
-              "userName": "freskeeeh"
+              "userName": "freskeeeh",
+              "issueNumber": 121
             }
           ]
         }
@@ -5965,6 +6371,7 @@
         {
           "tweakVersion": "2.0",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5978,7 +6385,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:46:19Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 367
             }
           ]
         }
@@ -5998,6 +6406,7 @@
         {
           "tweakVersion": "1.0",
           "iOSVersion": "10.2.1",
+          "repository": "CODYQX4's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6011,7 +6420,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:58:13Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 187
             }
           ]
         }
@@ -6031,6 +6441,7 @@
         {
           "tweakVersion": "1.0.0-1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6044,7 +6455,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:16:31Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 293
             }
           ]
         }
@@ -6064,6 +6476,7 @@
         {
           "tweakVersion": "1.0-3",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6077,7 +6490,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:22:53Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 97
             }
           ]
         }
@@ -6097,6 +6511,7 @@
         {
           "tweakVersion": "1.3",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6110,7 +6525,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:16:41Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 295
             }
           ]
         }
@@ -6130,6 +6546,7 @@
         {
           "tweakVersion": "1.0.5",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6143,7 +6560,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:23:51Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 98
             }
           ]
         }
@@ -6163,6 +6581,7 @@
         {
           "tweakVersion": "1.4",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6176,7 +6595,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:24:06Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 99
             }
           ]
         }
@@ -6196,6 +6616,7 @@
         {
           "tweakVersion": "0.0.1",
           "iOSVersion": "10.1.1",
+          "repository": "fidele007 Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6209,7 +6630,8 @@
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:34:59Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 335
             }
           ]
         }
@@ -6221,6 +6643,7 @@
       "latest": "2.9-2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/net.ddns.mobileapps.mediadownload/",
+      "shortDescription": "Music and Video Downloader, all major tube sites supported!",
       "category": "Utilities",
       "author": "mobileapps",
       "commercial": false,
@@ -6228,6 +6651,7 @@
         {
           "tweakVersion": "2.9-2",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6241,13 +6665,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:24:18Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 100
             }
           ]
         },
         {
           "tweakVersion": "2.9-2",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6261,7 +6687,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:46:58Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 368
             }
           ]
         }
@@ -6281,6 +6708,7 @@
         {
           "tweakVersion": "1.2.0-1",
           "iOSVersion": "10.2",
+          "repository": "Alex Beals",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6294,7 +6722,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:17:54Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 297
             }
           ]
         }
@@ -6314,6 +6743,7 @@
         {
           "tweakVersion": "3.0.8",
           "iOSVersion": "10.1.1",
+          "repository": "Karen's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6327,13 +6757,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:24:30Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 101
             }
           ]
         },
         {
           "tweakVersion": "3.0.8",
           "iOSVersion": "10.2.1",
+          "repository": "Karen's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6347,13 +6779,15 @@
               "device": "iPhone8,1",
               "issues": "Most options do not work",
               "date": "2017-12-27T22:59:21Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 188
             }
           ]
         },
         {
           "tweakVersion": "3.0.8",
           "iOSVersion": "10.2",
+          "repository": "Karen's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6367,7 +6801,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:18:05Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 299
             }
           ]
         }
@@ -6387,6 +6822,7 @@
         {
           "tweakVersion": "7.3",
           "iOSVersion": "10.3.3",
+          "repository": "ReddestDream's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6400,7 +6836,8 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-25T23:52:56Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 40
             }
           ]
         }
@@ -6420,6 +6857,7 @@
         {
           "tweakVersion": "0.9.1",
           "iOSVersion": "10.2",
+          "repository": "D4ni's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6433,7 +6871,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:43:12Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 151
             }
           ]
         }
@@ -6453,20 +6892,30 @@
         {
           "tweakVersion": "1.0",
           "iOSVersion": "10.2",
+          "repository": "Limneos Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
-            "good": 1,
+            "good": 2,
             "bad": 0,
-            "total": 1
+            "total": 2
           },
           "users": [
             {
               "status": "working",
               "device": "iPhone8,2",
               "issues": "",
+              "date": "2017-12-27T22:38:08Z",
+              "userName": "SeebyBoy",
+              "issueNumber": 158
+            },
+            {
+              "status": "working",
+              "device": "iPhone8,2",
+              "issues": "",
               "date": "2017-12-28T01:24:29Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 318
             }
           ]
         }
@@ -6486,6 +6935,7 @@
         {
           "tweakVersion": "1.0.0~beta29-12",
           "iOSVersion": "10.2",
+          "repository": "tateu's repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6499,7 +6949,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:42:58Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 150
             }
           ]
         }
@@ -6519,6 +6970,7 @@
         {
           "tweakVersion": "0.0~beta2",
           "iOSVersion": "10.1.1",
+          "repository": "julioverne's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6532,7 +6984,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:24:55Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 102
             }
           ]
         }
@@ -6551,27 +7004,8 @@
       "versions": [
         {
           "tweakVersion": "1.4-5",
-          "iOSVersion": "10.3.3",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPad3,4",
-              "issues": "",
-              "date": "2017-12-27T20:28:14Z",
-              "userName": "freskeeeh"
-            }
-          ]
-        },
-        {
-          "tweakVersion": "1.4-5",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6585,13 +7019,37 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:25:08Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 104
+            }
+          ]
+        },
+        {
+          "tweakVersion": "1.4-5",
+          "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPad3,4",
+              "issues": "",
+              "date": "2017-12-27T20:28:14Z",
+              "userName": "freskeeeh",
+              "issueNumber": 118
             }
           ]
         },
         {
           "tweakVersion": "1.4-5",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6605,7 +7063,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:59:36Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 189
             }
           ]
         }
@@ -6625,6 +7084,7 @@
         {
           "tweakVersion": "1.0.3",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6638,7 +7098,8 @@
               "device": "iPhone6,2",
               "issues": "",
               "date": "2017-12-27T18:14:42Z",
-              "userName": "newenglander"
+              "userName": "newenglander",
+              "issueNumber": 47
             }
           ]
         }
@@ -6658,6 +7119,7 @@
         {
           "tweakVersion": "1.4.2",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6671,7 +7133,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:18:16Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 300
             }
           ]
         }
@@ -6691,6 +7154,7 @@
         {
           "tweakVersion": "0.2.1-1",
           "iOSVersion": "10.2",
+          "repository": "Teggers Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6704,7 +7168,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:42:41Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 149
             }
           ]
         }
@@ -6724,6 +7189,7 @@
         {
           "tweakVersion": "1.0-30",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6737,7 +7203,8 @@
               "device": "iPhone8,4",
               "issues": " Doesn't sort applications in anyway",
               "date": "2017-12-27T21:42:27Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 148
             }
           ]
         }
@@ -6757,6 +7224,7 @@
         {
           "tweakVersion": "1.2",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6770,7 +7238,8 @@
               "device": "iPhone6,1",
               "issues": "",
               "date": "2017-12-28T11:01:08Z",
-              "userName": "legitcomputerwhisperer"
+              "userName": "legitcomputerwhisperer",
+              "issueNumber": 346
             }
           ]
         }
@@ -6790,6 +7259,7 @@
         {
           "tweakVersion": "1.0.0b-1",
           "iOSVersion": "10.2",
+          "repository": "TheComputerWhisperer's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6803,7 +7273,8 @@
               "device": "iPhone6,1",
               "issues": "",
               "date": "2017-12-28T11:02:50Z",
-              "userName": "legitcomputerwhisperer"
+              "userName": "legitcomputerwhisperer",
+              "issueNumber": 348
             }
           ]
         }
@@ -6823,6 +7294,7 @@
         {
           "tweakVersion": "2.1.1",
           "iOSVersion": "10.1.1",
+          "repository": "Karen's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6836,7 +7308,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:25:23Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 105
             }
           ]
         }
@@ -6856,6 +7329,7 @@
         {
           "tweakVersion": "1.0-1",
           "iOSVersion": "10.2.1",
+          "repository": "JonLuca's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6869,7 +7343,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T22:59:53Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 190
             }
           ]
         }
@@ -6889,6 +7364,7 @@
         {
           "tweakVersion": "1.1.1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6902,7 +7378,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:25:35Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 106
             }
           ]
         }
@@ -6922,6 +7399,7 @@
         {
           "tweakVersion": "1.6.2",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6935,7 +7413,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:18:45Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 302
             }
           ]
         }
@@ -6955,6 +7434,7 @@
         {
           "tweakVersion": "1.0",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6968,7 +7448,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:25:49Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 107
             }
           ]
         }
@@ -6988,6 +7469,7 @@
         {
           "tweakVersion": "1.9.6",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7001,7 +7483,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T06:11:49Z",
-              "userName": "deebagging"
+              "userName": "deebagging",
+              "issueNumber": 322
             }
           ]
         }
@@ -7021,6 +7504,7 @@
         {
           "tweakVersion": "1.0",
           "iOSVersion": "10.2",
+          "repository": "Danny Glover's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7034,7 +7518,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:41:43Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 147
             }
           ]
         }
@@ -7046,6 +7531,7 @@
       "latest": "5.2.1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.marcosinghof.noslowanimations/",
+      "shortDescription": "speed up slow animations in iOS 7+",
       "category": "Tweaks",
       "author": "Marco Singhof",
       "commercial": false,
@@ -7053,6 +7539,7 @@
         {
           "tweakVersion": "5.2.1",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7066,13 +7553,15 @@
               "device": "iPad3,4",
               "issues": "",
               "date": "2017-12-27T20:27:43Z",
-              "userName": "freskeeeh"
+              "userName": "freskeeeh",
+              "issueNumber": 115
             }
           ]
         },
         {
           "tweakVersion": "5.2.1",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7086,7 +7575,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:47:24Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 369
             }
           ]
         }
@@ -7106,6 +7596,7 @@
         {
           "tweakVersion": "1.3",
           "iOSVersion": "10.1.1",
+          "repository": "Skylerk99",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7119,7 +7610,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:26:07Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 108
             }
           ]
         }
@@ -7139,6 +7631,7 @@
         {
           "tweakVersion": "1.1-8",
           "iOSVersion": "10.1.1",
+          "repository": "Skylerk99",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7151,8 +7644,9 @@
               "status": "working",
               "device": "iPhone9,4",
               "issues": "",
-              "date": "2017-12-27T20:27:01Z",
-              "userName": "lfstyles"
+              "date": "2017-12-27T20:26:19Z",
+              "userName": "lfstyles",
+              "issueNumber": 109
             }
           ]
         }
@@ -7172,6 +7666,7 @@
         {
           "tweakVersion": "1.0",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7185,7 +7680,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T19:46:02Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 58
             }
           ]
         }
@@ -7205,6 +7701,7 @@
         {
           "tweakVersion": "1.0.1-1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7218,7 +7715,8 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-28T00:04:40Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 237
             }
           ]
         }
@@ -7238,6 +7736,7 @@
         {
           "tweakVersion": "1.0-1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7251,7 +7750,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:26:41Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 110
             }
           ]
         }
@@ -7271,6 +7771,7 @@
         {
           "tweakVersion": "0.2.1",
           "iOSVersion": "10.1.1",
+          "repository": "ipad_kid's repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7284,13 +7785,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:27:14Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 112
             }
           ]
         },
         {
           "tweakVersion": "0.2~beta3",
           "iOSVersion": "10.2",
+          "repository": "julioverne's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7304,7 +7807,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:41:23Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 146
             }
           ]
         }
@@ -7324,6 +7828,7 @@
         {
           "tweakVersion": "1.3.0-5",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7337,7 +7842,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T23:00:19Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 191
             }
           ]
         }
@@ -7357,6 +7863,7 @@
         {
           "tweakVersion": "2.1.6",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7370,7 +7877,43 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:27:26Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 113
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.sharedroutine.palbreak",
+      "name": "PalBreak",
+      "latest": "1.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.sharedroutine.palbreak/",
+      "shortDescription": "breaks PayPal Jailbreak Detection",
+      "category": "Tweaks",
+      "author": "sharedRoutine & Poomsmart",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.1",
+          "iOSVersion": "8.3",
+          "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone7,2",
+              "issues": "",
+              "date": "2017-12-27T19:24:38Z",
+              "userName": "viberstore",
+              "issueNumber": 55
             }
           ]
         }
@@ -7390,6 +7933,7 @@
         {
           "tweakVersion": "1.0.1-2",
           "iOSVersion": "10.1.1",
+          "repository": "dtathemes Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7403,7 +7947,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:27:41Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 114
             }
           ]
         }
@@ -7423,6 +7968,7 @@
         {
           "tweakVersion": "1.2.0",
           "iOSVersion": "10.1.1",
+          "repository": "Cydia/Telesphoreo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7436,7 +7982,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:27:53Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 116
             }
           ]
         }
@@ -7456,6 +8003,7 @@
         {
           "tweakVersion": "1.25",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7469,7 +8017,8 @@
               "device": "iPhone9,3",
               "issues": "",
               "date": "2017-12-27T21:44:32Z",
-              "userName": "neuro-mantik"
+              "userName": "neuro-mantik",
+              "issueNumber": 152
             }
           ]
         }
@@ -7489,6 +8038,7 @@
         {
           "tweakVersion": "8.06",
           "iOSVersion": "10.2",
+          "repository": "pdanet.co",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7502,7 +8052,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:40:33Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 145
             }
           ]
         }
@@ -7522,6 +8073,7 @@
         {
           "tweakVersion": "1.0.2",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7535,7 +8087,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:18:59Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 303
             }
           ]
         }
@@ -7555,6 +8108,7 @@
         {
           "tweakVersion": "5.3.8-4",
           "iOSVersion": "10.1.1",
+          "repository": "cokepokes.github.io",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7568,7 +8122,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:28:09Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 117
             }
           ]
         }
@@ -7580,6 +8135,7 @@
       "latest": "1.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.justinpetkovic.phototools/",
+      "shortDescription": "Customization toolbox for Photos.",
       "category": "Tweaks",
       "author": "Justin Petkovic",
       "commercial": false,
@@ -7587,6 +8143,7 @@
         {
           "tweakVersion": "1.3",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7600,13 +8157,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:28:20Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 119
             }
           ]
         },
         {
           "tweakVersion": "1.3",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7620,7 +8179,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:48:07Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 370
             }
           ]
         }
@@ -7640,6 +8200,7 @@
         {
           "tweakVersion": "1.0.0~beta16",
           "iOSVersion": "10.1.1",
+          "repository": "tateu's repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7653,7 +8214,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:28:31Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 120
             }
           ]
         }
@@ -7673,6 +8235,7 @@
         {
           "tweakVersion": "1.1.1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7686,7 +8249,8 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-28T00:04:55Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 239
             }
           ]
         }
@@ -7706,6 +8270,7 @@
         {
           "tweakVersion": "1.0",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7719,7 +8284,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:29:08Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 122
             }
           ]
         }
@@ -7739,6 +8305,7 @@
         {
           "tweakVersion": "0.0.1-15+debug",
           "iOSVersion": "10.1.1",
+          "repository": "CP Digital Darkroom Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7752,7 +8319,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:29:59Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 124
             }
           ]
         }
@@ -7772,6 +8340,7 @@
         {
           "tweakVersion": "1.1.1-1",
           "iOSVersion": "10.1.1",
+          "repository": "ModMyi (Archive)",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7785,7 +8354,8 @@
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:35:48Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 336
             }
           ]
         }
@@ -7805,6 +8375,7 @@
         {
           "tweakVersion": "0.0.1-b1",
           "iOSVersion": "10.2",
+          "repository": "Wisy Channel",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7818,7 +8389,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:40:19Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 144
             }
           ]
         }
@@ -7838,6 +8410,7 @@
         {
           "tweakVersion": "2.2.1",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7851,13 +8424,15 @@
               "device": "iPhone8,1",
               "issues": "Breaks 3D Touch on Flashlight in Control Center",
               "date": "2017-12-27T23:01:10Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 192
             }
           ]
         },
         {
           "tweakVersion": "2.2.1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7871,7 +8446,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:19:10Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 304
             }
           ]
         }
@@ -7891,6 +8467,7 @@
         {
           "tweakVersion": "1.1.3-3",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -7904,13 +8481,15 @@
               "device": "iPhone5,4",
               "issues": "You are send to safemode if you try to bring the power menu",
               "date": "2017-12-25T20:56:12Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 34
             }
           ]
         },
         {
           "tweakVersion": "1.1.3-3",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7924,7 +8503,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T23:01:37Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 193
             }
           ]
         }
@@ -7944,6 +8524,7 @@
         {
           "tweakVersion": "3.7",
           "iOSVersion": "10.2",
+          "repository": "Karen's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7957,7 +8538,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:19:22Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 305
             }
           ]
         }
@@ -7977,6 +8559,7 @@
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "10.1.1",
+          "repository": "TheComputerWhisperer's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7990,13 +8573,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:30:09Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 125
             }
           ]
         },
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "10.2",
+          "repository": "TheComputerWhisperer's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8010,7 +8595,8 @@
               "device": "iPhone6,1",
               "issues": "",
               "date": "2017-12-28T11:06:43Z",
-              "userName": "legitcomputerwhisperer"
+              "userName": "legitcomputerwhisperer",
+              "issueNumber": 349
             }
           ]
         }
@@ -8030,6 +8616,7 @@
         {
           "tweakVersion": "1.0.0",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8043,7 +8630,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-27T20:30:23Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 126
             }
           ]
         }
@@ -8063,6 +8651,7 @@
         {
           "tweakVersion": "4.0.10",
           "iOSVersion": "10.3.3",
+          "repository": "HackYouriPhone",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -8076,7 +8665,8 @@
               "device": "iPad3,4",
               "issues": "Doesn't open",
               "date": "2017-12-28T14:08:47Z",
-              "userName": "franciscoavello"
+              "userName": "franciscoavello",
+              "issueNumber": 351
             }
           ]
         }
@@ -8096,6 +8686,7 @@
         {
           "tweakVersion": "0.2",
           "iOSVersion": "10.2",
+          "repository": "Skylerk99",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8109,7 +8700,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T21:39:55Z",
-              "userName": "tokfrans03"
+              "userName": "tokfrans03",
+              "issueNumber": 143
             }
           ]
         }
@@ -8129,6 +8721,7 @@
         {
           "tweakVersion": "1.0.3",
           "iOSVersion": "10.1.1",
+          "repository": "Wiety's beta repository",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8142,7 +8735,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:00:07Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 216
             }
           ]
         }
@@ -8162,6 +8756,7 @@
         {
           "tweakVersion": "1.0.0",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8175,7 +8770,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:00:21Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 217
             }
           ]
         }
@@ -8195,6 +8791,7 @@
         {
           "tweakVersion": "1.0-2",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8208,7 +8805,8 @@
               "device": "iPhone6,2",
               "issues": "",
               "date": "2017-12-28T18:25:16Z",
-              "userName": "newenglander"
+              "userName": "newenglander",
+              "issueNumber": 385
             }
           ]
         }
@@ -8228,6 +8826,7 @@
         {
           "tweakVersion": "1.0-1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8241,7 +8840,8 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-28T00:05:11Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 242
             }
           ]
         }
@@ -8261,6 +8861,7 @@
         {
           "tweakVersion": "1.0",
           "iOSVersion": "10.2.1",
+          "repository": "CODYQX4's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8274,7 +8875,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T23:12:08Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 206
             }
           ]
         }
@@ -8294,6 +8896,7 @@
         {
           "tweakVersion": "1.3",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8307,13 +8910,15 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-27T19:47:04Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 59
             }
           ]
         },
         {
           "tweakVersion": "1.3",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8327,7 +8932,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:00:48Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 218
             }
           ]
         }
@@ -8347,6 +8953,7 @@
         {
           "tweakVersion": "1.0.0",
           "iOSVersion": "10.2",
+          "repository": "TheComputerWhisperer's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8360,7 +8967,8 @@
               "device": "iPhone6,1",
               "issues": "",
               "date": "2017-12-28T11:02:07Z",
-              "userName": "legitcomputerwhisperer"
+              "userName": "legitcomputerwhisperer",
+              "issueNumber": 347
             }
           ]
         }
@@ -8380,6 +8988,7 @@
         {
           "tweakVersion": "1.5.1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8393,7 +9002,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:19:32Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 306
             }
           ]
         }
@@ -8413,6 +9023,7 @@
         {
           "tweakVersion": "1.0",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8426,7 +9037,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T23:01:58Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 194
             }
           ]
         }
@@ -8446,6 +9058,7 @@
         {
           "tweakVersion": "0.0.1",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8459,7 +9072,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T23:02:13Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 195
             }
           ]
         }
@@ -8479,6 +9093,7 @@
         {
           "tweakVersion": "0.0.2-1",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8492,7 +9107,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:49:03Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 371
             }
           ]
         }
@@ -8512,6 +9128,7 @@
         {
           "tweakVersion": "1.0.2-1",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8525,7 +9142,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T23:02:46Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 196
             }
           ]
         }
@@ -8545,6 +9163,7 @@
         {
           "tweakVersion": "1.0.0",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8558,7 +9177,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:01:04Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 220
             }
           ]
         }
@@ -8578,6 +9198,7 @@
         {
           "tweakVersion": "1.2-b2",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8591,7 +9212,8 @@
               "device": "iPhone5,1",
               "issues": "",
               "date": "2017-12-27T23:58:14Z",
-              "userName": "johnnotdaniel"
+              "userName": "johnnotdaniel",
+              "issueNumber": 212
             }
           ]
         }
@@ -8611,6 +9233,7 @@
         {
           "tweakVersion": "1.1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8624,7 +9247,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:19:43Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 307
             }
           ]
         }
@@ -8644,6 +9268,7 @@
         {
           "tweakVersion": "1.3.0",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8657,7 +9282,8 @@
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:36:11Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 337
             }
           ]
         }
@@ -8677,6 +9303,7 @@
         {
           "tweakVersion": "1.1",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8690,7 +9317,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:49:25Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 372
             }
           ]
         }
@@ -8710,6 +9338,7 @@
         {
           "tweakVersion": "1.0.5-17",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8723,7 +9352,8 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-28T00:05:30Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 244
             }
           ]
         }
@@ -8743,6 +9373,7 @@
         {
           "tweakVersion": "1.0.5-2",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8756,7 +9387,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:49:50Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 373
             }
           ]
         }
@@ -8776,6 +9408,7 @@
         {
           "tweakVersion": "1.0",
           "iOSVersion": "10.2",
+          "repository": "Antique's Cydia Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8789,7 +9422,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:19:58Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 308
             }
           ]
         }
@@ -8809,6 +9443,7 @@
         {
           "tweakVersion": "1.7r-5",
           "iOSVersion": "10.2.1",
+          "repository": "beta.unlimapps.com",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8822,7 +9457,8 @@
               "device": "iPhone8,1",
               "issues": "Unclear which version of Snapchat this is intended for, most options work but hiding Stories does not work",
               "date": "2017-12-27T23:03:52Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 197
             }
           ]
         }
@@ -8842,6 +9478,7 @@
         {
           "tweakVersion": "2.3",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8855,7 +9492,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:01:22Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 221
             }
           ]
         }
@@ -8875,6 +9513,7 @@
         {
           "tweakVersion": "1.8.10",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -8888,7 +9527,8 @@
               "device": "iPhone5,3",
               "issues": "Installs but crashes to save mode when notification is received.",
               "date": "2017-12-28T18:18:16Z",
-              "userName": "rparanson"
+              "userName": "rparanson",
+              "issueNumber": 383
             }
           ]
         }
@@ -8908,6 +9548,7 @@
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "10.1.1",
+          "repository": "Spark's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8921,7 +9562,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:01:36Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 222
             }
           ]
         }
@@ -8941,6 +9583,7 @@
         {
           "tweakVersion": "0.8",
           "iOSVersion": "10.3.3",
+          "repository": "BiteYourApple",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8954,7 +9597,8 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-28T01:18:01Z",
-              "userName": "eskoze"
+              "userName": "eskoze",
+              "issueNumber": 298
             }
           ]
         }
@@ -8974,6 +9618,7 @@
         {
           "tweakVersion": "3",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8987,7 +9632,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:01:50Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 224
             }
           ]
         }
@@ -9007,6 +9653,7 @@
         {
           "tweakVersion": "3.3.2",
           "iOSVersion": "10.1.1",
+          "repository": "ModMyi (Archive)",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9020,7 +9667,8 @@
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:36:31Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 338
             }
           ]
         }
@@ -9040,6 +9688,7 @@
         {
           "tweakVersion": "2.0b",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9053,7 +9702,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:50:24Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 374
             }
           ]
         }
@@ -9073,6 +9723,7 @@
         {
           "tweakVersion": "1.7.1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9086,7 +9737,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:02:05Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 225
             }
           ]
         }
@@ -9106,6 +9758,7 @@
         {
           "tweakVersion": "2.18",
           "iOSVersion": "10.1.1",
+          "repository": "hAcx Repository",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9119,7 +9772,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:02:24Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 226
             }
           ]
         }
@@ -9131,6 +9785,7 @@
       "latest": "2.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/tw.garynil.swipehome/",
+      "shortDescription": "swipe up home card to kill apps",
       "category": "Tweaks",
       "author": "Gary niL",
       "commercial": false,
@@ -9138,6 +9793,7 @@
         {
           "tweakVersion": "2.3",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9151,13 +9807,15 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:20:12Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 309
             }
           ]
         },
         {
           "tweakVersion": "2.3",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9171,7 +9829,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:50:49Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 375
             }
           ]
         }
@@ -9191,6 +9850,7 @@
         {
           "tweakVersion": "1.1.7",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9204,13 +9864,15 @@
               "device": "iPhone5,1",
               "issues": "",
               "date": "2017-12-27T23:58:48Z",
-              "userName": "johnnotdaniel"
+              "userName": "johnnotdaniel",
+              "issueNumber": 213
             }
           ]
         },
         {
           "tweakVersion": "1.1.9",
           "iOSVersion": "10.1.1",
+          "repository": "PoomSmart's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9224,7 +9886,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:02:39Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 227
             }
           ]
         }
@@ -9244,6 +9907,7 @@
         {
           "tweakVersion": "0.1.10",
           "iOSVersion": "10.2.1",
+          "repository": "Skylerk99",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9257,7 +9921,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T23:04:49Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 198
             }
           ]
         }
@@ -9277,6 +9942,7 @@
         {
           "tweakVersion": "1.5.2-1",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9290,7 +9956,8 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-25T19:44:32Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 26
             }
           ]
         }
@@ -9310,6 +9977,7 @@
         {
           "tweakVersion": "1.0.3-1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9323,7 +9991,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:02:56Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 229
             }
           ]
         }
@@ -9343,6 +10012,7 @@
         {
           "tweakVersion": "1.0.3-1",
           "iOSVersion": "10.3.3",
+          "repository": "HackYouriPhone",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9356,7 +10026,8 @@
               "device": "iPad3,6",
               "issues": "",
               "date": "2017-12-27T21:36:06Z",
-              "userName": "cazxtc"
+              "userName": "cazxtc",
+              "issueNumber": 137
             }
           ]
         }
@@ -9376,6 +10047,7 @@
         {
           "tweakVersion": "1.0.3-1",
           "iOSVersion": "10.3.3",
+          "repository": "BiteYourApple",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9389,7 +10061,8 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-28T01:48:15Z",
-              "userName": "eskoze"
+              "userName": "eskoze",
+              "issueNumber": 319
             }
           ]
         }
@@ -9409,6 +10082,7 @@
         {
           "tweakVersion": "1.0-7",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9422,14 +10096,16 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-27T23:30:45Z",
-              "userName": "Ernest0-Production"
+              "userName": "Ernest0-Production",
+              "issueNumber": 207
             },
             {
               "status": "working",
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:20:29Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 310
             }
           ]
         }
@@ -9441,6 +10117,7 @@
       "latest": "1.2.1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
+      "shortDescription": "Device info added to General > About",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
@@ -9448,6 +10125,7 @@
         {
           "tweakVersion": "1.2.1",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9461,13 +10139,15 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T23:05:04Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 199
             }
           ]
         },
         {
           "tweakVersion": "1.2.1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9481,13 +10161,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:03:13Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 231
             }
           ]
         },
         {
           "tweakVersion": "1.2.1",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9501,7 +10183,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:51:17Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 376
             }
           ]
         }
@@ -9521,6 +10204,7 @@
         {
           "tweakVersion": "1.2-1",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9534,7 +10218,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T23:05:27Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 200
             }
           ]
         }
@@ -9554,6 +10239,7 @@
         {
           "tweakVersion": "0.0.4",
           "iOSVersion": "10.1.1",
+          "repository": "Skylerk99",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9567,7 +10253,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:03:30Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 232
             }
           ]
         }
@@ -9587,6 +10274,7 @@
         {
           "tweakVersion": "0.0.1-1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9600,7 +10288,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:04:16Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 235
             }
           ]
         }
@@ -9620,6 +10309,7 @@
         {
           "tweakVersion": "1.0",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9633,7 +10323,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:51:41Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 377
             }
           ]
         }
@@ -9653,6 +10344,7 @@
         {
           "tweakVersion": "1.2.0-2",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9666,13 +10358,15 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T23:05:43Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 201
             }
           ]
         },
         {
           "tweakVersion": "1.2.0-2",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9686,7 +10380,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:04:31Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 236
             }
           ]
         }
@@ -9706,6 +10401,7 @@
         {
           "tweakVersion": "1.1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9719,7 +10415,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:21:08Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 311
             }
           ]
         }
@@ -9739,6 +10436,7 @@
         {
           "tweakVersion": "1.1.12",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9752,7 +10450,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:04:44Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 238
             }
           ]
         }
@@ -9772,6 +10471,7 @@
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9785,7 +10485,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:04:55Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 240
             }
           ]
         }
@@ -9805,6 +10506,7 @@
         {
           "tweakVersion": "1.0.3",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9818,13 +10520,15 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T23:05:58Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 202
             }
           ]
         },
         {
           "tweakVersion": "1.0.3",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9838,7 +10542,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:21:17Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 312
             }
           ]
         }
@@ -9858,6 +10563,7 @@
         {
           "tweakVersion": "0.9.0-1",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9871,7 +10577,8 @@
               "device": "iPhone8,1",
               "issues": "Occasionally makes install background entirely transparent (especially when adding sources)",
               "date": "2017-12-27T23:07:47Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 203
             }
           ]
         }
@@ -9891,6 +10598,7 @@
         {
           "tweakVersion": "2.1.0-14",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9904,7 +10612,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:05:08Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 241
             }
           ]
         }
@@ -9924,6 +10633,7 @@
         {
           "tweakVersion": "1.2.0-20",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9937,7 +10647,8 @@
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:36:55Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 339
             }
           ]
         }
@@ -9957,6 +10668,7 @@
         {
           "tweakVersion": "1.1.0",
           "iOSVersion": "10.1.1",
+          "repository": "nullpixel's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9967,17 +10679,19 @@
           "users": [
             {
               "status": "working",
-              "device": "iPhone9,4",
-              "issues": "",
-              "date": "2017-12-28T09:38:25Z",
-              "userName": "lfstyles"
-            },
-            {
-              "status": "working",
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T06:12:24Z",
-              "userName": "deebagging"
+              "userName": "deebagging",
+              "issueNumber": 323
+            },
+            {
+              "status": "working",
+              "device": "iPhone9,4",
+              "issues": "",
+              "date": "2017-12-28T09:38:25Z",
+              "userName": "lfstyles",
+              "issueNumber": 341
             }
           ]
         }
@@ -9989,6 +10703,7 @@
       "latest": "0.0.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/bz.jed.tweakcompatible/",
+      "shortDescription": "Adds a way to check tweak compatibility in cydia",
       "category": "Tweaks",
       "author": "treAson",
       "commercial": false,
@@ -9996,6 +10711,7 @@
         {
           "tweakVersion": "0.0.3",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10009,20 +10725,45 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T19:09:21Z",
-              "userName": "dareal68"
+              "userName": "dareal68",
+              "issueNumber": 48
             },
             {
               "status": "working",
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-27T23:53:49Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 209
+            }
+          ]
+        },
+        {
+          "tweakVersion": "0.0.3",
+          "iOSVersion": "8.3",
+          "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone7,2",
+              "issues": "",
+              "date": "2017-12-27T19:18:47Z",
+              "userName": "viberstore",
+              "issueNumber": 52
             }
           ]
         },
         {
           "tweakVersion": "0.0.3",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10036,20 +10777,23 @@
               "device": "iPhone5,2",
               "issues": "",
               "date": "2017-12-27T20:32:00Z",
-              "userName": "farbix"
+              "userName": "farbix",
+              "issueNumber": 128
             },
             {
               "status": "working",
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-28T01:10:02Z",
-              "userName": "eskoze"
+              "userName": "eskoze",
+              "issueNumber": 266
             }
           ]
         },
         {
           "tweakVersion": "0.0.3",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10063,20 +10807,23 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T23:08:05Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 204
             },
             {
               "status": "working",
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T09:56:06Z",
-              "userName": "lucky77665t"
+              "userName": "lucky77665t",
+              "issueNumber": 342
             }
           ]
         },
         {
           "tweakVersion": "0.0.3",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10090,13 +10837,15 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:05:26Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 243
             }
           ]
         },
         {
           "tweakVersion": "0.0.3",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10110,7 +10859,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:52:56Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 378
             }
           ]
         }
@@ -10130,6 +10880,7 @@
         {
           "tweakVersion": "1.2r-71",
           "iOSVersion": "10.1.1",
+          "repository": "beta.unlimapps.com",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10143,7 +10894,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:05:38Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 245
             }
           ]
         }
@@ -10163,6 +10915,7 @@
         {
           "tweakVersion": "2.2r-17",
           "iOSVersion": "10.1.1",
+          "repository": "beta.unlimapps.com",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10176,7 +10929,8 @@
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:06:33Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 250
             }
           ]
         }
@@ -10188,6 +10942,7 @@
       "latest": "1.3.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tapsharp.unicodefaces/",
+      "shortDescription": "Add Unicode faces to your Keyboard.",
       "category": "Tweaks",
       "author": "TapSharp",
       "commercial": false,
@@ -10195,6 +10950,7 @@
         {
           "tweakVersion": "1.3.2",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10208,13 +10964,15 @@
               "device": "iPhone9,1",
               "issues": "",
               "date": "2017-12-28T09:37:23Z",
-              "userName": "pedoseal"
+              "userName": "pedoseal",
+              "issueNumber": 340
             }
           ]
         },
         {
           "tweakVersion": "1.3.2",
           "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10228,7 +10986,8 @@
               "device": "iPhone7,2",
               "issues": "",
               "date": "2017-12-28T15:53:14Z",
-              "userName": "Galfinite"
+              "userName": "Galfinite",
+              "issueNumber": 379
             }
           ]
         }
@@ -10248,6 +11007,7 @@
         {
           "tweakVersion": "1.0.0.0",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -10261,7 +11021,8 @@
               "device": "iPad3,4",
               "issues": "",
               "date": "2017-12-27T20:24:59Z",
-              "userName": "freskeeeh"
+              "userName": "freskeeeh",
+              "issueNumber": 103
             }
           ]
         }
@@ -10281,6 +11042,7 @@
         {
           "tweakVersion": "1.1.2",
           "iOSVersion": "10.2",
+          "repository": "fidele007 Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10294,7 +11056,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:21:30Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 313
             }
           ]
         }
@@ -10314,6 +11077,7 @@
         {
           "tweakVersion": "1.0",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10327,7 +11091,8 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-28T01:16:31Z",
-              "userName": "eskoze"
+              "userName": "eskoze",
+              "issueNumber": 294
             }
           ]
         }
@@ -10347,6 +11112,7 @@
         {
           "tweakVersion": "0.9.3500",
           "iOSVersion": "10.3.3",
+          "repository": "Cydia/Telesphoreo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10360,7 +11126,8 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-25T19:48:25Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 28
             }
           ]
         }
@@ -10380,6 +11147,7 @@
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10393,7 +11161,8 @@
               "device": "iPhone9,2",
               "issues": "",
               "date": "2017-12-28T00:05:47Z",
-              "userName": "sevenpastzeero"
+              "userName": "sevenpastzeero",
+              "issueNumber": 246
             }
           ]
         }
@@ -10413,6 +11182,7 @@
         {
           "tweakVersion": "1.2-1",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10426,7 +11196,8 @@
               "device": "iPhone8,4",
               "issues": "",
               "date": "2017-12-23T22:03:40Z",
-              "userName": "Ernest0-Production"
+              "userName": "Ernest0-Production",
+              "issueNumber": 17
             }
           ]
         }
@@ -10446,6 +11217,7 @@
         {
           "tweakVersion": "1.2.0",
           "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10459,7 +11231,8 @@
               "device": "iPhone8,1",
               "issues": "",
               "date": "2017-12-27T23:08:21Z",
-              "userName": "tw9ak"
+              "userName": "tw9ak",
+              "issueNumber": 205
             }
           ]
         }
@@ -10479,6 +11252,7 @@
         {
           "tweakVersion": "1.4",
           "iOSVersion": "10.2",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10492,7 +11266,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:21:39Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 314
             }
           ]
         }
@@ -10512,6 +11287,7 @@
         {
           "tweakVersion": "1.2.0",
           "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -10525,7 +11301,8 @@
               "device": "iPhone5,3",
               "issues": "Tweak loads fine on WhatsApp, but crashes the app upon opening ",
               "date": "2017-12-25T19:29:18Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 25
             }
           ]
         }
@@ -10545,6 +11322,7 @@
         {
           "tweakVersion": "0.9.3919",
           "iOSVersion": "10.3.3",
+          "repository": "Cydia/Telesphoreo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10558,7 +11336,8 @@
               "device": "iPhone5,4",
               "issues": "Sometime crashes the settings app when selecting a theme",
               "date": "2017-12-25T20:05:46Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 32
             }
           ]
         }
@@ -10578,6 +11357,7 @@
         {
           "tweakVersion": "1.4r-91",
           "iOSVersion": "10.3.3",
+          "repository": "beta.unlimapps.com",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10591,20 +11371,23 @@
               "device": "iPhone5,4",
               "issues": "",
               "date": "2017-12-25T23:03:41Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 36
             },
             {
               "status": "working",
               "device": "iPad3,6",
               "issues": "",
               "date": "2017-12-27T21:37:05Z",
-              "userName": "cazxtc"
+              "userName": "cazxtc",
+              "issueNumber": 140
             }
           ]
         },
         {
           "tweakVersion": "1.4r-91",
           "iOSVersion": "10.1.1",
+          "repository": "beta.unlimapps.com",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10615,23 +11398,26 @@
           "users": [
             {
               "status": "working",
-              "device": "iPhone9,2",
-              "issues": "",
-              "date": "2017-12-28T00:06:05Z",
-              "userName": "sevenpastzeero"
-            },
-            {
-              "status": "working",
               "device": "iPhone9,4",
               "issues": "",
               "date": "2017-12-28T00:05:54Z",
-              "userName": "lfstyles"
+              "userName": "lfstyles",
+              "issueNumber": 247
+            },
+            {
+              "status": "working",
+              "device": "iPhone9,2",
+              "issues": "",
+              "date": "2017-12-28T00:06:05Z",
+              "userName": "sevenpastzeero",
+              "issueNumber": 248
             }
           ]
         },
         {
           "tweakVersion": "1.4r-91",
           "iOSVersion": "10.2",
+          "repository": "beta.unlimapps.com",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10645,7 +11431,8 @@
               "device": "iPhone8,2",
               "issues": "",
               "date": "2017-12-28T01:21:50Z",
-              "userName": "Lizzardis"
+              "userName": "Lizzardis",
+              "issueNumber": 315
             }
           ]
         }
@@ -10665,6 +11452,7 @@
         {
           "tweakVersion": "2.1.0-12",
           "iOSVersion": "10.3.3",
+          "repository": "ModMyi (Archive)",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10678,7 +11466,8 @@
               "device": "iPhone5,4",
               "issues": "Carrier text doesn't change and the icons don't change immediately",
               "date": "2017-12-25T20:03:21Z",
-              "userName": "Mc-muffin"
+              "userName": "Mc-muffin",
+              "issueNumber": 31
             }
           ]
         }
