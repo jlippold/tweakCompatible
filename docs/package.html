@@ -19,75 +19,110 @@
 
 <body>
 
-    <div id="app" class="container">
+    <div id="app">
         <tweak></tweak>
     </div>
 
     <template id="tweak-template">
 
         <div>
-            <h3>{{package.name}}</h3>
-            <dl class="dl-horizontal">
-                <div v-for="item in Object.keys(package)">
-                    <div v-if="item !== 'versions'">
-                    <dt>
-                        {{item}}
-                    </dt>
-                    <dd>
-                        {{ package[item] }}
-                    </dd>
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="https://jlippold.github.io/tweakCompatible/">
+                            {{package.name}}
+                        </a>
+                    </div>
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="https://jlippold.github.io/tweakCompatible/">Show Tweak List</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </dl>
+            </nav>
 
-            <form>
-                <div class="form-group">
-                    <label for="sel1">Tweak Version</label>
-                    <select class="form-control" v-model="currentVersion">
-                        <option v-for="version in package.versions" v-bind:value="version.tweakVersion">
-                            {{version.tweakVersion}}
-                        </option>
-                    </select>
-                </div>
-            </form>
-
-            <div v-for="version in package.versions">
-
-                <div class="panel" v-bind:class="{
-                        'panel-success': version.outcome.calculatedStatus == 'Working',
-                        'panel-warning': version.outcome.calculatedStatus == 'Likely working',
-                        'panel-danger': version.outcome.calculatedStatus == 'Not working'
-                    }" v-if="version.tweakVersion == currentVersion" >
-
-                    <div class="panel-heading">
-                        iOS {{version.iOSVersion}} - {{version.outcome.calculatedStatus}}
-                        <span class="badge pull-right">
-                            {{version.outcome.percentage}}%
-                        </span>
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <a style="margin-bottom: 10px" type="button" class="btn btn-primary btn-md" :href="'http://cydia.saurik.com/package/' + package.id">
+                            Open in Cydia
+                        </a>
+                    
                     </div>
-
-                    <div class="panel-body">
-                        <p>
-                            {{ version.outcome.good }} device(s) reported this package as
-                            <strong>working</strong> on iOS {{ package.iOSVersion }}.
-                        </p>
-                        
-                        <p v-for="(user, index) in version.users">
-                            {{ relativeDate(user.date) }}, 
-                            <a target=_blank v-bind:href="'https://github.com/' + user.userName">
-                                {{user.userName}}
-                            </a> reported this tweak as
-                            <span v-if="user.status == 'working'" class="label label-success">Working</span>
-                            <span v-else-if="user.status == 'partial'" class="label label-warning">Partially Working</span>
-                            <span v-else class="label label-danger">Not Working</span>
-                            from an {{ getDeviceName(user.device)}}. 
-                            <span v-if="user.issues">- {{user.issues}}</span>
-                        </p>
-                        
+                    <div class="col-xs-12 col-sm-8 col-md-8">
+                        <dl class="dl-horizontal">
+                            <div v-for="item in Object.keys(package)">
+                                <div v-if="['versions', 'url'].indexOf(item) == -1">
+                                    <dt>
+                                        {{item}}
+                                    </dt>
+                                    <dd>
+                                        {{ package[item] }}
+                                    </dd>
+                                </div>
+                            </div>
+                        </dl>
                     </div>
-                
                 </div>
 
+                <form style="clear:both">
+                    <div class="form-group">
+                        <label for="sel1">Tweak Version</label>
+                        <select class="form-control" v-model="currentVersion">
+                            <option v-for="version in package.versions" v-bind:value="version.tweakVersion">
+                                {{version.tweakVersion}}
+                            </option>
+                        </select>
+                    </div>
+                </form>
+
+                <div v-for="version in package.versions">
+
+                    <div class="panel" v-bind:class="{
+                            'panel-success': version.outcome.calculatedStatus == 'Working',
+                            'panel-warning': version.outcome.calculatedStatus == 'Likely working',
+                            'panel-danger': version.outcome.calculatedStatus == 'Not working'
+                        }" v-if="version.tweakVersion == currentVersion" >
+
+                        <div class="panel-heading">
+                            iOS {{version.iOSVersion}} - {{version.outcome.calculatedStatus}}
+                            <span class="badge pull-right">
+                                {{version.outcome.percentage}}%
+                            </span>
+                        </div>
+
+                        <div class="panel-body">
+                            <p>
+                                {{ version.outcome.good }} device(s) reported this package as
+                                <strong>working</strong> on iOS {{ package.iOSVersion }}.
+                            </p>
+                            
+                            <p v-for="(user, index) in version.users">
+                                {{ relativeDate(user.date) }}, 
+                                <a target=_blank v-bind:href="'https://github.com/' + user.userName">
+                                    {{user.userName}}
+                                </a> reported this tweak as
+                                <span v-if="user.status == 'working'" class="label label-success">Working</span>
+                                <span v-else-if="user.status == 'partial'" class="label label-warning">Partially Working</span>
+                                <span v-else class="label label-danger">Not Working</span>
+                                from an {{ getDeviceName(user.device)}}. 
+                                <span v-if="user.issues">- {{user.issues}}</span>
+                            </p>
+                            
+                        </div>
+                    
+                    </div>
+
+                </div>
             </div>
         </div>
 
