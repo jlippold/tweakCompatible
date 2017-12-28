@@ -53,7 +53,12 @@
 
             <div v-for="version in package.versions">
 
-                <div class="panel panel-success" v-if="version.tweakVersion == currentVersion" >
+                <div class="panel" v-bind:class="{
+                        'panel-success': version.outcome.calculatedStatus == 'Working',
+                        'panel-warning': version.outcome.calculatedStatus == 'Likely working',
+                        'panel-danger': version.outcome.calculatedStatus == 'Not working'
+                    }" v-if="version.tweakVersion == currentVersion" >
+
                     <div class="panel-heading">
                         iOS {{version.iOSVersion}} - {{version.outcome.calculatedStatus}}
                         <span class="badge pull-right">
