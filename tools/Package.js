@@ -1,24 +1,18 @@
 var Version = require("./Version");
 
 function Package(props) {
-    this.id = null;
-    this.name = null;
-    this.latest = null;
-    this.repository = null;
-    this.url = null;
-    this.shortDescription = props.depiction;
-    this.category = null;
-    this.author = null;
-    this.commercial = null;
+    this.id = props.id;
+    this.name = props.name;
+    this.latest = props.latest;
+    this.repository = props.repository;
+    this.url = props.url;
+    this.shortDescription = props.depiction || props.shortDescription;
+    this.category = props.category;
+    this.author = props.author;
+    this.commercial = props.commercial;
 
     this.versions = [];
     this.versions.push(new Version(props));
-
-    for (var prop in props) {
-        if (this.hasOwnProperty(prop)) {
-            this[prop] = props[prop];
-        }
-    }
 
 }
 
