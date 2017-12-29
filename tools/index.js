@@ -2,6 +2,7 @@
 const GitHubApi = require('github');
 const async = require('async');
 const Joi = require('Joi');
+const semver = require('semver');
 
 var lib = require("./lib");
 var Package = require("./Package"); //model
@@ -73,7 +74,6 @@ function init(callback) {
                         return next();
                     } 
                     lib.commitAgainstIssue(change.issueNumber, next);
-                    //
                 }]
             }, function (err, result) {
                 nextIssue(err);
@@ -207,7 +207,7 @@ function reCalculate(packages, callback) {
 
     callback(null, {
         packages: packages,
-        iOSVersions: iOSVersions.reverse()
+        iOSVersions: iOSVersions.sort(semver.rcompare)
     });
 }
 
