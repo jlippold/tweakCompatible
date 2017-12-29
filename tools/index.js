@@ -60,7 +60,7 @@ function init(callback) {
                         if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
                         return 0;
                     });
-                    reCalculate(packages, next);
+                    reCalculate(packages, results.tweaks.devices, next);
                 }],
                 save: ['calculate', function (results, next) {
                     if (!results.validate) return next();
@@ -165,7 +165,7 @@ function addTweaks(tweaks, change, callback) {
     }
 }
 
-function reCalculate(packages, callback) {
+function reCalculate(packages, devices, callback) {
     var iOSVersions = [];
     packages.forEach(function (package) {
         var reCalculated = [];
@@ -198,6 +198,33 @@ function reCalculate(packages, callback) {
             }
             if (version.outcome.percentage > 75) {
                 version.outcome.calculatedStatus = "Working";
+            }
+
+            //f calc
+            version.outcome.arch32 = {};
+            version.outcome.arch32.total = version.users.filter(function(user) {
+                return is32bit(user.device, devices)
+            }).length;
+            version.outcome.arch32.good = version.users.filter(function (user) {
+                return is32bit(user.device, devices) && (user.status == "working" || user.status == "partial");
+            }).length;
+            version.outcome.arch32.bad = version.users.filter(function (user) {
+                return is32bit(user.device, devices) && user.status == "notworking";
+            }).length;
+
+            version.outcome.arch32.percentage =
+                version.outcome.arch32.total == 0 ? 0 :
+                Math.floor((version.outcome.arch32.good / version.outcome.arch32.total) * 100);
+
+            version.outcome.arch32.calculatedStatus = "Not working";
+            if (version.outcome.arch32.total == 0) {
+                version.outcome.arch32.calculatedStatus = "Unknown";
+            }
+            if (version.outcome.arch32.percentage > 40) {
+                version.outcome.arch32.calculatedStatus = "Likely working";
+            }
+            if (version.outcome.arch32.percentage > 75) {
+                version.outcome.arch32.calculatedStatus = "Working";
             }
 
             reCalculated.push(version);
@@ -252,6 +279,17 @@ function addLabelsToIssue(number, labels, callback) {
     github.issues.addLabels({ owner, repo, number, labels }, callback);
 }
 
+function is32bit(deviceId, devices) {
+    var is32 = false;
+    devices.forEach(function (device) {
+        if (device.deviceId == deviceId) {
+            if (device.arch32bit) {
+                is32 = true;
+            }
+        }
+    })
+    return is32;
+}
 
 function getIssues(callback) {
     var allIssues = [];

@@ -30,7 +30,6 @@ module.exports.commitAgainstIssue = function (issueNumber, callback) {
     });
     
     git.on('close', (code) => {
-        console.log(code);
         callback();
     });
 }
