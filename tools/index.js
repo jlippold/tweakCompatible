@@ -81,13 +81,7 @@ function init(callback) {
             });
 
         }, function (err) {
-            if (err) return callback(err);
-            //create tweaklist by iOS version and package
-            if (issues.length > 0) {
-                return outputTweakList(callback);
-            } else {
-                return callback(err);
-            }
+            return callback(err);
         });
     });
 }
