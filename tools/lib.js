@@ -49,7 +49,7 @@ module.exports.writePackage = function(package, callback) {
 
 module.exports.writeIOSVersionList = function (list, callback) {
     var file = path.join(jsonOutputPath, "iOSVersions.json");
-    fs.outputJson(file, package, jsonOptions, callback);
+    fs.outputJson(file, list, jsonOptions, callback);
 }
 
 module.exports.writeByiOS = function (output, iOSVersion, callback) {
