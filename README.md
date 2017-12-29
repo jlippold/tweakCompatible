@@ -23,6 +23,8 @@ This repo also contains a nodejs script, `tools\index.js`, that pulls open issue
 
 To use the script, the env variable `GITHUB_API_TOKEN` must be set.
 
+Also, `npm run rebuild` will wipe out all packages and recreate them from the closed issues in the repo.
+
 ## Calculations
 
 I wanted to make this automated, community driven, with minimal human dependencies. Here is how the statuses are calculated:
