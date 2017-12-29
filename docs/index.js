@@ -80,12 +80,17 @@ $(document).ready(function () {
                     c.data.packages = data.packages.slice();
                     //detect ios version from useragent
                     var v = iOSVersion();
+                    var foundVersion = false;
                     if (v) {
                         c.data.iOSVersions.forEach(function (vers, idx) {
                             if (v == vers) {
                                 c.data.iOSVersionIndex = idx;
+                                foundVersion = true
                             }
                         });
+                    } 
+                    if (!foundVersion) {
+                        c.data.iOSVersionIndex = (data.iOSVersions.length - 1);
                     }
                 });
             }
