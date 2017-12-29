@@ -229,8 +229,22 @@ function validateChange(change, callback) {
     }).unknown();
 
     Joi.validate(change, schema, function (err) {
-        if (err) console.error("Validation error", err, change);
-        callback(null, (err) ? false : true);
+        if (err) { 
+            console.error("Validation error", err, change);
+            var opts = {
+                owner, repo,
+                number: change.issueNumber,
+                state: "closed",
+                labels: ["bypass", "invalid"]
+            };
+            github.issues.edit(opts, function () {
+                callback(null, false);
+            });
+            
+        } else {
+            callback(null, true);
+        }
+        
     });
 }
 
