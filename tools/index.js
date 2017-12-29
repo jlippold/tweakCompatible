@@ -2,7 +2,7 @@
 const GitHubApi = require('github');
 const async = require('async');
 const Joi = require('Joi');
-const compareVersions = require('compareVersions');
+const compareVersions = require('compare-versions');
 
 var lib = require("./lib");
 var Package = require("./Package"); //model
