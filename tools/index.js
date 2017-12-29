@@ -298,21 +298,23 @@ function outputTweakList(callback) {
             });
         },
         function writeByiOSVersion(list, next) {
+            
             async.eachSeries(list.iOSVersions, function (iOSVersion, nextPackage) {
                 var output = {};
                 output.packages = [];
-                list.packages.forEach(function (package) {
-                    var p = package;
-                    delete p.versions;
+                
+                list.packages.forEach(function(package) {
+                    var p = Object.assign({}, package);
+                    p.versions = [];
                     package.versions.forEach(function (version) {
                         if (version.iOSVersion == iOSVersion) {
-                            var v = version;
+                            var v = Object.assign({}, version);
                             delete v.users;
                             p.versions.push(v);
                         }
                     });
                     //add to iOS 
-                    if (p.hasOwnProperty("version")) {
+                    if (p.versions.length > 0) {
                         output.packages.push(p);
                     }
                 });
