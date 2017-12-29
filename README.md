@@ -39,6 +39,8 @@ This tweak can be installed with Cydia via the [big boss](http://apt.thebigboss.
 
 ## To-Do
 
+ - Block pirate repos
+ - Add webhook processing
  - Add moderation tools
     - block package / lock package
     - block user
@@ -46,8 +48,7 @@ This tweak can be installed with Cydia via the [big boss](http://apt.thebigboss.
     - delete review
  - Add request feature
  - Never ending scroll, more filters
- - minimize json, and split by ios version
- - add webhook processing
+
 
 ## License
 
