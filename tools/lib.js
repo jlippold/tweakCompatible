@@ -26,13 +26,14 @@ module.exports.findReviewForUserInVersion = function (userName, device, version)
 }
 
 module.exports.commitAgainstIssue = function (issueNumber, callback) {
-    var args = ["commit", "-am", "fixes #" + issueNumber]
-    var git = spawn("git", args, {
-        cwd: path.join(__dirname, "../")
-    });
-    
-    git.on('close', (code) => {
-        callback();
+    var add = spawn("git", ["add", ".", "-A"], {cwd: path.join(__dirname, "../")});
+    add.on('close', (code) => {
+        var commit = spawn("git", ["commit", "-am", "fixes #" + issueNumber], {
+            cwd: path.join(__dirname, "../")
+        });
+        commit.on('close', (code) => {
+            callback();
+        });
     });
 }
 
@@ -43,6 +44,11 @@ module.exports.wipeJson = function() {
 module.exports.writePackage = function(package, callback) {
     var folder = path.join(jsonOutputPath, "/packages/");
     var file = path.join(folder, package.id + ".json");
+    fs.outputJson(file, package, jsonOptions, callback);
+}
+
+module.exports.writeIOSVersionList = function (list, callback) {
+    var file = path.join(jsonOutputPath, "iOSVersions.json");
     fs.outputJson(file, package, jsonOptions, callback);
 }
 
@@ -62,9 +68,11 @@ module.exports.getTweakList = function (callback) {
     fs.readJson(tweakListPath, callback);
 }
 
-module.exports.writeTweakList = function (packages, callback) {
-    fs.writeJson(tweakListPath, packages, jsonOptions, callback);
+module.exports.writeTweakList = function (json, callback) {
+    fs.writeJson(tweakListPath, json, jsonOptions, callback);
 }
+
+
 
 module.exports.parseJSON = function (str) {
     var json;

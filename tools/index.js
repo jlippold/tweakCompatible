@@ -37,8 +37,9 @@ if (process.argv.length == 2) {
 function init(callback) {
     getIssues(function (err, issues) {
         if (mode == "rebuild") {
-            //wipe out old items
-            lib.wipePackages();
+            lib.wipePackages(); //clear pacakges from tweaks.json
+            lib.wipeJson(); //wipe the json dir
+            next();
         }
 
         async.eachOfLimit(issues, 1, function (change, idx, nextIssue) {
@@ -66,7 +67,7 @@ function init(callback) {
                     if (!results.validate) return next();
                     results.tweaks.packages = results.calculate.packages.slice();
                     results.tweaks.iOSVersions = results.calculate.iOSVersions.slice();
-                    lib.writeTweakList(results.tweaks, next);
+                    saveAllChanges(results.tweaks, change, next);
                 }],
                 commit: ['calculate', function (results, next) {
                     if (!results.validate) return next();
@@ -279,53 +280,48 @@ function validateChange(change, callback) {
     });
 }
 
-function outputTweakList(callback) {
+function saveAllChanges(list, change, callback) {
 
     async.waterfall([
-        function wipeDisk(next) {
-            lib.wipeJson();
-            next();
+        function saveTweakList(next) {
+            //save base list to disk
+            lib.writeTweakList(list, next);
         },
-        function (next) {
-            lib.getTweakList(next);
+        function saveiOSList(next) {
+            //save base list to disk
+            lib.writeIOSVersionList({iOSVersions: list.iOSVersions}, next);
         },
-        function writeByPackage(list, next) {
-            //write each package to individual json files
-            async.eachSeries(list.packages, function (package, nextPackage) {
-                lib.writePackage(package, nextPackage)
-            }, function (err) {
-                next(err, list);
-            });
+        function writeByPackage(next) {
+            //create package to disk
+            var package = lib.getPackageById(change.packageId, list.packages);
+            lib.writePackage(package, next);
         },
-        function writeByiOSVersion(list, next) {
-            
-            async.eachSeries(list.iOSVersions, function (iOSVersion, nextPackage) {
-                var output = {};
-                output.packages = [];
-                
-                list.packages.forEach(function(package) {
-                    var p = Object.assign({}, package);
-                    p.versions = [];
-                    package.versions.forEach(function (version) {
-                        if (version.iOSVersion == iOSVersion) {
-                            var v = Object.assign({}, version);
-                            delete v.users;
-                            p.versions.push(v);
-                        }
-                    });
-                    //add to iOS 
-                    if (p.versions.length > 0) {
-                        output.packages.push(p);
+        function writeByiOSVersion(next) {
+            //save ios listing to disk
+            var iOSVersion = change.iOSVersion;
+            var output = {
+                packages: []
+            };
+
+            list.packages.forEach(function (package) {
+                var p = Object.assign({}, package); //clone
+                p.versions = [];
+                package.versions.forEach(function (version) {
+                    if (version.iOSVersion == iOSVersion) {
+                        var v = Object.assign({}, version); //clone
+                        delete v.users;
+                        p.versions.push(v);
                     }
                 });
-                if (output.packages.length > 0) {
-                    //write to disk
-                    lib.writeByiOS(output, iOSVersion, nextPackage);
-                } else {
-                    nextPackage()
+                if (p.versions.length > 0) {
+                    output.packages.push(p);
                 }
             });
-            next();
+
+            //write to disk
+            lib.writeByiOS(output, iOSVersion, function () {
+                next();
+            });
         }
     ], function (err) {
         callback(err);
