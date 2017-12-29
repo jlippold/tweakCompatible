@@ -2,7 +2,7 @@
 const GitHubApi = require('github');
 const async = require('async');
 const Joi = require('Joi');
-const semver = require('semver');
+const compareVersions = require('compareVersions');
 
 var lib = require("./lib");
 var Package = require("./Package"); //model
@@ -207,7 +207,7 @@ function reCalculate(packages, callback) {
 
     callback(null, {
         packages: packages,
-        iOSVersions: iOSVersions.sort(semver.rcompare)
+        iOSVersions: iOSVersions.sort(compareVersions)
     });
 }
 
