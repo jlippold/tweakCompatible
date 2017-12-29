@@ -1,7 +1,9 @@
-const jsonfile = require('jsonfile');
+const fs = require('fs-extra');
 const path = require('path');
 var spawn = require('child_process').execFile;
 const tweakListPath = path.join(__dirname, "../docs/tweaks.json");
+const jsonOutputPath = path.join(__dirname, "../docs/json/");
+var jsonOptions = { spaces: 2 };
 
 module.exports.getPackageById = function (id, packages) {
     return packages.find(function (package) {
@@ -34,20 +36,34 @@ module.exports.commitAgainstIssue = function (issueNumber, callback) {
     });
 }
 
+module.exports.wipeJson = function() {
+    fs.emptyDirSync(jsonOutputPath);
+}
+
+module.exports.writePackage = function(package, callback) {
+    var folder = path.join(jsonOutputPath, "/packages/");
+    var file = path.join(folder, package.id + ".json");
+    fs.outputJson(file, package, jsonOptions, callback);
+}
+
+module.exports.writeByiOS = function (output, iOSVersion, callback) {
+    var folder = path.join(jsonOutputPath, "/iOS/");
+    var file = path.join(folder, iOSVersion + ".json");
+    fs.outputJson(file, output, jsonOptions, callback);
+}
+
 module.exports.wipePackages = function () {
-    var jsonfile = require('jsonfile')
-    var file = jsonfile.readFileSync(tweakListPath);
+    var file = fs.readJsonSync(tweakListPath);
     file.packages = [];
-    jsonfile.writeFileSync(tweakListPath, file, { spaces: 2 });
+    fs.writeJsonSync(tweakListPath, file, jsonOptions);
 }
 
 module.exports.getTweakList = function (callback) {
-    var jsonfile = require('jsonfile')
-    jsonfile.readFile(tweakListPath, callback);
+    fs.readJson(tweakListPath, callback);
 }
 
 module.exports.writeTweakList = function (packages, callback) {
-    jsonfile.writeFile(tweakListPath, packages, { spaces: 2 }, callback);
+    fs.writeJson(tweakListPath, packages, jsonOptions, callback);
 }
 
 module.exports.parseJSON = function (str) {

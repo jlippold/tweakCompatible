@@ -45,12 +45,12 @@ function init(callback) {
             console.log("Working on: " + change.issueTitle);
             async.auto({
                 tweaks: lib.getTweakList,
-                validate: function(next) {
+                validate: function (next) {
                     validateChange(change, next);
                 },
                 add: ['tweaks', 'validate', function (results, next) {
                     if (!results.validate) return next();
-                    addTweaks(results.tweaks, change, next);         
+                    addTweaks(results.tweaks, change, next);
                 }],
                 calculate: ['add', function (results, next) {
                     if (!results.validate) return next();
@@ -72,7 +72,7 @@ function init(callback) {
                     if (!results.validate) return next();
                     if (mode == "rebuild") {
                         return next();
-                    } 
+                    }
                     lib.commitAgainstIssue(change.issueNumber, next);
                 }]
             }, function (err, result) {
@@ -80,11 +80,15 @@ function init(callback) {
             });
 
         }, function (err) {
-            callback(err);
+            if (err) return callback(err);
+            //create tweaklist by iOS version and package
+            if (issues.length > 0) {
+                return outputTweakList(callback);
+            } else {
+                return callback(err);
+            }
         });
     });
-
-
 }
 
 function addTweaks(tweaks, change, callback) {
@@ -95,7 +99,7 @@ function addTweaks(tweaks, change, callback) {
         console.log("New package creation: ", change.packageId);
 
         var package = new Package(change);
-        
+
         if (!package.id) {
             console.error("Bad package Id", package, change)
             return callback("Bad package Id");
@@ -111,7 +115,7 @@ function addTweaks(tweaks, change, callback) {
 
     } else {
         console.log("Editing package: ", package.id);
-        
+
         //edit package info
         package.latest = change.latest;
         package.shortDescription = change.depiction || change.shortDescription;
@@ -202,7 +206,7 @@ function reCalculate(packages, devices, callback) {
 
             //f calc
             version.outcome.arch32 = {};
-            version.outcome.arch32.total = version.users.filter(function(user) {
+            version.outcome.arch32.total = version.users.filter(function (user) {
                 return is32bit(user.device, devices)
             }).length;
             version.outcome.arch32.good = version.users.filter(function (user) {
@@ -214,7 +218,7 @@ function reCalculate(packages, devices, callback) {
 
             version.outcome.arch32.percentage =
                 version.outcome.arch32.total == 0 ? 0 :
-                Math.floor((version.outcome.arch32.good / version.outcome.arch32.total) * 100);
+                    Math.floor((version.outcome.arch32.good / version.outcome.arch32.total) * 100);
 
             version.outcome.arch32.calculatedStatus = "Not working";
             if (version.outcome.arch32.total == 0) {
@@ -239,7 +243,7 @@ function reCalculate(packages, devices, callback) {
 }
 
 function validateChange(change, callback) {
-    
+
     var schema = Joi.object().keys({
         author: Joi.string().required(),
         iOSVersion: Joi.string().regex(/[0-9][0-9.]*/).required(),
@@ -256,7 +260,7 @@ function validateChange(change, callback) {
     }).unknown();
 
     Joi.validate(change, schema, function (err) {
-        if (err) { 
+        if (err) {
             console.error("Validation error", err, change);
             var opts = {
                 owner, repo,
@@ -267,12 +271,64 @@ function validateChange(change, callback) {
             github.issues.edit(opts, function () {
                 callback(null, false);
             });
-            
+
         } else {
             callback(null, true);
         }
-        
+
     });
+}
+
+function outputTweakList(callback) {
+
+    async.waterfall([
+        function wipeDisk(next) {
+            lib.wipeJson();
+            next();
+        },
+        function (next) {
+            lib.getTweakList(next);
+        },
+        function writeByPackage(list, next) {
+            //write each package to individual json files
+            async.eachSeries(list.packages, function (package, nextPackage) {
+                lib.writePackage(package, nextPackage)
+            }, function (err) {
+                next(err, list);
+            });
+        },
+        function writeByiOSVersion(list, next) {
+            async.eachSeries(list.iOSVersions, function (iOSVersion, nextPackage) {
+                var output = {};
+                output.packages = [];
+                list.packages.forEach(function (package) {
+                    var p = package;
+                    delete p.versions;
+                    package.versions.forEach(function (version) {
+                        if (version.iOSVersion == iOSVersion) {
+                            var v = version;
+                            delete v.users;
+                            p.versions.push(v);
+                        }
+                    });
+                    //add to iOS 
+                    if (p.hasOwnProperty("version")) {
+                        output.packages.push(p);
+                    }
+                });
+                if (output.packages.length > 0) {
+                    //write to disk
+                    lib.writeByiOS(output, iOSVersion, nextPackage);
+                } else {
+                    nextPackage()
+                }
+            });
+            next();
+        }
+    ], function (err) {
+        callback(err);
+    });
+
 }
 
 function addLabelsToIssue(number, labels, callback) {
@@ -311,15 +367,15 @@ function getIssues(callback) {
         },
         function (next) {
             github.issues.getForRepo(options, function (err, result) {
-                result.data.forEach(function(issue) {
-                    var shouldSkip = issue.labels.find(function(label) {
+                result.data.forEach(function (issue) {
+                    var shouldSkip = issue.labels.find(function (label) {
                         return label.name == "bypass"
                     });
                     if (!shouldSkip) {
                         allIssues.push(issue);
                     }
                 })
-                
+
                 if (github.hasNextPage(result)) {
                     options.page++;
                     nextPage = true;
