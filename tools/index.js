@@ -1,6 +1,7 @@
 
 const GitHubApi = require('github');
 const async = require('async');
+const Joi = require('Joi');
 
 var lib = require("./lib");
 var Package = require("./Package"); //model
@@ -43,10 +44,15 @@ function init(callback) {
             console.log("Working on: " + change.issueTitle);
             async.auto({
                 tweaks: lib.getTweakList,
-                add: ['tweaks', function (results, next) {
-                    addTweaks(results.tweaks, change, next);
+                validate: function(next) {
+                    validateChange(change, next);
+                },
+                add: ['tweaks', 'validate', function (results, next) {
+                    if (!results.validate) return next();
+                    addTweaks(results.tweaks, change, next);         
                 }],
                 calculate: ['add', function (results, next) {
+                    if (!results.validate) return next();
                     var packages = results.add.slice();
                     packages.sort(function compare(a, b) {
                         if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
@@ -56,11 +62,13 @@ function init(callback) {
                     reCalculate(packages, next);
                 }],
                 save: ['calculate', function (results, next) {
+                    if (!results.validate) return next();
                     results.tweaks.packages = results.calculate.packages.slice();
                     results.tweaks.iOSVersions = results.calculate.iOSVersions.slice();
                     lib.writeTweakList(results.tweaks, next);
                 }],
                 commit: ['calculate', function (results, next) {
+                    if (!results.validate) return next();
                     if (mode == "rebuild") {
                         return next();
                     } 
@@ -203,6 +211,28 @@ function reCalculate(packages, callback) {
     });
 }
 
+function validateChange(change, callback) {
+    
+    var schema = Joi.object().keys({
+        author: Joi.string().required(),
+        iOSVersion: Joi.string().regex(/[0-9][0-9.]*/).required(),
+        url: Joi.string().uri().required(),
+        latest: Joi.string().required(),
+        name: Joi.string().required(),
+        packageName: Joi.string().required(),
+        id: Joi.string().required(),
+        packageId: Joi.string().required(),
+        repository: Joi.string().required(),
+        deviceId: Joi.string().required(/\|iPad$|\|iPhone$/).required(),
+        userNotes: Joi.string().allow('').required(),
+        userChosenStatus: Joi.string().valid('not working', 'working', 'partial').required()
+    }).unknown();
+
+    Joi.validate(change, schema, function (err) {
+        if (err) console.error("Validation error", err, change);
+        callback(null, (err) ? false : true);
+    });
+}
 
 function addLabelsToIssue(number, labels, callback) {
     github.issues.addLabels({ owner, repo, number, labels }, callback);
