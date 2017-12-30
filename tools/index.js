@@ -8,7 +8,8 @@ var lib = require("./lib");
 var Package = require("./Package"); //model
 var User = require("./User"); //model
 var Version = require("./Version"); //model
-var bans = require("./bans.json");
+var bans = require("../docs/bans.json");
+var devices = require("../docs/devices.json").devices;
 
 const owner = "jlippold";
 const repo = "tweakCompatible";
@@ -40,7 +41,6 @@ function init(callback) {
         if (mode == "rebuild") {
             lib.wipePackages(); //clear pacakges from tweaks.json
             lib.wipeJson(); //wipe the json dir
-            next();
         }
 
         async.eachOfLimit(issues, 1, function (change, idx, nextIssue) {
@@ -62,7 +62,7 @@ function init(callback) {
                         if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
                         return 0;
                     });
-                    reCalculate(packages, results.tweaks.devices, next);
+                    reCalculate(packages, next);
                 }],
                 save: ['calculate', function (results, next) {
                     if (!results.validate) return next();
@@ -163,7 +163,7 @@ function addTweaks(tweaks, change, callback) {
     }
 }
 
-function reCalculate(packages, devices, callback) {
+function reCalculate(packages, callback) {
     var iOSVersions = [];
     packages.forEach(function (package) {
         var reCalculated = [];
@@ -326,7 +326,7 @@ function addLabelsToIssue(number, labels, callback) {
     github.issues.addLabels({ owner, repo, number, labels }, callback);
 }
 
-function is32bit(deviceId, devices) {
+function is32bit(deviceId) {
     var is32 = false;
     devices.forEach(function (device) {
         if (device.deviceId == deviceId) {
@@ -392,7 +392,7 @@ function getIssues(callback) {
                             thisIssue.userChosenStatus = json.chosenStatus;
                             thisIssue.userName = issue.user.login;
                             if (!thisIssue.hasOwnProperty("arch32")) {
-                                thisIssue.arch32 = is32bit(thisIssue.deviceId, devices);
+                                thisIssue.arch32 = is32bit(thisIssue.deviceId);
                             }
 
                             if (bans.repositories.indexOf(thisIssue.repository) > -1) {
