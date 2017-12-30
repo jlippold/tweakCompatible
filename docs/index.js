@@ -1,6 +1,7 @@
 var vm;
 var tweakList;
 var userDetails;
+var cache;
 
 $(document).ready(function () {
 
@@ -12,15 +13,67 @@ $(document).ready(function () {
                     searchTerm: "",
                     iOSVersionIndex: 0,
                     categories: [],
-                    iOSVersions: [],
                     devices: [],
+                    iOSVersions: [],
+                    packageCache: {},
                     packages: []
                 }
             };
         },
         mounted: function () {
             var c = this;
-            this.fetch();
+            async.auto({
+                devices: function (callback) {
+                    $.ajax({
+                        url: "devices.json",
+                        dataType: 'json',
+                        success: function (data) {
+                            callback(null, data.devices);
+                        },
+                        error: function (err) {
+                            callback(err);
+                        }
+                    });
+                },
+                iOSVersions: function (callback) {
+                    $.ajax({
+                        url: "iOSVersions.json",
+                        dataType: 'json',
+                        success: function (data) {
+                            callback(null, data.iOSVersions);
+                        },
+                        error: function (err) {
+                            callback(err);
+                        }
+                    });
+                },
+                index: ['devices', 'iOSVersions', function (results, callback) {
+                    //detect ios version from useragent
+                    var v = iOSVersion();
+                    var iOSVersionIndex = 0;
+                    var foundVersion = false;
+                    if (v) {
+                        results.iOSVersions.forEach(function (vers, idx) {
+                            if (v == vers) {
+                                iOSVersionIndex = idx;
+                                foundVersion = true
+                            }
+                        });
+                    }
+                    if (!foundVersion) {
+                        iOSVersionIndex = (results.iOSVersions.length - 1);
+                    }
+                    callback(null, iOSVersionIndex);
+                }]
+            }, function (err, results) {
+                if (err) {
+                    return console.error(err);
+                }
+                c.data.iOSVersions = results.iOSVersions;
+                c.data.devices = results.devices;
+                c.data.iOSVersionIndex = results.index;
+                c.fetch();
+            });
         },
         computed: {
             filteredPackages: function () {
@@ -28,7 +81,9 @@ $(document).ready(function () {
                 var data = this.data;
                 var iOSVersion = data.iOSVersions[data.iOSVersionIndex];
                 var searchTerm = data.searchTerm.toLowerCase();
+                
 
+                
                 var filteredPackageList = data.packages.filter(function (package) {
                     if (searchTerm == "") {
                         return true;
@@ -38,7 +93,6 @@ $(document).ready(function () {
                         package.shortDescription.toLowerCase().indexOf(searchTerm) > -1
                     );
                 });
-
 
                 //reformat the object for display purposes
                 filteredPackageList.forEach(function (package) {
@@ -55,9 +109,7 @@ $(document).ready(function () {
 
                     });
                 });
-
                 return filteredPackageList;
-
             }
         },
         methods: {
@@ -73,26 +125,26 @@ $(document).ready(function () {
             },
             fetch: function () {
                 var c = this;
-                $.getJSON("tweaks.json", function (data) {
-                    c.data.categories = data.categories.slice();
-                    c.data.iOSVersions = data.iOSVersions.slice();
-                    c.data.devices = data.devices.slice();
-                    c.data.packages = data.packages.slice();
-                    //detect ios version from useragent
-                    var v = iOSVersion();
-                    var foundVersion = false;
-                    if (v) {
-                        c.data.iOSVersions.forEach(function (vers, idx) {
-                            if (v == vers) {
-                                c.data.iOSVersionIndex = idx;
-                                foundVersion = true
-                            }
-                        });
-                    } 
-                    if (!foundVersion) {
-                        c.data.iOSVersionIndex = (data.iOSVersions.length - 1);
-                    }
-                });
+                if (c.data.iOSVersions.length == 0) {
+                    return;
+                }
+                var selectediOS = c.data.iOSVersions[c.data.iOSVersionIndex];
+
+                if (c.data.packageCache.hasOwnProperty(selectediOS)) {
+                    c.data.packages = c.data.packageCache[selectediOS].slice();
+
+                    c.data.categories = c.data.packages.map(function(package) {
+                        return package.category;
+                    }).filter(function (value, index, self) {
+                        return self.indexOf(value) === index;
+                    });
+
+                } else {
+                    $.getJSON("json/iOS/" + selectediOS + ".json", function (data) {
+                        c.data.packageCache[selectediOS] = data.packages.slice();
+                        c.fetch();
+                    });
+                }
             }
         }
     });
