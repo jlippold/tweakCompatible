@@ -17,71 +17,71 @@
     
     <!-- Custom styles for this template -->
     <link href="index.css" rel="stylesheet">
-    
+
 </head>
 
 <body>
 
-    <div id="app" class="container">
+    <div id="app">
         <submission></submission>
     </div>
 
     <template id="submission-template">
     
-        <div>
-                <h4>Submit Tweak Review</h4>
-                <h5>{{data.userInfo.packageName}}</h5>
+        <div class="container-fluid main">
+            <h4>Submit Tweak Review</h4>
+            <h5>{{data.userInfo.packageName}}</h5>
+            
+            <form>
                 
-                <form>
-                    
-                    <div class="form-group">
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="working" :disabled="data.action != 'working'" v-model="data.chosenStatus"
-                                    :checked="data.action == 'working'"> Tweak is working on iOS {{data.userInfo.iOSVersion}}
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="partial" :disabled="data.action != 'working'" v-model="data.chosenStatus"> Tweak is partially working on iOS {{data.userInfo.iOSVersion}}
-                            </label>
-                        </div>
-                        <div class="radio disabled">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="not working" :disabled="data.action == 'working'" :checked="data.action != 'working'"
-                                    v-model="data.chosenStatus"> Tweak is not working on iOS {{data.userInfo.iOSVersion}}
-                            </label>
-                        </div>
+                <div class="form-group">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="working" :disabled="data.action != 'working'" v-model="data.chosenStatus"
+                                :checked="data.action == 'working'"> Tweak is working on iOS {{data.userInfo.iOSVersion}}
+                        </label>
                     </div>
-                    <div class="form-group">
-                        <label for="review">Notes</label>
-                        <input type="text" class="form-control" id="review" v-model="data.notes" placeholder="Optional review notes">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="partial" :disabled="data.action != 'working'" v-model="data.chosenStatus"> Tweak is partially working on iOS {{data.userInfo.iOSVersion}}
+                        </label>
                     </div>
-                </form>
-
-                <div class="alert alert-danger alert-dismissible fade in" role="alert">
-                    <p>
-                        Once you click next, you will be redirected to github issues to finalize this submission. You
-                        <strong>need a github account</strong> to submit reviews! Just click submit on the created github issue
-                        and your review will be posted.
-                    </p>
+                    <div class="radio disabled">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="not working" :disabled="data.action == 'working'" :checked="data.action != 'working'"
+                                v-model="data.chosenStatus"> Tweak is not working on iOS {{data.userInfo.iOSVersion}}
+                        </label>
+                    </div>
                 </div>
-
-                
-                <div class="pull-right">
-                    <a class="btn btn-danger" role="button" href=".">
-                        Cancel
-                    </a>
-                    <button role="button" class="btn btn-primary" v-on:click="github()">
-                        Next
-                    </button>
+                <div class="form-group">
+                    <label for="review">Notes</label>
+                    <input type="text" class="form-control" id="review" v-model="data.notes" placeholder="Optional review notes">
                 </div>
+            </form>
 
-                <form id="github" method="GET" target="_blank" action="https://github.com/jlippold/tweakCompatible/issues/new">
-                    <input type="hidden" :value="issueTitle" name="title" />
-                    <input type="hidden" :value="issueBody" name="body" />
-                </form>
+            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                <p>
+                    Once you click next, you will be redirected to github issues to finalize this submission. You
+                    <strong>need a github account</strong> to submit reviews! Just click submit on the created github issue
+                    and your review will be posted.
+                </p>
             </div>
+
+            
+            <div class="pull-right">
+                <a class="btn btn-danger" role="button" href=".">
+                    Cancel
+                </a>
+                <button role="button" class="btn btn-primary" v-on:click="github()">
+                    Next
+                </button>
+            </div>
+
+            <form id="github" method="GET" target="_blank" action="https://github.com/jlippold/tweakCompatible/issues/new">
+                <input type="hidden" :value="issueTitle" name="title" />
+                <input type="hidden" :value="issueBody" name="body" />
+            </form>
+        </div>
         
     </template>
 
