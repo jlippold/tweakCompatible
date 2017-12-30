@@ -52,15 +52,29 @@ $(document).ready(function () {
             },
             fetch: function () {
                 var c = this;
-                $.getJSON("tweaks.json", function (data) {
-                    var package = data.packages.find(function(p) {
-                        return p.id == userDetails.packageId;
-                    });
-
-                    if (package) {;
-                        c.package = package;
-                        c.devices = data.devices.slice();
-                        c.currentVersion = package.versions[0].tweakVersion;
+                async.auto({
+                    devices: function (callback) {
+                        $.ajax({
+                            url: "devices.json",
+                            dataType: 'json',
+                            success: function (data) {
+                                c.devices = data.devices.slice();
+                                callback(null);
+                            },
+                            error: function (err) {
+                                callback(err);
+                            }
+                        });
+                    },
+                    package: ['devices', function (callback) {
+                        $.getJSON("json/packages/" + userDetails.packageId + ".json", function (data) {
+                            c.package = data;
+                            c.currentVersion = data.versions[0].tweakVersion;
+                        });
+                    }]
+                }, function (err, results) {
+                    if (err) {
+                        return console.error(err);
                     }
                 });
             }
