@@ -13,7 +13,10 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    
+    <!-- Custom styles for this template -->
+    <link href="index.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,31 +28,45 @@
     <template id="tweak-template">
 
         <div>
-            <nav class="navbar navbar-inverse navbar-static-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                            aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-header">
+                    <div class="hidden-md hidden-lg hidden-sm">
+                        <button type="button" class="pull-right" data-toggle="modal" data-target="#donate" style="margin-top: 7px; margin-right: 10px; background-color: transparent; border: none">
+                            <span style="color: white; font-size: 1.5em">
+                                <i class="fa fa-coffee"></i>
+                            </span>
                         </button>
-                        <a class="navbar-brand" href="https://jlippold.github.io/tweakCompatible/">
-                            {{package.name}}
+            
+                        <a href="https://github.com/jlippold/tweakCompatible" class="pull-right" style="margin-top: 8px; margin-right: 10px">
+                            <span style="color: white; font-size: 1.5em;">
+                                <i class="fa fa-github"></i>
+                            </span>
                         </a>
                     </div>
-                    <div id="navbar" class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="https://jlippold.github.io/tweakCompatible/">Show Tweak List</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <a class="navbar-brand" href="https://jlippold.github.io/tweakCompatible/">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        TweakCompatible
+                    </a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="https://github.com/jlippold/tweakCompatible">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                Source Code
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#donate" data-toggle="modal" data-target="#donate">
+                                <i class="fa fa-coffee" aria-hidden="true"></i>
+                                Buy me a coffee
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
 
-            <div class="container">
+            <div class="container-fluid main">
                 <div class="row-fluid">
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         <a style="margin-bottom: 10px" type="button" class="btn btn-primary btn-md" :href="'http://cydia.saurik.com/package/' + package.id">
@@ -95,7 +112,7 @@
                         <div class="panel-heading">
                             iOS {{version.iOSVersion}} - {{version.outcome.calculatedStatus}}
                             <span class="badge pull-right">
-                                {{version.outcome.percentage}}%
+                                {{version.outcome.percentage}}% Working
                             </span>
                         </div>
 
@@ -106,14 +123,21 @@
                             </p>
                             
                             <p v-for="(user, index) in version.users">
-                                {{ relativeDate(user.date) }}, 
-                                <a target=_blank v-bind:href="'https://github.com/' + user.userName">
-                                    {{user.userName}}
-                                </a> reported this tweak as
+                                {{ relativeDate(user.date) }}, {{user.userName}}
+                                
+                                <a target=_blank v-bind:href="'https://github.com/jlippold/tweakCompatible/issues/' + user.issueNumber">
+                                     reported this tweak
+                                </a> as
                                 <span v-if="user.status == 'working'" class="label label-success">Working</span>
                                 <span v-else-if="user.status == 'partial'" class="label label-warning">Partially Working</span>
                                 <span v-else class="label label-danger">Not Working</span>
-                                from an {{ getDeviceName(user.device)}}. 
+                                from a 
+                                
+                                <span v-if="user.arch32" class="badge">32-bit</span>
+                                <span v-else="user.arch32" class="badge">64-bit</span>
+
+
+                                {{ getDeviceName(user.device)}}. 
                                 <span v-if="user.issues">- {{user.issues}}</span>
                             </p>
                             
