@@ -41,7 +41,6 @@ This tweak can be installed with Cydia via the [big boss](http://apt.thebigboss.
 
  - Inject js into cydia webview instead of button clicks
  - Add webhook processing
- - Block pirate repos
  - Add moderation tools
     - block package / lock package
     - block user
