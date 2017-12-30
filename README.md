@@ -56,4 +56,7 @@ Licensed under [Apache License, version 2.0](https://www.apache.org/licenses/LIC
 
 ## Credits
 
-Thanks to [HASHBANG](https://github.com/hbang) for open sourcing the now defunct tweak Pheromone.
+ - [HASHBANG](https://github.com/hbang) for open sourcing the now defunct tweak Pheromone.
+ - https://bootswatch.com/ Yeti theme
+ - https://getbootstrap.com/ css framework
+ - https://vuejs.org/
