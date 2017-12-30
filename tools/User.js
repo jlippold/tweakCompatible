@@ -5,6 +5,7 @@ function User(props) {
     this.date = props.date;
     this.userName = props.userName;
     this.issueNumber = props.issueNumber;
+    this.arch32 = props.arch32;
 }
 
 module.exports = User;

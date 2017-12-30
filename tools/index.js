@@ -8,6 +8,7 @@ var lib = require("./lib");
 var Package = require("./Package"); //model
 var User = require("./User"); //model
 var Version = require("./Version"); //model
+var bans = require("./bans.json");
 
 const owner = "jlippold";
 const repo = "tweakCompatible";
@@ -136,17 +137,15 @@ function addTweaks(tweaks, change, callback) {
                 console.log("Adding review to version");
                 var u = new User(change);
                 version.users.push(u);
-                if (mode == "rebuild") {
-                    return callback(null, packages);
-                }
+                if (mode == "rebuild") return callback(null, packages);
+                
                 addLabelsToIssue(change.issueNumber, ['user-submission', 'new-review'], function () {
                     callback(null, packages);
                 });
             } else {
                 console.log("review already in system");
-                if (mode == "rebuild") {
-                    return callback(null, packages);
-                }
+                if (mode == "rebuild") return callback(null, packages);
+
                 addLabelsToIssue(change.issueNumber, ['user-submission', 'duplicate'], function () {
                     var opts = {
                         owner, repo,
@@ -199,16 +198,16 @@ function reCalculate(packages, devices, callback) {
                 version.outcome.calculatedStatus = "Working";
             }
 
-            //f calc
+            //32bit calc
             version.outcome.arch32 = {};
             version.outcome.arch32.total = version.users.filter(function (user) {
-                return is32bit(user.device, devices)
+                return user.arch32;
             }).length;
             version.outcome.arch32.good = version.users.filter(function (user) {
-                return is32bit(user.device, devices) && (user.status == "working" || user.status == "partial");
+                return user.arch32 && (user.status == "working" || user.status == "partial");
             }).length;
             version.outcome.arch32.bad = version.users.filter(function (user) {
-                return is32bit(user.device, devices) && user.status == "notworking";
+                return user.arch32 && user.status == "notworking";
             }).length;
 
             version.outcome.arch32.percentage =
@@ -392,7 +391,21 @@ function getIssues(callback) {
                             thisIssue.userNotes = json.notes;
                             thisIssue.userChosenStatus = json.chosenStatus;
                             thisIssue.userName = issue.user.login;
-                            validIssues.push(thisIssue);
+                            if (!thisIssue.hasOwnProperty("arch32")) {
+                                thisIssue.arch32 = is32bit(thisIssue.deviceId, devices);
+                            }
+
+                            if (bans.repositories.indexOf(thisIssue.repository) > -1) {
+                                var opts = {
+                                    owner, repo,
+                                    number: thisIssue.issueNumber,
+                                    state: "closed",
+                                    labels: ["bypass", "invalid"]
+                                };
+                                github.issues.edit(opts, function () {});
+                            } else {
+                                validIssues.push(thisIssue);
+                            }
                         }
                     }
                 }
