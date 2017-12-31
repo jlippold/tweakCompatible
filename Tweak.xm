@@ -1,9 +1,13 @@
 #import "CydiaHeaders/CYPackageController.h"
+#import "CydiaHeaders/CydiaWebViewController.h"
+#import "CydiaHeaders/CyteWebView.h"
 #import "CydiaHeaders/MIMEAddress.h"
 #import "CydiaHeaders/Package.h"
 #import "CydiaHeaders/Source.h"
 #import <UIKit/UIAlertView+Private.h>
 #import <sys/utsname.h> 
+
+
 
 %hook CYPackageController
 
@@ -12,7 +16,6 @@
 
 	if (self.rightButton && !self.isLoading) {
 		Package *package = MSHookIvar<Package *>(self, "package_");
-
 		if (package.source) {
 			self.navigationItem.rightBarButtonItems = @[
 				self.rightButton,
@@ -22,8 +25,15 @@
 	}
 }
 
+- (void) navigationURL {
+	
+	[self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"alert('%@')", @"Foo"]];
 
+}
 
+- (BOOL) _allowJavaScriptPanel {
+	return YES;
+}
 
 %new - (void)_compat_check:(UIBarButtonItem *)sender {
 
@@ -303,6 +313,34 @@
 	}];
 }
 
+
+%end
+
+
+%hook CyteWebViewController
+- (BOOL) _allowJavaScriptPanel {
+	return YES;
+}
+%end
+
+%hook CyteWebView
+- (void)webView:(UIWebView *)webView didFinishLoadForFrame:(id)frame {
+	%orig;
+
+				NSString *injection = @""
+				"if (document.getElementById('actions')) {"
+					"if (!document.getElementById('tweak')) {"
+						"var a = document.createElement('A'); "
+						"a.id = 'tweak';"
+						"a.href = 'https://jlippold.github.io/tweakCompatible/';"
+						"a.innerHTML = \"<img class='icon' src='settings.png'> "
+						"<div><div><label><p>COMPATIBLE!"
+						"</p></label></div></div>\";"
+						"document.getElementById('actions').appendChild(a)"
+					"}"
+				"}";
+	[webView stringByEvaluatingJavaScriptFromString:injection];	
+}
 
 %end
 
