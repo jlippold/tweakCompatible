@@ -97,9 +97,9 @@ Package *package;
 				"var a = document.createElement('A'); "
 				"a.id = 'tweakStatus'; "
 				"a.setAttribute('style', 'display: none; background-color: #fff; border-bottom: 1px solid #c8c7cc;');"
-				"a.innerHTML = \"<img class='icon' src='settings.png'>"
+				"a.innerHTML = \"<img class='icon' src='https://jlippold.github.io/tweakCompatible/images/unknown.png'>"
 					"<div><div style='background: none'>"
-						"<label><p style='color: #000; font-size: 17px; font-weight: 400'>Status</p></label>"
+						"<label><p style='color: #000; font-size: 17px; font-weight: 400'>Tweak Status</p></label>"
 						"<label style='float: right'><p style='color: #000; font-size: 17px; font-weight: 400'>&nbsp;</p></label>"
 						"</div></div>\";"
 				"fieldset.appendChild(a);"
@@ -107,16 +107,23 @@ Package *package;
 				"var b = document.createElement('A'); "
 				"b.id = 'tweakWork';"
 				"b.setAttribute('style', 'display: none; background-color: #fff; border-bottom: 1px solid #c8c7cc;');"
-				"b.innerHTML = \"<img class='icon' src='settings.png'>"
+				"b.innerHTML = \"<img class='icon' src='https://jlippold.github.io/tweakCompatible/images/working.png'>"
 					"<div><div><label><p style='color: #000; font-size: 17px; font-weight: 400'>&nbsp;</p></label></div></div>\";"
 				"fieldset.appendChild(b);"
 
 				"var c = document.createElement('A'); "
 				"c.id = 'tweakNoWork';"
 				"c.setAttribute('style', 'display: none; background-color: #fff; border-bottom: 1px solid #c8c7cc;');"
-				"c.innerHTML = \"<img class='icon' src='settings.png'>"
+				"c.innerHTML = \"<img class='icon' src='https://jlippold.github.io/tweakCompatible/images/notworking.png'>"
 					"<div><div><label><p style='color: #000; font-size: 17px; font-weight: 400'>&nbsp;</p></label></div></div>\";"
 				"fieldset.appendChild(c);"
+
+				"var d = document.createElement('A'); "
+				"d.id = 'tweakInfo';"
+				"d.setAttribute('style', 'display: none; background-color: #fff; border-bottom: 1px solid #c8c7cc;');"
+				"d.innerHTML = \"<img class='icon' src='https://jlippold.github.io/tweakCompatible/images/info.png'>"
+					"<div><div><label><p style='color: #000; font-size: 17px; font-weight: 400'>&nbsp;</p></label></div></div>\";"
+				"fieldset.appendChild(d);"
 
 				"container.appendChild(fieldset);"
 				"container.appendChild(document.createElement('br'));"
@@ -330,10 +337,13 @@ Package *package;
 		if (showViewPackage) {
 		
 			[webView stringByEvaluatingJavaScriptFromString: [NSString stringWithFormat:@""
-				"var a = document.getElementById('tweakStatus');"
+				"var a = document.getElementById('tweakInfo');"
 				"if (a) {"
+					"a.style.display = 'block';"
 					"a.href = '%@package.html#!/%@/details/%@';"
-				"}", baseURI, packageId, userInfoBase64]
+					"a.getElementsByTagName('p')[1].innerHTML = 'More information';"
+					"document.getElementById('tweakStatus').href = '%@package.html#!/%@/details/%@';"
+				"}", baseURI, packageId, userInfoBase64, baseURI, packageId, userInfoBase64]
 			];	
 		
 		}
