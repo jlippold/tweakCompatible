@@ -63,13 +63,15 @@ Package *package;
 	}
 	
 	package = nil;
-	[package release];
+	//[package release];
 
 	
 	NSString *isSettingsPage = [webView stringByEvaluatingJavaScriptFromString:@"(document.getElementById('tweakStatus') ? 'YES' : 'NO')"];	
 	if ([isSettingsPage isEqualToString:@"YES"]) { //already injected
 		return;
 	}
+
+	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(1)" waitUntilDone:YES];
 
 	NSString *baseInjection = @""
 		"var actions = document.getElementById('actions');"
@@ -136,8 +138,10 @@ Package *package;
 		"}";
 
 
-	[webView stringByEvaluatingJavaScriptFromString:baseInjection];		
+	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:baseInjection waitUntilDone:YES];
 	
+	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(2)" waitUntilDone:YES];
+
 	//calc device type: https://stackoverflow.com/a/20062141
     struct utsname systemInfo;
     uname(&systemInfo);
@@ -164,7 +168,8 @@ Package *package;
                                                NSError *connectionError)
      {
 		 
-		
+		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(3)" waitUntilDone:NO];
+
 		id foundItem = nil; //package on website
 		id allVersions = nil; //all versions on website
 		id foundVersion = nil; //version on website
@@ -287,9 +292,8 @@ Package *package;
 			@"packageStatus": packageStatus,
 			@"url": packageUrl
 		};
-		//[webView stringByEvaluatingJavaScriptFromString:@"alert(document.getElementById('actions').parentNode.innerHTML)"];
 		
-		
+		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(4)" waitUntilDone:NO];
 
 		//gather user info for post to github
 		NSString *userInfoJson = @"";
@@ -334,56 +338,66 @@ Package *package;
 			imageUrl = @"partial";
 		}
 
+		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(5)" waitUntilDone:NO];
+		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
+			withObject:[NSString stringWithFormat:@""
+				"var a = document.getElementById('tweakStatus');"
+				"if (a) {"
+					"a.style.display = 'block';"
+					"a.href = 'javascript:void(0)';"
+					"a.getElementsByTagName('p')[1].innerHTML = '%@';"
+					"a.getElementsByTagName('img')[0].src = '%@';"
+				"}", packageStatus, [NSString stringWithFormat:@"%@images/%@.png", baseURI, imageUrl]]
+		waitUntilDone:NO];
 
-		[webView stringByEvaluatingJavaScriptFromString: [NSString stringWithFormat:@""
-			"var a = document.getElementById('tweakStatus');"
-			"if (a) {"
-				"a.style.display = 'block';"
-				"a.href = 'javascript:void(0)';"
-				"a.getElementsByTagName('p')[1].innerHTML = '%@';"
-				"a.getElementsByTagName('img')[0].src = '%@';"
-			"}", packageStatus, [NSString stringWithFormat:@"%@images/%@.png", baseURI, imageUrl]]
-		];	
 		
-		[webView stringByEvaluatingJavaScriptFromString: [NSString stringWithFormat:@""
-			"document.getElementById('tweakDetails').innerHTML = '%@';", packageStatusExplaination]
-		];	
+		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
+			withObject:[NSString stringWithFormat:@""
+				"document.getElementById('tweakDetails').innerHTML = '%@';", packageStatusExplaination]
+		waitUntilDone:NO];
 
 		if (showViewPackage) {
 		
-			[webView stringByEvaluatingJavaScriptFromString: [NSString stringWithFormat:@""
-				"var a = document.getElementById('tweakInfo');"
-				"if (a) {"
-					"a.style.display = 'block';"
-					"a.href = '%@package.html#!/%@/details/%@';"
-					"a.getElementsByTagName('p')[0].innerHTML = 'More information';"
-					"document.getElementById('tweakStatus').href = '%@package.html#!/%@/details/%@';"
-				"}", baseURI, packageId, userInfoBase64, baseURI, packageId, userInfoBase64]
-			];	
+			[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
+				withObject:[NSString stringWithFormat:@""
+					"var a = document.getElementById('tweakInfo');"
+					"if (a) {"
+						"a.style.display = 'block';"
+						"a.href = '%@package.html#!/%@/details/%@';"
+						"a.getElementsByTagName('p')[0].innerHTML = 'More information';"
+						"document.getElementById('tweakStatus').href = '%@package.html#!/%@/details/%@';"
+					"}", baseURI, packageId, userInfoBase64, baseURI, packageId, userInfoBase64]
+			waitUntilDone:NO];
 		
 		}
 
 		if (showAddWorkingReview) {
-			[webView stringByEvaluatingJavaScriptFromString: [NSString stringWithFormat:@""
-				"var a = document.getElementById('tweakWork');"
-				"if (a) {"
-					"a.href = '%@submit.html#!/%@/working/%@';"
-					"a.style.display = 'block';"
-					"a.getElementsByTagName('p')[0].innerHTML = 'Report as working';"
-				"}", baseURI, packageId, userInfoBase64]
-			];	
+			[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
+				withObject:[NSString stringWithFormat:@""
+					"var a = document.getElementById('tweakWork');"
+					"if (a) {"
+						"a.href = '%@submit.html#!/%@/working/%@';"
+						"a.style.display = 'block';"
+						"a.getElementsByTagName('p')[0].innerHTML = 'Report as working';"
+					"}", baseURI, packageId, userInfoBase64]
+				waitUntilDone:NO];
+			
 		}
 
 		if (showAddNotWorkingReview) {
-			[webView stringByEvaluatingJavaScriptFromString: [NSString stringWithFormat:@""
-				"var a = document.getElementById('tweakNoWork');"
-				"if (a) {"
-					"a.href = '%@submit.html#!/%@/notworking/%@';"
-					"a.style.display = 'block';"
-					"a.getElementsByTagName('p')[0].innerHTML = 'Report as not working';"
-				"}", baseURI, packageId, userInfoBase64]
-			];	
+			[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
+				withObject:[NSString stringWithFormat:@""
+					"var a = document.getElementById('tweakNoWork');"
+					"if (a) {"
+						"a.href = '%@submit.html#!/%@/notworking/%@';"
+						"a.style.display = 'block';"
+						"a.getElementsByTagName('p')[0].innerHTML = 'Report as not working';"
+					"}", baseURI, packageId, userInfoBase64]
+				waitUntilDone:NO];
+			
 		}
+
+		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(6)" waitUntilDone:NO];
 
 		if (showRequestReview) {
 			//tbd
