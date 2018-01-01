@@ -7602,12 +7602,12 @@
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
-            "good": 1,
+            "good": 2,
             "bad": 0,
-            "total": 1,
+            "total": 2,
             "arch32": {
-              "total": 1,
-              "good": 1,
+              "total": 2,
+              "good": 2,
               "bad": 0,
               "percentage": 100,
               "calculatedStatus": "Working"
@@ -7621,6 +7621,15 @@
               "date": "2017-12-27T23:59:45Z",
               "userName": "johnnotdaniel",
               "issueNumber": 215,
+              "arch32": true
+            },
+            {
+              "status": "working",
+              "device": "iPhone5,2",
+              "issues": "",
+              "date": "2018-01-01T17:05:04Z",
+              "userName": "hrvstr",
+              "issueNumber": 719,
               "arch32": true
             }
           ]
@@ -12400,6 +12409,36 @@
               "userName": "tw9ak",
               "issueNumber": 713,
               "arch32": false
+            }
+          ]
+        },
+        {
+          "tweakVersion": "7.6.3~beta1",
+          "iOSVersion": "10.3.3",
+          "repository": "Ivano Bilenchi's Beta Repo",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone5,4",
+              "issues": "The crash is fixed ",
+              "date": "2018-01-01T17:25:18Z",
+              "userName": "Mc-muffin",
+              "issueNumber": 720,
+              "arch32": true
             }
           ]
         }
@@ -21852,6 +21891,49 @@
       ]
     },
     {
+      "id": "repo.biteyourapple.net.swipeselection-pro",
+      "name": "SwipeSelection Pro",
+      "latest": "1.0.3-1",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Swipe along the keyboard to move cursor & select text.",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0.3-1",
+          "iOSVersion": "10.3.3",
+          "repository": "BiteYourApple",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone5,4",
+              "issues": "",
+              "date": "2017-12-28T01:48:15Z",
+              "userName": "eskoze",
+              "issueNumber": 319,
+              "arch32": true
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "com.repo.xarold.com.swipeselection-pro",
       "name": "SwipeSelection Pro",
       "latest": "1.0.3-1",
@@ -21932,49 +22014,6 @@
               "userName": "lfstyles",
               "issueNumber": 229,
               "arch32": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "repo.biteyourapple.net.swipeselection-pro",
-      "name": "SwipeSelection Pro",
-      "latest": "1.0.3-1",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Swipe along the keyboard to move cursor & select text.",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.0.3-1",
-          "iOSVersion": "10.3.3",
-          "repository": "BiteYourApple",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 1,
-              "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
-            }
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone5,4",
-              "issues": "",
-              "date": "2017-12-28T01:48:15Z",
-              "userName": "eskoze",
-              "issueNumber": 319,
-              "arch32": true
             }
           ]
         }
