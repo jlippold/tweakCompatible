@@ -4,51 +4,149 @@
 #import "CydiaHeaders/MIMEAddress.h"
 #import "CydiaHeaders/Package.h"
 #import "CydiaHeaders/Source.h"
-#import <UIKit/UIAlertView+Private.h>
 #import <sys/utsname.h> 
 
 
+Package *package;
 
 %hook CYPackageController
-
-- (void)applyRightButton {
-	%orig;
-
-	if (self.rightButton && !self.isLoading) {
-		Package *package = MSHookIvar<Package *>(self, "package_");
-		if (package.source) {
-			self.navigationItem.rightBarButtonItems = @[
-				self.rightButton,
-				[[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(_compat_check:)] autorelease]
-			];
-		}
-	}
-}
-
-- (void) navigationURL {
-	
-	[self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"alert('%@')", @"Foo"]];
-
-}
 
 - (BOOL) _allowJavaScriptPanel {
 	return YES;
 }
 
+- (void)applyRightButton {
+	%orig;
+
+	if (self.rightButton && !self.isLoading) {
+		package = MSHookIvar<Package *>(self, "package_");		
+	}
+}
+
 %new - (void)_compat_check:(UIBarButtonItem *)sender {
 
-	Package *package = MSHookIvar<Package *>(self, "package_");
-    
+}
+
+%end
+
+
+%hook CyteWebViewController
+- (BOOL) _allowJavaScriptPanel {
+	return YES;
+}
+%end
+
+%hook CyteWebView
+- (void)webView:(UIWebView *)webView didFinishLoadForFrame:(id)frame {
+	%orig;
+
+	if (!package.id) {
+		return;
+	}
+
+	//pull package info
+	NSString *packageUrl = [NSString stringWithFormat:@"http://cydia.saurik.com/package/%@/", package.id];	
+	NSString *packageVersion = package.latest;
+	NSString *packageName = package.name;
+	NSString *packageId = [NSString stringWithFormat:@"%@", package.id];
+	NSString *packageDescription = package.shortDescription;
+	NSString *packageSection = package.section;
+	NSString *packageRepository = [NSString stringWithFormat:@"%@", [package.source name]];
+	NSString *packageAuthor = [NSString stringWithFormat:@"%@", package.author.name];
+	BOOL packageInstalled = NO;
+	if (package.installed) {
+		packageInstalled = YES;
+	}
+	BOOL commercial = NO;
+	if (package.isCommercial) {
+		commercial = YES;
+	}
+	
+	package = nil;
+	[package release];
+
+	
+	NSString *isSettingsPage = [webView stringByEvaluatingJavaScriptFromString:@"(document.getElementById('tweakStatus') ? 'YES' : 'NO')"];	
+	if ([isSettingsPage isEqualToString:@"YES"]) { //already injected
+		return;
+	}
+
+	NSString *baseInjection = @""
+		"var actions = document.getElementById('actions');"
+		"if (actions) {"
+			"if (!document.getElementById('tweakDetails')) {"
+
+				"var container = document.createElement('div'); "
+				"var header = document.createElement('p'); "
+				"header.setAttribute('style', 'font-size: 12px; color: #000; text-transform: uppercase');"
+				"header.innerHTML = 'tweakCompatible Results';"
+				"container.appendChild(document.createElement('br'));"
+				"container.appendChild(header);"
+				"container.appendChild(document.createElement('br'));"
+
+
+				"var details = document.createElement('p'); "
+				"details.id = 'tweakDetails'; "
+				"details.setAttribute('style', 'font-size: 12px; color: #6d6d72; text-transform: uppercase');"
+				"details.innerHTML = ''; "
+				"container.appendChild(details);"
+				"container.appendChild(document.createElement('br'));"
+
+				"var fieldset = document.createElement('fieldset'); "
+				
+				"var a = document.createElement('A'); "
+				"a.id = 'tweakStatus'; "
+				"a.setAttribute('style', 'display: none; background-color: #fff; border-bottom: 1px solid #c8c7cc;');"
+				"a.innerHTML = \"<img class='icon' src='settings.png'>"
+					"<div><div style='background: none'>"
+						"<label><p style='color: #000; font-size: 17px; font-weight: 400'>Status</p></label>"
+						"<label style='float: right'><p style='color: #000; font-size: 17px; font-weight: 400'>&nbsp;</p></label>"
+						"</div></div>\";"
+				"fieldset.appendChild(a);"
+
+				"var b = document.createElement('A'); "
+				"b.id = 'tweakWork';"
+				"b.setAttribute('style', 'display: none; background-color: #fff; border-bottom: 1px solid #c8c7cc;');"
+				"b.innerHTML = \"<img class='icon' src='settings.png'>"
+					"<div><div><label><p style='color: #000; font-size: 17px; font-weight: 400'>&nbsp;</p></label></div></div>\";"
+				"fieldset.appendChild(b);"
+
+				"var c = document.createElement('A'); "
+				"c.id = 'tweakNoWork';"
+				"c.setAttribute('style', 'display: none; background-color: #fff; border-bottom: 1px solid #c8c7cc;');"
+				"c.innerHTML = \"<img class='icon' src='settings.png'>"
+					"<div><div><label><p style='color: #000; font-size: 17px; font-weight: 400'>&nbsp;</p></label></div></div>\";"
+				"fieldset.appendChild(c);"
+
+				"container.appendChild(fieldset);"
+				"container.appendChild(document.createElement('br'));"
+
+				"actions.parentNode.insertBefore(container, actions.nextSibling);"
+
+			"}"
+		"}";
+
+
+	[webView stringByEvaluatingJavaScriptFromString:baseInjection];		
+	
 	//calc device type: https://stackoverflow.com/a/20062141
     struct utsname systemInfo;
     uname(&systemInfo);
     NSString *deviceId = [NSString stringWithCString:systemInfo.machine
                                         encoding:NSUTF8StringEncoding];
 	NSString *iOSVersion = [[UIDevice currentDevice] systemVersion];
+
+	//determine if 32 bit architecture
+	BOOL arch32 = NO;
+	NSString *archDescription = @"";
+	if (sizeof(void*) == 4) {
+		arch32 = YES;
+		archDescription = @" 32bit";
+	}
 	
 	//download tweak list
 	NSURL *url = 
-		[NSURL URLWithString:[NSString stringWithFormat:@"https://jlippold.github.io/tweakCompatible/json/packages/%@.json", package.id]];
+		[NSURL URLWithString:[NSString stringWithFormat:@"https://jlippold.github.io/tweakCompatible/json/packages/%@.json", packageId]];
 	
 	[NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:url]
                                        queue:[NSOperationQueue mainQueue]
@@ -57,7 +155,7 @@
                                                NSError *connectionError)
      {
 		 
-
+		
 		id foundItem = nil; //package on website
 		id allVersions = nil; //all versions on website
 		id foundVersion = nil; //version on website
@@ -74,58 +172,22 @@
 			NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
 
 			foundItem = json;
-			packageExists = YES;
 
 			id allVersions = foundItem[@"versions"];
+			if (allVersions) {
+				packageExists = YES;
+			}
 			for (id version in allVersions) {
 				NSString *thisTweakVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"tweakVersion"]];
 				NSString *thisiOSVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"iOSVersion"]];
-				if ([thisTweakVersion isEqualToString:package.latest] && 
+				if ([thisTweakVersion isEqualToString:packageVersion] && 
 					[thisiOSVersion isEqualToString:iOSVersion]) {
 					foundVersion = version;
 					versionExists = YES;
 					break;
 				}
 			}
-		}
-
-		
-		//is it installed in cydia
-		BOOL installed = NO;
-		if (package.installed) {
-			installed = YES;
-		}
-		
-		//pull the package homepage url
-		NSArray *BuiltInRepositories = @[
-			@"http://apt.saurik.com/",
-			@"http://apt.thebigboss.org/repofiles/cydia/",
-			@"http://apt.modmyi.com/",
-			@"http://cydia.zodttd.com/repo/cydia/"
-		];
-
-		NSURL *url;
-		if ([BuiltInRepositories containsObject:package.source.rooturi]) {
-			url = [NSURL URLWithString:[NSString stringWithFormat:@"http://cydia.saurik.com/package/%@/", package.id]];
-		} else if (package.homepage && ![package.homepage isEqualToString:@"http://myrepospace.com/"]) {
-			url = [NSURL URLWithString:package.homepage];
-		} else {
-			url = [NSURL URLWithString:package.source.rooturi];
-		}
-
-		//check if iOS Version is allowed on website
-		BOOL allowediOSVersion = YES;
-
-		//check if category can be submitted on website
-		BOOL allowedCategory = YES;
-
-		//determine if 32 bit architecture
-		BOOL arch32 = NO;
-		NSString *archDescription = @"";
-		if (sizeof(void*) == 4) {
-			arch32 = YES;
-			archDescription = @" 32bit";
-		}
+		}		
 
 		//calculate status of tweak
 		NSString *packageStatus = @"Unknown";
@@ -176,9 +238,9 @@
 							"has been marked as %@ based on feedback from users in the community. "
 							"Install at your own risk, see website for further details", 
 								archDescription,
-								package.name,
+								packageName,
 								thisTweakVersion,
-								package.latest,
+								packageVersion,
 								packageStatus];
 						break;
 					}
@@ -191,6 +253,7 @@
 			}
 		}
 
+
 		//build a dict with all found properties
 		NSDictionary *userInfo = @{
 			@"deviceId" : deviceId, 
@@ -200,43 +263,37 @@
 			@"packageVersionIndexed": @(versionExists),
 			@"packageStatus": packageStatus,
 			@"packageStatusExplaination": packageStatusExplaination,
-			@"packageId": package.id,
-			@"id": package.id,
-			@"name": package.name,
-			@"packageName": package.name,
-			@"latest": package.latest,
-			@"commercial": @(package.isCommercial),
-			@"category": package.section,
-			@"depiction": package.shortDescription,
-			@"shortDescription": package.shortDescription,
-			@"iOSVersionAllowed": @(allowediOSVersion),
-			@"packageCategoryAllowed": @(allowedCategory),
-			@"packageInstalled": @(installed),
+			@"packageId": packageId,
+			@"id": packageId,
+			@"name": packageName,
+			@"packageName": packageName,
+			@"latest": packageVersion,
+			@"commercial": @(commercial),
+			@"category": packageSection,
+			@"shortDescription": packageDescription,
+			@"packageInstalled": @(packageInstalled),
 			@"arch32": @(arch32),
-			@"repository": [package.source name],
-			@"author": package.author.name,
+			@"repository": packageRepository,
+			@"author": packageAuthor,
 			@"packageStatus": packageStatus,
-			@"url": [NSString stringWithFormat:@"%@", url],
+			@"url": packageUrl
 		};
+		//[webView stringByEvaluatingJavaScriptFromString:@"alert(document.getElementById('actions').parentNode.innerHTML)"];
+		
 		
 
 		//gather user info for post to github
 		NSString *userInfoJson = @"";
 		NSString *userInfoBase64 = @"";
-		NSError *jsonError; 
-		NSData *jsonData = [NSJSONSerialization dataWithJSONObject:userInfo options:kNilOptions error:&jsonError];
-		if (jsonData) {
+		NSError *error; 
+		NSData *jsonData = [NSJSONSerialization dataWithJSONObject:userInfo options:kNilOptions error:&error];
+		
+		if(!jsonData && error){
+			return;
+		} else {
 			userInfoJson = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 			userInfoBase64 = [jsonData base64EncodedStringWithOptions:0];
 		}
-		
-		//create message for user
-		UIAlertController *results = 
-			[UIAlertController 
-				alertControllerWithTitle:[NSString stringWithFormat:@"Status: %@", packageStatus] 
-				message:packageStatusExplaination
-				preferredStyle:UIAlertControllerStyleAlert];
-
 
 		//determine what buttons will be displayed
 		BOOL showViewPackage = NO; //Allow the user to open in safari
@@ -245,101 +302,71 @@
 		BOOL showAddNotWorkingReview = NO; //Allow to user to submit a new not working review
 
 		showAddNotWorkingReview = YES; //always allow not working review
-		if (installed) {
+		if (packageInstalled) {
 			showAddWorkingReview = YES; //can only submit working review if tweak is installed
 		}
+
 		if (packageExists) {
 			showViewPackage = YES;
 		} else {
 			showRequestReview = YES;
 		}
+		
 		NSString *baseURI = @"https://jlippold.github.io/tweakCompatible/";
+		
+		[webView stringByEvaluatingJavaScriptFromString: [NSString stringWithFormat:@""
+			"var a = document.getElementById('tweakStatus');"
+			"if (a) {"
+				"a.style.display = 'block';"
+				"a.href = 'javascript:void(0)';"
+				"a.getElementsByTagName('p')[1].innerHTML = '%@';"
+			"}", packageStatus]
+		];	
+		
+		[webView stringByEvaluatingJavaScriptFromString: [NSString stringWithFormat:@""
+			"document.getElementById('tweakDetails').innerHTML = '%@';", packageStatusExplaination]
+		];	
 
 		if (showViewPackage) {
-			[results addAction:
-				[UIAlertAction actionWithTitle:@"More information" 
-				style:UIAlertActionStyleDefault
-				handler:^(UIAlertAction * action) {
-					[[UIApplication sharedApplication] 
-						openURL:[NSURL URLWithString:[NSString stringWithFormat:
-									@"%@package.html#!/%@/details/%@", 
-									baseURI, 
-									package.id,
-									userInfoBase64
-					]]];
-				}]];
+		
+			[webView stringByEvaluatingJavaScriptFromString: [NSString stringWithFormat:@""
+				"var a = document.getElementById('tweakStatus');"
+				"if (a) {"
+					"a.href = '%@package.html#!/%@/details/%@';"
+				"}", baseURI, packageId, userInfoBase64]
+			];	
+		
 		}
 
 		if (showAddWorkingReview) {
-			[results addAction:
-				[UIAlertAction actionWithTitle:@"This package works!" 
-				style:UIAlertActionStyleDefault
-				handler:^(UIAlertAction * action) {
-					[[UIApplication sharedApplication] 
-						openURL:[NSURL URLWithString:[NSString stringWithFormat:
-									@"%@submit.html#!/%@/working/%@", 
-									baseURI, 
-									package.id,
-									userInfoBase64
-					]]];
-				}]];
+			[webView stringByEvaluatingJavaScriptFromString: [NSString stringWithFormat:@""
+				"var a = document.getElementById('tweakWork');"
+				"if (a) {"
+					"a.href = '%@submit.html#!/%@/working/%@';"
+					"a.style.display = 'block';"
+					"a.getElementsByTagName('p')[0].innerHTML = 'Report as working';"
+				"}", baseURI, packageId, userInfoBase64]
+			];	
 		}
 
 		if (showAddNotWorkingReview) {
-			[results addAction:
-				[UIAlertAction actionWithTitle:@"This package doesn't work!" 
-				style:UIAlertActionStyleDefault
-				handler:^(UIAlertAction * action) {
-					[[UIApplication sharedApplication] 
-						openURL:[NSURL URLWithString:[NSString stringWithFormat:
-									@"%@submit.html#!/%@/notworking/%@", 
-									baseURI, 
-									package.id,
-									userInfoBase64
-					]]];
-				}]];
+			[webView stringByEvaluatingJavaScriptFromString: [NSString stringWithFormat:@""
+				"var a = document.getElementById('tweakNoWork');"
+				"if (a) {"
+					"a.href = '%@submit.html#!/%@/notworking/%@';"
+					"a.style.display = 'block';"
+					"a.getElementsByTagName('p')[0].innerHTML = 'Report as not working';"
+				"}", baseURI, packageId, userInfoBase64]
+			];	
 		}
 
 		if (showRequestReview) {
 			//tbd
 		}
 
-		//close button
-		[results addAction:
-			[UIAlertAction actionWithTitle:@"Close" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}]];
-
-		[self.navigationController presentViewController:results animated:YES completion:nil];
-		
+	
 	}];
-}
 
-
-%end
-
-
-%hook CyteWebViewController
-- (BOOL) _allowJavaScriptPanel {
-	return YES;
-}
-%end
-
-%hook CyteWebView
-- (void)webView:(UIWebView *)webView didFinishLoadForFrame:(id)frame {
-	%orig;
-
-				NSString *injection = @""
-				"if (document.getElementById('actions')) {"
-					"if (!document.getElementById('tweak')) {"
-						"var a = document.createElement('A'); "
-						"a.id = 'tweak';"
-						"a.href = 'https://jlippold.github.io/tweakCompatible/';"
-						"a.innerHTML = \"<img class='icon' src='settings.png'> "
-						"<div><div><label><p>COMPATIBLE!"
-						"</p></label></div></div>\";"
-						"document.getElementById('actions').appendChild(a)"
-					"}"
-				"}";
-	[webView stringByEvaluatingJavaScriptFromString:injection];	
 }
 
 %end
