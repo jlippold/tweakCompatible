@@ -156,255 +156,247 @@ Package *package;
 		arch32 = YES;
 		archDescription = @" 32bit";
 	}
-	
+	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(3)" waitUntilDone:YES];
+
 	//download tweak list
 	NSURL *url = 
 		[NSURL URLWithString:[NSString stringWithFormat:@"https://jlippold.github.io/tweakCompatible/json/packages/%@.json", packageId]];
+	NSData *data = [NSData dataWithContentsOfURL:url];
+
 	
-	[NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:url]
-                                       queue:[NSOperationQueue mainQueue]
-                           completionHandler:^(NSURLResponse *response,
-                                               NSData *data,
-                                               NSError *connectionError)
-     {
-		 
-		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(3)" waitUntilDone:NO];
 
-		id foundItem = nil; //package on website
-		id allVersions = nil; //all versions on website
-		id foundVersion = nil; //version on website
-		
-		BOOL packageExists = NO; 
-		BOOL versionExists = NO;
+	id foundItem = nil; //package on website
+	id allVersions = nil; //all versions on website
+	id foundVersion = nil; //version on website
+	
+	BOOL packageExists = NO; 
+	BOOL versionExists = NO;
 
-		//download error
-		if (data.length == 0 || connectionError) {
-			//swallow 404's etc
-			//and treat as un-indexed pacakge	
-		} else {
+	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(4)" waitUntilDone:YES];
+	if (data) {
 
-			NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+		NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
 
-			foundItem = json;
+		foundItem = json;
 
-			id allVersions = foundItem[@"versions"];
-			if (allVersions) {
-				packageExists = YES;
+		id allVersions = foundItem[@"versions"];
+		if (allVersions) {
+			packageExists = YES;
+		}
+		for (id version in allVersions) {
+			NSString *thisTweakVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"tweakVersion"]];
+			NSString *thisiOSVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"iOSVersion"]];
+			if ([thisTweakVersion isEqualToString:packageVersion] && 
+				[thisiOSVersion isEqualToString:iOSVersion]) {
+				foundVersion = version;
+				versionExists = YES;
+				break;
 			}
+		}
+	}		
+
+	//calculate status of tweak
+	NSString *packageStatus = @"Unknown";
+	NSString *packageStatusExplaination = @"This tweak has not been reviewed. Please submit a review if you choose to install.";
+	id outcome = nil;
+	if (foundVersion) { //pull exact match status from website
+
+		outcome = foundVersion[@"outcome"];
+		if (arch32) {
+			outcome = foundVersion[@"outcome"][@"arch32"];
+		}
+		
+		packageStatus = outcome[@"calculatedStatus"];
+
+		packageStatusExplaination = [NSString stringWithFormat:
+			@"This%@ package version has been marked as %@ based on feedback from users in the community. "
+			"The current positive rating is %@%% with %@ working reports.", 
+				archDescription,
+				packageStatus,
+				outcome[@"percentage"],
+				outcome[@"good"]];
+
+	} else {
+		if (packageExists) {
+			//check if other versions of this tweak have been reviewed against this iOS version
 			for (id version in allVersions) {
 				NSString *thisTweakVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"tweakVersion"]];
 				NSString *thisiOSVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"iOSVersion"]];
-				if ([thisTweakVersion isEqualToString:packageVersion] && 
-					[thisiOSVersion isEqualToString:iOSVersion]) {
-					foundVersion = version;
-					versionExists = YES;
+
+				outcome = version[@"outcome"];
+				if (arch32) {
+					outcome = version[@"outcome"][@"arch32"];
+				}
+				
+				NSString *thisStatus = outcome[@"calculatedStatus"];
+
+				if ([thisiOSVersion isEqualToString:iOSVersion] && 
+					([thisStatus isEqualToString:@"likely working"] || [thisStatus isEqualToString:@"working"])) {
+
+					packageStatus = thisStatus;
+					if ([packageStatus isEqualToString:@"working"]) { 
+						//downgrade working to likely since it's an older match
+						packageStatus = @"likely working";
+					}
+
+					packageStatusExplaination = [NSString stringWithFormat:
+						@"A%@ review of %@ version %@ was not found, but version %@ "
+						"has been marked as %@ based on feedback from users in the community. "
+						"Install at your own risk, see website for further details", 
+							archDescription,
+							packageName,
+							thisTweakVersion,
+							packageVersion,
+							packageStatus];
 					break;
 				}
 			}
-		}		
 
-		//calculate status of tweak
-		NSString *packageStatus = @"Unknown";
-		NSString *packageStatusExplaination = @"This tweak has not been reviewed. Please submit a review if you choose to install.";
-		id outcome = nil;
-		if (foundVersion) { //pull exact match status from website
-
-			outcome = foundVersion[@"outcome"];
-			if (arch32) {
-				outcome = foundVersion[@"outcome"][@"arch32"];
-			}
-			
-			packageStatus = outcome[@"calculatedStatus"];
-
-			packageStatusExplaination = [NSString stringWithFormat:
-				@"This%@ package version has been marked as %@ based on feedback from users in the community. "
-				"The current positive rating is %@%% with %@ working reports.", 
-					archDescription,
-					packageStatus,
-					outcome[@"percentage"],
-					outcome[@"good"]];
-
-		} else {
-			if (packageExists) {
-				//check if other versions of this tweak have been reviewed against this iOS version
-				for (id version in allVersions) {
-					NSString *thisTweakVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"tweakVersion"]];
-					NSString *thisiOSVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"iOSVersion"]];
-
-					outcome = version[@"outcome"];
-					if (arch32) {
-						outcome = version[@"outcome"][@"arch32"];
-					}
-					
-					NSString *thisStatus = outcome[@"calculatedStatus"];
-
-					if ([thisiOSVersion isEqualToString:iOSVersion] && 
-						([thisStatus isEqualToString:@"likely working"] || [thisStatus isEqualToString:@"working"])) {
-
-						packageStatus = thisStatus;
-						if ([packageStatus isEqualToString:@"working"]) { 
-							//downgrade working to likely since it's an older match
-							packageStatus = @"likely working";
-						}
-
-						packageStatusExplaination = [NSString stringWithFormat:
-							@"A%@ review of %@ version %@ was not found, but version %@ "
-							"has been marked as %@ based on feedback from users in the community. "
-							"Install at your own risk, see website for further details", 
-								archDescription,
-								packageName,
-								thisTweakVersion,
-								packageVersion,
-								packageStatus];
-						break;
-					}
-				}
-
-				if ([packageStatus isEqualToString:@"Unknown"]) { 
-					packageStatusExplaination = @"A matching version of this tweak for this iOS version could not be found. "
-						"Please submit a review if you choose to install.";
-				}
+			if ([packageStatus isEqualToString:@"Unknown"]) { 
+				packageStatusExplaination = @"A matching version of this tweak for this iOS version could not be found. "
+					"Please submit a review if you choose to install.";
 			}
 		}
+	}
 
 
-		//build a dict with all found properties
-		NSDictionary *userInfo = @{
-			@"deviceId" : deviceId, 
-			@"iOSVersion" : iOSVersion,
-			@"tweakCompatVersion": @"0.0.4",
-			@"packageIndexed": @(packageExists),
-			@"packageVersionIndexed": @(versionExists),
-			@"packageStatus": packageStatus,
-			@"packageStatusExplaination": packageStatusExplaination,
-			@"packageId": packageId,
-			@"id": packageId,
-			@"name": packageName,
-			@"packageName": packageName,
-			@"latest": packageVersion,
-			@"commercial": @(commercial),
-			@"category": packageSection,
-			@"shortDescription": packageDescription,
-			@"packageInstalled": @(packageInstalled),
-			@"arch32": @(arch32),
-			@"repository": packageRepository,
-			@"author": packageAuthor,
-			@"packageStatus": packageStatus,
-			@"url": packageUrl
-		};
-		
-		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(4)" waitUntilDone:NO];
+	//build a dict with all found properties
+	NSDictionary *userInfo = @{
+		@"deviceId" : deviceId, 
+		@"iOSVersion" : iOSVersion,
+		@"tweakCompatVersion": @"0.0.4",
+		@"packageIndexed": @(packageExists),
+		@"packageVersionIndexed": @(versionExists),
+		@"packageStatus": packageStatus,
+		@"packageStatusExplaination": packageStatusExplaination,
+		@"packageId": packageId,
+		@"id": packageId,
+		@"name": packageName,
+		@"packageName": packageName,
+		@"latest": packageVersion,
+		@"commercial": @(commercial),
+		@"category": packageSection,
+		@"shortDescription": packageDescription,
+		@"packageInstalled": @(packageInstalled),
+		@"arch32": @(arch32),
+		@"repository": packageRepository,
+		@"author": packageAuthor,
+		@"packageStatus": packageStatus,
+		@"url": packageUrl
+	};
+	
+	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(5)" waitUntilDone:YES];
 
-		//gather user info for post to github
-		NSString *userInfoJson = @"";
-		NSString *userInfoBase64 = @"";
-		NSError *error; 
-		NSData *jsonData = [NSJSONSerialization dataWithJSONObject:userInfo options:kNilOptions error:&error];
-		
-		if(!jsonData && error){
-			return;
-		} else {
-			userInfoJson = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-			userInfoBase64 = [jsonData base64EncodedStringWithOptions:0];
-		}
+	//gather user info for post to github
+	NSString *userInfoJson = @"";
+	NSString *userInfoBase64 = @"";
+	NSError *error; 
+	NSData *jsonData = [NSJSONSerialization dataWithJSONObject:userInfo options:kNilOptions error:&error];
+	
+	if(!jsonData && error){
+		return;
+	} else {
+		userInfoJson = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+		userInfoBase64 = [jsonData base64EncodedStringWithOptions:0];
+	}
 
-		//determine what buttons will be displayed
-		BOOL showViewPackage = NO; //Allow the user to open in safari
-		BOOL showRequestReview = NO; //Allow the user to request a review
-		BOOL showAddWorkingReview = NO; //Allow to user to submit a new working review
-		BOOL showAddNotWorkingReview = NO; //Allow to user to submit a new not working review
+	//determine what buttons will be displayed
+	BOOL showViewPackage = NO; //Allow the user to open in safari
+	BOOL showRequestReview = NO; //Allow the user to request a review
+	BOOL showAddWorkingReview = NO; //Allow to user to submit a new working review
+	BOOL showAddNotWorkingReview = NO; //Allow to user to submit a new not working review
 
-		showAddNotWorkingReview = YES; //always allow not working review
-		if (packageInstalled) {
-			showAddWorkingReview = YES; //can only submit working review if tweak is installed
-		}
+	showAddNotWorkingReview = YES; //always allow not working review
+	if (packageInstalled) {
+		showAddWorkingReview = YES; //can only submit working review if tweak is installed
+	}
 
-		if (packageExists) {
-			showViewPackage = YES;
-		} else {
-			showRequestReview = YES;
-		}
-		
-		NSString *baseURI = @"https://jlippold.github.io/tweakCompatible/";
-		
-		NSString *imageUrl = @"unknown";
-		if ([packageStatus isEqualToString:@"Working"]) {
-			imageUrl = @"working";
-		}
-		if ([packageStatus isEqualToString:@"Not working"]) {
-			imageUrl = @"notworking";
-		}
-		if ([packageStatus isEqualToString:@"Likely working"]) {
-			imageUrl = @"partial";
-		}
+	if (packageExists) {
+		showViewPackage = YES;
+	} else {
+		showRequestReview = YES;
+	}
+	
+	NSString *baseURI = @"https://jlippold.github.io/tweakCompatible/";
+	
+	NSString *imageUrl = @"unknown";
+	if ([packageStatus isEqualToString:@"Working"]) {
+		imageUrl = @"working";
+	}
+	if ([packageStatus isEqualToString:@"Not working"]) {
+		imageUrl = @"notworking";
+	}
+	if ([packageStatus isEqualToString:@"Likely working"]) {
+		imageUrl = @"partial";
+	}
 
-		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(5)" waitUntilDone:NO];
-		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
-			withObject:[NSString stringWithFormat:@""
-				"var a = document.getElementById('tweakStatus');"
-				"if (a) {"
-					"a.style.display = 'block';"
-					"a.href = 'javascript:void(0)';"
-					"a.getElementsByTagName('p')[1].innerHTML = '%@';"
-					"a.getElementsByTagName('img')[0].src = '%@';"
-				"}", packageStatus, [NSString stringWithFormat:@"%@images/%@.png", baseURI, imageUrl]]
-		waitUntilDone:NO];
-
-		
-		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
-			withObject:[NSString stringWithFormat:@""
-				"document.getElementById('tweakDetails').innerHTML = '%@';", packageStatusExplaination]
-		waitUntilDone:NO];
-
-		if (showViewPackage) {
-		
-			[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
-				withObject:[NSString stringWithFormat:@""
-					"var a = document.getElementById('tweakInfo');"
-					"if (a) {"
-						"a.style.display = 'block';"
-						"a.href = '%@package.html#!/%@/details/%@';"
-						"a.getElementsByTagName('p')[0].innerHTML = 'More information';"
-						"document.getElementById('tweakStatus').href = '%@package.html#!/%@/details/%@';"
-					"}", baseURI, packageId, userInfoBase64, baseURI, packageId, userInfoBase64]
-			waitUntilDone:NO];
-		
-		}
-
-		if (showAddWorkingReview) {
-			[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
-				withObject:[NSString stringWithFormat:@""
-					"var a = document.getElementById('tweakWork');"
-					"if (a) {"
-						"a.href = '%@submit.html#!/%@/working/%@';"
-						"a.style.display = 'block';"
-						"a.getElementsByTagName('p')[0].innerHTML = 'Report as working';"
-					"}", baseURI, packageId, userInfoBase64]
-				waitUntilDone:NO];
-			
-		}
-
-		if (showAddNotWorkingReview) {
-			[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
-				withObject:[NSString stringWithFormat:@""
-					"var a = document.getElementById('tweakNoWork');"
-					"if (a) {"
-						"a.href = '%@submit.html#!/%@/notworking/%@';"
-						"a.style.display = 'block';"
-						"a.getElementsByTagName('p')[0].innerHTML = 'Report as not working';"
-					"}", baseURI, packageId, userInfoBase64]
-				waitUntilDone:NO];
-			
-		}
-
-		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(6)" waitUntilDone:NO];
-
-		if (showRequestReview) {
-			//tbd
-		}
+	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(6)" waitUntilDone:YES];
+	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
+		withObject:[NSString stringWithFormat:@""
+			"var a = document.getElementById('tweakStatus');"
+			"if (a) {"
+				"a.style.display = 'block';"
+				"a.href = 'javascript:void(0)';"
+				"a.getElementsByTagName('p')[1].innerHTML = '%@';"
+				"a.getElementsByTagName('img')[0].src = '%@';"
+			"}", packageStatus, [NSString stringWithFormat:@"%@images/%@.png", baseURI, imageUrl]]
+	waitUntilDone:YES];
 
 	
-	}];
+	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
+		withObject:[NSString stringWithFormat:@""
+			"document.getElementById('tweakDetails').innerHTML = '%@';", packageStatusExplaination]
+	waitUntilDone:YES];
+
+	if (showViewPackage) {
+	
+		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
+			withObject:[NSString stringWithFormat:@""
+				"var a = document.getElementById('tweakInfo');"
+				"if (a) {"
+					"a.style.display = 'block';"
+					"a.href = '%@package.html#!/%@/details/%@';"
+					"a.getElementsByTagName('p')[0].innerHTML = 'More information';"
+					"document.getElementById('tweakStatus').href = '%@package.html#!/%@/details/%@';"
+				"}", baseURI, packageId, userInfoBase64, baseURI, packageId, userInfoBase64]
+		waitUntilDone:YES];
+	
+	}
+
+	if (showAddWorkingReview) {
+		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
+			withObject:[NSString stringWithFormat:@""
+				"var a = document.getElementById('tweakWork');"
+				"if (a) {"
+					"a.href = '%@submit.html#!/%@/working/%@';"
+					"a.style.display = 'block';"
+					"a.getElementsByTagName('p')[0].innerHTML = 'Report as working';"
+				"}", baseURI, packageId, userInfoBase64]
+			waitUntilDone:YES];
+		
+	}
+
+	if (showAddNotWorkingReview) {
+		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
+			withObject:[NSString stringWithFormat:@""
+				"var a = document.getElementById('tweakNoWork');"
+				"if (a) {"
+					"a.href = '%@submit.html#!/%@/notworking/%@';"
+					"a.style.display = 'block';"
+					"a.getElementsByTagName('p')[0].innerHTML = 'Report as not working';"
+				"}", baseURI, packageId, userInfoBase64]
+			waitUntilDone:YES];
+		
+	}
+
+	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(7)" waitUntilDone:YES];
+
+	if (showRequestReview) {
+		//tbd
+	}
+
+	
+	
 
 }
 
