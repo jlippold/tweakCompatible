@@ -98,9 +98,11 @@ Package *package;
 				"a.id = 'tweakStatus'; "
 				"a.setAttribute('style', 'display: none; background-color: #fff; border-bottom: 1px solid #c8c7cc;');"
 				"a.innerHTML = \"<img class='icon' src='https://jlippold.github.io/tweakCompatible/images/unknown.png'>"
-					"<div><div style='background: none'>"
+					"<div><div style='background: none; padding-right: 0;'>"
 						"<label><p style='color: #000; font-size: 17px; font-weight: 400'>Tweak Status</p></label>"
-						"<label style='float: right'><p style='color: #000; font-size: 17px; font-weight: 400'>&nbsp;</p></label>"
+						"<label style='float: right;'>"
+							"<p style='color: #8e8e9f; font-size: 17px; font-weight: 400'>&nbsp;</p>"
+						"</label>"
 						"</div></div>\";"
 				"fieldset.appendChild(a);"
 
@@ -321,13 +323,26 @@ Package *package;
 		
 		NSString *baseURI = @"https://jlippold.github.io/tweakCompatible/";
 		
+		NSString *imageUrl = @"unknown";
+		if ([packageStatus isEqualToString:@"Working"]) {
+			imageUrl = @"working";
+		}
+		if ([packageStatus isEqualToString:@"Not working"]) {
+			imageUrl = @"notworking";
+		}
+		if ([packageStatus isEqualToString:@"Likely working"]) {
+			imageUrl = @"partial";
+		}
+
+
 		[webView stringByEvaluatingJavaScriptFromString: [NSString stringWithFormat:@""
 			"var a = document.getElementById('tweakStatus');"
 			"if (a) {"
 				"a.style.display = 'block';"
 				"a.href = 'javascript:void(0)';"
 				"a.getElementsByTagName('p')[1].innerHTML = '%@';"
-			"}", packageStatus]
+				"a.getElementsByTagName('img')[0].src = '%@';"
+			"}", packageStatus, [NSString stringWithFormat:@"%@images/%@.png", baseURI, imageUrl]]
 		];	
 		
 		[webView stringByEvaluatingJavaScriptFromString: [NSString stringWithFormat:@""
@@ -341,7 +356,7 @@ Package *package;
 				"if (a) {"
 					"a.style.display = 'block';"
 					"a.href = '%@package.html#!/%@/details/%@';"
-					"a.getElementsByTagName('p')[1].innerHTML = 'More information';"
+					"a.getElementsByTagName('p')[0].innerHTML = 'More information';"
 					"document.getElementById('tweakStatus').href = '%@package.html#!/%@/details/%@';"
 				"}", baseURI, packageId, userInfoBase64, baseURI, packageId, userInfoBase64]
 			];	
