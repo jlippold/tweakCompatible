@@ -71,7 +71,7 @@ Package *package;
 		return;
 	}
 
-	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(1)" waitUntilDone:YES];
+	//[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(1)" waitUntilDone:YES];
 
 	NSString *baseInjection = @""
 		"var actions = document.getElementById('actions');"
@@ -140,7 +140,7 @@ Package *package;
 
 	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:baseInjection waitUntilDone:YES];
 	
-	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(2)" waitUntilDone:YES];
+	//[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(2)" waitUntilDone:YES];
 
 	//calc device type: https://stackoverflow.com/a/20062141
     struct utsname systemInfo;
@@ -156,7 +156,7 @@ Package *package;
 		arch32 = YES;
 		archDescription = @" 32bit";
 	}
-	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(3)" waitUntilDone:YES];
+	//[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(3)" waitUntilDone:YES];
 
 	//download tweak list
 	NSURL *url = 
@@ -172,7 +172,7 @@ Package *package;
 	BOOL packageExists = NO; 
 	BOOL versionExists = NO;
 
-	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(4)" waitUntilDone:YES];
+	//[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(4)" waitUntilDone:YES];
 	if (data) {
 
 		NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
@@ -285,7 +285,7 @@ Package *package;
 		@"url": packageUrl
 	};
 	
-	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(5)" waitUntilDone:YES];
+	//[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(5)" waitUntilDone:YES];
 
 	//gather user info for post to github
 	NSString *userInfoJson = @"";
@@ -330,7 +330,7 @@ Package *package;
 		imageUrl = @"partial";
 	}
 
-	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(6)" waitUntilDone:YES];
+	//[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(6)" waitUntilDone:YES];
 	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
 		withObject:[NSString stringWithFormat:@""
 			"var a = document.getElementById('tweakStatus');"
@@ -389,7 +389,7 @@ Package *package;
 		
 	}
 
-	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(7)" waitUntilDone:YES];
+	//[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(7)" waitUntilDone:YES];
 
 	if (showRequestReview) {
 		//tbd
