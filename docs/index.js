@@ -37,7 +37,7 @@ $(document).ready(function () {
                 },
                 iOSVersions: function (callback) {
                     $.ajax({
-                        url: "iOSVersions.json",
+                        url: "json/iOSVersions.json",
                         dataType: 'json',
                         success: function (data) {
                             callback(null, data.iOSVersions);
