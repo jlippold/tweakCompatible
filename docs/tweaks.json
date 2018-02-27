@@ -24,6 +24,7 @@
     "10.3.3",
     "11.0.2",
     "11.1",
+    "11.1.1",
     "11.1.2"
   ],
   "devices": [
@@ -3209,6 +3210,49 @@
       ]
     },
     {
+      "id": "vn.gsm.uaupdatetools",
+      "name": "App Admin",
+      "latest": "1.0r-71",
+      "repository": "Cydia.vn",
+      "url": "http://cydia.vn/",
+      "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
+      "category": "!CydiaVn-Tools",
+      "author": "Enea Gjoka",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0r-71",
+          "iOSVersion": "10.3.3",
+          "repository": "Cydia.vn",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone7,2",
+              "issues": "",
+              "date": "2018-01-30T11:00:32Z",
+              "userName": "RoSino18k",
+              "issueNumber": 1208,
+              "arch32": false
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
       "latest": "1.0r-71",
@@ -3470,49 +3514,6 @@
               "date": "2018-01-08T00:38:09Z",
               "userName": "erickwoc",
               "issueNumber": 931,
-              "arch32": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "vn.gsm.uaupdatetools",
-      "name": "App Admin",
-      "latest": "1.0r-71",
-      "repository": "Cydia.vn",
-      "url": "http://cydia.vn/",
-      "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
-      "category": "!CydiaVn-Tools",
-      "author": "Enea Gjoka",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.0r-71",
-          "iOSVersion": "10.3.3",
-          "repository": "Cydia.vn",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone7,2",
-              "issues": "",
-              "date": "2018-01-30T11:00:32Z",
-              "userName": "RoSino18k",
-              "issueNumber": 1208,
               "arch32": false
             }
           ]
@@ -4234,49 +4235,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.apphide",
-      "name": "AppHide",
-      "latest": "0.2.2",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Hide apps on the homescreen and from spotlight via Settings.app.",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "0.2.2",
-          "iOSVersion": "10.3.3",
-          "repository": "repo.biteyourapple.net",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          },
-          "users": [
-            {
-              "status": "not working",
-              "device": "iPhone6,2",
-              "issues": "",
-              "date": "2018-01-27T20:29:57Z",
-              "userName": "pattien",
-              "issueNumber": 1187,
-              "arch32": false
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "com.jerryen.apphide",
       "name": "AppHide",
       "latest": "0.2.3-2",
@@ -4313,6 +4271,49 @@
               "date": "2018-01-07T03:29:22Z",
               "userName": "xMECHxLigerXx",
               "issueNumber": 890,
+              "arch32": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.apphide",
+      "name": "AppHide",
+      "latest": "0.2.2",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Hide apps on the homescreen and from spotlight via Settings.app.",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.2.2",
+          "iOSVersion": "10.3.3",
+          "repository": "repo.biteyourapple.net",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          },
+          "users": [
+            {
+              "status": "not working",
+              "device": "iPhone6,2",
+              "issues": "",
+              "date": "2018-01-27T20:29:57Z",
+              "userName": "pattien",
+              "issueNumber": 1187,
               "arch32": false
             }
           ]
@@ -5425,49 +5426,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.automa",
-      "name": "Automa",
-      "latest": "1.0.5-1k",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "remembers popup alert choices",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.0.5-1k",
-          "iOSVersion": "10.2",
-          "repository": "repo.biteyourapple.net",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          },
-          "users": [
-            {
-              "status": "not working",
-              "device": "iPhone8,4",
-              "issues": "",
-              "date": "2017-12-30T19:29:41Z",
-              "userName": "hippolythe",
-              "issueNumber": 526,
-              "arch32": false
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "org.thebigboss.automa",
       "name": "Automa",
       "latest": "1.0.5-1",
@@ -5534,6 +5492,49 @@
               "date": "2017-12-27T20:34:50Z",
               "userName": "aukeba",
               "issueNumber": 129,
+              "arch32": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.automa",
+      "name": "Automa",
+      "latest": "1.0.5-1k",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "remembers popup alert choices",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0.5-1k",
+          "iOSVersion": "10.2",
+          "repository": "repo.biteyourapple.net",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          },
+          "users": [
+            {
+              "status": "not working",
+              "device": "iPhone8,4",
+              "issues": "",
+              "date": "2017-12-30T19:29:41Z",
+              "userName": "hippolythe",
+              "issueNumber": 526,
               "arch32": false
             }
           ]
@@ -6487,6 +6488,49 @@
       ]
     },
     {
+      "id": "com.repo.xarold.com.betterfivecolumnhomescreen",
+      "name": "betterFiveColumnHomescreen",
+      "latest": "0.6-1",
+      "repository": "Xarold Repository",
+      "url": "http://repo.xarold.com/",
+      "shortDescription": "Five Column Homescreen with proper spacing!",
+      "category": "Tweaks",
+      "author": "Redpandadev",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.6-1",
+          "iOSVersion": "10.2.1",
+          "repository": "Xarold Repository",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone7,2",
+              "issues": "",
+              "date": "2017-12-28T20:39:17Z",
+              "userName": "breelbreel",
+              "issueNumber": 389,
+              "arch32": false
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "info.rpdev.betterfivecolumnhomescreen",
       "name": "betterFiveColumnHomescreen",
       "latest": "1.0.1",
@@ -6554,49 +6598,6 @@
               "userName": "ruzzke",
               "issueNumber": 1090,
               "arch32": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "com.repo.xarold.com.betterfivecolumnhomescreen",
-      "name": "betterFiveColumnHomescreen",
-      "latest": "0.6-1",
-      "repository": "Xarold Repository",
-      "url": "http://repo.xarold.com/",
-      "shortDescription": "Five Column Homescreen with proper spacing!",
-      "category": "Tweaks",
-      "author": "Redpandadev",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "0.6-1",
-          "iOSVersion": "10.2.1",
-          "repository": "Xarold Repository",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone7,2",
-              "issues": "",
-              "date": "2017-12-28T20:39:17Z",
-              "userName": "breelbreel",
-              "issueNumber": 389,
-              "arch32": false
             }
           ]
         }
@@ -6969,49 +6970,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.bioprotect",
-      "name": "BioProtect",
-      "latest": "2.1-295",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Protect your apps with Touch ID!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.1-295",
-          "iOSVersion": "10.3.3",
-          "repository": "BiteYourApple",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone6,2",
-              "issues": "Working good",
-              "date": "2018-01-27T14:29:04Z",
-              "userName": "pulpyboy",
-              "issueNumber": 1179,
-              "arch32": false
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "net.limneos.bioprotect",
       "name": "BioProtect",
       "latest": "2.1-295",
@@ -7048,6 +7006,49 @@
               "date": "2017-12-28T09:56:59Z",
               "userName": "lucky77665t",
               "issueNumber": 343,
+              "arch32": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.bioprotect",
+      "name": "BioProtect",
+      "latest": "2.1-295",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Protect your apps with Touch ID!",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.1-295",
+          "iOSVersion": "10.3.3",
+          "repository": "BiteYourApple",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone6,2",
+              "issues": "Working good",
+              "date": "2018-01-27T14:29:04Z",
+              "userName": "pulpyboy",
+              "issueNumber": 1179,
               "arch32": false
             }
           ]
@@ -10199,6 +10200,49 @@
       ]
     },
     {
+      "id": "com.macciti.classicios",
+      "name": "Classic iOS",
+      "latest": "1.2",
+      "repository": "ZodTTD & MacCiti (Archive)",
+      "url": "http://cydia.saurik.com/package/com.macciti.classicios/",
+      "shortDescription": "I miss my iPhone 3GS",
+      "category": "Themes (SpringBoard)",
+      "author": "Axel4",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.2",
+          "iOSVersion": "11.1.1",
+          "repository": "ZodTTD & MacCiti (Archive)",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone10,5",
+              "issues": "",
+              "date": "2018-02-27T17:56:49Z",
+              "userName": "alonikomax",
+              "issueNumber": 1345,
+              "arch32": false
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "org.coolstar.classicfolders2",
       "name": "ClassicFolders 2",
       "latest": "2.0.4",
@@ -10702,49 +10746,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.colorflow3",
-      "name": "ColorFlow 3 (iOS 10)",
-      "latest": "1.0.4",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Colorful music revolutions.",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.0.4",
-          "iOSVersion": "10.2.1",
-          "repository": "repo.biteyourapple.net",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone6,1",
-              "issues": "",
-              "date": "2018-02-14T15:11:22Z",
-              "userName": "CosmicGunners",
-              "issueNumber": 1269,
-              "arch32": false
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "com.golddavid.colorflow3",
       "name": "ColorFlow 3 (iOS 10)",
       "latest": "1.0.4",
@@ -10872,6 +10873,49 @@
               "userName": "XxIBRAHIMOVICxX",
               "issueNumber": 1174,
               "arch32": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.colorflow3",
+      "name": "ColorFlow 3 (iOS 10)",
+      "latest": "1.0.4",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Colorful music revolutions.",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0.4",
+          "iOSVersion": "10.2.1",
+          "repository": "repo.biteyourapple.net",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone6,1",
+              "issues": "",
+              "date": "2018-02-14T15:11:22Z",
+              "userName": "CosmicGunners",
+              "issueNumber": 1269,
+              "arch32": false
             }
           ]
         }
@@ -14216,49 +14260,6 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.diskpie",
-      "name": "Disk Pie",
-      "latest": "1.3-5",
-      "repository": "Xarold Repository",
-      "url": "http://repo.xarold.com/",
-      "shortDescription": "An application to view disk consumption",
-      "category": "Utilities",
-      "author": "Lior Halphon",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.3-5",
-          "iOSVersion": "10.3.3",
-          "repository": "Xarold Repository",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Not working"
-            }
-          },
-          "users": [
-            {
-              "status": "not working",
-              "device": "iPhone5,2",
-              "issues": "Cant open, app crashes",
-              "date": "2018-01-19T07:14:25Z",
-              "userName": "hell2fire",
-              "issueNumber": 1138,
-              "arch32": true
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "org.thebigboss.diskpie",
       "name": "Disk Pie",
       "latest": "1.3-5",
@@ -14296,6 +14297,49 @@
               "userName": "sevenpastzeero",
               "issueNumber": 223,
               "arch32": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.repo.xarold.com.diskpie",
+      "name": "Disk Pie",
+      "latest": "1.3-5",
+      "repository": "Xarold Repository",
+      "url": "http://repo.xarold.com/",
+      "shortDescription": "An application to view disk consumption",
+      "category": "Utilities",
+      "author": "Lior Halphon",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.3-5",
+          "iOSVersion": "10.3.3",
+          "repository": "Xarold Repository",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Not working"
+            }
+          },
+          "users": [
+            {
+              "status": "not working",
+              "device": "iPhone5,2",
+              "issues": "Cant open, app crashes",
+              "date": "2018-01-19T07:14:25Z",
+              "userName": "hell2fire",
+              "issueNumber": 1138,
+              "arch32": true
             }
           ]
         }
@@ -14815,6 +14859,49 @@
       ]
     },
     {
+      "id": "com.repo.xarold.com.dontstoptheparty",
+      "name": "Don't Stop The Party!",
+      "latest": "0.0.2",
+      "repository": "Xarold Repository",
+      "url": "http://repo.xarold.com/",
+      "shortDescription": "Music during resprings",
+      "category": "Tweaks",
+      "author": "David Goldman, Wizages",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.0.2",
+          "iOSVersion": "10.3.3",
+          "repository": "Xarold Repository",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Not working"
+            }
+          },
+          "users": [
+            {
+              "status": "not working",
+              "device": "iPhone5,2",
+              "issues": "Not the legit source for this tweak but it is the same version and presumably mostly otherwise untouched functionality-wise.  Gotta try before you buy...",
+              "date": "2017-12-30T23:14:24Z",
+              "userName": "hetzjagd",
+              "issueNumber": 531,
+              "arch32": true
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "com.golddavid.dontstoptheparty",
       "name": "Don't Stop The Party!",
       "latest": "0.0.2",
@@ -14882,49 +14969,6 @@
               "userName": "legitcomputerwhisperer",
               "issueNumber": 504,
               "arch32": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "com.repo.xarold.com.dontstoptheparty",
-      "name": "Don't Stop The Party!",
-      "latest": "0.0.2",
-      "repository": "Xarold Repository",
-      "url": "http://repo.xarold.com/",
-      "shortDescription": "Music during resprings",
-      "category": "Tweaks",
-      "author": "David Goldman, Wizages",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "0.0.2",
-          "iOSVersion": "10.3.3",
-          "repository": "Xarold Repository",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Not working"
-            }
-          },
-          "users": [
-            {
-              "status": "not working",
-              "device": "iPhone5,2",
-              "issues": "Not the legit source for this tweak but it is the same version and presumably mostly otherwise untouched functionality-wise.  Gotta try before you buy...",
-              "date": "2017-12-30T23:14:24Z",
-              "userName": "hetzjagd",
-              "issueNumber": 531,
-              "arch32": true
             }
           ]
         }
@@ -15348,49 +15392,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.eclipse4",
-      "name": "Eclipse 4 (iOS 10)",
-      "latest": "4.1.1",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "System-wide Night Mode and more for iOS 10.",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "4.1.1",
-          "iOSVersion": "10.2.1",
-          "repository": "repo.biteyourapple.net",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone6,1",
-              "issues": "",
-              "date": "2018-02-14T15:11:41Z",
-              "userName": "CosmicGunners",
-              "issueNumber": 1270,
-              "arch32": false
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "org.thebigboss.eclipse4",
       "name": "Eclipse 4 (iOS 10)",
       "latest": "4.1.1",
@@ -15496,6 +15497,49 @@
               "date": "2018-02-27T16:12:46Z",
               "userName": "VinLark",
               "issueNumber": 1295,
+              "arch32": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.eclipse4",
+      "name": "Eclipse 4 (iOS 10)",
+      "latest": "4.1.1",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "System-wide Night Mode and more for iOS 10.",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "4.1.1",
+          "iOSVersion": "10.2.1",
+          "repository": "repo.biteyourapple.net",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone6,1",
+              "issues": "",
+              "date": "2018-02-14T15:11:41Z",
+              "userName": "CosmicGunners",
+              "issueNumber": 1270,
               "arch32": false
             }
           ]
@@ -20063,49 +20107,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.hidemex10",
-      "name": "HideMeX (iOS 10)",
-      "latest": "1.1k",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "The Ultimate iOS Customizing Experience",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.1k",
-          "iOSVersion": "10.2",
-          "repository": "BiteYourApple",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone7,2",
-              "issues": "",
-              "date": "2017-12-31T16:44:12Z",
-              "userName": "swang530",
-              "issueNumber": 593,
-              "arch32": false
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "com.cpdigitaldarkroom.hidemex10",
       "name": "HideMeX (iOS 10)",
       "latest": "1.1",
@@ -20232,6 +20233,49 @@
               "date": "2017-12-31T19:09:07Z",
               "userName": "Nawaf-NM",
               "issueNumber": 626,
+              "arch32": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.hidemex10",
+      "name": "HideMeX (iOS 10)",
+      "latest": "1.1k",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "The Ultimate iOS Customizing Experience",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.1k",
+          "iOSVersion": "10.2",
+          "repository": "BiteYourApple",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone7,2",
+              "issues": "",
+              "date": "2017-12-31T16:44:12Z",
+              "userName": "swang530",
+              "issueNumber": 593,
               "arch32": false
             }
           ]
@@ -25592,49 +25636,6 @@
       ]
     },
     {
-      "id": "com.hackingdartmouth.mercury",
-      "name": "Mercury",
-      "latest": "1.2.0-1",
-      "repository": "Alex Beals",
-      "url": "https://cydia.alexbeals.com/",
-      "shortDescription": "A tweak to add a \"not-responded\" indicator to Messages.",
-      "category": "Tweaks",
-      "author": "Alex Beals",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.2.0-1",
-          "iOSVersion": "10.2",
-          "repository": "Alex Beals",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone8,2",
-              "issues": "",
-              "date": "2017-12-28T01:17:54Z",
-              "userName": "Lizzardis",
-              "issueNumber": 297,
-              "arch32": false
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "com.repo.xarold.com.mercury",
       "name": "Mercury",
       "latest": "1.2.0-1",
@@ -25671,6 +25672,49 @@
               "date": "2018-01-02T11:12:26Z",
               "userName": "iLuhDat",
               "issueNumber": 740,
+              "arch32": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.hackingdartmouth.mercury",
+      "name": "Mercury",
+      "latest": "1.2.0-1",
+      "repository": "Alex Beals",
+      "url": "https://cydia.alexbeals.com/",
+      "shortDescription": "A tweak to add a \"not-responded\" indicator to Messages.",
+      "category": "Tweaks",
+      "author": "Alex Beals",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.2.0-1",
+          "iOSVersion": "10.2",
+          "repository": "Alex Beals",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone8,2",
+              "issues": "",
+              "date": "2017-12-28T01:17:54Z",
+              "userName": "Lizzardis",
+              "issueNumber": 297,
               "arch32": false
             }
           ]
@@ -31634,49 +31678,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.priorityhub",
-      "name": "Priority Hub 2 BETA",
-      "latest": "2.0-352+debug",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Organize your notifications!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0-352+debug",
-          "iOSVersion": "10.3.2",
-          "repository": "repo.biteyourapple.net",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone6,1",
-              "issues": "",
-              "date": "2018-01-26T11:46:52Z",
-              "userName": "yoan8306",
-              "issueNumber": 1176,
-              "arch32": false
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "me.thomasfinch.priorityhub",
       "name": "Priority Hub 2 BETA",
       "latest": "2.0-364+debug",
@@ -31773,6 +31774,49 @@
               "date": "2018-01-15T18:51:30Z",
               "userName": "Goldvag",
               "issueNumber": 1071,
+              "arch32": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.priorityhub",
+      "name": "Priority Hub 2 BETA",
+      "latest": "2.0-352+debug",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Organize your notifications!",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0-352+debug",
+          "iOSVersion": "10.3.2",
+          "repository": "repo.biteyourapple.net",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone6,1",
+              "issues": "",
+              "date": "2018-01-26T11:46:52Z",
+              "userName": "yoan8306",
+              "issueNumber": 1176,
               "arch32": false
             }
           ]
@@ -35455,49 +35499,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.spotilife",
-      "name": "Spotilife",
-      "latest": "0.8",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Spotify Unlimited Skips, Remove ADs, Extreme Quality Stream Unlocked... Requires Spotify App (AppStore)",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "0.8",
-          "iOSVersion": "10.3.3",
-          "repository": "BiteYourApple",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 1,
-              "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
-            }
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone5,4",
-              "issues": "",
-              "date": "2017-12-28T01:18:01Z",
-              "userName": "eskoze",
-              "issueNumber": 298,
-              "arch32": true
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "com.julioverne.spotilife",
       "name": "Spotilife",
       "latest": "0.8",
@@ -35594,6 +35595,49 @@
               "date": "2018-01-01T03:21:21Z",
               "userName": "rayqusa",
               "issueNumber": 676,
+              "arch32": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.spotilife",
+      "name": "Spotilife",
+      "latest": "0.8",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Spotify Unlimited Skips, Remove ADs, Extreme Quality Stream Unlocked... Requires Spotify App (AppStore)",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.8",
+          "iOSVersion": "10.3.3",
+          "repository": "BiteYourApple",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone5,4",
+              "issues": "",
+              "date": "2017-12-28T01:18:01Z",
+              "userName": "eskoze",
+              "issueNumber": 298,
               "arch32": true
             }
           ]
@@ -37276,6 +37320,49 @@
       ]
     },
     {
+      "id": "com.repo.xarold.com.switchercontrols",
+      "name": "SwitcherControls",
+      "latest": "1.0-7",
+      "repository": "Xarold Repository",
+      "url": "https://repo.xarold.com/",
+      "shortDescription": "MultiCenter for iOS 10.",
+      "category": "Tweaks",
+      "author": "DGh0st",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0-7",
+          "iOSVersion": "10.2",
+          "repository": "Xarold Repository",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone7,2",
+              "issues": "",
+              "date": "2018-01-02T10:56:19Z",
+              "userName": "iLuhDat",
+              "issueNumber": 731,
+              "arch32": false
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "org.thebigboss.switchercontrols",
       "name": "SwitcherControls",
       "latest": "1.0-7",
@@ -37321,49 +37408,6 @@
               "date": "2017-12-28T01:20:29Z",
               "userName": "Lizzardis",
               "issueNumber": 310,
-              "arch32": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "com.repo.xarold.com.switchercontrols",
-      "name": "SwitcherControls",
-      "latest": "1.0-7",
-      "repository": "Xarold Repository",
-      "url": "https://repo.xarold.com/",
-      "shortDescription": "MultiCenter for iOS 10.",
-      "category": "Tweaks",
-      "author": "DGh0st",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.0-7",
-          "iOSVersion": "10.2",
-          "repository": "Xarold Repository",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone7,2",
-              "issues": "",
-              "date": "2018-01-02T10:56:19Z",
-              "userName": "iLuhDat",
-              "issueNumber": 731,
               "arch32": false
             }
           ]
@@ -38871,6 +38915,49 @@
       ]
     },
     {
+      "id": "com.repo.xarold.com.tsprotector8",
+      "name": "tsProtector 8+ (iOS 9 & 8)",
+      "latest": "1.2.0-20k",
+      "repository": "Xarold Repository",
+      "url": "https://repo.xarold.com/",
+      "shortDescription": "Protect system from suspicious apps",
+      "category": "Tweaks",
+      "author": "typ0s2d10",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.2.0-20k",
+          "iOSVersion": "10.3.3",
+          "repository": "Xarold Repository",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          },
+          "users": [
+            {
+              "status": "working",
+              "device": "iPhone8,1",
+              "issues": "",
+              "date": "2018-01-16T15:41:59Z",
+              "userName": "AECH2324",
+              "issueNumber": 1091,
+              "arch32": false
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "kr.typostudio.tsprotector8",
       "name": "tsProtector 8+ (iOS 9 & 8)",
       "latest": "1.2.0-20",
@@ -38937,49 +39024,6 @@
               "date": "2017-12-31T16:07:37Z",
               "userName": "Tatsh",
               "issueNumber": 578,
-              "arch32": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "com.repo.xarold.com.tsprotector8",
-      "name": "tsProtector 8+ (iOS 9 & 8)",
-      "latest": "1.2.0-20k",
-      "repository": "Xarold Repository",
-      "url": "https://repo.xarold.com/",
-      "shortDescription": "Protect system from suspicious apps",
-      "category": "Tweaks",
-      "author": "typ0s2d10",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.2.0-20k",
-          "iOSVersion": "10.3.3",
-          "repository": "Xarold Repository",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          },
-          "users": [
-            {
-              "status": "working",
-              "device": "iPhone8,1",
-              "issues": "",
-              "date": "2018-01-16T15:41:59Z",
-              "userName": "AECH2324",
-              "issueNumber": 1091,
               "arch32": false
             }
           ]
@@ -41284,49 +41328,6 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.wave2wake",
-      "name": "Wave2Wake",
-      "latest": "1.0.5-3",
-      "repository": "Xarold Repository",
-      "url": "http://repo.xarold.com/",
-      "shortDescription": "Wave to wake/unlock/lock your device (and a bit more)",
-      "category": "Tweaks",
-      "author": "Hrvoje Kostic",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.0.5-3",
-          "iOSVersion": "10.3.3",
-          "repository": "Xarold Repository",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 1,
-              "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
-            }
-          },
-          "users": [
-            {
-              "status": "partial",
-              "device": "iPhone5,4",
-              "issues": "",
-              "date": "2018-01-04T20:30:02Z",
-              "userName": "MethagameZ",
-              "issueNumber": 832,
-              "arch32": true
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "repo.biteyourapple.net.wave2wake",
       "name": "Wave2Wake",
       "latest": "1.0.5-3",
@@ -41364,6 +41365,49 @@
               "userName": "yoan8306",
               "issueNumber": 1078,
               "arch32": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.repo.xarold.com.wave2wake",
+      "name": "Wave2Wake",
+      "latest": "1.0.5-3",
+      "repository": "Xarold Repository",
+      "url": "http://repo.xarold.com/",
+      "shortDescription": "Wave to wake/unlock/lock your device (and a bit more)",
+      "category": "Tweaks",
+      "author": "Hrvoje Kostic",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0.5-3",
+          "iOSVersion": "10.3.3",
+          "repository": "Xarold Repository",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          },
+          "users": [
+            {
+              "status": "partial",
+              "device": "iPhone5,4",
+              "issues": "",
+              "date": "2018-01-04T20:30:02Z",
+              "userName": "MethagameZ",
+              "issueNumber": 832,
+              "arch32": true
             }
           ]
         }
