@@ -7,13 +7,13 @@ Previously when a new jailbreak was released, the community manages a large goog
 ![Screenshot](docs/screenshot1.jpg?raw=true "Screenshot1")
 ![Screenshot](docs/screenshot2.jpg?raw=true "Screenshot2")
 
-In the spirit of open source and to give back, I spent some time writing this tweak for Cydia that adds a search button to the right of the package details page. When clicked, it displays community driven compatibility info into an alert box.
+In the spirit of open source and to give back, I spent some time writing this tweak for Cydia that adds a section with compatibility results into the package details page.
 
 Users can also go to the frontend website @ https://jlippold.github.io/tweakCompatible/ to view user submissions.
 
 ## Submissions
 
-In order to submit whether a tweak works with an iOS version, you need to submit a review via Cydia. If you click the search button, then the `This Package Works!` button, you will be redirected to github issues with a pre-populated issue created. A github account is required to submit reviews.
+In order to submit whether a tweak works with an iOS version, you need to submit a review via Cydia. If you click the `Report as Working` button, you will be redirected to github issues with a pre-populated issue created. A github account is required to submit reviews.
 
 Every hour, I pull any open issues, update `docs/tweaks.json`, and close the ticket. This is done by cron.
 
@@ -39,7 +39,6 @@ This tweak can be installed with Cydia via the [big boss](http://apt.thebigboss.
 
 ## To-Do
 
- - Inject js into cydia webview instead of button clicks
  - Add webhook processing
  - Add moderation tools
     - block package / lock package
@@ -48,7 +47,6 @@ This tweak can be installed with Cydia via the [big boss](http://apt.thebigboss.
     - delete review
  - Add request feature
  - Never ending scroll, more filters
-
 
 ## License
 
