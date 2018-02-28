@@ -11,7 +11,7 @@ $(document).ready(function () {
             return {
                 data: {
                     searchTerm: "",
-                    filter: "Working",
+                    filter: "",
                     sort: "",
                     iOSVersionIndex: 0,
                     categories: [],
