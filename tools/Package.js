@@ -10,6 +10,7 @@ function Package(props) {
     this.category = props.category;
     this.author = props.author;
     this.commercial = props.commercial;
+    this.date = props.date || new Date();
 
     this.versions = [];
     this.versions.push(new Version(props));

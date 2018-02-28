@@ -4,6 +4,7 @@ function Version(props) {
     this.tweakVersion = props.latest;
     this.iOSVersion = props.iOSVersion;
     this.repository = props.repository;
+    this.date = props.date || new Date();
     this.outcome = {
         calculatedStatus: "",
         percentage: 0,
