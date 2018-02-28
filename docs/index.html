@@ -86,6 +86,31 @@
                                 </select>
                             </div>
                         </div>
+
+                        <div class="col-xs-8 col-sm-8 col-md-8">
+                            <div class="form-group">
+                                <label>Filter</label>
+                                <select class="form-control" v-model="data.filter" v-on:change="fetch()">
+                                    <option value="">All</option>
+                                    <option value="Working">Working</option>
+                                    <option value="Likely working">Likely working</option>
+                                    <option value="Not working">Not working</option>
+                                    <option value="Unknown">Unknown</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-4 col-sm-4 col-md-4">
+                            <div class="form-group">
+                                <label>Sort By</label>
+                                <select class="form-control" v-model="data.sort" v-on:change="fetch()">
+                                    <option value="">Name</option>
+                                    <option value="Date">Date</option>
+                                </select>
+                            </div>
+                        </div>
+
                     </form>
                 </div>
                 <div class="row">
@@ -158,7 +183,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/async/2.6.0/async.min.js"></script>
     
     <script src="common.js"></script>

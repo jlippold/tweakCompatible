@@ -11,6 +11,8 @@ $(document).ready(function () {
             return {
                 data: {
                     searchTerm: "",
+                    filter: "Working",
+                    sort: "",
                     iOSVersionIndex: 0,
                     categories: [],
                     devices: [],
@@ -56,7 +58,7 @@ $(document).ready(function () {
                         results.iOSVersions.forEach(function (vers, idx) {
                             if (v == vers) {
                                 iOSVersionIndex = idx;
-                                foundVersion = true
+                                foundVersion = true;
                             }
                         });
                     }
@@ -81,9 +83,8 @@ $(document).ready(function () {
                 var data = this.data;
                 var iOSVersion = data.iOSVersions[data.iOSVersionIndex];
                 var searchTerm = data.searchTerm.toLowerCase();
-                
 
-                
+
                 var filteredPackageList = data.packages.filter(function (package) {
                     if (searchTerm == "") {
                         return true;
@@ -96,19 +97,37 @@ $(document).ready(function () {
 
                 //reformat the object for display purposes
                 filteredPackageList.forEach(function (package) {
-                    package.versions.forEach(function (item) {
+                    if (package.date) {
+                        package.date = new Date(package.date);
+                    } else {
+                        package.date = new Date(1970, 0, 0);
+                    }
+                    
 
+                    package.versions.forEach(function (item) {
                         item.current = (item.iOSVersion == iOSVersion &&
                             item.tweakVersion == package.latest);
+                        if (data.filter != "") {
+                            if (data.filter != item.outcome.calculatedStatus) {
+                                item.current = false;
+                            }
+                        }
+                        if (item.current && item.date) { //set the package date to the version date
+                            package.date = new Date(item.date);
+                        }
                         item.classObject = {
                             "label-success": (item.outcome.calculatedStatus == "Working"),
                             "label-danger": (item.outcome.calculatedStatus == "Not working"),
                             "label-warning": (item.outcome.calculatedStatus == "Likely working"),
                             "label-default": (item.outcome.calculatedStatus == "Unknown")
                         };
-
                     });
                 });
+
+                if (data.sort != "") {
+                    //date sort
+                    filteredPackageList.sort(function(a,b) {return (a.date > b.date) ? -1 : ((b.date > a.date) ? 1 : 0);} ); 
+                }
                 return filteredPackageList;
             }
         },
@@ -133,7 +152,7 @@ $(document).ready(function () {
                 if (c.data.packageCache.hasOwnProperty(selectediOS)) {
                     c.data.packages = c.data.packageCache[selectediOS].slice();
 
-                    c.data.categories = c.data.packages.map(function(package) {
+                    c.data.categories = c.data.packages.map(function (package) {
                         return package.category;
                     }).filter(function (value, index, self) {
                         return self.indexOf(value) === index;
