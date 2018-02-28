@@ -100,7 +100,7 @@ $(document).ready(function () {
                     if (package.date) {
                         package.date = new Date(package.date);
                     } else {
-                        package.date = new Date(1970, 0, 0);
+                        package.date = new Date("1970-01-01T00:00:00Z");
                     }
                     
 
@@ -132,6 +132,12 @@ $(document).ready(function () {
             }
         },
         methods: {
+            relativeDate: function (dt) {
+                if (dt.getTime() == 0) {
+                    return "";
+                }
+                return moment(dt).fromNow();
+            },
             getDeviceName: function (deviceId) {
                 var devices = this.data.devices;
                 var found = devices.find(function (device) {

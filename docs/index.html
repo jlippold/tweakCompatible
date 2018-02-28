@@ -132,7 +132,8 @@
                                             <span class="label pull-right" style="font-size: 0.9em" v-bind:class="version.classObject">
                                                 {{ version.outcome.calculatedStatus }}
                                             </span>
-                                            {{ package.shortDescription }}
+                                            <span v-if="relativeDate(package.date) != ''" class="label label-default" style="font-size: 0.8em">{{relativeDate(package.date)}}</span>
+                                             {{ package.shortDescription }}
                                         </p>
                                     </div>
                                 </div>
@@ -185,7 +186,8 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/async/2.6.0/async.min.js"></script>
-    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+
     <script src="common.js"></script>
     <script src="index.js"></script>
 </body>
