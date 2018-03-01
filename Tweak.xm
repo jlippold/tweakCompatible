@@ -71,6 +71,8 @@ NSString *tweakURL = nil;
 		
 		NSArray *btn = [NSArray arrayWithObjects:  tweakWorking, flex, tweakNotWorking, flex, tweakInfo, nil];
 		[bar setItems:btn animated:NO];
+		self.webView.scrollView.contentInset = UIEdgeInsetsMake(75,0,150,0);
+
 		[overlay addSubview:bar];
 		[overlay addSubview:tweakStatus];
 		[self.view addSubview:overlay];
