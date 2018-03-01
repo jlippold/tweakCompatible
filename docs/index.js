@@ -49,7 +49,19 @@ $(document).ready(function () {
                         }
                     });
                 },
-                index: ['devices', 'iOSVersions', function (results, callback) {
+                bannedRepos: function (callback) {
+                    $.ajax({
+                        url: "bans.json",
+                        dataType: 'json',
+                        success: function (data) {
+                            callback(null, data.repositories);
+                        },
+                        error: function (err) {
+                            callback(err);
+                        }
+                    });
+                },
+                index: ['devices', 'iOSVersions', 'bannedRepos', function (results, callback) {
                     //detect ios version from useragent
                     var v = iOSVersion();
                     var iOSVersionIndex = 0;
@@ -73,6 +85,7 @@ $(document).ready(function () {
                 }
                 c.data.iOSVersions = results.iOSVersions;
                 c.data.devices = results.devices;
+                c.data.bannedRepos = results.bannedRepos;
                 c.data.iOSVersionIndex = results.index;
                 c.fetch();
             });
@@ -86,6 +99,9 @@ $(document).ready(function () {
 
 
                 var filteredPackageList = data.packages.filter(function (package) {
+                    if (data.bannedRepos.indexOf(package.repository) > -1) {
+                        return false;
+                    }
                     if (searchTerm == "") {
                         return true;
                     }
