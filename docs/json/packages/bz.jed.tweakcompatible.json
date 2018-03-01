@@ -1,7 +1,7 @@
 {
   "id": "bz.jed.tweakcompatible",
   "name": "tweakCompatible",
-  "latest": "0.0.4",
+  "latest": "0.0.5",
   "repository": "BigBoss",
   "url": "http://cydia.saurik.com/package/bz.jed.tweakcompatible/",
   "shortDescription": "Adds a way to check tweak compatibility in cydia",
@@ -471,10 +471,10 @@
       "repository": "(null)",
       "outcome": {
         "calculatedStatus": "Working",
-        "percentage": 90,
-        "good": 10,
+        "percentage": 91,
+        "good": 11,
         "bad": 0,
-        "total": 11,
+        "total": 12,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -581,6 +581,15 @@
           "date": "2018-03-01T14:39:36Z",
           "userName": "jman0125",
           "issueNumber": 2040,
+          "arch32": false
+        },
+        {
+          "status": "partial",
+          "device": "iPhone10,6",
+          "issues": "Makes Cydia sometimes freeze and crash...but generally working",
+          "date": "2018-03-01T17:02:24Z",
+          "userName": "Oxycodon-IV",
+          "issueNumber": 2072,
           "arch32": false
         }
       ]
@@ -776,6 +785,37 @@
           "date": "2018-03-01T05:09:36Z",
           "userName": "Alex1331xela",
           "issueNumber": 1959,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.0.5",
+      "iOSVersion": "11.1.2",
+      "repository": "(null)",
+      "date": "2018-03-01T18:12:21Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone10,6",
+          "issues": "",
+          "date": "2018-03-01T18:12:21Z",
+          "userName": "voshond",
+          "issueNumber": 2081,
           "arch32": false
         }
       ]
