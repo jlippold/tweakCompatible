@@ -110,11 +110,13 @@
                                 </select>
                             </div>
                         </div>
-
                     </form>
                 </div>
                 <div class="row">
                     <div class="col-md-12 packages">
+                        <div class="alert alert-success" role="alert">
+                                {{filteredPackages.length}} iOS {{data.iOSVersions[data.iOSVersionIndex]}} packages shown
+                        </div>
                         <div v-for="(package, index) in filteredPackages" class="row-fluid packages">
                             <div v-for="version in package.versions">
                                 <div v-if="version.current" class="media package" style="padding: 10px 0;">
