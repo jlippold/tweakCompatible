@@ -36,7 +36,7 @@ I wanted to make this automated, community driven, with minimal human dependenci
 
 ## Installing
 
-This tweak can be installed with Cydia via the [big boss](http://apt.thebigboss.org/onepackage.php?bundleid=bz.jed.tweakcompatible) repo.
+This tweak can be installed with Cydia via the [big boss](http://apt.thebigboss.org/onepackage.php?bundleid=bz.jed.tweakcompatible) repo, or via the releases page on github. To package a final release, run `make package FINALPACKAGE=1`
 
 ## To-Do
 
