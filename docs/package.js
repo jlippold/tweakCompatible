@@ -70,8 +70,10 @@ $(document).ready(function () {
                         $.getJSON("json/packages/" + userDetails.packageId + ".json", function (data) {
                             c.package = data;
                             var hasVersion = data.versions.find(function(v) {
-                                c.currentVersion = v.tweakVersion;
-                                return v.tweakVersion == userDetails.base64;
+                                if (v.tweakVersion == userDetails.base64) {
+                                    c.currentVersion = v.tweakVersion;
+                                }
+                                return (v.tweakVersion == userDetails.base64);
                             });
                             if (!hasVersion) {
                                 c.currentVersion = data.versions[0].tweakVersion; 
