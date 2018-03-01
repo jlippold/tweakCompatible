@@ -6,6 +6,7 @@ Previously when a new jailbreak was released, the community manages a large goog
 
 ![Screenshot](docs/screenshot1.jpg?raw=true "Screenshot1")
 ![Screenshot](docs/screenshot2.jpg?raw=true "Screenshot2")
+![Screenshot](docs/screenshot3.jpg?raw=true "Screenshot2")
 
 In the spirit of open source and to give back, I spent some time writing this tweak for Cydia that adds a section with compatibility results into the package details page.
 
@@ -13,7 +14,7 @@ Users can also go to the frontend website @ https://jlippold.github.io/tweakComp
 
 ## Submissions
 
-In order to submit whether a tweak works with an iOS version, you need to submit a review via Cydia. If you click the `Report as Working` button, you will be redirected to github issues with a pre-populated issue created. A github account is required to submit reviews.
+In order to submit whether a tweak works with an iOS version, you need to submit a review via Cydia. If you click the `Working` button at the bottom of the package details page, you will be redirected to github issues with a pre-populated issue created. A github account is required to submit reviews.
 
 Every hour, I pull any open issues, update `docs/tweaks.json`, and close the ticket. This is done by cron.
 
