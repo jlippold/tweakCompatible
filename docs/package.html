@@ -106,7 +106,7 @@
                     <div class="form-group">
                         <label for="sel1">Tweak Version</label>
                         <select class="form-control" v-model="currentVersion">
-                            <option v-for="v in uniqueVersions" v-bind:value="v">
+                            <option v-for="v in uniqueVersions" id="versionSelector" v-bind:value="v">
                                 {{v}}
                             </option>
                         </select>

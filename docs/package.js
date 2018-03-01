@@ -5,7 +5,7 @@ var userDetails;
 $(document).ready(function () {
 
     checkAction();
-
+    
     var Tweak = Vue.extend({
         template: "#tweak-template",
         data: function () {
@@ -69,7 +69,7 @@ $(document).ready(function () {
                     package: ['devices', function (callback) {
                         $.getJSON("json/packages/" + userDetails.packageId + ".json", function (data) {
                             c.package = data;
-                            c.currentVersion = data.versions[0].tweakVersion;
+                            c.currentVersion = userDetails.base64 || data.versions[0].tweakVersion;
                         });
                     }]
                 }, function (err, results) {
