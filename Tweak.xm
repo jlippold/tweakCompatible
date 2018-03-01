@@ -262,7 +262,7 @@ NSString *tweakURL = nil;
 	NSDictionary *userInfo = @{
 		@"deviceId" : deviceId, 
 		@"iOSVersion" : iOSVersion,
-		@"tweakCompatVersion": @"0.0.4",
+		@"tweakCompatVersion": @"0.0.6",
 		@"packageIndexed": @(packageExists),
 		@"packageVersionIndexed": @(versionExists),
 		@"packageStatus": packageStatus,
@@ -318,7 +318,7 @@ NSString *tweakURL = nil;
 	NSString *baseURI = @"https://jlippold.github.io/tweakCompatible/";
 	if (showViewPackage) {
 		tweakURL = [[NSString stringWithFormat:@"%@package.html#!/%@/details/%@", 
-				baseURI, packageId, userInfoBase64] retain];
+				baseURI, packageId, packageVersion] retain];
 	}
 
 	if (showAddWorkingReview) {
