@@ -36,7 +36,7 @@ $(document).ready(function () {
                     return v.tweakVersion;
                 }).filter(function (version, idx, self) {
                     return self.indexOf(version) === idx;
-                }); 
+                }).reverse(); 
             }
         },
         methods: {
