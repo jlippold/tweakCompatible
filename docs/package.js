@@ -69,7 +69,11 @@ $(document).ready(function () {
                     package: ['devices', function (callback) {
                         $.getJSON("json/packages/" + userDetails.packageId + ".json", function (data) {
                             c.package = data;
-                            c.currentVersion = userDetails.base64 || data.versions[0].tweakVersion;
+                            if (userDetails.base64 == "") {
+                                c.currentVersion = data.versions[0].tweakVersion;
+                            } else {
+                                c.currentVersion = userDetails.base64;
+                            }
                         });
                     }]
                 }, function (err, results) {
