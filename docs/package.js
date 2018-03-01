@@ -69,10 +69,10 @@ $(document).ready(function () {
                     package: ['devices', function (callback) {
                         $.getJSON("json/packages/" + userDetails.packageId + ".json", function (data) {
                             c.package = data;
-                            if (userDetails.base64 == "") {
-                                c.currentVersion = data.versions[0].tweakVersion;
-                            } else {
+                            if (data.versions.indexOf(userDetails.base64) > -1) {
                                 c.currentVersion = userDetails.base64;
+                            } else {
+                                c.currentVersion = data.versions[0].tweakVersion; 
                             }
                         });
                     }]
