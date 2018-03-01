@@ -1,10 +1,10 @@
 {
   "id": "com.saj0vie.wififirmwareupdater",
   "name": "wifiFirmwareUpdater",
-  "latest": "2.1",
+  "latest": "2.2",
   "repository": "Saj0vie Repo",
   "url": "http://saj0vie.github.io/",
-  "shortDescription": "Update 2.1: REBOOT OR RUN \"flashwifi\" AS ROOT AFTER INSTALL. To revert to default wifi, run \"revertwifi\" as root. Fully supports 64 bit. Update wifi firmware to iOS 11.2. Big thanks to u/ryley_angus and u/sankumatzo for contributing. Disclaimer: I do not own these firmware files, they are owned by Apple and Broadcom. I do not claim ownership.",
+  "shortDescription": "Update 2.2: Official iPhone X support. Next update will include 11.3 wifi firmware. Update 2.1: REBOOT OR RUN \"flashwifi\" AS ROOT AFTER INSTALL. To revert to default wifi, run \"revertwifi\" as root. Fully supports 64 bit up to iPhone X. Update wifi firmware to iOS 11.2. Big thanks to u/ryley_angus and u/sankumatzo for contributing. Disclaimer: I do not own these firmware files, they are owned by Apple and Broadcom. I do not claim ownership.",
   "category": "System",
   "author": "saj0vie",
   "commercial": false,
@@ -74,6 +74,37 @@
           "date": "2018-03-01T03:33:29Z",
           "userName": "ios11iphone6s",
           "issueNumber": 1951,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "2.2",
+      "iOSVersion": "11.1.2",
+      "repository": "Saj0vie Repo",
+      "date": "2018-03-01T14:37:40Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone10,1",
+          "issues": "",
+          "date": "2018-03-01T14:37:40Z",
+          "userName": "jman0125",
+          "issueNumber": 2031,
           "arch32": false
         }
       ]
