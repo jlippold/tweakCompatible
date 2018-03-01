@@ -1,5 +1,4 @@
 #import "CydiaHeaders/CYPackageController.h"
-#import "CydiaHeaders/CydiaWebViewController.h"
 #import "CydiaHeaders/CyteWebView.h"
 #import "CydiaHeaders/MIMEAddress.h"
 #import "CydiaHeaders/Package.h"
@@ -9,37 +8,119 @@
 
 Package *package;
 
-%hook CYPackageController
+UILabel *tweakStatus;
+UIView *overlay;
 
-- (BOOL) _allowJavaScriptPanel {
-	return YES;
-}
+NSString *workingURL = nil;
+NSString *notWorkingURL = nil;
+NSString *tweakURL = nil;
+
+
+%hook CYPackageController
 
 - (void)applyRightButton {
 	%orig;
 
 	if (self.rightButton && !self.isLoading) {
-		package = MSHookIvar<Package *>(self, "package_");		
+		package = MSHookIvar<Package *>(self, "package_");	
+
+
+		if ([self.view viewWithTag:987] == nil) {
+			[self performSelector:@selector(addToolbar)];	
+
+		}
+
+		[self performSelector:@selector(pullPackageInfo)];	
+		
 	}
 }
 
-%new - (void)_compat_check:(UIBarButtonItem *)sender {
+%new - (void)addToolbar {
+		overlay = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height - 150, [[UIScreen mainScreen] bounds].size.width, 150)];
+		overlay.backgroundColor = [UIColor whiteColor];
+		overlay.tag = 987;
+		overlay.hidden = YES;
+		
+
+	    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+		UIVisualEffectView *bluredEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+		bluredEffectView.frame = [UIScreen mainScreen].bounds;		
+		[overlay addSubview:bluredEffectView];
+
+
+		tweakStatus = [[UILabel alloc] init];
+		tweakStatus.text = @"";
+		tweakStatus.lineBreakMode = NSLineBreakByTruncatingTail;
+		tweakStatus.numberOfLines = 3;
+		tweakStatus.adjustsFontSizeToFitWidth = YES;
+		tweakStatus.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 70);
+		[tweakStatus setFont:[UIFont fontWithName:@"Helvetica" size:14]];
+	
+
+		UIBarButtonItem *flex = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil ];
+
+		UIToolbar *bar = [[UIToolbar alloc] init];
+		[bar setBackgroundImage:[UIImage new] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
+
+		bar.clipsToBounds = YES;
+		bar.frame = CGRectMake(0, 60, [[UIScreen mainScreen] bounds].size.width, 40);
+		
+		UIBarButtonItem *tweakWorking = [[UIBarButtonItem alloc] initWithTitle:@"Works" style:UIBarButtonItemStyleBordered target:self action:@selector(_markWorking:)];
+		UIBarButtonItem *tweakNotWorking = [[UIBarButtonItem alloc] initWithTitle:@"Broken" style:UIBarButtonItemStyleBordered target:self action:@selector(_markNotWorking:)];
+		UIBarButtonItem *tweakInfo = [[UIBarButtonItem alloc] initWithTitle:@"Info" style:UIBarButtonItemStyleBordered target:self action:@selector(_loadInfo:)];
+		
+		NSArray *btn = [NSArray arrayWithObjects:  tweakWorking, flex, tweakNotWorking, flex, tweakInfo, nil];
+		[bar setItems:btn animated:NO];
+		[overlay addSubview:bar];
+		[overlay addSubview:tweakStatus];
+		[self.view addSubview:overlay];
 
 }
 
-%end
-
-
-%hook CyteWebViewController
-- (BOOL) _allowJavaScriptPanel {
-	return YES;
+%new - (void)_markWorking:(UIBarButtonItem *)sender {
+	if (workingURL != nil) {
+		NSURL *url = [NSURL URLWithString:workingURL];
+		[self.webView loadRequest:[NSURLRequest requestWithURL:url]];
+	} else {
+		NSString *message = @"You can't mark this as working, unless you install it first";
+		UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"tweakCompatible" 
+		message:message preferredStyle:UIAlertControllerStyleAlert];
+		UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+		[alert addAction:ok];
+		[self presentViewController:alert animated:YES completion:nil];
+	}
 }
-%end
 
-%hook CyteWebView
-- (void)webView:(UIWebView *)webView didFinishLoadForFrame:(id)frame {
-	%orig;
+%new - (void)_markNotWorking:(UIBarButtonItem *)sender {
+	if (notWorkingURL != nil) {
+		NSURL *url = [NSURL URLWithString:notWorkingURL];
+		[self.webView loadRequest:[NSURLRequest requestWithURL:url]];
+	} else {
+		NSString *message = @"An error occured while marking this tweak";
+		UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"tweakCompatible" 
+		message:message preferredStyle:UIAlertControllerStyleAlert];
+		UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+		[alert addAction:ok];
+		[self presentViewController:alert animated:YES completion:nil];
 
+	}
+}
+
+%new - (void)_loadInfo:(UIBarButtonItem *)sender {
+	if (tweakURL != nil) {
+		NSURL *url = [NSURL URLWithString:tweakURL];
+		[self.webView loadRequest:[NSURLRequest requestWithURL:url]];
+	} else {
+		NSString *message = @"There is no additional information avaialble for this tweak";
+		UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"tweakCompatible" 
+		message:message preferredStyle:UIAlertControllerStyleAlert];
+		UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+		[alert addAction:ok];
+		[self presentViewController:alert animated:YES completion:nil];
+	}
+}
+
+%new - (void)pullPackageInfo {
 	if (!package.id) {
 		return;
 	}
@@ -61,87 +142,9 @@ Package *package;
 	if (package.isCommercial) {
 		commercial = YES;
 	}
-	
 	package = nil;
-	//[package release];
-
 	
-	NSString *isSettingsPage = [webView stringByEvaluatingJavaScriptFromString:@"(document.getElementById('tweakStatus') ? 'YES' : 'NO')"];	
-	if ([isSettingsPage isEqualToString:@"YES"]) { //already injected
-		return;
-	}
-
-	//[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(1)" waitUntilDone:YES];
-
-	NSString *baseInjection = @""
-		"var actions = document.getElementById('actions');"
-		"if (actions) {"
-			"if (!document.getElementById('tweakDetails')) {"
-
-				"var container = document.createElement('div'); "
-				"var header = document.createElement('p'); "
-				"header.setAttribute('style', 'font-size: 12px; color: #000; text-transform: uppercase');"
-				"header.innerHTML = 'tweakCompatible Results';"
-				"container.appendChild(document.createElement('br'));"
-				"container.appendChild(header);"
-				"container.appendChild(document.createElement('br'));"
-
-
-				"var details = document.createElement('p'); "
-				"details.id = 'tweakDetails'; "
-				"details.setAttribute('style', 'font-size: 12px; color: #6d6d72; text-transform: uppercase');"
-				"details.innerHTML = ''; "
-				"container.appendChild(details);"
-				"container.appendChild(document.createElement('br'));"
-
-				"var fieldset = document.createElement('fieldset'); "
-				
-				"var a = document.createElement('A'); "
-				"a.id = 'tweakStatus'; "
-				"a.setAttribute('style', 'display: none; background-color: #fff; border-bottom: 1px solid #c8c7cc;');"
-				"a.innerHTML = \"<img class='icon' src='https://jlippold.github.io/tweakCompatible/images/unknown.png'>"
-					"<div><div style='background: none; padding-right: 0;'>"
-						"<label><p style='color: #000; font-size: 17px; font-weight: 400'>Tweak Status</p></label>"
-						"<label style='float: right;'>"
-							"<p style='color: #8e8e9f; font-size: 17px; font-weight: 400'>&nbsp;</p>"
-						"</label>"
-						"</div></div>\";"
-				"fieldset.appendChild(a);"
-
-				"var b = document.createElement('A'); "
-				"b.id = 'tweakWork';"
-				"b.setAttribute('style', 'display: none; background-color: #fff; border-bottom: 1px solid #c8c7cc;');"
-				"b.innerHTML = \"<img class='icon' src='https://jlippold.github.io/tweakCompatible/images/working.png'>"
-					"<div><div><label><p style='color: #000; font-size: 17px; font-weight: 400'>&nbsp;</p></label></div></div>\";"
-				"fieldset.appendChild(b);"
-
-				"var c = document.createElement('A'); "
-				"c.id = 'tweakNoWork';"
-				"c.setAttribute('style', 'display: none; background-color: #fff; border-bottom: 1px solid #c8c7cc;');"
-				"c.innerHTML = \"<img class='icon' src='https://jlippold.github.io/tweakCompatible/images/notworking.png'>"
-					"<div><div><label><p style='color: #000; font-size: 17px; font-weight: 400'>&nbsp;</p></label></div></div>\";"
-				"fieldset.appendChild(c);"
-
-				"var d = document.createElement('A'); "
-				"d.id = 'tweakInfo';"
-				"d.setAttribute('style', 'display: none; background-color: #fff; border-bottom: 1px solid #c8c7cc;');"
-				"d.innerHTML = \"<img class='icon' src='https://jlippold.github.io/tweakCompatible/images/info.png'>"
-					"<div><div><label><p style='color: #000; font-size: 17px; font-weight: 400'>&nbsp;</p></label></div></div>\";"
-				"fieldset.appendChild(d);"
-
-				"container.appendChild(fieldset);"
-				"container.appendChild(document.createElement('br'));"
-
-				"actions.parentNode.insertBefore(container, actions.nextSibling);"
-
-			"}"
-		"}";
-
-
-	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:baseInjection waitUntilDone:YES];
 	
-	//[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(2)" waitUntilDone:YES];
-
 	//calc device type: https://stackoverflow.com/a/20062141
     struct utsname systemInfo;
     uname(&systemInfo);
@@ -156,14 +159,10 @@ Package *package;
 		arch32 = YES;
 		archDescription = @" 32bit";
 	}
-	//[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(3)" waitUntilDone:YES];
-
-	//download tweak list
-	NSURL *url = 
-		[NSURL URLWithString:[NSString stringWithFormat:@"https://jlippold.github.io/tweakCompatible/json/packages/%@.json", packageId]];
-	NSData *data = [NSData dataWithContentsOfURL:url];
-
 	
+
+	NSURL *url =  [NSURL URLWithString:[NSString stringWithFormat:@"https://jlippold.github.io/tweakCompatible/json/packages/%@.json", packageId]];
+	NSData *data = [NSData dataWithContentsOfURL:url];
 
 	id foundItem = nil; //package on website
 	id allVersions = nil; //all versions on website
@@ -172,17 +171,16 @@ Package *package;
 	BOOL packageExists = NO; 
 	BOOL versionExists = NO;
 
-	//[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(4)" waitUntilDone:YES];
-	if (data) {
+	NSString *packageStatus = @"Unknown";
+	NSString *packageStatusExplaination = @"This tweak has not been reviewed. Please submit a review if you choose to install.";
 
+	if (data) {
 		NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
 
 		foundItem = json;
+		packageExists = YES;
 
 		id allVersions = foundItem[@"versions"];
-		if (allVersions) {
-			packageExists = YES;
-		}
 		for (id version in allVersions) {
 			NSString *thisTweakVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"tweakVersion"]];
 			NSString *thisiOSVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"iOSVersion"]];
@@ -193,14 +191,14 @@ Package *package;
 				break;
 			}
 		}
-	}		
+	}
+
 
 	//calculate status of tweak
-	NSString *packageStatus = @"Unknown";
-	NSString *packageStatusExplaination = @"This tweak has not been reviewed. Please submit a review if you choose to install.";
+
 	id outcome = nil;
 	if (foundVersion) { //pull exact match status from website
-
+		
 		outcome = foundVersion[@"outcome"];
 		if (arch32) {
 			outcome = foundVersion[@"outcome"][@"arch32"];
@@ -217,6 +215,7 @@ Package *package;
 				outcome[@"good"]];
 
 	} else {
+		
 		if (packageExists) {
 			//check if other versions of this tweak have been reviewed against this iOS version
 			for (id version in allVersions) {
@@ -259,7 +258,6 @@ Package *package;
 		}
 	}
 
-
 	//build a dict with all found properties
 	NSDictionary *userInfo = @{
 		@"deviceId" : deviceId, 
@@ -281,25 +279,22 @@ Package *package;
 		@"arch32": @(arch32),
 		@"repository": packageRepository,
 		@"author": packageAuthor,
-		@"packageStatus": packageStatus,
 		@"url": packageUrl
 	};
-	
-	//[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(5)" waitUntilDone:YES];
 
 	//gather user info for post to github
-	NSString *userInfoJson = @"";
-	NSString *userInfoBase64 = @"";
 	NSError *error; 
 	NSData *jsonData = [NSJSONSerialization dataWithJSONObject:userInfo options:kNilOptions error:&error];
-	
+	NSString *userInfoJson = @"";
+	NSString *userInfoBase64 = @"";
 	if(!jsonData && error){
 		return;
 	} else {
 		userInfoJson = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 		userInfoBase64 = [jsonData base64EncodedStringWithOptions:0];
 	}
-
+	
+	
 	//determine what buttons will be displayed
 	BOOL showViewPackage = NO; //Allow the user to open in safari
 	BOOL showRequestReview = NO; //Allow the user to request a review
@@ -316,90 +311,33 @@ Package *package;
 	} else {
 		showRequestReview = YES;
 	}
+	tweakURL = nil;
+	workingURL = nil;
+	notWorkingURL = nil;
 	
 	NSString *baseURI = @"https://jlippold.github.io/tweakCompatible/";
-	
-	NSString *imageUrl = @"unknown";
-	if ([packageStatus isEqualToString:@"Working"]) {
-		imageUrl = @"working";
-	}
-	if ([packageStatus isEqualToString:@"Not working"]) {
-		imageUrl = @"notworking";
-	}
-	if ([packageStatus isEqualToString:@"Likely working"]) {
-		imageUrl = @"partial";
-	}
-
-	//[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(6)" waitUntilDone:YES];
-	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
-		withObject:[NSString stringWithFormat:@""
-			"var a = document.getElementById('tweakStatus');"
-			"if (a) {"
-				"a.style.display = 'block';"
-				"a.href = 'javascript:void(0)';"
-				"a.getElementsByTagName('p')[1].innerHTML = '%@';"
-				"a.getElementsByTagName('img')[0].src = '%@';"
-			"}", packageStatus, [NSString stringWithFormat:@"%@images/%@.png", baseURI, imageUrl]]
-	waitUntilDone:YES];
-
-	
-	[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
-		withObject:[NSString stringWithFormat:@""
-			"document.getElementById('tweakDetails').innerHTML = '%@';", packageStatusExplaination]
-	waitUntilDone:YES];
-
 	if (showViewPackage) {
-	
-		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
-			withObject:[NSString stringWithFormat:@""
-				"var a = document.getElementById('tweakInfo');"
-				"if (a) {"
-					"a.style.display = 'block';"
-					"a.href = '%@package.html#!/%@/details/%@';"
-					"a.getElementsByTagName('p')[0].innerHTML = 'More information';"
-					"document.getElementById('tweakStatus').href = '%@package.html#!/%@/details/%@';"
-				"}", baseURI, packageId, userInfoBase64, baseURI, packageId, userInfoBase64]
-		waitUntilDone:YES];
-	
+		tweakURL = [[NSString stringWithFormat:@"%@package.html#!/%@/details/%@", 
+				baseURI, packageId, userInfoBase64] retain];
 	}
 
 	if (showAddWorkingReview) {
-		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
-			withObject:[NSString stringWithFormat:@""
-				"var a = document.getElementById('tweakWork');"
-				"if (a) {"
-					"a.href = '%@submit.html#!/%@/working/%@';"
-					"a.style.display = 'block';"
-					"a.getElementsByTagName('p')[0].innerHTML = 'Report as working';"
-				"}", baseURI, packageId, userInfoBase64]
-			waitUntilDone:YES];
-		
+		workingURL = [[NSString stringWithFormat:@"%@submit.html#!/%@/working/%@", 
+				baseURI, packageId, userInfoBase64] retain];
 	}
 
 	if (showAddNotWorkingReview) {
-		[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) 
-			withObject:[NSString stringWithFormat:@""
-				"var a = document.getElementById('tweakNoWork');"
-				"if (a) {"
-					"a.href = '%@submit.html#!/%@/notworking/%@';"
-					"a.style.display = 'block';"
-					"a.getElementsByTagName('p')[0].innerHTML = 'Report as not working';"
-				"}", baseURI, packageId, userInfoBase64]
-			waitUntilDone:YES];
-		
+		notWorkingURL = [[NSString stringWithFormat:@"%@submit.html#!/%@/notworking/%@", 
+			baseURI, packageId, userInfoBase64] retain];
 	}
 
-	//[webView performSelectorOnMainThread:@selector(stringByEvaluatingJavaScriptFromString:) withObject:@"alert(7)" waitUntilDone:YES];
 
-	if (showRequestReview) {
-		//tbd
-	}
-
+	tweakStatus.text = [[NSString stringWithFormat:@"Status %@: %@", 
+				packageStatus, packageStatusExplaination] retain]; 
 	
-	
-
+	overlay.hidden = NO;
 }
-
 %end
+
 
 
