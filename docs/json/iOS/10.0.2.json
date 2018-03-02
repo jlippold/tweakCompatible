@@ -3,7 +3,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.12",
+      "latest": "1.9.13~beta1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -618,10 +618,10 @@
     {
       "id": "mobilesubstrate",
       "name": "Cydia Substrate",
-      "latest": "0.9.6301",
+      "latest": "99.0",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/mobilesubstrate/",
-      "shortDescription": "powerful code insertion platform",
+      "shortDescription": "Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute",
       "category": "System",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -694,6 +694,40 @@
           "tweakVersion": "1.1.4",
           "iOSVersion": "10.0.2",
           "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "file",
+      "name": "file",
+      "latest": "4.23-3",
+      "repository": "Cydia/Telesphoreo",
+      "url": "http://cydia.saurik.com/package/file/",
+      "shortDescription": "guesses the type of a file from contents",
+      "category": "Utilities",
+      "author": "(null)",
+      "commercial": false,
+      "date": "2018-03-02T03:01:07Z",
+      "versions": [
+        {
+          "tweakVersion": "4.23-3",
+          "iOSVersion": "10.0.2",
+          "repository": "Cydia/Telesphoreo",
+          "date": "2018-03-02T03:01:07Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1669,7 +1703,7 @@
     {
       "id": "bz.jed.tweakcompatible",
       "name": "tweakCompatible",
-      "latest": "0.0.4",
+      "latest": "0.0.5",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/bz.jed.tweakcompatible/",
       "shortDescription": "Adds a way to check tweak compatibility in cydia",
