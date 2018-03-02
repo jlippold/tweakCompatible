@@ -394,7 +394,7 @@ function getIssues(callback) {
                             if (!thisIssue.hasOwnProperty("arch32")) {
                                 thisIssue.arch32 = is32bit(thisIssue.deviceId);
                             }
-
+                            /*
                             if (bans.repositories.indexOf(thisIssue.repository) > -1) {
                                 var opts = {
                                     owner, repo,
@@ -403,9 +403,10 @@ function getIssues(callback) {
                                     labels: ["bypass", "invalid"]
                                 };
                                 github.issues.edit(opts, function () {});
-                            } else {
-                                validIssues.push(thisIssue);
-                            }
+                            } 
+                            */
+                            validIssues.push(thisIssue);
+                            
                         }
                     }
                 }
