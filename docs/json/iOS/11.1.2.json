@@ -1445,39 +1445,6 @@
       ]
     },
     {
-      "id": "net.limneos.bioprotect",
-      "name": "BioProtect",
-      "latest": "2.3-3",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/net.limneos.bioprotect/",
-      "shortDescription": "Protect your apps with Touch ID!",
-      "category": "Tweaks",
-      "author": "Elias Limneos",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "2.3-3",
-          "iOSVersion": "11.1.2",
-          "repository": "BigBoss",
-          "date": "2018-03-01T19:29:17Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.repo.xarold.com.bioprotect",
       "name": "BioProtect",
       "latest": "2.2",
@@ -1531,6 +1498,39 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "net.limneos.bioprotect",
+      "name": "BioProtect",
+      "latest": "2.3-3",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/net.limneos.bioprotect/",
+      "shortDescription": "Protect your apps with Touch ID!",
+      "category": "Tweaks",
+      "author": "Elias Limneos",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "2.3-3",
+          "iOSVersion": "11.1.2",
+          "repository": "BigBoss",
+          "date": "2018-03-01T19:29:17Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -3104,7 +3104,7 @@
     {
       "id": "cydia",
       "name": "Cydia Installer",
-      "latest": "1.1.30-coolstar4",
+      "latest": "1.1.30",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia/",
       "shortDescription": "graphical iPhone front-end for APT",
@@ -4128,6 +4128,60 @@
       ]
     },
     {
+      "id": "com.repo.xarold.com.eclipsex",
+      "name": "Eclipse X Beta 7 (iOS 11)",
+      "latest": "5.0b-64",
+      "repository": "repo.xarold.com",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.eclipsex/",
+      "shortDescription": "System-wide Night Mode and more for iOS 11. This build expires March 15",
+      "category": "Tweaks",
+      "author": "Guillermo Morán (fr0st)",
+      "commercial": false,
+      "date": "2018-03-01T07:59:42Z",
+      "versions": [
+        {
+          "tweakVersion": "5.0b-55",
+          "iOSVersion": "11.1.2",
+          "repository": "repo.xarold.com",
+          "date": "2018-03-01T07:59:42Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "5.0b-64",
+          "iOSVersion": "11.1.2",
+          "repository": "repo.xarold.com",
+          "date": "2018-03-01T12:27:55Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "me.gmoran.eclipsex",
       "name": "Eclipse X Beta 7 (iOS 11)",
       "latest": "5.0b-98",
@@ -4183,60 +4237,6 @@
           "iOSVersion": "11.1.2",
           "repository": "GMoran Beta Software",
           "date": "2018-03-02T00:43:42Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.repo.xarold.com.eclipsex",
-      "name": "Eclipse X Beta 7 (iOS 11)",
-      "latest": "5.0b-64",
-      "repository": "repo.xarold.com",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.eclipsex/",
-      "shortDescription": "System-wide Night Mode and more for iOS 11. This build expires March 15",
-      "category": "Tweaks",
-      "author": "Guillermo Morán (fr0st)",
-      "commercial": false,
-      "date": "2018-03-01T07:59:42Z",
-      "versions": [
-        {
-          "tweakVersion": "5.0b-55",
-          "iOSVersion": "11.1.2",
-          "repository": "repo.xarold.com",
-          "date": "2018-03-01T07:59:42Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        },
-        {
-          "tweakVersion": "5.0b-64",
-          "iOSVersion": "11.1.2",
-          "repository": "repo.xarold.com",
-          "date": "2018-03-01T12:27:55Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6950,40 +6950,6 @@
       ]
     },
     {
-      "id": "com.ioscreatix.littlex",
-      "name": "LittleX",
-      "latest": "1.3.4",
-      "repository": "iOS Creatix",
-      "url": "http://cydia.saurik.com/package/com.ioscreatix.littlex/",
-      "shortDescription": "An Awesome Mobile Substrate Tweak",
-      "category": "Tweaks",
-      "author": "iOS Creatix",
-      "commercial": true,
-      "date": "2018-03-01T05:07:24Z",
-      "versions": [
-        {
-          "tweakVersion": "1.3.4",
-          "iOSVersion": "11.1.2",
-          "repository": "iOS Creatix",
-          "date": "2018-03-01T05:07:24Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.yourepo.kiiimo.littlex",
       "name": "LittleX",
       "latest": "1.3.4",
@@ -7018,24 +6984,26 @@
       ]
     },
     {
-      "id": "anondev.localiapstore",
-      "name": "LocalIAPStore",
-      "latest": "1.4-1",
-      "repository": "In-AppStore.com Cydia Repository",
-      "url": "http://system.in-appstore.com/repo/",
-      "shortDescription": "Pwns In-app purchases on iOS 5.1.1 - 8.1 (works with developer servers,in-appstore.com DNS needed). 64bit compatible",
+      "id": "com.ioscreatix.littlex",
+      "name": "LittleX",
+      "latest": "1.3.4",
+      "repository": "iOS Creatix",
+      "url": "http://cydia.saurik.com/package/com.ioscreatix.littlex/",
+      "shortDescription": "An Awesome Mobile Substrate Tweak",
       "category": "Tweaks",
-      "author": "anondev",
-      "commercial": false,
+      "author": "iOS Creatix",
+      "commercial": true,
+      "date": "2018-03-01T05:07:24Z",
       "versions": [
         {
-          "tweakVersion": "1.4-1",
+          "tweakVersion": "1.3.4",
           "iOSVersion": "11.1.2",
-          "repository": "In-AppStore.com Cydia Repository",
+          "repository": "iOS Creatix",
+          "date": "2018-03-01T05:07:24Z",
           "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -7066,6 +7034,38 @@
           "iOSVersion": "11.1.2",
           "repository": "repo.xarold.com",
           "date": "2018-02-28T19:15:03Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "anondev.localiapstore",
+      "name": "LocalIAPStore",
+      "latest": "1.4-1",
+      "repository": "In-AppStore.com Cydia Repository",
+      "url": "http://system.in-appstore.com/repo/",
+      "shortDescription": "Pwns In-app purchases on iOS 5.1.1 - 8.1 (works with developer servers,in-appstore.com DNS needed). 64bit compatible",
+      "category": "Tweaks",
+      "author": "anondev",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.4-1",
+          "iOSVersion": "11.1.2",
+          "repository": "In-AppStore.com Cydia Repository",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9855,6 +9855,40 @@
       ]
     },
     {
+      "id": "com.gao.runmario",
+      "name": "RunMario",
+      "latest": "0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.gao.runmario/",
+      "shortDescription": "allow playing SuperMarioRun on jailbreak device",
+      "category": "Tweaks",
+      "author": "Gao",
+      "commercial": false,
+      "date": "2018-02-28T23:23:05Z",
+      "versions": [
+        {
+          "tweakVersion": "0.1",
+          "iOSVersion": "11.1.2",
+          "repository": "apt.thebigboss.org",
+          "date": "2018-03-02T03:09:57Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.ouraigua.safaridownloaderplus",
       "name": "Safari Downloader+",
       "latest": "4.2.7",
@@ -10738,40 +10772,6 @@
       ]
     },
     {
-      "id": "com.yourepo.kiiimo.st4",
-      "name": "Springtomize 4 (iOS 10)",
-      "latest": "3",
-      "repository": "A KiiiMO GC - ARABIC ",
-      "url": "http://cydia.saurik.com/package/com.yourepo.kiiimo.st4/",
-      "shortDescription": "Customize your device like never before.",
-      "category": "Supports iOS 11",
-      "author": "Filippo & Janosch",
-      "commercial": false,
-      "date": "2018-03-01T07:56:00Z",
-      "versions": [
-        {
-          "tweakVersion": "3",
-          "iOSVersion": "11.1.2",
-          "repository": "A KiiiMO GC - ARABIC ",
-          "date": "2018-03-01T07:56:00Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "repo.biteyourapple.net.st4",
       "name": "Springtomize 4 (iOS 10)",
       "latest": "3",
@@ -10792,6 +10792,40 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.yourepo.kiiimo.st4",
+      "name": "Springtomize 4 (iOS 10)",
+      "latest": "3",
+      "repository": "A KiiiMO GC - ARABIC ",
+      "url": "http://cydia.saurik.com/package/com.yourepo.kiiimo.st4/",
+      "shortDescription": "Customize your device like never before.",
+      "category": "Supports iOS 11",
+      "author": "Filippo & Janosch",
+      "commercial": false,
+      "date": "2018-03-01T07:56:00Z",
+      "versions": [
+        {
+          "tweakVersion": "3",
+          "iOSVersion": "11.1.2",
+          "repository": "A KiiiMO GC - ARABIC ",
+          "date": "2018-03-01T07:56:00Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -11482,10 +11516,10 @@
     {
       "id": "net.tetherme.tetherme8",
       "name": "TetherMe for iOS 10/9/8",
-      "latest": "1.2.0+electra-2",
+      "latest": "1.2.0-2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/net.tetherme.tetherme8/",
-      "shortDescription": "Dynamically enables native tethering for iOS8+ devices.  This should work on any carrier without the need for customized bundles or preferences.",
+      "shortDescription": "Dynamically enables native tethering iOS8+",
       "category": "Tweaks",
       "author": "Sam Bingner",
       "commercial": true,
@@ -12942,7 +12976,7 @@
     {
       "id": "zip",
       "name": "zip",
-      "latest": "3.0",
+      "latest": "2.32-5p",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/zip/",
       "shortDescription": "standard Windows compression tool",
