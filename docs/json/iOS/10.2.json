@@ -163,7 +163,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.12",
+      "latest": "1.9.13~beta1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -1140,38 +1140,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.automa",
-      "name": "Automa",
-      "latest": "1.0.5-1k",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "remembers popup alert choices",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.0.5-1k",
-          "iOSVersion": "10.2",
-          "repository": "repo.biteyourapple.net",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.thebigboss.automa",
       "name": "Automa",
       "latest": "1.0.5-1",
@@ -1190,6 +1158,38 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.automa",
+      "name": "Automa",
+      "latest": "1.0.5-1k",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "remembers popup alert choices",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0.5-1k",
+          "iOSVersion": "10.2",
+          "repository": "repo.biteyourapple.net",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -3350,7 +3350,7 @@
     {
       "id": "flex3beta",
       "name": "Flex 3 Beta",
-      "latest": "3~Beta43",
+      "latest": "3~Beta46",
       "repository": "Delta",
       "url": "http://getdelta.co/",
       "shortDescription": "Develop your own tweaks and share them on the Flex Community Cloud",
@@ -4052,6 +4052,38 @@
       ]
     },
     {
+      "id": "com.repo.xarold.com.icleanerpro",
+      "name": "iCleaner Pro",
+      "latest": "7.6.1~beta1k2",
+      "repository": "Xarold Repository",
+      "url": "http://repo.xarold.com/",
+      "shortDescription": "The first real iOS system cleaner & optimizer",
+      "category": "Utilities",
+      "author": "Ivano Bilenchi",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "7.6.1~beta1k2",
+          "iOSVersion": "10.2",
+          "repository": "Xarold Repository",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
       "latest": "7.6.4",
@@ -4085,38 +4117,6 @@
           "tweakVersion": "7.6.3",
           "iOSVersion": "10.2",
           "repository": "Ivano Bilenchi's Beta Repo",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.repo.xarold.com.icleanerpro",
-      "name": "iCleaner Pro",
-      "latest": "7.6.1~beta1k2",
-      "repository": "Xarold Repository",
-      "url": "http://repo.xarold.com/",
-      "shortDescription": "The first real iOS system cleaner & optimizer",
-      "category": "Utilities",
-      "author": "Ivano Bilenchi",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "7.6.1~beta1k2",
-          "iOSVersion": "10.2",
-          "repository": "Xarold Repository",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4682,7 +4682,7 @@
     {
       "id": "com.ryleyangus.liberty",
       "name": "Liberty",
-      "latest": "0.1.16",
+      "latest": "0.1.18",
       "repository": "Ryley's Repo",
       "url": "https://ryleyangus.com/repo/",
       "shortDescription": "A general purpose jailbreak detection bypass patch. Use the Liberty entry in the Settings app to block (most) apps from detecting your jailbreak. Cydia Substrate can be selectively disabled, but this isn't required for many apps.",
@@ -6346,10 +6346,10 @@
     {
       "id": "com.cokepokes.phantom",
       "name": "Phantom (Lite) for Snapchat",
-      "latest": "5.3.8-3",
+      "latest": "5.3.8-4",
       "repository": "cokepokes.github.io",
       "url": "http://cokepokes.github.io/",
-      "shortDescription": "Phantom is in the process of being fully updated to bypass Snapchat’s tweak detection",
+      "shortDescription": "Phantom is in the process of being fully updated to bypass Snapchat’s tweak detection. Currently this is the only Snapchat tweak that works without triggering a connection error or ban!",
       "category": "Tweaks",
       "author": "CokePokes",
       "commercial": false,
@@ -6877,7 +6877,7 @@
     {
       "id": "com.opa334.safariplus",
       "name": "Safari Plus",
-      "latest": "1.4.2",
+      "latest": "1.4.4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.opa334.safariplus/",
       "shortDescription": "Various enhancements to Safari!",
@@ -7644,38 +7644,6 @@
       ]
     },
     {
-      "id": "com.iky1e.swipeselection-pro",
-      "name": "SwipeSelection Pro",
-      "latest": "1.0.3-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.iky1e.swipeselection-pro/",
-      "shortDescription": "Swipe along the keyboard to move cursor & select text.",
-      "category": "Tweaks",
-      "author": "iKy1e (Kyle Howells)",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "1.0.3-1",
-          "iOSVersion": "10.2",
-          "repository": "BigBoss",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.repo.xarold.com.swipeselection-pro",
       "name": "SwipeSelection Pro",
       "latest": "1.0.3-1",
@@ -7708,20 +7676,20 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.switchercontrols",
-      "name": "SwitcherControls",
-      "latest": "1.0-7",
-      "repository": "Xarold Repository",
-      "url": "https://repo.xarold.com/",
-      "shortDescription": "MultiCenter for iOS 10.",
+      "id": "com.iky1e.swipeselection-pro",
+      "name": "SwipeSelection Pro",
+      "latest": "1.0.3-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.iky1e.swipeselection-pro/",
+      "shortDescription": "Swipe along the keyboard to move cursor & select text.",
       "category": "Tweaks",
-      "author": "DGh0st",
-      "commercial": false,
+      "author": "iKy1e (Kyle Howells)",
+      "commercial": true,
       "versions": [
         {
-          "tweakVersion": "1.0-7",
+          "tweakVersion": "1.0.3-1",
           "iOSVersion": "10.2",
-          "repository": "Xarold Repository",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7772,12 +7740,44 @@
       ]
     },
     {
+      "id": "com.repo.xarold.com.switchercontrols",
+      "name": "SwitcherControls",
+      "latest": "1.0-7",
+      "repository": "Xarold Repository",
+      "url": "https://repo.xarold.com/",
+      "shortDescription": "MultiCenter for iOS 10.",
+      "category": "Tweaks",
+      "author": "DGh0st",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0-7",
+          "iOSVersion": "10.2",
+          "repository": "Xarold Repository",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "2.0.0-767+debug",
+      "latest": "1.2.1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
-      "shortDescription": "System information Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
+      "shortDescription": "Device info added to General > About",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
@@ -8094,7 +8094,7 @@
     {
       "id": "bz.jed.tweakcompatible",
       "name": "tweakCompatible",
-      "latest": "0.0.4",
+      "latest": "0.0.5",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/bz.jed.tweakcompatible/",
       "shortDescription": "Adds a way to check tweak compatibility in cydia",
@@ -8452,12 +8452,46 @@
       ]
     },
     {
+      "id": "org.thebigboss.wifitweak",
+      "name": "WiFi - The Strongest Link",
+      "latest": "1.1.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.wifitweak/",
+      "shortDescription": "Automatically switch to the strongest WiFi network around you... and more",
+      "category": "Tweaks",
+      "author": "Samball",
+      "commercial": true,
+      "date": "2018-03-01T11:05:52Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1.1",
+          "iOSVersion": "10.2",
+          "repository": "BigBoss",
+          "date": "2018-03-02T01:25:00Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.saj0vie.wififirmwareupdater",
       "name": "wifiFirmwareUpdater",
-      "latest": "2.1",
+      "latest": "2.2",
       "repository": "Saj0vie Repo",
       "url": "http://saj0vie.github.io/",
-      "shortDescription": "Update 2.1: REBOOT OR RUN \"flashwifi\" AS ROOT AFTER INSTALL. To revert to default wifi, run \"revertwifi\" as root. Fully supports 64 bit. Update wifi firmware to iOS 11.2. Big thanks to u/ryley_angus and u/sankumatzo for contributing. Disclaimer: I do not own these firmware files, they are owned by Apple and Broadcom. I do not claim ownership.",
+      "shortDescription": "Update 2.2: Official iPhone X support. Next update will include 11.3 wifi firmware. Update 2.1: REBOOT OR RUN \"flashwifi\" AS ROOT AFTER INSTALL. To revert to default wifi, run \"revertwifi\" as root. Fully supports 64 bit up to iPhone X. Update wifi firmware to iOS 11.2. Big thanks to u/ryley_angus and u/sankumatzo for contributing. Disclaimer: I do not own these firmware files, they are owned by Apple and Broadcom. I do not claim ownership.",
       "category": "System",
       "author": "saj0vie",
       "commercial": false,
