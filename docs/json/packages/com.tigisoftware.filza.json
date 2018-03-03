@@ -1,10 +1,10 @@
 {
   "id": "com.tigisoftware.filza",
   "name": "Filza File Manager",
-  "latest": "3.4.0-25",
+  "latest": "3.3.2",
   "repository": "BigBoss",
   "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-  "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
+  "shortDescription": "File Manager for iOS. Supports iOS 7+",
   "category": "Utilities",
   "author": "TIGI Software",
   "commercial": false,
@@ -64,9 +64,9 @@
       "outcome": {
         "calculatedStatus": "Working",
         "percentage": 100,
-        "good": 1,
+        "good": 2,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -83,6 +83,15 @@
           "date": "2017-12-27T19:56:48Z",
           "userName": "lfstyles",
           "issueNumber": 85,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone8,1",
+          "issues": "",
+          "date": "2018-03-03T03:11:42Z",
+          "userName": "kurtbain250",
+          "issueNumber": 3252,
           "arch32": false
         }
       ]
@@ -344,6 +353,37 @@
           "date": "2018-03-03T17:04:25Z",
           "userName": "thanhx18",
           "issueNumber": 3490,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "3.3.2",
+      "iOSVersion": "11.0.3",
+      "repository": "apt.thebigboss.org",
+      "date": "2018-03-03T12:36:43Z",
+      "outcome": {
+        "calculatedStatus": "Not working",
+        "percentage": 0,
+        "good": 0,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "not working",
+          "device": "iPhone10,4",
+          "issues": "",
+          "date": "2018-03-03T12:36:43Z",
+          "userName": "jameslfc19",
+          "issueNumber": 3433,
           "arch32": false
         }
       ]
