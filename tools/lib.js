@@ -28,12 +28,16 @@ module.exports.findReviewForUserInVersion = function (userName, device, version)
 module.exports.commitAgainstIssue = function (issueNumber, callback) {
     var add = spawn("git", ["add", ".", "-A"], {cwd: path.join(__dirname, "../")});
     add.on('close', (code) => {
-        var commit = spawn("git", ["commit", "-am", "fixes #" + issueNumber], {
-            cwd: path.join(__dirname, "../")
-        });
-        commit.on('close', (code) => {
-            callback();
-        });
+        setTimeout(function() {
+            var commit = spawn("git", ["commit", "-am", "fixes #" + issueNumber], {
+                cwd: path.join(__dirname, "../")
+            });
+            commit.on('close', (code) => {
+                setTimeout(function() {
+                    callback();
+                }, 1000);
+            });
+        }, 1000);
     });
 }
 
