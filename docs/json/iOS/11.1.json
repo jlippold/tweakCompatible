@@ -1426,10 +1426,10 @@
     {
       "id": "com.spark.easyswitcherx",
       "name": "EasySwitcherX [Public]",
-      "latest": "0.0.1",
+      "latest": "0.0.1-14+debug",
       "repository": "Spark's Beta Repo",
       "url": "http://beta.sparkservers.co.uk/",
-      "shortDescription": "Swipe up on apps in the switcher to kill them, without having to press and hold (iPhone X - how it should have been)",
+      "shortDescription": "Make the iPX app closer function like other devices.",
       "category": "Tweaks",
       "author": "Spark",
       "commercial": false,
@@ -1708,6 +1708,39 @@
       ]
     },
     {
+      "id": "com.aditkamath.flame",
+      "name": "Flame",
+      "latest": "1.3",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.aditkamath.flame/",
+      "shortDescription": "Make Cydia Yours",
+      "category": "Tweaks",
+      "author": "Adit Kamath",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.3",
+          "iOSVersion": "11.1",
+          "repository": "BigBoss",
+          "date": "2018-02-28T22:04:47Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 3,
+            "bad": 0,
+            "total": 3,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.repo.xarold.com.flame",
       "name": "Flame",
       "latest": "1.2.1",
@@ -1730,39 +1763,6 @@
             "good": 1,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.aditkamath.flame",
-      "name": "Flame",
-      "latest": "1.3",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.aditkamath.flame/",
-      "shortDescription": "Make Cydia Yours",
-      "category": "Tweaks",
-      "author": "Adit Kamath",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.3",
-          "iOSVersion": "11.1",
-          "repository": "BigBoss",
-          "date": "2018-02-28T22:04:47Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 3,
-            "bad": 0,
-            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -2316,21 +2316,21 @@
       ]
     },
     {
-      "id": "anondev.localiapstore",
+      "id": "repo.biteyourapple.net.localiapstore",
       "name": "LocalIAPStore",
-      "latest": "1.4-1",
-      "repository": "In-AppStore.com Cydia Repository",
-      "url": "http://system.in-appstore.com/repo/",
-      "shortDescription": "Pwns In-app purchases on iOS 5.1.1 - 8.1 (works with developer servers,in-appstore.com DNS needed). 64bit compatible",
-      "category": "Tweaks",
-      "author": "anondev",
+      "latest": "1.4-2",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
       "commercial": false,
       "versions": [
         {
-          "tweakVersion": "1.4-1",
+          "tweakVersion": "1.4-2",
           "iOSVersion": "11.1",
-          "repository": "In-AppStore.com Cydia Repository",
-          "date": "2018-03-02T04:00:32Z",
+          "repository": "BiteYourApple",
+          "date": "2018-03-01T21:46:55Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2349,21 +2349,21 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.localiapstore",
+      "id": "anondev.localiapstore",
       "name": "LocalIAPStore",
-      "latest": "1.4-2",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
+      "latest": "1.4-1",
+      "repository": "In-AppStore.com Cydia Repository",
+      "url": "http://system.in-appstore.com/repo/",
+      "shortDescription": "Pwns In-app purchases on iOS 5.1.1 - 8.1 (works with developer servers,in-appstore.com DNS needed). 64bit compatible",
+      "category": "Tweaks",
+      "author": "anondev",
       "commercial": false,
       "versions": [
         {
-          "tweakVersion": "1.4-2",
+          "tweakVersion": "1.4-1",
           "iOSVersion": "11.1",
-          "repository": "BiteYourApple",
-          "date": "2018-03-01T21:46:55Z",
+          "repository": "In-AppStore.com Cydia Repository",
+          "date": "2018-03-02T04:00:32Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3222,7 +3222,7 @@
     {
       "id": "org.ppsspp.ppsspp-dev-working",
       "name": "PPSSPP (Dev-Working)",
-      "latest": "0v1.5.4-609-gbc339c037",
+      "latest": "0v1.5.4-614-g995a1cfc6",
       "repository": "PPSSPP Repo",
       "url": "https://build.ppsspp.org/",
       "shortDescription": "A PSP emulator",
@@ -4122,7 +4122,7 @@
     {
       "id": "bz.jed.tweakcompatible",
       "name": "tweakCompatible",
-      "latest": "0.0.6",
+      "latest": "0.0.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/bz.jed.tweakcompatible/",
       "shortDescription": "Adds a way to check tweak compatibility in cydia",
