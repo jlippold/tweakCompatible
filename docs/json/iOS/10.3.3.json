@@ -99,7 +99,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.13~beta1",
+      "latest": "1.9.12",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -342,6 +342,40 @@
               "bad": 0,
               "percentage": 50,
               "calculatedStatus": "Likely working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tv.antlive.rec",
+      "name": "AntRec - HD screen recorder",
+      "latest": "1.7.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/tv.antlive.rec/",
+      "shortDescription": "Record screen display to video easily!",
+      "category": "Utilities",
+      "author": "Evan Hurst",
+      "commercial": false,
+      "date": "2018-03-04T15:32:26Z",
+      "versions": [
+        {
+          "tweakVersion": "1.7.0",
+          "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
+          "date": "2018-03-04T15:32:26Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
             }
           }
         }
@@ -884,20 +918,21 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.bioprotect",
+      "id": "net.limneos.bioprotect",
       "name": "BioProtect",
       "latest": "2.3-3",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/net.limneos.bioprotect/",
       "shortDescription": "Protect your apps with Touch ID!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
+      "category": "Tweaks",
+      "author": "Elias Limneos",
+      "commercial": true,
       "versions": [
         {
-          "tweakVersion": "2.1-295",
+          "tweakVersion": "2.3-3",
           "iOSVersion": "10.3.3",
-          "repository": "BiteYourApple",
+          "repository": "BigBoss",
+          "date": "2018-03-04T12:59:00Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -916,21 +951,20 @@
       ]
     },
     {
-      "id": "net.limneos.bioprotect",
+      "id": "repo.biteyourapple.net.bioprotect",
       "name": "BioProtect",
       "latest": "2.3-3",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/net.limneos.bioprotect/",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
       "shortDescription": "Protect your apps with Touch ID!",
-      "category": "Tweaks",
-      "author": "Elias Limneos",
-      "commercial": true,
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
       "versions": [
         {
-          "tweakVersion": "2.3-3",
+          "tweakVersion": "2.1-295",
           "iOSVersion": "10.3.3",
-          "repository": "BigBoss",
-          "date": "2018-03-04T12:59:00Z",
+          "repository": "BiteYourApple",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1333,20 +1367,20 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.ccrecorder",
+      "id": "io.ijapija00.ccrecorder",
       "name": "CCRecorder (iOS 10)",
-      "latest": "1.0k",
-      "repository": "Xarold Repository",
-      "url": "http://repo.xarold.com/",
-      "shortDescription": "Record Your Screen From The Control Center... Cracked",
+      "latest": "1.0.2.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/io.ijapija00.ccrecorder/",
+      "shortDescription": "Record Your Screen From The Control Center...",
       "category": "Tweaks",
-      "author": "ijapija00",
+      "author": "@ijapija00",
       "commercial": false,
       "versions": [
         {
-          "tweakVersion": "1.0k",
+          "tweakVersion": "1.0.2.2",
           "iOSVersion": "10.3.3",
-          "repository": "Xarold Repository",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1365,20 +1399,20 @@
       ]
     },
     {
-      "id": "io.ijapija00.ccrecorder",
+      "id": "com.repo.xarold.com.ccrecorder",
       "name": "CCRecorder (iOS 10)",
-      "latest": "1.0.2.2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/io.ijapija00.ccrecorder/",
-      "shortDescription": "Record Your Screen From The Control Center...",
+      "latest": "1.0k",
+      "repository": "Xarold Repository",
+      "url": "http://repo.xarold.com/",
+      "shortDescription": "Record Your Screen From The Control Center... Cracked",
       "category": "Tweaks",
-      "author": "@ijapija00",
+      "author": "ijapija00",
       "commercial": false,
       "versions": [
         {
-          "tweakVersion": "1.0.2.2",
+          "tweakVersion": "1.0k",
           "iOSVersion": "10.3.3",
-          "repository": "BigBoss",
+          "repository": "Xarold Repository",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2625,10 +2659,10 @@
     {
       "id": "com.xcxiao.dockxi",
       "name": "DockXI For iOS10",
-      "latest": "1.0.6",
+      "latest": "1.1.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.xcxiao.dockxi/",
-      "shortDescription": "iOS 11 Dock Style For iOS 10 Devices.",
+      "shortDescription": "iOS 11 Dock Style For iOS Devices.",
       "category": "Tweaks",
       "author": "XCXiao",
       "commercial": false,
@@ -6107,7 +6141,7 @@
     {
       "id": "com.xcxiao.simplelsios10",
       "name": "SimpleLSiOS10",
-      "latest": "1.3.0",
+      "latest": "1.3.0-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.xcxiao.simplelsios10/",
       "shortDescription": "Simple lockscreen for iOS 10/11 devices.",
@@ -6595,7 +6629,7 @@
     {
       "id": "org.thebigboss.swipeformore",
       "name": "SwipeForMore",
-      "latest": "1.1.7",
+      "latest": "1.1.9",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.swipeformore/",
       "shortDescription": "Manage packages via swipe.",
