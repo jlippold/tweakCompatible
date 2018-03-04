@@ -35,9 +35,9 @@ module.exports.commitAgainstIssue = function (issueNumber, callback) {
             commit.on('close', (code) => {
                 setTimeout(function() {
                     callback();
-                }, 1000);
+                }, 200);
             });
-        }, 1000);
+        }, 200);
     });
 }
 
