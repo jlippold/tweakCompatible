@@ -82,9 +82,13 @@
                 <div class="row-fluid">
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         <a style="margin-bottom: 10px" type="button" class="btn btn-primary btn-md" :href="'http://cydia.saurik.com/package/' + package.id">
-                            Open in Cydia
+                            Open Package Depiction
                         </a>
-                    
+                        <br />
+                        <a v-if="repoUrl" style="margin-bottom: 10px" type="button" class="btn btn-success btn-md" :href="'https://cydia.saurik.com/api/share#?source=' + repoUrl">
+                            Add Repo to Cydia
+                        </a>
+                                          
                     </div>
                     <div class="col-xs-12 col-sm-8 col-md-8">
                         <dl class="dl-horizontal">

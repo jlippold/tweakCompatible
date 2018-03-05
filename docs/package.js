@@ -10,6 +10,7 @@ $(document).ready(function () {
         template: "#tweak-template",
         data: function () {
             return {
+                repoUrl: null,
                 devices: [],
                 currentVersion: "",
                 package: {
@@ -53,20 +54,20 @@ $(document).ready(function () {
             fetch: function () {
                 var c = this;
                 async.auto({
-                    devices: function (callback) {
+                    devices: function (next) {
                         $.ajax({
                             url: "devices.json",
                             dataType: 'json',
                             success: function (data) {
                                 c.devices = data.devices.slice();
-                                callback(null);
+                                next(null);
                             },
                             error: function (err) {
-                                callback(err);
+                                next(err);
                             }
                         });
                     },
-                    package: ['devices', function (callback) {
+                    package: ['devices', function (results, next) {
                         $.getJSON("json/packages/" + userDetails.packageId + ".json", function (data) {
                             c.package = data;
                             var hasVersion = data.versions.find(function(v) {
@@ -77,6 +78,23 @@ $(document).ready(function () {
                             });
                             if (!hasVersion) {
                                 c.currentVersion = data.versions[0].tweakVersion; 
+                            }
+                            next();
+                        });
+                    }],
+                    urls: ['package', function (results, next) {
+                        $.ajax({
+                            url: "json/repository-urls.json",
+                            dataType: 'json',
+                            success: function (data) {
+                                var repoUrl = data.repositories.find(function(repo) {
+                                    return repo.name == c.package.repository;
+                                });
+                                c.repoUrl = repoUrl ? repoUrl.url : null;
+                                next();
+                            },
+                            error: function (err) {
+                                next(err);
                             }
                         });
                     }]
