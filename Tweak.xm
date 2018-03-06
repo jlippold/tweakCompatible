@@ -3,6 +3,7 @@
 #import "CydiaHeaders/MIMEAddress.h"
 #import "CydiaHeaders/Package.h"
 #import "CydiaHeaders/Source.h"
+#import "CydiaHeaders/SourcesController.h"
 #import <sys/utsname.h> 
 
 
@@ -15,6 +16,13 @@ NSString *workingURL = nil;
 NSString *notWorkingURL = nil;
 NSString *tweakURL = nil;
 
+
+%hook SourcesController
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger) section {
+	return 0; 	
+	//%orig;
+}
+%end
 
 %hook CYPackageController
 

@@ -5,7 +5,7 @@ var userDetails;
 $(document).ready(function () {
 
     checkAction();
-    
+
     var Tweak = Vue.extend({
         template: "#tweak-template",
         data: function () {
@@ -32,12 +32,12 @@ $(document).ready(function () {
             this.fetch();
         },
         computed: {
-            uniqueVersions: function() {
-                return this.package.versions.map(function(v) {
+            uniqueVersions: function () {
+                return this.package.versions.map(function (v) {
                     return v.tweakVersion;
                 }).filter(function (version, idx, self) {
                     return self.indexOf(version) === idx;
-                }).reverse(); 
+                }).reverse();
             }
         },
         methods: {
@@ -70,26 +70,27 @@ $(document).ready(function () {
                     package: ['devices', function (results, next) {
                         $.getJSON("json/packages/" + userDetails.packageId + ".json", function (data) {
                             c.package = data;
-                            var hasVersion = data.versions.find(function(v) {
+                            var hasVersion = data.versions.find(function (v) {
                                 if (v.tweakVersion == userDetails.base64) {
                                     c.currentVersion = v.tweakVersion;
                                 }
                                 return (v.tweakVersion == userDetails.base64);
                             });
                             if (!hasVersion) {
-                                c.currentVersion = data.versions[0].tweakVersion; 
+                                c.currentVersion = data.versions[0].tweakVersion;
                             }
                             next();
                         });
                     }],
-                    bans: ['package', function (results, next) {
+                    urls: ['package', function (results, next) {
                         $.ajax({
-                            url: "bans.json",
+                            url: "json/repository-urls.json",
                             dataType: 'json',
                             success: function (data) {
-                                if (data.repositories.indexOf(c.package.repository) > -1) {
-                                    c.package = {};
-                                }
+                                var repoUrl = data.repositories.find(function (repo) {
+                                    return repo.name == c.package.repository;
+                                });
+                                c.repoUrl = repoUrl ? repoUrl.url : null;
                                 next();
                             },
                             error: function (err) {
@@ -97,15 +98,30 @@ $(document).ready(function () {
                             }
                         });
                     }],
-                    urls: ['bans', function (results, next) {
+                    bans: ['urls', function (results, next) {
                         $.ajax({
-                            url: "json/repository-urls.json",
+                            url: "bans.json",
                             dataType: 'json',
                             success: function (data) {
-                                var repoUrl = data.repositories.find(function(repo) {
-                                    return repo.name == c.package.repository;
-                                });
-                                c.repoUrl = repoUrl ? repoUrl.url : null;
+                                if (data.repositories.indexOf(c.package.repository) > -1) {
+                                    c = {
+                                        repoUrl: null,
+                                        devices: [],
+                                        currentVersion: "",
+                                        package: {
+                                            id: "",
+                                            name: "",
+                                            latest: "",
+                                            repository: "",
+                                            url: "",
+                                            shortDescription: "",
+                                            category: "",
+                                            author: "",
+                                            commercial: false,
+                                            versions: []
+                                        }
+                                    };
+                                }
                                 next();
                             },
                             error: function (err) {
