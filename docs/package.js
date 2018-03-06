@@ -104,22 +104,17 @@ $(document).ready(function () {
                             dataType: 'json',
                             success: function (data) {
                                 if (data.repositories.indexOf(c.package.repository) > -1) {
-                                    c = {
-                                        repoUrl: null,
-                                        devices: [],
-                                        currentVersion: "",
-                                        package: {
-                                            id: "",
-                                            name: "",
-                                            latest: "",
-                                            repository: "",
-                                            url: "",
-                                            shortDescription: "",
-                                            category: "",
-                                            author: "",
-                                            commercial: false,
-                                            versions: []
-                                        }
+                                    c.package = {
+                                        id: "",
+                                        name: "",
+                                        latest: "",
+                                        repository: "",
+                                        url: "",
+                                        shortDescription: "",
+                                        category: "",
+                                        author: "",
+                                        commercial: false,
+                                        versions: []
                                     };
                                 }
                                 next();
