@@ -376,7 +376,7 @@
     {
       "id": "me.alfhaily.adblockforyoutube",
       "name": "AdBlock for YouTube",
-      "latest": "1.0.3",
+      "latest": "1.0.7",
       "repository": "Alfhaily APT",
       "url": "https://apt.alfhaily.me/",
       "shortDescription": "Block YouTube Ads and Video Ads",
@@ -1888,7 +1888,7 @@
     {
       "id": "me.alfhaily.cercube",
       "name": "Cercube for YouTube",
-      "latest": "4.2.1.9",
+      "latest": "4.2.2.0",
       "repository": "Alfhaily APT",
       "url": "https://apt.alfhaily.me/",
       "shortDescription": "Download YouTube videos and more!",
@@ -2535,7 +2535,7 @@
     {
       "id": "cydia",
       "name": "Cydia Installer",
-      "latest": "1.1.30",
+      "latest": "1.1.30-coolstar4",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia/",
       "shortDescription": "graphical iPhone front-end for APT",
@@ -2567,10 +2567,10 @@
     {
       "id": "mobilesubstrate",
       "name": "Cydia Substrate",
-      "latest": "0.9.6301",
+      "latest": "99.0",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/mobilesubstrate/",
-      "shortDescription": "powerful code insertion platform",
+      "shortDescription": "Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute",
       "category": "System",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -2759,10 +2759,10 @@
     {
       "id": "dpkg",
       "name": "Debian Packager",
-      "latest": "1.18.10-12",
+      "latest": "1.18.24",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/dpkg/",
-      "shortDescription": "package maintainance tools from Debian",
+      "shortDescription": "package maintenance tools from Debian",
       "category": "Packaging",
       "author": "(null)",
       "commercial": false,
@@ -3049,10 +3049,10 @@
     {
       "id": "com.xcxiao.dockxi",
       "name": "DockXI For iOS10",
-      "latest": "1.0.6",
+      "latest": "1.1.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.xcxiao.dockxi/",
-      "shortDescription": "iOS 11 Dock Style For iOS 10 Devices.",
+      "shortDescription": "iOS 11 Dock Style For iOS Devices.",
       "category": "Tweaks",
       "author": "XCXiao",
       "commercial": false,
@@ -3306,10 +3306,10 @@
     {
       "id": "com.julioverne.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "016-MidnightChip",
+      "latest": "016",
       "repository": "julioverne's Repo",
       "url": "http://twitter.com/ijulioverne",
-      "shortDescription": "Ext3nder-Installer Patched for iOS 11, Includes jtool, under the name \"jtoold\" not for any particular reason, credit for jtool goes to Jonathan Levin.",
+      "shortDescription": "Cydia Extender Installer With Extra Features",
       "category": "Utilities",
       "author": "julioverne",
       "commercial": false,
@@ -3550,7 +3550,7 @@
     {
       "id": "it.dreamcode.ft",
       "name": "FingerTouch",
-      "latest": "0.0.4",
+      "latest": "0.0.6b2",
       "repository": "Dream Code",
       "url": "http://capt.dreamcode.it/",
       "shortDescription": "Touch ID gestures",
@@ -4094,7 +4094,7 @@
     {
       "id": "com.cpdigitaldarkroom.hidemex10",
       "name": "HideMeX (iOS 10)",
-      "latest": "1.1-1",
+      "latest": "1.1.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.cpdigitaldarkroom.hidemex10/",
       "shortDescription": "The Ultimate iOS Customizing Experience",
@@ -4222,7 +4222,7 @@
     {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
-      "latest": "7.6.4",
+      "latest": "7.7.0~beta1",
       "repository": "Karen's Repo",
       "url": "http://ib-soft.net/icleaner",
       "shortDescription": "The first real iOS system cleaner & optimizer",
@@ -6302,10 +6302,10 @@
     {
       "id": "com.cokepokes.phantom",
       "name": "Phantom (Lite) for Snapchat",
-      "latest": "5.3.8-4",
+      "latest": "5.3.8-3",
       "repository": "cokepokes.github.io",
       "url": "http://cokepokes.github.io/",
-      "shortDescription": "Phantom is in the process of being fully updated to bypass Snapchat’s tweak detection. Currently this is the only Snapchat tweak that works without triggering a connection error or ban!",
+      "shortDescription": "Phantom is in the process of being fully updated to bypass Snapchat’s tweak detection",
       "category": "Tweaks",
       "author": "CokePokes",
       "commercial": false,
@@ -6624,7 +6624,7 @@
     {
       "id": "preferenceloader",
       "name": "PreferenceLoader",
-      "latest": "2.2.3-3",
+      "latest": "2.2.4~alpha1",
       "repository": "rpetrich repo",
       "url": "http://cydia.saurik.com/package/preferenceloader/",
       "shortDescription": "load preferences in style",
@@ -7848,6 +7848,40 @@
           "tweakVersion": "1.0.1b-1+debug",
           "iOSVersion": "10.1.1",
           "repository": "TheComputerWhisperer's Repo",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.thebigboss.stopalarmios8",
+      "name": "StopAlarm iOS 8+",
+      "latest": "1.5.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.stopalarmios8/",
+      "shortDescription": "Snooze or Stops an Alarm!",
+      "category": "Tweaks",
+      "author": "Rene Kahle",
+      "commercial": true,
+      "date": "2018-03-06T01:16:39Z",
+      "versions": [
+        {
+          "tweakVersion": "1.5.0",
+          "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
+          "date": "2018-03-06T01:16:39Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
