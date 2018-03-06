@@ -82,14 +82,15 @@
                 <div class="row-fluid">
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         
-                        <a v-if="repoUrl" style="margin-bottom: 10px" type="button" class="btn btn-primary btn-md" :href="'https://cydia.saurik.com/api/share#?source=' + repoUrl + '&package=' + package.id">
-                            Open Package Depiction
-                        </a>
-                        <a v-else style="margin-bottom: 10px" type="button" class="btn btn-primary btn-md" :href="'http://cydia.saurik.com/package/' + package.id">
-                            Open Package Depiction
+                        <a v-if="repoUrl" style="margin-bottom: 10px" type="button" class="btn btn-success btn-md" :href="'https://cydia.saurik.com/api/share#?source=' + repoUrl + '&package=' + package.id">
+                            Open Package In Cydia
                         </a>
 
                         <br />
+
+                        <a style="margin-bottom: 10px" type="button" class="btn btn-primary btn-md" :href="'http://cydia.saurik.com/package/' + package.id">
+                            Open Package Webpage
+                        </a>
 
                         <a v-if="repoUrl" style="margin-bottom: 10px" type="button" class="btn btn-success btn-md" :href="'https://cydia.saurik.com/api/share#?source=' + repoUrl">
                             Add Repo to Cydia
