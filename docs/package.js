@@ -82,7 +82,22 @@ $(document).ready(function () {
                             next();
                         });
                     }],
-                    urls: ['package', function (results, next) {
+                    bans: ['package', function (results, next) {
+                        $.ajax({
+                            url: "bans.json",
+                            dataType: 'json',
+                            success: function (data) {
+                                if (data.repositories.indexOf(c.package.repository) > -1) {
+                                    c.package = {};
+                                }
+                                next();
+                            },
+                            error: function (err) {
+                                next(err);
+                            }
+                        });
+                    }],
+                    urls: ['bans', function (results, next) {
                         $.ajax({
                             url: "json/repository-urls.json",
                             dataType: 'json',
