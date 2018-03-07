@@ -1968,7 +1968,7 @@
     {
       "id": "me.gmoran.eclipsex",
       "name": "Eclipse X Beta 7 (iOS 11)",
-      "latest": "5.0b-203",
+      "latest": "5.0b-208",
       "repository": "GMoran Beta Software",
       "url": "http://gmoran.me/repo/",
       "shortDescription": "System-wide Night Mode and more for iOS 11. This build expires March 15",
@@ -2041,10 +2041,10 @@
     {
       "id": "com.julioverne.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "16.5",
+      "latest": "016",
       "repository": "julioverne's Repo",
       "url": "http://twitter.com/ijulioverne",
-      "shortDescription": "Cydia Extender Installer With Extra Features, patched for iOS 11: MidnightChips",
+      "shortDescription": "Cydia Extender Installer With Extra Features",
       "category": "Utilities",
       "author": "julioverne",
       "commercial": false,
@@ -3134,21 +3134,21 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.localiapstore",
+      "id": "anondev.localiapstore",
       "name": "LocalIAPStore",
-      "latest": "1.4-2",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
+      "latest": "1.4-1",
+      "repository": "In-AppStore.com Cydia Repository",
+      "url": "http://system.in-appstore.com/repo/",
+      "shortDescription": "Pwns In-app purchases on iOS 5.1.1 - 8.1 (works with developer servers,in-appstore.com DNS needed). 64bit compatible",
+      "category": "Tweaks",
+      "author": "anondev",
       "commercial": false,
       "versions": [
         {
-          "tweakVersion": "1.4-2",
+          "tweakVersion": "1.4-1",
           "iOSVersion": "11.1",
-          "repository": "BiteYourApple",
-          "date": "2018-03-01T21:46:55Z",
+          "repository": "In-AppStore.com Cydia Repository",
+          "date": "2018-03-02T04:00:32Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3167,21 +3167,21 @@
       ]
     },
     {
-      "id": "anondev.localiapstore",
+      "id": "repo.biteyourapple.net.localiapstore",
       "name": "LocalIAPStore",
-      "latest": "1.4-1",
-      "repository": "In-AppStore.com Cydia Repository",
-      "url": "http://system.in-appstore.com/repo/",
-      "shortDescription": "Pwns In-app purchases on iOS 5.1.1 - 8.1 (works with developer servers,in-appstore.com DNS needed). 64bit compatible",
-      "category": "Tweaks",
-      "author": "anondev",
+      "latest": "1.4-2",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
       "commercial": false,
       "versions": [
         {
-          "tweakVersion": "1.4-1",
+          "tweakVersion": "1.4-2",
           "iOSVersion": "11.1",
-          "repository": "In-AppStore.com Cydia Repository",
-          "date": "2018-03-02T04:00:32Z",
+          "repository": "BiteYourApple",
+          "date": "2018-03-01T21:46:55Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3289,6 +3289,40 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.julioverne.lowerinstall",
+      "name": "LowerInstall",
+      "latest": "0.0~beta3",
+      "repository": "julioverne's Repo",
+      "url": "http://cydia.saurik.com/package/com.julioverne.lowerinstall/",
+      "shortDescription": "Install Apps In Lower iOS Version",
+      "category": "Tweaks",
+      "author": "julioverne",
+      "commercial": false,
+      "date": "2018-03-02T13:21:47Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0~beta3",
+          "iOSVersion": "11.1",
+          "repository": "julioverne's Repo",
+          "date": "2018-03-07T06:01:13Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
