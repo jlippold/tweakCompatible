@@ -104,7 +104,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.13~beta1",
+      "latest": "1.9.12",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -1639,7 +1639,7 @@
     {
       "id": "com.a3tweaks.flipswitch",
       "name": "Flipswitch",
-      "latest": "1.0.16~beta1",
+      "latest": "1.0.15",
       "repository": "rpetrich repo",
       "url": "http://cydia.saurik.com/package/com.a3tweaks.flipswitch/",
       "shortDescription": "Centralized toggle system for iOS",
@@ -1940,7 +1940,7 @@
       "latest": "1.0.2",
       "repository": "Karen's Repo",
       "url": "https://cydia.angelxwind.net/",
-      "shortDescription": "library for developer localization",
+      "shortDescription": "A development library that allows developers to add localization support to their tweaks.",
       "category": "Development",
       "author": "Karen／明美 (angelXwind)",
       "commercial": false,
@@ -1973,7 +1973,7 @@
       "latest": "1.2",
       "repository": "Karen's Repo",
       "url": "https://cydia.angelxwind.net/",
-      "shortDescription": "library for developer preference bundles",
+      "shortDescription": "A development library that provides various conveniences and enhancements for developers seeking to write preference bundles for their tweaks.",
       "category": "Tweaks",
       "author": "Karen／明美 (angelXwind)",
       "commercial": false,
@@ -2282,6 +2282,40 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.coolstar.llvm-clang64",
+      "name": "LLVM+Clang (64 Bit)",
+      "latest": "5.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.coolstar.llvm-clang64/",
+      "shortDescription": "LLVM, Clang, and LLD 5.0.1 for iOS/arm64",
+      "category": "Development",
+      "author": "CoolStar",
+      "commercial": false,
+      "date": "2018-03-08T21:28:40Z",
+      "versions": [
+        {
+          "tweakVersion": "5.0.1",
+          "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
+          "date": "2018-03-08T21:28:40Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
