@@ -296,7 +296,7 @@
     {
       "id": "applist",
       "name": "AppList",
-      "latest": "1.5.13",
+      "latest": "1.5.14",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/applist/",
       "shortDescription": "Allow extensions to read the list of installed apps",
@@ -429,7 +429,7 @@
     {
       "id": "apt7",
       "name": "APT 0.7 Strict",
-      "latest": "0.7.25.3-8",
+      "latest": "0.7.25.3-9",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/apt7/",
       "shortDescription": "the advanced packaging tool from Debian",
@@ -561,7 +561,7 @@
     {
       "id": "berkeleydb",
       "name": "Berkeley DB",
-      "latest": "4.6.21-5",
+      "latest": "6.2.23",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/berkeleydb/",
       "shortDescription": "Oracle's embeddable database engine",
@@ -1123,7 +1123,7 @@
     {
       "id": "cydia",
       "name": "Cydia Installer",
-      "latest": "1.1.30",
+      "latest": "1.1.30-coolstar4",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia/",
       "shortDescription": "graphical iPhone front-end for APT",
@@ -1156,10 +1156,10 @@
     {
       "id": "mobilesubstrate",
       "name": "Cydia Substrate",
-      "latest": "99.0",
+      "latest": "0.9.6301",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/mobilesubstrate/",
-      "shortDescription": "Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute",
+      "shortDescription": "powerful code insertion platform",
       "category": "System",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -1220,10 +1220,10 @@
     {
       "id": "dpkg",
       "name": "Debian Packager",
-      "latest": "1.18.10-12",
+      "latest": "1.18.24",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/dpkg/",
-      "shortDescription": "package maintainance tools from Debian",
+      "shortDescription": "package maintenance tools from Debian",
       "category": "Packaging",
       "author": "(null)",
       "commercial": false,
@@ -1753,7 +1753,7 @@
     {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
-      "latest": "7.6.4",
+      "latest": "7.7.0~beta1",
       "repository": "Karen's Repo",
       "url": "http://ib-soft.net/icleaner",
       "shortDescription": "The first real iOS system cleaner & optimizer",
@@ -2212,7 +2212,7 @@
     {
       "id": "ldid",
       "name": "Link Identity Editor",
-      "latest": "1.2.1",
+      "latest": "1.2.2-coolstar",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/ldid/",
       "shortDescription": "pseudo-codesign Mach-O files",
@@ -2440,10 +2440,10 @@
     {
       "id": "network-cmds",
       "name": "Network Commands",
-      "latest": "307.0.1-7",
+      "latest": "307.0.1-6rev1-1",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/network-cmds/",
-      "shortDescription": "arp, ifconfig, netstat, route, traceroute",
+      "shortDescription": "arp, ifconfig, ipfw, netstat, route, traceroute. This version contains a modified ifconfig that will allow you to use promiscuous (promisc) mode on the iPhone (ie: ifconfig en0 promisc)! Thanks to Wim Verreycken and TheWorm.",
       "category": "Networking",
       "author": "(null)",
       "commercial": false,
@@ -3014,7 +3014,7 @@
     {
       "id": "com.rpetrich.rocketbootstrap",
       "name": "RocketBootstrap",
-      "latest": "1.0.6~beta1",
+      "latest": "1.0.6",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.rpetrich.rocketbootstrap/",
       "shortDescription": "Support library allowing tweaks to communicate with sandboxed processes",
@@ -3027,6 +3027,26 @@
           "iOSVersion": "10.0.2",
           "repository": "rpetrich repo",
           "date": "2018-02-28T18:45:59Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.0.6",
+          "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
+          "date": "2018-03-08T14:27:32Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3111,7 +3131,7 @@
     {
       "id": "sed",
       "name": "sed",
-      "latest": "4.1.5-8",
+      "latest": "4.2.2",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/sed/",
       "shortDescription": "edits streams of text using patterns",
@@ -3145,7 +3165,7 @@
     {
       "id": "shell-cmds",
       "name": "shell-cmds",
-      "latest": "118-7",
+      "latest": "203",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/shell-cmds/",
       "shortDescription": "killall, mktemp, renice, time, which",
@@ -3371,7 +3391,7 @@
     {
       "id": "system-cmds",
       "name": "system-cmds",
-      "latest": "433.8-14",
+      "latest": "790",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/system-cmds/",
       "shortDescription": "iostat, login, passwd, sync, sysctl",
@@ -3405,7 +3425,7 @@
     {
       "id": "tar",
       "name": "Tape Archive",
-      "latest": "1.29-10",
+      "latest": "1.30",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/tar/",
       "shortDescription": "tool for making tape archives",
@@ -3505,10 +3525,10 @@
     {
       "id": "net.tetherme.tetherme8",
       "name": "TetherMe for iOS 10/9/8",
-      "latest": "1.2.0-2",
+      "latest": "1.2.0+electra-2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/net.tetherme.tetherme8/",
-      "shortDescription": "Dynamically enables native tethering iOS8+",
+      "shortDescription": "Dynamically enables native tethering for iOS8+ devices.  This should work on any carrier without the need for customized bundles or preferences.",
       "category": "Tweaks",
       "author": "Sam Bingner",
       "commercial": true,
@@ -3662,7 +3682,7 @@
     {
       "id": "uikittools",
       "name": "UIKit Tools",
-      "latest": "1.1.12",
+      "latest": "1.1.12-coolstar",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/uikittools/",
       "shortDescription": "UIKit/GraphicsServices command line access",
@@ -3762,7 +3782,7 @@
     {
       "id": "unzip",
       "name": "unzip",
-      "latest": "5.52-5p",
+      "latest": "6.0",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/unzip/",
       "shortDescription": "de-compesses files in zip format",
@@ -3894,10 +3914,10 @@
     {
       "id": "com.n00neimp0rtant.xcon",
       "name": "xCon",
-      "latest": "42~beta2",
+      "latest": "38",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.n00neimp0rtant.xcon/",
-      "shortDescription": "bypass anti-jailbreak protection",
+      "shortDescription": "xCon is a project aimed to be a one-stop solution to bypassing jailbreak detection in App Store applications.",
       "category": "Tweaks",
       "author": "Lunatik",
       "commercial": false,
