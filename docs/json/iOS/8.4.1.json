@@ -3,7 +3,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.12",
+      "latest": "1.9.13~beta1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -619,7 +619,7 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.3.2",
+      "latest": "3.3.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
       "shortDescription": "File Manager for iOS. Supports iOS 7+",
@@ -631,6 +631,39 @@
           "tweakVersion": "3.3.2",
           "iOSVersion": "8.4.1",
           "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.aditkamath.flame",
+      "name": "Flame",
+      "latest": "1.3",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.aditkamath.flame/",
+      "shortDescription": "Make Cydia Yours",
+      "category": "Tweaks",
+      "author": "Adit Kamath",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.3",
+          "iOSVersion": "8.4.1",
+          "repository": "BigBoss",
+          "date": "2018-03-12T02:12:05Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -813,9 +846,43 @@
       ]
     },
     {
+      "id": "vn.gsm.icleanerpro",
+      "name": "iCleaner Pro",
+      "latest": "7.6.1",
+      "repository": "Cydia.vn",
+      "url": "http://cydia.saurik.com/package/vn.gsm.icleanerpro/",
+      "shortDescription": "The first real iOS system cleaner & optimizer",
+      "category": "!CydiaVn-Tools",
+      "author": "Exile.90",
+      "commercial": false,
+      "date": "2018-03-09T20:18:21Z",
+      "versions": [
+        {
+          "tweakVersion": "7.6.1",
+          "iOSVersion": "8.4.1",
+          "repository": "Cydia.vn",
+          "date": "2018-03-09T20:18:21Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
-      "latest": "7.7.0~beta1",
+      "latest": "7.7.0~beta2",
       "repository": "Karen's Repo",
       "url": "http://ib-soft.net/icleaner",
       "shortDescription": "The first real iOS system cleaner & optimizer",
@@ -892,40 +959,6 @@
               "bad": 0,
               "percentage": 0,
               "calculatedStatus": "Not working"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "vn.gsm.icleanerpro",
-      "name": "iCleaner Pro",
-      "latest": "7.6.1",
-      "repository": "Cydia.vn",
-      "url": "http://cydia.saurik.com/package/vn.gsm.icleanerpro/",
-      "shortDescription": "The first real iOS system cleaner & optimizer",
-      "category": "!CydiaVn-Tools",
-      "author": "Exile.90",
-      "commercial": false,
-      "date": "2018-03-09T20:18:21Z",
-      "versions": [
-        {
-          "tweakVersion": "7.6.1",
-          "iOSVersion": "8.4.1",
-          "repository": "Cydia.vn",
-          "date": "2018-03-09T20:18:21Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 1,
-              "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
             }
           }
         }
