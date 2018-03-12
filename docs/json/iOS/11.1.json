@@ -3855,7 +3855,7 @@
     {
       "id": "com.junesiphone.lockpluspro",
       "name": "LockPlus Pro",
-      "latest": "0.9",
+      "latest": "0.9.1",
       "repository": "junesiphone.com",
       "url": "http://cydia.saurik.com/package/com.junesiphone.lockpluspro/",
       "shortDescription": "The ultimate lock screen tweak!",
@@ -4427,27 +4427,28 @@
       ]
     },
     {
-      "id": "ws.hbang.newterm2",
-      "name": "NewTerm 2",
-      "latest": "2.0~beta3",
-      "repository": "cydia.hbang.ws",
-      "url": "https://cydia.hbang.ws/",
-      "shortDescription": "A powerful terminal emulator for iOS",
-      "category": "Terminal Support",
-      "author": "HASHBANG Productions",
+      "id": "ncurses",
+      "name": "New Curses",
+      "latest": "5.9-1",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/ncurses/",
+      "shortDescription": "feature-complete terminal library",
+      "category": "System",
+      "author": "(null)",
       "commercial": false,
+      "date": "2018-03-04T19:02:12Z",
       "versions": [
         {
-          "tweakVersion": "2.0~beta3",
+          "tweakVersion": "5.9-1",
           "iOSVersion": "11.1",
-          "repository": "cydia.hbang.ws",
-          "date": "2018-02-28T18:31:48Z",
+          "repository": "Electra's iOS Utilities",
+          "date": "2018-03-12T02:24:30Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
-            "good": 2,
+            "good": 1,
             "bad": 0,
-            "total": 2,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -4482,6 +4483,39 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ws.hbang.newterm2",
+      "name": "NewTerm 2",
+      "latest": "2.0~beta3",
+      "repository": "cydia.hbang.ws",
+      "url": "https://cydia.hbang.ws/",
+      "shortDescription": "A powerful terminal emulator for iOS",
+      "category": "Terminal Support",
+      "author": "HASHBANG Productions",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0~beta3",
+          "iOSVersion": "11.1",
+          "repository": "cydia.hbang.ws",
+          "date": "2018-02-28T18:31:48Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -4635,22 +4669,22 @@
       ]
     },
     {
-      "id": "org.coolstar.nolargetitles",
+      "id": "com.adamseiter.nolargetitles",
       "name": "NoLargeTitles",
-      "latest": "1.0-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.coolstar.nolargetitles/",
-      "shortDescription": "Remove the large titles system-wide on iOS 11",
+      "latest": "1.1",
+      "repository": "SEITERSEITER's Repo",
+      "url": "http://cydia.saurik.com/package/com.adamseiter.nolargetitles/",
+      "shortDescription": "Removes ugly large titles from apps.",
       "category": "Tweaks",
-      "author": "CoolStar",
+      "author": "Adam Seiter",
       "commercial": false,
-      "date": "2018-03-08T05:57:18Z",
+      "date": "2018-03-01T19:59:25Z",
       "versions": [
         {
-          "tweakVersion": "1.0-1",
+          "tweakVersion": "1.1",
           "iOSVersion": "11.1",
-          "repository": "BigBoss",
-          "date": "2018-03-08T15:23:24Z",
+          "repository": "SEITERSEITER's Repo",
+          "date": "2018-03-01T23:42:49Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4669,22 +4703,22 @@
       ]
     },
     {
-      "id": "com.adamseiter.nolargetitles",
+      "id": "org.coolstar.nolargetitles",
       "name": "NoLargeTitles",
-      "latest": "1.1",
-      "repository": "SEITERSEITER's Repo",
-      "url": "http://cydia.saurik.com/package/com.adamseiter.nolargetitles/",
-      "shortDescription": "Removes ugly large titles from apps.",
+      "latest": "1.0-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.coolstar.nolargetitles/",
+      "shortDescription": "Remove the large titles system-wide on iOS 11",
       "category": "Tweaks",
-      "author": "Adam Seiter",
+      "author": "CoolStar",
       "commercial": false,
-      "date": "2018-03-01T19:59:25Z",
+      "date": "2018-03-08T05:57:18Z",
       "versions": [
         {
-          "tweakVersion": "1.1",
+          "tweakVersion": "1.0-1",
           "iOSVersion": "11.1",
-          "repository": "SEITERSEITER's Repo",
-          "date": "2018-03-01T23:42:49Z",
+          "repository": "BigBoss",
+          "date": "2018-03-08T15:23:24Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6480,7 +6514,7 @@
     {
       "id": "org.thebigboss.swipeformore",
       "name": "SwipeForMore",
-      "latest": "1.1.7",
+      "latest": "1.1.9",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.swipeformore/",
       "shortDescription": "Manage packages via swipe.",
