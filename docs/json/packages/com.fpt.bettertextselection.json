@@ -1,10 +1,10 @@
 {
   "id": "com.fpt.bettertextselection",
   "name": "BetterTextSelection",
-  "latest": "1.1",
+  "latest": "1.1.1-3+debug",
   "repository": "BigBoss",
   "url": "http://cydia.saurik.com/package/com.fpt.bettertextselection/",
-  "shortDescription": "Fixes the default text selection.",
+  "shortDescription": "Fixes the default text selection. Specifically, it stops iOS jumping to the end of paragraphs when selecting text. It should apply to all applications that use WebKit.",
   "category": "Tweaks",
   "author": "Frozen Penguin",
   "commercial": false,
@@ -105,6 +105,37 @@
           "date": "2018-03-02T14:46:27Z",
           "userName": "CydiaUser420",
           "issueNumber": 2853,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "1.1.1-3+debug",
+      "iOSVersion": "10.2.1",
+      "repository": "Frozen Penguin's Repo",
+      "date": "2018-03-12T10:59:38Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone8,4",
+          "issues": "",
+          "date": "2018-03-12T10:59:38Z",
+          "userName": "huphup",
+          "issueNumber": 5851,
           "arch32": false
         }
       ]
