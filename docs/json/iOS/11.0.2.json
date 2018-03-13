@@ -37,7 +37,7 @@
     {
       "id": "com.fortysixandtwo.alkaline",
       "name": "Alkaline",
-      "latest": "1.3",
+      "latest": "1.6",
       "repository": "ModMyi (Archive)",
       "url": "http://cydia.saurik.com/package/com.fortysixandtwo.alkaline/",
       "shortDescription": "Themeable status bar battery replacement for iOS 7.",
@@ -169,7 +169,7 @@
     {
       "id": "apt7-lib",
       "name": "APT 0.7 Strict (lib)",
-      "latest": "0.7.25.3-16-coolstar",
+      "latest": "0.7.25.3-15",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/apt7-lib/",
       "shortDescription": "the advanced packaging library from Debian",
@@ -636,10 +636,10 @@
     {
       "id": "com.julioverne.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "016",
+      "latest": "16.5",
       "repository": "julioverne's Repo",
       "url": "http://twitter.com/ijulioverne",
-      "shortDescription": "Cydia Extender Installer With Extra Features",
+      "shortDescription": "Cydia Extender Installer With Extra Features, patched for iOS 11: MidnightChips",
       "category": "Utilities",
       "author": "julioverne",
       "commercial": false,
@@ -703,7 +703,7 @@
     {
       "id": "it.dreamcode.ft",
       "name": "FingerTouch",
-      "latest": "0.0.6b2",
+      "latest": "0.0.4",
       "repository": "Dream Code",
       "url": "http://capt.dreamcode.it/",
       "shortDescription": "Touch ID gestures",
@@ -986,6 +986,39 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.ryleyangus.liberty",
+      "name": "Liberty",
+      "latest": "0.2.0",
+      "repository": "Ryley's Repo",
+      "url": "https://ryleyangus.com/repo/",
+      "shortDescription": "A general purpose jailbreak detection bypass patch. Use the Liberty entry in the Settings app to block (most) apps from detecting your jailbreak. Cydia Substrate can be selectively disabled, but this isn't required for many apps.",
+      "category": "Tweaks",
+      "author": "Ryley Angus",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.2.0",
+          "iOSVersion": "11.0.2",
+          "repository": "Ryley's Repo",
+          "date": "2018-03-13T20:33:12Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -1488,7 +1521,7 @@
     {
       "id": "org.thebigboss.swipeformore",
       "name": "SwipeForMore",
-      "latest": "1.1.9",
+      "latest": "1.1.7",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.swipeformore/",
       "shortDescription": "Manage packages via swipe.",
