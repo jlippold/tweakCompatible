@@ -12,6 +12,7 @@ $(document).ready(function () {
                 data: {
                     searchTerm: "",
                     filter: "",
+                    isCydiaRequest: (window.location.hash == "#cydia"),
                     sort: "",
                     iOSVersionIndex: 0,
                     categories: [],
