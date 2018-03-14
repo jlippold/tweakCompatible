@@ -40,6 +40,37 @@
           "arch32": false
         }
       ]
+    },
+    {
+      "tweakVersion": "1.0.5",
+      "iOSVersion": "10.3.3",
+      "repository": "BigBoss",
+      "date": "2018-03-14T04:26:23Z",
+      "outcome": {
+        "calculatedStatus": "Not working",
+        "percentage": 0,
+        "good": 0,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 1,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Not working"
+        }
+      },
+      "users": [
+        {
+          "status": "not working",
+          "device": "iPhone5,2",
+          "issues": "Causes an endless respring loop. It tries to obtain license after a respring, then will respring, but after the respring it tries the same thing again",
+          "date": "2018-03-14T04:26:23Z",
+          "userName": "apache1123",
+          "issueNumber": 6265,
+          "arch32": true
+        }
+      ]
     }
   ]
 }
