@@ -139,7 +139,7 @@
                                         <span v-if="version.outcome.calculatedStatus == 'Unknown'" style="font-size: 2em; width: 36px; color: #f0ad4e" class="glyphicon glyphicon-question-sign media-object"></span>
                                     </div>
                                     <div class="media-body">
-                                        <a v-bind:href="'package.html#!/' + package.id + '/details/' + version.tweakVersion">
+                                        <a v-bind:href="'package.html#!/' + package.id + '/details/' + version.tweakVersion" target="_blank">
                                             <h4 class="media-heading">{{ package.name }} v.{{package.latest}}</h4>
                                         </a>
                                         <p>
