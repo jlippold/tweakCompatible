@@ -336,22 +336,21 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.uaupdatetools",
+      "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
       "latest": "1.0r-71",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.uaupdatetools/",
+      "repository": "beta.unlimapps.com",
+      "url": "https://beta.unlimapps.com/",
       "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
+      "category": "System",
+      "author": "UnlimApps Inc.",
       "commercial": false,
-      "date": "2018-03-12T11:42:10Z",
       "versions": [
         {
-          "tweakVersion": "1.0r-71",
+          "tweakVersion": "1.0r-61",
           "iOSVersion": "11.1.1",
-          "repository": "repo.biteyourapple.net",
-          "date": "2018-03-12T11:42:10Z",
+          "repository": "BigBoss",
+          "date": "2018-03-02T20:23:50Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -370,21 +369,22 @@
       ]
     },
     {
-      "id": "com.unlimapps.uaupdatetools",
+      "id": "repo.biteyourapple.net.uaupdatetools",
       "name": "App Admin",
       "latest": "1.0r-71",
-      "repository": "beta.unlimapps.com",
-      "url": "https://beta.unlimapps.com/",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.uaupdatetools/",
       "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
-      "category": "System",
-      "author": "UnlimApps Inc.",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
       "commercial": false,
+      "date": "2018-03-12T11:42:10Z",
       "versions": [
         {
-          "tweakVersion": "1.0r-61",
+          "tweakVersion": "1.0r-71",
           "iOSVersion": "11.1.1",
-          "repository": "BigBoss",
-          "date": "2018-03-02T20:23:50Z",
+          "repository": "repo.biteyourapple.net",
+          "date": "2018-03-12T11:42:10Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -436,39 +436,6 @@
       ]
     },
     {
-      "id": "org.thebigboss.appcon",
-      "name": "Appcon",
-      "latest": "1.4.0",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.appcon/",
-      "shortDescription": "Set icon images from your photo library.",
-      "category": "Tweaks",
-      "author": "merdok",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "1.3.4",
-          "iOSVersion": "11.1.1",
-          "repository": "BigBoss",
-          "date": "2018-03-04T05:11:49Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.repo.xarold.com.appcon",
       "name": "Appcon",
       "latest": "1.4.0",
@@ -489,6 +456,39 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.thebigboss.appcon",
+      "name": "Appcon",
+      "latest": "1.4.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.appcon/",
+      "shortDescription": "Set icon images from your photo library.",
+      "category": "Tweaks",
+      "author": "merdok",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "1.3.4",
+          "iOSVersion": "11.1.1",
+          "repository": "BigBoss",
+          "date": "2018-03-04T05:11:49Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -1829,6 +1829,39 @@
           "iOSVersion": "11.1.1",
           "repository": "BigBoss",
           "date": "2018-03-08T11:37:59Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cydia",
+      "name": "Cydia Installer",
+      "latest": "1.1.30-coolstar4",
+      "repository": "Cydia/Telesphoreo",
+      "url": "http://cydia.saurik.com/package/cydia/",
+      "shortDescription": "graphical iPhone front-end for APT",
+      "category": "Packaging",
+      "author": "Jay Freeman (saurik)",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.1.30-coolstar4",
+          "iOSVersion": "11.1.1",
+          "repository": "Electra's iOS Utilities",
+          "date": "2018-03-14T03:39:08Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5353,7 +5386,7 @@
     {
       "id": "com.ioscreatix.peek-a-boo",
       "name": "Peek-a-Boo",
-      "latest": "11.0.2",
+      "latest": "11.0.3",
       "repository": "iOS Creatix",
       "url": "http://cydia.saurik.com/package/com.ioscreatix.peek-a-boo/",
       "shortDescription": "3D Touch on Non-3D-Touch Devices",
@@ -5718,40 +5751,6 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.realcc",
-      "name": "RealCC",
-      "latest": "0.0.4-1",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.realcc/",
-      "shortDescription": "‫‬Close Wi-Fi and Bluetooth from the control center without having to enter the settings for the release 11",
-      "category": "HYI - Tweaks",
-      "author": "System Administrator",
-      "commercial": false,
-      "date": "2018-03-02T03:30:00Z",
-      "versions": [
-        {
-          "tweakVersion": "0.0.4-1",
-          "iOSVersion": "11.1.1",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-02T23:47:37Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.jakeashacks.realcc",
       "name": "RealCC",
       "latest": "1.0",
@@ -5774,6 +5773,40 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.hackyouriphone.realcc",
+      "name": "RealCC",
+      "latest": "0.0.4-1",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.realcc/",
+      "shortDescription": "‫‬Close Wi-Fi and Bluetooth from the control center without having to enter the settings for the release 11",
+      "category": "HYI - Tweaks",
+      "author": "System Administrator",
+      "commercial": false,
+      "date": "2018-03-02T03:30:00Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0.4-1",
+          "iOSVersion": "11.1.1",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-02T23:47:37Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -6417,40 +6450,6 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.smartlpm",
-      "name": "SmartLPM",
-      "latest": "1.0.6",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.smartlpm/",
-      "shortDescription": "A smarter low power mode. Turn low power mode on automatically at the battery level you specify. Turn on low power mode while device is locked.",
-      "category": "HYI - Tweaks",
-      "author": "smokin1337",
-      "commercial": false,
-      "date": "2018-03-05T13:38:50Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.6",
-          "iOSVersion": "11.1.1",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-05T13:38:50Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.smokin1337.smartlpm",
       "name": "SmartLPM",
       "latest": "1.0.7",
@@ -6473,6 +6472,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.hackyouriphone.smartlpm",
+      "name": "SmartLPM",
+      "latest": "1.0.6",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.smartlpm/",
+      "shortDescription": "A smarter low power mode. Turn low power mode on automatically at the battery level you specify. Turn on low power mode while device is locked.",
+      "category": "HYI - Tweaks",
+      "author": "smokin1337",
+      "commercial": false,
+      "date": "2018-03-05T13:38:50Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.6",
+          "iOSVersion": "11.1.1",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-05T13:38:50Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -7692,22 +7725,22 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.volskip11",
+      "id": "com.rob311.volskip11",
       "name": "VolSkip11",
       "latest": "0.0.1-28",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.volskip11/",
+      "repository": "rob311's beta repo",
+      "url": "http://cydia.saurik.com/package/com.rob311.volskip11/",
       "shortDescription": "Skip tracks by holding the Volume buttons.",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "rob311",
       "commercial": false,
-      "date": "2018-03-05T03:14:34Z",
+      "date": "2018-03-02T10:06:47Z",
       "versions": [
         {
           "tweakVersion": "0.0.1-28",
           "iOSVersion": "11.1.1",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-05T03:14:34Z",
+          "repository": "rob311's beta repo",
+          "date": "2018-03-03T11:02:57Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7726,22 +7759,22 @@
       ]
     },
     {
-      "id": "com.rob311.volskip11",
+      "id": "com.hackyouriphone.volskip11",
       "name": "VolSkip11",
       "latest": "0.0.1-28",
-      "repository": "rob311's beta repo",
-      "url": "http://cydia.saurik.com/package/com.rob311.volskip11/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.volskip11/",
       "shortDescription": "Skip tracks by holding the Volume buttons.",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "rob311",
       "commercial": false,
-      "date": "2018-03-02T10:06:47Z",
+      "date": "2018-03-05T03:14:34Z",
       "versions": [
         {
           "tweakVersion": "0.0.1-28",
           "iOSVersion": "11.1.1",
-          "repository": "rob311's beta repo",
-          "date": "2018-03-03T11:02:57Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-05T03:14:34Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
