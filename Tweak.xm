@@ -1,5 +1,6 @@
 #import "CydiaHeaders/CYPackageController.h"
 #import "CydiaHeaders/CyteWebView.h"
+#import "CydiaHeaders/CydiaWebViewController.h"
 #import "CydiaHeaders/MIMEAddress.h"
 #import "CydiaHeaders/Package.h"
 #import "CydiaHeaders/Source.h"
@@ -16,12 +17,74 @@ NSString *workingURL = nil;
 NSString *notWorkingURL = nil;
 NSString *tweakURL = nil;
 
+%hook UIWebView
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+	//NSString *url = [[request URL] absoluteString];
+	//if ([url containsString:@"tony"]) {
+		return NO;
+	//}
+	//return %orig;
+}
+
+%end
 
 %hook SourcesController
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger) section {
-	return 0; 	
-	//%orig;
+	if (section == 0) {
+		return 2; 	
+	} else {
+		return %orig;
+	}
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	if (indexPath.section == 0 && indexPath.row == 1) {
+		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tweakCompat"];
+		if (cell == nil) {
+			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"tweakCompat"] autorelease];
+			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+			cell.textLabel.text = @"Tweak Compatible";
+			cell.detailTextLabel.text = @"list of all compatible tweaks";
+			cell.detailTextLabel.textColor = [UIColor grayColor];
+			[cell.textLabel setFont:[UIFont fontWithName:@"Helvetica" size:18]];
+			
+			NSString *path = [[NSBundle mainBundle] pathForResource:@"folder" ofType:@"png"];
+			UIImage *theImage = [UIImage imageWithContentsOfFile:path];
+			cell.imageView.image = theImage;
+
+			CGSize itemSize = CGSizeMake(30, 30);
+			UIGraphicsBeginImageContextWithOptions(itemSize, NO, UIScreen.mainScreen.scale);
+			CGRect imageRect = CGRectMake(0.0, 0.0, itemSize.width, itemSize.height);
+			[cell.imageView.image drawInRect:imageRect];
+			cell.imageView.image = UIGraphicsGetImageFromCurrentImageContext();
+			UIGraphicsEndImageContext();	
+		}
+		return cell;
+	}
+	return %orig;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	if (indexPath.section == 0 && indexPath.row == 1) {
+		[tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+		UIViewController *webViewController = [[UIViewController alloc] init];
+		UIWebView *uiWebView = [[UIWebView alloc] initWithFrame: tableView.frame];
+		
+		[uiWebView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"https://jlippold.github.io/tweakCompatible/#cydia"]]];
+		[webViewController.view addSubview: uiWebView];
+		uiWebView.scrollView.contentInset = UIEdgeInsetsMake(0,0,0,0);
+		[uiWebView release];
+		
+		[self.navigationController pushViewController: webViewController animated:YES];
+
+	} else {
+		%orig;
+	}
+}
+
 %end
 
 %hook CYPackageController
