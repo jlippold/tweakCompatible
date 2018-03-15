@@ -86,11 +86,11 @@
           "repository": "apt.thebigboss.org",
           "date": "2018-02-28T18:34:27Z",
           "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 50,
+            "calculatedStatus": "Not working",
+            "percentage": 33,
             "good": 1,
             "bad": 0,
-            "total": 2,
+            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -4344,39 +4344,6 @@
       ]
     },
     {
-      "id": "net.limneos.bioprotect",
-      "name": "BioProtect",
-      "latest": "2.3-3",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/net.limneos.bioprotect/",
-      "shortDescription": "Protect your apps with Touch ID!",
-      "category": "Tweaks",
-      "author": "Elias Limneos",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "2.3-3",
-          "iOSVersion": "11.1.2",
-          "repository": "BigBoss",
-          "date": "2018-03-01T19:29:17Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.hackyouriphone.bioprotect",
       "name": "BioProtect",
       "latest": "2.3-3",
@@ -4411,25 +4378,25 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.bioprotect",
+      "id": "net.limneos.bioprotect",
       "name": "BioProtect",
       "latest": "2.3-3",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/net.limneos.bioprotect/",
       "shortDescription": "Protect your apps with Touch ID!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
+      "category": "Tweaks",
+      "author": "Elias Limneos",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "2.3-3",
           "iOSVersion": "11.1.2",
-          "repository": "repo.biteyourapple.net",
-          "date": "2018-03-02T01:11:54Z",
+          "repository": "BigBoss",
+          "date": "2018-03-01T19:29:17Z",
           "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -4464,6 +4431,39 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.bioprotect",
+      "name": "BioProtect",
+      "latest": "2.3-3",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Protect your apps with Touch ID!",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.3-3",
+          "iOSVersion": "11.1.2",
+          "repository": "repo.biteyourapple.net",
+          "date": "2018-03-02T01:11:54Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -30610,6 +30610,40 @@
       ]
     },
     {
+      "id": "com.yourepo.kiiimo.smartlpm",
+      "name": "SmartLPM",
+      "latest": "1.0.6",
+      "repository": "A KiiiMO GC - ARABIC ",
+      "url": "http://cydia.saurik.com/package/com.yourepo.kiiimo.smartlpm/",
+      "shortDescription": "A smarter low power mode. Turn low power mode on automatically at the battery level you specify. Turn on low power mode while device is locked.",
+      "category": "Supports iOS 11",
+      "author": "smokin1337",
+      "commercial": false,
+      "date": "2018-03-05T23:07:09Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.6",
+          "iOSVersion": "11.1.2",
+          "repository": "A KiiiMO GC - ARABIC ",
+          "date": "2018-03-05T23:07:09Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.smokin1337.smartlpm",
       "name": "SmartLPM",
       "latest": "1.0.7",
@@ -30652,40 +30686,6 @@
             "good": 5,
             "bad": 0,
             "total": 5,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.yourepo.kiiimo.smartlpm",
-      "name": "SmartLPM",
-      "latest": "1.0.6",
-      "repository": "A KiiiMO GC - ARABIC ",
-      "url": "http://cydia.saurik.com/package/com.yourepo.kiiimo.smartlpm/",
-      "shortDescription": "A smarter low power mode. Turn low power mode on automatically at the battery level you specify. Turn on low power mode while device is locked.",
-      "category": "Supports iOS 11",
-      "author": "smokin1337",
-      "commercial": false,
-      "date": "2018-03-05T23:07:09Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.6",
-          "iOSVersion": "11.1.2",
-          "repository": "A KiiiMO GC - ARABIC ",
-          "date": "2018-03-05T23:07:09Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -32136,26 +32136,59 @@
       ]
     },
     {
-      "id": "com.yourepo.kiiimo.st4",
+      "id": "com.springtomize.st4",
       "name": "Springtomize 4 (iOS 10)",
       "latest": "3",
-      "repository": "A KiiiMO GC - ARABIC ",
-      "url": "http://cydia.saurik.com/package/com.yourepo.kiiimo.st4/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.springtomize.st4/",
       "shortDescription": "Customize your device like never before.",
-      "category": "Supports iOS 11",
+      "category": "Tweaks",
       "author": "Filippo & Janosch",
-      "commercial": false,
-      "date": "2018-03-01T07:56:00Z",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "3",
           "iOSVersion": "11.1.2",
-          "repository": "A KiiiMO GC - ARABIC ",
-          "date": "2018-03-01T07:56:00Z",
+          "repository": "apt.thebigboss.org",
+          "date": "2018-03-01T22:53:48Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
-            "good": 1,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.st4",
+      "name": "Springtomize 4 (iOS 10)",
+      "latest": "3",
+      "repository": "BiteYourApple",
+      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.st4/",
+      "shortDescription": "Customize your device like never before.",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "date": "2018-02-28T22:45:46Z",
+      "versions": [
+        {
+          "tweakVersion": "3",
+          "iOSVersion": "11.1.2",
+          "repository": "BiteYourApple",
+          "date": "2018-02-28T22:45:46Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -32204,61 +32237,28 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.st4",
+      "id": "com.yourepo.kiiimo.st4",
       "name": "Springtomize 4 (iOS 10)",
       "latest": "3",
-      "repository": "BiteYourApple",
-      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.st4/",
+      "repository": "A KiiiMO GC - ARABIC ",
+      "url": "http://cydia.saurik.com/package/com.yourepo.kiiimo.st4/",
       "shortDescription": "Customize your device like never before.",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "date": "2018-02-28T22:45:46Z",
-      "versions": [
-        {
-          "tweakVersion": "3",
-          "iOSVersion": "11.1.2",
-          "repository": "BiteYourApple",
-          "date": "2018-02-28T22:45:46Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.springtomize.st4",
-      "name": "Springtomize 4 (iOS 10)",
-      "latest": "3",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.springtomize.st4/",
-      "shortDescription": "Customize your device like never before.",
-      "category": "Tweaks",
+      "category": "Supports iOS 11",
       "author": "Filippo & Janosch",
-      "commercial": true,
+      "commercial": false,
+      "date": "2018-03-01T07:56:00Z",
       "versions": [
         {
           "tweakVersion": "3",
           "iOSVersion": "11.1.2",
-          "repository": "apt.thebigboss.org",
-          "date": "2018-03-01T22:53:48Z",
+          "repository": "A KiiiMO GC - ARABIC ",
+          "date": "2018-03-01T07:56:00Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
-            "good": 2,
+            "good": 1,
             "bad": 0,
-            "total": 2,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -34257,21 +34257,21 @@
       ]
     },
     {
-      "id": "com.alexzielenski.updatedtinybar",
+      "id": "com.alexzielenski.tinybar",
       "name": "TinyBar",
-      "latest": "0.2.0",
-      "repository": "Dream Code",
-      "url": "http://capt.dreamcode.it/",
+      "latest": "0.1.4-2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.alexzielenski.tinybar/",
       "shortDescription": "Thins notification banners down to size!",
       "category": "Tweaks",
-      "author": "Michele Primavera",
+      "author": "Alex Zielenski",
       "commercial": false,
       "versions": [
         {
-          "tweakVersion": "0.2.0",
+          "tweakVersion": "0.1.4-2",
           "iOSVersion": "11.1.2",
-          "repository": "Dream Code",
-          "date": "2018-03-09T01:40:25Z",
+          "repository": "apt.thebigboss.org",
+          "date": "2018-03-03T07:28:12Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -34290,21 +34290,21 @@
       ]
     },
     {
-      "id": "com.alexzielenski.tinybar",
+      "id": "com.alexzielenski.updatedtinybar",
       "name": "TinyBar",
-      "latest": "0.1.4-2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.alexzielenski.tinybar/",
+      "latest": "0.2.0",
+      "repository": "Dream Code",
+      "url": "http://capt.dreamcode.it/",
       "shortDescription": "Thins notification banners down to size!",
       "category": "Tweaks",
-      "author": "Alex Zielenski",
+      "author": "Michele Primavera",
       "commercial": false,
       "versions": [
         {
-          "tweakVersion": "0.1.4-2",
+          "tweakVersion": "0.2.0",
           "iOSVersion": "11.1.2",
-          "repository": "apt.thebigboss.org",
-          "date": "2018-03-03T07:28:12Z",
+          "repository": "Dream Code",
+          "date": "2018-03-09T01:40:25Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -36694,40 +36694,6 @@
       ]
     },
     {
-      "id": "com.rob311.volskip11",
-      "name": "VolSkip11",
-      "latest": "0.0.1-28",
-      "repository": "rob311's beta repo",
-      "url": "http://cydia.saurik.com/package/com.rob311.volskip11/",
-      "shortDescription": "Skip tracks by holding the Volume buttons.",
-      "category": "Tweaks",
-      "author": "rob311",
-      "commercial": false,
-      "date": "2018-03-02T10:06:47Z",
-      "versions": [
-        {
-          "tweakVersion": "0.0.1-28",
-          "iOSVersion": "11.1.2",
-          "repository": "rob311's beta repo",
-          "date": "2018-03-02T10:06:47Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 4,
-            "bad": 0,
-            "total": 4,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.repo.xarold.com.volskip11",
       "name": "VolSkip11",
       "latest": "0.0.1-28",
@@ -36750,6 +36716,40 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.rob311.volskip11",
+      "name": "VolSkip11",
+      "latest": "0.0.1-28",
+      "repository": "rob311's beta repo",
+      "url": "http://cydia.saurik.com/package/com.rob311.volskip11/",
+      "shortDescription": "Skip tracks by holding the Volume buttons.",
+      "category": "Tweaks",
+      "author": "rob311",
+      "commercial": false,
+      "date": "2018-03-02T10:06:47Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0.1-28",
+          "iOSVersion": "11.1.2",
+          "repository": "rob311's beta repo",
+          "date": "2018-03-02T10:06:47Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 4,
+            "bad": 0,
+            "total": 4,
             "arch32": {
               "total": 0,
               "good": 0,
