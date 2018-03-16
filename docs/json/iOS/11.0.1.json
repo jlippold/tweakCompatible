@@ -36,7 +36,7 @@
     {
       "id": "me.alfhaily.adblockforyoutube",
       "name": "AdBlock for YouTube",
-      "latest": "1.0.3",
+      "latest": "1.0.7",
       "repository": "Alfhaily APT",
       "url": "https://apt.alfhaily.me/",
       "shortDescription": "Block YouTube Ads and Video Ads",
@@ -322,10 +322,10 @@
     {
       "id": "com.spark.autounlockx",
       "name": "AutoUnlockX [Member]",
-      "latest": "0.0.1-3+debug",
+      "latest": "0.0.4",
       "repository": "Spark's Beta Repo",
       "url": "http://cydia.saurik.com/package/com.spark.autounlockx/",
-      "shortDescription": "An awesome MobileSubstrate tweak!",
+      "shortDescription": "Unless there are notifications, the device will automatically unlock when valid Face ID is detected",
       "category": "Tweaks",
       "author": "Spark",
       "commercial": false,
@@ -877,7 +877,7 @@
     {
       "id": "com.spark.easyswitcherx",
       "name": "EasySwitcherX [Public]",
-      "latest": "0.0.2",
+      "latest": "0.0.3-1",
       "repository": "Spark's Beta Repo",
       "url": "http://beta.sparkservers.co.uk/",
       "shortDescription": "Swipe up on apps in the switcher to kill them, without having to press and hold (iPhone X - how it should have been)",
@@ -910,7 +910,7 @@
     {
       "id": "me.gmoran.eclipsex",
       "name": "Eclipse X Beta 7 (iOS 11)",
-      "latest": "5.0b-239",
+      "latest": "5.0b-255",
       "repository": "GMoran Beta Software",
       "url": "http://gmoran.me/repo/",
       "shortDescription": "System-wide Night Mode and more for iOS 11. This build expires March 15",
@@ -943,7 +943,7 @@
     {
       "id": "repo.biteyourapple.net.eclipsex",
       "name": "Eclipse X Beta 7 (iOS 11)",
-      "latest": "5.0b-25",
+      "latest": "5.0b-189",
       "repository": "BiteYourApple",
       "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.eclipsex/",
       "shortDescription": "System-wide Night Mode and more for iOS 11. This build expires March 15",
@@ -977,7 +977,7 @@
     {
       "id": "com.julioverne.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "16.5",
+      "latest": "16.6",
       "repository": "julioverne's Repo",
       "url": "http://twitter.com/ijulioverne",
       "shortDescription": "Cydia Extender Installer With Extra Features, patched for iOS 11: MidnightChips",
@@ -1365,7 +1365,7 @@
     {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
-      "latest": "7.7.0~beta1",
+      "latest": "7.6.4",
       "repository": "Karen's Repo",
       "url": "http://ib-soft.net/icleaner",
       "shortDescription": "The first real iOS system cleaner & optimizer",
@@ -1465,7 +1465,7 @@
     {
       "id": "com.junesiphone.lockpluspro",
       "name": "LockPlus Pro",
-      "latest": "0.9",
+      "latest": "0.9.1",
       "repository": "junesiphone.com",
       "url": "http://cydia.saurik.com/package/com.junesiphone.lockpluspro/",
       "shortDescription": "The ultimate lock screen tweak!",
@@ -1718,39 +1718,6 @@
       ]
     },
     {
-      "id": "ws.hbang.newterm2",
-      "name": "NewTerm 2",
-      "latest": "2.0~beta3",
-      "repository": "cydia.hbang.ws",
-      "url": "https://cydia.hbang.ws/",
-      "shortDescription": "A powerful terminal emulator for iOS",
-      "category": "Terminal Support",
-      "author": "HASHBANG Productions",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0~beta3",
-          "iOSVersion": "11.0.1",
-          "repository": "HASHBANG Productions",
-          "date": "2018-02-28T11:03:57Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.hackyouriphone.newterm2",
       "name": "NewTerm 2",
       "latest": "2.0~beta3",
@@ -1773,6 +1740,39 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ws.hbang.newterm2",
+      "name": "NewTerm 2",
+      "latest": "2.0~beta3",
+      "repository": "cydia.hbang.ws",
+      "url": "https://cydia.hbang.ws/",
+      "shortDescription": "A powerful terminal emulator for iOS",
+      "category": "Terminal Support",
+      "author": "HASHBANG Productions",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0~beta3",
+          "iOSVersion": "11.0.1",
+          "repository": "HASHBANG Productions",
+          "date": "2018-02-28T11:03:57Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -1823,7 +1823,7 @@
       "latest": "1.0.6.2",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.laughingquoll.noctisxi/",
-      "shortDescription": "An Awesome Mobile Substrate Tweak",
+      "shortDescription": "A system wide dark mode.",
       "category": "Tweaks",
       "author": "LaughingQuoll",
       "commercial": false,
@@ -2274,6 +2274,39 @@
       ]
     },
     {
+      "id": "tv.othman.scothman",
+      "name": "SCOthman For Snapchat",
+      "latest": "12.9-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/tv.othman.scothman/",
+      "shortDescription": "App features to the Snap app",
+      "category": "Tweaks",
+      "author": "Othman Alomiry",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "12.9-1",
+          "iOSVersion": "11.0.1",
+          "repository": "BigBoss",
+          "date": "2018-03-16T07:42:59Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.bateleurs.showallcydiaupdates",
       "name": "ShowAllCydiaUpdates",
       "latest": "1.0.2-1",
@@ -2346,7 +2379,7 @@
       "latest": "1.0.0-4+debug",
       "repository": "iOS Creatix",
       "url": "http://cydia.saurik.com/package/com.ioscreatix.silo/",
-      "shortDescription": "An Awesome Mobile Substrate Tweak",
+      "shortDescription": "Allows Reordering of all the CC Modules and for Developers to add their own",
       "category": "Tweaks",
       "author": "iOS Creatix",
       "commercial": false,
@@ -2645,10 +2678,10 @@
     {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "1.2.1",
+      "latest": "2.0.0-877+debug",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
-      "shortDescription": "Device info added to General > About",
+      "shortDescription": "System information Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
@@ -2678,10 +2711,10 @@
     {
       "id": "com.spark.taptickeys",
       "name": "TapticKeys [Member]",
-      "latest": "3.0.3",
+      "latest": "2.1.1",
       "repository": "Spark's Beta Repo",
       "url": "http://cydia.saurik.com/package/com.spark.taptickeys/",
-      "shortDescription": "Taptic feedback on keyboard presses",
+      "shortDescription": "Taptic feedback on keyboard key presses (Now with 6s support) Note: The tweak is disabled by default - it must be enabled from the settings pane.",
       "category": "Tweaks",
       "author": "Spark",
       "commercial": false,
@@ -2712,10 +2745,10 @@
     {
       "id": "net.tetherme.tetherme8",
       "name": "TetherMe for iOS 10/9/8",
-      "latest": "1.2.0+electra-2",
+      "latest": "1.2.0-3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/net.tetherme.tetherme8/",
-      "shortDescription": "Dynamically enables native tethering for iOS8+ devices.  This should work on any carrier without the need for customized bundles or preferences.",
+      "shortDescription": "Dynamically enables native tethering iOS8+",
       "category": "Tweaks",
       "author": "Sam Bingner",
       "commercial": true,
@@ -2945,7 +2978,7 @@
     {
       "id": "com.fouadraheb.watusi",
       "name": "Watusi 2 for WhatsApp",
-      "latest": "1.0.42",
+      "latest": "1.0.43",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.fouadraheb.watusi/",
       "shortDescription": "The all-in-one tweak for WhatsApp Messenger",
