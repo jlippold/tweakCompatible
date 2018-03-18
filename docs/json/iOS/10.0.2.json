@@ -36,10 +36,10 @@
     {
       "id": "p7zip",
       "name": "7-zip (POSIX)",
-      "latest": "4.57-3p",
+      "latest": "16.02",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/p7zip/",
-      "shortDescription": "claims to be a good compressor",
+      "shortDescription": "A port of 7za.exe for POSIX systems like Unix",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
@@ -104,7 +104,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.12",
+      "latest": "1.9.13~beta1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -517,7 +517,7 @@
     {
       "id": "net.erike.audioexplorerplus",
       "name": "AudioExplorer+",
-      "latest": "2.6",
+      "latest": "2.6-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/net.erike.audioexplorerplus/",
       "shortDescription": "find & use audio from your device files",
@@ -529,6 +529,26 @@
           "tweakVersion": "2.6",
           "iOSVersion": "10.0.2",
           "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "2.6-1",
+          "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
+          "date": "2018-03-18T03:24:01Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1058,7 +1078,7 @@
     {
       "id": "coreutils",
       "name": "Core Utilities",
-      "latest": "8.28",
+      "latest": "8.29",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/coreutils/",
       "shortDescription": "core set of Unix shell utilities from GNU",
@@ -1441,10 +1461,10 @@
     {
       "id": "com.julioverne.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "16.5",
+      "latest": "016",
       "repository": "julioverne's Repo",
       "url": "http://twitter.com/ijulioverne",
-      "shortDescription": "Cydia Extender Installer With Extra Features, patched for iOS 11: MidnightChips",
+      "shortDescription": "Cydia Extender Installer With Extra Features",
       "category": "Utilities",
       "author": "julioverne",
       "commercial": false,
@@ -1542,10 +1562,10 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.3.2",
+      "latest": "3.5.0-10",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iOS. Supports iOS 7+",
+      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -1773,7 +1793,7 @@
     {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
-      "latest": "7.7.0~beta1",
+      "latest": "7.7.0~beta2",
       "repository": "Karen's Repo",
       "url": "http://ib-soft.net/icleaner",
       "shortDescription": "The first real iOS system cleaner & optimizer",
@@ -2659,7 +2679,7 @@
     {
       "id": "net.tateu.opennotifier10",
       "name": "OpenNotifier10 - tateu",
-      "latest": "2.5.0~beta5-2",
+      "latest": "2.5.0~beta5-5",
       "repository": "tateu's repo",
       "url": "http://www.tateu.net/repo/",
       "shortDescription": "Show Notification Icons in the status bar. Unofficial Beta version for my personal use, compiled for iOS9 and armv7 and arm64.",
@@ -2825,7 +2845,7 @@
     {
       "id": "com.pokego2.pokego2",
       "name": "PokeGo++ 2.0 for Pokemon Go!",
-      "latest": "2.0r-61",
+      "latest": "2.0r-62",
       "repository": "pokego2.com",
       "url": "http://pokego2.com/",
       "shortDescription": "Hacks and more for Pokemon GO!!! Bypass JB Detection.",
@@ -3033,7 +3053,7 @@
     {
       "id": "preferenceloader",
       "name": "PreferenceLoader",
-      "latest": "2.2.4~alpha1",
+      "latest": "2.2.3-3",
       "repository": "rpetrich repo",
       "url": "http://cydia.saurik.com/package/preferenceloader/",
       "shortDescription": "load preferences in style",
@@ -3220,7 +3240,7 @@
     {
       "id": "com.dgh0st.screenshotxi",
       "name": "ScreenshotXI",
-      "latest": "1.0-5",
+      "latest": "1.0-7",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.dgh0st.screenshotxi/",
       "shortDescription": "iOS 11 screenshot feature on older iOS versions",
@@ -3751,7 +3771,7 @@
     {
       "id": "com.unlimapps.uasharedtools",
       "name": "uasharedtools",
-      "latest": "2.2r-28",
+      "latest": "2.2r-31",
       "repository": "beta.unlimapps.com",
       "url": "http://beta.unlimapps.com/",
       "shortDescription": "shared tools for unlimapps tweaks",
@@ -4055,10 +4075,10 @@
     {
       "id": "com.n00neimp0rtant.xcon",
       "name": "xCon",
-      "latest": "38",
+      "latest": "42~beta4",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.n00neimp0rtant.xcon/",
-      "shortDescription": "xCon is a project aimed to be a one-stop solution to bypassing jailbreak detection in App Store applications.",
+      "shortDescription": "bypass anti-jailbreak protection",
       "category": "Tweaks",
       "author": "Lunatik",
       "commercial": false,
@@ -4121,7 +4141,7 @@
     {
       "id": "com.alexzielenski.zeppelin",
       "name": "Zeppelin",
-      "latest": "2.1.0-12",
+      "latest": "2.1.1-1",
       "repository": "ModMyi (Archive)",
       "url": "http://cydia.saurik.com/package/com.alexzielenski.zeppelin/",
       "shortDescription": "Replaces carrier text with an image!",
