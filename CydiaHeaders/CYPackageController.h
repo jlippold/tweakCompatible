@@ -2,7 +2,7 @@
 
 @class Database;
 
-@interface CYPackageController : CydiaWebViewController
+@interface CYPackageController : CydiaWebViewController <UIScrollViewDelegate>
 
 - (instancetype)initWithDatabase:(Database *)database forPackage:(NSString *)name withReferrer:(NSString *)referrer;
 

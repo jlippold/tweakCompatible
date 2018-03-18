@@ -12,23 +12,11 @@ Package *package;
 
 UIView *overlay;
 UIScrollView *scrollView;
-//UIPageControl *pageControl;
+UIPageControl *pageControl;
 
 NSString *workingURL = nil;
 NSString *notWorkingURL = nil;
 NSString *tweakURL = nil;
-
-%hook UIWebView
-
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-	//NSString *url = [[request URL] absoluteString];
-	//if ([url containsString:@"tony"]) {
-		return NO;
-	//}
-	//return %orig;
-}
-
-%end
 
 %hook SourcesController
 
@@ -88,14 +76,19 @@ NSString *tweakURL = nil;
 
 %end
 
-%hook CYPackageController
+%hook CYPackageController 
+
+%new - (void)scrollViewDidScroll:(UIScrollView *)sv {
+    float fractionalPage = scrollView.contentOffset.x / scrollView.frame.size.width;
+    NSInteger page = lround(fractionalPage);
+    pageControl.currentPage = page;
+}
 
 - (void)applyRightButton {
 	%orig;
 
 	if (self.rightButton && !self.isLoading) {
 		package = MSHookIvar<Package *>(self, "package_");	
-
 
 		if ([self.view viewWithTag:987] == nil) {
 			[self performSelector:@selector(addToolbar)];	
@@ -105,50 +98,60 @@ NSString *tweakURL = nil;
 }
 
 %new - (void)addToolbar {
-		overlay = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height - 150, [[UIScreen mainScreen] bounds].size.width, 150)];
+		overlay = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height - 160, [[UIScreen mainScreen] bounds].size.width, 160)];
 		overlay.backgroundColor = [UIColor whiteColor];
 		overlay.tag = 987;
 		overlay.hidden = YES;
 		
-
-	    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
-		UIVisualEffectView *bluredEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
-		bluredEffectView.frame = [UIScreen mainScreen].bounds;		
-		[overlay addSubview:bluredEffectView];
-	
 		UIBarButtonItem *flex = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil ];
 
 		UIToolbar *bar = [[UIToolbar alloc] init];
 		[bar setBackgroundImage:[UIImage new] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
 
 		bar.clipsToBounds = YES;
-		bar.frame = CGRectMake(0, 60, [[UIScreen mainScreen] bounds].size.width, 40);
+		bar.frame = CGRectMake(0, -4, [[UIScreen mainScreen] bounds].size.width, 40);
 		
-		UIBarButtonItem *tweakWorking = [[UIBarButtonItem alloc] initWithTitle:@"Works" style:UIBarButtonItemStyleBordered target:self action:@selector(_markWorking:)];
-		UIBarButtonItem *tweakNotWorking = [[UIBarButtonItem alloc] initWithTitle:@"Broken" style:UIBarButtonItemStyleBordered target:self action:@selector(_markNotWorking:)];
-		UIBarButtonItem *tweakInfo = [[UIBarButtonItem alloc] initWithTitle:@"Info" style:UIBarButtonItemStyleBordered target:self action:@selector(_loadInfo:)];
+		UIBarButtonItem *tweakWorking = [[UIBarButtonItem alloc] initWithTitle:@"Works" style:UIBarButtonItemStylePlain target:self action:@selector(_markWorking:)];
+		UIBarButtonItem *tweakNotWorking = [[UIBarButtonItem alloc] initWithTitle:@"Broken" style:UIBarButtonItemStylePlain target:self action:@selector(_markNotWorking:)];
+		UIBarButtonItem *tweakInfo = [[UIBarButtonItem alloc] initWithTitle:@"Info" style:UIBarButtonItemStylePlain target:self action:@selector(_loadInfo:)];
+		UIBarButtonItem *tweakHide = [[UIBarButtonItem alloc] initWithTitle:@"Hide" style:UIBarButtonItemStylePlain target:self action:@selector(_hide:)];
 		
-		NSArray *btn = [NSArray arrayWithObjects:  tweakWorking, flex, tweakNotWorking, flex, tweakInfo, nil];
+		/*
+		NSDictionary* itemTextAttributes = @{
+			NSFontAttributeName:[UIFont fontWithName:@"Helvetica" size:14.0f]
+		};
+		[tweakWorking setTitleTextAttributes:itemTextAttributes forState:UIControlStateNormal];
+		[tweakNotWorking setTitleTextAttributes:itemTextAttributes forState:UIControlStateNormal];
+		[tweakInfo setTitleTextAttributes:itemTextAttributes forState:UIControlStateNormal];
+		[tweakHide setTitleTextAttributes:itemTextAttributes forState:UIControlStateNormal];
+		*/
+
+		NSArray *btn = [NSArray arrayWithObjects: tweakWorking, flex, tweakNotWorking, flex, tweakInfo, flex, tweakHide, nil];
 		[bar setItems:btn animated:NO];
-		self.webView.scrollView.contentInset = UIEdgeInsetsMake(75,0,150,0);
 
-		scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 70)];
-		//scrollView.contentSize = CGSizeMake(scrollView.frame.size.width, scrollView.frame.size.height);
+		self.webView.scrollView.contentInset = UIEdgeInsetsMake(75,0,160,0);
+
+		scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 24, [[UIScreen mainScreen] bounds].size.width, 80)];
 		scrollView.pagingEnabled = YES;
-		//scrollView.delegate = self;
+		scrollView.showsHorizontalScrollIndicator = NO;
+		scrollView.delegate = self;
 
-		//pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 50, scrollView.frame.size.width, 20)];
-		//pageControl.numberOfPages = scrollView.contentSize.width/scrollView.frame.size.width;
-		//[pageControl addTarget:self action:@selector(changePage:) forControlEvents:UIControlEventValueChanged];
-
+		pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 95, [[UIScreen mainScreen] bounds].size.width, 10)];
+		pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+		pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+		pageControl.currentPage = 0;
+		pageControl.hidden = YES;
 		
-
-		//[overlay addSubview:pageControl];
-		[overlay addSubview:bar];
 		[overlay addSubview:scrollView];
-		
+		[overlay addSubview:bar];
+		[overlay addSubview:pageControl];
+
 		[self.view addSubview:overlay];
 
+}
+
+%new - (void)_hide:(UIBarButtonItem *)sender {
+	overlay.hidden = YES;
 }
 
 %new - (void)_markWorking:(UIBarButtonItem *)sender {
@@ -185,24 +188,27 @@ NSString *tweakURL = nil;
 %new - (void)addLabels:(NSData *)data foriOSVersions:(NSMutableArray *)allIOSVersions {
 	scrollView.contentSize = CGSizeMake([[UIScreen mainScreen] bounds].size.width * [allIOSVersions count], scrollView.frame.size.height);
 	
+	pageControl.numberOfPages = scrollView.contentSize.width/scrollView.frame.size.width;
+	if (pageControl.numberOfPages > 1) {
+		pageControl.hidden = NO;
+	}
 	int i = 0;
 	for (i = 0; i < [allIOSVersions count]; i++) {
 		NSString *iOSVersion = [allIOSVersions objectAtIndex:i];
-		UILabel *thisLabel = [[UILabel alloc] init];
+		UITextView *thisLabel = [[UITextView alloc] init];
 		thisLabel.text = iOSVersion;	 
-		thisLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-		thisLabel.numberOfLines = 3;
 		thisLabel.tag = i+300;
-		thisLabel.adjustsFontSizeToFitWidth = YES;
+		thisLabel.editable = NO;
+		[thisLabel setUserInteractionEnabled:NO];
 		[thisLabel setFont:[UIFont fontWithName:@"Helvetica" size:14]];
-		thisLabel.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width * i, 0, [[UIScreen mainScreen] bounds].size.width, 70);
+		thisLabel.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width * i, 0, [[UIScreen mainScreen] bounds].size.width, 80);
+		thisLabel.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);
 		[scrollView addSubview:thisLabel];
-    	HBLogDebug(@"%@",iOSVersion);
-		HBLogDebug(@"%d",i);
-		HBLogDebug(@"%tu",[allIOSVersions count]);
+		
+    	//HBLogDebug(@"%@",iOSVersion);
+		//HBLogDebug(@"%d",i);
+		//HBLogDebug(@"%tu",[allIOSVersions count]);
 	}
-
-	HBLogDebug(@"Broke loop");
 }
 
 %new - (void)pullPackageInfo {
@@ -376,7 +382,7 @@ NSString *tweakURL = nil;
 		HBLogDebug(@"APPLY");
 		NSString *desc = [NSString stringWithFormat:@"iOS %@ %@: %@", iOSVersion, packageStatus, packageStatusExplaination];
 		HBLogDebug(@"%@",desc);
-		UILabel *thisLabel = [self.view viewWithTag:i+300];
+		UITextView *thisLabel = [self.view viewWithTag:i+300];
 		thisLabel.text = desc; 
 
 		//build a dict with all found properties
