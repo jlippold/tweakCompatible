@@ -131,12 +131,12 @@ NSString *tweakURL = nil;
 
 		self.webView.scrollView.contentInset = UIEdgeInsetsMake(75,0,160,0);
 
-		scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 24, [[UIScreen mainScreen] bounds].size.width, 80)];
+		scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 22, [[UIScreen mainScreen] bounds].size.width, 90)];
 		scrollView.pagingEnabled = YES;
 		scrollView.showsHorizontalScrollIndicator = NO;
 		scrollView.delegate = self;
 
-		pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 95, [[UIScreen mainScreen] bounds].size.width, 10)];
+		pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 97, [[UIScreen mainScreen] bounds].size.width, 10)];
 		pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
 		pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
 		pageControl.currentPage = 0;
@@ -145,6 +145,11 @@ NSString *tweakURL = nil;
 		[overlay addSubview:scrollView];
 		[overlay addSubview:bar];
 		[overlay addSubview:pageControl];
+
+		UIView *topBorder = [UIView new];
+		topBorder.backgroundColor = [UIColor lightGrayColor];
+		topBorder.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 1);
+		[overlay addSubview:topBorder];
 
 		[self.view addSubview:overlay];
 
@@ -195,16 +200,22 @@ NSString *tweakURL = nil;
 	int i = 0;
 	for (i = 0; i < [allIOSVersions count]; i++) {
 		NSString *iOSVersion = [allIOSVersions objectAtIndex:i];
-		UITextView *thisLabel = [[UITextView alloc] init];
-		thisLabel.text = iOSVersion;	 
-		thisLabel.tag = i+300;
-		thisLabel.editable = NO;
-		[thisLabel setUserInteractionEnabled:NO];
-		[thisLabel setFont:[UIFont fontWithName:@"Helvetica" size:14]];
-		thisLabel.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width * i, 0, [[UIScreen mainScreen] bounds].size.width, 80);
-		thisLabel.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);
-		[scrollView addSubview:thisLabel];
+		UITextView *textView = [[UITextView alloc] init];
+		textView.text = iOSVersion;	 
+		textView.tag = i+300;
+		textView.editable = NO;
+		[textView setUserInteractionEnabled:NO];
+		[textView setFont:[UIFont fontWithName:@"Helvetica" size:14]];
+		textView.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width * i, 0, [[UIScreen mainScreen] bounds].size.width, 80);
+		textView.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);
+
+		UIView *indicator = [UIView new];
+		indicator.backgroundColor = [UIColor grayColor];
+		indicator.frame = CGRectMake(([[UIScreen mainScreen] bounds].size.width * i) + 10, 88, [[UIScreen mainScreen] bounds].size.width - 20, 1);
+		indicator.tag = i+400;
 		
+		[scrollView addSubview:textView];
+		[scrollView addSubview:indicator];
     	//HBLogDebug(@"%@",iOSVersion);
 		//HBLogDebug(@"%d",i);
 		//HBLogDebug(@"%tu",[allIOSVersions count]);
@@ -379,11 +390,37 @@ NSString *tweakURL = nil;
 			}
 		}
 
-		HBLogDebug(@"APPLY");
+		
 		NSString *desc = [NSString stringWithFormat:@"iOS %@ %@: %@", iOSVersion, packageStatus, packageStatusExplaination];
-		HBLogDebug(@"%@",desc);
+		//HBLogDebug(@"%@",desc);
 		UITextView *thisLabel = [self.view viewWithTag:i+300];
-		thisLabel.text = desc; 
+
+		NSMutableAttributedString *attString=[[NSMutableAttributedString alloc] initWithString:desc];
+
+		NSRange boldRange = [desc rangeOfString:[NSString stringWithFormat:@"iOS %@ %@", iOSVersion, packageStatus]];
+		NSRange regularRange = [desc rangeOfString:packageStatusExplaination];
+
+		[attString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Helvetica-Bold" size:14.0] range:boldRange];
+		[attString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Helvetica" size:14.0] range:regularRange];
+	
+		UIView *indicator = [self.view viewWithTag:i+400];
+		if ([packageStatus isEqualToString:@"Working"]) {
+			UIColor *green = [UIColor colorWithRed:0.16 green:0.65 blue:0.27 alpha:1.0];
+			indicator.backgroundColor = green;
+    		[attString addAttribute:NSForegroundColorAttributeName value:green range:boldRange];
+		}
+		if ([packageStatus isEqualToString:@"Not working"]) {
+			UIColor *red = [UIColor colorWithRed:0.86 green:0.21 blue:0.27 alpha:1.0];
+			indicator.backgroundColor = red;
+    		[attString addAttribute:NSForegroundColorAttributeName value:red range:boldRange];
+		}
+		if ([packageStatus isEqualToString:@"Likely working"]) {
+			UIColor *yellow = [UIColor colorWithRed:1.00 green:0.76 blue:0.03 alpha:1.0];
+			indicator.backgroundColor = yellow;
+    		[attString addAttribute:NSForegroundColorAttributeName value:yellow range:boldRange];
+		}
+
+		[thisLabel setAttributedText:attString];
 
 		//build a dict with all found properties
 		userInfo = @{
