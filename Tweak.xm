@@ -59,10 +59,13 @@ NSString *tweakURL = nil;
 
 %new - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
 	NSString *url = [[request URL] absoluteString];
-	HBLogDebug(@"%@",url);
+	HBLogDebug(@"URL: %@",url);
 	if ([url containsString:@"/tweakCompatible/package.html"]) {
+
+		NSString *packageName = [url stringByReplacingOccurrencesOfString:@"https://jlippold.github.io/tweakCompatible/package.html#!/" withString:@""];
 		Database *database = MSHookIvar<Database *>(self, "database_");
-		Package *package = [database packageWithName:@"openssh"];
+		Package *package = [database packageWithName:packageName];
+		HBLogDebug(@"PackageName: %@",packageName);
 		CYPackageController *view = [[[%c(CYPackageController) alloc] initWithDatabase:database forPackage:[package id] withReferrer:@""] autorelease];
     	[view setDelegate:self.delegate];
     	[[self navigationController] pushViewController:view animated:YES];
@@ -234,8 +237,8 @@ NSString *tweakURL = nil;
 		[scrollView addSubview:textView];
 		[scrollView addSubview:indicator];
     	//HBLogDebug(@"%@",iOSVersion);
-		////HBLogDebug(@"%d",i);
-		////HBLogDebug(@"%tu",[allIOSVersions count]);
+		//HBLogDebug(@"%d",i);
+		//HBLogDebug(@"%tu",[allIOSVersions count]);
 	}
 }
 
@@ -244,7 +247,7 @@ NSString *tweakURL = nil;
 		return;
 	}
 
-		//pull package info
+	//pull package info
 	NSString *packageUrl = [NSString stringWithFormat:@"http://cydia.saurik.com/package/%@/", package.id];	
 	NSString *packageVersion = package.latest;
 	NSString *packageName = package.name;

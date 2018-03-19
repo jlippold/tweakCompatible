@@ -140,7 +140,7 @@
                                     </div>
                                     <div class="media-body">
                                         
-                                        <a v-if="data.isCydiaRequest" v-bind:href="'https://jlippold.github.io/tweakCompatible/package.html#!/' + package.id + '/details/' + version.tweakVersion" target="_blank">
+                                        <a v-if="data.isCydiaRequest" v-bind:href="'https://jlippold.github.io/tweakCompatible/package.html#!/' + package.name" target="_blank">
                                             <h4 class="media-heading">{{ package.name }} v.{{package.latest}}</h4>
                                         </a>
                                         <a v-else v-bind:href="'package.html#!/' + package.id + '/details/' + version.tweakVersion">
