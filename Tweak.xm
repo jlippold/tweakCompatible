@@ -8,6 +8,7 @@
 #import "CydiaHeaders/Database.h"
 #import "CydiaHeaders/Source.h"
 #import "CydiaHeaders/SourcesController.h"
+#import "CydiaHeaders/CydiaDelegate.h"
 #import <sys/utsname.h> 
 
 Package *package;
@@ -86,11 +87,13 @@ NSString *tweakURL = nil;
 		return NO;
 	}
 
-	if ([url hasPrefix:@"https://cydia.saurik.com/api/share#?source="]) {
-		NSString *source = [url stringByReplacingOccurrencesOfString:@"https://cydia.saurik.com/api/share#?source=" withString:@""];
-		source = @"https://iostonykraft.github.io/";
-		//addTrivialSource(@"https://iostonykraft.github.io/")
-		[self performSelectorOnMainThread:@selector(addTrivialSource:) withObject:source waitUntilDone:NO];
+	if ([url hasPrefix:@"tweakCompat://repo/?"]) {
+		NSString *href = [url stringByReplacingOccurrencesOfString:@"tweakCompat://repo/?" withString:@""];
+		//HBLogDebug(@"source: %@",href);
+		[self.navigationController popViewControllerAnimated:YES];
+		id <CydiaDelegate> delegate = MSHookIvar<id>(self, "delegate_");
+		[delegate addTrivialSource:href];
+		[delegate syncData];
 		return NO;
 	}
 	
