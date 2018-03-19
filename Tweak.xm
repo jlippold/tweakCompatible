@@ -35,13 +35,15 @@ NSString *tweakURL = nil;
 		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tweakCompat"];
 		if (cell == nil) {
 			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"tweakCompat"] autorelease];
+	        cell.frame = CGRectZero;
+
 			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 			cell.textLabel.text = @"Tweak Compatible";
-			cell.detailTextLabel.text = @"list of all compatible tweaks";
+			cell.detailTextLabel.text = @"View tweak compatible website";
 			cell.detailTextLabel.textColor = [UIColor grayColor];
 			[cell.textLabel setFont:[UIFont fontWithName:@"Helvetica" size:18]];
 			
-			NSString *path = [[NSBundle mainBundle] pathForResource:@"folder" ofType:@"png"];
+			NSString *path = [[NSBundle mainBundle] pathForResource:@"unknown" ofType:@"png"];
 			UIImage *theImage = [UIImage imageWithContentsOfFile:path];
 			cell.imageView.image = theImage;
 
@@ -59,25 +61,27 @@ NSString *tweakURL = nil;
 
 %new - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
 	NSString *url = [[request URL] absoluteString];
-	HBLogDebug(@"URL: %@",url);
+	//HBLogDebug(@"URL: %@",url);
 	if ([url containsString:@"/tweakCompatible/package.html"]) {
 
 		NSString *packageName = [url stringByReplacingOccurrencesOfString:@"https://jlippold.github.io/tweakCompatible/package.html#!/" withString:@""];
-		packageName = [[packageName componentsSeparatedByString:@"/"][0];
+		packageName = [packageName componentsSeparatedByString:@"/"][0];
 		Database *database = MSHookIvar<Database *>(self, "database_");
 		Package *package = [database packageWithName:packageName];
-		HBLogDebug(@"PackageName: %@", packageName);
+		//HBLogDebug(@"PackageName: %@", packageName);
 		if (!package) {
-			UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"tweakCompatible" 
-			message:@"Cannot open this package directly, because it is from an uninstalled repo. You will be taken to the tweakCompatible details page." preferredStyle:UIAlertControllerStyleAlert];
-			UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-			[alert addAction:ok];
-			[self presentViewController:alert animated:YES completion:nil];
-			return YES;
+			UIViewController *webViewController = [[UIViewController alloc] init];
+			UIWebView *uiWebView = [[UIWebView alloc] initWithFrame: webView.frame];
+			[uiWebView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: url]]];
+			[webViewController.view addSubview: uiWebView];
+			uiWebView.scrollView.contentInset = UIEdgeInsetsMake(0,0,0,0);
+			[uiWebView release];
+			[self.navigationController pushViewController: webViewController animated:YES];
+		} else {
+			CYPackageController *view = [[[%c(CYPackageController) alloc] initWithDatabase:database forPackage:[package id] withReferrer:@""] autorelease];
+			[view setDelegate:self.delegate];
+			[[self navigationController] pushViewController:view animated:YES];
 		}
-		CYPackageController *view = [[[%c(CYPackageController) alloc] initWithDatabase:database forPackage:[package id] withReferrer:@""] autorelease];
-    	[view setDelegate:self.delegate];
-    	[[self navigationController] pushViewController:view animated:YES];
 		return NO;
 	}
 	return YES;
