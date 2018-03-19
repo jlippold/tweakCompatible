@@ -129,7 +129,7 @@ NSString *tweakURL = nil;
 		NSArray *btn = [NSArray arrayWithObjects: tweakWorking, flex, tweakNotWorking, flex, tweakInfo, flex, tweakHide, nil];
 		[bar setItems:btn animated:NO];
 
-		self.webView.scrollView.contentInset = UIEdgeInsetsMake(75,0,160,0);
+		self.webView.scrollView.contentInset = UIEdgeInsetsMake(85,0,160,0);
 
 		scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 22, [[UIScreen mainScreen] bounds].size.width, 90)];
 		scrollView.pagingEnabled = YES;
