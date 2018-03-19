@@ -61,21 +61,22 @@ NSString *tweakURL = nil;
 
 %new - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
 	NSString *url = [[request URL] absoluteString];
-	//HBLogDebug(@"URL: %@",url);
-	if ([url containsString:@"/tweakCompatible/cydia.html"]) {
+	HBLogDebug(@"URL: %@",url);
+	if ([url containsString:@"/tweakCompatible/package.html"]) {
 
-		NSString *packageName = [url stringByReplacingOccurrencesOfString:@"https://jlippold.github.io/tweakCompatible/cydia.html#!/" withString:@""];
+		NSString *packageName = [url stringByReplacingOccurrencesOfString:@"https://jlippold.github.io/tweakCompatible/package.html#!/" withString:@""];
 		packageName = [packageName componentsSeparatedByString:@"/"][0];
 		Database *database = MSHookIvar<Database *>(self, "database_");
 		Package *package = [database packageWithName:packageName];
 		//HBLogDebug(@"PackageName: %@", packageName);
 		if (!package) {
-			UIViewController *webViewController = [[UIViewController alloc] init];
-			UIWebView *uiWebView = [[UIWebView alloc] initWithFrame: webView.frame];
+			url = [url stringByReplacingOccurrencesOfString:@"/package.html" withString:@"/cydia.html"];
+			UIViewController *webViewController = [[UIViewController alloc] autorelease];
+			UIWebView *uiWebView = [[[UIWebView alloc] initWithFrame: webView.frame] autorelease];
 			[uiWebView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: url]]];
 			[webViewController.view addSubview: uiWebView];
-			uiWebView.scrollView.contentInset = UIEdgeInsetsMake(0,0,0,0);
-			[uiWebView release];
+			uiWebView.delegate = self;
+			
 			[self.navigationController pushViewController: webViewController animated:YES];
 		} else {
 			CYPackageController *view = [[[%c(CYPackageController) alloc] initWithDatabase:database forPackage:[package id] withReferrer:@""] autorelease];
@@ -84,6 +85,15 @@ NSString *tweakURL = nil;
 		}
 		return NO;
 	}
+
+	if ([url hasPrefix:@"https://cydia.saurik.com/api/share#?source="]) {
+		NSString *source = [url stringByReplacingOccurrencesOfString:@"https://cydia.saurik.com/api/share#?source=" withString:@""];
+		source = @"https://iostonykraft.github.io/";
+		//addTrivialSource(@"https://iostonykraft.github.io/")
+		[self performSelectorOnMainThread:@selector(addTrivialSource:) withObject:source waitUntilDone:NO];
+		return NO;
+	}
+	
 	return YES;
 }
 
@@ -91,14 +101,12 @@ NSString *tweakURL = nil;
 	if (indexPath.section == 0 && indexPath.row == 1) {
 		[tableView deselectRowAtIndexPath:indexPath animated:YES];
 
-		UIViewController *webViewController = [[UIViewController alloc] init];
-		UIWebView *uiWebView = [[UIWebView alloc] initWithFrame: tableView.frame];
+		UIViewController *webViewController = [[UIViewController alloc] autorelease];
+		UIWebView *uiWebView = [[[UIWebView alloc] initWithFrame: tableView.frame] autorelease];
 		uiWebView.delegate = self;
 
 		[uiWebView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"https://jlippold.github.io/tweakCompatible/#cydia"]]];
 		[webViewController.view addSubview: uiWebView];
-		uiWebView.scrollView.contentInset = UIEdgeInsetsMake(0,0,0,0);
-		[uiWebView release];
 		
 		[self.navigationController pushViewController: webViewController animated:YES];
 
