@@ -287,8 +287,10 @@ NSString *tweakURL = nil;
 		for (id version in json[@"versions"]) {
 			NSString *thisTweakVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"tweakVersion"]];
 			NSString *thisiOSVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"iOSVersion"]];
-			//[self performSelector:@selector(showAlert:) withObject:[NSString stringWithFormat:@"tv: %@, pv: %@", thisTweakVersion,  packageVersion]];
-			if ([thisTweakVersion isEqualToString:packageVersion] && ![thisiOSVersion isEqualToString:iOSVersion]) {
+			NSString *thisMajor = [thisiOSVersion componentsSeparatedByString:@"."][0];
+			NSString *myMajor = [iOSVersion componentsSeparatedByString:@"."][0];
+
+			if ([thisTweakVersion isEqualToString:packageVersion] && ![thisiOSVersion isEqualToString:iOSVersion] && [myMajor isEqualToString:thisMajor]) {
 				[allIOSVersions addObject:thisiOSVersion];
 			}
 		}
