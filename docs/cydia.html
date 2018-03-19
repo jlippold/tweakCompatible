@@ -4,30 +4,29 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Jailbreak community driven compatibilty checker">
     <meta name="author" content="Jed Lippold">
-    
+
     <title>Tweak Compatibility Checker</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
-
+    
     <!-- Custom styles for this template -->
     <link href="index.css" rel="stylesheet">
-
-
 </head>
 
 <body>
 
     <div id="app">
-        <tweaklist></tweaklist>        
+        <tweak></tweak>
     </div>
 
-    <template id="tweaklist-template">
+    <template id="tweak-template">
+
         <div>
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="navbar-header">
@@ -78,89 +77,72 @@
                     </ul>
                 </div>
             </nav>
+
             <div class="container-fluid main">
-                <div class="alert alert-success" role="alert">
-                        {{filteredPackages.length}} iOS {{data.iOSVersions[data.iOSVersionIndex]}} packages shown
-                </div>
-                <div class="row">
-                    <form onsubmit="return false">
-                        <div class="col-xs-8 col-sm-8 col-md-8">
-                            <div class="form-group">
-                                <label>Search</label>
-                                <input type="test" class="form-control" v-model="data.searchTerm" />
-                            </div>
-                        </div>
-
-                        <div class="col-xs-4 col-sm-4 col-md-4">
-                            <div class="form-group">
-                                <label>iOS</label>
-                                <select class="form-control" v-model="data.iOSVersionIndex" v-on:change="fetch()">
-                                    <option v-for="(iOSVersion, index) in data.iOSVersions" v-bind:value="index"  >
-                                        {{iOSVersion}}
-                                    </option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-8 col-sm-8 col-md-8">
-                            <div class="form-group">
-                                <label>Filter</label>
-                                <select class="form-control" v-model="data.filter" v-on:change="fetch()">
-                                    <option value="">All</option>
-                                    <option value="Working">Working</option>
-                                    <option value="Likely working">Likely working</option>
-                                    <option value="Not working">Not working</option>
-                                    <option value="Unknown">Unknown</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="col-xs-4 col-sm-4 col-md-4">
-                            <div class="form-group">
-                                <label>Sort By</label>
-                                <select class="form-control" v-model="data.sort" v-on:change="fetch()">
-                                    <option value="">Name</option>
-                                    <option value="Date">Date</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 packages">
-
-                        <div v-for="(package, index) in filteredPackages" class="row-fluid packages">
-                            <div v-for="version in package.versions">
-                                <div v-if="version.current" class="media package" style="padding: 10px 0;">
-                                    <div class="media-left media-middle" style="">
-                                        <span v-if="version.outcome.calculatedStatus == 'Working'" style="font-size: 2em; width: 36px; color: #5cb85c" class="glyphicon glyphicon-ok media-object"></span>
-                                        <span v-if="version.outcome.calculatedStatus == 'Not working'" style="font-size: 2em; width: 36px; color: #d9534f" class="glyphicon glyphicon-remove media-object"></span>
-                                        <span v-if="version.outcome.calculatedStatus == 'Likely working'" style="font-size: 2em; width: 36px; color: #f0ad4e" class="glyphicon glyphicon-time media-object"></span>
-                                        <span v-if="version.outcome.calculatedStatus == 'Unknown'" style="font-size: 2em; width: 36px; color: #f0ad4e" class="glyphicon glyphicon-question-sign media-object"></span>
-                                    </div>
-                                    <div class="media-body">
-                                        
-                                        <a v-if="data.isCydiaRequest" v-bind:href="'cydia.html#!/' + package.id + '/details/' + version.tweakVersion">
-                                            <h4 class="media-heading">{{ package.name }} v.{{package.latest}}</h4>
-                                        </a>
-                                        <a v-else v-bind:href="'package.html#!/' + package.id + '/details/' + version.tweakVersion">
-                                            <h4 class="media-heading">{{ package.name }} v.{{package.latest}}</h4>
-                                        </a>
-
-                                        <p>
-                                            <span class="label pull-right" style="font-size: 0.9em" v-bind:class="version.classObject">
-                                                {{ version.outcome.calculatedStatus }}
-                                            </span>
-                                            <span v-if="relativeDate(package.date) != ''" class="label label-default" style="font-size: 0.8em">{{relativeDate(package.date)}}</span>
-                                             {{ package.shortDescription }}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                
+                <form style="clear:both">
+                    <div v-if="repoUrl" class="form-group">
+                        <a style="margin-bottom: 10px" type="button" class="btn btn-success btn-md" :href="'https://cydia.saurik.com/api/share#?source=' + repoUrl">
+                            Add Repo to Cydia
+                        </a>             
                     </div>
+                    <div class="form-group">
+                        <label for="sel1">Tweak Version</label>
+                        <select class="form-control" v-model="currentVersion">
+                            <option v-for="v in uniqueVersions" id="versionSelector" v-bind:value="v">
+                                {{v}}
+                            </option>
+                        </select>
+                    </div>
+                </form>
+
+                <div v-for="version in package.versions">
+
+                    <div class="panel" v-bind:class="{
+                            'panel-success': version.outcome.calculatedStatus == 'Working',
+                            'panel-warning': version.outcome.calculatedStatus == 'Likely working',
+                            'panel-danger': version.outcome.calculatedStatus == 'Not working'
+                        }" v-if="version.tweakVersion == currentVersion" >
+
+                        <div class="panel-heading">
+                            iOS {{version.iOSVersion}} - {{version.outcome.calculatedStatus}}
+                            <span class="badge pull-right">
+                                {{version.outcome.percentage}}% Working
+                            </span>
+                        </div>
+
+                        <div class="panel-body">
+                            <p>
+                                {{ version.outcome.good }} device(s) reported this package as
+                                <strong>working</strong> on iOS {{ version.iOSVersion }}.
+                            </p>
+                            
+                            <p v-for="(user, index) in version.users">
+                                {{ relativeDate(user.date) }}, {{user.userName}}
+                                
+                                <a target=_blank v-bind:href="'https://github.com/jlippold/tweakCompatible/issues/' + user.issueNumber">
+                                     reported this tweak
+                                </a> as
+                                <span v-if="user.status == 'working'" class="label label-success">Working</span>
+                                <span v-else-if="user.status == 'partial'" class="label label-warning">Partially Working</span>
+                                <span v-else class="label label-danger">Not Working</span>
+                                from a 
+                                
+                                <span v-if="user.arch32" class="badge">32-bit</span>
+                                <span v-else="user.arch32" class="badge">64-bit</span>
+
+
+                                {{ getDeviceName(user.device)}}. 
+                                <span v-if="user.issues">- {{user.issues}}</span>
+                            </p>
+                            
+                        </div>
+                    
+                    </div>
+
                 </div>
             </div>
+
             <div id="donate" class="modal fade" role="dialog">
                 <div class="modal-dialog">
                     <!-- Modal content-->
@@ -171,19 +153,22 @@
                         </div>
                         <div class="modal-body">
                             <p>
-                                If you dig this app, and want to buy me a coffee check out my Paypal or bitcoin: <br /><br />
+                                If you dig this app, and want to buy me a coffee check out my Paypal or bitcoin:
+                                <br />
+                                <br />
                             </p>
-
+            
                             <h4>
                                 <i class="fa fa-btc" aria-hidden="true"></i>
                                 Bitcoin
                             </h4>
-
+            
                             <form class="text-center">
-                                <img src="btc.png" class="img-responsive"> <br />
+                                <img src="btc.png" class="img-responsive">
+                                <br />
                                 <input type="text" onFocus="this.select()" class="form-control" readonly name="msg" value="1AoWrn4PqueYBrYuwW58xJW64znNebvmyh">
                             </form>
-
+            
                         </div>
                         <div class="modal-footer">
                             <a class="btn btn-info pull-left" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=jedlippold@gmail.com&item_name=TweakCompatible&item_number=Thanks+for+the+app&currency_code=USD">
@@ -193,22 +178,23 @@
                             <button type="button" class="btn btn-danger" data-dismiss="modal">No Thanks</button>
                         </div>
                     </div>
-
+            
                 </div>
             </div>
         </div>
-    </template>
 
+    </template>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/async/2.6.0/async.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 
+
     <script src="common.js"></script>
-    <script src="index.js"></script>
+    <script src="package.js"></script>
 </body>
 
 </html>

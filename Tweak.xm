@@ -62,9 +62,9 @@ NSString *tweakURL = nil;
 %new - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
 	NSString *url = [[request URL] absoluteString];
 	//HBLogDebug(@"URL: %@",url);
-	if ([url containsString:@"/tweakCompatible/package.html"]) {
+	if ([url containsString:@"/tweakCompatible/cydia.html"]) {
 
-		NSString *packageName = [url stringByReplacingOccurrencesOfString:@"https://jlippold.github.io/tweakCompatible/package.html#!/" withString:@""];
+		NSString *packageName = [url stringByReplacingOccurrencesOfString:@"https://jlippold.github.io/tweakCompatible/cydia.html#!/" withString:@""];
 		packageName = [packageName componentsSeparatedByString:@"/"][0];
 		Database *database = MSHookIvar<Database *>(self, "database_");
 		Package *package = [database packageWithName:packageName];
@@ -517,7 +517,7 @@ NSString *tweakURL = nil;
 	
 	NSString *baseURI = @"https://jlippold.github.io/tweakCompatible/";
 	if (showViewPackage) {
-		tweakURL = [[NSString stringWithFormat:@"%@package.html#!/%@/details/%@", 
+		tweakURL = [[NSString stringWithFormat:@"%@cydia.html#!/%@/details/%@", 
 				baseURI, userInfo[@"packageId"], userInfo[@"packageVersion"]] retain];
 	}
 
