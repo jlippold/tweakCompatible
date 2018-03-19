@@ -63,9 +63,18 @@ NSString *tweakURL = nil;
 	if ([url containsString:@"/tweakCompatible/package.html"]) {
 
 		NSString *packageName = [url stringByReplacingOccurrencesOfString:@"https://jlippold.github.io/tweakCompatible/package.html#!/" withString:@""];
+		packageName = [[packageName componentsSeparatedByString:@"/"][0];
 		Database *database = MSHookIvar<Database *>(self, "database_");
 		Package *package = [database packageWithName:packageName];
-		HBLogDebug(@"PackageName: %@",packageName);
+		HBLogDebug(@"PackageName: %@", packageName);
+		if (!package) {
+			UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"tweakCompatible" 
+			message:@"Cannot open this package directly, because it is from an uninstalled repo. You will be taken to the tweakCompatible details page." preferredStyle:UIAlertControllerStyleAlert];
+			UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+			[alert addAction:ok];
+			[self presentViewController:alert animated:YES completion:nil];
+			return YES;
+		}
 		CYPackageController *view = [[[%c(CYPackageController) alloc] initWithDatabase:database forPackage:[package id] withReferrer:@""] autorelease];
     	[view setDelegate:self.delegate];
     	[[self navigationController] pushViewController:view animated:YES];
