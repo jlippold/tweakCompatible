@@ -461,7 +461,7 @@ NSString *tweakURL = nil;
 		userInfo = @{
 			@"deviceId" : deviceId, 
 			@"iOSVersion" : iOSVersion,
-			@"tweakCompatVersion": @"0.0.6",
+			@"tweakCompatVersion": @"0.0.7",
 			@"packageIndexed": @(packageExists),
 			@"packageVersionIndexed": @(versionExists),
 			@"packageStatus": packageStatus,
