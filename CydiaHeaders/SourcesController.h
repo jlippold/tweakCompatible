@@ -1,6 +1,6 @@
 #import "CyteViewController.h"
 
-@interface SourcesController : CyteViewController
+@interface SourcesController : CyteViewController <UIWebViewDelegate>
 
 - (void)refreshButtonClicked;
 - (void)complete;

@@ -1,12 +1,14 @@
 #import "CydiaHeaders/CYPackageController.h"
 #import "CydiaHeaders/CyteWebView.h"
 #import "CydiaHeaders/CydiaWebViewController.h"
+#import "CydiaHeaders/CyteWebViewController.h"
 #import "CydiaHeaders/MIMEAddress.h"
 #import "CydiaHeaders/Package.h"
+#import "CydiaHeaders/PackageListController.h"
+#import "CydiaHeaders/Database.h"
 #import "CydiaHeaders/Source.h"
 #import "CydiaHeaders/SourcesController.h"
 #import <sys/utsname.h> 
-
 
 Package *package;
 
@@ -55,13 +57,28 @@ NSString *tweakURL = nil;
 	return %orig;
 }
 
+%new - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+	NSString *url = [[request URL] absoluteString];
+	HBLogDebug(@"%@",url);
+	if ([url containsString:@"/tweakCompatible/package.html"]) {
+		Database *database = MSHookIvar<Database *>(self, "database_");
+		Package *package = [database packageWithName:@"openssh"];
+		CYPackageController *view = [[[%c(CYPackageController) alloc] initWithDatabase:database forPackage:[package id] withReferrer:@""] autorelease];
+    	[view setDelegate:self.delegate];
+    	[[self navigationController] pushViewController:view animated:YES];
+		return NO;
+	}
+	return YES;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	if (indexPath.section == 0 && indexPath.row == 1) {
 		[tableView deselectRowAtIndexPath:indexPath animated:YES];
 
 		UIViewController *webViewController = [[UIViewController alloc] init];
 		UIWebView *uiWebView = [[UIWebView alloc] initWithFrame: tableView.frame];
-		
+		uiWebView.delegate = self;
+
 		[uiWebView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"https://jlippold.github.io/tweakCompatible/#cydia"]]];
 		[webViewController.view addSubview: uiWebView];
 		uiWebView.scrollView.contentInset = UIEdgeInsetsMake(0,0,0,0);
@@ -217,8 +234,8 @@ NSString *tweakURL = nil;
 		[scrollView addSubview:textView];
 		[scrollView addSubview:indicator];
     	//HBLogDebug(@"%@",iOSVersion);
-		//HBLogDebug(@"%d",i);
-		//HBLogDebug(@"%tu",[allIOSVersions count]);
+		////HBLogDebug(@"%d",i);
+		////HBLogDebug(@"%tu",[allIOSVersions count]);
 	}
 }
 
@@ -304,7 +321,7 @@ NSString *tweakURL = nil;
 	for (i = [allIOSVersions count] - 1; i >= 0; i--) {
 
 		iOSVersion = [allIOSVersions objectAtIndex:i];
-		HBLogDebug(@"%@", iOSVersion);
+		
 		NSString *packageStatus = @"Unknown";
 		NSString *packageStatusExplaination = @"This tweak has not been reviewed. Please submit a review if you choose to install.";
 
@@ -392,7 +409,7 @@ NSString *tweakURL = nil;
 
 		
 		NSString *desc = [NSString stringWithFormat:@"iOS %@ %@: %@", iOSVersion, packageStatus, packageStatusExplaination];
-		//HBLogDebug(@"%@",desc);
+		
 		UITextView *thisLabel = [self.view viewWithTag:i+300];
 
 		NSMutableAttributedString *attString=[[NSMutableAttributedString alloc] initWithString:desc];
@@ -447,7 +464,6 @@ NSString *tweakURL = nil;
 		};
 	}
 
-	HBLogDebug(@"Fin2");		
 
 	//gather user info for post to github
 	NSError *error; 
