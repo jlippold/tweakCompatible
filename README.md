@@ -36,19 +36,15 @@ I wanted to make this automated, community driven, with minimal human dependenci
 
 ## Installing
 
-This tweak can be installed with Cydia via the [big boss](http://apt.thebigboss.org/onepackage.php?bundleid=bz.jed.tweakcompatible) repo, or via the releases page on github. To package a final release, run `make package FINALPACKAGE=1`
+This tweak can be installed with Cydia via my [personal repo](http://repo.jed.bz) or the [big boss](http://apt.thebigboss.org/onepackage.php?bundleid=bz.jed.tweakcompatible) repo, or via the releases page on github. To package a final release, run `make package FINALPACKAGE=1`
 
 ## To-Do
-
- - Add webhook processing
- - Add moderation tools
-    - block package / lock package
-    - block user
-    - block cydia repo
-    - delete review
  - Add request feature
- - Never ending scroll, more filters
-
+ - Add more moderation tools
+    - block package
+    - block user
+    - ~~block cydia repo~~
+ 
 ## License
 
 Licensed under [Apache License, version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
@@ -59,3 +55,4 @@ Licensed under [Apache License, version 2.0](https://www.apache.org/licenses/LIC
  - https://bootswatch.com/ Yeti theme
  - https://getbootstrap.com/ css framework
  - https://vuejs.org/
+ - https://github.com/Sticktron/repo for the repo template
