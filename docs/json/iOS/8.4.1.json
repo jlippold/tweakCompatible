@@ -3,7 +3,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.12",
+      "latest": "1.9.13~beta1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -276,6 +276,40 @@
           "tweakVersion": "1.3b-1",
           "iOSVersion": "8.4.1",
           "repository": "Dany Lisiansky",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "vn.gsm.controlpane",
+      "name": "ControlPane",
+      "latest": "1.4-1",
+      "repository": "Cydia.vn",
+      "url": "http://cydia.saurik.com/package/vn.gsm.controlpane/",
+      "shortDescription": "All your settings, in one place.",
+      "category": "!CydiaVn-Tools",
+      "author": "Logan O'Connell",
+      "commercial": false,
+      "date": "2018-03-20T17:15:06Z",
+      "versions": [
+        {
+          "tweakVersion": "1.4-1",
+          "iOSVersion": "8.4.1",
+          "repository": "Cydia.vn",
+          "date": "2018-03-20T17:15:06Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -617,20 +651,22 @@
       ]
     },
     {
-      "id": "com.tigisoftware.filza",
+      "id": "vn.gsm.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.0-16",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iOS. Supports iOS 7+",
-      "category": "Utilities",
+      "latest": "3.4.0-25k",
+      "repository": "Cydia.vn",
+      "url": "http://cydia.saurik.com/package/vn.gsm.filza/",
+      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
+      "category": "!CydiaVn-Apps",
       "author": "TIGI Software",
       "commercial": false,
+      "date": "2018-03-20T16:21:48Z",
       "versions": [
         {
-          "tweakVersion": "3.3.2",
+          "tweakVersion": "3.4.0-25k",
           "iOSVersion": "8.4.1",
-          "repository": "BigBoss",
+          "repository": "Cydia.vn",
+          "date": "2018-03-20T16:21:48Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -649,22 +685,20 @@
       ]
     },
     {
-      "id": "vn.gsm.filza",
+      "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.4.0-25k",
-      "repository": "Cydia.vn",
-      "url": "http://cydia.saurik.com/package/vn.gsm.filza/",
-      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
-      "category": "!CydiaVn-Apps",
+      "latest": "3.5.0-16",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
+      "shortDescription": "File Manager for iOS. Supports iOS 7+",
+      "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
-      "date": "2018-03-20T16:21:48Z",
       "versions": [
         {
-          "tweakVersion": "3.4.0-25k",
+          "tweakVersion": "3.3.2",
           "iOSVersion": "8.4.1",
-          "repository": "Cydia.vn",
-          "date": "2018-03-20T16:21:48Z",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -914,6 +948,40 @@
       ]
     },
     {
+      "id": "repo.biteyourapple.net.icleanerpro",
+      "name": "iCleaner Pro",
+      "latest": "7.7.0~beta1",
+      "repository": "BiteYourApple",
+      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.icleanerpro/",
+      "shortDescription": "The first real iOS system cleaner & optimizer",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "date": "2018-03-09T03:50:09Z",
+      "versions": [
+        {
+          "tweakVersion": "7.7.0~beta1",
+          "iOSVersion": "8.4.1",
+          "repository": "BiteYourApple",
+          "date": "2018-03-09T03:50:09Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Not working"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
       "latest": "7.7.0~beta2",
@@ -959,40 +1027,6 @@
               "bad": 0,
               "percentage": 100,
               "calculatedStatus": "Working"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "repo.biteyourapple.net.icleanerpro",
-      "name": "iCleaner Pro",
-      "latest": "7.7.0~beta1",
-      "repository": "BiteYourApple",
-      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.icleanerpro/",
-      "shortDescription": "The first real iOS system cleaner & optimizer",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "date": "2018-03-09T03:50:09Z",
-      "versions": [
-        {
-          "tweakVersion": "7.7.0~beta1",
-          "iOSVersion": "8.4.1",
-          "repository": "BiteYourApple",
-          "date": "2018-03-09T03:50:09Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Not working"
             }
           }
         }
@@ -1489,7 +1523,7 @@
     {
       "id": "bz.jed.tweakcompatible",
       "name": "tweakCompatible",
-      "latest": "0.0.6",
+      "latest": "0.0.7",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/bz.jed.tweakcompatible/",
       "shortDescription": "Adds a way to check tweak compatibility in cydia",
