@@ -6,7 +6,7 @@ Previously when a new jailbreak was released, the community manages a large goog
 
 ![Screenshot](docs/screenshot1.jpg?raw=true "Screenshot1")
 ![Screenshot](docs/screenshot2.jpg?raw=true "Screenshot2")
-![Screenshot](docs/screenshot3.jpg?raw=true "Screenshot3")
+![Screenshot](docs/screenshot3.jpg?raw=true "Screenshot31")
 
 In the spirit of open source and to give back, I spent some time writing this tweak for Cydia that adds a section with compatibility results into the package details page.
 
