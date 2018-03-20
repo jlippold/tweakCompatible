@@ -11,7 +11,7 @@ $(document).ready(function () {
             return {
                 data: {
                     searchTerm: "",
-                    filter: "",
+                    filter: (window.location.hash == "#cydia") ? "Working" : "",
                     isCydiaRequest: (window.location.hash == "#cydia"),
                     sort: "",
                     iOSVersionIndex: 0,
