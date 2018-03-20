@@ -141,7 +141,7 @@ $(document).ready(function () {
                     });
                 });
 
-                if (data.sort != "") {
+                if (data.sort == "") {
                     //date sort
                     filteredPackageList.sort(function(a,b) {return (a.date > b.date) ? -1 : ((b.date > a.date) ? 1 : 0);} ); 
                 }

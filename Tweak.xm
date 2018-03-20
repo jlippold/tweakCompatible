@@ -65,7 +65,7 @@ NSString *tweakURL = nil;
 
 %new - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
 	NSString *url = [[request URL] absoluteString];
-	HBLogDebug(@"URL: %@",url);
+	//HBLogDebug(@"URL: %@",url);
 	if ([url containsString:@"/tweakCompatible/package.html"]) {
 
 		NSString *packageName = [url stringByReplacingOccurrencesOfString:@"https://jlippold.github.io/tweakCompatible/package.html#!/" withString:@""];
@@ -99,7 +99,7 @@ NSString *tweakURL = nil;
 		//[delegate syncData];
 
 		UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"tweakCompatible" 
-			message:@"The repo address will been copied to the clipboard" preferredStyle:UIAlertControllerStyleAlert];
+			message:@"The repo address will be copied to the clipboard" preferredStyle:UIAlertControllerStyleAlert];
 		UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Add source" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
 			UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
 			pasteboard.string = href;
