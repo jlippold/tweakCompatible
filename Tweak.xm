@@ -77,6 +77,7 @@ NSString *tweakURL = nil;
 			url = [url stringByReplacingOccurrencesOfString:@"/package.html" withString:@"/cydia.html"];
 			UIViewController *webViewController = [[UIViewController alloc] autorelease];
 			UIWebView *uiWebView = [[[UIWebView alloc] initWithFrame: webView.frame] autorelease];
+			uiWebView.scrollView.contentInset = UIEdgeInsetsMake(0,0,120,0);
 			[uiWebView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: url]]];
 			[webViewController.view addSubview: uiWebView];
 			uiWebView.delegate = self;
@@ -122,6 +123,7 @@ NSString *tweakURL = nil;
 		UIViewController *webViewController = [[UIViewController alloc] autorelease];
 		UIWebView *uiWebView = [[[UIWebView alloc] initWithFrame: tableView.frame] autorelease];
 		uiWebView.delegate = self;
+		uiWebView.scrollView.contentInset = UIEdgeInsetsMake(0,0,120,0);
 
 		[uiWebView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"https://jlippold.github.io/tweakCompatible/#cydia"]]];
 		[webViewController.view addSubview: uiWebView];
