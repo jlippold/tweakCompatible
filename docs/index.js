@@ -92,6 +92,14 @@ $(document).ready(function () {
             });
         },
         computed: {
+            searchDebounce: {
+                get: function () {
+                    return this.data.searchTerm;
+                },
+                set: _.debounce(function (newValue) {
+                    this.data.searchTerm = newValue;
+                }, 500)
+            },
             filteredPackages: function () {
 
                 var data = this.data;
@@ -119,7 +127,7 @@ $(document).ready(function () {
                     } else {
                         package.date = new Date("1970-01-01T00:00:00Z");
                     }
-                    
+
 
                     package.versions.forEach(function (item) {
                         item.current = (item.iOSVersion == iOSVersion &&
@@ -143,7 +151,7 @@ $(document).ready(function () {
 
                 if (data.sort == "") {
                     //date sort
-                    filteredPackageList.sort(function(a,b) {return (a.date > b.date) ? -1 : ((b.date > a.date) ? 1 : 0);} ); 
+                    filteredPackageList.sort(function (a, b) { return (a.date > b.date) ? -1 : ((b.date > a.date) ? 1 : 0); });
                 }
                 return filteredPackageList;
             }
