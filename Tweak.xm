@@ -10,6 +10,7 @@
 #import "CydiaHeaders/SourcesController.h"
 #import "CydiaHeaders/CydiaDelegate.h"
 #import <sys/utsname.h> 
+#import <UIKit/UIAlertView+Private.h>
 
 Package *package;
 
@@ -60,6 +61,8 @@ NSString *tweakURL = nil;
 	return %orig;
 }
 
+
+
 %new - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
 	NSString *url = [[request URL] absoluteString];
 	HBLogDebug(@"URL: %@",url);
@@ -87,13 +90,25 @@ NSString *tweakURL = nil;
 		return NO;
 	}
 
-	if ([url hasPrefix:@"tweakCompat://repo/?"]) {
-		NSString *href = [url stringByReplacingOccurrencesOfString:@"tweakCompat://repo/?" withString:@""];
-		//HBLogDebug(@"source: %@",href);
-		[self.navigationController popViewControllerAnimated:YES];
-		id <CydiaDelegate> delegate = MSHookIvar<id>(self, "delegate_");
-		[delegate addTrivialSource:href];
-		[delegate syncData];
+	if ([url hasPrefix:@"tweakcompat://repo/?"]) {
+		NSString *href = [url stringByReplacingOccurrencesOfString:@"tweakcompat://repo/?" withString:@""];
+		//HBLogDebug(@"adding source: %@", href);
+		
+		//id <CydiaDelegate> delegate = MSHookIvar<id>(self, "delegate_");
+		//[delegate addTrivialSource:href];
+		//[delegate syncData];
+
+		UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"tweakCompatible" 
+			message:@"The repo address will been copied to the clipboard" preferredStyle:UIAlertControllerStyleAlert];
+		UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Add source" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+			UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+			pasteboard.string = href;
+            [self performSelector:@selector(showAddSourcePrompt)];	
+        }];
+		UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:nil];
+		[alert addAction:ok];
+		[alert addAction:cancel];
+		[self presentViewController:alert animated:YES completion:nil];
 		return NO;
 	}
 	
