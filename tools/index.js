@@ -76,6 +76,22 @@ function init(callback) {
                         return next();
                     }
                     lib.commitAgainstIssue(change.issueNumber, next);
+                }],
+                comment: ['commit', function (results, next) {
+                    if (!results.validate) return next();
+                    if (mode == "rebuild") {
+                        return next();
+                    }
+
+                    var opts = {
+                        owner, repo,
+                        number: change.issueNumber,
+                        body: "This issue is being closed because your review was accepted into the tweakCompatible website. \nTweak developers do not monitor or fix issues submitted via this repo.\nIf you have an issue with a tweak, contact the developer via another method."
+                    };
+                    github.issues.createComment(opts, function () {
+                        return next();
+                    });
+
                 }]
             }, function (err, result) {
                 nextIssue(err);
