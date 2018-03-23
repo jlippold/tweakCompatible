@@ -685,10 +685,10 @@
     {
       "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
-      "latest": "1.0r-71",
+      "latest": "1.0r-61",
       "repository": "beta.unlimapps.com",
       "url": "https://beta.unlimapps.com/",
-      "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
+      "shortDescription": "Downgrade apps to any previous version! No AppSync needed!!!",
       "category": "System",
       "author": "UnlimApps Inc.",
       "commercial": false,
@@ -832,10 +832,10 @@
     {
       "id": "com.iphonecake.appcake2",
       "name": "AppCake",
-      "latest": "5.5.5.0",
+      "latest": "5.5.7.0",
       "repository": "AppCake",
       "url": "http://iphonecake.com/forum/",
-      "shortDescription": "The new AppCake 5.5.5.0! Introducing Direct Download/Install!  Require AppSync to be installed ***",
+      "shortDescription": "The new AppCake 5.5.7.0! Introducing Direct Download/Install!  Require AppSync to be installed ***",
       "category": "Utilities",
       "author": "Mickael liang",
       "commercial": false,
@@ -972,6 +972,26 @@
           "tweakVersion": "1.5.13",
           "iOSVersion": "10.1.1",
           "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.5.14",
+          "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
+          "date": "2018-03-23T00:45:03Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3526,10 +3546,10 @@
     {
       "id": "com.julioverne.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "016",
+      "latest": "16.6",
       "repository": "julioverne's Repo",
       "url": "http://twitter.com/ijulioverne",
-      "shortDescription": "Cydia Extender Installer With Extra Features",
+      "shortDescription": "Cydia Extender Installer With Extra Features, patched for iOS 11: MidnightChips",
       "category": "Utilities",
       "author": "julioverne",
       "commercial": false,
@@ -6416,7 +6436,7 @@
     {
       "id": "ws.hbang.libopener",
       "name": "Opener",
-      "latest": "3.1.2",
+      "latest": "3.2.1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/ws.hbang.libopener/",
       "shortDescription": "Developer library for overriding link destinations",
@@ -6932,7 +6952,7 @@
     {
       "id": "preferenceloader",
       "name": "PreferenceLoader",
-      "latest": "2.2.3-3",
+      "latest": "2.2.4~alpha1",
       "repository": "rpetrich repo",
       "url": "http://cydia.saurik.com/package/preferenceloader/",
       "shortDescription": "load preferences in style",
@@ -8378,7 +8398,7 @@
     {
       "id": "org.thebigboss.stopalarmios8",
       "name": "StopAlarm iOS 8+",
-      "latest": "1.5.0",
+      "latest": "1.5.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.stopalarmios8/",
       "shortDescription": "Snooze or Stops an Alarm!",
@@ -8655,7 +8675,7 @@
     {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "2.0.0-877+debug",
+      "latest": "2.0.0-1010+debug",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
       "shortDescription": "System information Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
@@ -9274,22 +9294,20 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.uasharedtools",
+      "id": "com.unlimapps.uasharedtools",
       "name": "uasharedtools",
       "latest": "2.2r-31",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.uasharedtools/",
+      "repository": "beta.unlimapps.com",
+      "url": "http://beta.unlimapps.com/",
       "shortDescription": "shared tools for unlimapps tweaks",
-      "category": "HYI - Tweaks",
+      "category": "Development",
       "author": "UnlimApps Inc.",
       "commercial": false,
-      "date": "2018-03-19T17:31:12Z",
       "versions": [
         {
-          "tweakVersion": "2.2r-31",
+          "tweakVersion": "2.2r-17",
           "iOSVersion": "10.1.1",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-19T17:31:12Z",
+          "repository": "beta.unlimapps.com",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9308,20 +9326,22 @@
       ]
     },
     {
-      "id": "com.unlimapps.uasharedtools",
+      "id": "com.hackyouriphone.uasharedtools",
       "name": "uasharedtools",
       "latest": "2.2r-31",
-      "repository": "beta.unlimapps.com",
-      "url": "http://beta.unlimapps.com/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.uasharedtools/",
       "shortDescription": "shared tools for unlimapps tweaks",
-      "category": "Development",
+      "category": "HYI - Tweaks",
       "author": "UnlimApps Inc.",
       "commercial": false,
+      "date": "2018-03-19T17:31:12Z",
       "versions": [
         {
-          "tweakVersion": "2.2r-17",
+          "tweakVersion": "2.2r-31",
           "iOSVersion": "10.1.1",
-          "repository": "beta.unlimapps.com",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-19T17:31:12Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9502,7 +9522,7 @@
     {
       "id": "com.fouadraheb.watusi",
       "name": "Watusi 2 for WhatsApp",
-      "latest": "1.0.43",
+      "latest": "1.0.44",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.fouadraheb.watusi/",
       "shortDescription": "The all-in-one tweak for WhatsApp Messenger",
@@ -9534,7 +9554,7 @@
     {
       "id": "com.f0u4d.watusitools",
       "name": "WatusiTools",
-      "latest": "1.4.8",
+      "latest": "1.4.9",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.f0u4d.watusitools/",
       "shortDescription": "Library for Watusi and WhatsApp tweaks",
