@@ -782,9 +782,9 @@
       "outcome": {
         "calculatedStatus": "Working",
         "percentage": 100,
-        "good": 1,
+        "good": 2,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -801,6 +801,15 @@
           "date": "2018-03-29T02:20:03Z",
           "userName": "ClydeHarrington",
           "issueNumber": 8515,
+          "arch32": false
+        },
+        {
+          "status": "partial",
+          "device": "iPad7,2",
+          "issues": "Issues on 2nd generation iPad Pro 12.9\" where the \"back\" link doesn't work. It always goes into \"edit path\" mode when clicking on the prior directory's name. I tested the issue with FLEX and it appears that the view hierarchy is not laid out correctly and the (should be) center tap region is taking precedence over the \"back\" button to the left. This will then cause a segfault when attempting to go back by deleting the last path component and the app is killed (looks like a signal 9)",
+          "date": "2018-03-29T23:49:11Z",
+          "userName": "sietec",
+          "issueNumber": 8619,
           "arch32": false
         }
       ]
