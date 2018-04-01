@@ -231,11 +231,11 @@
       "repository": "TIGI Software",
       "date": "2018-03-17T18:42:39Z",
       "outcome": {
-        "calculatedStatus": "Working",
-        "percentage": 100,
+        "calculatedStatus": "Likely working",
+        "percentage": 50,
         "good": 1,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -252,6 +252,15 @@
           "date": "2018-03-17T18:42:39Z",
           "userName": "kskumar9663",
           "issueNumber": 7065,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone9,1",
+          "issues": "App opens(is 64bit) but backup & wipe functions freeze",
+          "date": "2018-04-01T05:21:11Z",
+          "userName": "NPC-112",
+          "issueNumber": 8753,
           "arch32": false
         }
       ]
