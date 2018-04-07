@@ -939,20 +939,22 @@
       ]
     },
     {
-      "id": "com.iphonecake.appcake2",
+      "id": "com.hackyouriphone.appcake2",
       "name": "AppCake",
       "latest": "5.5.7.2",
-      "repository": "AppCake",
-      "url": "http://iphonecake.com/forum/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.appcake2/",
       "shortDescription": "The new AppCake 5.5.7.2! Introducing Direct Download/Install!  Require AppSync to be installed ***",
-      "category": "Utilities",
+      "category": "HYI - Applications",
       "author": "Mickael liang",
       "commercial": false,
+      "date": "2018-03-26T07:58:39Z",
       "versions": [
         {
-          "tweakVersion": "5.5.5.0",
+          "tweakVersion": "5.5.7.2",
           "iOSVersion": "10.2",
-          "repository": "AppCake",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-26T07:58:39Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -971,22 +973,20 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.appcake2",
+      "id": "com.iphonecake.appcake2",
       "name": "AppCake",
       "latest": "5.5.7.2",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.appcake2/",
+      "repository": "AppCake",
+      "url": "http://iphonecake.com/forum/",
       "shortDescription": "The new AppCake 5.5.7.2! Introducing Direct Download/Install!  Require AppSync to be installed ***",
-      "category": "HYI - Applications",
+      "category": "Utilities",
       "author": "Mickael liang",
       "commercial": false,
-      "date": "2018-03-26T07:58:39Z",
       "versions": [
         {
-          "tweakVersion": "5.5.7.2",
+          "tweakVersion": "5.5.5.0",
           "iOSVersion": "10.2",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-26T07:58:39Z",
+          "repository": "AppCake",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1349,6 +1349,26 @@
               "calculatedStatus": "Unknown"
             }
           }
+        },
+        {
+          "tweakVersion": "1.3.0-15",
+          "iOSVersion": "10.2",
+          "repository": "tigisoftware.com",
+          "date": "2018-04-07T08:14:31Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
         }
       ]
     },
@@ -1582,38 +1602,6 @@
       ]
     },
     {
-      "id": "org.thebigboss.automa",
-      "name": "Automa",
-      "latest": "1.0.5-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.automa/",
-      "shortDescription": "remembers popup alert choices",
-      "category": "Tweaks",
-      "author": "pNre",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "1.0.5-1",
-          "iOSVersion": "10.2",
-          "repository": "BigBoss",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "repo.biteyourapple.net.automa",
       "name": "Automa",
       "latest": "1.0.5-1k",
@@ -1632,6 +1620,38 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.thebigboss.automa",
+      "name": "Automa",
+      "latest": "1.0.5-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.automa/",
+      "shortDescription": "remembers popup alert choices",
+      "category": "Tweaks",
+      "author": "pNre",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "1.0.5-1",
+          "iOSVersion": "10.2",
+          "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -3673,10 +3693,10 @@
     {
       "id": "com.iarrays.copic2",
       "name": "Copic 2",
-      "latest": "1.0.9-beta-5",
+      "latest": "1.0.10",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.iarrays.copic2/",
-      "shortDescription": "The new Copic 2 is totally redesigned, optimized and rebuild from the scratch. Now brings the ability to display the Contact pictures everywhere on your iPhone.Integrates seamlessly with stock Contacts, FaceTime, Mail, Messages and Phone apps. The best part of this tweak is it also integrates with WhatsApp & infamous tweak Recents 2 too. Also integrates with locks screen and Notification Center. Brings ability to turn on or off monograms or show rounded or rectangular images and many more features.",
+      "shortDescription": "Display the Contact pictures everywhere on your iPhone",
       "category": "Tweaks",
       "author": "IArrays",
       "commercial": false,
@@ -5788,7 +5808,7 @@
     {
       "id": "it.dreamcode.ft",
       "name": "FingerTouch",
-      "latest": "0.0.4",
+      "latest": "0.0.6b2",
       "repository": "Dream Code",
       "url": "http://capt.dreamcode.it/",
       "shortDescription": "Touch ID gestures",
@@ -6807,6 +6827,38 @@
       ]
     },
     {
+      "id": "repo.biteyourapple.net.hidemex10",
+      "name": "HideMeX (iOS 10)",
+      "latest": "1.1k",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "The Ultimate iOS Customizing Experience",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.1k",
+          "iOSVersion": "10.2",
+          "repository": "BiteYourApple",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.cpdigitaldarkroom.hidemex10",
       "name": "HideMeX (iOS 10)",
       "latest": "1.1.3",
@@ -6861,38 +6913,6 @@
           "iOSVersion": "10.2",
           "repository": "CP Digital Darkroom Repo",
           "date": "2018-03-04T20:51:50Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "repo.biteyourapple.net.hidemex10",
-      "name": "HideMeX (iOS 10)",
-      "latest": "1.1k",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "The Ultimate iOS Customizing Experience",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.1k",
-          "iOSVersion": "10.2",
-          "repository": "BiteYourApple",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -12089,10 +12109,10 @@
     {
       "id": "com.creatix.peek-a-boo",
       "name": "Peek-a-Boo",
-      "latest": "10.0.2",
+      "latest": "4.0.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.creatix.peek-a-boo/",
-      "shortDescription": "An awesome MobileSubstrate tweak!",
+      "shortDescription": "Peek and Pop on older devices!",
       "category": "Tweaks",
       "author": "Creatix",
       "commercial": false,
@@ -12435,7 +12455,7 @@
     {
       "id": "com.pokego2.pokego2",
       "name": "PokeGo++ 2.0 for Pokemon Go!",
-      "latest": "2.0r-63",
+      "latest": "2.0r-65",
       "repository": "pokego2.com",
       "url": "http://pokego2.com/",
       "shortDescription": "Hacks and more for Pokemon GO!!! Bypass JB Detection.",
@@ -12506,38 +12526,6 @@
       ]
     },
     {
-      "id": "com.a3tweaks.polus",
-      "name": "Polus",
-      "latest": "2.2.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.a3tweaks.polus/",
-      "shortDescription": "Control Center launcher for apps & actions",
-      "category": "Tweaks",
-      "author": "A3tweaks",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "2.2.1",
-          "iOSVersion": "10.2",
-          "repository": "BigBoss",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 3,
-            "bad": 0,
-            "total": 3,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "repo.biteyourapple.net.polus",
       "name": "Polus",
       "latest": "2.2.1",
@@ -12560,6 +12548,38 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.a3tweaks.polus",
+      "name": "Polus",
+      "latest": "2.2.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.a3tweaks.polus/",
+      "shortDescription": "Control Center launcher for apps & actions",
+      "category": "Tweaks",
+      "author": "A3tweaks",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "2.2.1",
+          "iOSVersion": "10.2",
+          "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 3,
+            "bad": 0,
+            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -14810,20 +14830,20 @@
       ]
     },
     {
-      "id": "com.iky1e.swipeselection-pro",
+      "id": "com.repo.xarold.com.swipeselection-pro",
       "name": "SwipeSelection Pro",
       "latest": "1.0.3-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.iky1e.swipeselection-pro/",
+      "repository": "Xarold Repository",
+      "url": "http://repo.xarold.com/",
       "shortDescription": "Swipe along the keyboard to move cursor & select text.",
       "category": "Tweaks",
       "author": "iKy1e (Kyle Howells)",
-      "commercial": true,
+      "commercial": false,
       "versions": [
         {
           "tweakVersion": "1.0.3-1",
           "iOSVersion": "10.2",
-          "repository": "BigBoss",
+          "repository": "Xarold Repository",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -14842,20 +14862,20 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.swipeselection-pro",
+      "id": "com.iky1e.swipeselection-pro",
       "name": "SwipeSelection Pro",
       "latest": "1.0.3-1",
-      "repository": "Xarold Repository",
-      "url": "http://repo.xarold.com/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.iky1e.swipeselection-pro/",
       "shortDescription": "Swipe along the keyboard to move cursor & select text.",
       "category": "Tweaks",
       "author": "iKy1e (Kyle Howells)",
-      "commercial": false,
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "1.0.3-1",
           "iOSVersion": "10.2",
-          "repository": "Xarold Repository",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -14907,38 +14927,6 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.switchercontrols",
-      "name": "SwitcherControls",
-      "latest": "1.0-7",
-      "repository": "Xarold Repository",
-      "url": "https://repo.xarold.com/",
-      "shortDescription": "MultiCenter for iOS 10.",
-      "category": "Tweaks",
-      "author": "DGh0st",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.0-7",
-          "iOSVersion": "10.2",
-          "repository": "Xarold Repository",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.thebigboss.switchercontrols",
       "name": "SwitcherControls",
       "latest": "1.0-7",
@@ -14959,6 +14947,38 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.repo.xarold.com.switchercontrols",
+      "name": "SwitcherControls",
+      "latest": "1.0-7",
+      "repository": "Xarold Repository",
+      "url": "https://repo.xarold.com/",
+      "shortDescription": "MultiCenter for iOS 10.",
+      "category": "Tweaks",
+      "author": "DGh0st",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0-7",
+          "iOSVersion": "10.2",
+          "repository": "Xarold Repository",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -16279,7 +16299,7 @@
     {
       "id": "com.fouadraheb.watusi",
       "name": "Watusi 2 for WhatsApp",
-      "latest": "1.0.44",
+      "latest": "1.0.45",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.fouadraheb.watusi/",
       "shortDescription": "The all-in-one tweak for WhatsApp Messenger",
