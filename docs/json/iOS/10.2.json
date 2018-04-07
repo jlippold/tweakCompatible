@@ -1602,38 +1602,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.automa",
-      "name": "Automa",
-      "latest": "1.0.5-1k",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "remembers popup alert choices",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.0.5-1k",
-          "iOSVersion": "10.2",
-          "repository": "repo.biteyourapple.net",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.thebigboss.automa",
       "name": "Automa",
       "latest": "1.0.5-1",
@@ -1652,6 +1620,38 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.automa",
+      "name": "Automa",
+      "latest": "1.0.5-1k",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "remembers popup alert choices",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0.5-1k",
+          "iOSVersion": "10.2",
+          "repository": "repo.biteyourapple.net",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -3388,20 +3388,22 @@
       ]
     },
     {
-      "id": "org.thebigboss.colorbadges",
+      "id": "com.hackyouriphone.colorbadges",
       "name": "ColorBadges",
-      "latest": "1.2.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.colorbadges/",
+      "latest": "1.2.0",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.colorbadges/",
       "shortDescription": "Colorize your badges",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "David Goldman",
-      "commercial": true,
+      "commercial": false,
+      "date": "2018-03-17T12:50:00Z",
       "versions": [
         {
-          "tweakVersion": "1.1.3",
+          "tweakVersion": "1.2.0",
           "iOSVersion": "10.2",
-          "repository": "BigBoss",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-17T12:50:00Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3420,22 +3422,20 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.colorbadges",
+      "id": "org.thebigboss.colorbadges",
       "name": "ColorBadges",
-      "latest": "1.2.0",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.colorbadges/",
+      "latest": "1.2.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.colorbadges/",
       "shortDescription": "Colorize your badges",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "David Goldman",
-      "commercial": false,
-      "date": "2018-03-17T12:50:00Z",
+      "commercial": true,
       "versions": [
         {
-          "tweakVersion": "1.2.0",
+          "tweakVersion": "1.1.3",
           "iOSVersion": "10.2",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-17T12:50:00Z",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9650,11 +9650,11 @@
       ]
     },
     {
-      "id": "com.hackingdartmouth.mercury",
+      "id": "com.repo.xarold.com.mercury",
       "name": "Mercury",
-      "latest": "1.3.0",
-      "repository": "Alex Beals",
-      "url": "https://cydia.alexbeals.com/",
+      "latest": "1.2.0-1",
+      "repository": "Xarold Repository",
+      "url": "https://repo.xarold.com/",
       "shortDescription": "A tweak to add a \"not-responded\" indicator to Messages.",
       "category": "Tweaks",
       "author": "Alex Beals",
@@ -9663,7 +9663,7 @@
         {
           "tweakVersion": "1.2.0-1",
           "iOSVersion": "10.2",
-          "repository": "Alex Beals",
+          "repository": "Xarold Repository",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9682,11 +9682,11 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.mercury",
+      "id": "com.hackingdartmouth.mercury",
       "name": "Mercury",
-      "latest": "1.2.0-1",
-      "repository": "Xarold Repository",
-      "url": "https://repo.xarold.com/",
+      "latest": "1.3.0",
+      "repository": "Alex Beals",
+      "url": "https://cydia.alexbeals.com/",
       "shortDescription": "A tweak to add a \"not-responded\" indicator to Messages.",
       "category": "Tweaks",
       "author": "Alex Beals",
@@ -9695,7 +9695,7 @@
         {
           "tweakVersion": "1.2.0-1",
           "iOSVersion": "10.2",
-          "repository": "Xarold Repository",
+          "repository": "Alex Beals",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -12526,6 +12526,38 @@
       ]
     },
     {
+      "id": "com.a3tweaks.polus",
+      "name": "Polus",
+      "latest": "2.2.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.a3tweaks.polus/",
+      "shortDescription": "Control Center launcher for apps & actions",
+      "category": "Tweaks",
+      "author": "A3tweaks",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "2.2.1",
+          "iOSVersion": "10.2",
+          "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 3,
+            "bad": 0,
+            "total": 3,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "repo.biteyourapple.net.polus",
       "name": "Polus",
       "latest": "2.2.1",
@@ -12548,38 +12580,6 @@
             "good": 1,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.a3tweaks.polus",
-      "name": "Polus",
-      "latest": "2.2.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.a3tweaks.polus/",
-      "shortDescription": "Control Center launcher for apps & actions",
-      "category": "Tweaks",
-      "author": "A3tweaks",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "2.2.1",
-          "iOSVersion": "10.2",
-          "repository": "BigBoss",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 3,
-            "bad": 0,
-            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -13947,6 +13947,40 @@
       ]
     },
     {
+      "id": "com.jontelang.snapper",
+      "name": "Snapper",
+      "latest": "1.3-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.jontelang.snapper/",
+      "shortDescription": "Pin screenshots on the screen.",
+      "category": "Tweaks",
+      "author": "Jonathan Winger Lang",
+      "commercial": true,
+      "date": "2018-04-07T08:11:27Z",
+      "versions": [
+        {
+          "tweakVersion": "1.3-1",
+          "iOSVersion": "10.2",
+          "repository": "BigBoss",
+          "date": "2018-04-07T08:11:27Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.jontelang.snapper2",
       "name": "Snapper 2",
       "latest": "1.3",
@@ -14927,38 +14961,6 @@
       ]
     },
     {
-      "id": "org.thebigboss.switchercontrols",
-      "name": "SwitcherControls",
-      "latest": "1.0-7",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.switchercontrols/",
-      "shortDescription": "MultiCenter for iOS 10.",
-      "category": "Tweaks",
-      "author": "DGh0st",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "1.0-7",
-          "iOSVersion": "10.2",
-          "repository": "BigBoss",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.repo.xarold.com.switchercontrols",
       "name": "SwitcherControls",
       "latest": "1.0-7",
@@ -14979,6 +14981,38 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.thebigboss.switchercontrols",
+      "name": "SwitcherControls",
+      "latest": "1.0-7",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.switchercontrols/",
+      "shortDescription": "MultiCenter for iOS 10.",
+      "category": "Tweaks",
+      "author": "DGh0st",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "1.0-7",
+          "iOSVersion": "10.2",
+          "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
