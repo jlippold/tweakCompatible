@@ -2028,7 +2028,7 @@
     {
       "id": "me.alfhaily.cercube",
       "name": "Cercube for YouTube",
-      "latest": "4.2.2.1",
+      "latest": "4.2.2.2",
       "repository": "Alfhaily APT",
       "url": "https://apt.alfhaily.me/",
       "shortDescription": "Download YouTube videos and more!",
@@ -2100,6 +2100,26 @@
           "iOSVersion": "10.1.1",
           "repository": "Alfhaily APT",
           "date": "2018-04-07T06:34:17Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "4.2.2.2",
+          "iOSVersion": "10.1.1",
+          "repository": "Alfhaily APT",
+          "date": "2018-04-08T17:28:21Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2216,7 +2236,7 @@
     {
       "id": "org.thebigboss.colorbadges",
       "name": "ColorBadges",
-      "latest": "1.2.1",
+      "latest": "1.2.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.colorbadges/",
       "shortDescription": "Colorize your badges",
@@ -2781,10 +2801,10 @@
     {
       "id": "mobilesubstrate",
       "name": "Cydia Substrate",
-      "latest": "0.9.6301",
+      "latest": "99.0",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/mobilesubstrate/",
-      "shortDescription": "powerful code insertion platform",
+      "shortDescription": "Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute",
       "category": "System",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -3071,7 +3091,7 @@
     {
       "id": "com.cydiageek.denyphotoalbums",
       "name": "DenyPhotoAlbums",
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.cydiageek.denyphotoalbums/",
       "shortDescription": "Hide Needless Photo Albums & More!",
@@ -3831,7 +3851,7 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.1-1",
+      "latest": "3.5.1-9",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
       "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
@@ -8982,10 +9002,10 @@
     {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "2.0.0-1010+debug",
+      "latest": "1.2.1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
-      "shortDescription": "System information Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
+      "shortDescription": "Device info added to General > About",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
@@ -9655,6 +9675,40 @@
       ]
     },
     {
+      "id": "com.hackyouriphone.uasharedtools",
+      "name": "uasharedtools",
+      "latest": "2.2r-31",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.uasharedtools/",
+      "shortDescription": "shared tools for unlimapps tweaks",
+      "category": "HYI - Tweaks",
+      "author": "UnlimApps Inc.",
+      "commercial": false,
+      "date": "2018-03-19T17:31:12Z",
+      "versions": [
+        {
+          "tweakVersion": "2.2r-31",
+          "iOSVersion": "10.1.1",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-19T17:31:12Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.unlimapps.uasharedtools",
       "name": "uasharedtools",
       "latest": "2.2r-31",
@@ -9689,40 +9743,6 @@
           "iOSVersion": "10.1.1",
           "repository": "beta.unlimapps.com",
           "date": "2018-03-23T00:44:49Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.hackyouriphone.uasharedtools",
-      "name": "uasharedtools",
-      "latest": "2.2r-31",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.uasharedtools/",
-      "shortDescription": "shared tools for unlimapps tweaks",
-      "category": "HYI - Tweaks",
-      "author": "UnlimApps Inc.",
-      "commercial": false,
-      "date": "2018-03-19T17:31:12Z",
-      "versions": [
-        {
-          "tweakVersion": "2.2r-31",
-          "iOSVersion": "10.1.1",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-19T17:31:12Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
