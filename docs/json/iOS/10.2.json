@@ -250,7 +250,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.13~beta1",
+      "latest": "1.9.12",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -939,20 +939,22 @@
       ]
     },
     {
-      "id": "com.iphonecake.appcake2",
+      "id": "com.hackyouriphone.appcake2",
       "name": "AppCake",
       "latest": "5.5.7.2",
-      "repository": "AppCake",
-      "url": "http://iphonecake.com/forum/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.appcake2/",
       "shortDescription": "The new AppCake 5.5.7.2! Introducing Direct Download/Install!  Require AppSync to be installed ***",
-      "category": "Utilities",
+      "category": "HYI - Applications",
       "author": "Mickael liang",
       "commercial": false,
+      "date": "2018-03-26T07:58:39Z",
       "versions": [
         {
-          "tweakVersion": "5.5.5.0",
+          "tweakVersion": "5.5.7.2",
           "iOSVersion": "10.2",
-          "repository": "AppCake",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-26T07:58:39Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -971,22 +973,20 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.appcake2",
+      "id": "com.iphonecake.appcake2",
       "name": "AppCake",
       "latest": "5.5.7.2",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.appcake2/",
+      "repository": "AppCake",
+      "url": "http://iphonecake.com/forum/",
       "shortDescription": "The new AppCake 5.5.7.2! Introducing Direct Download/Install!  Require AppSync to be installed ***",
-      "category": "HYI - Applications",
+      "category": "Utilities",
       "author": "Mickael liang",
       "commercial": false,
-      "date": "2018-03-26T07:58:39Z",
       "versions": [
         {
-          "tweakVersion": "5.5.7.2",
+          "tweakVersion": "5.5.5.0",
           "iOSVersion": "10.2",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-26T07:58:39Z",
+          "repository": "AppCake",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1622,38 +1622,6 @@
       ]
     },
     {
-      "id": "org.thebigboss.automa",
-      "name": "Automa",
-      "latest": "1.0.5-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.automa/",
-      "shortDescription": "remembers popup alert choices",
-      "category": "Tweaks",
-      "author": "pNre",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "1.0.5-1",
-          "iOSVersion": "10.2",
-          "repository": "BigBoss",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "repo.biteyourapple.net.automa",
       "name": "Automa",
       "latest": "1.0.5-1k",
@@ -1672,6 +1640,38 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.thebigboss.automa",
+      "name": "Automa",
+      "latest": "1.0.5-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.automa/",
+      "shortDescription": "remembers popup alert choices",
+      "category": "Tweaks",
+      "author": "pNre",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "1.0.5-1",
+          "iOSVersion": "10.2",
+          "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -3475,22 +3475,20 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.colorbadges",
+      "id": "org.thebigboss.colorbadges",
       "name": "ColorBadges",
       "latest": "1.2.0",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.colorbadges/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.colorbadges/",
       "shortDescription": "Colorize your badges",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "David Goldman",
-      "commercial": false,
-      "date": "2018-03-17T12:50:00Z",
+      "commercial": true,
       "versions": [
         {
-          "tweakVersion": "1.2.0",
+          "tweakVersion": "1.1.3",
           "iOSVersion": "10.2",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-17T12:50:00Z",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3509,20 +3507,22 @@
       ]
     },
     {
-      "id": "org.thebigboss.colorbadges",
+      "id": "com.hackyouriphone.colorbadges",
       "name": "ColorBadges",
       "latest": "1.2.0",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.colorbadges/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.colorbadges/",
       "shortDescription": "Colorize your badges",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "David Goldman",
-      "commercial": true,
+      "commercial": false,
+      "date": "2018-03-17T12:50:00Z",
       "versions": [
         {
-          "tweakVersion": "1.1.3",
+          "tweakVersion": "1.2.0",
           "iOSVersion": "10.2",
-          "repository": "BigBoss",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-17T12:50:00Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6295,6 +6295,40 @@
       ]
     },
     {
+      "id": "com.joshuaseltzer.flixenhancer",
+      "name": "FlixEnhancer for Netflix",
+      "latest": "1.5.1",
+      "repository": "apt.thebigboss.org",
+      "url": "http://cydia.saurik.com/package/com.joshuaseltzer.flixenhancer/",
+      "shortDescription": "Adds many features to the Netflix iOS application",
+      "category": "Tweaks",
+      "author": "Joshua Seltzer",
+      "commercial": true,
+      "date": "2018-04-07T16:19:36Z",
+      "versions": [
+        {
+          "tweakVersion": "1.5.1",
+          "iOSVersion": "10.2",
+          "repository": "BigBoss",
+          "date": "2018-04-15T23:52:47Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.julioverne.fmydblocker",
       "name": "fmydBlocker",
       "latest": "0.0~beta1",
@@ -7014,9 +7048,41 @@
       ]
     },
     {
+      "id": "repo.biteyourapple.net.hidemex10",
+      "name": "HideMeX (iOS 10)",
+      "latest": "1.1k",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "The Ultimate iOS Customizing Experience",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.1k",
+          "iOSVersion": "10.2",
+          "repository": "BiteYourApple",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.cpdigitaldarkroom.hidemex10",
       "name": "HideMeX (iOS 10)",
-      "latest": "1.1.3",
+      "latest": "1.1-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.cpdigitaldarkroom.hidemex10/",
       "shortDescription": "The Ultimate iOS Customizing Experience",
@@ -7068,38 +7134,6 @@
           "iOSVersion": "10.2",
           "repository": "CP Digital Darkroom Repo",
           "date": "2018-03-04T20:51:50Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "repo.biteyourapple.net.hidemex10",
-      "name": "HideMeX (iOS 10)",
-      "latest": "1.1k",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "The Ultimate iOS Customizing Experience",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.1k",
-          "iOSVersion": "10.2",
-          "repository": "BiteYourApple",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7464,6 +7498,38 @@
       ]
     },
     {
+      "id": "com.repo.xarold.com.icleanerpro",
+      "name": "iCleaner Pro",
+      "latest": "7.7.0",
+      "repository": "Xarold Repository",
+      "url": "http://repo.xarold.com/",
+      "shortDescription": "The first real iOS system cleaner & optimizer",
+      "category": "Utilities",
+      "author": "Ivano Bilenchi",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "7.6.1~beta1k2",
+          "iOSVersion": "10.2",
+          "repository": "Xarold Repository",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
       "latest": "7.6.4",
@@ -7537,38 +7603,6 @@
           "iOSVersion": "10.2",
           "repository": "Ivano Bilenchi's Repo",
           "date": "2018-04-08T18:20:56Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.repo.xarold.com.icleanerpro",
-      "name": "iCleaner Pro",
-      "latest": "7.7.0",
-      "repository": "Xarold Repository",
-      "url": "http://repo.xarold.com/",
-      "shortDescription": "The first real iOS system cleaner & optimizer",
-      "category": "Utilities",
-      "author": "Ivano Bilenchi",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "7.6.1~beta1k2",
-          "iOSVersion": "10.2",
-          "repository": "Xarold Repository",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9897,11 +9931,11 @@
       ]
     },
     {
-      "id": "com.hackingdartmouth.mercury",
+      "id": "com.repo.xarold.com.mercury",
       "name": "Mercury",
-      "latest": "1.3.0",
-      "repository": "Alex Beals",
-      "url": "https://cydia.alexbeals.com/",
+      "latest": "1.2.0-1",
+      "repository": "Xarold Repository",
+      "url": "https://repo.xarold.com/",
       "shortDescription": "A tweak to add a \"not-responded\" indicator to Messages.",
       "category": "Tweaks",
       "author": "Alex Beals",
@@ -9910,7 +9944,7 @@
         {
           "tweakVersion": "1.2.0-1",
           "iOSVersion": "10.2",
-          "repository": "Alex Beals",
+          "repository": "Xarold Repository",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9929,11 +9963,11 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.mercury",
+      "id": "com.hackingdartmouth.mercury",
       "name": "Mercury",
-      "latest": "1.2.0-1",
-      "repository": "Xarold Repository",
-      "url": "https://repo.xarold.com/",
+      "latest": "1.3.0",
+      "repository": "Alex Beals",
+      "url": "https://cydia.alexbeals.com/",
       "shortDescription": "A tweak to add a \"not-responded\" indicator to Messages.",
       "category": "Tweaks",
       "author": "Alex Beals",
@@ -9942,7 +9976,7 @@
         {
           "tweakVersion": "1.2.0-1",
           "iOSVersion": "10.2",
-          "repository": "Xarold Repository",
+          "repository": "Alex Beals",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -12354,6 +12388,39 @@
       ]
     },
     {
+      "id": "com.creatix.peek-a-boo",
+      "name": "Peek-a-Boo",
+      "latest": "4.0.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.creatix.peek-a-boo/",
+      "shortDescription": "Peek and Pop on older devices!",
+      "category": "Tweaks",
+      "author": "Creatix",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "10.0.2",
+          "iOSVersion": "10.2",
+          "repository": "(null)",
+          "date": "2018-03-04T20:59:55Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.hackyouriphone.peek-a-boo",
       "name": "Peek-a-Boo",
       "latest": "11.0.2",
@@ -12374,39 +12441,6 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.creatix.peek-a-boo",
-      "name": "Peek-a-Boo",
-      "latest": "4.0.0",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.creatix.peek-a-boo/",
-      "shortDescription": "Peek and Pop on older devices!",
-      "category": "Tweaks",
-      "author": "Creatix",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "10.0.2",
-          "iOSVersion": "10.2",
-          "repository": "(null)",
-          "date": "2018-03-04T20:59:55Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -14063,10 +14097,10 @@
     {
       "id": "com.smokin1337.smartlpm",
       "name": "SmartLPM",
-      "latest": "1.1.0",
+      "latest": "1.1.2",
       "repository": "smokin1337's Repo",
       "url": "http://cydia.saurik.com/package/com.smokin1337.smartlpm/",
-      "shortDescription": "A smarter low power mode. Turn low power mode on automatically at the battery level you specify. Enable low power while charging. Version 1.1.0: Removed low power on lock for now, was causing problems.",
+      "shortDescription": "A smarter low power mode. Low power while device is locked. Turn low power mode on automatically at the battery level you specify. Enable low power while charging.",
       "category": "Tweaks",
       "author": "smokin1337",
       "commercial": false,
@@ -15179,20 +15213,20 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.swipeselection-pro",
+      "id": "com.iky1e.swipeselection-pro",
       "name": "SwipeSelection Pro",
       "latest": "1.0.3-1",
-      "repository": "Xarold Repository",
-      "url": "http://repo.xarold.com/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.iky1e.swipeselection-pro/",
       "shortDescription": "Swipe along the keyboard to move cursor & select text.",
       "category": "Tweaks",
       "author": "iKy1e (Kyle Howells)",
-      "commercial": false,
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "1.0.3-1",
           "iOSVersion": "10.2",
-          "repository": "Xarold Repository",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -15211,20 +15245,20 @@
       ]
     },
     {
-      "id": "com.iky1e.swipeselection-pro",
+      "id": "com.repo.xarold.com.swipeselection-pro",
       "name": "SwipeSelection Pro",
       "latest": "1.0.3-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.iky1e.swipeselection-pro/",
+      "repository": "Xarold Repository",
+      "url": "http://repo.xarold.com/",
       "shortDescription": "Swipe along the keyboard to move cursor & select text.",
       "category": "Tweaks",
       "author": "iKy1e (Kyle Howells)",
-      "commercial": true,
+      "commercial": false,
       "versions": [
         {
           "tweakVersion": "1.0.3-1",
           "iOSVersion": "10.2",
-          "repository": "BigBoss",
+          "repository": "Xarold Repository",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -15410,10 +15444,10 @@
     {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "2.0.0-1216+debug",
+      "latest": "1.2.1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
-      "shortDescription": "System information Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
+      "shortDescription": "Device info added to General > About",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
@@ -15806,10 +15840,10 @@
     {
       "id": "applebetas.ios.tweak.translucentmessages",
       "name": "TranslucentMessages",
-      "latest": "1.1-Beta2",
+      "latest": "1.0.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/applebetas.ios.tweak.translucentmessages/",
-      "shortDescription": "Adds a beautiful blurred effect to your messages app and more, letting you see your wallpaper through them.",
+      "shortDescription": "beautiful blurred effect for Messages app",
       "category": "Tweaks",
       "author": "AppleBetas",
       "commercial": false,
