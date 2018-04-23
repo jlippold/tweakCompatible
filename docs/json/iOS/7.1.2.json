@@ -840,10 +840,10 @@
     {
       "id": "crash-reporter",
       "name": "CrashReporter",
-      "latest": "2.0.0-1",
+      "latest": "1.16.0-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/crash-reporter/",
-      "shortDescription": "Send useful crash info to developers in iOS 11.x.",
+      "shortDescription": "Send useful crash info to developers.",
       "category": "System",
       "author": "Lance Fetters (ashikase)",
       "commercial": false,
@@ -853,6 +853,26 @@
           "iOSVersion": "7.1.2",
           "repository": "BigBoss",
           "date": "2018-04-14T23:46:37Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.16.0-1",
+          "iOSVersion": "7.1.2",
+          "repository": "BigBoss",
+          "date": "2018-04-23T20:14:53Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1175,7 +1195,7 @@
     {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
-      "latest": "7.6.4",
+      "latest": "7.7.0",
       "repository": "Karen's Repo",
       "url": "http://ib-soft.net/icleaner",
       "shortDescription": "The first real iOS system cleaner & optimizer",
@@ -1211,7 +1231,7 @@
       "latest": "1.0.2",
       "repository": "Karen's Repo",
       "url": "https://cydia.angelxwind.net/",
-      "shortDescription": "A development library that allows developers to add localization support to their tweaks.",
+      "shortDescription": "library for developer localization",
       "category": "Development",
       "author": "Karen／明美 (angelXwind)",
       "commercial": false,
@@ -1244,7 +1264,7 @@
       "latest": "1.2",
       "repository": "Karen's Repo",
       "url": "https://cydia.angelxwind.net/",
-      "shortDescription": "A development library that provides various conveniences and enhancements for developers seeking to write preference bundles for their tweaks.",
+      "shortDescription": "library for developer preference bundles",
       "category": "Tweaks",
       "author": "Karen／明美 (angelXwind)",
       "commercial": false,
@@ -1944,10 +1964,10 @@
     {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "1.2.1",
+      "latest": "2.0.0-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
-      "shortDescription": "Device info added to General > About",
+      "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
