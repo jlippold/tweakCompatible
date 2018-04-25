@@ -2007,7 +2007,7 @@
     {
       "id": "com.dgh0st.batterybar",
       "name": "BatteryBar",
-      "latest": "0.0.2",
+      "latest": "0.0.3-2",
       "repository": "DGh0st",
       "url": "http://cydia.saurik.com/package/com.dgh0st.batterybar/",
       "shortDescription": "Display a bar that represents the battery percentage in the status bar.",
@@ -2021,6 +2021,26 @@
           "iOSVersion": "10.2",
           "repository": "BigBoss",
           "date": "2018-04-08T03:47:19Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "0.0.3-2",
+          "iOSVersion": "10.2",
+          "repository": "BigBoss",
+          "date": "2018-04-25T12:49:36Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7240,20 +7260,22 @@
       ]
     },
     {
-      "id": "com.julioverne.goodwifi",
+      "id": "com.repo.xarold.com.goodwifi",
       "name": "GoodWiFi",
       "latest": "0.0~beta3a",
-      "repository": "julioverne's Repo",
-      "url": "http://twitter.com/ijulioverne",
+      "repository": "Xarold Repo",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.goodwifi/",
       "shortDescription": "Better WiFi Preferences",
       "category": "Tweaks",
       "author": "julioverne",
       "commercial": false,
+      "date": "2018-04-24T13:16:04Z",
       "versions": [
         {
           "tweakVersion": "0.0~beta3a",
           "iOSVersion": "10.2",
-          "repository": "julioverne's Repo",
+          "repository": "Xarold Repo",
+          "date": "2018-04-24T13:16:04Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7272,22 +7294,20 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.goodwifi",
+      "id": "com.julioverne.goodwifi",
       "name": "GoodWiFi",
       "latest": "0.0~beta3a",
-      "repository": "Xarold Repo",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.goodwifi/",
+      "repository": "julioverne's Repo",
+      "url": "http://twitter.com/ijulioverne",
       "shortDescription": "Better WiFi Preferences",
       "category": "Tweaks",
       "author": "julioverne",
       "commercial": false,
-      "date": "2018-04-24T13:16:04Z",
       "versions": [
         {
           "tweakVersion": "0.0~beta3a",
           "iOSVersion": "10.2",
-          "repository": "Xarold Repo",
-          "date": "2018-04-24T13:16:04Z",
+          "repository": "julioverne's Repo",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7406,38 +7426,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.hidemex10",
-      "name": "HideMeX (iOS 10)",
-      "latest": "1.1k",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "The Ultimate iOS Customizing Experience",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.1k",
-          "iOSVersion": "10.2",
-          "repository": "BiteYourApple",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.cpdigitaldarkroom.hidemex10",
       "name": "HideMeX (iOS 10)",
       "latest": "1.1-1",
@@ -7492,6 +7480,38 @@
           "iOSVersion": "10.2",
           "repository": "CP Digital Darkroom Repo",
           "date": "2018-03-04T20:51:50Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.hidemex10",
+      "name": "HideMeX (iOS 10)",
+      "latest": "1.1k",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "The Ultimate iOS Customizing Experience",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.1k",
+          "iOSVersion": "10.2",
+          "repository": "BiteYourApple",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7856,38 +7876,6 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.icleanerpro",
-      "name": "iCleaner Pro",
-      "latest": "7.7.0k",
-      "repository": "Xarold Repository",
-      "url": "http://repo.xarold.com/",
-      "shortDescription": "The first real iOS system cleaner & optimizer",
-      "category": "Utilities",
-      "author": "Ivano Bilenchi",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "7.6.1~beta1k2",
-          "iOSVersion": "10.2",
-          "repository": "Xarold Repository",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
       "latest": "7.7.0",
@@ -7961,6 +7949,38 @@
           "iOSVersion": "10.2",
           "repository": "Ivano Bilenchi's Repo",
           "date": "2018-04-08T18:20:56Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.repo.xarold.com.icleanerpro",
+      "name": "iCleaner Pro",
+      "latest": "7.7.0k",
+      "repository": "Xarold Repository",
+      "url": "http://repo.xarold.com/",
+      "shortDescription": "The first real iOS system cleaner & optimizer",
+      "category": "Utilities",
+      "author": "Ivano Bilenchi",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "7.6.1~beta1k2",
+          "iOSVersion": "10.2",
+          "repository": "Xarold Repository",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -12887,39 +12907,6 @@
       ]
     },
     {
-      "id": "com.creatix.peek-a-boo",
-      "name": "Peek-a-Boo",
-      "latest": "4.0.0",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.creatix.peek-a-boo/",
-      "shortDescription": "Peek and Pop on older devices!",
-      "category": "Tweaks",
-      "author": "Creatix",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "10.0.2",
-          "iOSVersion": "10.2",
-          "repository": "(null)",
-          "date": "2018-03-04T20:59:55Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.hackyouriphone.peek-a-boo",
       "name": "Peek-a-Boo",
       "latest": "11.0.2",
@@ -12940,6 +12927,39 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.creatix.peek-a-boo",
+      "name": "Peek-a-Boo",
+      "latest": "4.0.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.creatix.peek-a-boo/",
+      "shortDescription": "Peek and Pop on older devices!",
+      "category": "Tweaks",
+      "author": "Creatix",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "10.0.2",
+          "iOSVersion": "10.2",
+          "repository": "(null)",
+          "date": "2018-03-04T20:59:55Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -15863,38 +15883,6 @@
       ]
     },
     {
-      "id": "org.thebigboss.switchercontrols",
-      "name": "SwitcherControls",
-      "latest": "1.0-7",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.switchercontrols/",
-      "shortDescription": "MultiCenter for iOS 10.",
-      "category": "Tweaks",
-      "author": "DGh0st",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "1.0-7",
-          "iOSVersion": "10.2",
-          "repository": "BigBoss",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.repo.xarold.com.switchercontrols",
       "name": "SwitcherControls",
       "latest": "1.0-7",
@@ -15915,6 +15903,38 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.thebigboss.switchercontrols",
+      "name": "SwitcherControls",
+      "latest": "1.0-7",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.switchercontrols/",
+      "shortDescription": "MultiCenter for iOS 10.",
+      "category": "Tweaks",
+      "author": "DGh0st",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "1.0-7",
+          "iOSVersion": "10.2",
+          "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -15963,10 +15983,10 @@
     {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "2.0.0-1",
+      "latest": "2.1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
-      "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
+      "shortDescription": "Device info added to General > About",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
