@@ -1,7 +1,7 @@
 {
   "id": "com.ioscreatix.sugarcane",
   "name": "SugarCane",
-  "latest": "1.0.0",
+  "latest": "1.0.0-1+debug",
   "repository": "iOS Creatix",
   "url": "http://cydia.saurik.com/package/com.ioscreatix.sugarcane/",
   "shortDescription": "Get percentages for the sliders in the Control Center on iOS 11",
@@ -427,11 +427,11 @@
       "repository": "Stable Auxilium Repo",
       "date": "2018-04-18T18:47:37Z",
       "outcome": {
-        "calculatedStatus": "Working",
-        "percentage": 100,
+        "calculatedStatus": "Likely working",
+        "percentage": 50,
         "good": 1,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -448,6 +448,15 @@
           "date": "2018-04-18T18:47:37Z",
           "userName": "MrCylops",
           "issueNumber": 10270,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone7,1",
+          "issues": "Percentages don’t show on 6+",
+          "date": "2018-05-02T12:14:16Z",
+          "userName": "TheExo27",
+          "issueNumber": 11170,
           "arch32": false
         }
       ]
