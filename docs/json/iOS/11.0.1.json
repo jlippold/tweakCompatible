@@ -806,7 +806,7 @@
     {
       "id": "bash",
       "name": "Bourne-Again SHell",
-      "latest": "4.4-1",
+      "latest": "4.0.44-16",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/bash/",
       "shortDescription": "the best shell ever written by Brian Fox",
@@ -840,7 +840,7 @@
     {
       "id": "bzip2",
       "name": "bzip2",
-      "latest": "1.0.6",
+      "latest": "1.0.5-8",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/bzip2/",
       "shortDescription": "compression that's slightly better than gzip",
@@ -1144,10 +1144,10 @@
     {
       "id": "crash-reporter",
       "name": "CrashReporter",
-      "latest": "2.0.0-1",
+      "latest": "1.16.0-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/crash-reporter/",
-      "shortDescription": "Send useful crash info to developers in iOS 11.x.",
+      "shortDescription": "Send useful crash info to developers.",
       "category": "System",
       "author": "Lance Fetters (ashikase)",
       "commercial": false,
@@ -1395,6 +1395,39 @@
       ]
     },
     {
+      "id": "com.thecomputerwhisperer.detailedcellularusage",
+      "name": "DetailedCellularUsage",
+      "latest": "2.1.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.thecomputerwhisperer.detailedcellularusage/",
+      "shortDescription": "Discover HIDDEN cellular data usage from system apps/processes. Control cell data access to internal services.",
+      "category": "Tweaks",
+      "author": "TheComputerWhisperer",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.1.1",
+          "iOSVersion": "11.0.1",
+          "repository": "BigBoss",
+          "date": "2018-02-28T09:21:51Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.hackyouriphone.detailedcellularusage",
       "name": "DetailedCellularUsage",
       "latest": "2.0.4.1b",
@@ -1417,39 +1450,6 @@
             "good": 1,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.thecomputerwhisperer.detailedcellularusage",
-      "name": "DetailedCellularUsage",
-      "latest": "2.1.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.thecomputerwhisperer.detailedcellularusage/",
-      "shortDescription": "Discover HIDDEN cellular data usage from system apps/processes. Control cell data access to internal services.",
-      "category": "Tweaks",
-      "author": "TheComputerWhisperer",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.1.1",
-          "iOSVersion": "11.0.1",
-          "repository": "BigBoss",
-          "date": "2018-02-28T09:21:51Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -1859,7 +1859,7 @@
     {
       "id": "findutils",
       "name": "Find Utilities",
-      "latest": "4.6",
+      "latest": "4.2.33-7",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/findutils/",
       "shortDescription": "indexes and searches filesystems",
@@ -2959,39 +2959,6 @@
       ]
     },
     {
-      "id": "ws.hbang.newterm2",
-      "name": "NewTerm 2",
-      "latest": "2.0~beta3",
-      "repository": "cydia.hbang.ws",
-      "url": "https://cydia.hbang.ws/",
-      "shortDescription": "A powerful terminal emulator for iOS",
-      "category": "Terminal Support",
-      "author": "HASHBANG Productions",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0~beta3",
-          "iOSVersion": "11.0.1",
-          "repository": "HASHBANG Productions",
-          "date": "2018-02-28T11:03:57Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.hackyouriphone.newterm2",
       "name": "NewTerm 2",
       "latest": "2.0~beta3",
@@ -3014,6 +2981,39 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ws.hbang.newterm2",
+      "name": "NewTerm 2",
+      "latest": "2.0~beta3",
+      "repository": "cydia.hbang.ws",
+      "url": "https://cydia.hbang.ws/",
+      "shortDescription": "A powerful terminal emulator for iOS",
+      "category": "Terminal Support",
+      "author": "HASHBANG Productions",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0~beta3",
+          "iOSVersion": "11.0.1",
+          "repository": "HASHBANG Productions",
+          "date": "2018-02-28T11:03:57Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -3750,7 +3750,7 @@
     {
       "id": "com.ioscreatix.silo",
       "name": "Silo",
-      "latest": "1.0.1-3+debug",
+      "latest": "1.0.0-4+debug",
       "repository": "iOS Creatix",
       "url": "http://cydia.saurik.com/package/com.ioscreatix.silo/",
       "shortDescription": "Allows Reordering of all the CC Modules and for Developers to add their own",
