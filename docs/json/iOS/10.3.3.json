@@ -981,6 +981,38 @@
       ]
     },
     {
+      "id": "vn.gsm.uaupdatetools",
+      "name": "App Admin",
+      "latest": "1.0r-71",
+      "repository": "Cydia.vn",
+      "url": "http://cydia.vn/",
+      "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
+      "category": "!CydiaVn-Tools",
+      "author": "Enea Gjoka",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0r-71",
+          "iOSVersion": "10.3.3",
+          "repository": "Cydia.vn",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.repo.xarold.com.uaupdatetools",
       "name": "App Admin",
       "latest": "1.0r-71",
@@ -1009,38 +1041,6 @@
               "bad": 0,
               "percentage": 0,
               "calculatedStatus": "Not working"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "vn.gsm.uaupdatetools",
-      "name": "App Admin",
-      "latest": "1.0r-71",
-      "repository": "Cydia.vn",
-      "url": "http://cydia.vn/",
-      "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
-      "category": "!CydiaVn-Tools",
-      "author": "Enea Gjoka",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.0r-71",
-          "iOSVersion": "10.3.3",
-          "repository": "Cydia.vn",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
             }
           }
         }
@@ -1465,22 +1465,21 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.appsyncunified",
+      "id": "net.angelxwind.appsyncunified",
       "name": "AppSync Unified",
       "latest": "9.0",
-      "repository": "Xarold Repo",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.appsyncunified/",
+      "repository": "Karen's Repo",
+      "url": "http://cydia.angelxwind.net/",
       "shortDescription": "Enables the ability to install unsigned/fakesigned iOS applications.",
       "category": "Tweaks",
       "author": "Linus Yang, Karen／明美",
       "commercial": false,
-      "date": "2018-04-06T20:52:25Z",
       "versions": [
         {
           "tweakVersion": "9.0",
           "iOSVersion": "10.3.3",
-          "repository": "Xarold Repo",
-          "date": "2018-04-06T20:52:25Z",
+          "repository": "Karen's Repo",
+          "date": "2018-03-27T20:55:22Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1499,21 +1498,22 @@
       ]
     },
     {
-      "id": "net.angelxwind.appsyncunified",
+      "id": "com.repo.xarold.com.appsyncunified",
       "name": "AppSync Unified",
       "latest": "9.0",
-      "repository": "Karen's Repo",
-      "url": "http://cydia.angelxwind.net/",
+      "repository": "Xarold Repo",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.appsyncunified/",
       "shortDescription": "Enables the ability to install unsigned/fakesigned iOS applications.",
       "category": "Tweaks",
       "author": "Linus Yang, Karen／明美",
       "commercial": false,
+      "date": "2018-04-06T20:52:25Z",
       "versions": [
         {
           "tweakVersion": "9.0",
           "iOSVersion": "10.3.3",
-          "repository": "Karen's Repo",
-          "date": "2018-03-27T20:55:22Z",
+          "repository": "Xarold Repo",
+          "date": "2018-04-06T20:52:25Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1568,7 +1568,7 @@
     {
       "id": "apt7-lib",
       "name": "APT 0.7 Strict (lib)",
-      "latest": "0.7.25.3-17-coolstar",
+      "latest": "0.7.25.3-15",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/apt7-lib/",
       "shortDescription": "the advanced packaging library from Debian",
@@ -2924,39 +2924,6 @@
       ]
     },
     {
-      "id": "com.rpetrich.cask",
-      "name": "Cask",
-      "latest": "0.2",
-      "repository": "rpetrich repo",
-      "url": "http://rpetri.ch/repo/",
-      "shortDescription": "Animated table scrolling inspired by Google Plus",
-      "category": "Tweaks",
-      "author": "Ryan Petrich",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "0.2",
-          "iOSVersion": "10.3.3",
-          "repository": "rpetrich repo",
-          "date": "2018-03-24T01:36:40Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.yourepo.kiiimo.cask",
       "name": "Cask",
       "latest": "0.2",
@@ -3019,6 +2986,39 @@
               "bad": 0,
               "percentage": 100,
               "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.rpetrich.cask",
+      "name": "Cask",
+      "latest": "0.2",
+      "repository": "rpetrich repo",
+      "url": "http://rpetri.ch/repo/",
+      "shortDescription": "Animated table scrolling inspired by Google Plus",
+      "category": "Tweaks",
+      "author": "Ryan Petrich",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.2",
+          "iOSVersion": "10.3.3",
+          "repository": "rpetrich repo",
+          "date": "2018-03-24T01:36:40Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
             }
           }
         }
@@ -3190,20 +3190,20 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.ccrecorder",
+      "id": "io.ijapija00.ccrecorder",
       "name": "CCRecorder (iOS 10)",
-      "latest": "1.0k",
-      "repository": "Xarold Repository",
-      "url": "http://repo.xarold.com/",
-      "shortDescription": "Record Your Screen From The Control Center... Cracked",
+      "latest": "1.0.2.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/io.ijapija00.ccrecorder/",
+      "shortDescription": "Record Your Screen From The Control Center...",
       "category": "Tweaks",
-      "author": "ijapija00",
+      "author": "@ijapija00",
       "commercial": false,
       "versions": [
         {
-          "tweakVersion": "1.0k",
+          "tweakVersion": "1.0.2.2",
           "iOSVersion": "10.3.3",
-          "repository": "Xarold Repository",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3222,20 +3222,20 @@
       ]
     },
     {
-      "id": "io.ijapija00.ccrecorder",
+      "id": "com.repo.xarold.com.ccrecorder",
       "name": "CCRecorder (iOS 10)",
-      "latest": "1.0.2.2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/io.ijapija00.ccrecorder/",
-      "shortDescription": "Record Your Screen From The Control Center...",
+      "latest": "1.0k",
+      "repository": "Xarold Repository",
+      "url": "http://repo.xarold.com/",
+      "shortDescription": "Record Your Screen From The Control Center... Cracked",
       "category": "Tweaks",
-      "author": "@ijapija00",
+      "author": "ijapija00",
       "commercial": false,
       "versions": [
         {
-          "tweakVersion": "1.0.2.2",
+          "tweakVersion": "1.0k",
           "iOSVersion": "10.3.3",
-          "repository": "BigBoss",
+          "repository": "Xarold Repository",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4098,6 +4098,38 @@
       ]
     },
     {
+      "id": "com.repo.xarold.com.controllersforall",
+      "name": "Controllers For All",
+      "latest": "1.7.4-1",
+      "repository": "Xarold Repository",
+      "url": "http://repo.xarold.com/",
+      "shortDescription": "Adds Game Controller support for all",
+      "category": "Tweaks",
+      "author": "Ori Kadosh",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.7.4-1",
+          "iOSVersion": "10.3.3",
+          "repository": "Xarold Repository",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.orikad.controllersforall",
       "name": "Controllers For All",
       "latest": "1.7.4-1",
@@ -4126,38 +4158,6 @@
               "bad": 0,
               "percentage": 100,
               "calculatedStatus": "Working"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.repo.xarold.com.controllersforall",
-      "name": "Controllers For All",
-      "latest": "1.7.4-1",
-      "repository": "Xarold Repository",
-      "url": "http://repo.xarold.com/",
-      "shortDescription": "Adds Game Controller support for all",
-      "category": "Tweaks",
-      "author": "Ori Kadosh",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.7.4-1",
-          "iOSVersion": "10.3.3",
-          "repository": "Xarold Repository",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
             }
           }
         }
@@ -4672,38 +4672,6 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.cydown",
-      "name": "CyDown",
-      "latest": "6.8.8",
-      "repository": "Xarold Repository",
-      "url": "http://repo.xarold.com/",
-      "shortDescription": "Cydia Download Manager & Extra Features!",
-      "category": "Tweaks",
-      "author": "julioverne",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "6.8.8",
-          "iOSVersion": "10.3.3",
-          "repository": "Xarold Repository",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 2,
-              "good": 2,
-              "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.julioverne.cydown",
       "name": "CyDown",
       "latest": "6.8.8",
@@ -4730,6 +4698,38 @@
               "bad": 0,
               "percentage": 0,
               "calculatedStatus": "Not working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.repo.xarold.com.cydown",
+      "name": "CyDown",
+      "latest": "6.8.8",
+      "repository": "Xarold Repository",
+      "url": "http://repo.xarold.com/",
+      "shortDescription": "Cydia Download Manager & Extra Features!",
+      "category": "Tweaks",
+      "author": "julioverne",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "6.8.8",
+          "iOSVersion": "10.3.3",
+          "repository": "Xarold Repository",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
+            "arch32": {
+              "total": 2,
+              "good": 2,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
             }
           }
         }
@@ -4902,10 +4902,10 @@
     {
       "id": "dpkg",
       "name": "Debian Packager",
-      "latest": "1.18.24",
+      "latest": "1.18.10-12",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/dpkg/",
-      "shortDescription": "package maintenance tools from Debian",
+      "shortDescription": "package maintainance tools from Debian",
       "category": "Packaging",
       "author": "(null)",
       "commercial": false,
@@ -5923,22 +5923,21 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.equalizereverywhere",
+      "id": "com.r333d.equalizereverywhere",
       "name": "EqualizerEverywhere",
       "latest": "1.5.9.2",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.equalizereverywhere/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.r333d.equalizereverywhere/",
       "shortDescription": "Equalizer that applies to every app",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "Reed Weichler",
-      "commercial": false,
-      "date": "2018-04-14T02:11:52Z",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "1.5.9.2",
           "iOSVersion": "10.3.3",
-          "repository": "HackYouriPhone",
-          "date": "2018-04-14T02:11:52Z",
+          "repository": "BigBoss",
+          "date": "2018-03-03T20:47:37Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5957,21 +5956,22 @@
       ]
     },
     {
-      "id": "com.r333d.equalizereverywhere",
+      "id": "com.hackyouriphone.equalizereverywhere",
       "name": "EqualizerEverywhere",
       "latest": "1.5.9.2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.r333d.equalizereverywhere/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.equalizereverywhere/",
       "shortDescription": "Equalizer that applies to every app",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "Reed Weichler",
-      "commercial": true,
+      "commercial": false,
+      "date": "2018-04-14T02:11:52Z",
       "versions": [
         {
           "tweakVersion": "1.5.9.2",
           "iOSVersion": "10.3.3",
-          "repository": "BigBoss",
-          "date": "2018-03-03T20:47:37Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-04-14T02:11:52Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6126,10 +6126,10 @@
     {
       "id": "com.julioverne.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "16.7",
+      "latest": "016",
       "repository": "julioverne's Repo",
       "url": "http://twitter.com/ijulioverne",
-      "shortDescription": "Cydia Extender Installer With Extra Features, patched for iOS 11: MidnightChips",
+      "shortDescription": "Cydia Extender Installer With Extra Features",
       "category": "Utilities",
       "author": "julioverne",
       "commercial": false,
@@ -7495,7 +7495,7 @@
     {
       "id": "gnupg",
       "name": "GNU Privacy Guard",
-      "latest": "1.4.22",
+      "latest": "1.4.8-4",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/gnupg/",
       "shortDescription": "older encryption compatible with OpenPGP",
@@ -7593,7 +7593,7 @@
     {
       "id": "grep",
       "name": "grep",
-      "latest": "3.1",
+      "latest": "2.5.4-3",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/grep/",
       "shortDescription": "searches files for regular expressions",
@@ -9396,40 +9396,6 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.liberty",
-      "name": "Liberty",
-      "latest": "0.2.0",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.liberty/",
-      "shortDescription": "A general purpose jailbreak detection bypass patch. Use the Liberty entry in the Settings app to block (most) apps from detecting your jailbreak. Cydia Substrate can be selectively disabled, but this isn't required for many apps.",
-      "category": "HYI - Tweaks",
-      "author": "Ryley Angus",
-      "commercial": false,
-      "date": "2018-03-02T18:05:59Z",
-      "versions": [
-        {
-          "tweakVersion": "0.1.18",
-          "iOSVersion": "10.3.3",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-05T20:48:11Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.ryleyangus.liberty",
       "name": "Liberty",
       "latest": "0.2.4",
@@ -9465,6 +9431,40 @@
           "iOSVersion": "10.3.3",
           "repository": "Ryley's Repo",
           "date": "2018-04-09T13:17:32Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.hackyouriphone.liberty",
+      "name": "Liberty",
+      "latest": "0.2.0",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.liberty/",
+      "shortDescription": "A general purpose jailbreak detection bypass patch. Use the Liberty entry in the Settings app to block (most) apps from detecting your jailbreak. Cydia Substrate can be selectively disabled, but this isn't required for many apps.",
+      "category": "HYI - Tweaks",
+      "author": "Ryley Angus",
+      "commercial": false,
+      "date": "2018-03-02T18:05:59Z",
+      "versions": [
+        {
+          "tweakVersion": "0.1.18",
+          "iOSVersion": "10.3.3",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-05T20:48:11Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9821,38 +9821,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.localiapstore",
-      "name": "LocalIAPStore",
-      "latest": "1.4-2",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.4-2",
-          "iOSVersion": "10.3.3",
-          "repository": "BiteYourApple",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 3,
-            "bad": 0,
-            "total": 3,
-            "arch32": {
-              "total": 2,
-              "good": 2,
-              "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.repo.xarold.com.localiapstore",
       "name": "LocalIAPStore",
       "latest": "1.4-2",
@@ -9898,6 +9866,38 @@
             "arch32": {
               "total": 1,
               "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.localiapstore",
+      "name": "LocalIAPStore",
+      "latest": "1.4-2",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.4-2",
+          "iOSVersion": "10.3.3",
+          "repository": "BiteYourApple",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 3,
+            "bad": 0,
+            "total": 3,
+            "arch32": {
+              "total": 2,
+              "good": 2,
               "bad": 0,
               "percentage": 100,
               "calculatedStatus": "Working"
@@ -10576,39 +10576,6 @@
       ]
     },
     {
-      "id": "net.angelxwind.mikoto",
-      "name": "mikoto",
-      "latest": "3.0.8",
-      "repository": "Karen's Repo",
-      "url": "https://cydia.angelxwind.net/",
-      "shortDescription": "Comprehensive iOS System/App Store App customisation suite",
-      "category": "Tweaks",
-      "author": "Karen Tsai (angelXwind)",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "3.0.8",
-          "iOSVersion": "10.3.3",
-          "repository": "Karen's Repo",
-          "date": "2018-04-14T02:12:04Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 1,
-              "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.repo.xarold.com.mikoto",
       "name": "mikoto",
       "latest": "3.0.8",
@@ -10637,6 +10604,39 @@
               "bad": 0,
               "percentage": 0,
               "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "net.angelxwind.mikoto",
+      "name": "mikoto",
+      "latest": "3.0.8",
+      "repository": "Karen's Repo",
+      "url": "https://cydia.angelxwind.net/",
+      "shortDescription": "Comprehensive iOS System/App Store App customisation suite",
+      "category": "Tweaks",
+      "author": "Karen Tsai (angelXwind)",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "3.0.8",
+          "iOSVersion": "10.3.3",
+          "repository": "Karen's Repo",
+          "date": "2018-04-14T02:12:04Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
             }
           }
         }
@@ -11301,6 +11301,40 @@
               "bad": 0,
               "percentage": 100,
               "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.greensnow.noupdate",
+      "name": "No Update",
+      "latest": "1.4",
+      "repository": "ModMyi (Archive)",
+      "url": "http://cydia.saurik.com/package/com.greensnow.noupdate/",
+      "shortDescription": "This stops new Software Being Discoverable in the Sofware Update Section.",
+      "category": "Tweaks",
+      "author": "greensnow",
+      "commercial": false,
+      "date": "2018-05-06T13:44:55Z",
+      "versions": [
+        {
+          "tweakVersion": "1.4",
+          "iOSVersion": "10.3.3",
+          "repository": "ModMyi (Archive)",
+          "date": "2018-05-06T13:44:55Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
             }
           }
         }
@@ -12600,7 +12634,7 @@
     {
       "id": "pincrush",
       "name": "pincrush",
-      "latest": "0.9.2-2",
+      "latest": "0.9.2-1",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/pincrush/",
       "shortDescription": "optimize PNGs just like Apple does",
@@ -15617,22 +15651,21 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.uasharedtools",
+      "id": "com.unlimapps.uasharedtools",
       "name": "uasharedtools",
       "latest": "2.2r-31",
-      "repository": "Xarold Repo",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.uasharedtools/",
+      "repository": "beta.unlimapps.com",
+      "url": "http://beta.unlimapps.com/",
       "shortDescription": "shared tools for unlimapps tweaks",
       "category": "Development",
       "author": "UnlimApps Inc.",
       "commercial": false,
-      "date": "2018-03-30T01:26:18Z",
       "versions": [
         {
           "tweakVersion": "2.2r-31",
           "iOSVersion": "10.3.3",
-          "repository": "Xarold Repo",
-          "date": "2018-04-06T21:07:26Z",
+          "repository": "beta.unlimapps.com",
+          "date": "2018-04-16T02:25:21Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -15651,21 +15684,22 @@
       ]
     },
     {
-      "id": "com.unlimapps.uasharedtools",
+      "id": "com.repo.xarold.com.uasharedtools",
       "name": "uasharedtools",
       "latest": "2.2r-31",
-      "repository": "beta.unlimapps.com",
-      "url": "http://beta.unlimapps.com/",
+      "repository": "Xarold Repo",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.uasharedtools/",
       "shortDescription": "shared tools for unlimapps tweaks",
       "category": "Development",
       "author": "UnlimApps Inc.",
       "commercial": false,
+      "date": "2018-03-30T01:26:18Z",
       "versions": [
         {
           "tweakVersion": "2.2r-31",
           "iOSVersion": "10.3.3",
-          "repository": "beta.unlimapps.com",
-          "date": "2018-04-16T02:25:21Z",
+          "repository": "Xarold Repo",
+          "date": "2018-04-06T21:07:26Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
