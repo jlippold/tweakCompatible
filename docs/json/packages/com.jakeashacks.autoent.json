@@ -1,10 +1,10 @@
 {
   "id": "com.jakeashacks.autoent",
   "name": "AutoEntitle",
-  "latest": "4.0",
+  "latest": "3.1",
   "repository": "Jakeashacks",
   "url": "http://cydia.saurik.com/package/com.jakeashacks.autoent/",
-  "shortDescription": "Automatically entitles, signs, unstashes (if stashed) applications & binaries installed via Cydia in iOS 11. This package will allow installation of some unupdated packages such as Ext3nder Installer & radare. Run \"autoentitle\" via SSH to get list of options.",
+  "shortDescription": "Entitles applications & binaries installed via Cydia in iOS 11. Run \"autoentitle\" via SSH to get list of options. Automatic patching is disabled by default, only enable if you have a clue how it works!",
   "category": "System",
   "author": "Jake James",
   "commercial": false,
@@ -68,6 +68,37 @@
           "date": "2018-03-07T04:58:56Z",
           "userName": "destroyed92",
           "issueNumber": 4661,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "3.1",
+      "iOSVersion": "11.1",
+      "repository": "Jakeashacks",
+      "date": "2018-05-13T21:42:30Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone10,6",
+          "issues": "",
+          "date": "2018-05-13T21:42:30Z",
+          "userName": "Artvandelays",
+          "issueNumber": 11578,
           "arch32": false
         }
       ]
