@@ -12,6 +12,10 @@ $(document).ready(function () {
             return {
                 repoUrl: null,
                 devices: [],
+                filters: {
+                    iOS: [],
+                    devices: []
+                },
                 currentVersion: "",
                 package: {
                     id: "",
@@ -69,7 +73,27 @@ $(document).ready(function () {
                     },
                     package: ['devices', function (results, next) {
                         $.getJSON("json/packages/" + userDetails.packageId + ".json", function (data) {
+                            data.versions.sort(function compare(a, b) {
+                                var aDate = a.date;
+                                if (!aDate) {
+                                    aDate = a.users
+                                        .map(function (x) { return x.date })
+                                        .reduce(function (p, v) { return (p < v ? p : v) });
+                                }
+                                var bDate = b.date;
+                                if (!bDate) {
+                                    bDate = b.users
+                                        .map(function (x) { return x.date })
+                                        .reduce(function (p, v) { return (p < v ? p : v) });
+                                }
+
+                                if (aDate < bDate) return 1;
+                                if (aDate > bDate) return -1;
+                                return 0;
+                            });
+
                             c.package = data;
+
                             var hasVersion = data.versions.find(function (v) {
                                 if (v.tweakVersion == userDetails.base64) {
                                     c.currentVersion = v.tweakVersion;
@@ -128,6 +152,40 @@ $(document).ready(function () {
                     if (err) {
                         return console.error(err);
                     }
+
+                    var currentIOSVersion = iOSVersion();
+
+                    var iOS = [];
+                    c.package.versions.forEach(function(v) {
+                        if (iOS.indexOf(v.iOSVersion) == -1) {    
+                            iOS.push(v.iOSVersion);
+                        }
+                    });
+                    c.filters.iOS = iOS.map(function (v) {
+                        if (currentIOSVersion) {
+                            return { version: v, selected: currentIOSVersion == v };
+                        } else {
+                            return { version: v, selected: v.indexOf("11.") > -1 };
+                        }
+                    }).sort();
+
+
+                    var devices = [];
+                    c.package.versions.forEach(function (v) {
+                        v.users.forEach(function (user) {
+                            if (devices.indexOf(user.device) == -1) {
+                                devices.push(user.device);
+                            }
+                        });
+                    });
+                    c.filters.devices = devices.map(function (type) {
+                        var name = c.getDeviceName(type);
+                        if (name == "Unknown device") {
+                            name = type;
+                        }
+                        return { type: name, selected: true };
+                    }).sort();;
+
                 });
             }
         }
@@ -144,3 +202,27 @@ $(document).ready(function () {
 
 
 });
+
+
+function iOSVersion() {
+    if (window.MSStream) {
+        // There is some iOS in Windows Phone...
+        // https://msdn.microsoft.com/en-us/library/hh869301(v=vs.85).aspx
+        return false;
+    }
+    var match = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
+        version;
+
+    if (match !== undefined && match !== null) {
+        version = [
+            parseInt(match[1], 10),
+            parseInt(match[2], 10)
+        ];
+        if (parseInt(match[3])) {
+            version.push(parseInt(match[3], 10));
+        }
+        return version.join('.');
+    }
+
+    return false;
+}
