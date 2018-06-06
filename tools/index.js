@@ -9,6 +9,7 @@ var Package = require("./Package"); //model
 var User = require("./User"); //model
 var Version = require("./Version"); //model
 var bans = require("../docs/bans.json");
+var moderators = require("../docs/admins.json").moderators;
 var devices = require("../docs/devices.json").devices;
 
 const owner = "jlippold";
@@ -50,7 +51,6 @@ function init(callback) {
                 
                 async.auto({
                     moderator: function (next) {
-                        var moderators = ["jlippold"];
                         if (moderators.indexOf(change.userName) > -1) {
                             next(null, true);
                         } else {
