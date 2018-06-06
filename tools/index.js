@@ -45,58 +45,111 @@ function init(callback) {
 
         async.eachOfLimit(issues, 1, function (change, idx, nextIssue) {
             console.log("Working on: " + change.issueTitle);
-            async.auto({
-                tweaks: lib.getTweakList,
-                validate: function (next) {
-                    validateChange(change, next);
-                },
-                add: ['tweaks', 'validate', function (results, next) {
-                    if (!results.validate) return next();
-                    addTweaks(results.tweaks, change, next);
-                }],
-                calculate: ['add', function (results, next) {
-                    if (!results.validate) return next();
-                    var packages = results.add.slice();
-                    packages.sort(function compare(a, b) {
-                        if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
-                        if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
-                        return 0;
-                    });
-                    reCalculate(packages, next);
-                }],
-                save: ['calculate', function (results, next) {
-                    if (!results.validate) return next();
-                    results.tweaks.packages = results.calculate.packages.slice();
-                    results.tweaks.iOSVersions = results.calculate.iOSVersions.slice();
-                    saveAllChanges(results.tweaks, change, next);
-                }],
-                commit: ['calculate', function (results, next) {
-                    if (!results.validate) return next();
-                    if (mode == "rebuild") {
-                        return next();
-                    }
-                    lib.commitAgainstIssue(change.issueNumber, next);
-                }],
-                comment: ['commit', function (results, next) {
-                    if (!results.validate) return next();
-                    if (mode == "rebuild") {
-                        return next();
-                    }
+            
+            if (change.modReport) {
+                
+                async.auto({
+                    moderator: function (next) {
+                        var moderators = ["jlippold"];
+                        if (moderators.indexOf(change.userName) > -1) {
+                            next(null, true);
+                        } else {
+                            next(null, false);
+                        }
+                    },
+                    action: ['moderator', function (results, next) {
+                        console.log(results);
+                        if (!results.moderator) return next();
 
-                    var opts = {
-                        owner, repo,
-                        number: change.issueNumber,
-                        body: "This issue is being closed because your review was accepted into the tweakCompatible website. \nTweak developers do not monitor or fix issues submitted via this repo.\nIf you have an issue with a tweak, contact the developer via another method."
-                    };
-                    github.issues.createComment(opts, function () {
+                        if (change.action == "pirateRepo" || change.repo) {
+                            return lib.addPirateRepo(change.repo, next);
+                        }
+                        if (change.action == "piratePackage" || change.package) {
+                            return lib.addPiratePackage(change.package, next);
+                        }
                         return next();
-                    });
+                    }],
+                    commit: ['action', function (results, next) {
+                        //if (!results.moderator) return next();
+                        if (mode == "rebuild") {
+                            return next();
+                        }
+                        lib.commitAgainstIssue(change.issueNumber, next);
+                    }],
+                    comment: ['commit', function (results, next) {
+                        if (results.moderator || mode == "rebuild") {
+                            return next();
+                        }
+    
+                        var opts = {
+                            owner, repo,
+                            number: change.issueNumber,
+                            body: "Do not continue to submit moderator reports when you are not a moderator. You will be banned from using this service."
+                        };
+                        github.issues.createComment(opts, function () {
+                            return next();
+                        });
+    
+                    }]
+                }, function (err, result) {
+                    nextIssue(err);
+                });
 
-                }]
-            }, function (err, result) {
-                nextIssue(err);
-            });
-
+                
+            } else {
+                async.auto({
+                    tweaks: lib.getTweakList,
+                    validate: function (next) {
+                        validateChange(change, next);
+                    },
+                    add: ['tweaks', 'validate', function (results, next) {
+                        if (!results.validate) return next();
+                        addTweaks(results.tweaks, change, next);
+                    }],
+                    calculate: ['add', function (results, next) {
+                        if (!results.validate) return next();
+                        var packages = results.add.slice();
+                        packages.sort(function compare(a, b) {
+                            if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+                            if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+                            return 0;
+                        });
+                        reCalculate(packages, next);
+                    }],
+                    save: ['calculate', function (results, next) {
+                        if (!results.validate) return next();
+                        results.tweaks.packages = results.calculate.packages.slice();
+                        results.tweaks.iOSVersions = results.calculate.iOSVersions.slice();
+                        saveAllChanges(results.tweaks, change, next);
+                    }],
+                    commit: ['calculate', function (results, next) {
+                        if (!results.validate) return next();
+                        if (mode == "rebuild") {
+                            return next();
+                        }
+                        lib.commitAgainstIssue(change.issueNumber, next);
+                    }],
+                    comment: ['commit', function (results, next) {
+                        if (!results.validate) return next();
+                        if (mode == "rebuild") {
+                            return next();
+                        }
+    
+                        var opts = {
+                            owner, repo,
+                            number: change.issueNumber,
+                            body: "This issue is being closed because your review was accepted into the tweakCompatible website. \nTweak developers do not monitor or fix issues submitted via this repo.\nIf you have an issue with a tweak, contact the developer via another method."
+                        };
+                        github.issues.createComment(opts, function () {
+                            return next();
+                        });
+    
+                    }]
+                }, function (err, result) {
+                    nextIssue(err);
+                });
+            }
+            
         }, function (err) {
             return callback(err);
         });
@@ -395,36 +448,42 @@ function getIssues(callback) {
         function (err) {
             var validIssues = [];
             allIssues.forEach(function (issue) {
-                if (issue.body.substring(0, 3) == "```" && issue.body.indexOf("packageStatusExplaination") > -1) {
-                    var json = lib.parseJSON(issue.body.replace(/```/g, ""));
-                    if (json) {
-                        var thisIssue = lib.parseJSON(Buffer.from(json.base64, 'base64').toString());
-                        if (thisIssue) {
-                            thisIssue.issueId = issue.id;
-                            thisIssue.issueNumber = issue.number;
-                            thisIssue.date = issue.created_at;
-                            thisIssue.issueTitle = issue.title;
-                            thisIssue.userNotes = json.notes;
-                            thisIssue.userChosenStatus = json.chosenStatus;
-                            thisIssue.userName = issue.user.login;
-                            if (!thisIssue.hasOwnProperty("arch32")) {
-                                thisIssue.arch32 = is32bit(thisIssue.deviceId);
+                if (issue.body.substring(0, 3) == "```") {
+                    if (issue.body.indexOf("packageStatusExplaination") > -1) {
+                        var json = lib.parseJSON(issue.body.replace(/```/g, ""));
+                        if (json) {
+                            var thisIssue = lib.parseJSON(Buffer.from(json.base64, 'base64').toString());
+                            if (thisIssue) {
+                                thisIssue.modReport = false;
+                                thisIssue.issueId = issue.id;
+                                thisIssue.issueNumber = issue.number;
+                                thisIssue.date = issue.created_at;
+                                thisIssue.issueTitle = issue.title;
+                                thisIssue.userNotes = json.notes;
+                                thisIssue.userChosenStatus = json.chosenStatus;
+                                thisIssue.userName = issue.user.login;
+                                if (!thisIssue.hasOwnProperty("arch32")) {
+                                    thisIssue.arch32 = is32bit(thisIssue.deviceId);
+                                }
+                                validIssues.push(thisIssue);
+                                
                             }
-                            /*
-                            if (bans.repositories.indexOf(thisIssue.repository) > -1) {
-                                var opts = {
-                                    owner, repo,
-                                    number: thisIssue.issueNumber,
-                                    state: "closed",
-                                    labels: ["bypass", "invalid"]
-                                };
-                                github.issues.edit(opts, function () {});
-                            } 
-                            */
-                            validIssues.push(thisIssue);
-                            
+                        }
+                    } else if (issue.body.indexOf("action") > -1) {
+                        var thisIssue = lib.parseJSON(issue.body.replace(/```/g, ""));
+                        if (thisIssue) {
+                            if (thisIssue) {
+                                thisIssue.modReport = true;
+                                thisIssue.issueId = issue.id;
+                                thisIssue.issueNumber = issue.number;
+                                thisIssue.date = issue.created_at;
+                                thisIssue.issueTitle = issue.title;
+                                thisIssue.userName = issue.user.login;
+                                validIssues.push(thisIssue);
+                            }
                         }
                     }
+                    
                 }
             });
             callback(null, validIssues, []);

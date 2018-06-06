@@ -2,6 +2,7 @@ const fs = require('fs-extra');
 const path = require('path');
 var spawn = require('child_process').execFile;
 const tweakListPath = path.join(__dirname, "../docs/tweaks.json");
+const bansPath = path.join(__dirname, "../docs/bans.json");
 const jsonOutputPath = path.join(__dirname, "../docs/json/");
 var jsonOptions = { spaces: 2 };
 
@@ -9,6 +10,23 @@ module.exports.getPackageById = function (id, packages) {
     return packages.find(function (package) {
         return package.id == id;
     });
+}
+
+module.exports.addPirateRepo = function (repo, callback) {
+    var bans = require("../docs/bans.json");
+    if (bans.repositories.indexOf(repo) == -1) {
+        bans.repositories.push(repo);
+    }
+    console.log(bans);
+    fs.outputJson(bansPath, bans, jsonOptions, callback);
+}
+
+module.exports.addPiratePackage = function (package, callback) {
+    var bans = require("../docs/bans.json");
+    if (bans.packages.indexOf(package) == -1) {
+        bans.packages.push(package);
+    }
+    fs.outputJson(bansPath, bans, jsonOptions, callback);
 }
 
 module.exports.findVersionForPackageByOS = function (tweakVersion, iOSVersion, package) {
@@ -43,6 +61,12 @@ module.exports.commitAgainstIssue = function (issueNumber, callback) {
 
 module.exports.wipeJson = function() {
     fs.emptyDirSync(jsonOutputPath);
+}
+
+module.exports.writeBans = function(callback) {
+    var folder = path.join(jsonOutputPath, "/packages/");
+    var file = path.join(folder, package.id + ".json");
+    fs.outputJson(file, package, jsonOptions, callback);
 }
 
 module.exports.writePackage = function(package, callback) {
