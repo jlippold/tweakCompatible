@@ -134,7 +134,7 @@ $(document).ready(function () {
                             url: "bans.json",
                             dataType: 'json',
                             success: function (data) {
-                                if (data.repositories.indexOf(c.package.repository) > -1) {
+                                if (data.repositories.indexOf(c.package.repository) > -1 || data.packages.indexOf(c.package.id) > -1 ) {
                                     c.package = {
                                         id: "",
                                         name: "",
