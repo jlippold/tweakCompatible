@@ -17,7 +17,6 @@ module.exports.addPirateRepo = function (repo, callback) {
     if (bans.repositories.indexOf(repo) == -1) {
         bans.repositories.push(repo);
     }
-    console.log(bans);
     fs.outputJson(bansPath, bans, jsonOptions, callback);
 }
 
