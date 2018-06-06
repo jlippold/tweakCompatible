@@ -65,7 +65,7 @@ function init(callback) {
                             return lib.addPirateRepo(change.repo, next);
                         }
                         if (change.action == "piratePackage" || change.package) {
-                            return lib.addPiratePackage(change.package, next);
+                            return lib.addPiratePackage(change.id, next);
                         }
                         return next();
                     }],
