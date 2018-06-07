@@ -114,7 +114,7 @@
                                 <span v-if="version.outcome.calculatedStatus == 'Working'" class="label label-success pull-right">
                                     {{version.outcome.calculatedStatus}}
                                 </span>
-                                <span v-if="version.outcome.calculatedStatus == 'Partial'" class="label label-warning pull-right">
+                                <span v-else-if="version.outcome.calculatedStatus == 'Partial'" class="label label-warning pull-right">
                                     {{version.outcome.calculatedStatus}}
                                 </span>
                                 <span v-else class="label label-danger pull-right">
@@ -144,9 +144,9 @@
                                     <a target=_blank v-bind:href="'https://github.com/jlippold/tweakCompatible/issues/' + user.issueNumber">
                                         <img class="media-object" style="width: 80px" v-bind:src="'https://github.com/identicons/' + user.userName + '.png?s=50'" onerror="this.src='https://github.com/identicons/noone.png?s=50'" >
                                     </a>
-                                    <span style="width: 100%;display: block;overflow: hidden;height: 18px;line-height: 14px;" v-if="user.status == 'working'" class="label label-success">{{user.userName}}</span>
-                                    <span style="width: 100%;display: block;overflow: hidden;height: 18px;line-height: 14px;" v-else-if="user.status == 'partial'" class="label label-warning">{{user.userName}}</span>
-                                    <span style="width: 100%;display: block;overflow: hidden;height: 18px;line-height: 14px;" v-else class="label label-danger">{{user.userName}}</span>
+                                    <span style="width: 100%;display: block;overflow: hidden;height: 18px;line-height: 14px; font-weight: 600" v-if="user.status == 'working'" class="label label-success">{{user.userName}}</span>
+                                    <span style="width: 100%;display: block;overflow: hidden;height: 18px;line-height: 14px; font-weight: 600" v-else-if="user.status == 'partial'" class="label label-warning">{{user.userName}}</span>
+                                    <span style="width: 100%;display: block;overflow: hidden;height: 18px;line-height: 14px; font-weight: 600" v-else class="label label-danger">{{user.userName}}</span>
                                 </div>
                                 <div class="media-body">
                                     <div style="height:100px; overflow:hidden">
