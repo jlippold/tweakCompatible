@@ -46,9 +46,38 @@ $(document).ready(function () {
                 }).filter(function (version, idx, self) {
                     return self.indexOf(version) === idx;
                 }).reverse();
-            }
+            }            
         },
         methods: {
+            colorIcon: function (status) {
+                var c = '#43ac6a';
+                if (status == "Working") {
+                    c = '#43ac6a';
+                } else if (status == "Likely working") {
+                    c = '#e99002';
+                } else {
+                    c = '#f04124';
+                }
+                return {
+                    'vertical-align': 'baseline',
+                    'color': c
+                }
+            },
+            colorBorder: function (status) {
+                var s = '4px solid #43ac6a';
+                if (status == "Working") {
+                    s = '4px solid #43ac6a';
+                } else if (status == "Likely working") {
+                    s = '4px solid #e99002';
+                } else {
+                    s = '4px solid #f04124';
+                }
+                return {
+                    'margin-left': '-20px',
+                    'padding-left': '16px',
+                    'border-left': s
+                }
+            },
             getDeviceName: function (deviceId) {
                 var devices = this.devices;
                 var found = devices.find(function (device) {

@@ -78,7 +78,7 @@
                 </div>
             </nav>
 
-            <div class="container-fluid main">
+            <div class="container-fluid main" style="margin-top: 20px;">
                 <div class="row" style="padding-bottom: 20px">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div>
@@ -88,13 +88,18 @@
                                     Filters
                                 </a>
                             </span>
-                            <h2>{{package.name}}</h2>
-                            <em>{{package.category}}: {{package.shortDescription}}, package by {{package.author}} </em>
+                            <h2>
+                                <a style="color: #007196" target="_blank" :href="'http://cydia.saurik.com/package/' + package.id">
+                                    <span class="fa fa-archive"></span>
+                                </a>
+                                {{package.name}}
+                            </h2>
+                            <em>{{package.shortDescription}}, created by {{package.author}} </em>
                         </div>
                         <div v-if="repoUrl" style="clear:both; padding-top:10px">
                             <a style="color: #007196" :href="'https://cydia.saurik.com/api/share#?source=' + repoUrl">
-                                <span class="fa fa-archive "></span>
-                                Add To Cydia
+                                <span class="fa fa-plus "></span>
+                                Add Repo To Cydia
                             </a>
                             <span> - </span>
                             {{repoUrl}}
@@ -105,47 +110,55 @@
                     </div>
                 </div>
                 
-                <div v-for="version in package.versions" v-if="filters.iOS.filter(function(e) { return e.version == version.iOSVersion && e.selected }).length > 0">
+                <div v-bind:style="colorBorder(version.outcome.calculatedStatus)"
+                    v-for="version in package.versions" 
+                    v-if="filters.iOS.filter(function(e) { return e.version == version.iOSVersion && e.selected }).length > 0"
+                >
                     <div class="row" style="border-top: 1px solid; padding-top: 20px; padding-bottom: 10px;">
 
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <h4>
-                                v. {{version.tweakVersion}}
+                                <span :class="[ 'glyphicon', 
+                                        {'glyphicon-ok' : version.outcome.calculatedStatus == 'Working', 
+                                        'glyphicon-time' : version.outcome.calculatedStatus == 'Likely working', 
+                                        'glyphicon-remove' : version.outcome.calculatedStatus == 'Not working'}]"
+                                    v-bind:style="colorIcon(version.outcome.calculatedStatus)" >
+                                </span>
+                                {{version.tweakVersion}} on iOS {{version.iOSVersion}}
                                 <a class="pull-right" data-toggle="modal" data-target="#report" href="#report" style="color: #f04124; margin-left: 10px" title="Mod tools">
                                     <span class="fa fa-flag"></span>
                                 </a>
-                                <span v-if="version.outcome.calculatedStatus == 'Working'" class="label label-success pull-right">
-                                    {{version.outcome.calculatedStatus}}
-                                </span>
-                                <span v-else-if="version.outcome.calculatedStatus == 'Partial'" class="label label-warning pull-right">
-                                    {{version.outcome.calculatedStatus}}
-                                </span>
-                                <span v-else class="label label-danger pull-right">
-                                    {{version.outcome.calculatedStatus}}
-                                </span>
                             </h4>
-                        
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success progress-bar-striped"  v-bind:style="{ width: version.outcome.percentage + '%' }">
+
+                            <div class="progress" style="margin-bottom: 5px">
+                                <div :class="[ 'progress-bar', 'progress-bar-striped', 
+                                                {'progress-bar-success' : version.outcome.calculatedStatus == 'Working', 
+                                                'progress-bar-warning' : version.outcome.calculatedStatus == 'Likely working', 
+                                                'progress-bar-danger' : version.outcome.calculatedStatus == 'Not working'}]"
+                                    :style="{ width: version.outcome.percentage + '%' }">
                                     <span class="sr-only">{{version.outcome.percentage}}% Complete (success)</span>
                                 </div>
                             </div>
-                        
-                            <div>
-                                <em class="pull-right">{{version.outcome.total}} reports, {{version.outcome.percentage}}% working</em>
-                            </div>
-                            
+                            <h4>
+                                
+                                <span :class="[ 'label', 
+                                            {'label-success' : version.outcome.calculatedStatus == 'Working', 
+                                            'label-warning' : version.outcome.calculatedStatus == 'Likely working', 
+                                            'label-danger' : version.outcome.calculatedStatus == 'Not working'}]" >
+                                    {{version.outcome.calculatedStatus}}
+                                </span>
+                            </h4>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" style="padding-bottom: 20px">
                         <div class="col-xs-12 col-sm-12 col-md-12">
-                            <h4>User reports:</h4>
+                            <h5>{{version.outcome.total}} User reports, {{version.outcome.percentage}}% working:</h5>
                         </div>
                         <div v-for="user in version.users" class="col-xs-6 col-sm-6 col-md-4 col-lg-2" style="position: relative">
                             <div class="media" style="padding: 10px 0; font-size: 0.8em">
                                 <div class="media-left media-middle" style="max-width: 90px; overflow: hidden; text-overflow: ellipsis; text-align: center;">
                                     <a target=_blank v-bind:href="'https://github.com/jlippold/tweakCompatible/issues/' + user.issueNumber">
-                                        <img class="media-object" style="width: 80px" v-bind:src="'https://github.com/identicons/' + user.userName + '.png?s=50'" onerror="this.src='https://github.com/identicons/noone.png?s=50'" >
+                                        <img class="media-object" style="width: 80px" v-bind:src="'https://github.com/' + user.userName + '.png?size=80'" onerror="this.src='https://github.com/identicons/noone.png?s=80'" >
                                     </a>
                                     <span style="width: 100%;display: block;overflow: hidden;height: 18px;line-height: 14px; font-weight: 600" v-if="user.status == 'working'" class="label label-success">{{user.userName}}</span>
                                     <span style="width: 100%;display: block;overflow: hidden;height: 18px;line-height: 14px; font-weight: 600" v-else-if="user.status == 'partial'" class="label label-warning">{{user.userName}}</span>
