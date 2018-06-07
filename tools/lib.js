@@ -3,6 +3,7 @@ const path = require('path');
 var spawn = require('child_process').execFile;
 const tweakListPath = path.join(__dirname, "../docs/tweaks.json");
 const bansPath = path.join(__dirname, "../docs/bans.json");
+const repoUrlsPath = path.join(__dirname, "../docs/json/repository-urls.json");
 const jsonOutputPath = path.join(__dirname, "../docs/json/");
 var jsonOptions = { spaces: 2 };
 
@@ -26,6 +27,23 @@ module.exports.addPiratePackage = function (package, callback) {
         bans.packages.push(package);
     }
     fs.outputJson(bansPath, bans, jsonOptions, callback);
+}
+
+module.exports.changeRepoAddress = function (name, url, callback) {
+    var repos = require("../docs/json/repository-urls.json");
+    var foundRepo = repos.repositories.find(function (repo) {
+        return repo.name == name;
+    });
+
+    if (foundRepo) {
+        foundRepo.url = url;
+    } else {
+        repos.push({
+            name: name,
+            url: url
+        });
+    }
+    fs.outputJson(repoUrlsPath, repos, jsonOptions, callback);
 }
 
 module.exports.findVersionForPackageByOS = function (tweakVersion, iOSVersion, package) {

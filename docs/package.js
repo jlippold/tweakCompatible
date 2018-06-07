@@ -122,6 +122,7 @@ $(document).ready(function () {
                                     return repo.name == c.package.repository;
                                 });
                                 c.repoUrl = repoUrl ? repoUrl.url : null;
+                                c.mod.repoUrl = repoUrl ? repoUrl.url : "";
                                 next();
                             },
                             error: function (err) {

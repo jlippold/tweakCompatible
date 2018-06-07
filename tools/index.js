@@ -58,14 +58,16 @@ function init(callback) {
                         }
                     },
                     action: ['moderator', function (results, next) {
-                        console.log(results);
                         if (!results.moderator) return next();
 
-                        if (change.action == "pirateRepo" || change.repo) {
+                        if (change.action == "pirateRepo" && change.repo) {
                             return lib.addPirateRepo(change.repo, next);
                         }
-                        if (change.action == "piratePackage" || change.package) {
+                        if (change.action == "piratePackage" && change.package) {
                             return lib.addPiratePackage(change.id, next);
+                        }
+                        if (change.action == "changeUrl" && change.url) {
+                            return lib.changeRepoAddress(change.repo, change.url, next);
                         }
                         return next();
                     }],
