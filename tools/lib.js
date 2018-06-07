@@ -38,7 +38,7 @@ module.exports.changeRepoAddress = function (name, url, callback) {
     if (foundRepo) {
         foundRepo.url = url;
     } else {
-        repos.push({
+        repos.repositories.push({
             name: name,
             url: url
         });
