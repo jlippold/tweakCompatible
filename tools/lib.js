@@ -43,32 +43,38 @@ module.exports.changeRepoAddress = function (name, url, callback) {
             url: url
         });
     }
+    repos.repositories.sort(function (a, b) {
+        if (a.name < b.name) return -1;
+        if (a.name > b.name) return 1;
+        return 0;
+    });
+
     fs.outputJson(repoUrlsPath, repos, jsonOptions, callback);
 }
 
 module.exports.findVersionForPackageByOS = function (tweakVersion, iOSVersion, package) {
-    return package.versions.find(function(version) {
+    return package.versions.find(function (version) {
         return version.tweakVersion == tweakVersion &&
             version.iOSVersion == iOSVersion;
     });
 }
 
 module.exports.findReviewForUserInVersion = function (userName, device, version) {
-    return version.users.find(function(user) {
+    return version.users.find(function (user) {
         return user.userName == userName &&
             user.device == device;
     });
 }
 
 module.exports.commitAgainstIssue = function (issueNumber, callback) {
-    var add = spawn("git", ["add", ".", "-A"], {cwd: path.join(__dirname, "../")});
+    var add = spawn("git", ["add", ".", "-A"], { cwd: path.join(__dirname, "../") });
     add.on('close', (code) => {
-        setTimeout(function() {
+        setTimeout(function () {
             var commit = spawn("git", ["commit", "-am", "fixes #" + issueNumber], {
                 cwd: path.join(__dirname, "../")
             });
             commit.on('close', (code) => {
-                setTimeout(function() {
+                setTimeout(function () {
                     callback();
                 }, 200);
             });
@@ -76,17 +82,17 @@ module.exports.commitAgainstIssue = function (issueNumber, callback) {
     });
 }
 
-module.exports.wipeJson = function() {
+module.exports.wipeJson = function () {
     fs.emptyDirSync(jsonOutputPath);
 }
 
-module.exports.writeBans = function(callback) {
+module.exports.writeBans = function (callback) {
     var folder = path.join(jsonOutputPath, "/packages/");
     var file = path.join(folder, package.id + ".json");
     fs.outputJson(file, package, jsonOptions, callback);
 }
 
-module.exports.writePackage = function(package, callback) {
+module.exports.writePackage = function (package, callback) {
     var folder = path.join(jsonOutputPath, "/packages/");
     var file = path.join(folder, package.id + ".json");
     fs.outputJson(file, package, jsonOptions, callback);
