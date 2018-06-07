@@ -256,7 +256,7 @@
                                             Report pirate package `{{package.id}}`
                                         </label>
                                     </div>
-                                    <div class="radio">
+                                    <div class="radio" v-if="package.repository.indexOf('null') == -1">
                                         <label>
                                             <input type="radio" name="optionsRadios" id="optionsRadios2" value="pirateRepo" v-model="mod.action"> 
                                             Report pirate repo `{{package.repository}}`
