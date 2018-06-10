@@ -1,3 +1,4 @@
+
 var vm;
 var tweakList;
 var userDetails;
@@ -133,6 +134,7 @@ $(document).ready(function () {
                         package.date = new Date("1970-01-01T00:00:00Z");
                     }
 
+                    package.reviewCount = 0;
 
                     package.versions.forEach(function (item) {
                         item.current = (item.iOSVersion == iOSVersion &&
@@ -151,12 +153,20 @@ $(document).ready(function () {
                             "label-warning": (item.outcome.calculatedStatus == "Likely working"),
                             "label-default": (item.outcome.calculatedStatus == "Unknown")
                         };
+
+                        //push up reviewCount totals to top
+                        if (item.current && item.outcome.total > package.reviewCount) {
+                            package.reviewCount = item.outcome.total;
+                        }
+                        
                     });
                 });
-
+                
                 if (data.sort == "") {
                     //date sort
                     filteredPackageList.sort(function (a, b) { return (a.date > b.date) ? -1 : ((b.date > a.date) ? 1 : 0); });
+                } else if (data.sort == "Top") {
+                    filteredPackageList.sort(function (a, b) { return (a.reviewCount > b.reviewCount) ? -1 : ((b.reviewCount > a.reviewCount) ? 1 : 0); });
                 }
                 return filteredPackageList;
             }
