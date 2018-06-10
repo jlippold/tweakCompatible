@@ -3,7 +3,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.12",
+      "latest": "1.9.13~beta2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -70,7 +70,7 @@
     {
       "id": "me.alfhaily.adblockforyoutube",
       "name": "AdBlock for YouTube",
-      "latest": "1.0.7",
+      "latest": "1.0.3",
       "repository": "Alfhaily APT",
       "url": "https://apt.alfhaily.me/",
       "shortDescription": "Block YouTube Ads and Video Ads",
@@ -302,7 +302,7 @@
     {
       "id": "apt7-lib",
       "name": "APT 0.7 Strict (lib)",
-      "latest": "1.4.8",
+      "latest": "1.4.8-1",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/apt7-lib/",
       "shortDescription": "the advanced packaging library from Debian",
@@ -706,7 +706,7 @@
     {
       "id": "bash",
       "name": "Bourne-Again SHell",
-      "latest": "4.0.44-16",
+      "latest": "4.4.18-2",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/bash/",
       "shortDescription": "the best shell ever written by Brian Fox",
@@ -1175,10 +1175,10 @@
     {
       "id": "dpkg",
       "name": "Debian Packager",
-      "latest": "1.18.10-12",
+      "latest": "1.18.24",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/dpkg/",
-      "shortDescription": "package maintainance tools from Debian",
+      "shortDescription": "package maintenance tools from Debian",
       "category": "Packaging",
       "author": "(null)",
       "commercial": false,
@@ -1307,22 +1307,21 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.ext3nder-installer",
+      "id": "com.julioverne.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "016",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.ext3nder-installer/",
-      "shortDescription": "Cydia Extender Installer With Extra Features",
-      "category": "HYI - Tweaks",
+      "latest": "16.7",
+      "repository": "julioverne's Repo",
+      "url": "http://twitter.com/ijulioverne",
+      "shortDescription": "Cydia Extender Installer With Extra Features, patched for iOS 11: MidnightChips",
+      "category": "Utilities",
       "author": "julioverne",
       "commercial": false,
-      "date": "2018-05-05T23:22:12Z",
       "versions": [
         {
           "tweakVersion": "016",
           "iOSVersion": "9.3.5",
-          "repository": "HackYouriPhone",
-          "date": "2018-05-05T23:22:12Z",
+          "repository": "julioverne's Repo",
+          "date": "2018-05-05T23:11:50Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -1341,21 +1340,22 @@
       ]
     },
     {
-      "id": "com.julioverne.ext3nder-installer",
+      "id": "com.hackyouriphone.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "16.7",
-      "repository": "julioverne's Repo",
-      "url": "http://twitter.com/ijulioverne",
-      "shortDescription": "Cydia Extender Installer With Extra Features, patched for iOS 11: MidnightChips",
-      "category": "Utilities",
+      "latest": "016",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.ext3nder-installer/",
+      "shortDescription": "Cydia Extender Installer With Extra Features",
+      "category": "HYI - Tweaks",
       "author": "julioverne",
       "commercial": false,
+      "date": "2018-05-05T23:22:12Z",
       "versions": [
         {
           "tweakVersion": "016",
           "iOSVersion": "9.3.5",
-          "repository": "julioverne's Repo",
-          "date": "2018-05-05T23:11:50Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-05-05T23:22:12Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -1519,6 +1519,39 @@
             "arch32": {
               "total": 3,
               "good": 3,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.aidoo.memsearch",
+      "name": "GameGem",
+      "latest": "1.5",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.aidoo.memsearch/",
+      "shortDescription": "Memory debug tool for iOS. Support iPhone and iPad above iOS 8.x",
+      "category": "Utilities",
+      "author": "Aidoo.TK",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.5",
+          "iOSVersion": "9.3.5",
+          "repository": "BigBoss",
+          "date": "2018-06-10T17:00:42Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
               "bad": 0,
               "percentage": 100,
               "calculatedStatus": "Working"
