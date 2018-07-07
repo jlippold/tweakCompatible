@@ -1,7 +1,7 @@
 {
   "id": "org.xbmc.kodi-ios64",
   "name": "Kodi-iOS (64-bit)",
-  "latest": "18.0-0~alpha1",
+  "latest": "17.6-0",
   "repository": "(null)",
   "url": "http://cydia.saurik.com/package/org.xbmc.kodi-ios64/",
   "shortDescription": "Kodi Entertainment Center for iOS",
@@ -68,6 +68,37 @@
           "date": "2018-05-14T22:24:26Z",
           "userName": "TonyRL",
           "issueNumber": 11641,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "17.6-0",
+      "iOSVersion": "11.3.1",
+      "repository": "(null)",
+      "date": "2018-07-07T18:15:31Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone8,1",
+          "issues": "You need to open a terminal and do the following :( this has been since Kodi 16) cd /Applications/Kodi.app find $PWD/ -name *.so -exec ldid -S {} \\; find $PWD/ -name *.dylib -exec ldid -S {} \\;",
+          "date": "2018-07-07T18:15:31Z",
+          "userName": "CatharsysAmaeth",
+          "issueNumber": 13654,
           "arch32": false
         }
       ]
