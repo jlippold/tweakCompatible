@@ -2423,6 +2423,39 @@
       ]
     },
     {
+      "id": "ru.domo.cocoatop",
+      "name": "CocoaTop",
+      "latest": "2.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
+      "shortDescription": "Process Viewer for iOS GUI",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0.1",
+          "iOSVersion": "11.0",
+          "repository": "apt.thebigboss.org",
+          "date": "2018-03-19T06:58:26Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2-1+debug",
@@ -2443,39 +2476,6 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ru.domo.cocoatop",
-      "name": "CocoaTop",
-      "latest": "2.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
-      "shortDescription": "Process Viewer for iOS GUI",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0.1",
-          "iOSVersion": "11.0",
-          "repository": "apt.thebigboss.org",
-          "date": "2018-03-19T06:58:26Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -3268,10 +3268,10 @@
     {
       "id": "com.julioverne.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "019",
+      "latest": "16.7",
       "repository": "julioverne's Repo",
       "url": "http://twitter.com/ijulioverne",
-      "shortDescription": "Cydia Extender Installer With Extra Features",
+      "shortDescription": "Cydia Extender Installer With Extra Features, patched for iOS 11: MidnightChips",
       "category": "Utilities",
       "author": "julioverne",
       "commercial": false,
@@ -3321,6 +3321,26 @@
           "iOSVersion": "11.0",
           "repository": "MidnightChips",
           "date": "2018-03-28T10:03:26Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "16.7",
+          "iOSVersion": "11.0",
+          "repository": "MidnightChips",
+          "date": "2018-07-08T19:14:30Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3667,22 +3687,21 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.fiveicondockxi",
+      "id": "me.gmoran.fiveicondockxi",
       "name": "FiveIconDockXI",
       "latest": "0.0.1-20",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.fiveicondockxi/",
+      "repository": "GMoran Beta Software",
+      "url": "http://cydia.saurik.com/package/me.gmoran.fiveicondockxi/",
       "shortDescription": "Five icon dock for iOS 11.",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "Guillermo Moran",
       "commercial": false,
-      "date": "2018-03-02T03:41:12Z",
       "versions": [
         {
           "tweakVersion": "0.0.1-20",
           "iOSVersion": "11.0",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-02T22:32:47Z",
+          "repository": "GMoran Beta Software",
+          "date": "2018-03-04T18:17:57Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3701,21 +3720,22 @@
       ]
     },
     {
-      "id": "me.gmoran.fiveicondockxi",
+      "id": "com.hackyouriphone.fiveicondockxi",
       "name": "FiveIconDockXI",
       "latest": "0.0.1-20",
-      "repository": "GMoran Beta Software",
-      "url": "http://cydia.saurik.com/package/me.gmoran.fiveicondockxi/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.fiveicondockxi/",
       "shortDescription": "Five icon dock for iOS 11.",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "Guillermo Moran",
       "commercial": false,
+      "date": "2018-03-02T03:41:12Z",
       "versions": [
         {
           "tweakVersion": "0.0.1-20",
           "iOSVersion": "11.0",
-          "repository": "GMoran Beta Software",
-          "date": "2018-03-04T18:17:57Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-02T22:32:47Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
