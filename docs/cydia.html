@@ -78,70 +78,100 @@
                 </div>
             </nav>
 
-            <div class="container-fluid main">
-                
-                <h3>{{package.name}}</h3>
-
-                <form style="clear:both">
-                    <div v-if="repoUrl" class="form-group">
-                        <a style="margin-bottom: 10px" type="button" class="btn btn-success btn-md" :href="'tweakcompat://repo/?' + repoUrl">
-                            Add Repo to Cydia
-                        </a>             
-                    </div>
-                    <div class="form-group">
-                        <label for="sel1">Tweak Version</label>
-                        <select class="form-control" v-model="currentVersion">
-                            <option v-for="v in uniqueVersions" id="versionSelector" v-bind:value="v">
-                                {{v}}
-                            </option>
-                        </select>
-                    </div>
-                </form>
-
-                <div v-for="version in package.versions">
-
-                    <div class="panel" v-bind:class="{
-                            'panel-success': version.outcome.calculatedStatus == 'Working',
-                            'panel-warning': version.outcome.calculatedStatus == 'Likely working',
-                            'panel-danger': version.outcome.calculatedStatus == 'Not working'
-                        }" v-if="version.tweakVersion == currentVersion" >
-
-                        <div class="panel-heading">
-                            iOS {{version.iOSVersion}} - {{version.outcome.calculatedStatus}}
-                            <span class="badge pull-right">
-                                {{version.outcome.percentage}}% Working
+            <div class="container-fluid main" style="margin-top: 20px;">
+                <div class="row" style="padding-bottom: 20px">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div>
+                            <span class="pull-right">
+                                <a type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#filters" >
+                                    <span class="glyphicon glyphicon-filter"></span>
+                                    Filters
+                                </a>
                             </span>
+                            <h2>
+                                <a style="color: #007196" target="_blank" :href="'http://cydia.saurik.com/package/' + package.id">
+                                    <span class="fa fa-archive"></span>
+                                </a>
+                                {{package.name}}
+                            </h2>
+                            <em>{{package.shortDescription}}, created by {{package.author}} </em>
                         </div>
-
-                        <div class="panel-body">
-                            <p>
-                                {{ version.outcome.good }} device(s) reported this package as
-                                <strong>working</strong> on iOS {{ version.iOSVersion }}.
-                            </p>
-                            
-                            <p v-for="(user, index) in version.users">
-                                {{ relativeDate(user.date) }}, {{user.userName}}
-                                
-                                <a target=_blank v-bind:href="'https://github.com/jlippold/tweakCompatible/issues/' + user.issueNumber">
-                                     reported this tweak
-                                </a> as
-                                <span v-if="user.status == 'working'" class="label label-success">Working</span>
-                                <span v-else-if="user.status == 'partial'" class="label label-warning">Partially Working</span>
-                                <span v-else class="label label-danger">Not Working</span>
-                                from a 
-                                
-                                <span v-if="user.arch32" class="badge">32-bit</span>
-                                <span v-else="user.arch32" class="badge">64-bit</span>
-
-
-                                {{ getDeviceName(user.device)}}. 
-                                <span v-if="user.issues">- {{user.issues}}</span>
-                            </p>
-                            
+                        <div v-if="repoUrl" style="clear:both; padding-top:10px">
+                            <a style="color: #007196" :href="'https://cydia.saurik.com/api/share#?source=' + repoUrl">
+                                <span class="fa fa-plus "></span>
+                                Add Repo To Cydia
+                            </a>
+                            <span> - </span>
+                            {{repoUrl}}
                         </div>
-                    
+                        <div v-else style="clear:both; padding-top:10px">
+                            Repo: {{package.repository}}
+                        </div>
                     </div>
+                </div>
+                
+                <div v-bind:style="colorBorder(version.outcome.calculatedStatus)"
+                    v-for="version in package.versions" 
+                    v-if="filters.iOS.filter(function(e) { return e.version == version.iOSVersion && e.selected }).length > 0"
+                >
+                    <div class="row" style="border-top: 1px solid; padding-top: 20px; padding-bottom: 10px;">
 
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <h4>
+                                <span :class="[ 'glyphicon', 
+                                        {'glyphicon-ok' : version.outcome.calculatedStatus == 'Working', 
+                                        'glyphicon-time' : version.outcome.calculatedStatus == 'Likely working', 
+                                        'glyphicon-remove' : version.outcome.calculatedStatus == 'Not working'}]"
+                                    v-bind:style="colorIcon(version.outcome.calculatedStatus)" >
+                                </span>
+                                {{version.tweakVersion}} on iOS {{version.iOSVersion}}
+                                <a class="pull-right" data-toggle="modal" data-target="#report" href="#report" style="color: #f04124; margin-left: 10px" title="Mod tools">
+                                    <span class="fa fa-flag"></span>
+                                </a>
+                            </h4>
+
+                            <div class="progress" style="margin-bottom: 5px">
+                                <div :class="[ 'progress-bar', 'progress-bar-striped', 
+                                                {'progress-bar-success' : version.outcome.calculatedStatus == 'Working', 
+                                                'progress-bar-warning' : version.outcome.calculatedStatus == 'Likely working', 
+                                                'progress-bar-danger' : version.outcome.calculatedStatus == 'Not working'}]"
+                                    :style="{ width: version.outcome.percentage + '%' }">
+                                    <span class="sr-only">{{version.outcome.percentage}}% Complete (success)</span>
+                                </div>
+                            </div>
+                            <h4>
+                                
+                                <span :class="[ 'label', 
+                                            {'label-success' : version.outcome.calculatedStatus == 'Working', 
+                                            'label-warning' : version.outcome.calculatedStatus == 'Likely working', 
+                                            'label-danger' : version.outcome.calculatedStatus == 'Not working'}]" >
+                                    {{version.outcome.calculatedStatus}}
+                                </span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 20px">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <h5>{{version.outcome.total}} User reports, {{version.outcome.percentage}}% working:</h5>
+                        </div>
+                        <div v-for="user in version.users" class="col-xs-6 col-sm-6 col-md-4 col-lg-2" style="position: relative">
+                            <div class="media" style="padding: 10px 0; font-size: 0.8em">
+                                <div class="media-left media-middle" style="max-width: 90px; overflow: hidden; text-overflow: ellipsis; text-align: center;">
+                                    <a target=_blank v-bind:href="'https://github.com/jlippold/tweakCompatible/issues/' + user.issueNumber">
+                                        <img class="media-object" style="width: 80px" v-bind:src="'https://github.com/' + user.userName + '.png?size=80'" onerror="this.src='https://github.com/identicons/noone.png?s=80'" >
+                                    </a>
+                                    <span style="width: 100%;display: block;overflow: hidden;height: 18px;line-height: 14px; font-weight: 600" v-if="user.status == 'working'" class="label label-success">{{user.userName}}</span>
+                                    <span style="width: 100%;display: block;overflow: hidden;height: 18px;line-height: 14px; font-weight: 600" v-else-if="user.status == 'partial'" class="label label-warning">{{user.userName}}</span>
+                                    <span style="width: 100%;display: block;overflow: hidden;height: 18px;line-height: 14px; font-weight: 600" v-else class="label label-danger">{{user.userName}}</span>
+                                </div>
+                                <div class="media-body">
+                                    <div style="height:100px; overflow:hidden">
+                                        {{ getDeviceName(user.device) }}, {{version.iOSVersion}} {{user.issues}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -180,7 +210,93 @@
                             <button type="button" class="btn btn-danger" data-dismiss="modal">No Thanks</button>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div id="filters" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Filter display</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h5>
+                                iOS Versions:
+                            </h5>
+                            <div>
+                                <label v-for="iOS in filters.iOS" style="margin-left: 10px">
+                                    <input type="checkbox" v-model="iOS.selected">
+                                    iOS {{iOS.version}} 
+                                </label>
+                            </div>
+                            <h5>
+                                Devices:
+                            </h5>
+                            <div>
+                                <label v-for="device in filters.devices" style="margin-left: 10px">
+                                    <input type="checkbox" v-model="device.selected">
+                                        {{device.type}} 
+                                </label>
+                            </div>
             
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="report" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Report package</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                If you're not a mod, don't bother to use this form. It won't work for you.
+                            </p>
+                            <form>
+                                <div class="form-group">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="piratePackage" v-model="mod.action"> 
+                                            Report pirate package `{{package.id}}`
+                                        </label>
+                                    </div>
+                                    <div class="radio" v-if="package.repository.indexOf('null') == -1">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="pirateRepo" v-model="mod.action"> 
+                                            Report pirate repo `{{package.repository}}`
+                                        </label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="changeUrl" v-model="mod.action"> 
+                                            Change repo URL
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="review" v-model="mod.repoUrl" :disabled="mod.action != 'changeUrl'"  placeholder="http://somerepo.com">
+                                </div>
+                            </form> 
+                            <form id="github" method="GET" target="_blank" action="https://github.com/jlippold/tweakCompatible/issues/new">
+                                <input type="hidden" :value="issueTitle" name="title" />
+                                <input type="hidden" :value="issueBody" name="body" />
+                            </form>
+            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" v-on:click="submitMod()">Submit</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -190,7 +306,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/async/2.6.0/async.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 
