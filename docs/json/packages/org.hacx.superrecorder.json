@@ -1,7 +1,7 @@
 {
   "id": "org.hacx.superrecorder",
   "name": "Super Recorder",
-  "latest": "2.35",
+  "latest": "2.35-2",
   "repository": "hAcx Repository",
   "url": "http://hacx.org/repo/",
   "shortDescription": "Call Recorder & Voice Amplifier",
@@ -230,6 +230,37 @@
           "date": "2018-07-08T09:53:21Z",
           "userName": "MLGODFATHER",
           "issueNumber": 15730,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "2.35-2",
+      "iOSVersion": "11.3.1",
+      "repository": "hAcx Repository",
+      "date": "2018-07-09T10:37:07Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone10,3",
+          "issues": "Don’t install this app unless you want your battery get killed with that infamous mediaserverd and applecamerad issue. So far from my testing the app works and records calls fine but this app is the known culprit that sometimes spikes up mediaserverd and applecamerad daemon intermittently and/or when the camera is used, to use high CPU causing battery to drain quickly. This issue existed on 11.1.2 and happening on 11.3.1 too! So don’t install this app until developer fixed this serious issue. I spent a whole day to find out what caused those daemons to act up! It was a nightmare seeing battery getting fucked up every single days! Back then when on 11.1.2 and now on 11.3.1, I had thought it was the electra jailbreak itself but later found out it was this Super Recorder app! Its dependency Hacx daemon doesn’t have any issues though.",
+          "date": "2018-07-09T10:37:07Z",
+          "userName": "goodboydheeraj",
+          "issueNumber": 18385,
           "arch32": false
         }
       ]
