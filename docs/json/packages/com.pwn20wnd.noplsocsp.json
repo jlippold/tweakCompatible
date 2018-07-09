@@ -1,10 +1,10 @@
 {
   "id": "com.pwn20wnd.noplsocsp",
   "name": "NoPlsOCSP",
-  "latest": "1.0-1+debug",
+  "latest": "1.0-3+debug",
   "repository": "Pwn20wnd's Cydia Repo",
   "url": "http://cydia.saurik.com/package/com.pwn20wnd.noplsocsp/",
-  "shortDescription": "Blocks the Apple OCSP servers to block the certificates from getting revoked.",
+  "shortDescription": "Blocks the Apple OCSP servers to prevent the certificates from getting revoked.",
   "category": "System",
   "author": "Pwn20wnd",
   "commercial": false,
@@ -58,9 +58,9 @@
       "outcome": {
         "calculatedStatus": "Working",
         "percentage": 100,
-        "good": 1,
+        "good": 2,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -77,6 +77,15 @@
           "date": "2018-07-09T12:44:53Z",
           "userName": "f3xy",
           "issueNumber": 18566,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone7,2",
+          "issues": "",
+          "date": "2018-07-09T13:27:38Z",
+          "userName": "Galfinite",
+          "issueNumber": 18643,
           "arch32": false
         }
       ]
