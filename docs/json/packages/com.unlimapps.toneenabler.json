@@ -4,7 +4,7 @@
   "latest": "1.1r-14",
   "repository": "apt.thebigboss.org",
   "url": "http://cydia.saurik.com/package/com.unlimapps.toneenabler/",
-  "shortDescription": "Restore ringtone folder use on iOS 7/8",
+  "shortDescription": "In iOS 7.x/8.x apple uses a plist in order to load ringtones in settings instead of simply iterating through the /Library/Ringtones directory. This tweak enables the old behavior that was present before 7.x and reads the tones from the directory so tones that you download from cydia or UnlimTones will now show in settings.",
   "category": "Tweaks",
   "author": "UnlimApps Inc.",
   "commercial": false,
@@ -96,11 +96,11 @@
       "repository": "BigBoss",
       "date": "2018-07-07T17:09:11Z",
       "outcome": {
-        "calculatedStatus": "Working",
-        "percentage": 100,
+        "calculatedStatus": "Likely working",
+        "percentage": 75,
         "good": 3,
         "bad": 0,
-        "total": 3,
+        "total": 4,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -135,6 +135,15 @@
           "date": "2018-07-09T23:26:14Z",
           "userName": "CaptInc",
           "issueNumber": 19788,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone10,2",
+          "issues": "It causes my iPhone 8+ freeze upon installation respring ",
+          "date": "2018-07-10T19:54:19Z",
+          "userName": "TheWarDoctor88",
+          "issueNumber": 21032,
           "arch32": false
         }
       ]
