@@ -1207,22 +1207,21 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.barrel",
+      "id": "com.aaronash.barrel",
       "name": "Barrel",
-      "latest": "1.8.1.1-1",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.barrel/",
+      "latest": "1.8.1.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.aaronash.barrel/",
       "shortDescription": "3D and other effects on icon pages!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "date": "2018-03-31T07:05:38Z",
+      "category": "Tweaks",
+      "author": "Aaron Ash (Charybdis)",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "1.8.1.1-1",
           "iOSVersion": "10.2.1",
-          "repository": "repo.biteyourapple.net",
-          "date": "2018-03-31T07:05:38Z",
+          "repository": "BigBoss",
+          "date": "2018-04-18T01:23:43Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1241,21 +1240,22 @@
       ]
     },
     {
-      "id": "com.aaronash.barrel",
+      "id": "repo.biteyourapple.net.barrel",
       "name": "Barrel",
-      "latest": "1.8.1.2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.aaronash.barrel/",
+      "latest": "1.8.1.1-1",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.barrel/",
       "shortDescription": "3D and other effects on icon pages!",
-      "category": "Tweaks",
-      "author": "Aaron Ash (Charybdis)",
-      "commercial": true,
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "date": "2018-03-31T07:05:38Z",
       "versions": [
         {
           "tweakVersion": "1.8.1.1-1",
           "iOSVersion": "10.2.1",
-          "repository": "BigBoss",
-          "date": "2018-04-18T01:23:43Z",
+          "repository": "repo.biteyourapple.net",
+          "date": "2018-03-31T07:05:38Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1364,10 +1364,10 @@
     {
       "id": "com.rbt.batterylife",
       "name": "BatteryLife",
-      "latest": "1.7.0",
+      "latest": "1.6.14",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.rbt.batterylife/",
-      "shortDescription": "Displays useful information about battery health",
+      "shortDescription": "Displays useful information about your device's battery health",
       "category": "Utilities",
       "author": "rbt",
       "commercial": false,
@@ -3090,7 +3090,7 @@
     {
       "id": "com.julioverne.cypush2",
       "name": "CyPush2",
-      "latest": "1.0",
+      "latest": "1.1",
       "repository": "julioverne's Repo",
       "url": "http://twitter.com/ijulioverne",
       "shortDescription": "Cydia Push Notifications Background",
@@ -3480,6 +3480,38 @@
       ]
     },
     {
+      "id": "repo.biteyourapple.net.eclipse4",
+      "name": "Eclipse 4 (iOS 10)",
+      "latest": "4.1.3",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "System-wide Night Mode and more for iOS 10.",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "4.1.1",
+          "iOSVersion": "10.2.1",
+          "repository": "repo.biteyourapple.net",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "org.thebigboss.eclipse4",
       "name": "Eclipse 4 (iOS 10)",
       "latest": "4.1.3",
@@ -3501,38 +3533,6 @@
             "good": 2,
             "bad": 0,
             "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "repo.biteyourapple.net.eclipse4",
-      "name": "Eclipse 4 (iOS 10)",
-      "latest": "4.1.3",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "System-wide Night Mode and more for iOS 10.",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "4.1.1",
-          "iOSVersion": "10.2.1",
-          "repository": "repo.biteyourapple.net",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -3844,7 +3844,7 @@
     {
       "id": "com.unlimapps.fbpp",
       "name": "Facebook ++",
-      "latest": "1.6r-37",
+      "latest": "1.6r-38",
       "repository": "beta.unlimapps.com",
       "url": "http://beta.unlimapps.com/",
       "shortDescription": "The Facebook tweak that allows you to turn off read recipts, use the in-app messenger, save/download videos and much more!",
@@ -3857,6 +3857,26 @@
           "iOSVersion": "10.2.1",
           "repository": "beta.unlimapps.com",
           "date": "2018-07-08T22:34:13Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.6r-38",
+          "iOSVersion": "10.2.1",
+          "repository": "beta.unlimapps.com",
+          "date": "2018-07-10T19:54:10Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5525,7 +5545,7 @@
     {
       "id": "com.cpdigitaldarkroom.kairos2",
       "name": "Kairos 2",
-      "latest": "1.0.2-1",
+      "latest": "1.0.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.cpdigitaldarkroom.kairos2/",
       "shortDescription": "Message Scheduling for iOS Messages",
@@ -6367,22 +6387,22 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.noctis",
+      "id": "com.repo.xarold.com.noctis",
       "name": "Noctis (iOS 10)",
       "latest": "1.9.8",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.noctis/",
+      "repository": "Xarold Repo",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.noctis/",
       "shortDescription": "Dark Mode for iOS 10",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
+      "category": "Tweaks",
+      "author": "LaughingQuoll",
       "commercial": false,
-      "date": "2018-03-31T07:03:25Z",
+      "date": "2018-07-08T22:40:33Z",
       "versions": [
         {
           "tweakVersion": "1.9.8",
           "iOSVersion": "10.2.1",
-          "repository": "repo.biteyourapple.net",
-          "date": "2018-03-31T07:03:25Z",
+          "repository": "Xarold Repo",
+          "date": "2018-07-08T22:40:33Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6401,22 +6421,22 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.noctis",
+      "id": "repo.biteyourapple.net.noctis",
       "name": "Noctis (iOS 10)",
       "latest": "1.9.8",
-      "repository": "Xarold Repo",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.noctis/",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.noctis/",
       "shortDescription": "Dark Mode for iOS 10",
-      "category": "Tweaks",
-      "author": "LaughingQuoll",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
       "commercial": false,
-      "date": "2018-07-08T22:40:33Z",
+      "date": "2018-03-31T07:03:25Z",
       "versions": [
         {
           "tweakVersion": "1.9.8",
           "iOSVersion": "10.2.1",
-          "repository": "Xarold Repo",
-          "date": "2018-07-08T22:40:33Z",
+          "repository": "repo.biteyourapple.net",
+          "date": "2018-03-31T07:03:25Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6928,7 +6948,7 @@
     {
       "id": "preferenceloader",
       "name": "PreferenceLoader",
-      "latest": "2.2.4~alpha1",
+      "latest": "2.2.3-3",
       "repository": "rpetrich repo",
       "url": "http://cydia.saurik.com/package/preferenceloader/",
       "shortDescription": "load preferences in style",
@@ -7520,10 +7540,10 @@
     {
       "id": "com.abcapps.snapplus",
       "name": "Snap + for Snapchat",
-      "latest": "1.6r-111",
+      "latest": "1.7r-58",
       "repository": "beta.unlimapps.com",
       "url": "http://beta.unlimapps.com/",
-      "shortDescription": "Save/share SC snaps & upload from gallery; formerly AppPlus",
+      "shortDescription": "Extend Snapchat! Formerly AppPlus. Save/Share Snaps. Upload photos/videos from gallery. Works on the latest version of SnapChat!",
       "category": "Tweaks",
       "author": "UnlimApps Inc.",
       "commercial": false,
@@ -7717,22 +7737,20 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.st4",
+      "id": "com.springtomize.st4",
       "name": "Springtomize 4 (iOS 10)",
       "latest": "3",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.st4/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.springtomize.st4/",
       "shortDescription": "Customize your device like never before.",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "Filippo & Janosch",
-      "commercial": false,
-      "date": "2018-03-15T03:10:56Z",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "3",
           "iOSVersion": "10.2.1",
-          "repository": "HackYouriPhone",
-          "date": "2018-07-10T02:25:38Z",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7751,20 +7769,22 @@
       ]
     },
     {
-      "id": "com.springtomize.st4",
+      "id": "com.hackyouriphone.st4",
       "name": "Springtomize 4 (iOS 10)",
       "latest": "3",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.springtomize.st4/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.st4/",
       "shortDescription": "Customize your device like never before.",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "Filippo & Janosch",
-      "commercial": true,
+      "commercial": false,
+      "date": "2018-03-15T03:10:56Z",
       "versions": [
         {
           "tweakVersion": "3",
           "iOSVersion": "10.2.1",
-          "repository": "BigBoss",
+          "repository": "HackYouriPhone",
+          "date": "2018-07-10T02:25:38Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8149,10 +8169,10 @@
     {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "2.0.0-1216+debug",
+      "latest": "2.0.0-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
-      "shortDescription": "System information Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
+      "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
@@ -8330,20 +8350,21 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.tinybar",
+      "id": "com.alexzielenski.updatedtinybar",
       "name": "TinyBar",
-      "latest": "0.1.5-1+debug",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
+      "latest": "0.2.0",
+      "repository": "Dream Code",
+      "url": "http://capt.dreamcode.it/",
       "shortDescription": "Thins notification banners down to size!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
+      "category": "Tweaks",
+      "author": "Michele Primavera",
       "commercial": false,
       "versions": [
         {
-          "tweakVersion": "0.1.5-1+debug",
+          "tweakVersion": "0.2.0",
           "iOSVersion": "10.2.1",
-          "repository": "BiteYourApple",
+          "repository": "Dream Code",
+          "date": "2018-03-31T07:01:03Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8362,21 +8383,20 @@
       ]
     },
     {
-      "id": "com.alexzielenski.updatedtinybar",
+      "id": "repo.biteyourapple.net.tinybar",
       "name": "TinyBar",
-      "latest": "0.2.0",
-      "repository": "Dream Code",
-      "url": "http://capt.dreamcode.it/",
+      "latest": "0.1.5-1+debug",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
       "shortDescription": "Thins notification banners down to size!",
-      "category": "Tweaks",
-      "author": "Michele Primavera",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
       "commercial": false,
       "versions": [
         {
-          "tweakVersion": "0.2.0",
+          "tweakVersion": "0.1.5-1+debug",
           "iOSVersion": "10.2.1",
-          "repository": "Dream Code",
-          "date": "2018-03-31T07:01:03Z",
+          "repository": "BiteYourApple",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
