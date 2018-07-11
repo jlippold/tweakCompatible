@@ -104,12 +104,43 @@ function init(callback) {
                     validate: function (next) {
                         validateChange(change, next);
                     },
-                    add: ['tweaks', 'validate', function (results, next) {
+                    banned: ['validate', function (results, next) {
                         if (!results.validate) return next();
+                        if (bans.packages.indexOf(change.packageId) >= 0 || bans.repositories.indexOf(change.repository)  >= 0 ) {
+                            var opts = {
+                                owner, repo,
+                                number: change.issueNumber,
+                                body: "This report contains piracy and will not be accepted, please refrain from submitting piracy related reports."
+                            };
+                            github.issues.createComment(opts, function () {
+                                return next(null, true);
+                            });
+                        } else {
+                            return next(null, false);
+                        }
+                    }],
+                    closeBanned: ['banned', function(results, next) {
+                        if (!results.validate) return next();
+                        if (!results.banned) return next();
+                        var opts = {
+                            owner, repo,
+                            number: change.issueNumber,
+                            state: "closed",
+                            body: "Removed content",
+                            labels: ["piracy"]
+                        };
+                        github.issues.edit(opts, function () {
+                            next();
+                        });
+                    }],
+                    add: ['closeBanned', 'tweaks', function (results, next) {
+                        if (!results.validate) return next();
+                        if (results.banned) return next();
                         addTweaks(results.tweaks, change, next);
                     }],
                     calculate: ['add', function (results, next) {
                         if (!results.validate) return next();
+                        if (results.banned) return next();
                         var packages = results.add.slice();
                         packages.sort(function compare(a, b) {
                             if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
@@ -120,12 +151,14 @@ function init(callback) {
                     }],
                     save: ['calculate', function (results, next) {
                         if (!results.validate) return next();
+                        if (results.banned) return next();
                         results.tweaks.packages = results.calculate.packages.slice();
                         results.tweaks.iOSVersions = results.calculate.iOSVersions.slice();
                         saveAllChanges(results.tweaks, change, next);
                     }],
                     commit: ['calculate', function (results, next) {
                         if (!results.validate) return next();
+                        if (results.banned) return next();
                         if (mode == "rebuild") {
                             return next();
                         }
@@ -133,6 +166,7 @@ function init(callback) {
                     }],
                     comment: ['commit', function (results, next) {
                         if (!results.validate) return next();
+                        if (results.banned) return next();
                         if (mode == "rebuild") {
                             return next();
                         }
