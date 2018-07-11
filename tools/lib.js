@@ -11,7 +11,7 @@ module.exports.getPackageById = function (id, packages) {
     return packages.find(function (package) {
         return package.id == id;
     });
-}
+};
 
 module.exports.addPirateRepo = function (repo, tweaks, callback) {
     var bans = require("../docs/bans.json");
@@ -21,25 +21,18 @@ module.exports.addPirateRepo = function (repo, tweaks, callback) {
     fs.outputJson(bansPath, bans, jsonOptions, callback);
 }
 
-module.exports.addPiratePackage = function (packageId, tweaks, callback) {
+module.exports.addPiratePackage = function (package, tweaks, callback) {
     var bans = require("../docs/bans.json");
-    if (bans.packages.indexOf(packageId) == -1) {
-        bans.packages.push(packageId);
-
-        var packages = tweaks.packages.slice();
-        var package = lib.getPackageById(packageId, packages);
+    if (bans.packages.indexOf(package.id) == -1) {
+        bans.packages.push(package.id);
         deletePackage(package, function(err) { //remove the json file from disk
-            //remove offending package from the array
-            packages = packages.filter(function(package) { 
-                return package.packageId !== packageId;
-            });
             fs.outputJson(bansPath, bans, jsonOptions, function() { //save to bans file
                 callback(null, true);
             });
         });
     } else {
         console.log("ban already added");
-        return callback();
+        return callback(null, false);
     }
     
 }

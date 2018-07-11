@@ -65,11 +65,19 @@ function init(callback) {
                             return lib.addPirateRepo(change.repo, results.tweaks, next);
                         }
                         if (change.action == "piratePackage" && change.id) {
-                            return lib.addPiratePackage(change.id, results.tweaks, function(err, pendingSaves) {
+                            var package = lib.getPackageById(change.id, results.tweaks.packages);
+                            if (!package) {
+                                console.log("Package not found, can't ban it");
+                                return next();
+                            }
+                            return lib.addPiratePackage(package, results.tweaks, function(err, pendingSaves) {
                                 if (pendingSaves) {
+                                    results.tweaks.packages = results.tweaks.packages.filter(function(p) { 
+                                        return p.id !== package.id;
+                                    });
                                     saveAllChanges(results.tweaks, null, next);
                                 } else {
-                                    next()
+                                    next();
                                 }
                             });
                         }
