@@ -63,15 +63,11 @@ function init(callback) {
 
                         if (change.action == "pirateRepo" && change.repo) {
                             var packagesToKill = lib.getPackagesByRepo(change.repo, results.tweaks.packages);
-                            return lib.addPirateRepo(change.repo, packagesToKill, results.tweaks, function(err, pendingSaves) {
-                                if (pendingSaves) {
-                                    results.tweaks.packages = results.tweaks.packages.filter(function(p) { 
-                                        return p.repository !== change.repo;
-                                    });
-                                    saveAllChanges(results.tweaks, null, next);
-                                } else {
-                                    next();
-                                }
+                            return lib.addPirateRepo(change.repo, packagesToKill, function() {
+                                results.tweaks.packages = results.tweaks.packages.filter(function(p) { 
+                                    return p.repository !== change.repo;
+                                });
+                                saveAllChanges(results.tweaks, null, next);
                             });
                         }
                         if (change.action == "piratePackage" && change.id) {
@@ -80,15 +76,11 @@ function init(callback) {
                                 console.log("Package not found, can't ban it");
                                 return next();
                             }
-                            return lib.addPiratePackage(package, results.tweaks, function(err, pendingSaves) {
-                                if (pendingSaves) {
-                                    results.tweaks.packages = results.tweaks.packages.filter(function(p) { 
-                                        return p.id !== package.id;
-                                    });
-                                    saveAllChanges(results.tweaks, null, next);
-                                } else {
-                                    next();
-                                }
+                            return lib.addPiratePackage(package, function() {
+                                results.tweaks.packages = results.tweaks.packages.filter(function(p) { 
+                                    return p.id !== package.id;
+                                });
+                                saveAllChanges(results.tweaks, null, next);
                             });
                         }
                         if (change.action == "changeUrl" && change.url) {

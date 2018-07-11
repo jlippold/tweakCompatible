@@ -21,37 +21,30 @@ module.exports.getPackagesByRepo = function (repo, packages) {
     return p;
 };
 
-module.exports.addPirateRepo = function (repo, bannedPackages, tweaks, callback) {
+module.exports.addPirateRepo = function (repo, bannedPackages, callback) {
     var bans = require("../docs/bans.json");
     if (bans.repositories.indexOf(repo) == -1) {
         bans.repositories.push(repo);
-        async.each(bannedPackages, function(package, next) {
-            deletePackage(package, next);
-        }, function(err){
-            fs.outputJson(bansPath, bans, jsonOptions, function() { //save to bans file
-                callback(null, true);
-            });
-        });
-    } else {
-        console.log("ban already added");
-        return callback(null, false);
     }
-    
+    async.each(bannedPackages, function(package, next) {
+        deletePackage(package, next);
+    }, function(err){
+        fs.outputJson(bansPath, bans, jsonOptions, function() { //save to bans file
+            callback(null, true);
+        });
+    });
 }
 
-module.exports.addPiratePackage = function (package, tweaks, callback) {
+module.exports.addPiratePackage = function (package, callback) {
     var bans = require("../docs/bans.json");
     if (bans.packages.indexOf(package.id) == -1) {
         bans.packages.push(package.id);
-        deletePackage(package, function(err) { //remove the json file from disk
-            fs.outputJson(bansPath, bans, jsonOptions, function() { //save to bans file
-                callback(null, true);
-            });
-        });
-    } else {
-        console.log("ban already added");
-        return callback(null, false);
     }
+    deletePackage(package, function(err) { //remove the json file from disk
+        fs.outputJson(bansPath, bans, jsonOptions, function() { //save to bans file
+            callback(null, true);
+        });
+    });
 }
 
 module.exports.changeRepoAddress = function (name, url, callback) {
