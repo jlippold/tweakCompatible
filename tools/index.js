@@ -57,14 +57,21 @@ function init(callback) {
                             next(null, false);
                         }
                     },
-                    action: ['moderator', function (results, next) {
+                    tweaks: lib.getTweakList,
+                    action: ['moderator', 'tweaks', function (results, next) {
                         if (!results.moderator) return next();
 
                         if (change.action == "pirateRepo" && change.repo) {
-                            return lib.addPirateRepo(change.repo, next);
+                            return lib.addPirateRepo(change.repo, results.tweaks, next);
                         }
                         if (change.action == "piratePackage" && change.id) {
-                            return lib.addPiratePackage(change.id, next);
+                            return lib.addPiratePackage(change.id, results.tweaks, function(err, pendingSaves) {
+                                if (pendingSaves) {
+                                    saveAllChanges(results.tweaks, null, next);
+                                } else {
+                                    next()
+                                }
+                            });
                         }
                         if (change.action == "changeUrl" && change.url) {
                             return lib.changeRepoAddress(change.repo, change.url, next);
@@ -262,9 +269,7 @@ function addTweaks(tweaks, change, callback) {
                     });
                 });
             }
-
         }
-
     }
 }
 
@@ -390,12 +395,18 @@ function saveAllChanges(list, change, callback) {
             lib.writeIOSVersionList({iOSVersions: list.iOSVersions}, next);
         },
         function writeByPackage(next) {
+            if (!change) {
+                return next();
+            }
             //create package to disk
             var package = lib.getPackageById(change.packageId, list.packages);
             lib.writePackage(package, next);
         },
         function writeByiOSVersion(next) {
             //save ios listing to disk
+            if (!change) {
+                return next();
+            }
             var iOSVersion = change.iOSVersion;
             var output = {
                 packages: []

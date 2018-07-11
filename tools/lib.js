@@ -13,7 +13,7 @@ module.exports.getPackageById = function (id, packages) {
     });
 }
 
-module.exports.addPirateRepo = function (repo, callback) {
+module.exports.addPirateRepo = function (repo, tweaks, callback) {
     var bans = require("../docs/bans.json");
     if (bans.repositories.indexOf(repo) == -1) {
         bans.repositories.push(repo);
@@ -21,12 +21,27 @@ module.exports.addPirateRepo = function (repo, callback) {
     fs.outputJson(bansPath, bans, jsonOptions, callback);
 }
 
-module.exports.addPiratePackage = function (package, callback) {
+module.exports.addPiratePackage = function (packageId, tweaks, callback) {
     var bans = require("../docs/bans.json");
-    if (bans.packages.indexOf(package) == -1) {
-        bans.packages.push(package);
+    if (bans.packages.indexOf(packageId) == -1) {
+        bans.packages.push(packageId);
+
+        var packages = tweaks.packages.slice();
+        var package = lib.getPackageById(packageId, packages);
+        deletePackage(package, function(err) { //remove the json file from disk
+            //remove offending package from the array
+            packages = packages.filter(function(package) { 
+                return package.packageId !== packageId;
+            });
+            fs.outputJson(bansPath, bans, jsonOptions, function() { //save to bans file
+                callback(null, true);
+            });
+        });
+    } else {
+        console.log("ban already added");
+        return callback();
     }
-    fs.outputJson(bansPath, bans, jsonOptions, callback);
+    
 }
 
 module.exports.changeRepoAddress = function (name, url, callback) {
@@ -96,6 +111,12 @@ module.exports.writePackage = function (package, callback) {
     var folder = path.join(jsonOutputPath, "/packages/");
     var file = path.join(folder, package.id + ".json");
     fs.outputJson(file, package, jsonOptions, callback);
+}
+
+function deletePackage(package, callback) {
+    var folder = path.join(jsonOutputPath, "/packages/");
+    var file = path.join(folder, package.id + ".json");
+    fs.unlink(file, callback);
 }
 
 module.exports.writeIOSVersionList = function (list, callback) {
