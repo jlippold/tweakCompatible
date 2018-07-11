@@ -106,7 +106,16 @@ function init(callback) {
                             body: "Do not continue to submit moderator reports when you are not a moderator. You will be banned from using this service."
                         };
                         github.issues.createComment(opts, function () {
-                            return next();
+
+                            opts = {
+                                owner, repo,
+                                number: change.issueNumber,
+                                state: "closed"
+                            };
+                            github.issues.edit(opts, function () {
+                                return next();
+                            });
+
                         });
     
                     }]
