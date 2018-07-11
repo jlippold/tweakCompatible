@@ -1,5 +1,6 @@
 const fs = require('fs-extra');
 const path = require('path');
+const async = require('async');
 var spawn = require('child_process').execFile;
 const tweakListPath = path.join(__dirname, "../docs/tweaks.json");
 const bansPath = path.join(__dirname, "../docs/bans.json");
@@ -13,12 +14,29 @@ module.exports.getPackageById = function (id, packages) {
     });
 };
 
-module.exports.addPirateRepo = function (repo, tweaks, callback) {
+module.exports.getPackagesByRepo = function (repo, packages) {
+    var p = packages.filter(function (package) {
+        return package.repository == repo;
+    });
+    return p;
+};
+
+module.exports.addPirateRepo = function (repo, bannedPackages, tweaks, callback) {
     var bans = require("../docs/bans.json");
     if (bans.repositories.indexOf(repo) == -1) {
         bans.repositories.push(repo);
+        async.each(bannedPackages, function(package, next) {
+            deletePackage(package, next);
+        }, function(err){
+            fs.outputJson(bansPath, bans, jsonOptions, function() { //save to bans file
+                callback(null, true);
+            });
+        });
+    } else {
+        console.log("ban already added");
+        return callback(null, false);
     }
-    fs.outputJson(bansPath, bans, jsonOptions, callback);
+    
 }
 
 module.exports.addPiratePackage = function (package, tweaks, callback) {
@@ -34,7 +52,6 @@ module.exports.addPiratePackage = function (package, tweaks, callback) {
         console.log("ban already added");
         return callback(null, false);
     }
-    
 }
 
 module.exports.changeRepoAddress = function (name, url, callback) {

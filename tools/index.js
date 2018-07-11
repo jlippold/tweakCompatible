@@ -62,7 +62,17 @@ function init(callback) {
                         if (!results.moderator) return next();
 
                         if (change.action == "pirateRepo" && change.repo) {
-                            return lib.addPirateRepo(change.repo, results.tweaks, next);
+                            var packagesToKill = lib.getPackagesByRepo(change.repo, results.tweaks.packages);
+                            return lib.addPirateRepo(change.repo, packagesToKill, results.tweaks, function(err, pendingSaves) {
+                                if (pendingSaves) {
+                                    results.tweaks.packages = results.tweaks.packages.filter(function(p) { 
+                                        return p.repository !== change.repo;
+                                    });
+                                    saveAllChanges(results.tweaks, null, next);
+                                } else {
+                                    next();
+                                }
+                            });
                         }
                         if (change.action == "piratePackage" && change.id) {
                             var package = lib.getPackageById(change.id, results.tweaks.packages);
