@@ -1501,10 +1501,10 @@
       "date": "2018-07-10T15:06:27Z",
       "outcome": {
         "calculatedStatus": "Likely working",
-        "percentage": 50,
-        "good": 1,
+        "percentage": 66,
+        "good": 2,
         "bad": 0,
-        "total": 2,
+        "total": 3,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -1530,6 +1530,15 @@
           "date": "2018-07-12T01:13:45Z",
           "userName": "v0armd9",
           "issueNumber": 23742,
+          "arch32": false
+        },
+        {
+          "status": "partial",
+          "device": "iPhone10,3",
+          "issues": "iOS 11.4 b3; iPhone X; Zeppelin doesn’t work as intended because of two reasons: 1. Zeppelin Carrier Text has unintended hour time value as <string>. Example: The hour is 7 o’clock and your carrier text says, “Custom”, iOS returns “7Custom” as your custom text. 2. Default Zeppelin Logos don’t work at all.",
+          "date": "2018-07-12T06:04:35Z",
+          "userName": "EpicTexans",
+          "issueNumber": 23937,
           "arch32": false
         }
       ]
