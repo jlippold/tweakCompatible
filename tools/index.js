@@ -136,7 +136,8 @@ function init(callback) {
                             var opts = {
                                 owner, repo,
                                 number: change.issueNumber,
-                                body: "This report contains piracy and will not be accepted, please refrain from submitting piracy related reports."
+                                body: "This report contains piracy and will not be accepted, please refrain from submitting piracy related reports. " 
+                                        + "`" + (bans.packages.indexOf(change.packageId) >= 0 ? change.packageId : change.repository) + "`"
                             };
                             github.issues.createComment(opts, function () {
                                 return next(null, true);
