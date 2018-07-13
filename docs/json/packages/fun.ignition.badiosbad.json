@@ -1,10 +1,10 @@
 {
   "id": "fun.ignition.badiosbad",
   "name": "badiOSBad",
-  "latest": "1.2.1-debug",
+  "latest": "1.2.3",
   "repository": "Ignition Repository",
   "url": "http://cydia.saurik.com/package/fun.ignition.badiosbad/",
-  "shortDescription": "Block iOS System Updates from the core, Castrate installd to allow 7 day certificate signed IPAs to install OTA (only when in jailbroken state), removes the Feedback Assistant App, removes update badge and destroys app revokes!",
+  "shortDescription": "Block iOS System Updates from the core, Castrate installd to allow 7 day certificate signed IPAs to install OTA (only when in jailbroken state), removes the Feedback Assistant App, removes update badge, removes the Software Updates Tab and destroys app revokes!",
   "category": "Tweaks",
   "author": "Ignition",
   "commercial": false,
@@ -753,6 +753,37 @@
           "date": "2018-07-12T16:57:06Z",
           "userName": "clarsen1010",
           "issueNumber": 24398,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "1.2.3",
+      "iOSVersion": "11.3.1",
+      "repository": "Ignition Repository",
+      "date": "2018-07-13T08:52:10Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone8,2",
+          "issues": "doesn’t have that error when trying to install/update it anymore",
+          "date": "2018-07-13T08:52:10Z",
+          "userName": "MarioGaming",
+          "issueNumber": 25101,
           "arch32": false
         }
       ]
