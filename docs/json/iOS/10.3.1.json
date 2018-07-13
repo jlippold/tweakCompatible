@@ -103,7 +103,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.12",
+      "latest": "1.9.13~beta2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -176,7 +176,7 @@
     {
       "id": "me.alfhaily.adblockforyoutube",
       "name": "AdBlock for YouTube",
-      "latest": "1.0.7",
+      "latest": "1.0.3",
       "repository": "Alfhaily APT",
       "url": "https://apt.alfhaily.me/",
       "shortDescription": "Block YouTube Ads and Video Ads",
@@ -1409,7 +1409,7 @@
     {
       "id": "org.hacx.callrecorder",
       "name": "Call Recorder (iOS)",
-      "latest": "2.36",
+      "latest": "2.38-6",
       "repository": "hAcx Repository",
       "url": "http://hacx.org/repo/",
       "shortDescription": "World famous Call Recorder",
@@ -2871,10 +2871,10 @@
     {
       "id": "com.julioverne.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "16.7",
+      "latest": "021a",
       "repository": "julioverne's Repo",
       "url": "http://twitter.com/ijulioverne",
-      "shortDescription": "Cydia Extender Installer With Extra Features, patched for iOS 11: MidnightChips",
+      "shortDescription": "Cydia Extender Installer With Extra Features",
       "category": "Utilities",
       "author": "julioverne",
       "commercial": false,
@@ -4907,7 +4907,7 @@
     {
       "id": "com.julioverne.ntspeed",
       "name": "NtSpeed",
-      "latest": "0.2~beta5",
+      "latest": "0.2~beta6",
       "repository": "ipad_kid's repo",
       "url": "http://ipadkid.cf/",
       "shortDescription": "See Active Traffic Network Speed",
@@ -6116,10 +6116,10 @@
     {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "2.0.0-1",
+      "latest": "2.0.0-1216+debug",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
-      "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
+      "shortDescription": "System information Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
@@ -6770,6 +6770,40 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.spark.wiilovemusic",
+      "name": "WiiLoveMusic",
+      "latest": "2.0.0-1",
+      "repository": "Spark's Repo",
+      "url": "http://cydia.saurik.com/package/com.spark.wiilovemusic/",
+      "shortDescription": "Plays wii channel music in your favourite apps!",
+      "category": "Tweaks",
+      "author": "Spark",
+      "commercial": false,
+      "date": "2018-02-28T22:55:39Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0.0-1",
+          "iOSVersion": "10.3.1",
+          "repository": "Spark's Beta Repo",
+          "date": "2018-07-13T02:03:42Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
