@@ -653,11 +653,11 @@
       "repository": "HASHBANG Productions",
       "date": "2018-07-10T23:36:11Z",
       "outcome": {
-        "calculatedStatus": "Not working",
-        "percentage": 0,
-        "good": 0,
+        "calculatedStatus": "Likely working",
+        "percentage": 50,
+        "good": 1,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -674,6 +674,15 @@
           "date": "2018-07-10T23:36:11Z",
           "userName": "Kymek77",
           "issueNumber": 21320,
+          "arch32": false
+        },
+        {
+          "status": "partial",
+          "device": "iPhone10,6",
+          "issues": "Works, but you have to change your firmware number in var/lib/dpkg/status to under 11.3",
+          "date": "2018-07-14T08:22:57Z",
+          "userName": "ACPixel",
+          "issueNumber": 26183,
           "arch32": false
         }
       ]

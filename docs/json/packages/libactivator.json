@@ -1146,11 +1146,11 @@
       "repository": "rpetrich repo",
       "date": "2018-05-29T10:22:31Z",
       "outcome": {
-        "calculatedStatus": "Likely working",
-        "percentage": 75,
-        "good": 3,
+        "calculatedStatus": "Working",
+        "percentage": 80,
+        "good": 4,
         "bad": 0,
-        "total": 4,
+        "total": 5,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -1194,6 +1194,15 @@
           "date": "2018-07-10T21:22:01Z",
           "userName": "Bricktheworld",
           "issueNumber": 21102,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone8,1",
+          "issues": "",
+          "date": "2018-07-14T05:52:08Z",
+          "userName": "DerKev1010",
+          "issueNumber": 26073,
           "arch32": false
         }
       ]
@@ -1298,10 +1307,10 @@
       "date": "2018-07-07T02:26:56Z",
       "outcome": {
         "calculatedStatus": "Working",
-        "percentage": 90,
-        "good": 47,
+        "percentage": 87,
+        "good": 49,
         "bad": 0,
-        "total": 52,
+        "total": 56,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -1778,6 +1787,42 @@
           "userName": "viggou",
           "issueNumber": 24738,
           "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone8,1",
+          "issues": "",
+          "date": "2018-07-13T12:19:12Z",
+          "userName": "Caderockone",
+          "issueNumber": 25207,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone7,1",
+          "issues": "",
+          "date": "2018-07-13T14:11:46Z",
+          "userName": "soum91",
+          "issueNumber": 25272,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone8,2",
+          "issues": "",
+          "date": "2018-07-13T21:16:55Z",
+          "userName": "VideoGC",
+          "issueNumber": 25655,
+          "arch32": false
+        },
+        {
+          "status": "partial",
+          "device": "iPhone10,6",
+          "issues": "Volume buttons don't work to activate stuff",
+          "date": "2018-07-14T03:26:28Z",
+          "userName": "royorbs3",
+          "issueNumber": 25988,
+          "arch32": false
         }
       ]
     },
@@ -2014,11 +2059,11 @@
       "repository": "rpetrich repo",
       "date": "2018-07-08T21:21:21Z",
       "outcome": {
-        "calculatedStatus": "Working",
-        "percentage": 100,
+        "calculatedStatus": "Likely working",
+        "percentage": 75,
         "good": 3,
         "bad": 0,
-        "total": 3,
+        "total": 4,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -2053,6 +2098,15 @@
           "date": "2018-07-11T03:42:35Z",
           "userName": "SilentToes",
           "issueNumber": 21638,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone9,4",
+          "issues": "Works KINDA but CAUSES CRASHES to safe mode regularly!!! Be aware",
+          "date": "2018-07-13T23:41:55Z",
+          "userName": "nolando44",
+          "issueNumber": 25837,
           "arch32": false
         }
       ]
@@ -2158,9 +2212,9 @@
       "outcome": {
         "calculatedStatus": "Working",
         "percentage": 100,
-        "good": 2,
+        "good": 3,
         "bad": 0,
-        "total": 2,
+        "total": 3,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -2186,6 +2240,77 @@
           "date": "2018-07-11T18:54:32Z",
           "userName": "EricRabil",
           "issueNumber": 23184,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone10,6",
+          "issues": "",
+          "date": "2018-07-13T16:34:19Z",
+          "userName": "loubeccabee",
+          "issueNumber": 25353,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "1.9.13~beta2",
+      "iOSVersion": "11.2.5",
+      "repository": "rpetrich repo",
+      "date": "2018-07-13T23:34:18Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone9,3",
+          "issues": "",
+          "date": "2018-07-13T23:34:18Z",
+          "userName": "gmdxrillex",
+          "issueNumber": 25825,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "1.9.13~beta2",
+      "iOSVersion": "8.4",
+      "repository": "rpetrich repo",
+      "date": "2018-07-14T02:40:30Z",
+      "outcome": {
+        "calculatedStatus": "Not working",
+        "percentage": 0,
+        "good": 0,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "not working",
+          "device": "iPhone6,1",
+          "issues": "Preferences are broken on iOS 8.4",
+          "date": "2018-07-14T02:40:30Z",
+          "userName": "XweAponX",
+          "issueNumber": 25967,
           "arch32": false
         }
       ]
