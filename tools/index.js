@@ -536,6 +536,19 @@ function getIssues(callback) {
         function (err) {
             var validIssues = [];
             allIssues.forEach(function (issue) {
+                if (issue.title.indexOf("`") > -1 && issue.title.indexOf("working") > -1) {
+                    var json = lib.parseJSON(issue.body.replace(/```/g, ""));
+                    if (!json || issue.body.length < 30) {
+                        //close this invalid ticket!
+                        var opts = {
+                            owner, repo,
+                            number: change.issueNumber,
+                            state: "closed",
+                            labels: ["invalid"]
+                        };
+                        github.issues.edit(opts, function () {});
+                    }
+                }
                 if (issue.body.substring(0, 3) == "```") {
                     if (issue.body.indexOf("packageStatusExplaination") > -1) {
                         var json = lib.parseJSON(issue.body.replace(/```/g, ""));
@@ -571,7 +584,6 @@ function getIssues(callback) {
                             }
                         }
                     }
-                    
                 }
             });
             callback(null, validIssues, []);
