@@ -880,7 +880,7 @@
     {
       "id": "bash",
       "name": "Bourne-Again SHell",
-      "latest": "4.4.18-2",
+      "latest": "4.4.18",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/bash/",
       "shortDescription": "the best shell ever written by Brian Fox",
@@ -995,6 +995,40 @@
           "iOSVersion": "9.3.5",
           "repository": "Cydia/Telesphoreo",
           "date": "2018-05-05T04:52:14Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "io.github.artillect.cardboard",
+      "name": "CardBoard",
+      "latest": "1.1.0",
+      "repository": "Artillect's Repo",
+      "url": "http://cydia.saurik.com/package/io.github.artillect.cardboard/",
+      "shortDescription": "Make your apps look like cards!",
+      "category": "Tweaks",
+      "author": "Riley",
+      "commercial": false,
+      "date": "2018-07-14T18:22:29Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1.0",
+          "iOSVersion": "9.3.5",
+          "repository": "Artillect's Repo",
+          "date": "2018-07-21T03:12:06Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1216,7 +1250,7 @@
     {
       "id": "cydia",
       "name": "Cydia Installer",
-      "latest": "1.1.30",
+      "latest": "1.1.30-coolstar6-2",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia/",
       "shortDescription": "graphical iPhone front-end for APT",
@@ -1249,10 +1283,10 @@
     {
       "id": "mobilesubstrate",
       "name": "Cydia Substrate",
-      "latest": "0.9.6301",
+      "latest": "99.0",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/mobilesubstrate/",
-      "shortDescription": "powerful code insertion platform",
+      "shortDescription": "Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute",
       "category": "System",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -1514,39 +1548,6 @@
       ]
     },
     {
-      "id": "com.julioverne.ext3nder-installer",
-      "name": "Ext3nder Installer",
-      "latest": "021a",
-      "repository": "julioverne's Repo",
-      "url": "http://twitter.com/ijulioverne",
-      "shortDescription": "Cydia Extender Installer With Extra Features",
-      "category": "Utilities",
-      "author": "julioverne",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "016",
-          "iOSVersion": "9.3.5",
-          "repository": "julioverne's Repo",
-          "date": "2018-05-05T23:11:50Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Not working"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.hackyouriphone.ext3nder-installer",
       "name": "Ext3nder Installer",
       "latest": "016",
@@ -1581,12 +1582,45 @@
       ]
     },
     {
+      "id": "com.julioverne.ext3nder-installer",
+      "name": "Ext3nder Installer",
+      "latest": "021a",
+      "repository": "julioverne's Repo",
+      "url": "http://twitter.com/ijulioverne",
+      "shortDescription": "Cydia Extender Installer With Extra Features",
+      "category": "Utilities",
+      "author": "julioverne",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "016",
+          "iOSVersion": "9.3.5",
+          "repository": "julioverne's Repo",
+          "date": "2018-05-05T23:11:50Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Not working"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.2-1",
+      "latest": "3.5.2-4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iOS. Supports iOS 7+",
+      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -1940,10 +1974,10 @@
     {
       "id": "com.fidele007.hotdog",
       "name": "HotDog",
-      "latest": "3.3.2",
+      "latest": "3.3.3-1085+debug",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.fidele007.hotdog/",
-      "shortDescription": "customize lockscreen labels & carrier name",
+      "shortDescription": "A cool tweak to customize your iOS experience.",
       "category": "Tweaks",
       "author": "fidele007",
       "commercial": false,
@@ -2717,7 +2751,7 @@
     {
       "id": "preferenceloader",
       "name": "PreferenceLoader",
-      "latest": "2.2.3-3",
+      "latest": "2.4.4",
       "repository": "rpetrich repo",
       "url": "http://cydia.saurik.com/package/preferenceloader/",
       "shortDescription": "load preferences in style",
@@ -3253,7 +3287,7 @@
     {
       "id": "tar",
       "name": "Tape Archive",
-      "latest": "1.29-10",
+      "latest": "1.30",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/tar/",
       "shortDescription": "tool for making tape archives",
