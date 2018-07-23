@@ -1,0 +1,76 @@
+{
+  "id": "com.phillipt.shadowboard",
+  "name": "ShadowBoard",
+  "latest": "1.2",
+  "repository": "BigBoss",
+  "url": "http://cydia.saurik.com/package/com.phillipt.shadowboard/",
+  "shortDescription": "dynamic moving shadows on app icons",
+  "category": "Tweaks",
+  "author": "Phillip Tennen",
+  "commercial": false,
+  "date": "2018-07-12T10:56:15Z",
+  "versions": [
+    {
+      "tweakVersion": "1.2",
+      "iOSVersion": "11.3.1",
+      "repository": "BigBoss",
+      "date": "2018-07-12T10:56:15Z",
+      "outcome": {
+        "calculatedStatus": "Not working",
+        "percentage": 0,
+        "good": 0,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "not working",
+          "device": "iPhone8,4",
+          "issues": "Initial shadow but then warps and disappears, also adds lag to folders",
+          "date": "2018-07-12T10:56:15Z",
+          "userName": "marcoms",
+          "issueNumber": 24115,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "1.2",
+      "iOSVersion": "11.1.1",
+      "repository": "BigBoss",
+      "date": "2018-07-16T19:34:46Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone7,2",
+          "issues": "Works completely on iOS 11.1.1, just not in LPM, because that disables gyroscope on the homescreen.",
+          "date": "2018-07-16T19:34:46Z",
+          "userName": "SouthernStorms",
+          "issueNumber": 28064,
+          "arch32": false
+        }
+      ]
+    }
+  ]
+}

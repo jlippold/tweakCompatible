@@ -1,0 +1,76 @@
+{
+  "id": "kr.iolate.customvolumestep",
+  "name": "CustomVolumeStep",
+  "latest": "0.1-2",
+  "repository": "BigBoss",
+  "url": "http://cydia.saurik.com/package/kr.iolate.customvolumestep/",
+  "shortDescription": "custom stepping amount for volume keys",
+  "category": "System",
+  "author": "iolate",
+  "commercial": false,
+  "date": "2018-03-21T04:41:26Z",
+  "versions": [
+    {
+      "tweakVersion": "0.1-2",
+      "iOSVersion": "11.0.2",
+      "repository": "BigBoss",
+      "date": "2018-03-21T04:41:26Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone10,1",
+          "issues": "",
+          "date": "2018-03-21T04:41:26Z",
+          "userName": "SlashNephy",
+          "issueNumber": 7684,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.1-2",
+      "iOSVersion": "10.3.1",
+      "repository": "BigBoss",
+      "date": "2018-03-25T18:47:45Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "partial",
+          "device": "iPhone8,1",
+          "issues": "Steps are reduced only when going up. Volume down is not affected. (Could be on purpose / good if you want to silence the volume quick)",
+          "date": "2018-03-25T18:47:45Z",
+          "userName": "sillwiu",
+          "issueNumber": 8256,
+          "arch32": false
+        }
+      ]
+    }
+  ]
+}

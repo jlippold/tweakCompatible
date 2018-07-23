@@ -1,0 +1,54 @@
+{
+  "id": "kr.iolate.touchposeplus",
+  "name": "TouchPose+",
+  "latest": "1.2-3",
+  "repository": "BigBoss",
+  "url": "http://cydia.saurik.com/package/kr.iolate.touchposeplus/",
+  "shortDescription": "touch indicators; custom size, color, image",
+  "category": "Tweaks",
+  "author": "iolate",
+  "commercial": false,
+  "date": "2018-07-16T18:22:08Z",
+  "versions": [
+    {
+      "tweakVersion": "1.2-3",
+      "iOSVersion": "11.3.1",
+      "repository": "BigBoss",
+      "date": "2018-07-16T18:22:08Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 2,
+        "bad": 0,
+        "total": 2,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "partial",
+          "device": "iPhone8,2",
+          "issues": "Tutorial  To fix it crashing all apps go to /Library/MobileSubstrate/DynamicLibraries/TouchPose.plist. change com.apple.UIKit to com.apple.springboard. Respring and it will only work on the springboard and lockscreen therefore not crashing apps. Note: This doesn't allow TouchPose+ to work inside of apps.  Thanks to @JunesIphone for this tutorial",
+          "date": "2018-07-16T18:22:08Z",
+          "userName": "AntmanAvengers",
+          "issueNumber": 28033,
+          "arch32": false
+        },
+        {
+          "status": "partial",
+          "device": "iPhone8,4",
+          "issues": "",
+          "date": "2018-07-19T17:47:06Z",
+          "userName": "VariableRiw",
+          "issueNumber": 30056,
+          "arch32": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "com.hackyouriphone.xenhtml",
+  "name": "Xen HTML",
+  "latest": "0.3.5k",
+  "repository": "HackYouriPhone",
+  "url": "http://cydia.saurik.com/package/com.hackyouriphone.xenhtml/",
+  "shortDescription": "Unified HTML rendering; lockscreen and homescreen",
+  "category": "HYI - Tweaks",
+  "author": "Matt Clarke",
+  "commercial": false,
+  "date": "2018-07-08T20:34:04Z",
+  "versions": [
+    {
+      "tweakVersion": "0.3.5k",
+      "iOSVersion": "11.3.1",
+      "repository": "HackYouriPhone",
+      "date": "2018-07-08T20:34:04Z",
+      "outcome": {
+        "calculatedStatus": "Not working",
+        "percentage": 0,
+        "good": 0,
+        "bad": 0,
+        "total": 2,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "not working",
+          "device": "iPhone9,3",
+          "issues": "Will cause a respring loop.",
+          "date": "2018-07-08T20:34:04Z",
+          "userName": "FinnishArmy",
+          "issueNumber": 16836,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone10,6",
+          "issues": "Installed and it went into respring loop. Had to ssh via usb and killall. Got me to jailbreak safe mode so I can uninstall. Jailbreak works fine now without having to restart. ",
+          "date": "2018-07-09T02:46:11Z",
+          "userName": "iconiclimited",
+          "issueNumber": 17689,
+          "arch32": false
+        }
+      ]
+    }
+  ]
+}
