@@ -542,7 +542,7 @@ function getIssues(callback) {
                         //close this invalid ticket!
                         var opts = {
                             owner, repo,
-                            number: change.issueNumber,
+                            number: issue.id,
                             state: "closed",
                             labels: ["invalid"]
                         };
