@@ -516,7 +516,6 @@ function getIssues(callback) {
         function (next) {
             github.issues.getForRepo(options, function (err, result) {
                 result.data.forEach(function (issue) {
-                    console.log(issue);
                     var shouldSkip = issue.labels.find(function (label) {
                         return label.name == "bypass"
                     });
@@ -542,9 +541,8 @@ function getIssues(callback) {
                     if (!json || issue.body.length < 30) {
                         //close this invalid ticket!
                         var opts = {
-                            owner: issue.owner, 
-                            repo: issue.repo,
-                            number: issue.id,
+                            owner, repo,
+                            number: issue.number,
                             state: "closed",
                             labels: ["invalid"]
                         };
