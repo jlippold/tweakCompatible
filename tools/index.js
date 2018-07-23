@@ -516,6 +516,7 @@ function getIssues(callback) {
         function (next) {
             github.issues.getForRepo(options, function (err, result) {
                 result.data.forEach(function (issue) {
+                    console.log(issue);
                     var shouldSkip = issue.labels.find(function (label) {
                         return label.name == "bypass"
                     });
