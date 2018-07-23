@@ -541,11 +541,12 @@ function getIssues(callback) {
                     if (!json || issue.body.length < 30) {
                         //close this invalid ticket!
                         var opts = {
-                            owner, repo,
+                            issue.owner, issue.repo,
                             number: issue.id,
                             state: "closed",
                             labels: ["invalid"]
                         };
+                        console.log(opts);
                         github.issues.edit(opts, function () {});
                     }
                 }
