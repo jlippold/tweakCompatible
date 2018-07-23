@@ -540,13 +540,13 @@ function getIssues(callback) {
                     var json = lib.parseJSON(issue.body.replace(/```/g, ""));
                     if (!json || issue.body.length < 30) {
                         //close this invalid ticket!
+                        console.log("Closing invalid ticket: " + issue.number);
                         var opts = {
                             owner, repo,
                             number: issue.number,
                             state: "closed",
                             labels: ["invalid"]
                         };
-                        console.log(opts);
                         github.issues.edit(opts, function () {});
                     }
                 }
