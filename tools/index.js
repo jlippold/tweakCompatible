@@ -63,6 +63,18 @@ function init(callback) {
 
                         if (change.action == "pirateRepo" && change.repo) {
                             var packagesToKill = lib.getPackagesByRepo(change.repo, results.tweaks.packages);
+                            if (packagesToKill.length == 0) {
+                                console.log("Repo packages not found, can't ban it");
+                                opts = {
+                                    owner, repo,
+                                    number: change.issueNumber,
+                                    state: "closed"
+                                };
+                                github.issues.edit(opts, function () {
+                                    return next();
+                                });
+                                return;
+                            }
                             return lib.addPirateRepo(change.repo, packagesToKill, function() {
                                 results.tweaks.packages = results.tweaks.packages.filter(function(p) { 
                                     return p.repository !== change.repo;

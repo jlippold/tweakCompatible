@@ -26,6 +26,7 @@ module.exports.addPirateRepo = function (repo, bannedPackages, callback) {
     if (bans.repositories.indexOf(repo) == -1) {
         bans.repositories.push(repo);
     }
+
     async.each(bannedPackages, function(package, next) {
         deletePackage(package, next);
     }, function(err){
