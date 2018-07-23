@@ -7,7 +7,7 @@ const compareVersions = require('compare-versions');
 var lib = require("./lib");
 var Package = require("./Package"); //model
 var User = require("./User"); //model
-var Version = require("./Version"); //model
+var Version = require("./Version"); //modfel
 var bans = require("../docs/bans.json");
 var moderators = require("../docs/admins.json").moderators;
 var devices = require("../docs/devices.json").devices;
@@ -74,7 +74,15 @@ function init(callback) {
                             var package = lib.getPackageById(change.id, results.tweaks.packages);
                             if (!package) {
                                 console.log("Package not found, can't ban it");
-                                return next();
+                                opts = {
+                                    owner, repo,
+                                    number: change.issueNumber,
+                                    state: "closed"
+                                };
+                                github.issues.edit(opts, function () {
+                                    return next();
+                                });
+                                //return next();
                             }
                             return lib.addPiratePackage(package, function() {
                                 results.tweaks.packages = results.tweaks.packages.filter(function(p) { 
