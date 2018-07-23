@@ -83,13 +83,14 @@ function init(callback) {
                                     return next();
                                 });
                             } else {
-                                return lib.addPiratePackage(package, function() {
+                                lib.addPiratePackage(package, function() {
                                     results.tweaks.packages = results.tweaks.packages.filter(function(p) { 
                                         return p.id !== package.id;
                                     });
                                     saveAllChanges(results.tweaks, null, next);
                                 });
                             }
+                            return;
                         }
                         if (change.action == "changeUrl" && change.url) {
                             return lib.changeRepoAddress(change.repo, change.url, next);
