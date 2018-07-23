@@ -1713,10 +1713,10 @@
     {
       "id": "com.julioverne.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "16.7",
+      "latest": "021a",
       "repository": "julioverne's Repo",
       "url": "http://twitter.com/ijulioverne",
-      "shortDescription": "Cydia Extender Installer With Extra Features, patched for iOS 11: MidnightChips",
+      "shortDescription": "Cydia Extender Installer With Extra Features",
       "category": "Utilities",
       "author": "julioverne",
       "commercial": false,
@@ -1916,10 +1916,10 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.2-1",
+      "latest": "3.5.2-4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iOS. Supports iOS 7+",
+      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -2065,6 +2065,40 @@
           "iOSVersion": "11.2.2",
           "repository": "BigBoss",
           "date": "2018-07-11T08:55:35Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.packickx.mrkushy.harlem",
+      "name": "Harlem Shake ios 11",
+      "latest": "1.0",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.packickx.mrkushy.harlem/",
+      "shortDescription": "Harlem Shake Activator action ios 11 fix.",
+      "category": "Tweaks",
+      "author": "kush",
+      "commercial": false,
+      "date": "2018-07-23T09:32:28Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0",
+          "iOSVersion": "11.2.2",
+          "repository": "Packix",
+          "date": "2018-07-23T09:32:28Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2577,22 +2611,22 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.mikoto",
+      "id": "com.hackyouriphone.mikoto",
       "name": "mikoto",
       "latest": "3.0.8",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.mikoto/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.mikoto/",
       "shortDescription": "Comprehensive iOS System/App Store App customisation suite",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
+      "category": "HYI - Tweaks",
+      "author": "Karen Tsai (angelXwind)",
       "commercial": false,
-      "date": "2018-07-09T23:10:31Z",
+      "date": "2018-07-09T11:57:02Z",
       "versions": [
         {
           "tweakVersion": "3.0.8",
           "iOSVersion": "11.2.2",
-          "repository": "repo.biteyourapple.net",
-          "date": "2018-07-09T23:10:31Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-07-09T11:57:02Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2611,22 +2645,22 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.mikoto",
+      "id": "repo.biteyourapple.net.mikoto",
       "name": "mikoto",
       "latest": "3.0.8",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.mikoto/",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.mikoto/",
       "shortDescription": "Comprehensive iOS System/App Store App customisation suite",
-      "category": "HYI - Tweaks",
-      "author": "Karen Tsai (angelXwind)",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
       "commercial": false,
-      "date": "2018-07-09T11:57:02Z",
+      "date": "2018-07-09T23:10:31Z",
       "versions": [
         {
           "tweakVersion": "3.0.8",
           "iOSVersion": "11.2.2",
-          "repository": "HackYouriPhone",
-          "date": "2018-07-09T11:57:02Z",
+          "repository": "repo.biteyourapple.net",
+          "date": "2018-07-09T23:10:31Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3885,7 +3919,7 @@
     {
       "id": "com.cpdigitaldarkroom.taptapflip",
       "name": "TapTapFlip",
-      "latest": "1.4.2",
+      "latest": "1.4.1",
       "repository": "apt.thebigboss.org",
       "url": "http://cydia.saurik.com/package/com.cpdigitaldarkroom.taptapflip/",
       "shortDescription": "Double tap to flip camera",
@@ -4023,7 +4057,7 @@
       "latest": "1.1r-14",
       "repository": "apt.thebigboss.org",
       "url": "http://cydia.saurik.com/package/com.unlimapps.toneenabler/",
-      "shortDescription": "In iOS 7.x/8.x apple uses a plist in order to load ringtones in settings instead of simply iterating through the /Library/Ringtones directory. This tweak enables the old behavior that was present before 7.x and reads the tones from the directory so tones that you download from cydia or UnlimTones will now show in settings.",
+      "shortDescription": "Restore ringtone folder use on iOS 7/8",
       "category": "Tweaks",
       "author": "UnlimApps Inc.",
       "commercial": false,
