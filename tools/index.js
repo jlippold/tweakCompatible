@@ -541,7 +541,8 @@ function getIssues(callback) {
                     if (!json || issue.body.length < 30) {
                         //close this invalid ticket!
                         var opts = {
-                            issue.owner, issue.repo,
+                            owner: issue.owner, 
+                            repo: issue.repo,
                             number: issue.id,
                             state: "closed",
                             labels: ["invalid"]
