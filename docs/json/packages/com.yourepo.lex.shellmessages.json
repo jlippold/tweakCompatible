@@ -16,11 +16,11 @@
       "repository": "lex Source - YouRepo",
       "date": "2018-07-22T14:38:48Z",
       "outcome": {
-        "calculatedStatus": "Working",
-        "percentage": 100,
+        "calculatedStatus": "Likely working",
+        "percentage": 50,
         "good": 1,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -37,6 +37,15 @@
           "date": "2018-07-22T14:38:48Z",
           "userName": "tyler-rodriguez",
           "issueNumber": 32072,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone6,1",
+          "issues": "Sms.db not found error. Even after creating sms.db file manually, it gets deleted on respring/soft reboot.",
+          "date": "2018-07-22T10:30:51Z",
+          "userName": "sudeep-08",
+          "issueNumber": 31993,
           "arch32": false
         }
       ]
