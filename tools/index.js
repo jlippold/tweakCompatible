@@ -79,17 +79,17 @@ function init(callback) {
                                     number: change.issueNumber,
                                     state: "closed"
                                 };
-                                github.issues.edit(opts, function () {
+                                 github.issues.edit(opts, function () {
                                     return next();
                                 });
-                                //return next();
-                            }
-                            return lib.addPiratePackage(package, function() {
-                                results.tweaks.packages = results.tweaks.packages.filter(function(p) { 
-                                    return p.id !== package.id;
+                            } else {
+                                return lib.addPiratePackage(package, function() {
+                                    results.tweaks.packages = results.tweaks.packages.filter(function(p) { 
+                                        return p.id !== package.id;
+                                    });
+                                    saveAllChanges(results.tweaks, null, next);
                                 });
-                                saveAllChanges(results.tweaks, null, next);
-                            });
+                            }
                         }
                         if (change.action == "changeUrl" && change.url) {
                             return lib.changeRepoAddress(change.repo, change.url, next);
