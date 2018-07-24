@@ -537,10 +537,10 @@
       "date": "2018-07-23T23:59:42Z",
       "outcome": {
         "calculatedStatus": "Likely working",
-        "percentage": 75,
+        "percentage": 60,
         "good": 3,
         "bad": 0,
-        "total": 4,
+        "total": 5,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -584,6 +584,15 @@
           "date": "2018-07-24T00:30:27Z",
           "userName": "Onetwothree45",
           "issueNumber": 33065,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone10,2",
+          "issues": "UPDATED: v1.4.0 (24/07/2018) - The new install script will try to prevent installations that would lead to a /etc/hosts file size that iOS can’t handle (install will fail if the size limit is reached and will ask the user to clear the hosts file). For reference, this is a known issue that break iOS domain name resolving once the hosts file reaches a certain size.",
+          "date": "2018-07-24T01:11:07Z",
+          "userName": "Squiddley",
+          "issueNumber": 33139,
           "arch32": false
         }
       ]
