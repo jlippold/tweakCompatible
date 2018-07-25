@@ -1,10 +1,10 @@
 {
   "id": "cydia",
   "name": "Cydia Installer",
-  "latest": "1.1.30",
+  "latest": "1.9",
   "repository": "Cydia/Telesphoreo",
   "url": "http://cydia.saurik.com/package/cydia/",
-  "shortDescription": "graphical iPhone front-end for APT",
+  "shortDescription": "Base scripts and tools to set up Cydia-compatible virtual dependencies",
   "category": "Packaging",
   "author": "Jay Freeman (saurik)",
   "commercial": false,
@@ -1339,6 +1339,37 @@
           "userName": "crypt3r2",
           "issueNumber": 33713,
           "arch32": true
+        }
+      ]
+    },
+    {
+      "tweakVersion": "1.9",
+      "iOSVersion": "11.3.1",
+      "repository": "Electra's iOS Utilities",
+      "date": "2018-07-25T22:29:08Z",
+      "outcome": {
+        "calculatedStatus": "Not working",
+        "percentage": 0,
+        "good": 0,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "not working",
+          "device": "iPhone10,6",
+          "issues": "Says invalid URL ",
+          "date": "2018-07-25T22:29:08Z",
+          "userName": "connys11",
+          "issueNumber": 33941,
+          "arch32": false
         }
       ]
     }
