@@ -343,7 +343,7 @@
     {
       "id": "com.blandry.alarmvolume",
       "name": "AlarmVolume",
-      "latest": "1.2.3",
+      "latest": "1.2.4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.blandry.alarmvolume/",
       "shortDescription": "Set volume for Alarms and Timers",
@@ -512,7 +512,7 @@
     {
       "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
-      "latest": "1.0r-85",
+      "latest": "1.0r-99",
       "repository": "beta.unlimapps.com",
       "url": "https://beta.unlimapps.com/",
       "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
@@ -677,7 +677,7 @@
     {
       "id": "net.angelxwind.appsyncunified",
       "name": "AppSync Unified",
-      "latest": "30.0",
+      "latest": "31.1",
       "repository": "Karen's Repo",
       "url": "http://cydia.angelxwind.net/",
       "shortDescription": "Enables the ability to install unsigned/fakesigned iOS applications.",
@@ -710,7 +710,7 @@
     {
       "id": "net.limneos.audiorecorder",
       "name": "AudioRecorder 2 (iOS 8,9,10)",
-      "latest": "1.6-48",
+      "latest": "1.6-80",
       "repository": "limneos.net",
       "url": "http://limneos.net/repo/",
       "shortDescription": "Most Advanced iOS Call Recorder Ever!",
@@ -1476,10 +1476,10 @@
     {
       "id": "org.hacx.callrecorder",
       "name": "Call Recorder (iOS)",
-      "latest": "2.39-6",
+      "latest": "2.39-5",
       "repository": "hAcx Repository",
       "url": "http://hacx.org/repo/",
-      "shortDescription": "Native Call Recorder",
+      "shortDescription": "iPhone Call Recorder",
       "category": "Tweaks",
       "author": "hAcx",
       "commercial": false,
@@ -2441,7 +2441,7 @@
     {
       "id": "com.cpdigitaldarkroom.cuttlefish",
       "name": "Cuttlefish",
-      "latest": "1.1.2",
+      "latest": "1.1.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.cpdigitaldarkroom.cuttlefish/",
       "shortDescription": "Use icon color for shortcut menu background tint",
@@ -2972,7 +2972,7 @@
     {
       "id": "com.thireus.untrustedhostsblockerexperimental",
       "name": "Experimental Untrusted Hosts Blocker",
-      "latest": "2.5.2",
+      "latest": "2.6.0",
       "repository": "Thireus Repository",
       "url": "http://repo.thireus.com",
       "shortDescription": "Additional experimental hosts for Untrusted Hosts Blocker.\r",
@@ -3071,10 +3071,10 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.2-4",
+      "latest": "3.5.2-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
+      "shortDescription": "File Manager for iOS. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -3320,6 +3320,38 @@
       ]
     },
     {
+      "id": "repo.biteyourapple.net.flex2",
+      "name": "Flex 2",
+      "latest": "2.0k",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Easily make your own tweaks, and share them on the Flex Community Cloud.",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0k",
+          "iOSVersion": "10.3.1",
+          "repository": "BiteYourApple",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.fuyuchi.flex2",
       "name": "Flex 2",
       "latest": "2.0.1",
@@ -3354,41 +3386,9 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.flex2",
-      "name": "Flex 2",
-      "latest": "2.0k",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Easily make your own tweaks, and share them on the Flex Community Cloud.",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0k",
-          "iOSVersion": "10.3.1",
-          "repository": "BiteYourApple",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "flex3beta",
       "name": "Flex 3 Beta",
-      "latest": "3~Beta46",
+      "latest": "3~Beta48",
       "repository": "Delta",
       "url": "http://getdelta.co/",
       "shortDescription": "Develop your own tweaks and share them on the Flex Community Cloud",
@@ -3910,6 +3910,40 @@
       ]
     },
     {
+      "id": "com.ryu.wdg006",
+      "name": "HS.Ryu_006 Fluid Widget",
+      "latest": "1.0.7",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.ryu.wdg006/",
+      "shortDescription": "HS Widget for XenHTML/SBHTML",
+      "category": "Widget",
+      "author": "Ryu",
+      "commercial": false,
+      "date": "2018-07-11T10:37:47Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.7",
+          "iOSVersion": "10.3.1",
+          "repository": "Packix",
+          "date": "2018-07-26T15:30:18Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "org.altervista.exilecom.icleaner",
       "name": "iCleaner",
       "latest": "7.7.0",
@@ -4083,7 +4117,7 @@
     {
       "id": "com.unlimapps.gramplus",
       "name": "Instagram ++",
-      "latest": "1.8r-176",
+      "latest": "1.8r-171",
       "repository": "beta.unlimapps.com",
       "url": "http://beta.unlimapps.com/",
       "shortDescription": "Download & Copy Instagram media",
@@ -4190,7 +4224,7 @@
     {
       "id": "com.thireus.untrustedhostsblocker9",
       "name": "iOS 9/10 - Untrusted Hosts Blocker",
-      "latest": "1.3.0",
+      "latest": "1.4.0",
       "repository": "Thireus Repository",
       "url": "http://repo.thireus.com",
       "shortDescription": "Say goodbye to tracking, spies, intrusive ads and untrusted hosts.\r",
@@ -4443,7 +4477,7 @@
     {
       "id": "com.junesiphone.lockpluspro",
       "name": "LockPlus Pro",
-      "latest": "1.3.0",
+      "latest": "1.3.1",
       "repository": "junesiphone.com",
       "url": "http://cydia.saurik.com/package/com.junesiphone.lockpluspro/",
       "shortDescription": "The ultimate lock screen tweak!",
@@ -5139,10 +5173,10 @@
     {
       "id": "ch.mdaus.palette",
       "name": "Palette",
-      "latest": "0.6-1+debug",
+      "latest": "1.0",
       "repository": "Maxwell Dausch's Repo",
       "url": "http://cydia.saurik.com/package/ch.mdaus.palette/",
-      "shortDescription": "Color app notifications based off of average icon color",
+      "shortDescription": "Brighten up your notifications!",
       "category": "Tweaks",
       "author": "Maxwell Dausch",
       "commercial": false,
@@ -5275,10 +5309,10 @@
     {
       "id": "com.cpdigitaldarkroom.placeholder",
       "name": "Placeholder",
-      "latest": "0.0.1-15+debug",
+      "latest": "1.2.1",
       "repository": "CP Digital Darkroom Repo",
       "url": "https://repo.cpdigitaldarkroom.com/",
-      "shortDescription": "An awesome MobileSubstrate tweak!",
+      "shortDescription": "Placeholder Icon for Inconless Tweak Settings",
       "category": "Tweaks",
       "author": "CP Digital Darkroom",
       "commercial": false,
@@ -6250,10 +6284,10 @@
     {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "2.2.2",
+      "latest": "2.0.0-1216+debug",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
-      "shortDescription": "Device info added to General > About",
+      "shortDescription": "System information Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
@@ -6887,7 +6921,7 @@
     {
       "id": "com.fouadraheb.watusi",
       "name": "Watusi 2 for WhatsApp",
-      "latest": "1.0.52",
+      "latest": "1.0.56",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.fouadraheb.watusi/",
       "shortDescription": "The all-in-one tweak for WhatsApp Messenger",
