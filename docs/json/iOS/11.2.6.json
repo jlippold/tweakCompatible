@@ -104,7 +104,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.13~beta2",
+      "latest": "1.9.12",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -697,7 +697,7 @@
     {
       "id": "com.tigisoftware.appdatamanager",
       "name": "Apps Manager",
-      "latest": "1.4.0-19",
+      "latest": "1.4.0-22",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.appdatamanager/",
       "shortDescription": "This tool provides the way to WIPE, BACKUP, RESTORE AppData for installed Apps",
@@ -851,7 +851,7 @@
     {
       "id": "net.limneos.audiorecorder",
       "name": "AudioRecorder 2 (iOS 8,9,10)",
-      "latest": "1.6-80",
+      "latest": "1.6-93",
       "repository": "limneos.net",
       "url": "http://limneos.net/repo/",
       "shortDescription": "Most Advanced iOS Call Recorder Ever!",
@@ -1070,6 +1070,39 @@
       ]
     },
     {
+      "id": "com.rbt.batterylife",
+      "name": "BatteryLife",
+      "latest": "1.7.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.rbt.batterylife/",
+      "shortDescription": "Displays useful information about battery health",
+      "category": "Utilities",
+      "author": "rbt",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.7.0",
+          "iOSVersion": "11.2.6",
+          "repository": "BigBoss",
+          "date": "2018-07-07T21:40:35Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 3,
+            "bad": 0,
+            "total": 3,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.modmyi.batterylife",
       "name": "BatteryLife",
       "latest": "1.6.15",
@@ -1092,39 +1125,6 @@
             "good": 0,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.rbt.batterylife",
-      "name": "BatteryLife",
-      "latest": "1.7.0",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.rbt.batterylife/",
-      "shortDescription": "Displays useful information about battery health",
-      "category": "Utilities",
-      "author": "rbt",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.7.0",
-          "iOSVersion": "11.2.6",
-          "repository": "BigBoss",
-          "date": "2018-07-07T21:40:35Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 3,
-            "bad": 0,
-            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -1224,6 +1224,40 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.modmyi.beeralldayforalkaline",
+      "name": "Beer All Day for Alkaline",
+      "latest": "1.0",
+      "repository": "ModMyi (Archive)",
+      "url": "http://cydia.saurik.com/package/com.modmyi.beeralldayforalkaline/",
+      "shortDescription": "Beer All Day for Alkaline",
+      "category": "Addons (Alkaline)",
+      "author": "Bryan George Designs",
+      "commercial": false,
+      "date": "2018-07-08T22:53:22Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0",
+          "iOSVersion": "11.2.6",
+          "repository": "ModMyi (Archive)",
+          "date": "2018-07-28T21:43:35Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -1459,22 +1493,22 @@
       ]
     },
     {
-      "id": "com.yourepo.kiiimo.bioprotect",
+      "id": "net.limneos.bioprotectx",
       "name": "BioProtect X for iOS 11",
-      "latest": "2.3-9K",
-      "repository": "cydia.kiiimo.org",
-      "url": "http://cydia.saurik.com/package/com.yourepo.kiiimo.bioprotect/",
-      "shortDescription": "Protect your apps with Touch ID!",
-      "category": "iOS 11.3x",
+      "latest": "3.0-16",
+      "repository": "Limneos Repo",
+      "url": "http://limneos.net/repo/",
+      "shortDescription": "Protect your apps with Touch/Face ID!",
+      "category": "Tweaks",
       "author": "Elias Limneos",
       "commercial": false,
-      "date": "2018-07-08T06:59:47Z",
+      "date": "2018-02-28T01:34:05Z",
       "versions": [
         {
-          "tweakVersion": "2.3-9K",
+          "tweakVersion": "2.3-10",
           "iOSVersion": "11.2.6",
-          "repository": "A Kiiimo Repositoty .🌙",
-          "date": "2018-07-08T14:31:44Z",
+          "repository": "Limneos Repo",
+          "date": "2018-07-08T14:58:37Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1493,22 +1527,22 @@
       ]
     },
     {
-      "id": "net.limneos.bioprotectx",
+      "id": "com.yourepo.kiiimo.bioprotect",
       "name": "BioProtect X for iOS 11",
-      "latest": "3.0-16",
-      "repository": "Limneos Repo",
-      "url": "http://limneos.net/repo/",
-      "shortDescription": "Protect your apps with Touch/Face ID!",
-      "category": "Tweaks",
+      "latest": "2.3-9K",
+      "repository": "cydia.kiiimo.org",
+      "url": "http://cydia.saurik.com/package/com.yourepo.kiiimo.bioprotect/",
+      "shortDescription": "Protect your apps with Touch ID!",
+      "category": "iOS 11.3x",
       "author": "Elias Limneos",
       "commercial": false,
-      "date": "2018-02-28T01:34:05Z",
+      "date": "2018-07-08T06:59:47Z",
       "versions": [
         {
-          "tweakVersion": "2.3-10",
+          "tweakVersion": "2.3-9K",
           "iOSVersion": "11.2.6",
-          "repository": "Limneos Repo",
-          "date": "2018-07-08T14:58:37Z",
+          "repository": "A Kiiimo Repositoty .🌙",
+          "date": "2018-07-08T14:31:44Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3260,7 +3294,7 @@
     {
       "id": "com.foxfort.facebookdarkmode",
       "name": "FacebookDarkMode",
-      "latest": "2.0.0",
+      "latest": "2.0.1",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.foxfort.facebookdarkmode/",
       "shortDescription": "Dark mode for Facebook",
@@ -3416,10 +3450,10 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.2-1",
+      "latest": "3.5.2-4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iOS. Supports iOS 7+",
+      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -4748,7 +4782,7 @@
     {
       "id": "com.unlimapps.gramplus",
       "name": "Instagram ++",
-      "latest": "1.8r-179",
+      "latest": "1.8r-164",
       "repository": "beta.unlimapps.com",
       "url": "http://beta.unlimapps.com/",
       "shortDescription": "Download & Copy Instagram media",
@@ -5317,39 +5351,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.localiapstore",
-      "name": "LocalIAPStore",
-      "latest": "1.4-2",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.4-2",
-          "iOSVersion": "11.2.6",
-          "repository": "BiteYourApple",
-          "date": "2018-07-07T21:41:41Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.hackyouriphone.localiapstore",
       "name": "LocalIAPStore",
       "latest": "1.4-2",
@@ -5400,6 +5401,39 @@
           "iOSVersion": "11.2.6",
           "repository": "Xarold Repo",
           "date": "2018-07-09T07:18:30Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.localiapstore",
+      "name": "LocalIAPStore",
+      "latest": "1.4-2",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.4-2",
+          "iOSVersion": "11.2.6",
+          "repository": "BiteYourApple",
+          "date": "2018-07-07T21:41:41Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7573,22 +7607,22 @@
       ]
     },
     {
-      "id": "com.mrmadtw.realcc",
+      "id": "com.jakeashacks.realcc",
       "name": "RealCC",
-      "latest": "0.0.4-1",
-      "repository": "Mrmad's Repo",
-      "url": "http://cydia.saurik.com/package/com.mrmadtw.realcc/",
-      "shortDescription": "Close Wi-Fi and Bluetooth from the control center without having to enter the settings for the release 11",
+      "latest": "1.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.jakeashacks.realcc/",
+      "shortDescription": "Actually disable Wi-Fi from the iOS 11 CC",
       "category": "Tweaks",
-      "author": "System Administrator",
+      "author": "Jake James",
       "commercial": false,
-      "date": "2018-03-20T18:24:11Z",
+      "date": "2018-07-11T02:33:10Z",
       "versions": [
         {
-          "tweakVersion": "0.0.4-1",
+          "tweakVersion": "1.0.1",
           "iOSVersion": "11.2.6",
-          "repository": "Mrmad's Repo",
-          "date": "2018-07-27T22:29:03Z",
+          "repository": "BigBoss",
+          "date": "2018-07-13T21:09:22Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7607,22 +7641,22 @@
       ]
     },
     {
-      "id": "com.jakeashacks.realcc",
+      "id": "com.mrmadtw.realcc",
       "name": "RealCC",
-      "latest": "1.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.jakeashacks.realcc/",
-      "shortDescription": "Actually disable Wi-Fi from the iOS 11 CC",
+      "latest": "0.0.4-1",
+      "repository": "Mrmad's Repo",
+      "url": "http://cydia.saurik.com/package/com.mrmadtw.realcc/",
+      "shortDescription": "Close Wi-Fi and Bluetooth from the control center without having to enter the settings for the release 11",
       "category": "Tweaks",
-      "author": "Jake James",
+      "author": "System Administrator",
       "commercial": false,
-      "date": "2018-07-11T02:33:10Z",
+      "date": "2018-03-20T18:24:11Z",
       "versions": [
         {
-          "tweakVersion": "1.0.1",
+          "tweakVersion": "0.0.4-1",
           "iOSVersion": "11.2.6",
-          "repository": "BigBoss",
-          "date": "2018-07-13T21:09:22Z",
+          "repository": "Mrmad's Repo",
+          "date": "2018-07-27T22:29:03Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
