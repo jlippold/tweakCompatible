@@ -1,5 +1,5 @@
 #define RESOURCE_PATH @"/Library/Application Support/bz.jed.tweakcompatible.bundle"
-#define SETTINGS_PATH @"/Library/Preferences/bz.jed.tweakcompatible.prefbundle.plist"
+#define SETTINGS_PATH @"/var/mobile/Library/Preferences/bz.jed.tweakcompatible.prefbundle.plist"
 
 #import "CydiaHeaders/CYPackageController.h"
 #import "CydiaHeaders/CyteWebView.h"
@@ -30,25 +30,36 @@ NSString *workingURL = nil;
 NSString *notWorkingURL = nil;
 NSString *tweakURL = nil;
 
+//settings
+BOOL darkMode;
+BOOL startMinimized;
+BOOL useIcons;
+NSString *overrideVersion;
 
-%hook PackageCell
-%new - (void)layoutSubviews {
-	if (self.imageView.superview.bounds.size.height < 38) { //search view
-		self.imageView.frame = CGRectMake(16,16,16,16);
-	} else {
-		self.imageView.frame = CGRectMake(28,28,16,16);
+static void loadPrefs() {
+	NSMutableDictionary *settings = [[NSMutableDictionary alloc] initWithContentsOfFile:SETTINGS_PATH];
+	darkMode = [settings objectForKey:@"dark"] ? [[settings objectForKey:@"dark"] boolValue] : NO;
+	startMinimized = [settings objectForKey:@"mini"] ? [[settings objectForKey:@"mini"] boolValue] : NO;
+	useIcons = [settings objectForKey:@"showIcon"] ? [[settings objectForKey:@"showIcon"] boolValue] : YES;
+	overrideVersion = [settings objectForKey:@"iOSVersion"] ? [settings objectForKey:@"iOSVersion"] : @"";
+
+	if ([overrideVersion isEqualToString:@""]) {
+		overrideVersion = [[UIDevice currentDevice] systemVersion];
 	}
+	
+	NSLog(@"darkMode: %d", darkMode);
+	NSLog(@"startMinimized: %d", startMinimized);
+	NSLog(@"useIcons: %d", useIcons);
+	NSLog(@"overrideVersion: %@", overrideVersion);
+	
 }
-%end
 
-%hook PackageListController
-
-- (id)initWithDatabase:(Database *)database title:(NSString *)title {
+static void fullList() {
 	if (!all_packages) {
 		all_packages = [[NSMutableDictionary alloc] init];
 		NSURL *url =  [NSURL URLWithString:[NSString 
 										stringWithFormat:@"https://jlippold.github.io/tweakCompatible/json/iOS/%@.json", 
-											[[UIDevice currentDevice] systemVersion]
+											overrideVersion
 										]];
 
 		NSData *data = [NSData dataWithContentsOfURL:url];
@@ -63,14 +74,36 @@ NSString *tweakURL = nil;
 				}
 			}
 		}
+		NSLog(@"Package list count: %lu", (long)[[all_packages allKeys] count]);
 	}
-
-	return %orig;
 }
+
+%ctor {
+    loadPrefs();
+    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("bundleID/saved"), NULL, CFNotificationSuspensionBehaviorCoalesce);
+
+    fullList();
+	CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)fullList, CFSTR("bundleID/saved"), NULL, CFNotificationSuspensionBehaviorCoalesce);
+}
+
+%hook PackageCell
+%new - (void)layoutSubviews {
+	if (self.imageView.superview.bounds.size.height < 38) { //search view
+		self.imageView.frame = CGRectMake(16,16,16,16);
+	} else {
+		self.imageView.frame = CGRectMake(28,28,16,16);
+	}
+}
+%end
+
+%hook PackageListController
 
 
 %new - (void) tableView:(UITableView *)tableView willDisplayCell:(PackageCell *) cell forRowAtIndexPath:(NSIndexPath *)indexPath {
 		
+		if (!useIcons) {
+			return;
+		}
 		Database *database = MSHookIvar<Database *>(self, "database_");
 		Package *package([database packageWithName:[[self packageAtIndexPath:indexPath] id]]);
 
@@ -85,7 +118,7 @@ NSString *tweakURL = nil;
 		NSBundle *bundle = [[[NSBundle alloc] initWithPath:RESOURCE_PATH] autorelease];
 		NSString *imagePath = [bundle pathForResource:@"unknown" ofType:@"png"];
 		NSString *packageId = [NSString stringWithFormat:@"%@", package.id];
-
+		
 		if ( [[all_packages allKeys] containsObject:packageId] ) {
 
 			NSDictionary *json = [NSJSONSerialization JSONObjectWithData:[all_packages objectForKey:packageId] options:0 error:NULL];
@@ -96,7 +129,7 @@ NSString *tweakURL = nil;
 				NSString *thisiOSVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"iOSVersion"]];
 				NSString *packageVersion = package.latest;
 
-				if ([thisTweakVersion isEqualToString:packageVersion] && [thisiOSVersion isEqualToString:[[UIDevice currentDevice] systemVersion]]) {
+				if ([thisTweakVersion isEqualToString:packageVersion] && [thisiOSVersion isEqualToString:overrideVersion]) {
 					NSString *status = version[@"outcome"][@"calculatedStatus"];
 					status = [[status stringByReplacingOccurrencesOfString:@" " withString:@""] lowercaseString];
 					imagePath = [bundle pathForResource:status ofType:@"png"];
@@ -250,18 +283,27 @@ NSString *tweakURL = nil;
 
 %new - (void)addToolbar {
 		overlay = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height - 160, [[UIScreen mainScreen] bounds].size.width, 160)];
-		overlay.backgroundColor = [UIColor whiteColor];
+
 		overlay.tag = 987;
 		overlay.hidden = YES;
 
 		miniOverlay = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height - 80, [[UIScreen mainScreen] bounds].size.width, 80)];
-		miniOverlay.backgroundColor = [UIColor redColor];
+		
+		if (darkMode) {
+			overlay.backgroundColor = [UIColor colorWithRed:0.18 green:0.20 blue:0.20 alpha:1.0];
+			miniOverlay.backgroundColor = [UIColor colorWithRed:0.18 green:0.20 blue:0.20 alpha:1.0];
+		} else {
+			overlay.backgroundColor = [UIColor whiteColor];
+			miniOverlay.backgroundColor = [UIColor whiteColor];
+		}
+		
 		miniTextView = [[UITextView alloc] init];
 		miniTextView.text = @"";	 	
 		miniTextView.editable = NO;
+		miniTextView.backgroundColor = [UIColor clearColor];
 		[miniTextView setUserInteractionEnabled:NO];
 		[miniTextView setFont:[UIFont fontWithName:@"Helvetica" size:14]];
-		miniTextView.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 80);
+		miniTextView.frame = CGRectMake(0, -2, [[UIScreen mainScreen] bounds].size.width, 80);
 		miniTextView.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);
 		[miniOverlay addSubview:miniTextView];
 
@@ -283,15 +325,14 @@ NSString *tweakURL = nil;
 		UIBarButtonItem *tweakInfo = [[UIBarButtonItem alloc] initWithTitle:@"Info" style:UIBarButtonItemStylePlain target:self action:@selector(_loadInfo:)];
 		UIBarButtonItem *tweakHide = [[UIBarButtonItem alloc] initWithTitle:@"Hide" style:UIBarButtonItemStylePlain target:self action:@selector(_hide:)];
 		
-		/*
-		NSDictionary* itemTextAttributes = @{
-			NSFontAttributeName:[UIFont fontWithName:@"Helvetica" size:14.0f]
-		};
-		[tweakWorking setTitleTextAttributes:itemTextAttributes forState:UIControlStateNormal];
-		[tweakNotWorking setTitleTextAttributes:itemTextAttributes forState:UIControlStateNormal];
-		[tweakInfo setTitleTextAttributes:itemTextAttributes forState:UIControlStateNormal];
-		[tweakHide setTitleTextAttributes:itemTextAttributes forState:UIControlStateNormal];
-		*/
+		if (darkMode) {
+			UIColor *dark = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];
+			miniTextView.textColor = dark;
+			[tweakWorking setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
+			[tweakNotWorking setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
+			[tweakInfo setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
+			[tweakHide setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
+		}
 
 		NSArray *btn = [NSArray arrayWithObjects: tweakWorking, flex, tweakNotWorking, flex, tweakInfo, flex, tweakHide, nil];
 		[bar setItems:btn animated:NO];
@@ -304,8 +345,14 @@ NSString *tweakURL = nil;
 		scrollView.delegate = self;
 
 		pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 97, [[UIScreen mainScreen] bounds].size.width, 10)];
-		pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
-		pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+
+		if (darkMode) {
+			pageControl.pageIndicatorTintColor = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];
+			pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
+		} else {
+			pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+			pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+		}
 		pageControl.currentPage = 0;
 		pageControl.hidden = YES;
 		
@@ -314,6 +361,7 @@ NSString *tweakURL = nil;
 		[overlay addSubview:pageControl];
 
 		UIView *topBorder = [UIView new];
+
 		topBorder.backgroundColor = [UIColor lightGrayColor];
 		topBorder.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 1);
 		[overlay addSubview:topBorder];
@@ -367,7 +415,8 @@ NSString *tweakURL = nil;
 
 %new - (void)addLabels:(NSData *)data foriOSVersions:(NSMutableArray *)allIOSVersions {
 	scrollView.contentSize = CGSizeMake([[UIScreen mainScreen] bounds].size.width * [allIOSVersions count], scrollView.frame.size.height);
-	
+	scrollView.backgroundColor = [UIColor clearColor];
+
 	pageControl.numberOfPages = scrollView.contentSize.width/scrollView.frame.size.width;
 	if (pageControl.numberOfPages > 1) {
 		pageControl.hidden = NO;
@@ -379,6 +428,10 @@ NSString *tweakURL = nil;
 		textView.text = iOSVersion;	 
 		textView.tag = i+300;
 		textView.editable = NO;
+		textView.backgroundColor = [UIColor clearColor];
+		if (darkMode) {
+			textView.textColor = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];
+		}
 		[textView setUserInteractionEnabled:NO];
 		[textView setFont:[UIFont fontWithName:@"Helvetica" size:14]];
 		textView.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width * i, 0, [[UIScreen mainScreen] bounds].size.width, 80);
@@ -443,10 +496,8 @@ NSString *tweakURL = nil;
 	[self performSelector:@selector(addLabels:foriOSVersions:) 
 									withObject:data 
 									withObject:allIOSVersions];
-	overlay.hidden = NO;
-	miniOverlay.hidden = YES;
 
-	
+
 	BOOL packageInstalled = NO;
 	if (package.installed) {
 		packageInstalled = YES;
@@ -482,7 +533,7 @@ NSString *tweakURL = nil;
 	int i = 0;
 	NSDictionary *userInfo;
 	
-	miniTextView.text = [NSString stringWithFormat:@"iOS %@ Unknown", systemVersion];
+	miniTextView.text = [NSString stringWithFormat:@"TweakCompatible %@ Status: Unknown", overrideVersion];
 	
 	for (i = [allIOSVersions count] - 1; i >= 0; i--) {
 		
@@ -593,23 +644,29 @@ NSString *tweakURL = nil;
 			UIColor *green = [UIColor colorWithRed:0.16 green:0.65 blue:0.27 alpha:1.0];
 			indicator.backgroundColor = green;
     		[attString addAttribute:NSForegroundColorAttributeName value:green range:boldRange];
-		}
-		if ([packageStatus isEqualToString:@"Not working"]) {
+		} else if ([packageStatus isEqualToString:@"Not working"]) {
 			UIColor *red = [UIColor colorWithRed:0.86 green:0.21 blue:0.27 alpha:1.0];
 			indicator.backgroundColor = red;
     		[attString addAttribute:NSForegroundColorAttributeName value:red range:boldRange];
-		}
-		if ([packageStatus isEqualToString:@"Likely working"]) {
+		} else if ([packageStatus isEqualToString:@"Likely working"]) {
 			UIColor *yellow = [UIColor colorWithRed:1.00 green:0.76 blue:0.03 alpha:1.0];
 			indicator.backgroundColor = yellow;
     		[attString addAttribute:NSForegroundColorAttributeName value:yellow range:boldRange];
+		} else {
+			if (darkMode) {
+				[attString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0] range:boldRange];
+			}
+		}
+
+		if (darkMode) {
+			[attString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0] range:regularRange];
 		}
 
 		[thisLabel setAttributedText:attString];
 
 		//Mini status
-		if (foundVersion && [systemVersion isEqualToString:iOSVersion]) {
-			miniTextView.text = [NSString stringWithFormat:@"iOS %@ %@", systemVersion, packageStatus];
+		if (foundVersion && [overrideVersion isEqualToString:iOSVersion]) {
+			miniTextView.text = [NSString stringWithFormat:@"TweakCompatible %@ Status: %@", overrideVersion, packageStatus];
 		}
 
 		//build a dict with all found properties
@@ -687,8 +744,13 @@ NSString *tweakURL = nil;
 			baseURI, userInfo[@"packageId"], userInfoBase64] retain];
 	}
 
-	overlay.hidden = NO;
-	miniOverlay.hidden = YES;
+	if (startMinimized) {
+		overlay.hidden = YES;
+		miniOverlay.hidden = NO;
+	} else {
+		overlay.hidden = NO;
+		miniOverlay.hidden = YES;
+	}
 }
 
 
