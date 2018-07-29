@@ -94,7 +94,7 @@ NSString *tweakURL = nil;
 			NSDictionary *json = [NSJSONSerialization JSONObjectWithData:[all_packages objectForKey:packageId] options:0 error:NULL];
 
 			for (id version in json[@"versions"]) {
-				NSLog(@"Package: %@", package.installed);
+				
 				NSString *thisTweakVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"tweakVersion"]];
 				NSString *thisiOSVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"iOSVersion"]];
 				NSString *packageVersion = package.latest;
@@ -384,6 +384,7 @@ NSString *tweakURL = nil;
 	//pull package info
 	NSString *packageUrl = [NSString stringWithFormat:@"http://cydia.saurik.com/package/%@/", package.id];	
 	NSString *packageVersion = package.latest;
+	NSString *packageInstalled = package.installed;
 	NSString *packageName = package.name;
 	NSString *packageId = [NSString stringWithFormat:@"%@", package.id];
 	NSString *packageDescription = package.shortDescription;
@@ -592,6 +593,7 @@ NSString *tweakURL = nil;
 			@"name": packageName,
 			@"packageName": packageName,
 			@"latest": packageVersion,
+			@"installed": packageInstalled,
 			@"commercial": @(commercial),
 			@"category": packageSection,
 			@"shortDescription": packageDescription,
