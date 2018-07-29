@@ -1,5 +1,5 @@
-#define kBundlePath @"/Library/Application Support/bz.jed.tweakcompatible.bundle"
-
+#define RESOURCE_PATH @"/Library/Application Support/bz.jed.tweakcompatible.bundle"
+#define SETTINGS_PATH @"/Library/Preferences/bz.jed.tweakcompatible.prefbundle.plist"
 
 #import "CydiaHeaders/CYPackageController.h"
 #import "CydiaHeaders/CyteWebView.h"
@@ -65,12 +65,6 @@ NSString *tweakURL = nil;
 	return %orig;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *cell = %orig;
-	return cell;
-}
-*/
 
 %new - (void) tableView:(UITableView *)tableView willDisplayCell:(PackageCell *) cell forRowAtIndexPath:(NSIndexPath *)indexPath {
 		
@@ -85,7 +79,7 @@ NSString *tweakURL = nil;
 			return;
 		}
 		
-		NSBundle *bundle = [[[NSBundle alloc] initWithPath:kBundlePath] autorelease];
+		NSBundle *bundle = [[[NSBundle alloc] initWithPath:RESOURCE_PATH] autorelease];
 		NSString *imagePath = [bundle pathForResource:@"unknown" ofType:@"png"];
 		NSString *packageId = [NSString stringWithFormat:@"%@", package.id];
 
@@ -384,7 +378,7 @@ NSString *tweakURL = nil;
 	//pull package info
 	NSString *packageUrl = [NSString stringWithFormat:@"http://cydia.saurik.com/package/%@/", package.id];	
 	NSString *packageVersion = package.latest;
-	NSString *packageInstalled = package.installed;
+	NSString *packageVersionInstalled = package.installed;
 	NSString *packageName = package.name;
 	NSString *packageId = [NSString stringWithFormat:@"%@", package.id];
 	NSString *packageDescription = package.shortDescription;
@@ -593,7 +587,7 @@ NSString *tweakURL = nil;
 			@"name": packageName,
 			@"packageName": packageName,
 			@"latest": packageVersion,
-			@"installed": packageInstalled,
+			@"installed": packageVersionInstalled,
 			@"commercial": @(commercial),
 			@"category": packageSection,
 			@"shortDescription": packageDescription,

@@ -1,5 +1,3 @@
-
-
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = tweakCompatible
@@ -15,3 +13,6 @@ include $(THEOS_MAKE_PATH)/tweak.mk
 
 after-install::
 	install.exec "killall Cydia; sleep 0.5; activator send com.saurik.Cydia"
+
+SUBPROJECTS += tweakcompatible_prefs
+include $(THEOS_MAKE_PATH)/aggregate.mk
