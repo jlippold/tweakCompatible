@@ -9,6 +9,7 @@
 #import "CydiaHeaders/Package.h"
 #import "CydiaHeaders/PackageCell.h"
 #import "CydiaHeaders/PackageListController.h"
+#import "CydiaHeaders/PackageSettingsController.h"
 #import "CydiaHeaders/Database.h"
 #import "CydiaHeaders/Source.h"
 #import "CydiaHeaders/SourcesController.h"
@@ -19,6 +20,8 @@
 Package *package;
 
 UIView *overlay;
+UIView *miniOverlay;
+UITextView *miniTextView;
 UIScrollView *scrollView;
 UIPageControl *pageControl;
 NSMutableDictionary *all_packages;
@@ -250,7 +253,23 @@ NSString *tweakURL = nil;
 		overlay.backgroundColor = [UIColor whiteColor];
 		overlay.tag = 987;
 		overlay.hidden = YES;
-		
+
+		miniOverlay = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height - 80, [[UIScreen mainScreen] bounds].size.width, 80)];
+		miniOverlay.backgroundColor = [UIColor redColor];
+		miniTextView = [[UITextView alloc] init];
+		miniTextView.text = @"";	 	
+		miniTextView.editable = NO;
+		[miniTextView setUserInteractionEnabled:NO];
+		[miniTextView setFont:[UIFont fontWithName:@"Helvetica" size:14]];
+		miniTextView.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 80);
+		miniTextView.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);
+		[miniOverlay addSubview:miniTextView];
+
+		miniOverlay.hidden = YES;
+
+		UITapGestureRecognizer *singleFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_show:)];
+		[miniOverlay addGestureRecognizer:singleFingerTap];
+
 		UIBarButtonItem *flex = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil ];
 
 		UIToolbar *bar = [[UIToolbar alloc] init];
@@ -300,12 +319,20 @@ NSString *tweakURL = nil;
 		[overlay addSubview:topBorder];
 
 		[self.view addSubview:overlay];
+		[self.view addSubview:miniOverlay];
 
 }
 
 %new - (void)_hide:(UIBarButtonItem *)sender {
 	overlay.hidden = YES;
+	miniOverlay.hidden = NO;
 }
+
+%new - (void)_show:(UIBarButtonItem *)sender {
+	overlay.hidden = NO;
+	miniOverlay.hidden = YES;
+}
+
 
 %new - (void)_markWorking:(UIBarButtonItem *)sender {
 	if (workingURL != nil) {
@@ -364,10 +391,11 @@ NSString *tweakURL = nil;
 		
 		[scrollView addSubview:textView];
 		[scrollView addSubview:indicator];
-    	//HBLogDebug(@"%@",iOSVersion);
-		//HBLogDebug(@"%d",i);
-		//HBLogDebug(@"%tu",[allIOSVersions count]);
 	}
+
+
+
+	
 }
 
 %new - (void)pullPackageInfo {
@@ -386,7 +414,7 @@ NSString *tweakURL = nil;
 	NSString *packageRepository = [NSString stringWithFormat:@"%@", [package.source name]];
 	NSString *packageAuthor = [NSString stringWithFormat:@"%@", package.author.name];
 	
-	NSString *iOSVersion = [[UIDevice currentDevice] systemVersion];
+	NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
 
 	NSURL *url =  [NSURL URLWithString:[NSString 
 									stringWithFormat:@"https://jlippold.github.io/tweakCompatible/json/packages/%@.json", 
@@ -396,7 +424,7 @@ NSString *tweakURL = nil;
 
 	//Load up other ios versions for scroll view
 	NSMutableArray *allIOSVersions = [[NSMutableArray alloc] init];
-	[allIOSVersions addObject:iOSVersion];
+	[allIOSVersions addObject:systemVersion];
 
 	if (data) {
 		NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
@@ -404,9 +432,9 @@ NSString *tweakURL = nil;
 			NSString *thisTweakVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"tweakVersion"]];
 			NSString *thisiOSVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"iOSVersion"]];
 			NSString *thisMajor = [thisiOSVersion componentsSeparatedByString:@"."][0];
-			NSString *myMajor = [iOSVersion componentsSeparatedByString:@"."][0];
+			NSString *myMajor = [systemVersion componentsSeparatedByString:@"."][0];
 
-			if ([thisTweakVersion isEqualToString:packageVersion] && ![thisiOSVersion isEqualToString:iOSVersion] && [myMajor isEqualToString:thisMajor]) {
+			if ([thisTweakVersion isEqualToString:packageVersion] && ![thisiOSVersion isEqualToString:systemVersion] && [myMajor isEqualToString:thisMajor]) {
 				[allIOSVersions addObject:thisiOSVersion];
 			}
 		}
@@ -416,6 +444,7 @@ NSString *tweakURL = nil;
 									withObject:data 
 									withObject:allIOSVersions];
 	overlay.hidden = NO;
+	miniOverlay.hidden = YES;
 
 	
 	BOOL packageInstalled = NO;
@@ -453,11 +482,12 @@ NSString *tweakURL = nil;
 	int i = 0;
 	NSDictionary *userInfo;
 	
+	miniTextView.text = [NSString stringWithFormat:@"iOS %@ Unknown", systemVersion];
 	
 	for (i = [allIOSVersions count] - 1; i >= 0; i--) {
 		
 		foundVersion = nil;
-		iOSVersion = [allIOSVersions objectAtIndex:i];
+		NSString *iOSVersion = [allIOSVersions objectAtIndex:i];
 		
 		// NSLog(@"tweakCompat iOSVersion: %@", iOSVersion);
 		NSString *packageStatus = @"Unknown";
@@ -547,7 +577,7 @@ NSString *tweakURL = nil;
 
 		
 		NSString *desc = [NSString stringWithFormat:@"iOS %@ %@: %@", iOSVersion, packageStatus, packageStatusExplaination];
-		NSLog(@"tweakCompat: %@", desc);
+		//NSLog(@"tweakCompat: %@", desc);
 		UITextView *thisLabel = [self.view viewWithTag:i+300];
 
 		NSMutableAttributedString *attString=[[NSMutableAttributedString alloc] initWithString:desc];
@@ -577,10 +607,15 @@ NSString *tweakURL = nil;
 
 		[thisLabel setAttributedText:attString];
 
+		//Mini status
+		if (foundVersion && [systemVersion isEqualToString:iOSVersion]) {
+			miniTextView.text = [NSString stringWithFormat:@"iOS %@ %@", systemVersion, packageStatus];
+		}
+
 		//build a dict with all found properties
 		userInfo = @{
 			@"deviceId" : deviceId, 
-			@"iOSVersion" : iOSVersion,
+			@"iOSVersion" : systemVersion,
 			@"tweakCompatVersion": @"0.0.7",
 			@"packageIndexed": @(packageExists),
 			@"packageVersionIndexed": @(versionExists),
@@ -653,6 +688,7 @@ NSString *tweakURL = nil;
 	}
 
 	overlay.hidden = NO;
+	miniOverlay.hidden = YES;
 }
 
 
