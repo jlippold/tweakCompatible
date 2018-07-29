@@ -1,9 +1,13 @@
+#define kBundlePath @"/Library/Application Support/bz.jed.tweakcompatible.bundle"
+
+
 #import "CydiaHeaders/CYPackageController.h"
 #import "CydiaHeaders/CyteWebView.h"
 #import "CydiaHeaders/CydiaWebViewController.h"
 #import "CydiaHeaders/CyteWebViewController.h"
 #import "CydiaHeaders/MIMEAddress.h"
 #import "CydiaHeaders/Package.h"
+#import "CydiaHeaders/PackageCell.h"
 #import "CydiaHeaders/PackageListController.h"
 #import "CydiaHeaders/Database.h"
 #import "CydiaHeaders/Source.h"
@@ -17,10 +21,99 @@ Package *package;
 UIView *overlay;
 UIScrollView *scrollView;
 UIPageControl *pageControl;
+NSMutableDictionary *all_packages;
 
 NSString *workingURL = nil;
 NSString *notWorkingURL = nil;
 NSString *tweakURL = nil;
+
+
+%hook PackageCell
+%new - (void)layoutSubviews {
+	if (self.imageView.superview.bounds.size.height < 38) { //search view
+		self.imageView.frame = CGRectMake(16,16,16,16);
+	} else {
+		self.imageView.frame = CGRectMake(28,28,16,16);
+	}
+}
+%end
+
+%hook PackageListController
+
+- (id)initWithDatabase:(Database *)database title:(NSString *)title {
+	if (!all_packages) {
+		all_packages = [[NSMutableDictionary alloc] init];
+		NSURL *url =  [NSURL URLWithString:[NSString 
+										stringWithFormat:@"https://jlippold.github.io/tweakCompatible/json/iOS/%@.json", 
+											[[UIDevice currentDevice] systemVersion]
+										]];
+
+		NSData *data = [NSData dataWithContentsOfURL:url];
+		if (data) {
+			NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+			for (id package in json[@"packages"]) {
+				NSString *packageId = [NSString stringWithFormat:@"%@", [package objectForKey:@"id"]];
+				NSData *packageData = [NSJSONSerialization dataWithJSONObject:package options:kNilOptions error:nil];
+				
+				if ( ![[all_packages allKeys] containsObject:packageId] ) {
+					[all_packages setObject:packageData forKey:packageId];
+				}
+			}
+		}
+	}
+
+	return %orig;
+}
+
+/*
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	UITableViewCell *cell = %orig;
+	return cell;
+}
+*/
+
+%new - (void) tableView:(UITableView *)tableView willDisplayCell:(PackageCell *) cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+		
+		Database *database = MSHookIvar<Database *>(self, "database_");
+		Package *package([database packageWithName:[[self packageAtIndexPath:indexPath] id]]);
+
+		if (!package || !cell) {
+			return;
+		}
+
+		if ([[all_packages allKeys] count] < 1) {
+			return;
+		}
+		
+		NSBundle *bundle = [[[NSBundle alloc] initWithPath:kBundlePath] autorelease];
+		NSString *imagePath = [bundle pathForResource:@"unknown" ofType:@"png"];
+		NSString *packageId = [NSString stringWithFormat:@"%@", package.id];
+
+		if ( [[all_packages allKeys] containsObject:packageId] ) {
+
+			NSDictionary *json = [NSJSONSerialization JSONObjectWithData:[all_packages objectForKey:packageId] options:0 error:NULL];
+
+			for (id version in json[@"versions"]) {
+				NSLog(@"Package: %@", package.installed);
+				NSString *thisTweakVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"tweakVersion"]];
+				NSString *thisiOSVersion = [NSString stringWithFormat:@"%@", [version objectForKey:@"iOSVersion"]];
+				NSString *packageVersion = package.latest;
+
+				if ([thisTweakVersion isEqualToString:packageVersion] && [thisiOSVersion isEqualToString:[[UIDevice currentDevice] systemVersion]]) {
+					NSString *status = version[@"outcome"][@"calculatedStatus"];
+					status = [[status stringByReplacingOccurrencesOfString:@" " withString:@""] lowercaseString];
+					imagePath = [bundle pathForResource:status ofType:@"png"];
+					break;
+				}
+			}
+		}
+
+		UIImage *myImage = [UIImage imageWithContentsOfFile:imagePath];
+		cell.imageView.image = myImage;
+}
+
+
+%end
 
 %hook SourcesController
 
@@ -365,7 +458,7 @@ NSString *tweakURL = nil;
 	NSDictionary *userInfo;
 	
 	for (i = [allIOSVersions count] - 1; i >= 0; i--) {
-
+		foundVersion = nil;
 		iOSVersion = [allIOSVersions objectAtIndex:i];
 		
 		NSString *packageStatus = @"Unknown";
