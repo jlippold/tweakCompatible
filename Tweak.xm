@@ -378,7 +378,7 @@ NSString *tweakURL = nil;
 	//pull package info
 	NSString *packageUrl = [NSString stringWithFormat:@"http://cydia.saurik.com/package/%@/", package.id];	
 	NSString *packageVersion = package.latest;
-	NSString *packageVersionInstalled = package.installed;
+	NSString *packageVersionInstalled = @"";
 	NSString *packageName = package.name;
 	NSString *packageId = [NSString stringWithFormat:@"%@", package.id];
 	NSString *packageDescription = package.shortDescription;
@@ -421,6 +421,7 @@ NSString *tweakURL = nil;
 	BOOL packageInstalled = NO;
 	if (package.installed) {
 		packageInstalled = YES;
+		packageVersionInstalled = [NSString stringWithFormat:@"%@", package.installed];
 	}
 	BOOL commercial = NO;
 	if (package.isCommercial) {
@@ -452,10 +453,13 @@ NSString *tweakURL = nil;
 	int i = 0;
 	NSDictionary *userInfo;
 	
+	
 	for (i = [allIOSVersions count] - 1; i >= 0; i--) {
+		
 		foundVersion = nil;
 		iOSVersion = [allIOSVersions objectAtIndex:i];
 		
+		// NSLog(@"tweakCompat iOSVersion: %@", iOSVersion);
 		NSString *packageStatus = @"Unknown";
 		NSString *packageStatusExplaination = @"This tweak has not been reviewed. Please submit a review if you choose to install.";
 
@@ -543,7 +547,7 @@ NSString *tweakURL = nil;
 
 		
 		NSString *desc = [NSString stringWithFormat:@"iOS %@ %@: %@", iOSVersion, packageStatus, packageStatusExplaination];
-		
+		NSLog(@"tweakCompat: %@", desc);
 		UITextView *thisLabel = [self.view viewWithTag:i+300];
 
 		NSMutableAttributedString *attString=[[NSMutableAttributedString alloc] initWithString:desc];
