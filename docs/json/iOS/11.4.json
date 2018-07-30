@@ -1184,7 +1184,7 @@
     {
       "id": "apt7-key",
       "name": "APT 0.7 (apt-key)",
-      "latest": "0.7.25.3-3",
+      "latest": "1.4.8",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/apt7-key/",
       "shortDescription": "repository encryption key management tool",
@@ -1252,7 +1252,7 @@
     {
       "id": "apt7-lib",
       "name": "APT 0.7 Strict (lib)",
-      "latest": "0.7.25.3-15",
+      "latest": "1.4.8-1",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/apt7-lib/",
       "shortDescription": "the advanced packaging library from Debian",
@@ -6903,10 +6903,10 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.2-1",
+      "latest": "3.5.2-4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iOS. Supports iOS 7+",
+      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -6988,6 +6988,39 @@
       ]
     },
     {
+      "id": "me.gmoran.fiveicondockxi",
+      "name": "FiveIconDockXI",
+      "latest": "0.0.1-20",
+      "repository": "GMoran Beta Software",
+      "url": "http://cydia.saurik.com/package/me.gmoran.fiveicondockxi/",
+      "shortDescription": "Five icon dock for iOS 11.",
+      "category": "Tweaks",
+      "author": "Guillermo Moran",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.0.1-20",
+          "iOSVersion": "11.4",
+          "repository": "GMoran Beta Software",
+          "date": "2018-07-11T04:21:07Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 83,
+            "good": 5,
+            "bad": 0,
+            "total": 6,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.hackyouriphone.fiveicondockxi",
       "name": "FiveIconDockXI",
       "latest": "0.0.1-20",
@@ -7010,39 +7043,6 @@
             "good": 1,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "me.gmoran.fiveicondockxi",
-      "name": "FiveIconDockXI",
-      "latest": "0.0.1-20",
-      "repository": "GMoran Beta Software",
-      "url": "http://cydia.saurik.com/package/me.gmoran.fiveicondockxi/",
-      "shortDescription": "Five icon dock for iOS 11.",
-      "category": "Tweaks",
-      "author": "Guillermo Moran",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "0.0.1-20",
-          "iOSVersion": "11.4",
-          "repository": "GMoran Beta Software",
-          "date": "2018-07-11T04:21:07Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 83,
-            "good": 5,
-            "bad": 0,
-            "total": 6,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -12967,7 +12967,7 @@
     {
       "id": "ncurses",
       "name": "New Curses",
-      "latest": "5.7-15",
+      "latest": "6.1",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/ncurses/",
       "shortDescription": "feature-complete terminal library",
@@ -16777,6 +16777,40 @@
       ]
     },
     {
+      "id": "com.spark.sleepytime",
+      "name": "SleepyTime",
+      "latest": "0.0.1-4",
+      "repository": "Spark's Beta Repo",
+      "url": "http://cydia.saurik.com/package/com.spark.sleepytime/",
+      "shortDescription": "Displays the time until alarms in the stock iOS 'Clock' app.",
+      "category": "Tweaks",
+      "author": "Spark",
+      "commercial": false,
+      "date": "2018-04-08T20:30:42Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0.1-4",
+          "iOSVersion": "11.4",
+          "repository": "Spark's Beta Repo",
+          "date": "2018-07-30T03:43:53Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.skumarspace.smilebattery",
       "name": "SmileBattery",
       "latest": "1.0.1-1",
@@ -17688,10 +17722,10 @@
     {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "2.0.0-1",
+      "latest": "2.0.0-1216+debug",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
-      "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
+      "shortDescription": "System information Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
