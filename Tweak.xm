@@ -369,7 +369,7 @@ static void fullList() {
 		pageControl.pageIndicatorTintColor = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];
 		pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
 	} else {
-		pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+		pageControl.pageIndicatorTintColor = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];;
 		pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
 	}
 	pageControl.currentPage = 0;
@@ -381,9 +381,15 @@ static void fullList() {
 
 	UIView *topBorder = [UIView new];
 
-	topBorder.backgroundColor = [UIColor lightGrayColor];
+	topBorder.backgroundColor = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];;
 	topBorder.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 1);
 	[overlay addSubview:topBorder];
+
+	UIView *miniTopBorder = [UIView new];
+
+	miniTopBorder.backgroundColor = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];;
+	miniTopBorder.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 1);
+	[miniOverlay addSubview:miniTopBorder];
 
 	[self.view addSubview:overlay];
 	[self.view addSubview:miniOverlay];
