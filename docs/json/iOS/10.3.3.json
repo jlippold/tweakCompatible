@@ -1267,7 +1267,7 @@
     {
       "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
-      "latest": "1.0r-98",
+      "latest": "1.0r-88",
       "repository": "beta.unlimapps.com",
       "url": "https://beta.unlimapps.com/",
       "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
@@ -1382,6 +1382,40 @@
       ]
     },
     {
+      "id": "com.hackyouriphone.appcake2",
+      "name": "AppCake",
+      "latest": "5.5.7.2",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.appcake2/",
+      "shortDescription": "The new AppCake 5.5.7.2! Introducing Direct Download/Install!  Require AppSync to be installed ***",
+      "category": "HYI - Applications",
+      "author": "Mickael liang",
+      "commercial": false,
+      "date": "2018-03-26T07:58:39Z",
+      "versions": [
+        {
+          "tweakVersion": "5.5.7.2",
+          "iOSVersion": "10.3.3",
+          "repository": "HackYouriPhone",
+          "date": "2018-06-16T21:13:15Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.iphonecake.appcake2",
       "name": "AppCake",
       "latest": "5.5.8.1",
@@ -1417,40 +1451,6 @@
           "iOSVersion": "10.3.3",
           "repository": "AppCake",
           "date": "2018-04-14T02:12:56Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 1,
-              "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.hackyouriphone.appcake2",
-      "name": "AppCake",
-      "latest": "5.5.7.2",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.appcake2/",
-      "shortDescription": "The new AppCake 5.5.7.2! Introducing Direct Download/Install!  Require AppSync to be installed ***",
-      "category": "HYI - Applications",
-      "author": "Mickael liang",
-      "commercial": false,
-      "date": "2018-03-26T07:58:39Z",
-      "versions": [
-        {
-          "tweakVersion": "5.5.7.2",
-          "iOSVersion": "10.3.3",
-          "repository": "HackYouriPhone",
-          "date": "2018-06-16T21:13:15Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1602,10 +1602,10 @@
     {
       "id": "com.saurik.afc2d",
       "name": "Apple File Conduit \"2\"",
-      "latest": "1.2",
+      "latest": "2.0.1",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/com.saurik.afc2d/",
-      "shortDescription": "allow full file-system access over USB",
+      "shortDescription": "allow full access to file-system over USB",
       "category": "System",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -1785,7 +1785,7 @@
     {
       "id": "apt7-key",
       "name": "APT 0.7 (apt-key)",
-      "latest": "0.7.25.3-3",
+      "latest": "1.4.8",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/apt7-key/",
       "shortDescription": "repository encryption key management tool",
@@ -1853,7 +1853,7 @@
     {
       "id": "apt7-lib",
       "name": "APT 0.7 Strict (lib)",
-      "latest": "0.7.25.3-15",
+      "latest": "1.4.8-1",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/apt7-lib/",
       "shortDescription": "the advanced packaging library from Debian",
@@ -7424,22 +7424,21 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.equalizereverywhere",
+      "id": "com.r333d.equalizereverywhere",
       "name": "EqualizerEverywhere",
       "latest": "1.5.9.2",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.equalizereverywhere/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.r333d.equalizereverywhere/",
       "shortDescription": "Equalizer that applies to every app",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "Reed Weichler",
-      "commercial": false,
-      "date": "2018-04-14T02:11:52Z",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "1.5.9.2",
           "iOSVersion": "10.3.3",
-          "repository": "HackYouriPhone",
-          "date": "2018-04-14T02:11:52Z",
+          "repository": "BigBoss",
+          "date": "2018-03-03T20:47:37Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7458,21 +7457,22 @@
       ]
     },
     {
-      "id": "com.r333d.equalizereverywhere",
+      "id": "com.hackyouriphone.equalizereverywhere",
       "name": "EqualizerEverywhere",
       "latest": "1.5.9.2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.r333d.equalizereverywhere/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.equalizereverywhere/",
       "shortDescription": "Equalizer that applies to every app",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "Reed Weichler",
-      "commercial": true,
+      "commercial": false,
+      "date": "2018-04-14T02:11:52Z",
       "versions": [
         {
           "tweakVersion": "1.5.9.2",
           "iOSVersion": "10.3.3",
-          "repository": "BigBoss",
-          "date": "2018-03-03T20:47:37Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-04-14T02:11:52Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8181,10 +8181,10 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.2-1",
+      "latest": "3.5.2-4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iOS. Supports iOS 7+",
+      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -12111,6 +12111,40 @@
       ]
     },
     {
+      "id": "com.hackyouriphone.liberty",
+      "name": "Liberty",
+      "latest": "0.2.9",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.liberty/",
+      "shortDescription": "A general purpose jailbreak detection bypass patch. Use the Liberty entry in the Settings app to block (most) apps from detecting your jailbreak. Cydia Substrate can be selectively disabled, but this isn't required for many apps.",
+      "category": "HYI - Tweaks",
+      "author": "Ryley Angus",
+      "commercial": false,
+      "date": "2018-03-02T18:05:59Z",
+      "versions": [
+        {
+          "tweakVersion": "0.1.18",
+          "iOSVersion": "10.3.3",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-05T20:48:11Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.ryleyangus.liberty",
       "name": "Liberty",
       "latest": "0.2.10",
@@ -12186,40 +12220,6 @@
           "iOSVersion": "10.3.3",
           "repository": "Ryley's Repo",
           "date": "2018-07-20T18:21:49Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.hackyouriphone.liberty",
-      "name": "Liberty",
-      "latest": "0.2.9",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.liberty/",
-      "shortDescription": "A general purpose jailbreak detection bypass patch. Use the Liberty entry in the Settings app to block (most) apps from detecting your jailbreak. Cydia Substrate can be selectively disabled, but this isn't required for many apps.",
-      "category": "HYI - Tweaks",
-      "author": "Ryley Angus",
-      "commercial": false,
-      "date": "2018-03-02T18:05:59Z",
-      "versions": [
-        {
-          "tweakVersion": "0.1.18",
-          "iOSVersion": "10.3.3",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-05T20:48:11Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -14083,7 +14083,7 @@
     {
       "id": "ncurses",
       "name": "New Curses",
-      "latest": "5.7-15",
+      "latest": "6.1",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/ncurses/",
       "shortDescription": "feature-complete terminal library",
@@ -16189,22 +16189,22 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.pikabu",
+      "id": "com.hackyouriphone.pikabu",
       "name": "Pikabu",
       "latest": "1.0.1",
-      "repository": "repo.xarold.com",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.pikabu/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.pikabu/",
       "shortDescription": "Minimalistic volume hud on the notch, Headphone detection, Support iOS 10.0 to iOS 11.1.2",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "Jeffrey Chan",
       "commercial": false,
-      "date": "2018-03-04T03:59:41Z",
+      "date": "2018-03-04T07:00:06Z",
       "versions": [
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "10.3.3",
-          "repository": "Xarold Repo",
-          "date": "2018-03-06T00:24:31Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-06T00:24:16Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -16223,22 +16223,22 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.pikabu",
+      "id": "com.repo.xarold.com.pikabu",
       "name": "Pikabu",
       "latest": "1.0.1",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.pikabu/",
+      "repository": "repo.xarold.com",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.pikabu/",
       "shortDescription": "Minimalistic volume hud on the notch, Headphone detection, Support iOS 10.0 to iOS 11.1.2",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "Jeffrey Chan",
       "commercial": false,
-      "date": "2018-03-04T07:00:06Z",
+      "date": "2018-03-04T03:59:41Z",
       "versions": [
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "10.3.3",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-06T00:24:16Z",
+          "repository": "Xarold Repo",
+          "date": "2018-03-06T00:24:31Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -18354,6 +18354,39 @@
       ]
     },
     {
+      "id": "com.noisyflake.smartlowpower",
+      "name": "SmartLowPower",
+      "latest": "1.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.noisyflake.smartlowpower/",
+      "shortDescription": "Automate Low Power mode activation to save battery",
+      "category": "Tweaks",
+      "author": "NoisyFlake",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.1",
+          "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
+          "date": "2018-07-30T05:21:30Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.zyb.smartvpn",
       "name": "SmartVPN",
       "latest": "0.0.4",
@@ -18822,6 +18855,38 @@
       ]
     },
     {
+      "id": "repo.biteyourapple.net.spotilife",
+      "name": "Spotilife",
+      "latest": "0.9",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Spotify Unlimited Skips, Remove ADs, Extreme Quality Stream Unlocked... Requires Spotify App (AppStore)",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.8",
+          "iOSVersion": "10.3.3",
+          "repository": "BiteYourApple",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.hackyouriphone.spotilife",
       "name": "Spotilife",
       "latest": "1.0",
@@ -18870,38 +18935,6 @@
               "bad": 0,
               "percentage": 0,
               "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "repo.biteyourapple.net.spotilife",
-      "name": "Spotilife",
-      "latest": "0.9",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Spotify Unlimited Skips, Remove ADs, Extreme Quality Stream Unlocked... Requires Spotify App (AppStore)",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "0.8",
-          "iOSVersion": "10.3.3",
-          "repository": "BiteYourApple",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 1,
-              "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
             }
           }
         }
@@ -19555,10 +19588,10 @@
     {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "2.0.0-1",
+      "latest": "2.0.0-1216+debug",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
-      "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
+      "shortDescription": "System information Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
