@@ -22,6 +22,7 @@ Package *package;
 UIView *overlay;
 UIView *miniOverlay;
 UITextView *miniTextView;
+UIImageView *miniImageView;
 UIScrollView *scrollView;
 UIPageControl *pageControl;
 NSMutableDictionary *all_packages;
@@ -282,93 +283,110 @@ static void fullList() {
 }
 
 %new - (void)addToolbar {
-		overlay = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height - 160, [[UIScreen mainScreen] bounds].size.width, 160)];
+	overlay = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height - 160, [[UIScreen mainScreen] bounds].size.width, 160)];
 
-		overlay.tag = 987;
-		overlay.hidden = YES;
+	overlay.tag = 987;
+	overlay.hidden = YES;
 
-		miniOverlay = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height - 80, [[UIScreen mainScreen] bounds].size.width, 80)];
-		
-		if (darkMode) {
-			overlay.backgroundColor = [UIColor colorWithRed:0.18 green:0.20 blue:0.20 alpha:1.0];
-			miniOverlay.backgroundColor = [UIColor colorWithRed:0.18 green:0.20 blue:0.20 alpha:1.0];
-		} else {
-			overlay.backgroundColor = [UIColor whiteColor];
-			miniOverlay.backgroundColor = [UIColor whiteColor];
-		}
-		
-		miniTextView = [[UITextView alloc] init];
-		miniTextView.text = @"";	 	
-		miniTextView.editable = NO;
-		miniTextView.backgroundColor = [UIColor clearColor];
-		[miniTextView setUserInteractionEnabled:NO];
-		[miniTextView setFont:[UIFont fontWithName:@"Helvetica" size:14]];
-		miniTextView.frame = CGRectMake(0, -2, [[UIScreen mainScreen] bounds].size.width, 80);
-		miniTextView.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);
-		[miniOverlay addSubview:miniTextView];
+	miniOverlay = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height - 80, [[UIScreen mainScreen] bounds].size.width, 80)];
+	
+	if (darkMode) {
+		overlay.backgroundColor = [UIColor colorWithRed:0.18 green:0.20 blue:0.20 alpha:1.0];
+		miniOverlay.backgroundColor = [UIColor colorWithRed:0.18 green:0.20 blue:0.20 alpha:1.0];
+	} else {
+		overlay.backgroundColor = [UIColor whiteColor];
+		miniOverlay.backgroundColor = [UIColor whiteColor];
+	}
+	
+	miniTextView = [[UITextView alloc] init];
+	miniTextView.text = @"";	 	
+	miniTextView.editable = NO;
+	miniTextView.backgroundColor = [UIColor clearColor];
+	[miniTextView setUserInteractionEnabled:NO];
+	[miniTextView setFont:[UIFont fontWithName:@"Helvetica" size:14]];
+	miniTextView.frame = CGRectMake(20, -2, [[UIScreen mainScreen] bounds].size.width, 80);
+	miniTextView.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);
+	[miniOverlay addSubview:miniTextView];
 
-		miniOverlay.hidden = YES;
+	NSBundle *bundle = [[[NSBundle alloc] initWithPath:RESOURCE_PATH] autorelease];
+	miniImageView = [[UIImageView alloc] init];
+	miniImageView.image = [UIImage imageWithContentsOfFile:[bundle pathForResource:@"unknown" ofType:@"png"]];
+	miniImageView.frame = CGRectMake(4, 4, 24, 24);
+	[miniOverlay addSubview:miniImageView];
 
-		UITapGestureRecognizer *singleFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_show:)];
-		[miniOverlay addGestureRecognizer:singleFingerTap];
+	miniOverlay.hidden = YES;
 
-		UIBarButtonItem *flex = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil ];
+	UISwipeGestureRecognizer *swipeUp = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(_show:)];
+	swipeUp.direction = UISwipeGestureRecognizerDirectionUp;
+	[miniOverlay addGestureRecognizer:swipeUp];
 
-		UIToolbar *bar = [[UIToolbar alloc] init];
-		[bar setBackgroundImage:[UIImage new] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
+	UITapGestureRecognizer *singleFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_show:)];
+	[miniOverlay addGestureRecognizer:singleFingerTap];
 
-		bar.clipsToBounds = YES;
-		bar.frame = CGRectMake(0, -4, [[UIScreen mainScreen] bounds].size.width, 40);
-		
-		UIBarButtonItem *tweakWorking = [[UIBarButtonItem alloc] initWithTitle:@"Works" style:UIBarButtonItemStylePlain target:self action:@selector(_markWorking:)];
-		UIBarButtonItem *tweakNotWorking = [[UIBarButtonItem alloc] initWithTitle:@"Broken" style:UIBarButtonItemStylePlain target:self action:@selector(_markNotWorking:)];
-		UIBarButtonItem *tweakInfo = [[UIBarButtonItem alloc] initWithTitle:@"Info" style:UIBarButtonItemStylePlain target:self action:@selector(_loadInfo:)];
-		UIBarButtonItem *tweakHide = [[UIBarButtonItem alloc] initWithTitle:@"Hide" style:UIBarButtonItemStylePlain target:self action:@selector(_hide:)];
-		
-		if (darkMode) {
-			UIColor *dark = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];
-			miniTextView.textColor = dark;
-			[tweakWorking setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
-			[tweakNotWorking setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
-			[tweakInfo setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
-			[tweakHide setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
-		}
+	UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(_hide:)];
+	swipeDown.direction = UISwipeGestureRecognizerDirectionDown;
+	[overlay addGestureRecognizer:swipeDown];
+	
 
-		NSArray *btn = [NSArray arrayWithObjects: tweakWorking, flex, tweakNotWorking, flex, tweakInfo, flex, tweakHide, nil];
-		[bar setItems:btn animated:NO];
+	UIBarButtonItem *flex = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil ];
 
-		self.webView.scrollView.contentInset = UIEdgeInsetsMake(85,0,160,0);
+	UIToolbar *bar = [[UIToolbar alloc] init];
+	[bar setBackgroundImage:[UIImage new] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
 
-		scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 22, [[UIScreen mainScreen] bounds].size.width, 90)];
-		scrollView.pagingEnabled = YES;
-		scrollView.showsHorizontalScrollIndicator = NO;
-		scrollView.delegate = self;
+	bar.clipsToBounds = YES;
+	bar.frame = CGRectMake(0, -4, [[UIScreen mainScreen] bounds].size.width, 40);
+	
+	UIBarButtonItem *tweakWorking = [[UIBarButtonItem alloc] initWithTitle:@"Works" style:UIBarButtonItemStylePlain target:self action:@selector(_markWorking:)];
+	UIBarButtonItem *tweakNotWorking = [[UIBarButtonItem alloc] initWithTitle:@"Broken" style:UIBarButtonItemStylePlain target:self action:@selector(_markNotWorking:)];
+	UIBarButtonItem *tweakInfo = [[UIBarButtonItem alloc] initWithTitle:@"Info" style:UIBarButtonItemStylePlain target:self action:@selector(_loadInfo:)];
+	UIBarButtonItem *tweakHide = [[UIBarButtonItem alloc] initWithTitle:@"Hide" style:UIBarButtonItemStylePlain target:self action:@selector(_hide:)];
+	
+	if (darkMode) {
+		UIColor *dark = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];
+		miniTextView.textColor = dark;
+		[tweakWorking setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
+		[tweakNotWorking setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
+		[tweakInfo setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
+		[tweakHide setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
+	}
 
-		pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 97, [[UIScreen mainScreen] bounds].size.width, 10)];
+	NSArray *btn = [NSArray arrayWithObjects: tweakWorking, flex, tweakNotWorking, flex, tweakInfo, nil];
+	[bar setItems:btn animated:NO];
 
-		if (darkMode) {
-			pageControl.pageIndicatorTintColor = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];
-			pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
-		} else {
-			pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
-			pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
-		}
-		pageControl.currentPage = 0;
-		pageControl.hidden = YES;
-		
-		[overlay addSubview:scrollView];
-		[overlay addSubview:bar];
-		[overlay addSubview:pageControl];
+	self.webView.scrollView.contentInset = UIEdgeInsetsMake(85,0,160,0);
 
-		UIView *topBorder = [UIView new];
+	scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 22, [[UIScreen mainScreen] bounds].size.width, 90)];
+	scrollView.pagingEnabled = YES;
+	scrollView.showsHorizontalScrollIndicator = NO;
+	scrollView.delegate = self;
 
-		topBorder.backgroundColor = [UIColor lightGrayColor];
-		topBorder.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 1);
-		[overlay addSubview:topBorder];
+	UITapGestureRecognizer *singleFingerTap2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_hide:)];
+	[scrollView addGestureRecognizer:singleFingerTap2];
 
-		[self.view addSubview:overlay];
-		[self.view addSubview:miniOverlay];
+	pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 97, [[UIScreen mainScreen] bounds].size.width, 10)];
 
+	if (darkMode) {
+		pageControl.pageIndicatorTintColor = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];
+		pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
+	} else {
+		pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+		pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+	}
+	pageControl.currentPage = 0;
+	pageControl.hidden = YES;
+	
+	[overlay addSubview:scrollView];
+	[overlay addSubview:bar];
+	[overlay addSubview:pageControl];
+
+	UIView *topBorder = [UIView new];
+
+	topBorder.backgroundColor = [UIColor lightGrayColor];
+	topBorder.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 1);
+	[overlay addSubview:topBorder];
+
+	[self.view addSubview:overlay];
+	[self.view addSubview:miniOverlay];
 }
 
 %new - (void)_hide:(UIBarButtonItem *)sender {
@@ -667,6 +685,12 @@ static void fullList() {
 		//Mini status
 		if (foundVersion && [overrideVersion isEqualToString:iOSVersion]) {
 			miniTextView.text = [NSString stringWithFormat:@"TweakCompatible %@ Status: %@", overrideVersion, packageStatus];
+			
+			NSBundle *bundle = [[[NSBundle alloc] initWithPath:RESOURCE_PATH] autorelease];
+			NSString *status = packageStatus;
+			status = [[status stringByReplacingOccurrencesOfString:@" " withString:@""] lowercaseString];
+			NSString *imagePath = [bundle pathForResource:status ofType:@"png"];
+			miniImageView.image = [UIImage imageWithContentsOfFile:imagePath];
 		}
 
 		//build a dict with all found properties
