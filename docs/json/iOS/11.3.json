@@ -1398,10 +1398,10 @@
           "date": "2018-07-08T21:22:24Z",
           "outcome": {
             "calculatedStatus": "Likely working",
-            "percentage": 66,
-            "good": 2,
+            "percentage": 75,
+            "good": 3,
             "bad": 0,
-            "total": 3,
+            "total": 4,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -3060,40 +3060,6 @@
       ]
     },
     {
-      "id": "org.coolstar.betterpowerdown",
-      "name": "BetterPowerDown",
-      "latest": "1.4.0",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.coolstar.betterpowerdown/",
-      "shortDescription": "classic iOS 6 style power sliders",
-      "category": "Tweaks",
-      "author": "CoolStar",
-      "commercial": true,
-      "date": "2018-06-05T17:54:15Z",
-      "versions": [
-        {
-          "tweakVersion": "1.4.0",
-          "iOSVersion": "11.3",
-          "repository": "BigBoss",
-          "date": "2018-07-11T22:13:52Z",
-          "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 66,
-            "good": 2,
-            "bad": 0,
-            "total": 3,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.hackyouriphone.betterpowerdown",
       "name": "BetterPowerDown",
       "latest": "1.4.0",
@@ -3116,6 +3082,40 @@
             "good": 0,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.coolstar.betterpowerdown",
+      "name": "BetterPowerDown",
+      "latest": "1.4.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.coolstar.betterpowerdown/",
+      "shortDescription": "classic iOS 6 style power sliders",
+      "category": "Tweaks",
+      "author": "CoolStar",
+      "commercial": true,
+      "date": "2018-06-05T17:54:15Z",
+      "versions": [
+        {
+          "tweakVersion": "1.4.0",
+          "iOSVersion": "11.3",
+          "repository": "BigBoss",
+          "date": "2018-07-11T22:13:52Z",
+          "outcome": {
+            "calculatedStatus": "Likely working",
+            "percentage": 66,
+            "good": 2,
+            "bad": 0,
+            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -5775,22 +5775,21 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.colorbadges",
+      "id": "org.thebigboss.colorbadges",
       "name": "ColorBadges",
       "latest": "1.2.0",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.colorbadges/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.colorbadges/",
       "shortDescription": "Colorize your badges",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "David Goldman",
-      "commercial": false,
-      "date": "2018-03-17T12:50:00Z",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "1.2.0",
           "iOSVersion": "11.3",
-          "repository": "HackYouriPhone",
-          "date": "2018-07-07T19:19:49Z",
+          "repository": "BigBoss",
+          "date": "2018-07-22T08:09:49Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5809,21 +5808,22 @@
       ]
     },
     {
-      "id": "org.thebigboss.colorbadges",
+      "id": "com.hackyouriphone.colorbadges",
       "name": "ColorBadges",
       "latest": "1.2.0",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.colorbadges/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.colorbadges/",
       "shortDescription": "Colorize your badges",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "David Goldman",
-      "commercial": true,
+      "commercial": false,
+      "date": "2018-03-17T12:50:00Z",
       "versions": [
         {
           "tweakVersion": "1.2.0",
           "iOSVersion": "11.3",
-          "repository": "BigBoss",
-          "date": "2018-07-22T08:09:49Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-07-07T19:19:49Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -25023,40 +25023,6 @@
       ]
     },
     {
-      "id": "nl.d4ni.videoplayerrotatable",
-      "name": "VideoPlayerRotatable",
-      "latest": "0.0.15",
-      "repository": "D4ni's Repo",
-      "url": "http://cydia.saurik.com/package/nl.d4ni.videoplayerrotatable/",
-      "shortDescription": "Disables rotation lock when the default video player starts playing and restores lock when it stops. You will need to quit and re-launch any app you want to use this in.",
-      "category": "Tweaks",
-      "author": "David Glinski",
-      "commercial": false,
-      "date": "2018-03-03T15:51:41Z",
-      "versions": [
-        {
-          "tweakVersion": "0.0.15",
-          "iOSVersion": "11.3",
-          "repository": "D4ni's Repo",
-          "date": "2018-07-14T23:55:47Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.hackyouriphone.videoplayerrotatable",
       "name": "VideoPlayerRotatable",
       "latest": "0.0.15",
@@ -25077,6 +25043,40 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nl.d4ni.videoplayerrotatable",
+      "name": "VideoPlayerRotatable",
+      "latest": "0.0.15",
+      "repository": "D4ni's Repo",
+      "url": "http://cydia.saurik.com/package/nl.d4ni.videoplayerrotatable/",
+      "shortDescription": "Disables rotation lock when the default video player starts playing and restores lock when it stops. You will need to quit and re-launch any app you want to use this in.",
+      "category": "Tweaks",
+      "author": "David Glinski",
+      "commercial": false,
+      "date": "2018-03-03T15:51:41Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0.15",
+          "iOSVersion": "11.3",
+          "repository": "D4ni's Repo",
+          "date": "2018-07-14T23:55:47Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
