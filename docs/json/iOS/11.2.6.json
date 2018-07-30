@@ -764,7 +764,7 @@
     {
       "id": "com.cokepokes.appstoreplusplus",
       "name": "AppStore++",
-      "latest": "0.4",
+      "latest": "0.5",
       "repository": "cokepokes.github.io",
       "url": "http://cydia.saurik.com/package/com.cokepokes.appstoreplusplus/",
       "shortDescription": "Allows you to downgrade/upgrade apps in the AppStore on iOS 11.",
@@ -5384,22 +5384,21 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.liberty",
+      "id": "com.ryleyangus.liberty",
       "name": "Liberty",
-      "latest": "0.2.9",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.liberty/",
+      "latest": "0.2.10",
+      "repository": "Ryley's Repo",
+      "url": "https://ryleyangus.com/repo/",
       "shortDescription": "A general purpose jailbreak detection bypass patch. Use the Liberty entry in the Settings app to block (most) apps from detecting your jailbreak. Cydia Substrate can be selectively disabled, but this isn't required for many apps.",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "Ryley Angus",
       "commercial": false,
-      "date": "2018-03-02T18:05:59Z",
       "versions": [
         {
           "tweakVersion": "0.2.9",
           "iOSVersion": "11.2.6",
-          "repository": "HackYouriPhone",
-          "date": "2018-07-07T16:54:01Z",
+          "repository": "Ryley's Repo",
+          "date": "2018-07-15T14:00:31Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5418,21 +5417,22 @@
       ]
     },
     {
-      "id": "com.ryleyangus.liberty",
+      "id": "com.hackyouriphone.liberty",
       "name": "Liberty",
-      "latest": "0.2.10",
-      "repository": "Ryley's Repo",
-      "url": "https://ryleyangus.com/repo/",
+      "latest": "0.2.9",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.liberty/",
       "shortDescription": "A general purpose jailbreak detection bypass patch. Use the Liberty entry in the Settings app to block (most) apps from detecting your jailbreak. Cydia Substrate can be selectively disabled, but this isn't required for many apps.",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "Ryley Angus",
       "commercial": false,
+      "date": "2018-03-02T18:05:59Z",
       "versions": [
         {
           "tweakVersion": "0.2.9",
           "iOSVersion": "11.2.6",
-          "repository": "Ryley's Repo",
-          "date": "2018-07-15T14:00:31Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-07-07T16:54:01Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6195,6 +6195,40 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "net.dodgraphics.midevice",
+      "name": "MiDevice",
+      "latest": "0.0.1-6+debug",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/net.dodgraphics.midevice/",
+      "shortDescription": "A tweak to customize your homescreen!",
+      "category": "Tweaks",
+      "author": "DODGraphics",
+      "commercial": true,
+      "date": "2018-07-18T04:05:42Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0.1-6+debug",
+          "iOSVersion": "11.2.6",
+          "repository": "Packix",
+          "date": "2018-07-30T13:36:00Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -7862,22 +7896,22 @@
       ]
     },
     {
-      "id": "com.mrmadtw.realcc",
+      "id": "com.jakeashacks.realcc",
       "name": "RealCC",
-      "latest": "0.0.4-1",
-      "repository": "Mrmad's Repo",
-      "url": "http://cydia.saurik.com/package/com.mrmadtw.realcc/",
-      "shortDescription": "Close Wi-Fi and Bluetooth from the control center without having to enter the settings for the release 11",
+      "latest": "1.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.jakeashacks.realcc/",
+      "shortDescription": "Actually disable Wi-Fi from the iOS 11 CC",
       "category": "Tweaks",
-      "author": "System Administrator",
+      "author": "Jake James",
       "commercial": false,
-      "date": "2018-03-20T18:24:11Z",
+      "date": "2018-07-11T02:33:10Z",
       "versions": [
         {
-          "tweakVersion": "0.0.4-1",
+          "tweakVersion": "1.0.1",
           "iOSVersion": "11.2.6",
-          "repository": "Mrmad's Repo",
-          "date": "2018-07-27T22:29:03Z",
+          "repository": "BigBoss",
+          "date": "2018-07-13T21:09:22Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7896,22 +7930,22 @@
       ]
     },
     {
-      "id": "com.jakeashacks.realcc",
+      "id": "com.mrmadtw.realcc",
       "name": "RealCC",
-      "latest": "1.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.jakeashacks.realcc/",
-      "shortDescription": "Actually disable Wi-Fi from the iOS 11 CC",
+      "latest": "0.0.4-1",
+      "repository": "Mrmad's Repo",
+      "url": "http://cydia.saurik.com/package/com.mrmadtw.realcc/",
+      "shortDescription": "Close Wi-Fi and Bluetooth from the control center without having to enter the settings for the release 11",
       "category": "Tweaks",
-      "author": "Jake James",
+      "author": "System Administrator",
       "commercial": false,
-      "date": "2018-07-11T02:33:10Z",
+      "date": "2018-03-20T18:24:11Z",
       "versions": [
         {
-          "tweakVersion": "1.0.1",
+          "tweakVersion": "0.0.4-1",
           "iOSVersion": "11.2.6",
-          "repository": "BigBoss",
-          "date": "2018-07-13T21:09:22Z",
+          "repository": "Mrmad's Repo",
+          "date": "2018-07-27T22:29:03Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
