@@ -426,7 +426,7 @@
     {
       "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
-      "latest": "1.0r-101",
+      "latest": "1.0r-98",
       "repository": "beta.unlimapps.com",
       "url": "https://beta.unlimapps.com/",
       "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
@@ -611,7 +611,7 @@
     {
       "id": "com.cokepokes.appstoreplusplus",
       "name": "AppStore++",
-      "latest": "0.4",
+      "latest": "0.5",
       "repository": "cokepokes.github.io",
       "url": "http://cydia.saurik.com/package/com.cokepokes.appstoreplusplus/",
       "shortDescription": "Allows you to downgrade/upgrade apps in the AppStore on iOS 11.",
@@ -3202,7 +3202,7 @@
     {
       "id": "net.dodgraphics.midevice",
       "name": "MiDevice",
-      "latest": "0.0.1-5+debug",
+      "latest": "0.0.1-6+debug",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/net.dodgraphics.midevice/",
       "shortDescription": "A tweak to customize your homescreen!",
@@ -4539,6 +4539,39 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.vsz.redeb",
+      "name": "redeb",
+      "latest": "1.0.3",
+      "repository": "Wiety's beta repository",
+      "url": "https://wiety.github.io/cydia/",
+      "shortDescription": "Repackage any of your tweaks locally, without the need to download it from Cydia again. This is super usefull when there is an update of your until now perfectly working tweak in Cydia and you want to make a backup of the version installed. Normally you wouldn't be able to backup anything because it is possible to fetch only the most current version of your tweak and so you would be lost. Not anymore :)))",
+      "category": "Utilities",
+      "author": "T.Herak",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0.3",
+          "iOSVersion": "11.2.5",
+          "repository": "Wiety's beta repository",
+          "date": "2018-07-30T14:49:30Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
