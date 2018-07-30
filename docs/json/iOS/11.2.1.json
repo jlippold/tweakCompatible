@@ -37,7 +37,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.13~beta2",
+      "latest": "1.9.12",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -1169,7 +1169,7 @@
     {
       "id": "com.xcxiao.bottomcontrolx",
       "name": "BottomControlX",
-      "latest": "1.0.3-1",
+      "latest": "1.1.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.xcxiao.bottomcontrolx/",
       "shortDescription": "Easier access to your ControlCenter on iPhone X.",
@@ -4005,40 +4005,6 @@
       ]
     },
     {
-      "id": "com.cabralcole.forceinpicture",
-      "name": "ForceInPicture",
-      "latest": "0.0.1-2",
-      "repository": "apt.thebigboss.org",
-      "url": "http://cydia.saurik.com/package/com.cabralcole.forceinpicture/",
-      "shortDescription": "\"Programmatically\" enable picture in picture feature.",
-      "category": "Tweaks",
-      "author": "cole cabral @ca13ra1",
-      "commercial": false,
-      "date": "2018-03-01T20:00:33Z",
-      "versions": [
-        {
-          "tweakVersion": "0.0.1-2",
-          "iOSVersion": "11.2.1",
-          "repository": "BigBoss",
-          "date": "2018-07-09T09:10:20Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.spicat.forceinpicture",
       "name": "ForceInPicture",
       "latest": "1.1",
@@ -4059,6 +4025,40 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.cabralcole.forceinpicture",
+      "name": "ForceInPicture",
+      "latest": "0.0.1-2",
+      "repository": "apt.thebigboss.org",
+      "url": "http://cydia.saurik.com/package/com.cabralcole.forceinpicture/",
+      "shortDescription": "\"Programmatically\" enable picture in picture feature.",
+      "category": "Tweaks",
+      "author": "cole cabral @ca13ra1",
+      "commercial": false,
+      "date": "2018-03-01T20:00:33Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0.1-2",
+          "iOSVersion": "11.2.1",
+          "repository": "BigBoss",
+          "date": "2018-07-09T09:10:20Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -5804,10 +5804,10 @@
     {
       "id": "ws.hbang.newterm2",
       "name": "NewTerm 2",
-      "latest": "2.0~beta3",
+      "latest": "2.0",
       "repository": "cydia.hbang.ws",
       "url": "https://cydia.hbang.ws/",
-      "shortDescription": "A powerful terminal emulator for iOS",
+      "shortDescription": "A powerful terminal app for iOS",
       "category": "Terminal Support",
       "author": "HASHBANG Productions",
       "commercial": false,
@@ -5906,11 +5906,11 @@
           "repository": "BigBoss",
           "date": "2018-07-09T01:59:05Z",
           "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 50,
+            "calculatedStatus": "Not working",
+            "percentage": 33,
             "good": 1,
             "bad": 0,
-            "total": 2,
+            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -5957,22 +5957,22 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.noctisxi",
+      "id": "com.laughingquoll.noctisxi",
       "name": "NoctisXI",
-      "latest": "1.4.3.1",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.noctisxi/",
-      "shortDescription": "A system wide dark mode.",
-      "category": "HYI - Tweaks",
+      "latest": "1.5.4",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.laughingquoll.noctisxi/",
+      "shortDescription": "Dark Mode for iOS 11",
+      "category": "Tweaks",
       "author": "LaughingQuoll",
       "commercial": false,
-      "date": "2018-07-07T19:57:52Z",
+      "date": "2018-03-01T21:31:17Z",
       "versions": [
         {
-          "tweakVersion": "1.4.2",
+          "tweakVersion": "1.5.3",
           "iOSVersion": "11.2.1",
-          "repository": "HackYouriPhone",
-          "date": "2018-07-08T02:21:55Z",
+          "repository": "Packix",
+          "date": "2018-07-17T02:11:32Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5991,22 +5991,22 @@
       ]
     },
     {
-      "id": "com.laughingquoll.noctisxi",
+      "id": "com.hackyouriphone.noctisxi",
       "name": "NoctisXI",
-      "latest": "1.5.4",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.laughingquoll.noctisxi/",
-      "shortDescription": "Dark Mode for iOS 11",
-      "category": "Tweaks",
+      "latest": "1.4.3.1",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.noctisxi/",
+      "shortDescription": "A system wide dark mode.",
+      "category": "HYI - Tweaks",
       "author": "LaughingQuoll",
       "commercial": false,
-      "date": "2018-03-01T21:31:17Z",
+      "date": "2018-07-07T19:57:52Z",
       "versions": [
         {
-          "tweakVersion": "1.5.3",
+          "tweakVersion": "1.4.2",
           "iOSVersion": "11.2.1",
-          "repository": "Packix",
-          "date": "2018-07-17T02:11:32Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-07-08T02:21:55Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6771,7 +6771,7 @@
     {
       "id": "com.weesstt.powerdownoptions",
       "name": "PowerdownOptions",
-      "latest": "1.0-32+debug",
+      "latest": "1.1.2-1+debug",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.weesstt.powerdownoptions/",
       "shortDescription": "More power down options",
@@ -6873,7 +6873,7 @@
     {
       "id": "preferenceloader",
       "name": "PreferenceLoader",
-      "latest": "2.2.3-3",
+      "latest": "2.2.4~alpha1",
       "repository": "rpetrich repo",
       "url": "http://cydia.saurik.com/package/preferenceloader/",
       "shortDescription": "load preferences in style",
@@ -6907,10 +6907,10 @@
     {
       "id": "net.angelxwind.preferenceorganizer2",
       "name": "PreferenceOrganizer 2",
-      "latest": "4.0.5",
+      "latest": "3.7",
       "repository": "Karen's Repo",
       "url": "http://cydia.angelxwind.net/",
-      "shortDescription": "Organises your Preferences app into several configurable categories for ease of navigation.",
+      "shortDescription": "Organises your Settings app into 4 toggleable and renamable categories: System Apps, Social Networking Apps, Tweaks, and App Store Apps.",
       "category": "Tweaks",
       "author": "Karen, Hiraku, Gary, Eliz, insanj",
       "commercial": false,
@@ -8428,7 +8428,7 @@
     {
       "id": "bz.jed.tweakcompatible",
       "name": "tweakCompatible",
-      "latest": "0.0.8",
+      "latest": "0.0.7",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/bz.jed.tweakcompatible/",
       "shortDescription": "Adds a way to check tweak compatibility in cydia",
