@@ -35,6 +35,7 @@ NSString *tweakURL = nil;
 BOOL darkMode;
 BOOL startMinimized;
 BOOL useIcons;
+BOOL hideUnknown;
 NSString *overrideVersion;
 
 static void loadPrefs() {
@@ -42,6 +43,7 @@ static void loadPrefs() {
 	darkMode = [settings objectForKey:@"dark"] ? [[settings objectForKey:@"dark"] boolValue] : NO;
 	startMinimized = [settings objectForKey:@"mini"] ? [[settings objectForKey:@"mini"] boolValue] : NO;
 	useIcons = [settings objectForKey:@"showIcon"] ? [[settings objectForKey:@"showIcon"] boolValue] : YES;
+	hideUnknown = [settings objectForKey:@"hideUnknown"] ? [[settings objectForKey:@"hideUnknown"] boolValue] : NO;
 	overrideVersion = [settings objectForKey:@"iOSVersion"] ? [settings objectForKey:@"iOSVersion"] : @"";
 
 	if ([overrideVersion isEqualToString:@""]) {
@@ -150,14 +152,14 @@ static void fullList() {
 		//NSLog(@"name: %ld", (long)cell.bounds.size.height);
 		//NSLog(@"%@", NSStringFromClass(cell));
 
+		if ([imagePath isEqualToString:[bundle pathForResource:@"unknown" ofType:@"png"]] && hideUnknown) {
+			return;
+		}
         if ((long)cell.bounds.size.height == 38) { //search view
 			iv.frame = CGRectMake(16,16,16,16);
 		} else {
 			iv.frame = CGRectMake(28,28,16,16);
 		}
-		//if ([NSStringFromClass(subview.class) hasSuffix:@"SeparatorView"]) {
-         
-
 		
 		iv.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
 		iv.contentMode = UIViewContentModeScaleAspectFit;
