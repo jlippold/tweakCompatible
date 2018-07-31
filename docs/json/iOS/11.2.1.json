@@ -391,10 +391,10 @@
     {
       "id": "com.tigisoftware.appdatamanager",
       "name": "Apps Manager",
-      "latest": "1.4.0-36",
+      "latest": "1.3.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.appdatamanager/",
-      "shortDescription": "This tool provides the way to WIPE, BACKUP, RESTORE AppData for installed Apps",
+      "shortDescription": "tool to WIPE, BACKUP, RESTORE AppData for installed Apps",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -1609,10 +1609,10 @@
     {
       "id": "com.jakeashacks.catchathief",
       "name": "CatchaThief",
-      "latest": "1.0.0-1+debug",
+      "latest": "1.0.0",
       "repository": "Jakeashacks",
       "url": "http://cydia.saurik.com/package/com.jakeashacks.catchathief/",
-      "shortDescription": "Take a picture of whoever inputs an incorrect passcode! Does not support Touch ID/Face ID yet. Images are stored in /var/mobile/catchathief. Sending images via email is being looked into.",
+      "shortDescription": "Take a picture of whoever inputs an incorrect passcode!",
       "category": "Tweaks",
       "author": "Jake James",
       "commercial": false,
@@ -1763,22 +1763,22 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.cercube",
+      "id": "repo.biteyourapple.net.cercube3",
       "name": "Cercube 3 for YouTube",
-      "latest": "1.6.1",
+      "latest": "1.6.9k",
       "repository": "BiteYourApple",
-      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.cercube/",
+      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.cercube3/",
       "shortDescription": "All-in-one YouTube extension!",
       "category": "BYA Apps",
       "author": "BYA Repository",
       "commercial": false,
-      "date": "2018-07-08T16:12:41Z",
+      "date": "2018-07-08T16:12:51Z",
       "versions": [
         {
-          "tweakVersion": "1.6.1",
+          "tweakVersion": "1.6.9k",
           "iOSVersion": "11.2.1",
           "repository": "BiteYourApple",
-          "date": "2018-07-08T16:12:41Z",
+          "date": "2018-07-08T16:12:51Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -1797,22 +1797,22 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.cercube3",
+      "id": "repo.biteyourapple.net.cercube",
       "name": "Cercube 3 for YouTube",
-      "latest": "1.6.9k",
+      "latest": "1.6.1",
       "repository": "BiteYourApple",
-      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.cercube3/",
+      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.cercube/",
       "shortDescription": "All-in-one YouTube extension!",
       "category": "BYA Apps",
       "author": "BYA Repository",
       "commercial": false,
-      "date": "2018-07-08T16:12:51Z",
+      "date": "2018-07-08T16:12:41Z",
       "versions": [
         {
-          "tweakVersion": "1.6.9k",
+          "tweakVersion": "1.6.1",
           "iOSVersion": "11.2.1",
           "repository": "BiteYourApple",
-          "date": "2018-07-08T16:12:51Z",
+          "date": "2018-07-08T16:12:41Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -2991,39 +2991,6 @@
       ]
     },
     {
-      "id": "com.spark.easyswitcherx",
-      "name": "EasySwitcherX [Public]",
-      "latest": "0.0.4-5",
-      "repository": "Spark's Beta Repo",
-      "url": "http://beta.sparkservers.co.uk/",
-      "shortDescription": "Swipe up on apps in the switcher to kill them, without having to press and hold (iPhone X - how it should have been)",
-      "category": "Tweaks",
-      "author": "Spark",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "0.0.4-5",
-          "iOSVersion": "11.2.1",
-          "repository": "Spark's Beta Repo",
-          "date": "2018-07-08T06:41:51Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "repo.biteyourapple.net.easyswitcherx",
       "name": "EasySwitcherX [Public]",
       "latest": "0.0.4-5",
@@ -3046,6 +3013,39 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.spark.easyswitcherx",
+      "name": "EasySwitcherX [Public]",
+      "latest": "0.0.4-5",
+      "repository": "Spark's Beta Repo",
+      "url": "http://beta.sparkservers.co.uk/",
+      "shortDescription": "Swipe up on apps in the switcher to kill them, without having to press and hold (iPhone X - how it should have been)",
+      "category": "Tweaks",
+      "author": "Spark",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.0.4-5",
+          "iOSVersion": "11.2.1",
+          "repository": "Spark's Beta Repo",
+          "date": "2018-07-08T06:41:51Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -3125,39 +3125,6 @@
       ]
     },
     {
-      "id": "me.gmoran.eclipsex",
-      "name": "Eclipse X Beta 7 (iOS 11)",
-      "latest": "5.0.9-2",
-      "repository": "GMoran Beta Software",
-      "url": "http://gmoran.me/repo/",
-      "shortDescription": "System-wide Night Mode and more for iOS 11.",
-      "category": "Tweaks",
-      "author": "Guillermo Morán (fr0st)",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "5.0.8-3",
-          "iOSVersion": "11.2.1",
-          "repository": "Packix",
-          "date": "2018-07-08T06:42:04Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 4,
-            "bad": 0,
-            "total": 4,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.repo.xarold.com.eclipsex",
       "name": "Eclipse X Beta 7 (iOS 11)",
       "latest": "5.0.8-3",
@@ -3180,6 +3147,39 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "me.gmoran.eclipsex",
+      "name": "Eclipse X Beta 7 (iOS 11)",
+      "latest": "5.0.9-2",
+      "repository": "GMoran Beta Software",
+      "url": "http://gmoran.me/repo/",
+      "shortDescription": "System-wide Night Mode and more for iOS 11.",
+      "category": "Tweaks",
+      "author": "Guillermo Morán (fr0st)",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "5.0.8-3",
+          "iOSVersion": "11.2.1",
+          "repository": "Packix",
+          "date": "2018-07-08T06:42:04Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 4,
+            "bad": 0,
+            "total": 4,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -7193,6 +7193,40 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nl.d4ni.respring",
+      "name": "Respring",
+      "latest": "1.1-1",
+      "repository": "D4ni's Repo",
+      "url": "http://cydia.saurik.com/package/nl.d4ni.respring/",
+      "shortDescription": "App icon to restart springboard.",
+      "category": "Utilities",
+      "author": "D4ni",
+      "commercial": false,
+      "date": "2018-07-14T04:18:21Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1-1",
+          "iOSVersion": "11.2.1",
+          "repository": "D4ni's Repo",
+          "date": "2018-07-31T04:49:00Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
