@@ -149,12 +149,13 @@ static void fullList() {
 		}
 
 		UIImageView *iv = [[[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:imagePath]] autorelease];
-		//NSLog(@"name: %ld", (long)cell.bounds.size.height);
+		//NSLog(@"height: %ld", (long)cell.bounds.size.height);
 		//NSLog(@"%@", NSStringFromClass(cell));
 
 		if ([imagePath isEqualToString:[bundle pathForResource:@"unknown" ofType:@"png"]] && hideUnknown) {
 			return;
 		}
+
         if ((long)cell.bounds.size.height == 38) { //search view
 			iv.frame = CGRectMake(16,16,16,16);
 		} else {
