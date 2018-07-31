@@ -48,10 +48,10 @@ static void loadPrefs() {
 		overrideVersion = [[UIDevice currentDevice] systemVersion];
 	}
 	
-	NSLog(@"darkMode: %d", darkMode);
-	NSLog(@"startMinimized: %d", startMinimized);
-	NSLog(@"useIcons: %d", useIcons);
-	NSLog(@"overrideVersion: %@", overrideVersion);
+	//NSLog(@"darkMode: %d", darkMode);
+	//NSLog(@"startMinimized: %d", startMinimized);
+	//NSLog(@"useIcons: %d", useIcons);
+	//NSLog(@"overrideVersion: %@", overrideVersion);
 	
 }
 
@@ -62,20 +62,21 @@ static void fullList() {
 										stringWithFormat:@"https://jlippold.github.io/tweakCompatible/json/iOS/%@.json", 
 											overrideVersion
 										]];
-
-		NSData *data = [NSData dataWithContentsOfURL:url];
-		if (data) {
-			NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-			for (id package in json[@"packages"]) {
-				NSString *packageId = [NSString stringWithFormat:@"%@", [package objectForKey:@"id"]];
-				NSData *packageData = [NSJSONSerialization dataWithJSONObject:package options:kNilOptions error:nil];
-				
-				if ( ![[all_packages allKeys] containsObject:packageId] ) {
-					[all_packages setObject:packageData forKey:packageId];
+		NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+			[NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse* response, NSData* data, NSError* error) {
+			if (data) {
+				NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+				for (id package in json[@"packages"]) {
+					NSString *packageId = [NSString stringWithFormat:@"%@", [package objectForKey:@"id"]];
+					NSData *packageData = [NSJSONSerialization dataWithJSONObject:package options:kNilOptions error:nil];
+					
+					if ( ![[all_packages allKeys] containsObject:packageId] ) {
+						[all_packages setObject:packageData forKey:packageId];
+					}
 				}
 			}
-		}
-		NSLog(@"Package list count: %lu", (long)[[all_packages allKeys] count]);
+			NSLog(@"Package list count: %lu", (long)[[all_packages allKeys] count]);
+		}];
 	}
 }
 
