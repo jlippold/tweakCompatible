@@ -37,7 +37,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.13~beta2",
+      "latest": "1.9.12",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -3025,6 +3025,40 @@
       ]
     },
     {
+      "id": "com.muirey03.duo",
+      "name": "Duo",
+      "latest": "1.0.3",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.muirey03.duo/",
+      "shortDescription": "Add a second page to the iOS 11 Control Center!",
+      "category": "Tweaks",
+      "author": "Muirey03",
+      "commercial": true,
+      "date": "2018-07-24T21:06:57Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.3",
+          "iOSVersion": "11.2.1",
+          "repository": "Packix",
+          "date": "2018-07-31T19:48:25Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "repo.biteyourapple.net.easyswitcherx",
       "name": "EasySwitcherX [Public]",
       "latest": "0.0.4-5",
@@ -3666,10 +3700,10 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.2-4",
+      "latest": "3.5.2-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
+      "shortDescription": "File Manager for iOS. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -4073,40 +4107,6 @@
       ]
     },
     {
-      "id": "com.spicat.forceinpicture",
-      "name": "ForceInPicture",
-      "latest": "1.1",
-      "repository": "Spica T Repo",
-      "url": "http://cydia.saurik.com/package/com.spicat.forceinpicture/",
-      "shortDescription": "Enable picture in picture feature with no crashes.",
-      "category": "Tweaks",
-      "author": "SpicaT",
-      "commercial": false,
-      "date": "2018-07-18T14:45:11Z",
-      "versions": [
-        {
-          "tweakVersion": "1.1",
-          "iOSVersion": "11.2.1",
-          "repository": "Spica T Repo",
-          "date": "2018-07-23T14:24:15Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.cabralcole.forceinpicture",
       "name": "ForceInPicture",
       "latest": "0.0.1-2",
@@ -4127,6 +4127,40 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.spicat.forceinpicture",
+      "name": "ForceInPicture",
+      "latest": "1.1",
+      "repository": "Spica T Repo",
+      "url": "http://cydia.saurik.com/package/com.spicat.forceinpicture/",
+      "shortDescription": "Enable picture in picture feature with no crashes.",
+      "category": "Tweaks",
+      "author": "SpicaT",
+      "commercial": false,
+      "date": "2018-07-18T14:45:11Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1",
+          "iOSVersion": "11.2.1",
+          "repository": "Spica T Repo",
+          "date": "2018-07-23T14:24:15Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -8839,7 +8873,7 @@
       "latest": "1.1r-14",
       "repository": "apt.thebigboss.org",
       "url": "http://cydia.saurik.com/package/com.unlimapps.toneenabler/",
-      "shortDescription": "In iOS 7.x/8.x apple uses a plist in order to load ringtones in settings instead of simply iterating through the /Library/Ringtones directory. This tweak enables the old behavior that was present before 7.x and reads the tones from the directory so tones that you download from cydia or UnlimTones will now show in settings.",
+      "shortDescription": "Restore ringtone folder use on iOS 7/8",
       "category": "Tweaks",
       "author": "UnlimApps Inc.",
       "commercial": false,
