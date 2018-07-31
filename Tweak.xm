@@ -89,13 +89,19 @@ static void fullList() {
 }
 
 %hook PackageCell
+
+/*
 %new - (void)layoutSubviews {
 	if (self.imageView.superview.bounds.size.height < 38) { //search view
 		self.imageView.frame = CGRectMake(16,16,16,16);
 	} else {
-		self.imageView.frame = CGRectMake(28,28,16,16);
+		cell.imageView.frame = CGRectMake(28,28,16,16);
+		cell.imageView.bounds = CGRectMake(28,28,16,16);
+		self.imageView.contentMode = UIViewContentModeScaleAspectFit;
 	}
 }
+*/
+
 %end
 
 %hook PackageListController
@@ -140,8 +146,12 @@ static void fullList() {
 			}
 		}
 
-		UIImage *myImage = [UIImage imageWithContentsOfFile:imagePath];
-		cell.imageView.image = myImage;
+		UIImageView *iv = [[[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:imagePath]] autorelease];
+		iv.frame = CGRectMake(28,28,16,16);
+		iv.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+		iv.contentMode = UIViewContentModeScaleAspectFit;
+		[cell.contentView addSubview:iv];	
+
 }
 
 
