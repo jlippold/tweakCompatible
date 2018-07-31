@@ -104,7 +104,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.13~beta2",
+      "latest": "1.9.12",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -629,10 +629,10 @@
     {
       "id": "ch.mdaus.artsy",
       "name": "Artsy",
-      "latest": "1.1",
+      "latest": "1.2",
       "repository": "Maxwell Dausch's Repo",
       "url": "http://cydia.saurik.com/package/ch.mdaus.artsy/",
-      "shortDescription": "Modify the Lockscreen, CC, Spotify, and Music app now playing views based on the album artwork.",
+      "shortDescription": "Colorize and customize  your music players",
       "category": "Tweaks",
       "author": "Maxwell Dausch",
       "commercial": false,
@@ -1725,7 +1725,7 @@
     {
       "id": "com.ikilledappl3.colormyyccmodules",
       "name": "ColorMyCCModules",
-      "latest": "1.0.6-1",
+      "latest": "1.1-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.ikilledappl3.colormyyccmodules/",
       "shortDescription": "Colorize your Control Center Modules!",
@@ -1796,7 +1796,7 @@
       "latest": "1.0.0",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.ioscreatix.conditionalwifi3/",
-      "shortDescription": "Restrict certain apps from accessing wifi on iOS 11",
+      "shortDescription": "Restrict certain apps from accessing Wi-Fi on iOS 11",
       "category": "Tweaks",
       "author": "iOS Creatix",
       "commercial": false,
@@ -2585,10 +2585,10 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.2-4",
+      "latest": "3.5.2-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
+      "shortDescription": "File Manager for iOS. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -3189,6 +3189,40 @@
       ]
     },
     {
+      "id": "com.ziph0n.hapticfeedback",
+      "name": "HapticFeedback",
+      "latest": "1.2-1",
+      "repository": "apt.thebigboss.org",
+      "url": "http://cydia.saurik.com/package/com.ziph0n.hapticfeedback/",
+      "shortDescription": "Get an haptic feedback when pushing buttons!",
+      "category": "Tweaks",
+      "author": "Ziph0n",
+      "commercial": false,
+      "date": "2018-02-28T22:20:33Z",
+      "versions": [
+        {
+          "tweakVersion": "1.2-1",
+          "iOSVersion": "11.2",
+          "repository": "BigBoss",
+          "date": "2018-07-31T19:11:56Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.revulate.harmony",
       "name": "Harmony",
       "latest": "1.1.2",
@@ -3259,7 +3293,7 @@
     {
       "id": "com.vitataf.homegesture",
       "name": "Home Gesture",
-      "latest": "1.7.9",
+      "latest": "1.8.0",
       "repository": "MidnightChips",
       "url": "http://cydia.saurik.com/package/com.vitataf.homegesture/",
       "shortDescription": "Enable iPhone X home gesture on other devices.",
@@ -3829,22 +3863,21 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.localiapstore",
+      "id": "repo.biteyourapple.net.localiapstore",
       "name": "LocalIAPStore",
-      "latest": "1.5",
-      "repository": "repo.xarold.com",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.localiapstore/",
+      "latest": "1.4-2",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
       "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
-      "category": "Tweaks",
-      "author": "anondev",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
       "commercial": false,
-      "date": "2018-02-28T19:15:03Z",
       "versions": [
         {
-          "tweakVersion": "1.5",
+          "tweakVersion": "1.4-2",
           "iOSVersion": "11.2",
-          "repository": "XModGames",
-          "date": "2018-07-07T23:13:37Z",
+          "repository": "BiteYourApple",
+          "date": "2018-07-08T21:43:29Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3863,21 +3896,22 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.localiapstore",
+      "id": "com.repo.xarold.com.localiapstore",
       "name": "LocalIAPStore",
-      "latest": "1.4-2",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
+      "latest": "1.5",
+      "repository": "repo.xarold.com",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.localiapstore/",
       "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
+      "category": "Tweaks",
+      "author": "anondev",
       "commercial": false,
+      "date": "2018-02-28T19:15:03Z",
       "versions": [
         {
-          "tweakVersion": "1.4-2",
+          "tweakVersion": "1.5",
           "iOSVersion": "11.2",
-          "repository": "BiteYourApple",
-          "date": "2018-07-08T21:43:29Z",
+          "repository": "XModGames",
+          "date": "2018-07-07T23:13:37Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5800,7 +5834,7 @@
       "latest": "1.3.0-1",
       "repository": "smokin1337's Repo",
       "url": "http://cydia.saurik.com/package/com.smokin1337.smartlpm/",
-      "shortDescription": "A smarter low power mode. Low power while device is locked. Turn low power mode on automatically at the battery level you specify. Enable low power while charging. And more....",
+      "shortDescription": "A smarter low power mode. Low power while device is locked. Turn low power mode on automatically at the battery level you specify. Enable low power while charging.",
       "category": "Tweaks",
       "author": "smokin1337",
       "commercial": false,
@@ -6133,21 +6167,22 @@
       ]
     },
     {
-      "id": "com.springtomize.st4",
+      "id": "com.hackyouriphone.st4",
       "name": "Springtomize 4 (iOS 10)",
       "latest": "3",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.springtomize.st4/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.st4/",
       "shortDescription": "Customize your device like never before.",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "Filippo & Janosch",
-      "commercial": true,
+      "commercial": false,
+      "date": "2018-03-15T03:10:56Z",
       "versions": [
         {
           "tweakVersion": "3",
           "iOSVersion": "11.2",
-          "repository": "BigBoss",
-          "date": "2018-07-31T06:37:08Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-07-09T23:48:54Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6166,22 +6201,21 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.st4",
+      "id": "com.springtomize.st4",
       "name": "Springtomize 4 (iOS 10)",
       "latest": "3",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.st4/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.springtomize.st4/",
       "shortDescription": "Customize your device like never before.",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "Filippo & Janosch",
-      "commercial": false,
-      "date": "2018-03-15T03:10:56Z",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "3",
           "iOSVersion": "11.2",
-          "repository": "HackYouriPhone",
-          "date": "2018-07-09T23:48:54Z",
+          "repository": "BigBoss",
+          "date": "2018-07-31T06:37:08Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6559,7 +6593,7 @@
     {
       "id": "bz.jed.tweakcompatible",
       "name": "tweakCompatible",
-      "latest": "0.0.8",
+      "latest": "0.0.9",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/bz.jed.tweakcompatible/",
       "shortDescription": "Adds a way to check tweak compatibility in cydia",
