@@ -147,10 +147,23 @@ static void fullList() {
 		}
 
 		UIImageView *iv = [[[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:imagePath]] autorelease];
-		iv.frame = CGRectMake(28,28,16,16);
+		//NSLog(@"name: %ld", (long)cell.bounds.size.height);
+		//NSLog(@"%@", NSStringFromClass(cell));
+
+        if ((long)cell.bounds.size.height == 38) { //search view
+			iv.frame = CGRectMake(16,16,16,16);
+		} else {
+			iv.frame = CGRectMake(28,28,16,16);
+		}
+		//if ([NSStringFromClass(subview.class) hasSuffix:@"SeparatorView"]) {
+         
+
+		
 		iv.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
 		iv.contentMode = UIViewContentModeScaleAspectFit;
 		[cell.contentView addSubview:iv];	
+
+
 
 }
 
