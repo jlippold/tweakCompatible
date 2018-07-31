@@ -730,7 +730,7 @@ static void fullList() {
 		userInfo = @{
 			@"deviceId" : deviceId, 
 			@"iOSVersion" : systemVersion,
-			@"tweakCompatVersion": @"0.0.7",
+			@"tweakCompatVersion": @"0.0.9",
 			@"packageIndexed": @(packageExists),
 			@"packageVersionIndexed": @(versionExists),
 			@"packageStatus": packageStatus,
