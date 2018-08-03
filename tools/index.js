@@ -300,7 +300,7 @@ function addTweaks(tweaks, change, callback) {
                 if (mode == "rebuild") return callback(null, packages);
 
                 var users = version.users.filter(function(user) {
-                    if (user.userName == userName && user.device == device) {
+                    if (user.userName == change.userName && user.device == change.deviceId) {
                         return false;
                     } else {
                         return true;
