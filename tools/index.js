@@ -299,7 +299,20 @@ function addTweaks(tweaks, change, callback) {
                 console.log("review already in system");
                 if (mode == "rebuild") return callback(null, packages);
 
-                addLabelsToIssue(change.issueNumber, ['user-submission', 'duplicate'], function () {
+                var users = version.users.filter(function(user) {
+                    if (user.userName == userName && user.device == device) {
+                        return false;
+                    } else {
+                        return true;
+                    }
+                });
+
+                version.users = users.slice(0);
+                
+                var u = new User(change);
+                version.users.push(u);
+
+                addLabelsToIssue(change.issueNumber, ['user-submission', 'change-review'], function () {
                     var opts = {
                         owner, repo,
                         number: change.issueNumber,
