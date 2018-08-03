@@ -183,12 +183,13 @@ static void fullList() {
 	}
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	if (indexPath.section == 0 && indexPath.row == 1) {
 		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tweakCompat"];
+		
 		if (cell == nil) {
 			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"tweakCompat"] autorelease];
-	        cell.frame = CGRectZero;
 
 			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 			cell.textLabel.text = @"Tweak Compatible";
@@ -196,22 +197,24 @@ static void fullList() {
 			cell.detailTextLabel.textColor = [UIColor grayColor];
 			[cell.textLabel setFont:[UIFont fontWithName:@"Helvetica" size:18]];
 			
-			NSString *path = [[NSBundle mainBundle] pathForResource:@"unknown" ofType:@"png"];
+			NSBundle *bundle = [[[NSBundle alloc] initWithPath:RESOURCE_PATH] autorelease];
+			NSString *path = [bundle pathForResource:@"working" ofType:@"png"];
 			UIImage *theImage = [UIImage imageWithContentsOfFile:path];
 			cell.imageView.image = theImage;
 
 			CGSize itemSize = CGSizeMake(30, 30);
 			UIGraphicsBeginImageContextWithOptions(itemSize, NO, UIScreen.mainScreen.scale);
-			CGRect imageRect = CGRectMake(0.0, 0.0, itemSize.width, itemSize.height);
+			CGRect imageRect = CGRectMake(0, 0, itemSize.width, itemSize.height);
 			[cell.imageView.image drawInRect:imageRect];
 			cell.imageView.image = UIGraphicsGetImageFromCurrentImageContext();
 			UIGraphicsEndImageContext();	
+			
+			
 		}
 		return cell;
 	}
 	return %orig;
 }
-
 
 
 %new - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
@@ -242,13 +245,13 @@ static void fullList() {
 		return NO;
 	}
 
-	if ([url hasPrefix:@"tweakcompat://repo/?"]) {
-		NSString *href = [url stringByReplacingOccurrencesOfString:@"tweakcompat://repo/?" withString:@""];
-		//HBLogDebug(@"adding source: %@", href);
+	if ([url hasPrefix:@"https://cydia.saurik.com/api/share#?source"]) {
 		
-		//id <CydiaDelegate> delegate = MSHookIvar<id>(self, "delegate_");
-		//[delegate addTrivialSource:href];
-		//[delegate syncData];
+		UIApplication *application = [UIApplication sharedApplication];
+		[application openURL:[request URL] options:@{} completionHandler:nil];
+
+/*
+		NSString *href = [url stringByReplacingOccurrencesOfString:@"tweakcompat://repo/?" withString:@""];
 
 		UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"tweakCompatible" 
 			message:@"The repo address will be copied to the clipboard" preferredStyle:UIAlertControllerStyleAlert];
@@ -261,6 +264,7 @@ static void fullList() {
 		[alert addAction:ok];
 		[alert addAction:cancel];
 		[self presentViewController:alert animated:YES completion:nil];
+*/
 		return NO;
 	}
 	
@@ -730,7 +734,7 @@ static void fullList() {
 		userInfo = @{
 			@"deviceId" : deviceId, 
 			@"iOSVersion" : systemVersion,
-			@"tweakCompatVersion": @"0.0.9",
+			@"tweakCompatVersion": @"0.1.0",
 			@"packageIndexed": @(packageExists),
 			@"packageVersionIndexed": @(versionExists),
 			@"packageStatus": packageStatus,
