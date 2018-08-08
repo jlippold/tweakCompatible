@@ -934,10 +934,10 @@
     {
       "id": "ch.mdaus.artsy",
       "name": "Artsy",
-      "latest": "0.0.4-8+debug",
+      "latest": "1.2",
       "repository": "Maxwell Dausch's Repo",
       "url": "http://cydia.saurik.com/package/ch.mdaus.artsy/",
-      "shortDescription": "Modify the Lockscreen, CC, Spotify, and Music app now playing views based on the album artwork.",
+      "shortDescription": "Colorize and customize  your music players",
       "category": "Tweaks",
       "author": "Maxwell Dausch",
       "commercial": false,
@@ -1274,6 +1274,39 @@
       ]
     },
     {
+      "id": "com.rbt.batterylife",
+      "name": "BatteryLife",
+      "latest": "1.7.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.rbt.batterylife/",
+      "shortDescription": "Displays useful information about battery health",
+      "category": "Utilities",
+      "author": "rbt",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.7.0",
+          "iOSVersion": "11.2.6",
+          "repository": "BigBoss",
+          "date": "2018-07-07T21:40:35Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 3,
+            "bad": 0,
+            "total": 3,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.modmyi.batterylife",
       "name": "BatteryLife",
       "latest": "1.6.15",
@@ -1296,39 +1329,6 @@
             "good": 0,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.rbt.batterylife",
-      "name": "BatteryLife",
-      "latest": "1.7.0",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.rbt.batterylife/",
-      "shortDescription": "Displays useful information about battery health",
-      "category": "Utilities",
-      "author": "rbt",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.7.0",
-          "iOSVersion": "11.2.6",
-          "repository": "BigBoss",
-          "date": "2018-07-07T21:40:35Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 3,
-            "bad": 0,
-            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -1376,7 +1376,7 @@
     {
       "id": "com.neinzedd9.bazzi",
       "name": "Bazzi",
-      "latest": "1.1.2",
+      "latest": "1.2.0",
       "repository": "HASHBANG Productions",
       "url": "http://cydia.saurik.com/package/com.neinzedd9.bazzi/",
       "shortDescription": "The ultimate battery icon customizer tweak.",
@@ -1700,7 +1700,7 @@
     {
       "id": "com.midnightchips.bettersettings",
       "name": "BetterSettings",
-      "latest": "0.0.5",
+      "latest": "0.0.6",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.midnightchips.bettersettings/",
       "shortDescription": "Settings your way",
@@ -4824,7 +4824,7 @@
     {
       "id": "jp.akusio.fortnitebypass",
       "name": "fortnite bypass",
-      "latest": "5.1.1",
+      "latest": "5.2.0FINAL",
       "repository": "akusio repo",
       "url": "http://cydia.saurik.com/package/jp.akusio.fortnitebypass/",
       "shortDescription": "fortnite jailbreak bypass",
@@ -5868,7 +5868,7 @@
     {
       "id": "com.unlimapps.gramplus",
       "name": "Instagram ++",
-      "latest": "1.8r-182",
+      "latest": "1.8r-183",
       "repository": "beta.unlimapps.com",
       "url": "http://beta.unlimapps.com/",
       "shortDescription": "Download & Copy Instagram media",
@@ -6335,22 +6335,21 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.liberty",
+      "id": "com.ryleyangus.liberty",
       "name": "Liberty",
-      "latest": "0.2.9",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.liberty/",
+      "latest": "0.2.10",
+      "repository": "Ryley's Repo",
+      "url": "https://ryleyangus.com/repo/",
       "shortDescription": "A general purpose jailbreak detection bypass patch. Use the Liberty entry in the Settings app to block (most) apps from detecting your jailbreak. Cydia Substrate can be selectively disabled, but this isn't required for many apps.",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "Ryley Angus",
       "commercial": false,
-      "date": "2018-03-02T18:05:59Z",
       "versions": [
         {
           "tweakVersion": "0.2.9",
           "iOSVersion": "11.2.6",
-          "repository": "HackYouriPhone",
-          "date": "2018-07-07T16:54:01Z",
+          "repository": "Ryley's Repo",
+          "date": "2018-07-15T14:00:31Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6369,21 +6368,22 @@
       ]
     },
     {
-      "id": "com.ryleyangus.liberty",
+      "id": "com.hackyouriphone.liberty",
       "name": "Liberty",
-      "latest": "0.2.10",
-      "repository": "Ryley's Repo",
-      "url": "https://ryleyangus.com/repo/",
+      "latest": "0.2.9",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.liberty/",
       "shortDescription": "A general purpose jailbreak detection bypass patch. Use the Liberty entry in the Settings app to block (most) apps from detecting your jailbreak. Cydia Substrate can be selectively disabled, but this isn't required for many apps.",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "Ryley Angus",
       "commercial": false,
+      "date": "2018-03-02T18:05:59Z",
       "versions": [
         {
           "tweakVersion": "0.2.9",
           "iOSVersion": "11.2.6",
-          "repository": "Ryley's Repo",
-          "date": "2018-07-15T14:00:31Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-07-07T16:54:01Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6538,39 +6538,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.localiapstore",
-      "name": "LocalIAPStore",
-      "latest": "1.4-2",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.4-2",
-          "iOSVersion": "11.2.6",
-          "repository": "BiteYourApple",
-          "date": "2018-07-07T21:41:41Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.hackyouriphone.localiapstore",
       "name": "LocalIAPStore",
       "latest": "1.4-2",
@@ -6621,6 +6588,39 @@
           "iOSVersion": "11.2.6",
           "repository": "Xarold Repo",
           "date": "2018-07-09T07:18:30Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.localiapstore",
+      "name": "LocalIAPStore",
+      "latest": "1.4-2",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.4-2",
+          "iOSVersion": "11.2.6",
+          "repository": "BiteYourApple",
+          "date": "2018-07-07T21:41:41Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9136,9 +9136,9 @@
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
-            "good": 3,
+            "good": 4,
             "bad": 0,
-            "total": 3,
+            "total": 4,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -10943,7 +10943,7 @@
     {
       "id": "bz.jed.tweakcompatible",
       "name": "tweakCompatible",
-      "latest": "0.0.7",
+      "latest": "0.1.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/bz.jed.tweakcompatible/",
       "shortDescription": "Adds a way to check tweak compatibility in cydia",
@@ -11036,10 +11036,10 @@
     {
       "id": "com.unlimapps.twitterpp",
       "name": "Twitter ++",
-      "latest": "1.2r-50",
+      "latest": "1.2r-76",
       "repository": "beta.unlimapps.com",
       "url": "http://beta.unlimapps.com/",
-      "shortDescription": "sharing options, long tweets and much more!",
+      "shortDescription": "The Twitter tweak that give you more sharing options, long tweets and much more!",
       "category": "Tweaks",
       "author": "UnlimApps Inc",
       "commercial": false,
