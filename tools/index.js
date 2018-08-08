@@ -577,6 +577,11 @@ function getIssues(callback) {
                                 thisIssue.userNotes = json.notes;
                                 thisIssue.userChosenStatus = json.chosenStatus;
                                 thisIssue.userName = issue.user.login;
+                                if (json.hasOwnProperty("installed")) {
+                                    if (json.installed !== json.latest && json.installed != "") {
+                                        thisIssue.latest = json.installed; 
+                                    }
+                                }
                                 if (!thisIssue.hasOwnProperty("arch32")) {
                                     thisIssue.arch32 = is32bit(thisIssue.deviceId);
                                 }
