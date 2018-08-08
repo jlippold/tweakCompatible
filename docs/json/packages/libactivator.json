@@ -1009,8 +1009,8 @@
       "date": "2018-05-29T00:52:04Z",
       "outcome": {
         "calculatedStatus": "Working",
-        "percentage": 100,
-        "good": 5,
+        "percentage": 80,
+        "good": 4,
         "bad": 0,
         "total": 5,
         "arch32": {
@@ -1059,12 +1059,12 @@
           "arch32": false
         },
         {
-          "status": "partial",
+          "status": "not working",
           "device": "iPhone9,4",
-          "issues": "Crashes to save mode whenever a gesture is assigned an action.  Gesture still works afterwards, except when it doesn’t like with scheduled actions, but sometimes still causes safe mode crashes (especially scheduled actions).",
-          "date": "2018-08-08T18:24:27Z",
+          "issues": "Assigning an action causes safe mode crash most of the time and even when it doesn’t actions don’t do anything.",
+          "date": "2018-08-08T18:38:38Z",
           "userName": "ElPared",
-          "issueNumber": 40575,
+          "issueNumber": 40589,
           "arch32": false
         }
       ]
