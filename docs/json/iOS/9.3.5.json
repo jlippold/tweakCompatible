@@ -1570,10 +1570,10 @@
     {
       "id": "mobilesubstrate",
       "name": "Cydia Substrate",
-      "latest": "0.9.6301",
+      "latest": "99.0",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/mobilesubstrate/",
-      "shortDescription": "powerful code insertion platform",
+      "shortDescription": "Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute",
       "category": "System",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -1670,10 +1670,10 @@
     {
       "id": "dpkg",
       "name": "Debian Packager",
-      "latest": "1.18.10-12",
+      "latest": "1.18.24",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/dpkg/",
-      "shortDescription": "package maintainance tools from Debian",
+      "shortDescription": "package maintenance tools from Debian",
       "category": "Packaging",
       "author": "(null)",
       "commercial": false,
@@ -1835,22 +1835,21 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.ext3nder-installer",
+      "id": "com.julioverne.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "016",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.ext3nder-installer/",
+      "latest": "021a",
+      "repository": "julioverne's Repo",
+      "url": "http://twitter.com/ijulioverne",
       "shortDescription": "Cydia Extender Installer With Extra Features",
-      "category": "HYI - Tweaks",
+      "category": "Utilities",
       "author": "julioverne",
       "commercial": false,
-      "date": "2018-05-05T23:22:12Z",
       "versions": [
         {
           "tweakVersion": "016",
           "iOSVersion": "9.3.5",
-          "repository": "HackYouriPhone",
-          "date": "2018-05-05T23:22:12Z",
+          "repository": "julioverne's Repo",
+          "date": "2018-05-05T23:11:50Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -1869,21 +1868,22 @@
       ]
     },
     {
-      "id": "com.julioverne.ext3nder-installer",
+      "id": "com.hackyouriphone.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "021a",
-      "repository": "julioverne's Repo",
-      "url": "http://twitter.com/ijulioverne",
+      "latest": "016",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.ext3nder-installer/",
       "shortDescription": "Cydia Extender Installer With Extra Features",
-      "category": "Utilities",
+      "category": "HYI - Tweaks",
       "author": "julioverne",
       "commercial": false,
+      "date": "2018-05-05T23:22:12Z",
       "versions": [
         {
           "tweakVersion": "016",
           "iOSVersion": "9.3.5",
-          "repository": "julioverne's Repo",
-          "date": "2018-05-05T23:11:50Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-05-05T23:22:12Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -1938,10 +1938,10 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.2-1",
+      "latest": "3.5.2-4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iOS. Supports iOS 7+",
+      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -2605,7 +2605,7 @@
     {
       "id": "ldid",
       "name": "Link Identity Editor",
-      "latest": "1.2.2-coolstar",
+      "latest": "2.0.0",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/ldid/",
       "shortDescription": "pseudo-codesign Mach-O files",
@@ -2854,17 +2854,17 @@
           "repository": "julioverne's Repo",
           "date": "2018-07-15T21:03:40Z",
           "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
               "total": 1,
-              "good": 1,
+              "good": 0,
               "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
+              "percentage": 0,
+              "calculatedStatus": "Not working"
             }
           }
         }
@@ -2906,7 +2906,7 @@
     {
       "id": "openssh",
       "name": "OpenSSH",
-      "latest": "6.7p1-13",
+      "latest": "7.6p1-4",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/openssh/",
       "shortDescription": "secure remote access between machines",
@@ -3107,10 +3107,10 @@
     {
       "id": "com.dpkgdan.powertap",
       "name": "Power Tap",
-      "latest": "1.1.3-3",
+      "latest": "1.2.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.dpkgdan.powertap/",
-      "shortDescription": "tap powerdown knob to reboot, respring, safe mode",
+      "shortDescription": "Power Tap allows you to toggle the power down bar through different settings, such as \"reboot,\" \"respring,\" and \"safe mode.\" Toggling takes place when you tap the slider's knob (a circular icon with a power symbol). Power Tap is intended to replace the earlier tweak \"Slide to Reboot.\"",
       "category": "Tweaks",
       "author": "Dan Saba",
       "commercial": false,
@@ -3441,7 +3441,7 @@
     {
       "id": "sed",
       "name": "sed",
-      "latest": "4.1.5-8",
+      "latest": "4.2.2",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/sed/",
       "shortDescription": "edits streams of text using patterns",
@@ -3475,7 +3475,7 @@
     {
       "id": "shell-cmds",
       "name": "shell-cmds",
-      "latest": "118-7",
+      "latest": "203",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/shell-cmds/",
       "shortDescription": "killall, mktemp, renice, time, which",
@@ -3709,7 +3709,7 @@
     {
       "id": "tar",
       "name": "Tape Archive",
-      "latest": "1.29-10",
+      "latest": "1.30",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/tar/",
       "shortDescription": "tool for making tape archives",
