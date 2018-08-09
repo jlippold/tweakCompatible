@@ -372,7 +372,7 @@
     {
       "id": "com.cydiageek.abetterprivacyforwhatsapp",
       "name": "ABetterPrivacyforWhatsApp",
-      "latest": "1.2.6",
+      "latest": "1.2.7",
       "repository": "apt.thebigboss.org",
       "url": "http://cydia.saurik.com/package/com.cydiageek.abetterprivacyforwhatsapp/",
       "shortDescription": "Better Privacy options for Whatsapp & More!",
@@ -1287,7 +1287,7 @@
     {
       "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
-      "latest": "1.0r-98",
+      "latest": "1.0r-101",
       "repository": "beta.unlimapps.com",
       "url": "https://beta.unlimapps.com/",
       "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
@@ -1402,6 +1402,40 @@
       ]
     },
     {
+      "id": "com.hackyouriphone.appcake2",
+      "name": "AppCake",
+      "latest": "5.5.7.2",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.appcake2/",
+      "shortDescription": "The new AppCake 5.5.7.2! Introducing Direct Download/Install!  Require AppSync to be installed ***",
+      "category": "HYI - Applications",
+      "author": "Mickael liang",
+      "commercial": false,
+      "date": "2018-03-26T07:58:39Z",
+      "versions": [
+        {
+          "tweakVersion": "5.5.7.2",
+          "iOSVersion": "10.3.3",
+          "repository": "HackYouriPhone",
+          "date": "2018-06-16T21:13:15Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.iphonecake.appcake2",
       "name": "AppCake",
       "latest": "5.5.8.1",
@@ -1437,40 +1471,6 @@
           "iOSVersion": "10.3.3",
           "repository": "AppCake",
           "date": "2018-04-14T02:12:56Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 1,
-              "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.hackyouriphone.appcake2",
-      "name": "AppCake",
-      "latest": "5.5.7.2",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.appcake2/",
-      "shortDescription": "The new AppCake 5.5.7.2! Introducing Direct Download/Install!  Require AppSync to be installed ***",
-      "category": "HYI - Applications",
-      "author": "Mickael liang",
-      "commercial": false,
-      "date": "2018-03-26T07:58:39Z",
-      "versions": [
-        {
-          "tweakVersion": "5.5.7.2",
-          "iOSVersion": "10.3.3",
-          "repository": "HackYouriPhone",
-          "date": "2018-06-16T21:13:15Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1739,10 +1739,10 @@
     {
       "id": "com.tigisoftware.appdatamanager",
       "name": "Apps Manager",
-      "latest": "1.4.0-45",
+      "latest": "1.3.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.appdatamanager/",
-      "shortDescription": "This tool provides the way to WIPE, BACKUP, RESTORE AppData for installed Apps",
+      "shortDescription": "tool to WIPE, BACKUP, RESTORE AppData for installed Apps",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -2361,6 +2361,39 @@
       ]
     },
     {
+      "id": "com.aaronash.barrel",
+      "name": "Barrel",
+      "latest": "1.8.1.1-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.aaronash.barrel/",
+      "shortDescription": "3D and other effects on icon pages!",
+      "category": "Tweaks",
+      "author": "Aaron Ash (Charybdis)",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "1.8.1.2",
+          "iOSVersion": "10.3.3",
+          "repository": "XModGames",
+          "date": "2018-05-01T03:10:09Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.hackyouriphone.barrel",
       "name": "Barrel",
       "latest": "1.8.1.1-1",
@@ -2389,39 +2422,6 @@
               "bad": 0,
               "percentage": 100,
               "calculatedStatus": "Working"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.aaronash.barrel",
-      "name": "Barrel",
-      "latest": "1.8.1.1-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.aaronash.barrel/",
-      "shortDescription": "3D and other effects on icon pages!",
-      "category": "Tweaks",
-      "author": "Aaron Ash (Charybdis)",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "1.8.1.2",
-          "iOSVersion": "10.3.3",
-          "repository": "XModGames",
-          "date": "2018-05-01T03:10:09Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
             }
           }
         }
@@ -2530,10 +2530,10 @@
     {
       "id": "com.rbt.batterylife",
       "name": "BatteryLife",
-      "latest": "1.7.0",
+      "latest": "1.8.0~b15",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.rbt.batterylife/",
-      "shortDescription": "Displays useful information about battery health",
+      "shortDescription": "Displays useful information about your device's battery health [b1] Completely replaced the main app with the official App Store version. Please report ANY bugs and missing languages to batterylife1.8.x@rbtdigital.com. Thank you very much! [b2] Several fixes. [b3] Possible fix for iOS 8 crash. General bug fixes. [b4] iOS 8 bug fixes. [b5] Updated app a lot. [b6] See b5. [b7] See b6. [b8] App is now compatible with iOS 11. [b9] Bugfixes. [b10] Fix for missing app icon. [b11] Possible fix for the status bar options. [b12] Fix for b11. [b13] Bugfixes. [b14] Bugfixes. [b15] Bugfixes.",
       "category": "Utilities",
       "author": "rbt",
       "commercial": false,
@@ -2962,6 +2962,38 @@
       ]
     },
     {
+      "id": "repo.biteyourapple.net.bioprotect",
+      "name": "BioProtect",
+      "latest": "2.3-8",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Protect your apps with Touch ID!",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.1-295",
+          "iOSVersion": "10.3.3",
+          "repository": "BiteYourApple",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "net.limneos.bioprotect",
       "name": "BioProtect",
       "latest": "2.3-16",
@@ -3017,38 +3049,6 @@
           "iOSVersion": "10.3.3",
           "repository": "BigBoss",
           "date": "2018-07-20T18:22:37Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "repo.biteyourapple.net.bioprotect",
-      "name": "BioProtect",
-      "latest": "2.3-8",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Protect your apps with Touch ID!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.1-295",
-          "iOSVersion": "10.3.3",
-          "repository": "BiteYourApple",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4271,39 +4271,6 @@
       ]
     },
     {
-      "id": "com.rpetrich.cask",
-      "name": "Cask",
-      "latest": "0.2",
-      "repository": "rpetrich repo",
-      "url": "http://rpetri.ch/repo/",
-      "shortDescription": "Animated table scrolling inspired by Google Plus",
-      "category": "Tweaks",
-      "author": "Ryan Petrich",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "0.2",
-          "iOSVersion": "10.3.3",
-          "repository": "rpetrich repo",
-          "date": "2018-03-24T01:36:40Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "repo.biteyourapple.net.cask",
       "name": "Cask",
       "latest": "0.2",
@@ -4332,6 +4299,39 @@
               "bad": 0,
               "percentage": 100,
               "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.rpetrich.cask",
+      "name": "Cask",
+      "latest": "0.2",
+      "repository": "rpetrich repo",
+      "url": "http://rpetri.ch/repo/",
+      "shortDescription": "Animated table scrolling inspired by Google Plus",
+      "category": "Tweaks",
+      "author": "Ryan Petrich",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.2",
+          "iOSVersion": "10.3.3",
+          "repository": "rpetrich repo",
+          "date": "2018-03-24T01:36:40Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
             }
           }
         }
@@ -9028,40 +9028,6 @@
       ]
     },
     {
-      "id": "com.jailbreaktr.filza",
-      "name": "Filza File Manager",
-      "latest": "3.5.2-4",
-      "repository": "JailbreakTR Repository",
-      "url": "http://cydia.saurik.com/package/com.jailbreaktr.filza/",
-      "shortDescription": "iOS i?in geli?mi? dosya y?neticisi.",
-      "category": "Utilities",
-      "author": "Yusuf Özgül",
-      "commercial": false,
-      "date": "2018-08-04T22:24:44Z",
-      "versions": [
-        {
-          "tweakVersion": "3.5.2-4",
-          "iOSVersion": "10.3.3",
-          "repository": "JailbreakTR Repository",
-          "date": "2018-08-04T22:24:44Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 1,
-              "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
       "latest": "3.5.2-4",
@@ -9148,6 +9114,40 @@
               "bad": 0,
               "percentage": 0,
               "calculatedStatus": "Not working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.jailbreaktr.filza",
+      "name": "Filza File Manager",
+      "latest": "3.5.2-4",
+      "repository": "JailbreakTR Repository",
+      "url": "http://cydia.saurik.com/package/com.jailbreaktr.filza/",
+      "shortDescription": "iOS i?in geli?mi? dosya y?neticisi.",
+      "category": "Utilities",
+      "author": "Yusuf Özgül",
+      "commercial": false,
+      "date": "2018-08-04T22:24:44Z",
+      "versions": [
+        {
+          "tweakVersion": "3.5.2-4",
+          "iOSVersion": "10.3.3",
+          "repository": "JailbreakTR Repository",
+          "date": "2018-08-04T22:24:44Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
             }
           }
         }
@@ -9453,6 +9453,38 @@
       ]
     },
     {
+      "id": "com.johncoates.flex3",
+      "name": "Flex 3",
+      "latest": "3~EarlyAccess4",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.johncoates.flex3/",
+      "shortDescription": "Develop your own tweaks and share them on the Flex Community Cloud",
+      "category": "Tweaks",
+      "author": "John Coates",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "3~EarlyAccess3",
+          "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 3,
+            "arch32": {
+              "total": 1,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Not working"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.hackyouriphone.flex3beta",
       "name": "Flex 3",
       "latest": "3~Beta22",
@@ -9475,38 +9507,6 @@
             "good": 0,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Not working"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.johncoates.flex3",
-      "name": "Flex 3",
-      "latest": "3~EarlyAccess4",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.johncoates.flex3/",
-      "shortDescription": "Develop your own tweaks and share them on the Flex Community Cloud",
-      "category": "Tweaks",
-      "author": "John Coates",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "3~EarlyAccess3",
-          "iOSVersion": "10.3.3",
-          "repository": "BigBoss",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 3,
             "arch32": {
               "total": 1,
               "good": 0,
@@ -17623,6 +17623,40 @@
       ]
     },
     {
+      "id": "com.ioscreatix.peek-a-boo",
+      "name": "Peek-a-Boo",
+      "latest": "11.0.3",
+      "repository": "iOS Creatix",
+      "url": "http://cydia.saurik.com/package/com.ioscreatix.peek-a-boo/",
+      "shortDescription": "3D Touch for Non-3D Touch Devices",
+      "category": "Tweaks",
+      "author": "iOS Creatix",
+      "commercial": false,
+      "date": "2018-03-02T01:15:51Z",
+      "versions": [
+        {
+          "tweakVersion": "11.0.3",
+          "iOSVersion": "10.3.3",
+          "repository": "Packix",
+          "date": "2018-07-30T17:37:27Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.creatix.peek-a-boo",
       "name": "Peek-a-Boo",
       "latest": "4.0.0",
@@ -17657,40 +17691,6 @@
           "iOSVersion": "10.3.3",
           "repository": "(null)",
           "date": "2018-03-02T09:01:50Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.ioscreatix.peek-a-boo",
-      "name": "Peek-a-Boo",
-      "latest": "11.0.3",
-      "repository": "iOS Creatix",
-      "url": "http://cydia.saurik.com/package/com.ioscreatix.peek-a-boo/",
-      "shortDescription": "3D Touch for Non-3D Touch Devices",
-      "category": "Tweaks",
-      "author": "iOS Creatix",
-      "commercial": false,
-      "date": "2018-03-02T01:15:51Z",
-      "versions": [
-        {
-          "tweakVersion": "11.0.3",
-          "iOSVersion": "10.3.3",
-          "repository": "Packix",
-          "date": "2018-07-30T17:37:27Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -17840,22 +17840,22 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.pikabu",
+      "id": "com.repo.xarold.com.pikabu",
       "name": "Pikabu",
       "latest": "1.0.1",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.pikabu/",
+      "repository": "repo.xarold.com",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.pikabu/",
       "shortDescription": "Minimalistic volume hud on the notch, Headphone detection, Support iOS 10.0 to iOS 11.1.2",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "Jeffrey Chan",
       "commercial": false,
-      "date": "2018-03-04T07:00:06Z",
+      "date": "2018-03-04T03:59:41Z",
       "versions": [
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "10.3.3",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-06T00:24:16Z",
+          "repository": "Xarold Repo",
+          "date": "2018-03-06T00:24:31Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -17874,22 +17874,22 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.pikabu",
+      "id": "com.hackyouriphone.pikabu",
       "name": "Pikabu",
       "latest": "1.0.1",
-      "repository": "repo.xarold.com",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.pikabu/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.pikabu/",
       "shortDescription": "Minimalistic volume hud on the notch, Headphone detection, Support iOS 10.0 to iOS 11.1.2",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "Jeffrey Chan",
       "commercial": false,
-      "date": "2018-03-04T03:59:41Z",
+      "date": "2018-03-04T07:00:06Z",
       "versions": [
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "10.3.3",
-          "repository": "Xarold Repo",
-          "date": "2018-03-06T00:24:31Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-06T00:24:16Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -20301,6 +20301,40 @@
       ]
     },
     {
+      "id": "org.thebigboss.snakebite2",
+      "name": "Snakebite 2",
+      "latest": "2.0-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.snakebite2/",
+      "shortDescription": "A quick & beautiful way to access apps you need most",
+      "category": "Tweaks",
+      "author": "Phillip Tennen",
+      "commercial": true,
+      "date": "2018-08-09T08:56:57Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0-1",
+          "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
+          "date": "2018-08-09T08:56:57Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Not working"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.abcapps.snapplus",
       "name": "Snap + for Snapchat",
       "latest": "1.7r-58",
@@ -20688,6 +20722,38 @@
       ]
     },
     {
+      "id": "repo.biteyourapple.net.spotilife",
+      "name": "Spotilife",
+      "latest": "0.9",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Spotify Unlimited Skips, Remove ADs, Extreme Quality Stream Unlocked... Requires Spotify App (AppStore)",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.8",
+          "iOSVersion": "10.3.3",
+          "repository": "BiteYourApple",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.hackyouriphone.spotilife",
       "name": "Spotilife",
       "latest": "1.0",
@@ -20736,38 +20802,6 @@
               "bad": 0,
               "percentage": 0,
               "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "repo.biteyourapple.net.spotilife",
-      "name": "Spotilife",
-      "latest": "0.9",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Spotify Unlimited Skips, Remove ADs, Extreme Quality Stream Unlocked... Requires Spotify App (AppStore)",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "0.8",
-          "iOSVersion": "10.3.3",
-          "repository": "BiteYourApple",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 1,
-              "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
             }
           }
         }
