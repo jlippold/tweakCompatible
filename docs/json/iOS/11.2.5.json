@@ -36,10 +36,10 @@
     {
       "id": "p7zip",
       "name": "7-zip (POSIX)",
-      "latest": "4.57-3p",
+      "latest": "16.02",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/p7zip/",
-      "shortDescription": "claims to be a good compressor",
+      "shortDescription": "A port of 7za.exe for POSIX systems like Unix",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
@@ -494,7 +494,7 @@
     {
       "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
-      "latest": "1.0r-92",
+      "latest": "1.0r-101",
       "repository": "beta.unlimapps.com",
       "url": "https://beta.unlimapps.com/",
       "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
@@ -2369,7 +2369,7 @@
     {
       "id": "coreutils",
       "name": "Core Utilities",
-      "latest": "8.12-13",
+      "latest": "8.29-1",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/coreutils/",
       "shortDescription": "core set of Unix shell utilities from GNU",
@@ -3529,7 +3529,7 @@
     {
       "id": "com.unlimapps.gramplus",
       "name": "Instagram ++",
-      "latest": "1.8r-64",
+      "latest": "1.8r-183",
       "repository": "beta.unlimapps.com",
       "url": "http://beta.unlimapps.com/",
       "shortDescription": "Download & Copy Instagram media",
@@ -4545,7 +4545,7 @@
     {
       "id": "net.tateu.moveable9",
       "name": "Moveable9",
-      "latest": "1.0.0~beta29-25",
+      "latest": "1.0.0~beta29-26",
       "repository": "tateu's repo",
       "url": "http://www.tateu.net/repo/",
       "shortDescription": "Arrange statusbar icons.",
@@ -5081,21 +5081,22 @@
       ]
     },
     {
-      "id": "com.julioverne.ntspeed",
+      "id": "com.hackyouriphone.ntspeed",
       "name": "NtSpeed",
-      "latest": "0.2~beta6",
-      "repository": "ipad_kid's repo",
-      "url": "http://ipadkid.cf/",
+      "latest": "0.2~beta5",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.ntspeed/",
       "shortDescription": "See Active Traffic Network Speed",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "julioverne",
       "commercial": false,
+      "date": "2018-06-20T21:19:38Z",
       "versions": [
         {
-          "tweakVersion": "0.2~beta6",
+          "tweakVersion": "0.2~beta5",
           "iOSVersion": "11.2.5",
-          "repository": "julioverne's Repo",
-          "date": "2018-07-30T14:47:02Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-07-10T12:50:18Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5114,22 +5115,21 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.ntspeed",
+      "id": "com.julioverne.ntspeed",
       "name": "NtSpeed",
-      "latest": "0.2~beta5",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.ntspeed/",
+      "latest": "0.2~beta6",
+      "repository": "ipad_kid's repo",
+      "url": "http://ipadkid.cf/",
       "shortDescription": "See Active Traffic Network Speed",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "julioverne",
       "commercial": false,
-      "date": "2018-06-20T21:19:38Z",
       "versions": [
         {
-          "tweakVersion": "0.2~beta5",
+          "tweakVersion": "0.2~beta6",
           "iOSVersion": "11.2.5",
-          "repository": "HackYouriPhone",
-          "date": "2018-07-10T12:50:18Z",
+          "repository": "julioverne's Repo",
+          "date": "2018-07-30T14:47:02Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5961,6 +5961,40 @@
       ]
     },
     {
+      "id": "com.smokin1337.purplebar",
+      "name": "PurpleBar",
+      "latest": "0.0.1-2",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.smokin1337.purplebar/",
+      "shortDescription": "Purple statusbar text and icons while DoNotDisturb is active for iPhone X.",
+      "category": "Tweaks",
+      "author": "smokin1337",
+      "commercial": false,
+      "date": "2018-07-10T03:22:35Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0.1-2",
+          "iOSVersion": "11.2.5",
+          "repository": "Packix",
+          "date": "2018-08-14T00:32:23Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.olxios.quickpowermode",
       "name": "QuickPowerMode",
       "latest": "1.0.1",
@@ -6453,7 +6487,7 @@
     {
       "id": "sed",
       "name": "sed",
-      "latest": "4.1.5-8",
+      "latest": "4.2.2",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/sed/",
       "shortDescription": "edits streams of text using patterns",
@@ -6575,7 +6609,7 @@
     {
       "id": "shell-cmds",
       "name": "shell-cmds",
-      "latest": "118-7",
+      "latest": "203",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/shell-cmds/",
       "shortDescription": "killall, mktemp, renice, time, which",
@@ -7459,7 +7493,7 @@
     {
       "id": "system-cmds",
       "name": "system-cmds",
-      "latest": "433.8-14",
+      "latest": "790",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/system-cmds/",
       "shortDescription": "iostat, login, passwd, sync, sysctl",
@@ -7527,7 +7561,7 @@
     {
       "id": "tar",
       "name": "Tape Archive",
-      "latest": "1.29-10",
+      "latest": "1.30",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/tar/",
       "shortDescription": "tool for making tape archives",
@@ -7938,7 +7972,7 @@
     {
       "id": "uikittools",
       "name": "UIKit Tools",
-      "latest": "1.1.12",
+      "latest": "1.1.12-coolstar",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/uikittools/",
       "shortDescription": "UIKit/GraphicsServices command line access",
@@ -7972,7 +8006,7 @@
     {
       "id": "unrar",
       "name": "unrar",
-      "latest": "3.6.8-2p",
+      "latest": "5.5.8",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/unrar/",
       "shortDescription": "de-compresses files in rar format",
@@ -8006,7 +8040,7 @@
     {
       "id": "unzip",
       "name": "unzip",
-      "latest": "5.52-6",
+      "latest": "6.0",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/unzip/",
       "shortDescription": "de-compesses files in zip format",
@@ -8445,7 +8479,7 @@
     {
       "id": "zip",
       "name": "zip",
-      "latest": "2.32-6",
+      "latest": "3.0",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/zip/",
       "shortDescription": "standard Windows compression tool",
