@@ -1806,6 +1806,26 @@
               "calculatedStatus": "Working"
             }
           }
+        },
+        {
+          "tweakVersion": "1.4.0-45",
+          "iOSVersion": "10.3.3",
+          "repository": "TIGI Software",
+          "date": "2018-08-14T20:21:19Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
         }
       ]
     },
@@ -2053,21 +2073,22 @@
       ]
     },
     {
-      "id": "org.thebigboss.assistantplus",
+      "id": "com.hackyouriphone.assistantplus",
       "name": "Assistant+",
       "latest": "1.2.0-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.assistantplus/",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.assistantplus/",
       "shortDescription": "Assign commands for Siri to trigger Activator events",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "Zaid Elkurdi",
-      "commercial": true,
+      "commercial": false,
+      "date": "2018-07-30T18:21:21Z",
       "versions": [
         {
           "tweakVersion": "1.2.0-1",
           "iOSVersion": "10.3.3",
-          "repository": "BigBoss",
-          "date": "2018-04-14T02:10:14Z",
+          "repository": "(null)",
+          "date": "2018-07-30T18:21:21Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2086,22 +2107,21 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.assistantplus",
+      "id": "org.thebigboss.assistantplus",
       "name": "Assistant+",
       "latest": "1.2.0-1",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.assistantplus/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.assistantplus/",
       "shortDescription": "Assign commands for Siri to trigger Activator events",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "Zaid Elkurdi",
-      "commercial": false,
-      "date": "2018-07-30T18:21:21Z",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "1.2.0-1",
           "iOSVersion": "10.3.3",
-          "repository": "(null)",
-          "date": "2018-07-30T18:21:21Z",
+          "repository": "BigBoss",
+          "date": "2018-04-14T02:10:14Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4560,6 +4580,39 @@
       ]
     },
     {
+      "id": "com.rpetrich.cask",
+      "name": "Cask",
+      "latest": "0.2",
+      "repository": "rpetrich repo",
+      "url": "http://rpetri.ch/repo/",
+      "shortDescription": "Animated table scrolling inspired by Google Plus",
+      "category": "Tweaks",
+      "author": "Ryan Petrich",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.2",
+          "iOSVersion": "10.3.3",
+          "repository": "rpetrich repo",
+          "date": "2018-03-24T01:36:40Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "repo.biteyourapple.net.cask",
       "name": "Cask",
       "latest": "0.2",
@@ -4588,39 +4641,6 @@
               "bad": 0,
               "percentage": 100,
               "calculatedStatus": "Working"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.rpetrich.cask",
-      "name": "Cask",
-      "latest": "0.2",
-      "repository": "rpetrich repo",
-      "url": "http://rpetri.ch/repo/",
-      "shortDescription": "Animated table scrolling inspired by Google Plus",
-      "category": "Tweaks",
-      "author": "Ryan Petrich",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "0.2",
-          "iOSVersion": "10.3.3",
-          "repository": "rpetrich repo",
-          "date": "2018-03-24T01:36:40Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
             }
           }
         }
@@ -5841,6 +5861,39 @@
       ]
     },
     {
+      "id": "ru.domo.cocoatop",
+      "name": "CocoaTop",
+      "latest": "2.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
+      "shortDescription": "Process Viewer for iOS GUI",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0.1",
+          "iOSVersion": "10.3.3",
+          "repository": "BigBoss",
+          "date": "2018-04-17T17:53:29Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 2,
+            "arch32": {
+              "total": 1,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Not working"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2",
@@ -5869,39 +5922,6 @@
               "bad": 0,
               "percentage": 0,
               "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ru.domo.cocoatop",
-      "name": "CocoaTop",
-      "latest": "2.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
-      "shortDescription": "Process Viewer for iOS GUI",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0.1",
-          "iOSVersion": "10.3.3",
-          "repository": "BigBoss",
-          "date": "2018-04-17T17:53:29Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 1,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Not working"
             }
           }
         }
@@ -9485,40 +9505,6 @@
       ]
     },
     {
-      "id": "com.jailbreaktr.filza",
-      "name": "Filza File Manager",
-      "latest": "3.5.2-4",
-      "repository": "JailbreakTR Repository",
-      "url": "http://cydia.saurik.com/package/com.jailbreaktr.filza/",
-      "shortDescription": "iOS i?in geli?mi? dosya y?neticisi.",
-      "category": "Utilities",
-      "author": "Yusuf Özgül",
-      "commercial": false,
-      "date": "2018-08-04T22:24:44Z",
-      "versions": [
-        {
-          "tweakVersion": "3.5.2-4",
-          "iOSVersion": "10.3.3",
-          "repository": "JailbreakTR Repository",
-          "date": "2018-08-04T22:24:44Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 1,
-              "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
       "latest": "3.5.2-4",
@@ -9605,6 +9591,40 @@
               "bad": 0,
               "percentage": 50,
               "calculatedStatus": "Likely working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.jailbreaktr.filza",
+      "name": "Filza File Manager",
+      "latest": "3.5.2-4",
+      "repository": "JailbreakTR Repository",
+      "url": "http://cydia.saurik.com/package/com.jailbreaktr.filza/",
+      "shortDescription": "iOS i?in geli?mi? dosya y?neticisi.",
+      "category": "Utilities",
+      "author": "Yusuf Özgül",
+      "commercial": false,
+      "date": "2018-08-04T22:24:44Z",
+      "versions": [
+        {
+          "tweakVersion": "3.5.2-4",
+          "iOSVersion": "10.3.3",
+          "repository": "JailbreakTR Repository",
+          "date": "2018-08-04T22:24:44Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
             }
           }
         }
@@ -12618,6 +12638,40 @@
       ]
     },
     {
+      "id": "com.jailbreaktr.gramplus",
+      "name": "Instagram ++",
+      "latest": "1.8r-181",
+      "repository": "JailbreakTR Repository",
+      "url": "http://cydia.saurik.com/package/com.jailbreaktr.gramplus/",
+      "shortDescription": "Instagram medyalar?n? kaydedin",
+      "category": "Tweaks",
+      "author": "UnlimApps Inc.",
+      "commercial": false,
+      "date": "2018-08-04T22:21:21Z",
+      "versions": [
+        {
+          "tweakVersion": "1.8r-181",
+          "iOSVersion": "10.3.3",
+          "repository": "JailbreakTR Repository",
+          "date": "2018-08-04T22:21:21Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.unlimapps.gramplus",
       "name": "Instagram ++",
       "latest": "1.8r-183",
@@ -12763,40 +12817,6 @@
               "bad": 0,
               "percentage": 0,
               "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.jailbreaktr.gramplus",
-      "name": "Instagram ++",
-      "latest": "1.8r-181",
-      "repository": "JailbreakTR Repository",
-      "url": "http://cydia.saurik.com/package/com.jailbreaktr.gramplus/",
-      "shortDescription": "Instagram medyalar?n? kaydedin",
-      "category": "Tweaks",
-      "author": "UnlimApps Inc.",
-      "commercial": false,
-      "date": "2018-08-04T22:21:21Z",
-      "versions": [
-        {
-          "tweakVersion": "1.8r-181",
-          "iOSVersion": "10.3.3",
-          "repository": "JailbreakTR Repository",
-          "date": "2018-08-04T22:21:21Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 1,
-              "good": 1,
-              "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
             }
           }
         }
@@ -13571,22 +13591,22 @@
       ]
     },
     {
-      "id": "com.lnx.kittloader",
+      "id": "com.yourepo.lonestarx.kittloader",
       "name": "KITTLoader",
       "latest": "1.0.2-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.lnx.kittloader/",
-      "shortDescription": "A crazy activity indicator view!",
+      "repository": "lonestarx Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.lonestarx.kittloader/",
+      "shortDescription": "A crazy activity indicator view! IPX, LITTLEX, NOTCHLESS COMPATIBLE ! iOS 8-11",
       "category": "Tweaks",
       "author": "LonestarX",
       "commercial": false,
-      "date": "2018-05-14T15:45:17Z",
+      "date": "2018-05-14T08:12:59Z",
       "versions": [
         {
-          "tweakVersion": "1.0.0-1",
+          "tweakVersion": "1.0.2",
           "iOSVersion": "10.3.3",
-          "repository": "BigBoss",
-          "date": "2018-05-16T15:20:53Z",
+          "repository": "lonestarx Source - YouRepo",
+          "date": "2018-05-22T18:28:37Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -13605,22 +13625,22 @@
       ]
     },
     {
-      "id": "com.yourepo.lonestarx.kittloader",
+      "id": "com.lnx.kittloader",
       "name": "KITTLoader",
       "latest": "1.0.2-1",
-      "repository": "lonestarx Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.lonestarx.kittloader/",
-      "shortDescription": "A crazy activity indicator view! IPX, LITTLEX, NOTCHLESS COMPATIBLE ! iOS 8-11",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.lnx.kittloader/",
+      "shortDescription": "A crazy activity indicator view!",
       "category": "Tweaks",
       "author": "LonestarX",
       "commercial": false,
-      "date": "2018-05-14T08:12:59Z",
+      "date": "2018-05-14T15:45:17Z",
       "versions": [
         {
-          "tweakVersion": "1.0.2",
+          "tweakVersion": "1.0.0-1",
           "iOSVersion": "10.3.3",
-          "repository": "lonestarx Source - YouRepo",
-          "date": "2018-05-22T18:28:37Z",
+          "repository": "BigBoss",
+          "date": "2018-05-16T15:20:53Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -14320,22 +14340,22 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.linktunesios8",
+      "id": "com.hackyouriphone.linktunesios8",
       "name": "LinkTunes for iOS 8",
-      "latest": "1.4.5k",
-      "repository": "repo.xarold.com",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.linktunesios8/",
+      "latest": "1.4.5",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.linktunesios8/",
       "shortDescription": "A new way to download Mp3 for free directly from iTunesStore! An HackYouriPhone Exclusive, ENJOY IT :)",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "PowerSDev",
       "commercial": false,
-      "date": "2018-03-02T09:56:40Z",
+      "date": "2018-03-04T06:53:56Z",
       "versions": [
         {
-          "tweakVersion": "1.4.5k",
+          "tweakVersion": "1.4.5",
           "iOSVersion": "10.3.3",
-          "repository": "Xarold Repo",
-          "date": "2018-03-10T17:26:08Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-10T15:13:03Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -14354,22 +14374,22 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.linktunesios8",
+      "id": "com.repo.xarold.com.linktunesios8",
       "name": "LinkTunes for iOS 8",
-      "latest": "1.4.5",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.linktunesios8/",
+      "latest": "1.4.5k",
+      "repository": "repo.xarold.com",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.linktunesios8/",
       "shortDescription": "A new way to download Mp3 for free directly from iTunesStore! An HackYouriPhone Exclusive, ENJOY IT :)",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "PowerSDev",
       "commercial": false,
-      "date": "2018-03-04T06:53:56Z",
+      "date": "2018-03-02T09:56:40Z",
       "versions": [
         {
-          "tweakVersion": "1.4.5",
+          "tweakVersion": "1.4.5k",
           "iOSVersion": "10.3.3",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-10T15:13:03Z",
+          "repository": "Xarold Repo",
+          "date": "2018-03-10T17:26:08Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -14522,38 +14542,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.localiapstore",
-      "name": "LocalIAPStore",
-      "latest": "1.4-2",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.4-2",
-          "iOSVersion": "10.3.3",
-          "repository": "BiteYourApple",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 3,
-            "bad": 0,
-            "total": 3,
-            "arch32": {
-              "total": 2,
-              "good": 2,
-              "bad": 0,
-              "percentage": 100,
-              "calculatedStatus": "Working"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.repo.xarold.com.localiapstore",
       "name": "LocalIAPStore",
       "latest": "1.5",
@@ -14599,6 +14587,38 @@
             "arch32": {
               "total": 1,
               "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.localiapstore",
+      "name": "LocalIAPStore",
+      "latest": "1.4-2",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.4-2",
+          "iOSVersion": "10.3.3",
+          "repository": "BiteYourApple",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 3,
+            "bad": 0,
+            "total": 3,
+            "arch32": {
+              "total": 2,
+              "good": 2,
               "bad": 0,
               "percentage": 100,
               "calculatedStatus": "Working"
@@ -17951,6 +17971,40 @@
       ]
     },
     {
+      "id": "com.repo.xarold.com.onlinenotify",
+      "name": "OnlineNotify",
+      "latest": "2.3.19",
+      "repository": "repo.xarold.com",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.onlinenotify/",
+      "shortDescription": "Track you friends on WhatsApp Messenger!",
+      "category": "Tweaks",
+      "author": "Fouad Raheb",
+      "commercial": false,
+      "date": "2018-03-03T13:24:07Z",
+      "versions": [
+        {
+          "tweakVersion": "2.3.14",
+          "iOSVersion": "10.3.3",
+          "repository": "Xarold Repo",
+          "date": "2018-03-06T02:00:36Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.f0u4d.onlinenotify",
       "name": "OnlineNotify",
       "latest": "2.3.19",
@@ -17986,40 +18040,6 @@
           "iOSVersion": "10.3.3",
           "repository": "BigBoss",
           "date": "2018-06-18T14:00:08Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.repo.xarold.com.onlinenotify",
-      "name": "OnlineNotify",
-      "latest": "2.3.19",
-      "repository": "repo.xarold.com",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.onlinenotify/",
-      "shortDescription": "Track you friends on WhatsApp Messenger!",
-      "category": "Tweaks",
-      "author": "Fouad Raheb",
-      "commercial": false,
-      "date": "2018-03-03T13:24:07Z",
-      "versions": [
-        {
-          "tweakVersion": "2.3.14",
-          "iOSVersion": "10.3.3",
-          "repository": "Xarold Repo",
-          "date": "2018-03-06T02:00:36Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -18729,22 +18749,22 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.pikabu",
+      "id": "com.repo.xarold.com.pikabu",
       "name": "Pikabu",
       "latest": "1.0.1",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.pikabu/",
+      "repository": "repo.xarold.com",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.pikabu/",
       "shortDescription": "Minimalistic volume hud on the notch, Headphone detection, Support iOS 10.0 to iOS 11.1.2",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "Jeffrey Chan",
       "commercial": false,
-      "date": "2018-03-04T07:00:06Z",
+      "date": "2018-03-04T03:59:41Z",
       "versions": [
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "10.3.3",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-06T00:24:16Z",
+          "repository": "Xarold Repo",
+          "date": "2018-03-06T00:24:31Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -18763,22 +18783,22 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.pikabu",
+      "id": "com.hackyouriphone.pikabu",
       "name": "Pikabu",
       "latest": "1.0.1",
-      "repository": "repo.xarold.com",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.pikabu/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.pikabu/",
       "shortDescription": "Minimalistic volume hud on the notch, Headphone detection, Support iOS 10.0 to iOS 11.1.2",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "Jeffrey Chan",
       "commercial": false,
-      "date": "2018-03-04T03:59:41Z",
+      "date": "2018-03-04T07:00:06Z",
       "versions": [
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "10.3.3",
-          "repository": "Xarold Repo",
-          "date": "2018-03-06T00:24:31Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-06T00:24:16Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
