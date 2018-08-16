@@ -103,10 +103,10 @@
     {
       "id": "p7zip",
       "name": "7-zip (POSIX)",
-      "latest": "16.02",
+      "latest": "4.57-3p",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/p7zip/",
-      "shortDescription": "A port of 7za.exe for POSIX systems like Unix",
+      "shortDescription": "claims to be a good compressor",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
@@ -318,7 +318,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.13~beta2",
+      "latest": "1.9.12",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -1403,22 +1403,20 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.appcake2",
+      "id": "com.iphonecake.appcake2",
       "name": "AppCake",
-      "latest": "5.5.7.2",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.appcake2/",
-      "shortDescription": "The new AppCake 5.5.7.2! Introducing Direct Download/Install!  Require AppSync to be installed ***",
-      "category": "HYI - Applications",
+      "latest": "5.5.9.1",
+      "repository": "AppCake",
+      "url": "http://iphonecake.com/forum/",
+      "shortDescription": "The new AppCake 5.5.9.1! Introducing Direct Download/Install!  Require AppSync to be installed ***",
+      "category": "Utilities",
       "author": "Mickael liang",
       "commercial": false,
-      "date": "2018-03-26T07:58:39Z",
       "versions": [
         {
-          "tweakVersion": "5.5.7.2",
+          "tweakVersion": "5.5.5.0",
           "iOSVersion": "10.2",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-26T07:58:39Z",
+          "repository": "AppCake",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1437,20 +1435,22 @@
       ]
     },
     {
-      "id": "com.iphonecake.appcake2",
+      "id": "com.hackyouriphone.appcake2",
       "name": "AppCake",
-      "latest": "5.5.9.1",
-      "repository": "AppCake",
-      "url": "http://iphonecake.com/forum/",
-      "shortDescription": "The new AppCake 5.5.9.1! Introducing Direct Download/Install!  Require AppSync to be installed ***",
-      "category": "Utilities",
+      "latest": "5.5.7.2",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.appcake2/",
+      "shortDescription": "The new AppCake 5.5.7.2! Introducing Direct Download/Install!  Require AppSync to be installed ***",
+      "category": "HYI - Applications",
       "author": "Mickael liang",
       "commercial": false,
+      "date": "2018-03-26T07:58:39Z",
       "versions": [
         {
-          "tweakVersion": "5.5.5.0",
+          "tweakVersion": "5.5.7.2",
           "iOSVersion": "10.2",
-          "repository": "AppCake",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-26T07:58:39Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1623,6 +1623,40 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.julioverne.appellancy11",
+      "name": "Appellancy (iOS 11)",
+      "latest": "1.1-20",
+      "repository": "julioverne's Repo",
+      "url": "http://cydia.saurik.com/package/com.julioverne.appellancy11/",
+      "shortDescription": "Control your phone with your face!",
+      "category": "Tweaks",
+      "author": "Elijah Frederickson, julioverne",
+      "commercial": false,
+      "date": "2018-08-14T21:57:55Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1-20",
+          "iOSVersion": "10.2",
+          "repository": "julioverne's Repo",
+          "date": "2018-08-16T07:42:40Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -1999,7 +2033,7 @@
     {
       "id": "apt7-key",
       "name": "APT 0.7 (apt-key)",
-      "latest": "1.4.8",
+      "latest": "0.7.25.3-3",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/apt7-key/",
       "shortDescription": "repository encryption key management tool",
@@ -2033,7 +2067,7 @@
     {
       "id": "apt7",
       "name": "APT 0.7 Strict",
-      "latest": "1.4.8",
+      "latest": "0.7.25.3-9",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/apt7/",
       "shortDescription": "the advanced packaging tool from Debian",
@@ -2067,7 +2101,7 @@
     {
       "id": "apt7-lib",
       "name": "APT 0.7 Strict (lib)",
-      "latest": "1.4.8-1",
+      "latest": "0.7.25.3-16",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/apt7-lib/",
       "shortDescription": "the advanced packaging library from Debian",
@@ -2880,7 +2914,7 @@
     {
       "id": "berkeleydb",
       "name": "Berkeley DB",
-      "latest": "6.2.23",
+      "latest": "4.6.21-5",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/berkeleydb/",
       "shortDescription": "Oracle's embeddable database engine",
@@ -4903,40 +4937,6 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.colorbadges",
-      "name": "ColorBadges",
-      "latest": "1.2.0",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.colorbadges/",
-      "shortDescription": "Colorize your badges",
-      "category": "HYI - Tweaks",
-      "author": "David Goldman",
-      "commercial": false,
-      "date": "2018-03-17T12:50:00Z",
-      "versions": [
-        {
-          "tweakVersion": "1.2.0",
-          "iOSVersion": "10.2",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-17T12:50:00Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.thebigboss.colorbadges",
       "name": "ColorBadges",
       "latest": "1.2.0",
@@ -4971,6 +4971,40 @@
           "iOSVersion": "10.2",
           "repository": "BigBoss",
           "date": "2018-04-23T16:48:04Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.hackyouriphone.colorbadges",
+      "name": "ColorBadges",
+      "latest": "1.2.0",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.colorbadges/",
+      "shortDescription": "Colorize your badges",
+      "category": "HYI - Tweaks",
+      "author": "David Goldman",
+      "commercial": false,
+      "date": "2018-03-17T12:50:00Z",
+      "versions": [
+        {
+          "tweakVersion": "1.2.0",
+          "iOSVersion": "10.2",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-17T12:50:00Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5314,7 +5348,7 @@
     {
       "id": "coreutils",
       "name": "Core Utilities",
-      "latest": "8.29-1",
+      "latest": "8.12-13",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/coreutils/",
       "shortDescription": "core set of Unix shell utilities from GNU",
@@ -5348,7 +5382,7 @@
     {
       "id": "coreutils-bin",
       "name": "Core Utilities (/bin)",
-      "latest": "8.29-1",
+      "latest": "8.12-9",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/coreutils-bin/",
       "shortDescription": "just the /bin folder from GNU coreutils",
@@ -5863,7 +5897,7 @@
     {
       "id": "cydia",
       "name": "Cydia Installer",
-      "latest": "420.1.30-1",
+      "latest": "1.1.30",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia/",
       "shortDescription": "graphical iPhone front-end for APT",
@@ -5895,10 +5929,10 @@
     {
       "id": "mobilesubstrate",
       "name": "Cydia Substrate",
-      "latest": "99.0",
+      "latest": "0.9.6301",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/mobilesubstrate/",
-      "shortDescription": "Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute",
+      "shortDescription": "powerful code insertion platform",
       "category": "System",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -6093,7 +6127,7 @@
     {
       "id": "darwintools",
       "name": "Darwin Tools",
-      "latest": "1-6",
+      "latest": "1-5",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/darwintools/",
       "shortDescription": "startupfiletool, sw_vers",
@@ -6561,7 +6595,7 @@
     {
       "id": "diffutils",
       "name": "Diff Utilities",
-      "latest": "3.6",
+      "latest": "2.8.1-6",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/diffutils/",
       "shortDescription": "compare two files for differences",
@@ -8216,10 +8250,10 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.2-4",
+      "latest": "3.5.2-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
+      "shortDescription": "File Manager for iOS. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -8288,7 +8322,7 @@
     {
       "id": "findutils",
       "name": "Find Utilities",
-      "latest": "4.6",
+      "latest": "4.2.33-7",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/findutils/",
       "shortDescription": "indexes and searches filesystems",
@@ -9560,7 +9594,7 @@
     {
       "id": "grep",
       "name": "grep",
-      "latest": "3.1",
+      "latest": "2.5.4-3",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/grep/",
       "shortDescription": "searches files for regular expressions",
@@ -9628,7 +9662,7 @@
     {
       "id": "gzip",
       "name": "gzip",
-      "latest": "1.8",
+      "latest": "1.6-7",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/gzip/",
       "shortDescription": "the standard Unix compression algorithm",
@@ -9760,6 +9794,38 @@
       ]
     },
     {
+      "id": "repo.biteyourapple.net.hidemex10",
+      "name": "HideMeX (iOS 10)",
+      "latest": "1.1k",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "The Ultimate iOS Customizing Experience",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.1k",
+          "iOSVersion": "10.2",
+          "repository": "BiteYourApple",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.cpdigitaldarkroom.hidemex10",
       "name": "HideMeX (iOS 10)",
       "latest": "1.1-1",
@@ -9814,38 +9880,6 @@
           "iOSVersion": "10.2",
           "repository": "CP Digital Darkroom Repo",
           "date": "2018-03-04T20:51:50Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "repo.biteyourapple.net.hidemex10",
-      "name": "HideMeX (iOS 10)",
-      "latest": "1.1k",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "The Ultimate iOS Customizing Experience",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.1k",
-          "iOSVersion": "10.2",
-          "repository": "BiteYourApple",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10972,7 +11006,7 @@
     {
       "id": "com.muris.intelligentpass",
       "name": "IntelligentPass",
-      "latest": "1.0.2",
+      "latest": "1.0.4",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.muris.intelligentpass/",
       "shortDescription": "Disable passcode when not necessary",
@@ -12832,7 +12866,7 @@
     {
       "id": "com.junesiphone.lockpluspro",
       "name": "LockPlus Pro",
-      "latest": "1.3.4",
+      "latest": "1.3.5",
       "repository": "junesiphone.com",
       "url": "http://cydia.saurik.com/package/com.junesiphone.lockpluspro/",
       "shortDescription": "The ultimate lock screen tweak!",
@@ -14544,7 +14578,7 @@
     {
       "id": "com.julioverne.musilyric",
       "name": "MusiLyric",
-      "latest": "0.5~beta4",
+      "latest": "0.5~beta5a",
       "repository": "julioverne's Repo",
       "url": "http://twitter.com/ijulioverne",
       "shortDescription": "Best Lyrics Music",
@@ -15042,7 +15076,7 @@
     {
       "id": "ncurses",
       "name": "New Curses",
-      "latest": "6.1",
+      "latest": "5.7-15",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/ncurses/",
       "shortDescription": "feature-complete terminal library",
@@ -16864,6 +16898,39 @@
       ]
     },
     {
+      "id": "com.creatix.peek-a-boo",
+      "name": "Peek-a-Boo",
+      "latest": "4.0.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.creatix.peek-a-boo/",
+      "shortDescription": "Peek and Pop on older devices!",
+      "category": "Tweaks",
+      "author": "Creatix",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "10.0.2",
+          "iOSVersion": "10.2",
+          "repository": "(null)",
+          "date": "2018-03-04T20:59:55Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.hackyouriphone.peek-a-boo",
       "name": "Peek-a-Boo",
       "latest": "11.0.3",
@@ -16884,39 +16951,6 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.creatix.peek-a-boo",
-      "name": "Peek-a-Boo",
-      "latest": "4.0.0",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.creatix.peek-a-boo/",
-      "shortDescription": "Peek and Pop on older devices!",
-      "category": "Tweaks",
-      "author": "Creatix",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "10.0.2",
-          "iOSVersion": "10.2",
-          "repository": "(null)",
-          "date": "2018-03-04T20:59:55Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -17252,7 +17286,7 @@
     {
       "id": "com.pokego2.pokego2",
       "name": "PokeGo++ 2.0 for Pokemon Go!",
-      "latest": "2.0r-80",
+      "latest": "2.0r-83",
       "repository": "pokego2.com",
       "url": "http://pokego2.com/",
       "shortDescription": "Hacks and more for Pokemon GO!!! Bypass JB Detection.",
@@ -17363,38 +17397,6 @@
       ]
     },
     {
-      "id": "com.a3tweaks.polus",
-      "name": "Polus",
-      "latest": "2.2.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.a3tweaks.polus/",
-      "shortDescription": "Control Center launcher for apps & actions",
-      "category": "Tweaks",
-      "author": "A3tweaks",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "2.2.1",
-          "iOSVersion": "10.2",
-          "repository": "BigBoss",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 3,
-            "bad": 0,
-            "total": 3,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "repo.biteyourapple.net.polus",
       "name": "Polus",
       "latest": "2.2.1",
@@ -17417,6 +17419,38 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.a3tweaks.polus",
+      "name": "Polus",
+      "latest": "2.2.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.a3tweaks.polus/",
+      "shortDescription": "Control Center launcher for apps & actions",
+      "category": "Tweaks",
+      "author": "A3tweaks",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "2.2.1",
+          "iOSVersion": "10.2",
+          "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 3,
+            "bad": 0,
+            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -17631,7 +17665,7 @@
     {
       "id": "preferenceloader",
       "name": "PreferenceLoader",
-      "latest": "2.2.3-3",
+      "latest": "2.2.4~alpha1",
       "repository": "rpetrich repo",
       "url": "http://cydia.saurik.com/package/preferenceloader/",
       "shortDescription": "load preferences in style",
@@ -18872,7 +18906,7 @@
     {
       "id": "sed",
       "name": "sed",
-      "latest": "4.2.2",
+      "latest": "4.1.5-8",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/sed/",
       "shortDescription": "edits streams of text using patterns",
@@ -19006,7 +19040,7 @@
     {
       "id": "shell-cmds",
       "name": "shell-cmds",
-      "latest": "203",
+      "latest": "118-7",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/shell-cmds/",
       "shortDescription": "killall, mktemp, renice, time, which",
@@ -20587,10 +20621,10 @@
     {
       "id": "com.saurik.substrate.safemode",
       "name": "Substrate Safe Mode",
-      "latest": "420.0.0-4",
+      "latest": "0.9.6001",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/com.saurik.substrate.safemode/",
-      "shortDescription": "A safe safety safemode extension (safe).",
+      "shortDescription": "safe mode safety extension (safe)",
       "category": "Tweaks",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -21108,7 +21142,7 @@
     {
       "id": "system-cmds",
       "name": "system-cmds",
-      "latest": "790",
+      "latest": "433.8-14",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/system-cmds/",
       "shortDescription": "iostat, login, passwd, sync, sysctl",
@@ -21142,7 +21176,7 @@
     {
       "id": "tar",
       "name": "Tape Archive",
-      "latest": "1.30",
+      "latest": "1.29-10",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/tar/",
       "shortDescription": "tool for making tape archives",
@@ -22478,7 +22512,7 @@
     {
       "id": "com.unlimapps.uasharedtools.stash",
       "name": "uasharedtools (stash)",
-      "latest": "2.2r-59",
+      "latest": "2.2r-61",
       "repository": "beta.unlimapps.com",
       "url": "http://cydia.saurik.com/package/com.unlimapps.uasharedtools.stash/",
       "shortDescription": "shared tools for unlimapps tweaks",
@@ -22546,7 +22580,7 @@
     {
       "id": "uikittools",
       "name": "UIKit Tools",
-      "latest": "1.1.12-coolstar",
+      "latest": "1.1.12",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/uikittools/",
       "shortDescription": "UIKit/GraphicsServices command line access",
@@ -22679,7 +22713,7 @@
     {
       "id": "unrar",
       "name": "unrar",
-      "latest": "5.5.8",
+      "latest": "3.6.8-2p",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/unrar/",
       "shortDescription": "de-compresses files in rar format",
@@ -22815,7 +22849,7 @@
     {
       "id": "unzip",
       "name": "unzip",
-      "latest": "6.0",
+      "latest": "5.52-6",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/unzip/",
       "shortDescription": "de-compesses files in zip format",
@@ -24045,7 +24079,7 @@
     {
       "id": "lzma",
       "name": "XZ Utils",
-      "latest": "5.2.3",
+      "latest": "4.32.7-5",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/lzma/",
       "shortDescription": "slower, but better, compression algorithm",
@@ -24177,7 +24211,7 @@
     {
       "id": "zip",
       "name": "zip",
-      "latest": "3.0",
+      "latest": "2.32-6",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/zip/",
       "shortDescription": "standard Windows compression tool",
