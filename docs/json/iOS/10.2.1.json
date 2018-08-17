@@ -1389,21 +1389,22 @@
       ]
     },
     {
-      "id": "com.aaronash.barrel",
+      "id": "repo.biteyourapple.net.barrel",
       "name": "Barrel",
       "latest": "1.8.1.1-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.aaronash.barrel/",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.barrel/",
       "shortDescription": "3D and other effects on icon pages!",
-      "category": "Tweaks",
-      "author": "Aaron Ash (Charybdis)",
-      "commercial": true,
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "date": "2018-03-31T07:05:38Z",
       "versions": [
         {
           "tweakVersion": "1.8.1.1-1",
           "iOSVersion": "10.2.1",
-          "repository": "BigBoss",
-          "date": "2018-04-18T01:23:43Z",
+          "repository": "repo.biteyourapple.net",
+          "date": "2018-03-31T07:05:38Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1422,22 +1423,21 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.barrel",
+      "id": "com.aaronash.barrel",
       "name": "Barrel",
       "latest": "1.8.1.1-1",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.barrel/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.aaronash.barrel/",
       "shortDescription": "3D and other effects on icon pages!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "date": "2018-03-31T07:05:38Z",
+      "category": "Tweaks",
+      "author": "Aaron Ash (Charybdis)",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "1.8.1.1-1",
           "iOSVersion": "10.2.1",
-          "repository": "repo.biteyourapple.net",
-          "date": "2018-03-31T07:05:38Z",
+          "repository": "BigBoss",
+          "date": "2018-04-18T01:23:43Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3860,6 +3860,38 @@
       ]
     },
     {
+      "id": "repo.biteyourapple.net.eclipse4",
+      "name": "Eclipse 4 (iOS 10)",
+      "latest": "4.1.3",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "System-wide Night Mode and more for iOS 10.",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "4.1.1",
+          "iOSVersion": "10.2.1",
+          "repository": "repo.biteyourapple.net",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "org.thebigboss.eclipse4",
       "name": "Eclipse 4 (iOS 10)",
       "latest": "4.1.3",
@@ -3881,38 +3913,6 @@
             "good": 2,
             "bad": 0,
             "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "repo.biteyourapple.net.eclipse4",
-      "name": "Eclipse 4 (iOS 10)",
-      "latest": "4.1.3",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "System-wide Night Mode and more for iOS 10.",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "4.1.1",
-          "iOSVersion": "10.2.1",
-          "repository": "repo.biteyourapple.net",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -6379,6 +6379,40 @@
           "tweakVersion": "0.1",
           "iOSVersion": "10.2.1",
           "repository": "rpetrich repo",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.coolstar.ld64",
+      "name": "LD64",
+      "latest": "274.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.coolstar.ld64/",
+      "shortDescription": "linker for building on iOS",
+      "category": "Development",
+      "author": "CoolStar",
+      "commercial": false,
+      "date": "2018-07-12T20:22:30Z",
+      "versions": [
+        {
+          "tweakVersion": "274.2",
+          "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
+          "date": "2018-08-17T18:31:40Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
