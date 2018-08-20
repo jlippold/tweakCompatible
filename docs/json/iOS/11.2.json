@@ -1140,10 +1140,10 @@
     {
       "id": "com.rbt.batterylife",
       "name": "BatteryLife",
-      "latest": "1.8.0~b18",
+      "latest": "1.7.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.rbt.batterylife/",
-      "shortDescription": "Displays useful information about your device's battery health [b1] Completely replaced the main app with the official App Store version. Please report ANY bugs and missing languages to batterylife1.8.x@rbtdigital.com. Thank you very much! [b2] Several fixes. [b3] Possible fix for iOS 8 crash. General bug fixes. [b4] iOS 8 bug fixes. [b5] Updated app a lot. [b6] See b5. [b7] See b6. [b8] App is now compatible with iOS 11. [b9] Bugfixes. [b10] Fix for missing app icon. [b11] Possible fix for the status bar options. [b12] Fix for b11. [b13] Bugfixes. [b14] Bugfixes. [b15] Bugfixes. [b16] Fixed settings not opening. Fixed ads not disappearing. General bugfixes. [b17] Quick crashfix. [b18] Bugfixes & updated translations. Automatically saves battery stat history without the need to open the app.",
+      "shortDescription": "Displays useful information about battery health",
       "category": "Utilities",
       "author": "rbt",
       "commercial": false,
@@ -3470,6 +3470,39 @@
             "good": 5,
             "bad": 0,
             "total": 5,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "me.chewitt.fingal",
+      "name": "Fingal",
+      "latest": "1.0.0",
+      "repository": "ModMyi (Archive)",
+      "url": "http://cydia.saurik.com/package/me.chewitt.fingal/",
+      "shortDescription": "Animated icon theming platform for iOS 8 & 9",
+      "category": "Tweaks",
+      "author": "Charlie Hewitt",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0.0",
+          "iOSVersion": "11.2",
+          "repository": "ModMyi (Archive)",
+          "date": "2018-08-20T07:39:09Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -5905,22 +5938,22 @@
       ]
     },
     {
-      "id": "com.modmyi.nodock3",
+      "id": "com.modmyi.nodock2",
       "name": "NoDock",
       "latest": "1.0",
       "repository": "ModMyi (Archive)",
-      "url": "http://cydia.saurik.com/package/com.modmyi.nodock3/",
-      "shortDescription": "This will remove the Dock from your SpringBoard, enable/disable it through Winterboard.",
+      "url": "http://cydia.saurik.com/package/com.modmyi.nodock2/",
+      "shortDescription": "Remove your iOS dock.",
       "category": "Themes (System)",
-      "author": "TheStudent",
+      "author": "Detox_Dev",
       "commercial": false,
-      "date": "2018-07-28T08:53:19Z",
+      "date": "2018-07-28T08:54:01Z",
       "versions": [
         {
           "tweakVersion": "1.0",
           "iOSVersion": "11.2",
           "repository": "ModMyi (Archive)",
-          "date": "2018-07-28T08:53:19Z",
+          "date": "2018-07-28T08:54:01Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -5939,22 +5972,22 @@
       ]
     },
     {
-      "id": "com.modmyi.nodock2",
+      "id": "com.modmyi.nodock3",
       "name": "NoDock",
       "latest": "1.0",
       "repository": "ModMyi (Archive)",
-      "url": "http://cydia.saurik.com/package/com.modmyi.nodock2/",
-      "shortDescription": "Remove your iOS dock.",
+      "url": "http://cydia.saurik.com/package/com.modmyi.nodock3/",
+      "shortDescription": "This will remove the Dock from your SpringBoard, enable/disable it through Winterboard.",
       "category": "Themes (System)",
-      "author": "Detox_Dev",
+      "author": "TheStudent",
       "commercial": false,
-      "date": "2018-07-28T08:54:01Z",
+      "date": "2018-07-28T08:53:19Z",
       "versions": [
         {
           "tweakVersion": "1.0",
           "iOSVersion": "11.2",
           "repository": "ModMyi (Archive)",
-          "date": "2018-07-28T08:54:01Z",
+          "date": "2018-07-28T08:53:19Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -8036,22 +8069,21 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.st4",
+      "id": "com.springtomize.st4",
       "name": "Springtomize 4 (iOS 10)",
       "latest": "3",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.st4/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.springtomize.st4/",
       "shortDescription": "Customize your device like never before.",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "Filippo & Janosch",
-      "commercial": false,
-      "date": "2018-03-15T03:10:56Z",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "3",
           "iOSVersion": "11.2",
-          "repository": "HackYouriPhone",
-          "date": "2018-07-09T23:48:54Z",
+          "repository": "BigBoss",
+          "date": "2018-07-31T06:37:08Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8070,21 +8102,22 @@
       ]
     },
     {
-      "id": "com.springtomize.st4",
+      "id": "com.hackyouriphone.st4",
       "name": "Springtomize 4 (iOS 10)",
       "latest": "3",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.springtomize.st4/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.st4/",
       "shortDescription": "Customize your device like never before.",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "Filippo & Janosch",
-      "commercial": true,
+      "commercial": false,
+      "date": "2018-03-15T03:10:56Z",
       "versions": [
         {
           "tweakVersion": "3",
           "iOSVersion": "11.2",
-          "repository": "BigBoss",
-          "date": "2018-07-31T06:37:08Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-07-09T23:48:54Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8331,7 +8364,7 @@
       "latest": "4.0.1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.creatix.switchservice/",
-      "shortDescription": "Hold send button to switch iMsg & SMS",
+      "shortDescription": "Hold Send button to switch between iMessage & SMS",
       "category": "Tweaks",
       "author": "Creatix",
       "commercial": false,
