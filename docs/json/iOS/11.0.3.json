@@ -105,7 +105,7 @@
     {
       "id": "com.cydiageek.abetterprivacyforwhatsapp",
       "name": "ABetterPrivacyforWhatsApp",
-      "latest": "1.2.8",
+      "latest": "1.2.8-1",
       "repository": "apt.thebigboss.org",
       "url": "http://cydia.saurik.com/package/com.cydiageek.abetterprivacyforwhatsapp/",
       "shortDescription": "Better Privacy options for Whatsapp & More!",
@@ -172,7 +172,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.13~beta2",
+      "latest": "1.9.12",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -1520,10 +1520,10 @@
     {
       "id": "com.rbt.batterylife",
       "name": "BatteryLife",
-      "latest": "1.8.0~b18",
+      "latest": "1.7.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.rbt.batterylife/",
-      "shortDescription": "Displays useful information about your device's battery health [b1] Completely replaced the main app with the official App Store version. Please report ANY bugs and missing languages to batterylife1.8.x@rbtdigital.com. Thank you very much! [b2] Several fixes. [b3] Possible fix for iOS 8 crash. General bug fixes. [b4] iOS 8 bug fixes. [b5] Updated app a lot. [b6] See b5. [b7] See b6. [b8] App is now compatible with iOS 11. [b9] Bugfixes. [b10] Fix for missing app icon. [b11] Possible fix for the status bar options. [b12] Fix for b11. [b13] Bugfixes. [b14] Bugfixes. [b15] Bugfixes. [b16] Fixed settings not opening. Fixed ads not disappearing. General bugfixes. [b17] Quick crashfix. [b18] Bugfixes & updated translations. Automatically saves battery stat history without the need to open the app.",
+      "shortDescription": "Displays useful information about battery health",
       "category": "Utilities",
       "author": "rbt",
       "commercial": false,
@@ -2614,7 +2614,7 @@
     {
       "id": "com.skylerk99.chargepulse",
       "name": "ChargePulse",
-      "latest": "0.2r",
+      "latest": "0.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.skylerk99.chargepulse/",
       "shortDescription": "Status bar battery pulsates while charging.",
@@ -3448,6 +3448,39 @@
       ]
     },
     {
+      "id": "com.sticktron.darkmessages",
+      "name": "DarkMessages (iOS 10)",
+      "latest": "1.2.0-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.sticktron.darkmessages/",
+      "shortDescription": "Dark mode for Messages (iOS 10)",
+      "category": "Tweaks",
+      "author": "Sticktron",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.2.0-1",
+          "iOSVersion": "11.0.3",
+          "repository": "apt.thebigboss.org",
+          "date": "2018-03-02T01:31:00Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 5,
+            "bad": 0,
+            "total": 5,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.hackyouriphone.darkmessages",
       "name": "DarkMessages (iOS 10)",
       "latest": "1.0.2",
@@ -3470,39 +3503,6 @@
             "good": 1,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.sticktron.darkmessages",
-      "name": "DarkMessages (iOS 10)",
-      "latest": "1.2.0-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.sticktron.darkmessages/",
-      "shortDescription": "Dark mode for Messages (iOS 10)",
-      "category": "Tweaks",
-      "author": "Sticktron",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.2.0-1",
-          "iOSVersion": "11.0.3",
-          "repository": "apt.thebigboss.org",
-          "date": "2018-03-02T01:31:00Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 5,
-            "bad": 0,
-            "total": 5,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -3816,22 +3816,22 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.detailedpowerusage",
+      "id": "com.thecomputerwhisperer.detailedpowerusage",
       "name": "DetailedPowerUsage",
       "latest": "1.0.2-1b",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.detailedpowerusage/",
+      "repository": "TheComputerWhisperer's Repo",
+      "url": "http://cydia.saurik.com/package/com.thecomputerwhisperer.detailedpowerusage/",
       "shortDescription": "Unlock Apple's internal battery data & stats on iOS 9.x - 11.1.2.",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "TheComputerWhisperer",
       "commercial": false,
-      "date": "2018-03-23T15:19:47Z",
+      "date": "2018-03-20T05:37:40Z",
       "versions": [
         {
-          "tweakVersion": "1.0.0",
+          "tweakVersion": "1.0.1",
           "iOSVersion": "11.0.3",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-23T15:19:47Z",
+          "repository": "TheComputerWhisperer's Repo",
+          "date": "2018-03-29T02:23:37Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3850,22 +3850,22 @@
       ]
     },
     {
-      "id": "com.thecomputerwhisperer.detailedpowerusage",
+      "id": "com.hackyouriphone.detailedpowerusage",
       "name": "DetailedPowerUsage",
       "latest": "1.0.2-1b",
-      "repository": "TheComputerWhisperer's Repo",
-      "url": "http://cydia.saurik.com/package/com.thecomputerwhisperer.detailedpowerusage/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.detailedpowerusage/",
       "shortDescription": "Unlock Apple's internal battery data & stats on iOS 9.x - 11.1.2.",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "TheComputerWhisperer",
       "commercial": false,
-      "date": "2018-03-20T05:37:40Z",
+      "date": "2018-03-23T15:19:47Z",
       "versions": [
         {
-          "tweakVersion": "1.0.1",
+          "tweakVersion": "1.0.0",
           "iOSVersion": "11.0.3",
-          "repository": "TheComputerWhisperer's Repo",
-          "date": "2018-03-29T02:23:37Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-23T15:19:47Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4140,7 +4140,7 @@
     {
       "id": "me.gmoran.eclipsex",
       "name": "Eclipse X Beta 7 (iOS 11)",
-      "latest": "5.1.2",
+      "latest": "5.1.4",
       "repository": "GMoran Beta Software",
       "url": "http://gmoran.me/repo/",
       "shortDescription": "System-wide Night Mode and more for iOS 11.",
@@ -4890,10 +4890,10 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.2-4",
+      "latest": "3.5.2-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
+      "shortDescription": "File Manager for iOS. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -6692,7 +6692,7 @@
     {
       "id": "com.unlimapps.gramplus",
       "name": "Instagram ++",
-      "latest": "1.8r-184",
+      "latest": "1.8r-185",
       "repository": "beta.unlimapps.com",
       "url": "http://beta.unlimapps.com/",
       "shortDescription": "Download & Copy Instagram media",
@@ -6846,7 +6846,7 @@
     {
       "id": "com.tapsharp.jumper",
       "name": "Jumper",
-      "latest": "1.1.0",
+      "latest": "1.2.0",
       "repository": "TapSharp",
       "url": "http://cydia.saurik.com/package/com.tapsharp.jumper/",
       "shortDescription": "Jump into an application straight from the lockscreen. Jumper replaces the flashlight and camera lockscreen quick actions with custom applications. Supports iPhones running iOS 11.1.0 and up.",
@@ -7877,6 +7877,40 @@
       ]
     },
     {
+      "id": "com.yourepo.randompacks.mitsuhaxi",
+      "name": "MitsuhaXI",
+      "latest": "0.2.0",
+      "repository": "RandomPacks Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.randompacks.mitsuhaxi/",
+      "shortDescription": "Jell-O wave effect for Apple Music and Spotify (iOS 11 Compatible)",
+      "category": "Tweaks",
+      "author": "c0ldra1n",
+      "commercial": false,
+      "date": "2018-03-21T15:36:43Z",
+      "versions": [
+        {
+          "tweakVersion": "0.2.0",
+          "iOSVersion": "11.0.3",
+          "repository": "RandomPacks Source - YouRepo",
+          "date": "2018-04-06T13:56:27Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "io.ominousness.mitsuhaxi",
       "name": "MitsuhaXI",
       "latest": "0.5.3",
@@ -7933,40 +7967,6 @@
           "iOSVersion": "11.0.3",
           "repository": "Ominousness",
           "date": "2018-08-19T03:15:44Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.yourepo.randompacks.mitsuhaxi",
-      "name": "MitsuhaXI",
-      "latest": "0.2.0",
-      "repository": "RandomPacks Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.randompacks.mitsuhaxi/",
-      "shortDescription": "Jell-O wave effect for Apple Music and Spotify (iOS 11 Compatible)",
-      "category": "Tweaks",
-      "author": "c0ldra1n",
-      "commercial": false,
-      "date": "2018-03-21T15:36:43Z",
-      "versions": [
-        {
-          "tweakVersion": "0.2.0",
-          "iOSVersion": "11.0.3",
-          "repository": "RandomPacks Source - YouRepo",
-          "date": "2018-04-06T13:56:27Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8264,7 +8264,7 @@
     {
       "id": "com.julioverne.musilyric",
       "name": "MusiLyric",
-      "latest": "0.5~beta5a",
+      "latest": "0.5~beta6a",
       "repository": "julioverne's Repo",
       "url": "http://twitter.com/ijulioverne",
       "shortDescription": "Best Lyrics Music",
@@ -9369,7 +9369,7 @@
     {
       "id": "be.submanifold.phasemoon11",
       "name": "PhaseMoon",
-      "latest": "0.0.1-96+debug",
+      "latest": "0.0.1-97+debug",
       "repository": "rainwolf's beta repo",
       "url": "http://cydia.saurik.com/package/be.submanifold.phasemoon11/",
       "shortDescription": "Track the phase of the moon next to the status bar time",
@@ -9383,6 +9383,26 @@
           "iOSVersion": "11.0.3",
           "repository": "rainwolf's beta repo",
           "date": "2018-08-19T03:05:18Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "0.0.1-97+debug",
+          "iOSVersion": "11.0.3",
+          "repository": "rainwolf's beta repo",
+          "date": "2018-08-23T17:20:11Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10333,7 +10353,7 @@
     {
       "id": "me.alfhaily.rocket",
       "name": "Rocket for Instagram",
-      "latest": "3.0.16",
+      "latest": "3.0.17",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/me.alfhaily.rocket/",
       "shortDescription": "Save posts and view stories anonymously and do much more",
@@ -10536,7 +10556,7 @@
     {
       "id": "com.opa334.safariplus",
       "name": "Safari Plus",
-      "latest": "1.6",
+      "latest": "1.6.1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.opa334.safariplus/",
       "shortDescription": "Various enhancements to Safari!",
@@ -11464,10 +11484,10 @@
     {
       "id": "com.smokin1337.smartlpm",
       "name": "SmartLPM",
-      "latest": "1.3.0-1",
+      "latest": "1.2.0-2",
       "repository": "smokin1337's Repo",
       "url": "http://cydia.saurik.com/package/com.smokin1337.smartlpm/",
-      "shortDescription": "A smarter low power mode. Low power while device is locked. Turn low power mode on automatically at the battery level you specify. Enable low power while charging.",
+      "shortDescription": "A smarter low power mode. Low power while device is locked. Turn low power mode on automatically at the battery level you specify. Enable low power while charging. And more....",
       "category": "Tweaks",
       "author": "smokin1337",
       "commercial": false,
@@ -11786,6 +11806,40 @@
       ]
     },
     {
+      "id": "com.hackyouriphone.spotilife",
+      "name": "Spotilife",
+      "latest": "1.0",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.spotilife/",
+      "shortDescription": "Spotify Unlimited Skips, Remove ADs, Extreme Quality Stream Unlocked... Requires Spotify App (AppStore)",
+      "category": "HYI - Tweaks",
+      "author": "julioverne",
+      "commercial": false,
+      "date": "2018-03-02T03:46:16Z",
+      "versions": [
+        {
+          "tweakVersion": "0.8",
+          "iOSVersion": "11.0.3",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-02T03:46:16Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "repo.biteyourapple.net.spotilife",
       "name": "Spotilife",
       "latest": "0.9",
@@ -11821,40 +11875,6 @@
           "iOSVersion": "11.0.3",
           "repository": "BiteYourApple",
           "date": "2018-05-20T08:47:43Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.hackyouriphone.spotilife",
-      "name": "Spotilife",
-      "latest": "1.0",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.spotilife/",
-      "shortDescription": "Spotify Unlimited Skips, Remove ADs, Extreme Quality Stream Unlocked... Requires Spotify App (AppStore)",
-      "category": "HYI - Tweaks",
-      "author": "julioverne",
-      "commercial": false,
-      "date": "2018-03-02T03:46:16Z",
-      "versions": [
-        {
-          "tweakVersion": "0.8",
-          "iOSVersion": "11.0.3",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-02T03:46:16Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -12336,7 +12356,7 @@
     {
       "id": "org.thebigboss.swipeformore",
       "name": "SwipeForMore",
-      "latest": "1.1.9",
+      "latest": "1.1.7",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.swipeformore/",
       "shortDescription": "Manage packages via swipe.",
@@ -14153,39 +14173,6 @@
       ]
     },
     {
-      "id": "be.submanifold.weatherlock",
-      "name": "WeatherLock",
-      "latest": "0.1.13",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/be.submanifold.weatherlock/",
-      "shortDescription": "animated weather background on the lock screen",
-      "category": "Tweaks",
-      "author": "rainwolf",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "0.1.13",
-          "iOSVersion": "11.0.3",
-          "repository": "BigBoss",
-          "date": "2018-03-16T00:19:06Z",
-          "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 50,
-            "good": 1,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "repo.biteyourapple.net.weatherlock",
       "name": "WeatherLock",
       "latest": "0.1.13",
@@ -14208,6 +14195,39 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "be.submanifold.weatherlock",
+      "name": "WeatherLock",
+      "latest": "0.1.13",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/be.submanifold.weatherlock/",
+      "shortDescription": "animated weather background on the lock screen",
+      "category": "Tweaks",
+      "author": "rainwolf",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "0.1.13",
+          "iOSVersion": "11.0.3",
+          "repository": "BigBoss",
+          "date": "2018-03-16T00:19:06Z",
+          "outcome": {
+            "calculatedStatus": "Likely working",
+            "percentage": 50,
+            "good": 1,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
