@@ -1,10 +1,10 @@
 {
   "id": "org.hacx.callrecorder",
   "name": "Call Recorder (iOS)",
-  "latest": "2.39-5",
+  "latest": "2.40-2",
   "repository": "hAcx Repository",
   "url": "http://hacx.org/repo/",
-  "shortDescription": "iPhone Call Recorder",
+  "shortDescription": "Native Call Recorder",
   "category": "Tweaks",
   "author": "hAcx",
   "commercial": false,
@@ -555,11 +555,11 @@
       "repository": "hAcx Repository",
       "date": "2018-08-10T04:53:57Z",
       "outcome": {
-        "calculatedStatus": "Working",
-        "percentage": 100,
+        "calculatedStatus": "Likely working",
+        "percentage": 50,
         "good": 1,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -576,6 +576,15 @@
           "date": "2018-08-10T04:53:57Z",
           "userName": "asabli",
           "issueNumber": 41369,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone8,1",
+          "issues": "Cause the mediaserverd crash and not record calls.",
+          "date": "2018-08-23T23:06:49Z",
+          "userName": "halukunal",
+          "issueNumber": 46645,
           "arch32": false
         }
       ]
