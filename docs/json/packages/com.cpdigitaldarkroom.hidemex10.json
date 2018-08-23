@@ -237,17 +237,17 @@
       "repository": "BigBoss",
       "date": "2018-05-10T07:18:28Z",
       "outcome": {
-        "calculatedStatus": "Not working",
-        "percentage": 0,
-        "good": 0,
+        "calculatedStatus": "Likely working",
+        "percentage": 50,
+        "good": 1,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
-          "total": 0,
-          "good": 0,
+          "total": 1,
+          "good": 1,
           "bad": 0,
-          "percentage": 0,
-          "calculatedStatus": "Unknown"
+          "percentage": 100,
+          "calculatedStatus": "Working"
         }
       },
       "users": [
@@ -259,6 +259,15 @@
           "userName": "Goldvag",
           "issueNumber": 11438,
           "arch32": false
+        },
+        {
+          "status": "partial",
+          "device": "iPad3,4",
+          "issues": "Failed to load preferences in settings app, reboot/reinstall doesn't work, but control center is the only thing that works, but you cant modify it.",
+          "date": "2018-08-23T17:34:59Z",
+          "userName": "99brendanallen",
+          "issueNumber": 46566,
+          "arch32": true
         }
       ]
     },
