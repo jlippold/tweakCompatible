@@ -1646,17 +1646,17 @@
       "repository": "Delta",
       "date": "2018-08-13T21:14:05Z",
       "outcome": {
-        "calculatedStatus": "Working",
-        "percentage": 100,
+        "calculatedStatus": "Likely working",
+        "percentage": 50,
         "good": 1,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
-          "total": 0,
+          "total": 1,
           "good": 0,
           "bad": 0,
           "percentage": 0,
-          "calculatedStatus": "Unknown"
+          "calculatedStatus": "Not working"
         }
       },
       "users": [
@@ -1668,6 +1668,15 @@
           "userName": "DarkZone-World",
           "issueNumber": 43225,
           "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPad3,6",
+          "issues": "It crashes on opening.",
+          "date": "2018-08-23T13:50:32Z",
+          "userName": "drcrazy91",
+          "issueNumber": 46524,
+          "arch32": true
         }
       ]
     },
