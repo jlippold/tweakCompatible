@@ -612,7 +612,7 @@
     {
       "id": "com.nrkvv.apnhistory",
       "name": "ApnHistory",
-      "latest": "0.2.4",
+      "latest": "0.2.5",
       "repository": "m156nrkvv.omiki.com",
       "url": "http://twitter.com/m156nrkvv",
       "shortDescription": "Apple Push Notification Hisyory.",
@@ -978,10 +978,10 @@
     {
       "id": "com.tigisoftware.appdatamanager",
       "name": "Apps Manager",
-      "latest": "1.3.0",
+      "latest": "1.4.0-45",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.appdatamanager/",
-      "shortDescription": "tool to WIPE, BACKUP, RESTORE AppData for installed Apps",
+      "shortDescription": "This tool provides the way to WIPE, BACKUP, RESTORE AppData for installed Apps",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -1406,10 +1406,10 @@
     {
       "id": "com.rbt.batterylife",
       "name": "BatteryLife",
-      "latest": "1.8.0~b20",
+      "latest": "1.7.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.rbt.batterylife/",
-      "shortDescription": "Displays useful information about your device's battery health [b1] Completely replaced the main app with the official App Store version. Please report ANY bugs and missing languages to batterylife1.8.x@rbtdigital.com. Thank you very much! [b2] Several fixes. [b3] Possible fix for iOS 8 crash. General bug fixes. [b4] iOS 8 bug fixes. [b5] Updated app a lot. [b6] See b5. [b7] See b6. [b8] App is now compatible with iOS 11. [b9] Bugfixes. [b10] Fix for missing app icon. [b11] Possible fix for the status bar options. [b12] Fix for b11. [b13] Bugfixes. [b14] Bugfixes. [b15] Bugfixes. [b16] Fixed settings not opening. Fixed ads not disappearing. General bugfixes. [b17] Quick crashfix. [b18] Bugfixes & updated translations. Automatically saves battery stat history without the need to open the app. [b19] Bugfixes. [b20] Fixes for iOS 9 and 10.",
+      "shortDescription": "Displays useful information about battery health",
       "category": "Utilities",
       "author": "rbt",
       "commercial": false,
@@ -2250,21 +2250,20 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.colorflow3",
+      "id": "com.golddavid.colorflow3",
       "name": "ColorFlow 3 (iOS 10)",
       "latest": "1.0.5",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://repo.biteyourapple.net/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.golddavid.colorflow3/",
       "shortDescription": "Colorful music revolutions.",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
+      "category": "Tweaks",
+      "author": "David Goldman",
+      "commercial": true,
       "versions": [
         {
-          "tweakVersion": "1.0.5",
+          "tweakVersion": "1.0.4",
           "iOSVersion": "10.0.2",
-          "repository": "(null)",
-          "date": "2018-08-20T19:25:49Z",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2283,20 +2282,21 @@
       ]
     },
     {
-      "id": "com.golddavid.colorflow3",
+      "id": "repo.biteyourapple.net.colorflow3",
       "name": "ColorFlow 3 (iOS 10)",
       "latest": "1.0.5",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.golddavid.colorflow3/",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://repo.biteyourapple.net/",
       "shortDescription": "Colorful music revolutions.",
-      "category": "Tweaks",
-      "author": "David Goldman",
-      "commercial": true,
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
       "versions": [
         {
-          "tweakVersion": "1.0.4",
+          "tweakVersion": "1.0.5",
           "iOSVersion": "10.0.2",
-          "repository": "BigBoss",
+          "repository": "(null)",
+          "date": "2018-08-20T19:25:49Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3559,6 +3559,40 @@
       ]
     },
     {
+      "id": "com.cpdigitaldarkroom.benrosen.facespro",
+      "name": "Faces Pro",
+      "latest": "1.1-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.cpdigitaldarkroom.benrosen.facespro/",
+      "shortDescription": "Customize your passcode buttons the way you like.",
+      "category": "Tweaks",
+      "author": "Ben Rosen & CPDigitalDarkroom",
+      "commercial": false,
+      "date": "2018-03-06T07:24:53Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1-1",
+          "iOSVersion": "10.0.2",
+          "repository": "BigBoss",
+          "date": "2018-08-26T14:09:51Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "jp.novi.fakeclockup2",
       "name": "FakeClockUp - ichitaso",
       "latest": "0.7.3",
@@ -3948,7 +3982,7 @@
     {
       "id": "com.a3tweaks.flipswitch",
       "name": "Flipswitch",
-      "latest": "1.0.15",
+      "latest": "1.0.16~beta2",
       "repository": "rpetrich repo",
       "url": "http://cydia.saurik.com/package/com.a3tweaks.flipswitch/",
       "shortDescription": "Centralized toggle system for iOS",
@@ -5127,7 +5161,7 @@
       "latest": "1.0.4",
       "repository": "Karen's Repo",
       "url": "https://cydia.angelxwind.net/",
-      "shortDescription": "library for developer localization",
+      "shortDescription": "A development library that allows developers to add localization support to their tweaks.",
       "category": "Development",
       "author": "Karen／明美 (angelXwind)",
       "commercial": false,
@@ -7569,22 +7603,20 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.slidetounlockx",
+      "id": "com.xcxiao.slidetounlockx",
       "name": "SlideToUnlockX",
       "latest": "1.0.5-2",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.slidetounlockx/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.xcxiao.slidetounlockx/",
       "shortDescription": "Bring Slide To Unlock Back To iOS 10.",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "date": "2018-08-20T19:35:25Z",
+      "category": "Tweaks",
+      "author": "XCXiao",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "1.0.5-2",
           "iOSVersion": "10.0.2",
-          "repository": "(null)",
-          "date": "2018-08-20T19:35:25Z",
+          "repository": "BigBoss",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7603,20 +7635,22 @@
       ]
     },
     {
-      "id": "com.xcxiao.slidetounlockx",
+      "id": "repo.biteyourapple.net.slidetounlockx",
       "name": "SlideToUnlockX",
       "latest": "1.0.5-2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.xcxiao.slidetounlockx/",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.slidetounlockx/",
       "shortDescription": "Bring Slide To Unlock Back To iOS 10.",
-      "category": "Tweaks",
-      "author": "XCXiao",
-      "commercial": true,
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "date": "2018-08-20T19:35:25Z",
       "versions": [
         {
           "tweakVersion": "1.0.5-2",
           "iOSVersion": "10.0.2",
-          "repository": "BigBoss",
+          "repository": "(null)",
+          "date": "2018-08-20T19:35:25Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8000,7 +8034,7 @@
     {
       "id": "org.thebigboss.swipeformore",
       "name": "SwipeForMore",
-      "latest": "1.1.7",
+      "latest": "1.1.9",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.swipeformore/",
       "shortDescription": "Manage packages via swipe.",
