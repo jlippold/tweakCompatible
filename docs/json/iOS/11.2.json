@@ -664,10 +664,10 @@
     {
       "id": "com.tigisoftware.appdatamanager",
       "name": "Apps Manager",
-      "latest": "1.3.0",
+      "latest": "1.4.0-45",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.appdatamanager/",
-      "shortDescription": "tool to WIPE, BACKUP, RESTORE AppData for installed Apps",
+      "shortDescription": "This tool provides the way to WIPE, BACKUP, RESTORE AppData for installed Apps",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -817,10 +817,10 @@
     {
       "id": "ch.mdaus.artsy",
       "name": "Artsy",
-      "latest": "1.2",
+      "latest": "0.0.4-8+debug",
       "repository": "Maxwell Dausch's Repo",
       "url": "http://cydia.saurik.com/package/ch.mdaus.artsy/",
-      "shortDescription": "Colorize and customize  your music players",
+      "shortDescription": "Modify the Lockscreen, CC, Spotify, and Music app now playing views based on the album artwork.",
       "category": "Tweaks",
       "author": "Maxwell Dausch",
       "commercial": false,
@@ -939,7 +939,7 @@
     {
       "id": "net.limneos.audiorecorder",
       "name": "AudioRecorder 2 (iOS 8,9,10)",
-      "latest": "1.7-10",
+      "latest": "1.7-14",
       "repository": "limneos.net",
       "url": "http://limneos.net/repo/",
       "shortDescription": "Most Advanced iOS Call Recorder Ever!",
@@ -1174,10 +1174,10 @@
     {
       "id": "com.rbt.batterylife",
       "name": "BatteryLife",
-      "latest": "1.8.0~b19",
+      "latest": "1.7.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.rbt.batterylife/",
-      "shortDescription": "Displays useful information about your device's battery health [b1] Completely replaced the main app with the official App Store version. Please report ANY bugs and missing languages to batterylife1.8.x@rbtdigital.com. Thank you very much! [b2] Several fixes. [b3] Possible fix for iOS 8 crash. General bug fixes. [b4] iOS 8 bug fixes. [b5] Updated app a lot. [b6] See b5. [b7] See b6. [b8] App is now compatible with iOS 11. [b9] Bugfixes. [b10] Fix for missing app icon. [b11] Possible fix for the status bar options. [b12] Fix for b11. [b13] Bugfixes. [b14] Bugfixes. [b15] Bugfixes. [b16] Fixed settings not opening. Fixed ads not disappearing. General bugfixes. [b17] Quick crashfix. [b18] Bugfixes & updated translations. Automatically saves battery stat history without the need to open the app. [b19] Bugfixes.",
+      "shortDescription": "Displays useful information about battery health",
       "category": "Utilities",
       "author": "rbt",
       "commercial": false,
@@ -1307,7 +1307,7 @@
     {
       "id": "com.midnightchips.bettersettings",
       "name": "BetterSettings",
-      "latest": "0.0.6",
+      "latest": "0.0.7",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.midnightchips.bettersettings/",
       "shortDescription": "Settings your way",
@@ -1442,7 +1442,7 @@
     {
       "id": "net.limneos.bioprotectx",
       "name": "BioProtect X for iOS 11",
-      "latest": "3.0-21",
+      "latest": "3.0-47",
       "repository": "Limneos Repo",
       "url": "http://limneos.net/repo/",
       "shortDescription": "Protect your apps with Touch/Face ID!",
@@ -4468,7 +4468,7 @@
     {
       "id": "com.vitataf.homegesture",
       "name": "Home Gesture",
-      "latest": "1.7.1",
+      "latest": "1.8.2",
       "repository": "MidnightChips",
       "url": "http://cydia.saurik.com/package/com.vitataf.homegesture/",
       "shortDescription": "Enable iPhone X home gesture on other devices.",
@@ -5105,6 +5105,39 @@
       ]
     },
     {
+      "id": "net.angelxwind.karenlocalizer",
+      "name": "KarenLocalizer",
+      "latest": "1.0.4",
+      "repository": "Karen's Repo",
+      "url": "https://cydia.angelxwind.net/",
+      "shortDescription": "A development library that allows developers to add localization support to their tweaks.",
+      "category": "Development",
+      "author": "Karen／明美 (angelXwind)",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0.4",
+          "iOSVersion": "11.2",
+          "repository": "Karen's Repo",
+          "date": "2018-08-26T12:04:02Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.hackyouriphone.kstore",
       "name": "kStore - LinkStore Alternative",
       "latest": "1.0.2",
@@ -5341,21 +5374,22 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.localiapstore",
+      "id": "com.repo.xarold.com.localiapstore",
       "name": "LocalIAPStore",
-      "latest": "1.4-2",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
+      "latest": "1.5",
+      "repository": "repo.xarold.com",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.localiapstore/",
       "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
+      "category": "Tweaks",
+      "author": "anondev",
       "commercial": false,
+      "date": "2018-02-28T19:15:03Z",
       "versions": [
         {
-          "tweakVersion": "1.4-2",
+          "tweakVersion": "1.5",
           "iOSVersion": "11.2",
-          "repository": "BiteYourApple",
-          "date": "2018-07-08T21:43:29Z",
+          "repository": "XModGames",
+          "date": "2018-07-07T23:13:37Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5374,22 +5408,21 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.localiapstore",
+      "id": "repo.biteyourapple.net.localiapstore",
       "name": "LocalIAPStore",
-      "latest": "1.5",
-      "repository": "repo.xarold.com",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.localiapstore/",
+      "latest": "1.4-2",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
       "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
-      "category": "Tweaks",
-      "author": "anondev",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
       "commercial": false,
-      "date": "2018-02-28T19:15:03Z",
       "versions": [
         {
-          "tweakVersion": "1.5",
+          "tweakVersion": "1.4-2",
           "iOSVersion": "11.2",
-          "repository": "XModGames",
-          "date": "2018-07-07T23:13:37Z",
+          "repository": "BiteYourApple",
+          "date": "2018-07-08T21:43:29Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6021,7 +6054,7 @@
     {
       "id": "com.laughingquoll.noctisxi",
       "name": "NoctisXI",
-      "latest": "1.5.4",
+      "latest": "1.6",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.laughingquoll.noctisxi/",
       "shortDescription": "Dark Mode for iOS 11",
@@ -7267,7 +7300,7 @@
       "latest": "3.0.17",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/me.alfhaily.rocket/",
-      "shortDescription": "posts and view stories anonymously and do much more",
+      "shortDescription": "Save posts and view stories anonymously and do much more",
       "category": "Tweaks",
       "author": "Majd Alfhaily",
       "commercial": false,
@@ -7834,7 +7867,7 @@
     {
       "id": "com.muirey03.smallsiri",
       "name": "SmallSiri",
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.muirey03.smallsiri/",
       "shortDescription": "Make siri smaller and unobtrusive!",
@@ -8204,22 +8237,21 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.st4",
+      "id": "com.springtomize.st4",
       "name": "Springtomize 4 (iOS 10)",
       "latest": "3",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.st4/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.springtomize.st4/",
       "shortDescription": "Customize your device like never before.",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "Filippo & Janosch",
-      "commercial": false,
-      "date": "2018-03-15T03:10:56Z",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "3",
           "iOSVersion": "11.2",
-          "repository": "HackYouriPhone",
-          "date": "2018-07-09T23:48:54Z",
+          "repository": "BigBoss",
+          "date": "2018-07-31T06:37:08Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8238,21 +8270,22 @@
       ]
     },
     {
-      "id": "com.springtomize.st4",
+      "id": "com.hackyouriphone.st4",
       "name": "Springtomize 4 (iOS 10)",
       "latest": "3",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.springtomize.st4/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.st4/",
       "shortDescription": "Customize your device like never before.",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "Filippo & Janosch",
-      "commercial": true,
+      "commercial": false,
+      "date": "2018-03-15T03:10:56Z",
       "versions": [
         {
           "tweakVersion": "3",
           "iOSVersion": "11.2",
-          "repository": "BigBoss",
-          "date": "2018-07-31T06:37:08Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-07-09T23:48:54Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8463,7 +8496,7 @@
     {
       "id": "org.thebigboss.swipeformore",
       "name": "SwipeForMore",
-      "latest": "1.1.7",
+      "latest": "1.1.9",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.swipeformore/",
       "shortDescription": "Manage packages via swipe.",
@@ -9350,7 +9383,7 @@
     {
       "id": "com.justinpetkovic.youtubetools",
       "name": "YouTube Tools",
-      "latest": "1.9",
+      "latest": "1.7",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.justinpetkovic.youtubetools/",
       "shortDescription": "Essential toolbox for YouTube app.",
