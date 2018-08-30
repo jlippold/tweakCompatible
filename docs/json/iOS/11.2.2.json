@@ -569,10 +569,10 @@
     {
       "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
-      "latest": "1.0r-101",
+      "latest": "1.0r-61",
       "repository": "beta.unlimapps.com",
       "url": "https://beta.unlimapps.com/",
-      "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
+      "shortDescription": "Downgrade apps to any previous version! No AppSync needed!!!",
       "category": "System",
       "author": "UnlimApps Inc.",
       "commercial": false,
@@ -1010,6 +1010,40 @@
       ]
     },
     {
+      "id": "com.hackyouriphone.artsy",
+      "name": "Artsy",
+      "latest": "0.0.4-8+debug",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.artsy/",
+      "shortDescription": "Modify the Lockscreen, CC, Spotify, and Music app now playing views based on the album artwork.",
+      "category": "HYI - Tweaks",
+      "author": "Maxwell Dausch",
+      "commercial": false,
+      "date": "2018-07-07T08:14:43Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0.4-8+debug",
+          "iOSVersion": "11.2.2",
+          "repository": "(null)",
+          "date": "2018-08-12T11:04:09Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "ch.mdaus.artsy",
       "name": "Artsy",
       "latest": "0.0.4-8+debug",
@@ -1052,40 +1086,6 @@
             "good": 2,
             "bad": 0,
             "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.hackyouriphone.artsy",
-      "name": "Artsy",
-      "latest": "0.0.4-8+debug",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.artsy/",
-      "shortDescription": "Modify the Lockscreen, CC, Spotify, and Music app now playing views based on the album artwork.",
-      "category": "HYI - Tweaks",
-      "author": "Maxwell Dausch",
-      "commercial": false,
-      "date": "2018-07-07T08:14:43Z",
-      "versions": [
-        {
-          "tweakVersion": "0.0.4-8+debug",
-          "iOSVersion": "11.2.2",
-          "repository": "(null)",
-          "date": "2018-08-12T11:04:09Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -2976,39 +2976,6 @@
       ]
     },
     {
-      "id": "ru.domo.cocoatop",
-      "name": "CocoaTop",
-      "latest": "2.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
-      "shortDescription": "Process Viewer for iOS GUI",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0.1",
-          "iOSVersion": "11.2.2",
-          "repository": "BigBoss",
-          "date": "2018-07-08T23:26:59Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2",
@@ -3029,6 +2996,39 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.domo.cocoatop",
+      "name": "CocoaTop",
+      "latest": "2.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
+      "shortDescription": "Process Viewer for iOS GUI",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0.1",
+          "iOSVersion": "11.2.2",
+          "repository": "BigBoss",
+          "date": "2018-07-08T23:26:59Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -6753,40 +6753,6 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.localiapstore",
-      "name": "LocalIAPStore",
-      "latest": "1.5",
-      "repository": "repo.xarold.com",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.localiapstore/",
-      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
-      "category": "Tweaks",
-      "author": "anondev",
-      "commercial": false,
-      "date": "2018-02-28T19:15:03Z",
-      "versions": [
-        {
-          "tweakVersion": "1.4-2",
-          "iOSVersion": "11.2.2",
-          "repository": "Xarold Repo",
-          "date": "2018-07-08T17:01:29Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.mogui666.localiapstore",
       "name": "LocalIAPStore",
       "latest": "2.0",
@@ -6843,6 +6809,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.repo.xarold.com.localiapstore",
+      "name": "LocalIAPStore",
+      "latest": "1.5",
+      "repository": "repo.xarold.com",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.localiapstore/",
+      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
+      "category": "Tweaks",
+      "author": "anondev",
+      "commercial": false,
+      "date": "2018-02-28T19:15:03Z",
+      "versions": [
+        {
+          "tweakVersion": "1.4-2",
+          "iOSVersion": "11.2.2",
+          "repository": "Xarold Repo",
+          "date": "2018-07-08T17:01:29Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -6958,7 +6958,7 @@
     {
       "id": "com.junesiphone.lockpluspro",
       "name": "LockPlus Pro",
-      "latest": "1.3.7",
+      "latest": "1.3.8",
       "repository": "junesiphone.com",
       "url": "http://cydia.saurik.com/package/com.junesiphone.lockpluspro/",
       "shortDescription": "The ultimate lock screen tweak!",
@@ -6972,6 +6972,26 @@
           "iOSVersion": "11.2.2",
           "repository": "junesiphone.com",
           "date": "2018-08-18T07:52:40Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.3.8",
+          "iOSVersion": "11.2.2",
+          "repository": "junesiphone.com",
+          "date": "2018-08-30T08:54:44Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7125,22 +7145,22 @@
       ]
     },
     {
-      "id": "com.sileoturkiye.luxury10",
+      "id": "sileoturkiye.luxury10",
       "name": "Luxury ios 11",
       "latest": "2.0",
       "repository": "Sileo Türkiye",
-      "url": "http://cydia.saurik.com/package/com.sileoturkiye.luxury10/",
+      "url": "http://cydia.saurik.com/package/sileoturkiye.luxury10/",
       "shortDescription": "Güzel ve Kaliteli bir Tema.",
       "category": "TR - Tema",
       "author": "Barış Çağlar",
       "commercial": false,
-      "date": "2018-08-03T18:58:54Z",
+      "date": "2018-08-08T08:41:22Z",
       "versions": [
         {
           "tweakVersion": "2.0",
           "iOSVersion": "11.2.2",
           "repository": "Sileo Türkiye",
-          "date": "2018-08-03T18:58:54Z",
+          "date": "2018-08-08T08:41:22Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7159,22 +7179,22 @@
       ]
     },
     {
-      "id": "sileoturkiye.luxury10",
+      "id": "com.sileoturkiye.luxury10",
       "name": "Luxury ios 11",
       "latest": "2.0",
       "repository": "Sileo Türkiye",
-      "url": "http://cydia.saurik.com/package/sileoturkiye.luxury10/",
+      "url": "http://cydia.saurik.com/package/com.sileoturkiye.luxury10/",
       "shortDescription": "Güzel ve Kaliteli bir Tema.",
       "category": "TR - Tema",
       "author": "Barış Çağlar",
       "commercial": false,
-      "date": "2018-08-08T08:41:22Z",
+      "date": "2018-08-03T18:58:54Z",
       "versions": [
         {
           "tweakVersion": "2.0",
           "iOSVersion": "11.2.2",
           "repository": "Sileo Türkiye",
-          "date": "2018-08-08T08:41:22Z",
+          "date": "2018-08-03T18:58:54Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
