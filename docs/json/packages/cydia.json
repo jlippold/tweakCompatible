@@ -1,10 +1,10 @@
 {
   "id": "cydia",
   "name": "Cydia Installer",
-  "latest": "1.1.30",
+  "latest": "1.9",
   "repository": "Cydia/Telesphoreo",
   "url": "http://cydia.saurik.com/package/cydia/",
-  "shortDescription": "graphical iPhone front-end for APT",
+  "shortDescription": "Base scripts and tools to set up Cydia-compatible virtual dependencies",
   "category": "Packaging",
   "author": "Jay Freeman (saurik)",
   "commercial": false,
@@ -1933,9 +1933,9 @@
       "outcome": {
         "calculatedStatus": "Working",
         "percentage": 100,
-        "good": 2,
+        "good": 3,
         "bad": 0,
-        "total": 2,
+        "total": 3,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -1961,6 +1961,15 @@
           "date": "2018-07-30T02:25:32Z",
           "userName": "redunikorn",
           "issueNumber": 35685,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone9,4",
+          "issues": "",
+          "date": "2018-09-01T22:06:48Z",
+          "userName": "kurtbain250",
+          "issueNumber": 48603,
           "arch32": false
         }
       ]
