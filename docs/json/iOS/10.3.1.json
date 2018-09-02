@@ -3999,10 +3999,10 @@
     {
       "id": "cydia",
       "name": "Cydia Installer",
-      "latest": "1.1.30",
+      "latest": "1.9",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia/",
-      "shortDescription": "graphical iPhone front-end for APT",
+      "shortDescription": "Base scripts and tools to set up Cydia-compatible virtual dependencies",
       "category": "Packaging",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -5207,22 +5207,20 @@
       ]
     },
     {
-      "id": "com.fuyuchi.flex2",
+      "id": "repo.biteyourapple.net.flex2",
       "name": "Flex 2",
-      "latest": "2.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.fuyuchi.flex2/",
+      "latest": "2.0k",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
       "shortDescription": "Easily make your own tweaks, and share them on the Flex Community Cloud.",
-      "category": "Tweaks",
-      "author": "John Coates",
-      "commercial": true,
-      "date": "2018-03-05T16:58:22Z",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
       "versions": [
         {
-          "tweakVersion": "2.0.1",
+          "tweakVersion": "2.0k",
           "iOSVersion": "10.3.1",
-          "repository": "BigBoss",
-          "date": "2018-03-07T21:32:31Z",
+          "repository": "BiteYourApple",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5241,20 +5239,22 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.flex2",
+      "id": "com.fuyuchi.flex2",
       "name": "Flex 2",
-      "latest": "2.0k",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
+      "latest": "2.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.fuyuchi.flex2/",
       "shortDescription": "Easily make your own tweaks, and share them on the Flex Community Cloud.",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
+      "category": "Tweaks",
+      "author": "John Coates",
+      "commercial": true,
+      "date": "2018-03-05T16:58:22Z",
       "versions": [
         {
-          "tweakVersion": "2.0k",
+          "tweakVersion": "2.0.1",
           "iOSVersion": "10.3.1",
-          "repository": "BiteYourApple",
+          "repository": "BigBoss",
+          "date": "2018-03-07T21:32:31Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6582,6 +6582,39 @@
           "tweakVersion": "3.0.0-1",
           "iOSVersion": "10.3.1",
           "repository": "BigBoss",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.thebigboss.iconizer",
+      "name": "Iconizer",
+      "latest": "1.2.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.iconizer/",
+      "shortDescription": "Fully customize app icons, icon images and icon labels.",
+      "category": "Tweaks",
+      "author": "merdok",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "1.2.2",
+          "iOSVersion": "10.3.1",
+          "repository": "BigBoss",
+          "date": "2018-09-02T01:12:44Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8923,7 +8956,7 @@
     {
       "id": "openssh",
       "name": "OpenSSH",
-      "latest": "7.6p1-4",
+      "latest": "6.7p1-13",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/openssh/",
       "shortDescription": "secure remote access between machines",
@@ -11396,10 +11429,10 @@
     {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "2.0.0-1",
+      "latest": "2.0.0-1216+debug",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
-      "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
+      "shortDescription": "System information Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
@@ -11602,39 +11635,6 @@
       ]
     },
     {
-      "id": "com.alexzielenski.updatedtinybar",
-      "name": "TinyBar",
-      "latest": "0.2.0",
-      "repository": "Dream Code",
-      "url": "http://capt.dreamcode.it/",
-      "shortDescription": "Thins notification banners down to size!",
-      "category": "Tweaks",
-      "author": "Michele Primavera",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "0.2.0",
-          "iOSVersion": "10.3.1",
-          "repository": "Dream Code",
-          "date": "2018-08-23T13:47:36Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.alexzielenski.tinybar",
       "name": "TinyBar",
       "latest": "0.1.4-2",
@@ -11654,6 +11654,39 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.alexzielenski.updatedtinybar",
+      "name": "TinyBar",
+      "latest": "0.2.0",
+      "repository": "Dream Code",
+      "url": "http://capt.dreamcode.it/",
+      "shortDescription": "Thins notification banners down to size!",
+      "category": "Tweaks",
+      "author": "Michele Primavera",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.2.0",
+          "iOSVersion": "10.3.1",
+          "repository": "Dream Code",
+          "date": "2018-08-23T13:47:36Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
