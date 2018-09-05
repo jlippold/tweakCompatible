@@ -515,7 +515,7 @@
     {
       "id": "net.limneos.answeringmachinex",
       "name": "AnsweringMachineX",
-      "latest": "0.4-2",
+      "latest": "0.4-5",
       "repository": "limneos.net",
       "url": "http://cydia.saurik.com/package/net.limneos.answeringmachinex/",
       "shortDescription": "Receive voicemails on device!",
@@ -1134,7 +1134,7 @@
     {
       "id": "net.limneos.audiorecorder",
       "name": "AudioRecorder 2 (iOS 8,9,10)",
-      "latest": "1.8-85",
+      "latest": "1.8-92",
       "repository": "limneos.net",
       "url": "http://limneos.net/repo/",
       "shortDescription": "Most Advanced iOS Call Recorder Ever!",
@@ -2555,10 +2555,10 @@
     {
       "id": "com.jakeashacks.catchathief",
       "name": "CatchaThief",
-      "latest": "1.0.0-1+debug",
+      "latest": "1.0.0",
       "repository": "Jakeashacks",
       "url": "http://cydia.saurik.com/package/com.jakeashacks.catchathief/",
-      "shortDescription": "Take a picture of whoever inputs an incorrect passcode! Does not support Touch ID/Face ID yet. Images are stored in /var/mobile/catchathief. Sending images via email is being looked into.",
+      "shortDescription": "Take a picture of whoever inputs an incorrect passcode!",
       "category": "Tweaks",
       "author": "Jake James",
       "commercial": false,
@@ -2637,6 +2637,26 @@
           "iOSVersion": "11.2.2",
           "repository": "BigBoss",
           "date": "2018-08-08T11:09:03Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.1.2",
+          "iOSVersion": "11.2.2",
+          "repository": "BigBoss",
+          "date": "2018-09-05T13:39:22Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4817,10 +4837,10 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.2-1",
+      "latest": "3.5.2-4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iOS. Supports iOS 7+",
+      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -6739,6 +6759,40 @@
       ]
     },
     {
+      "id": "com.repo.xarold.com.localiapstore",
+      "name": "LocalIAPStore",
+      "latest": "1.5",
+      "repository": "repo.xarold.com",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.localiapstore/",
+      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
+      "category": "Tweaks",
+      "author": "anondev",
+      "commercial": false,
+      "date": "2018-02-28T19:15:03Z",
+      "versions": [
+        {
+          "tweakVersion": "1.4-2",
+          "iOSVersion": "11.2.2",
+          "repository": "Xarold Repo",
+          "date": "2018-07-08T17:01:29Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.hackyouriphone.localiapstore",
       "name": "LocalIAPStore",
       "latest": "1.4-2",
@@ -6795,40 +6849,6 @@
             "good": 0,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.repo.xarold.com.localiapstore",
-      "name": "LocalIAPStore",
-      "latest": "1.5",
-      "repository": "repo.xarold.com",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.localiapstore/",
-      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
-      "category": "Tweaks",
-      "author": "anondev",
-      "commercial": false,
-      "date": "2018-02-28T19:15:03Z",
-      "versions": [
-        {
-          "tweakVersion": "1.4-2",
-          "iOSVersion": "11.2.2",
-          "repository": "Xarold Repo",
-          "date": "2018-07-08T17:01:29Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -8241,10 +8261,10 @@
     {
       "id": "com.pknauf.nsa",
       "name": "NoSlowAnimationsXI",
-      "latest": "0.0.1-34+debug",
+      "latest": "5.1.1",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.pknauf.nsa/",
-      "shortDescription": "An awesome MobileSubstrate tweak!",
+      "shortDescription": "Don't get slowed down by animations on iOS 11!",
       "category": "Tweaks",
       "author": "Patrick Knauf",
       "commercial": false,
@@ -9638,10 +9658,10 @@
     {
       "id": "me.alfhaily.rocket",
       "name": "Rocket for Instagram",
-      "latest": "3.0.17",
+      "latest": "3.0.18",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/me.alfhaily.rocket/",
-      "shortDescription": "posts and view stories anonymously and do much more",
+      "shortDescription": "Save posts and view stories anonymously and do much more",
       "category": "Tweaks",
       "author": "Majd Alfhaily",
       "commercial": false,
