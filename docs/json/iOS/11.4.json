@@ -1040,10 +1040,10 @@
     {
       "id": "net.limneos.answeringmachinex",
       "name": "AnsweringMachineX",
-      "latest": "0.4-5",
+      "latest": "0.4-6",
       "repository": "limneos.net",
       "url": "http://cydia.saurik.com/package/net.limneos.answeringmachinex/",
-      "shortDescription": "Receive voicemails on device!",
+      "shortDescription": "AnsweringMachine X",
       "category": "Tweaks",
       "author": "Elias Limneos",
       "commercial": false,
@@ -2409,7 +2409,7 @@
     {
       "id": "net.limneos.audiorecorder",
       "name": "AudioRecorder 2 (iOS 8,9,10)",
-      "latest": "1.8-92",
+      "latest": "1.8-93",
       "repository": "limneos.net",
       "url": "http://limneos.net/repo/",
       "shortDescription": "Most Advanced iOS Call Recorder Ever!",
@@ -4142,7 +4142,7 @@
     {
       "id": "com.midnightchips.bettersettings",
       "name": "BetterSettings",
-      "latest": "0.0.7",
+      "latest": "0.0.8",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.midnightchips.bettersettings/",
       "shortDescription": "Settings your way",
@@ -5692,7 +5692,7 @@
     {
       "id": "net.limneos.callbarx",
       "name": "CallBar X",
-      "latest": "0.3-48",
+      "latest": "0.3-59",
       "repository": "limneos.net",
       "url": "http://cydia.saurik.com/package/net.limneos.callbarx/",
       "shortDescription": "Don't let incoming calls interrupt you!",
@@ -6210,10 +6210,10 @@
     {
       "id": "com.jakeashacks.catchathief",
       "name": "CatchaThief",
-      "latest": "1.0.0-1+debug",
+      "latest": "1.0.0",
       "repository": "Jakeashacks",
       "url": "http://cydia.saurik.com/package/com.jakeashacks.catchathief/",
-      "shortDescription": "Take a picture of whoever inputs an incorrect passcode! Does not support Touch ID/Face ID yet. Images are stored in /var/mobile/catchathief. Sending images via email is being looked into.",
+      "shortDescription": "Take a picture of whoever inputs an incorrect passcode!",
       "category": "Tweaks",
       "author": "Jake James",
       "commercial": false,
@@ -7196,6 +7196,39 @@
       ]
     },
     {
+      "id": "org.thebigboss.colorbadges",
+      "name": "ColorBadges",
+      "latest": "1.2.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.colorbadges/",
+      "shortDescription": "Colorize your badges",
+      "category": "Tweaks",
+      "author": "David Goldman",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "1.2.0",
+          "iOSVersion": "11.4",
+          "repository": "BigBoss",
+          "date": "2018-07-11T10:12:02Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 4,
+            "bad": 0,
+            "total": 4,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.hackyouriphone.colorbadges",
       "name": "ColorBadges",
       "latest": "1.2.0",
@@ -7218,39 +7251,6 @@
             "good": 1,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "org.thebigboss.colorbadges",
-      "name": "ColorBadges",
-      "latest": "1.2.0",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.colorbadges/",
-      "shortDescription": "Colorize your badges",
-      "category": "Tweaks",
-      "author": "David Goldman",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "1.2.0",
-          "iOSVersion": "11.4",
-          "repository": "BigBoss",
-          "date": "2018-07-11T10:12:02Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 4,
-            "bad": 0,
-            "total": 4,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -8357,6 +8357,40 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.yaypixxo.cnon",
+      "name": "CustomNoOlderNotifications",
+      "latest": "1.0.1",
+      "repository": "Pix's repo",
+      "url": "http://cydia.saurik.com/package/com.yaypixxo.cnon/",
+      "shortDescription": "Replaces \"No Older Notifications\" text with a custom one",
+      "category": "Tweaks",
+      "author": "YaYPIXXO",
+      "commercial": false,
+      "date": "2018-09-02T10:54:49Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.1",
+          "iOSVersion": "11.4",
+          "repository": "Pix's repo",
+          "date": "2018-09-05T15:47:57Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -17675,22 +17709,21 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.localiapstore",
+      "id": "repo.biteyourapple.net.localiapstore",
       "name": "LocalIAPStore",
-      "latest": "1.5",
-      "repository": "repo.xarold.com",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.localiapstore/",
+      "latest": "1.4-2",
+      "repository": "BiteYourApple",
+      "url": "http://repo.biteyourapple.net/",
       "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
-      "category": "Tweaks",
-      "author": "anondev",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
       "commercial": false,
-      "date": "2018-02-28T19:15:03Z",
       "versions": [
         {
-          "tweakVersion": "1.5",
+          "tweakVersion": "1.4-2",
           "iOSVersion": "11.4",
-          "repository": "XModGames",
-          "date": "2018-08-21T13:56:03Z",
+          "repository": "(null)",
+          "date": "2018-09-01T13:03:14Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -17709,21 +17742,22 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.localiapstore",
+      "id": "com.repo.xarold.com.localiapstore",
       "name": "LocalIAPStore",
-      "latest": "1.4-2",
-      "repository": "BiteYourApple",
-      "url": "http://repo.biteyourapple.net/",
+      "latest": "1.5",
+      "repository": "repo.xarold.com",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.localiapstore/",
       "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
+      "category": "Tweaks",
+      "author": "anondev",
       "commercial": false,
+      "date": "2018-02-28T19:15:03Z",
       "versions": [
         {
-          "tweakVersion": "1.4-2",
+          "tweakVersion": "1.5",
           "iOSVersion": "11.4",
-          "repository": "(null)",
-          "date": "2018-09-01T13:03:14Z",
+          "repository": "XModGames",
+          "date": "2018-08-21T13:56:03Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -31923,7 +31957,7 @@
     {
       "id": "net.limneos.voicechangerx",
       "name": "VoiceChangerX",
-      "latest": "0.1-38",
+      "latest": "0.1-39",
       "repository": "Limneos Repo",
       "url": "http://cydia.saurik.com/package/net.limneos.voicechangerx/",
       "shortDescription": "Change your voice during a call!",
