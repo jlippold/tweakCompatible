@@ -463,7 +463,7 @@ static void fullList() {
 		[self.webView loadRequest:[NSURLRequest requestWithURL:url]];
 	} else {
 		[self performSelector:@selector(showAlert:) 
-			withObject:@"There is no additional information avaialble for this tweak"];
+			withObject:@"There is no additional information available for this tweak"];
 	}
 }
 
