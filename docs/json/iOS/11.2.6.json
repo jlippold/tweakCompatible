@@ -919,7 +919,7 @@
     {
       "id": "com.nrkvv.apnhistory",
       "name": "ApnHistory",
-      "latest": "0.2.5",
+      "latest": "0.2.6",
       "repository": "m156nrkvv.omiki.com",
       "url": "http://twitter.com/m156nrkvv",
       "shortDescription": "Apple Push Notification Hisyory.",
@@ -1687,7 +1687,7 @@
     {
       "id": "net.limneos.audiorecorder",
       "name": "AudioRecorder 2 (iOS 8,9,10)",
-      "latest": "1.8-92",
+      "latest": "1.9-2",
       "repository": "limneos.net",
       "url": "http://limneos.net/repo/",
       "shortDescription": "Most Advanced iOS Call Recorder Ever!",
@@ -1720,10 +1720,10 @@
     {
       "id": "io.ominousness.ass",
       "name": "AudioSnapshotServer",
-      "latest": "9.9.9",
+      "latest": "1.0.0",
       "repository": "Ominousness",
       "url": "http://cydia.saurik.com/package/io.ominousness.ass/",
-      "shortDescription": "Repo moved to: repo.nepeta.me (see depiction)",
+      "shortDescription": "iOS mediaserverd hook to serve snapshots of current audio buffer via TCP/IP",
       "category": "Tweaks",
       "author": "Ominousness",
       "commercial": false,
@@ -1788,7 +1788,7 @@
     {
       "id": "com.julioverne.autowall",
       "name": "AutoWall",
-      "latest": "0.0~beta1",
+      "latest": "0.0~beta1d",
       "repository": "julioverne's Repo",
       "url": "http://cydia.saurik.com/package/com.julioverne.autowall/",
       "shortDescription": "Scheduled Wallpapers",
@@ -2166,10 +2166,10 @@
     {
       "id": "com.rbt.batterylife",
       "name": "BatteryLife",
-      "latest": "1.8.0~b22",
+      "latest": "1.7.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.rbt.batterylife/",
-      "shortDescription": "Displays useful information about your device's battery health [b1] Completely replaced the main app with the official App Store version. Please report ANY bugs and missing languages to batterylife1.8.x@rbtdigital.com. Thank you very much! [b2] Several fixes. [b3] Possible fix for iOS 8 crash. General bug fixes. [b4] iOS 8 bug fixes. [b5] Updated app a lot. [b6] See b5. [b7] See b6. [b8] App is now compatible with iOS 11. [b9] Bugfixes. [b10] Fix for missing app icon. [b11] Possible fix for the status bar options. [b12] Fix for b11. [b13] Bugfixes. [b14] Bugfixes. [b15] Bugfixes. [b16] Fixed settings not opening. Fixed ads not disappearing. General bugfixes. [b17] Quick crashfix. [b18] Bugfixes & updated translations. Automatically saves battery stat history without the need to open the app. [b19] Bugfixes. [b20] Fixes for iOS 9 and 10. [b21] Fixed temperature unit in app. Changed App Icon to distinguish from the App Store version. [b22] Bugfixes. Should be close to final now.",
+      "shortDescription": "Displays useful information about battery health",
       "category": "Utilities",
       "author": "rbt",
       "commercial": false,
@@ -2711,7 +2711,7 @@
     {
       "id": "com.midnightchips.bettersettings",
       "name": "BetterSettings",
-      "latest": "0.0.7",
+      "latest": "0.0.9",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.midnightchips.bettersettings/",
       "shortDescription": "Settings your way",
@@ -2899,7 +2899,7 @@
     {
       "id": "net.limneos.bioprotectx",
       "name": "BioProtect X for iOS 11",
-      "latest": "3.1-28",
+      "latest": "3.1-44",
       "repository": "Limneos Repo",
       "url": "http://limneos.net/repo/",
       "shortDescription": "Protect your apps with Touch/Face ID!",
@@ -3463,7 +3463,7 @@
     {
       "id": "net.limneos.callbarx",
       "name": "CallBar X",
-      "latest": "0.3-48",
+      "latest": "0.3-68",
       "repository": "limneos.net",
       "url": "http://cydia.saurik.com/package/net.limneos.callbarx/",
       "shortDescription": "Don't let incoming calls interrupt you!",
@@ -3697,10 +3697,10 @@
     {
       "id": "com.jakeashacks.catchathief",
       "name": "CatchaThief",
-      "latest": "1.0.0-1+debug",
+      "latest": "1.0.0",
       "repository": "Jakeashacks",
       "url": "http://cydia.saurik.com/package/com.jakeashacks.catchathief/",
-      "shortDescription": "Take a picture of whoever inputs an incorrect passcode! Does not support Touch ID/Face ID yet. Images are stored in /var/mobile/catchathief. Sending images via email is being looked into.",
+      "shortDescription": "Take a picture of whoever inputs an incorrect passcode!",
       "category": "Tweaks",
       "author": "Jake James",
       "commercial": false,
@@ -4026,6 +4026,39 @@
       ]
     },
     {
+      "id": "com.skylerk99.chargepulse",
+      "name": "ChargePulse",
+      "latest": "0.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.skylerk99.chargepulse/",
+      "shortDescription": "Status bar battery pulsates while charging.",
+      "category": "Tweaks",
+      "author": "Skylerk99",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.2",
+          "iOSVersion": "11.2.6",
+          "repository": "BigBoss",
+          "date": "2018-09-07T03:05:59Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.afnanahmad.chromahomebarx",
       "name": "ChromaHomeBarX",
       "latest": "0.2",
@@ -4254,7 +4287,7 @@
       "latest": "1.0.2",
       "repository": "Dynastic Repo",
       "url": "http://cydia.saurik.com/package/xyz.royalapps.cleanhomescreen/",
-      "shortDescription": "Clean Home Screen helps you remove all the clutter from your home screen and lock screen, offering you a simple and clean app launching experience!",
+      "shortDescription": "Remove all the clutter from your home screen and lock screen!",
       "category": "Tweaks",
       "author": "Justin Proulx",
       "commercial": false,
@@ -6703,10 +6736,10 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.2-4",
+      "latest": "3.5.2-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
+      "shortDescription": "File Manager for iOS. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -8634,7 +8667,7 @@
     {
       "id": "com.spark.hyperion",
       "name": "Hyperion [Members Plus]",
-      "latest": "0.2.3-1",
+      "latest": "0.3.2-2",
       "repository": "Spark's Beta Repo",
       "url": "http://cydia.saurik.com/package/com.spark.hyperion/",
       "shortDescription": "OLED notification tweak",
@@ -8801,7 +8834,7 @@
     {
       "id": "jp.soh.iconresizerforios11",
       "name": "Icon Resizer for iOS11",
-      "latest": "1.9.9.5",
+      "latest": "1.9.9.6",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/jp.soh.iconresizerforios11/",
       "shortDescription": "Control icons on Homescreen whatever you want to do. Confirmed works on iOS11.",
@@ -9327,7 +9360,7 @@
     {
       "id": "com.unlimapps.gramplus",
       "name": "Instagram ++",
-      "latest": "1.8r-186",
+      "latest": "1.8r-187",
       "repository": "beta.unlimapps.com",
       "url": "http://beta.unlimapps.com/",
       "shortDescription": "Download & Copy Instagram media",
@@ -10135,7 +10168,7 @@
     {
       "id": "com.ramenrepo.limelight",
       "name": "Limelight",
-      "latest": "1.6",
+      "latest": "1.7.2",
       "repository": "Ramen Repo",
       "url": "http://cydia.saurik.com/package/com.ramenrepo.limelight/",
       "shortDescription": "Colorful glyphs for anemone",
@@ -14368,7 +14401,7 @@
     {
       "id": "me.alfhaily.rocket",
       "name": "Rocket for Instagram",
-      "latest": "3.0.18",
+      "latest": "3.0.19",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/me.alfhaily.rocket/",
       "shortDescription": "Save posts and view stories anonymously and do much more",
@@ -17619,7 +17652,7 @@
     {
       "id": "com.fouadraheb.watusi",
       "name": "Watusi 2 for WhatsApp",
-      "latest": "1.0.59",
+      "latest": "1.0.60",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.fouadraheb.watusi/",
       "shortDescription": "The all-in-one tweak for WhatsApp Messenger",
@@ -18031,7 +18064,7 @@
     {
       "id": "com.justinpetkovic.youtubetools",
       "name": "YouTube Tools",
-      "latest": "1.9",
+      "latest": "2.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.justinpetkovic.youtubetools/",
       "shortDescription": "Essential toolbox for YouTube app.",
