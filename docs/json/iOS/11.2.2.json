@@ -569,10 +569,10 @@
     {
       "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
-      "latest": "1.0r-61",
+      "latest": "1.0r-92",
       "repository": "beta.unlimapps.com",
       "url": "https://beta.unlimapps.com/",
-      "shortDescription": "Downgrade apps to any previous version! No AppSync needed!!!",
+      "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
       "category": "System",
       "author": "UnlimApps Inc.",
       "commercial": false,
@@ -1012,10 +1012,10 @@
     {
       "id": "ch.mdaus.artsy",
       "name": "Artsy",
-      "latest": "0.0.4-8+debug",
+      "latest": "1.2",
       "repository": "Maxwell Dausch's Repo",
       "url": "http://cydia.saurik.com/package/ch.mdaus.artsy/",
-      "shortDescription": "Modify the Lockscreen, CC, Spotify, and Music app now playing views based on the album artwork.",
+      "shortDescription": "Colorize and customize  your music players",
       "category": "Tweaks",
       "author": "Maxwell Dausch",
       "commercial": false,
@@ -1746,7 +1746,7 @@
     {
       "id": "berkeleydb",
       "name": "Berkeley DB",
-      "latest": "4.6.21-5",
+      "latest": "6.2.23",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/berkeleydb/",
       "shortDescription": "Oracle's embeddable database engine",
@@ -3221,6 +3221,40 @@
           "iOSVersion": "11.2.2",
           "repository": "Packix",
           "date": "2018-08-29T14:01:59Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.4nni3.coolcc",
+      "name": "CoolCC",
+      "latest": "2.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.4nni3.coolcc/",
+      "shortDescription": "This tweak makes ControlCenter cool!",
+      "category": "Tweaks",
+      "author": "4nni3",
+      "commercial": false,
+      "date": "2018-08-26T15:12:28Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0",
+          "iOSVersion": "11.2.2",
+          "repository": "BigBoss",
+          "date": "2018-09-13T00:14:14Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5246,7 +5280,7 @@
     {
       "id": "com.imkpatil.floatingdock",
       "name": "FloatingDock",
-      "latest": "1.4",
+      "latest": "1.4.2",
       "repository": "Kiran Patil's Repo",
       "url": "http://cydia.saurik.com/package/com.imkpatil.floatingdock/",
       "shortDescription": "iPad like dock for iPhone!",
@@ -6011,7 +6045,7 @@
     {
       "id": "com.ion.ignify",
       "name": "Ignify",
-      "latest": "0.0.1",
+      "latest": "0.1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.ion.ignify/",
       "shortDescription": "An awesome enchancement to Instagram!",
@@ -6847,40 +6881,6 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.localiapstore",
-      "name": "LocalIAPStore",
-      "latest": "1.5",
-      "repository": "repo.xarold.com",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.localiapstore/",
-      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
-      "category": "Tweaks",
-      "author": "anondev",
-      "commercial": false,
-      "date": "2018-02-28T19:15:03Z",
-      "versions": [
-        {
-          "tweakVersion": "1.4-2",
-          "iOSVersion": "11.2.2",
-          "repository": "Xarold Repo",
-          "date": "2018-07-08T17:01:29Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.hackyouriphone.localiapstore",
       "name": "LocalIAPStore",
       "latest": "1.4-2",
@@ -6937,6 +6937,40 @@
             "good": 0,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.repo.xarold.com.localiapstore",
+      "name": "LocalIAPStore",
+      "latest": "1.5",
+      "repository": "repo.xarold.com",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.localiapstore/",
+      "shortDescription": "Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!",
+      "category": "Tweaks",
+      "author": "anondev",
+      "commercial": false,
+      "date": "2018-02-28T19:15:03Z",
+      "versions": [
+        {
+          "tweakVersion": "1.4-2",
+          "iOSVersion": "11.2.2",
+          "repository": "Xarold Repo",
+          "date": "2018-07-08T17:01:29Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -7052,7 +7086,7 @@
     {
       "id": "com.junesiphone.lockpluspro",
       "name": "LockPlus Pro",
-      "latest": "1.3.9",
+      "latest": "1.4",
       "repository": "junesiphone.com",
       "url": "http://cydia.saurik.com/package/com.junesiphone.lockpluspro/",
       "shortDescription": "The ultimate lock screen tweak!",
@@ -7976,7 +8010,7 @@
     {
       "id": "com.thecasle.nine",
       "name": "Nine",
-      "latest": "0.1.1",
+      "latest": "0.2.0-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.thecasle.nine/",
       "shortDescription": "Reworks the Notification Center",
@@ -8349,10 +8383,10 @@
     {
       "id": "com.pknauf.nsa",
       "name": "NoSlowAnimationsXI",
-      "latest": "5.1.1",
+      "latest": "0.0.1-35+debug",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.pknauf.nsa/",
-      "shortDescription": "Don't get slowed down by animations on iOS 11!",
+      "shortDescription": "Don't get slowed down by animations on ioS 11!",
       "category": "Tweaks",
       "author": "Patrick Knauf",
       "commercial": false,
@@ -9220,7 +9254,7 @@
     {
       "id": "com.packickx.mrkushy.powerswitchs",
       "name": "PowerSwitch",
-      "latest": "1.1",
+      "latest": "1.5",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.packickx.mrkushy.powerswitchs/",
       "shortDescription": "Power down with multiple sliders and ios 6 theme included !",
@@ -10521,7 +10555,7 @@
     {
       "id": "net.midkin.smartvolumecontrol2",
       "name": "SmartVolumeControl2",
-      "latest": "1.2.1",
+      "latest": "1.3",
       "repository": "midkin's repo",
       "url": "http://cydia.saurik.com/package/net.midkin.smartvolumecontrol2/",
       "shortDescription": "iOS most advanced volume controller.",
@@ -11046,7 +11080,7 @@
     {
       "id": "com.ioscreatix.sugarcane",
       "name": "SugarCane",
-      "latest": "1.0.0",
+      "latest": "1.0.0-1+debug",
       "repository": "iOS Creatix",
       "url": "http://cydia.saurik.com/package/com.ioscreatix.sugarcane/",
       "shortDescription": "Get percentages for the sliders in the Control Center on iOS 11",
@@ -12209,7 +12243,7 @@
     {
       "id": "com.junesiphone.xeninfo",
       "name": "XenInfo",
-      "latest": "1.0",
+      "latest": "1.1",
       "repository": "junesiphone.com",
       "url": "http://cydia.saurik.com/package/com.junesiphone.xeninfo/",
       "shortDescription": "Music, Weather, and battery info for XenHTML",
