@@ -1,6 +1,39 @@
 {
   "packages": [
     {
+      "id": "com.reddoorendeavors.3edgy5me",
+      "name": "3Edgy5Me",
+      "latest": "1.0-6",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.reddoorendeavors.3edgy5me/",
+      "shortDescription": "Customizable S8 Style Edge Notifications on iOS (iOS 9 — 10)",
+      "category": "Tweaks",
+      "author": "Will Smillie",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0-6",
+          "iOSVersion": "11.0.2",
+          "repository": "BigBoss",
+          "date": "2018-09-15T11:46:25Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "p7zip",
       "name": "7-zip (POSIX)",
       "latest": "4.57-3p",
@@ -478,10 +511,10 @@
     {
       "id": "ch.mdaus.artsy",
       "name": "Artsy",
-      "latest": "0.0.4-8+debug",
+      "latest": "1.2",
       "repository": "Maxwell Dausch's Repo",
       "url": "http://cydia.saurik.com/package/ch.mdaus.artsy/",
-      "shortDescription": "Modify the Lockscreen, CC, Spotify, and Music app now playing views based on the album artwork.",
+      "shortDescription": "Colorize and customize  your music players",
       "category": "Tweaks",
       "author": "Maxwell Dausch",
       "commercial": false,
@@ -512,7 +545,7 @@
     {
       "id": "net.limneos.audiorecorder",
       "name": "AudioRecorder 2 (iOS 8,9,10)",
-      "latest": "1.7-18",
+      "latest": "1.9-2",
       "repository": "limneos.net",
       "url": "http://limneos.net/repo/",
       "shortDescription": "Most Advanced iOS Call Recorder Ever!",
@@ -565,7 +598,7 @@
     {
       "id": "net.tateu.bannersounds11",
       "name": "Banner Sounds 11",
-      "latest": "1.0.0~beta1",
+      "latest": "1.0.0~beta2-1",
       "repository": "tateu's repo",
       "url": "http://cydia.saurik.com/package/net.tateu.bannersounds11/",
       "shortDescription": "Change sounds and vibration patterns for Notifications based on filters matching an Application and/or Notification Title and/or Notification Subtitle and/or Notification Message",
@@ -1071,39 +1104,6 @@
       ]
     },
     {
-      "id": "ru.domo.cocoatop",
-      "name": "CocoaTop",
-      "latest": "2.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
-      "shortDescription": "Process Viewer for iOS GUI",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0.1",
-          "iOSVersion": "11.0.2",
-          "repository": "BigBoss",
-          "date": "2018-03-19T02:03:47Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2",
@@ -1124,6 +1124,39 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.domo.cocoatop",
+      "name": "CocoaTop",
+      "latest": "2.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
+      "shortDescription": "Process Viewer for iOS GUI",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0.1",
+          "iOSVersion": "11.0.2",
+          "repository": "BigBoss",
+          "date": "2018-03-19T02:03:47Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -1734,22 +1767,20 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.eclipsex",
+      "id": "me.gmoran.eclipsex",
       "name": "Eclipse X Beta 7 (iOS 11)",
-      "latest": "5.0b-189",
-      "repository": "BiteYourApple",
-      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.eclipsex/",
-      "shortDescription": "System-wide Night Mode and more for iOS 11. This build expires March 15",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
+      "latest": "5.1.4",
+      "repository": "GMoran Beta Software",
+      "url": "http://gmoran.me/repo/",
+      "shortDescription": "System-wide Night Mode and more for iOS 11.",
+      "category": "Tweaks",
+      "author": "Guillermo Morán (fr0st)",
       "commercial": false,
-      "date": "2018-03-02T09:46:33Z",
       "versions": [
         {
-          "tweakVersion": "5.0b-189",
+          "tweakVersion": "5.0b-25",
           "iOSVersion": "11.0.2",
-          "repository": "BiteYourApple",
-          "date": "2018-03-09T21:28:27Z",
+          "repository": "GMoran Beta Software",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1768,20 +1799,22 @@
       ]
     },
     {
-      "id": "me.gmoran.eclipsex",
+      "id": "repo.biteyourapple.net.eclipsex",
       "name": "Eclipse X Beta 7 (iOS 11)",
-      "latest": "5.1.4",
-      "repository": "GMoran Beta Software",
-      "url": "http://gmoran.me/repo/",
-      "shortDescription": "System-wide Night Mode and more for iOS 11.",
-      "category": "Tweaks",
-      "author": "Guillermo Morán (fr0st)",
+      "latest": "5.0b-189",
+      "repository": "BiteYourApple",
+      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.eclipsex/",
+      "shortDescription": "System-wide Night Mode and more for iOS 11. This build expires March 15",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
       "commercial": false,
+      "date": "2018-03-02T09:46:33Z",
       "versions": [
         {
-          "tweakVersion": "5.0b-25",
+          "tweakVersion": "5.0b-189",
           "iOSVersion": "11.0.2",
-          "repository": "GMoran Beta Software",
+          "repository": "BiteYourApple",
+          "date": "2018-03-09T21:28:27Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2645,7 +2678,7 @@
     {
       "id": "com.vitataf.homegesture",
       "name": "Home Gesture",
-      "latest": "1.8.2",
+      "latest": "1.7.1",
       "repository": "MidnightChips",
       "url": "http://cydia.saurik.com/package/com.vitataf.homegesture/",
       "shortDescription": "Enable iPhone X home gesture on other devices.",
@@ -5236,7 +5269,7 @@
     {
       "id": "org.thebigboss.swipeformore",
       "name": "SwipeForMore",
-      "latest": "1.1.9",
+      "latest": "1.1.7",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.swipeformore/",
       "shortDescription": "Manage packages via swipe.",
@@ -6193,7 +6226,7 @@
     {
       "id": "com.justinpetkovic.youtubetools",
       "name": "YouTube Tools",
-      "latest": "1.9",
+      "latest": "2.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.justinpetkovic.youtubetools/",
       "shortDescription": "Essential toolbox for YouTube app.",
@@ -6226,7 +6259,7 @@
     {
       "id": "com.alexzielenski.zeppelin",
       "name": "Zeppelin",
-      "latest": "2.1.0-12",
+      "latest": "2.1.1-1",
       "repository": "ModMyi (Archive)",
       "url": "http://cydia.saurik.com/package/com.alexzielenski.zeppelin/",
       "shortDescription": "Replaces carrier text with an image!",
