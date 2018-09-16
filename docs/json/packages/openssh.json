@@ -1,7 +1,7 @@
 {
   "id": "openssh",
   "name": "OpenSSH",
-  "latest": "7.6p1-4",
+  "latest": "6.7p1-13",
   "repository": "Electra's iOS Utilities",
   "url": "http://cydia.saurik.com/package/openssh/",
   "shortDescription": "secure remote access between machines",
@@ -335,11 +335,11 @@
       "repository": "Cydia/Telesphoreo",
       "date": "2018-03-25T14:52:50Z",
       "outcome": {
-        "calculatedStatus": "Not working",
-        "percentage": 0,
-        "good": 0,
+        "calculatedStatus": "Likely working",
+        "percentage": 50,
+        "good": 1,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -356,6 +356,15 @@
           "date": "2018-03-25T14:52:50Z",
           "userName": "sillwiu",
           "issueNumber": 8242,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone9,4",
+          "issues": "Works fine, just need to modify launch daemon plist",
+          "date": "2018-09-16T19:19:33Z",
+          "userName": "ajorpheus",
+          "issueNumber": 50618,
           "arch32": false
         }
       ]
