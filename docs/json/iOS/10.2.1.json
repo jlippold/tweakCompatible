@@ -863,10 +863,10 @@
     {
       "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
-      "latest": "1.0r-61",
+      "latest": "1.0r-92",
       "repository": "beta.unlimapps.com",
       "url": "https://beta.unlimapps.com/",
-      "shortDescription": "Downgrade apps to any previous version! No AppSync needed!!!",
+      "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
       "category": "System",
       "author": "UnlimApps Inc.",
       "commercial": false,
@@ -1250,7 +1250,7 @@
     {
       "id": "net.limneos.audiorecorder",
       "name": "AudioRecorder 2 (iOS 8,9,10)",
-      "latest": "1.8-94",
+      "latest": "1.9-2",
       "repository": "limneos.net",
       "url": "http://limneos.net/repo/",
       "shortDescription": "Most Advanced iOS Call Recorder Ever!",
@@ -1303,10 +1303,10 @@
     {
       "id": "io.ominousness.ass",
       "name": "AudioSnapshotServer",
-      "latest": "9.9.9",
+      "latest": "1.0.0",
       "repository": "Ominousness",
       "url": "http://cydia.saurik.com/package/io.ominousness.ass/",
-      "shortDescription": "Repo moved to: repo.nepeta.me (see depiction)",
+      "shortDescription": "iOS mediaserverd hook to serve snapshots of current audio buffer via TCP/IP",
       "category": "Tweaks",
       "author": "Ominousness",
       "commercial": false,
@@ -1497,21 +1497,22 @@
       ]
     },
     {
-      "id": "com.aaronash.barrel",
+      "id": "repo.biteyourapple.net.barrel",
       "name": "Barrel",
       "latest": "1.8.1.1-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.aaronash.barrel/",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.barrel/",
       "shortDescription": "3D and other effects on icon pages!",
-      "category": "Tweaks",
-      "author": "Aaron Ash (Charybdis)",
-      "commercial": true,
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "date": "2018-03-31T07:05:38Z",
       "versions": [
         {
           "tweakVersion": "1.8.1.1-1",
           "iOSVersion": "10.2.1",
-          "repository": "BigBoss",
-          "date": "2018-04-18T01:23:43Z",
+          "repository": "repo.biteyourapple.net",
+          "date": "2018-03-31T07:05:38Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1530,22 +1531,21 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.barrel",
+      "id": "com.aaronash.barrel",
       "name": "Barrel",
       "latest": "1.8.1.1-1",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://cydia.saurik.com/package/repo.biteyourapple.net.barrel/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.aaronash.barrel/",
       "shortDescription": "3D and other effects on icon pages!",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "date": "2018-03-31T07:05:38Z",
+      "category": "Tweaks",
+      "author": "Aaron Ash (Charybdis)",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "1.8.1.1-1",
           "iOSVersion": "10.2.1",
-          "repository": "repo.biteyourapple.net",
-          "date": "2018-03-31T07:05:38Z",
+          "repository": "BigBoss",
+          "date": "2018-04-18T01:23:43Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3320,6 +3320,39 @@
       ]
     },
     {
+      "id": "com.golddavid.colorflow3",
+      "name": "ColorFlow 3 (iOS 10)",
+      "latest": "1.0.5",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.golddavid.colorflow3/",
+      "shortDescription": "Colorful music revolutions.",
+      "category": "Tweaks",
+      "author": "David Goldman",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "1.0.5",
+          "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
+          "date": "2018-08-10T03:09:01Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "repo.biteyourapple.net.colorflow3",
       "name": "ColorFlow 3 (iOS 10)",
       "latest": "1.0.5",
@@ -3354,39 +3387,6 @@
           "iOSVersion": "10.2.1",
           "repository": "repo.biteyourapple.net",
           "date": "2018-03-31T07:05:00Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.golddavid.colorflow3",
-      "name": "ColorFlow 3 (iOS 10)",
-      "latest": "1.0.5",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.golddavid.colorflow3/",
-      "shortDescription": "Colorful music revolutions.",
-      "category": "Tweaks",
-      "author": "David Goldman",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "1.0.5",
-          "iOSVersion": "10.2.1",
-          "repository": "BigBoss",
-          "date": "2018-08-10T03:09:01Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4337,38 +4337,6 @@
       ]
     },
     {
-      "id": "repo.biteyourapple.net.eclipse4",
-      "name": "Eclipse 4 (iOS 10)",
-      "latest": "4.1.3",
-      "repository": "repo.biteyourapple.net",
-      "url": "http://repo.biteyourapple.net/",
-      "shortDescription": "System-wide Night Mode and more for iOS 10.",
-      "category": "BYA Apps",
-      "author": "BYA Repository",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "4.1.1",
-          "iOSVersion": "10.2.1",
-          "repository": "repo.biteyourapple.net",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.thebigboss.eclipse4",
       "name": "Eclipse 4 (iOS 10)",
       "latest": "4.1.3",
@@ -4390,6 +4358,38 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "repo.biteyourapple.net.eclipse4",
+      "name": "Eclipse 4 (iOS 10)",
+      "latest": "4.1.3",
+      "repository": "repo.biteyourapple.net",
+      "url": "http://repo.biteyourapple.net/",
+      "shortDescription": "System-wide Night Mode and more for iOS 10.",
+      "category": "BYA Apps",
+      "author": "BYA Repository",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "4.1.1",
+          "iOSVersion": "10.2.1",
+          "repository": "repo.biteyourapple.net",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -5055,6 +5055,39 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "it.dreamcode.ft",
+      "name": "FingerTouch",
+      "latest": "0.0.6b2",
+      "repository": "Dream Code",
+      "url": "http://capt.dreamcode.it/",
+      "shortDescription": "Touch ID gestures",
+      "category": "Tweaks",
+      "author": "Michele Primavera",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.0.6b2",
+          "iOSVersion": "10.2.1",
+          "repository": "BigBoss",
+          "date": "2018-09-16T15:43:45Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -6291,7 +6324,7 @@
     {
       "id": "com.ion.ignify",
       "name": "Ignify",
-      "latest": "0.0.1",
+      "latest": "0.1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.ion.ignify/",
       "shortDescription": "An awesome enchancement to Instagram!",
@@ -6868,7 +6901,7 @@
     {
       "id": "com.cpdigitaldarkroom.kairos2",
       "name": "Kairos 2",
-      "latest": "1.1.1",
+      "latest": "1.2.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.cpdigitaldarkroom.kairos2/",
       "shortDescription": "Message Scheduling for iOS Messages",
@@ -7336,7 +7369,7 @@
     {
       "id": "com.creaturesurvive.libcscolorpicker",
       "name": "libCSColorPicker",
-      "latest": "0.7.5",
+      "latest": "0.7.7",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.creaturesurvive.libcscolorpicker/",
       "shortDescription": "A minimal color picker library for developers",
@@ -7389,7 +7422,7 @@
     {
       "id": "com.creaturecoding.libcspreferences",
       "name": "libCSPreferences",
-      "latest": "0.9.9.9-1",
+      "latest": "1.0.1",
       "repository": "CreatureSurvive's Repo",
       "url": "http://cydia.saurik.com/package/com.creaturecoding.libcspreferences/",
       "shortDescription": "An awesome Preference Library!",
@@ -7597,7 +7630,7 @@
     {
       "id": "com.ramenrepo.limelight",
       "name": "Limelight",
-      "latest": "1.6",
+      "latest": "1.7.2",
       "repository": "Ramen Repo",
       "url": "http://cydia.saurik.com/package/com.ramenrepo.limelight/",
       "shortDescription": "Colorful glyphs for anemone",
@@ -9671,7 +9704,7 @@
     {
       "id": "me.aesign.sential",
       "name": "Sential",
-      "latest": "1.1",
+      "latest": "1.2",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/me.aesign.sential/",
       "shortDescription": "Essential changes for an essential iOS.",
@@ -9976,10 +10009,10 @@
     {
       "id": "com.abcapps.snapplus",
       "name": "Snap + for Snapchat",
-      "latest": "1.7r-58",
+      "latest": "1.6r-111",
       "repository": "beta.unlimapps.com",
       "url": "http://beta.unlimapps.com/",
-      "shortDescription": "Extend Snapchat! Formerly AppPlus. Save/Share Snaps. Upload photos/videos from gallery. Works on the latest version of SnapChat!",
+      "shortDescription": "Save/share SC snaps & upload from gallery; formerly AppPlus",
       "category": "Tweaks",
       "author": "UnlimApps Inc.",
       "commercial": false,
@@ -10472,7 +10505,7 @@
     {
       "id": "org.thebigboss.swipeformore",
       "name": "SwipeForMore",
-      "latest": "1.1.9",
+      "latest": "1.1.7",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.swipeformore/",
       "shortDescription": "Manage packages via swipe.",
@@ -11439,7 +11472,7 @@
     {
       "id": "com.fouadraheb.watusi",
       "name": "Watusi 2 for WhatsApp",
-      "latest": "1.0.59",
+      "latest": "1.0.61",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.fouadraheb.watusi/",
       "shortDescription": "The all-in-one tweak for WhatsApp Messenger",
@@ -11511,7 +11544,7 @@
     {
       "id": "com.f0u4d.watusitools",
       "name": "WatusiTools",
-      "latest": "1.5.0",
+      "latest": "1.5.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.f0u4d.watusitools/",
       "shortDescription": "Library for Watusi and WhatsApp tweaks",
