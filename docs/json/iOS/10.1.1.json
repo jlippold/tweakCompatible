@@ -867,7 +867,7 @@
     {
       "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
-      "latest": "1.0r-92",
+      "latest": "1.0r-98",
       "repository": "beta.unlimapps.com",
       "url": "https://beta.unlimapps.com/",
       "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
@@ -1676,7 +1676,7 @@
     {
       "id": "me.autotouch.autotouch.ios8",
       "name": "AutoTouch",
-      "latest": "4.3.4",
+      "latest": "4.3.5",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/me.autotouch.autotouch.ios8/",
       "shortDescription": "Record and playback touch operations, play macro scripts automatically.",
@@ -7925,7 +7925,7 @@
     {
       "id": "com.modmyi.libswift4",
       "name": "libswift4",
-      "latest": "4.1.2-3",
+      "latest": "4.2-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.modmyi.libswift4/",
       "shortDescription": "libswift dylibs for iOS",
@@ -7959,6 +7959,26 @@
           "iOSVersion": "10.1.1",
           "repository": "BigBoss",
           "date": "2018-09-04T06:58:55Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "4.2-1",
+          "iOSVersion": "10.1.1",
+          "repository": "BigBoss",
+          "date": "2018-09-20T21:13:57Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -12665,7 +12685,7 @@
     {
       "id": "se.nosskirneh.spotifyhistory",
       "name": "SpotifyHistory",
-      "latest": "1.4",
+      "latest": "1.5",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/se.nosskirneh.spotifyhistory/",
       "shortDescription": "View recently played tracks in Spotify",
@@ -13403,10 +13423,10 @@
     {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "2.0.0-1216+debug",
+      "latest": "2.0.0-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
-      "shortDescription": "System information Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
+      "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
@@ -14359,6 +14379,40 @@
       ]
     },
     {
+      "id": "com.hackyouriphone.uasharedtools",
+      "name": "uasharedtools",
+      "latest": "2.2r-31",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.uasharedtools/",
+      "shortDescription": "shared tools for unlimapps tweaks",
+      "category": "HYI - Tweaks",
+      "author": "UnlimApps Inc.",
+      "commercial": false,
+      "date": "2018-03-19T17:31:12Z",
+      "versions": [
+        {
+          "tweakVersion": "2.2r-31",
+          "iOSVersion": "10.1.1",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-19T17:31:12Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.unlimapps.uasharedtools",
       "name": "uasharedtools",
       "latest": "2.2r-61",
@@ -14413,40 +14467,6 @@
           "iOSVersion": "10.1.1",
           "repository": "beta.unlimapps.com",
           "date": "2018-08-15T08:18:21Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.hackyouriphone.uasharedtools",
-      "name": "uasharedtools",
-      "latest": "2.2r-31",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.uasharedtools/",
-      "shortDescription": "shared tools for unlimapps tweaks",
-      "category": "HYI - Tweaks",
-      "author": "UnlimApps Inc.",
-      "commercial": false,
-      "date": "2018-03-19T17:31:12Z",
-      "versions": [
-        {
-          "tweakVersion": "2.2r-31",
-          "iOSVersion": "10.1.1",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-19T17:31:12Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -14922,10 +14942,10 @@
     {
       "id": "com.iarrays.whoozit",
       "name": "WhoozItPro",
-      "latest": "2.0.7-beta-4",
+      "latest": "2.0.6",
       "repository": "IArrays",
       "url": "http://iarrays.com/",
-      "shortDescription": "Now with iOS 11 support. The all in one perfect caller ID solution for your iDevice. No clue who is calling you and don't know whom you missed? Don't worry, now this all in one perfect caller ID solution will make your life is more simple. Just install this and TrueCaller on your device and just start searchin the calls from you stack apps like Phone, Messages & Notification Center and even from the Recents (tweak).",
+      "shortDescription": "all-in-one caller ID solution using TrueCaller",
       "category": "Utilities",
       "author": "IArrays",
       "commercial": false,
