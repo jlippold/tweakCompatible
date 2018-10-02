@@ -1554,7 +1554,7 @@
     {
       "id": "com.bytafont.bytafont3",
       "name": "BytaFont 3",
-      "latest": "3.6",
+      "latest": "3.1.5",
       "repository": "ModMyi (Archive)",
       "url": "http://cydia.saurik.com/package/com.bytafont.bytafont3/",
       "shortDescription": "BytaFont 3 lets you apply fonts to your iDevice in few taps.",
@@ -2262,10 +2262,10 @@
     {
       "id": "cydia",
       "name": "Cydia Installer",
-      "latest": "1.9",
+      "latest": "1.1.30",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia/",
-      "shortDescription": "Base scripts and tools to set up Cydia-compatible virtual dependencies",
+      "shortDescription": "graphical iPhone front-end for APT",
       "category": "Packaging",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -2862,21 +2862,22 @@
       ]
     },
     {
-      "id": "com.julioverne.ext3nder-installer",
+      "id": "com.hackyouriphone.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "021a",
-      "repository": "julioverne's Repo",
-      "url": "http://twitter.com/ijulioverne",
+      "latest": "016",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.ext3nder-installer/",
       "shortDescription": "Cydia Extender Installer With Extra Features",
-      "category": "Utilities",
+      "category": "HYI - Tweaks",
       "author": "julioverne",
       "commercial": false,
+      "date": "2018-05-05T23:22:12Z",
       "versions": [
         {
           "tweakVersion": "016",
           "iOSVersion": "9.3.5",
-          "repository": "julioverne's Repo",
-          "date": "2018-05-05T23:11:50Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-05-05T23:22:12Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -2895,22 +2896,21 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.ext3nder-installer",
+      "id": "com.julioverne.ext3nder-installer",
       "name": "Ext3nder Installer",
-      "latest": "016",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.ext3nder-installer/",
+      "latest": "021a",
+      "repository": "julioverne's Repo",
+      "url": "http://twitter.com/ijulioverne",
       "shortDescription": "Cydia Extender Installer With Extra Features",
-      "category": "HYI - Tweaks",
+      "category": "Utilities",
       "author": "julioverne",
       "commercial": false,
-      "date": "2018-05-05T23:22:12Z",
       "versions": [
         {
           "tweakVersion": "016",
           "iOSVersion": "9.3.5",
-          "repository": "HackYouriPhone",
-          "date": "2018-05-05T23:22:12Z",
+          "repository": "julioverne's Repo",
+          "date": "2018-05-05T23:11:50Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -4589,7 +4589,7 @@
     {
       "id": "openssh",
       "name": "OpenSSH",
-      "latest": "6.7p1-13",
+      "latest": "7.6p1-4",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/openssh/",
       "shortDescription": "secure remote access between machines",
@@ -4923,7 +4923,7 @@
     {
       "id": "preferenceloader",
       "name": "PreferenceLoader",
-      "latest": "2.2.4~alpha1",
+      "latest": "2.2.3-3",
       "repository": "rpetrich repo",
       "url": "http://cydia.saurik.com/package/preferenceloader/",
       "shortDescription": "load preferences in style",
@@ -4937,6 +4937,26 @@
           "iOSVersion": "9.3.5",
           "repository": "rpetrich repo",
           "date": "2018-05-05T14:05:08Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        },
+        {
+          "tweakVersion": "2.2.3-3",
+          "iOSVersion": "9.3.5",
+          "repository": "BigBoss",
+          "date": "2018-10-02T16:13:22Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
