@@ -10914,7 +10914,7 @@
     {
       "id": "com.ramenrepo.limelight",
       "name": "Limelight",
-      "latest": "1.9.4",
+      "latest": "1.9.5",
       "repository": "Ramen Repo",
       "url": "http://cydia.saurik.com/package/com.ramenrepo.limelight/",
       "shortDescription": "Colorful glyphs for anemone",
@@ -10928,6 +10928,26 @@
           "iOSVersion": "11.1.1",
           "repository": "Ramen Repo",
           "date": "2018-10-04T02:19:19Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.9.5",
+          "iOSVersion": "11.1.1",
+          "repository": "Ramen Repo",
+          "date": "2018-10-04T21:48:30Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -11493,40 +11513,6 @@
       ]
     },
     {
-      "id": "com.aids.makecydiabuyagain",
-      "name": "MakeCydiaBuyAgain",
-      "latest": "1.0.2-89+debug",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.aids.makecydiabuyagain/",
-      "shortDescription": "Enable Cydia to purchase any package on any version of iOS and device that is \"not supported\"",
-      "category": "Tweaks",
-      "author": "Jake Ihasz",
-      "commercial": false,
-      "date": "2018-03-18T16:35:03Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.2-4+debug",
-          "iOSVersion": "11.1.1",
-          "repository": "AidsMcGhee",
-          "date": "2018-07-16T03:53:56Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.yourepo.randompacks.makecydiabuyagain",
       "name": "MakeCydiaBuyAgain",
       "latest": "1.0",
@@ -11549,6 +11535,40 @@
             "good": 3,
             "bad": 0,
             "total": 3,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.aids.makecydiabuyagain",
+      "name": "MakeCydiaBuyAgain",
+      "latest": "1.0.2-89+debug",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.aids.makecydiabuyagain/",
+      "shortDescription": "Enable Cydia to purchase any package on any version of iOS and device that is \"not supported\"",
+      "category": "Tweaks",
+      "author": "Jake Ihasz",
+      "commercial": false,
+      "date": "2018-03-18T16:35:03Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.2-4+debug",
+          "iOSVersion": "11.1.1",
+          "repository": "AidsMcGhee",
+          "date": "2018-07-16T03:53:56Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -12953,22 +12973,21 @@
       ]
     },
     {
-      "id": "com.dannyglover.nolowpoweralert",
+      "id": "com.hiroshit.nolowpoweralert",
       "name": "NoLowPowerAlert",
-      "latest": "1.0",
-      "repository": "Danny Glover's Repo",
-      "url": "http://cydia.saurik.com/package/com.dannyglover.nolowpoweralert/",
-      "shortDescription": "Disables tlow power alerts.",
+      "latest": "0.1-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.hiroshit.nolowpoweralert/",
+      "shortDescription": "Disables low battery alerts",
       "category": "Tweaks",
-      "author": "Danny Glover",
+      "author": "hiroshit",
       "commercial": false,
-      "date": "2018-03-12T21:11:33Z",
       "versions": [
         {
-          "tweakVersion": "1.0",
+          "tweakVersion": "0.1-1",
           "iOSVersion": "11.1.1",
-          "repository": "Danny Glover's Repo",
-          "date": "2018-03-12T21:11:33Z",
+          "repository": "BigBoss",
+          "date": "2018-03-18T02:58:46Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -12987,21 +13006,22 @@
       ]
     },
     {
-      "id": "com.hiroshit.nolowpoweralert",
+      "id": "com.dannyglover.nolowpoweralert",
       "name": "NoLowPowerAlert",
-      "latest": "0.1-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.hiroshit.nolowpoweralert/",
-      "shortDescription": "Disables low battery alerts",
+      "latest": "1.0",
+      "repository": "Danny Glover's Repo",
+      "url": "http://cydia.saurik.com/package/com.dannyglover.nolowpoweralert/",
+      "shortDescription": "Disables tlow power alerts.",
       "category": "Tweaks",
-      "author": "hiroshit",
+      "author": "Danny Glover",
       "commercial": false,
+      "date": "2018-03-12T21:11:33Z",
       "versions": [
         {
-          "tweakVersion": "0.1-1",
+          "tweakVersion": "1.0",
           "iOSVersion": "11.1.1",
-          "repository": "BigBoss",
-          "date": "2018-03-18T02:58:46Z",
+          "repository": "Danny Glover's Repo",
+          "date": "2018-03-12T21:11:33Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -19910,22 +19930,22 @@
       ]
     },
     {
-      "id": "com.rob311.volskip11",
+      "id": "com.hackyouriphone.volskip11",
       "name": "VolSkip11",
       "latest": "0.0.1-28",
-      "repository": "rob311's beta repo",
-      "url": "http://cydia.saurik.com/package/com.rob311.volskip11/",
+      "repository": "HackYouriPhone",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.volskip11/",
       "shortDescription": "Skip tracks by holding the Volume buttons.",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "rob311",
       "commercial": false,
-      "date": "2018-03-02T10:06:47Z",
+      "date": "2018-03-05T03:14:34Z",
       "versions": [
         {
           "tweakVersion": "0.0.1-28",
           "iOSVersion": "11.1.1",
-          "repository": "rob311's beta repo",
-          "date": "2018-03-03T11:02:57Z",
+          "repository": "HackYouriPhone",
+          "date": "2018-03-05T03:14:34Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -19944,22 +19964,22 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.volskip11",
+      "id": "com.rob311.volskip11",
       "name": "VolSkip11",
       "latest": "0.0.1-28",
-      "repository": "HackYouriPhone",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.volskip11/",
+      "repository": "rob311's beta repo",
+      "url": "http://cydia.saurik.com/package/com.rob311.volskip11/",
       "shortDescription": "Skip tracks by holding the Volume buttons.",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "rob311",
       "commercial": false,
-      "date": "2018-03-05T03:14:34Z",
+      "date": "2018-03-02T10:06:47Z",
       "versions": [
         {
           "tweakVersion": "0.0.1-28",
           "iOSVersion": "11.1.1",
-          "repository": "HackYouriPhone",
-          "date": "2018-03-05T03:14:34Z",
+          "repository": "rob311's beta repo",
+          "date": "2018-03-03T11:02:57Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
