@@ -4662,7 +4662,7 @@
     {
       "id": "cydia",
       "name": "Cydia Installer",
-      "latest": "1.1.30",
+      "latest": "420.1.30-1",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia/",
       "shortDescription": "graphical iPhone front-end for APT",
@@ -4695,10 +4695,10 @@
     {
       "id": "mobilesubstrate",
       "name": "Cydia Substrate",
-      "latest": "0.9.6301",
+      "latest": "420.0.0-5",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/mobilesubstrate/",
-      "shortDescription": "powerful code insertion platform",
+      "shortDescription": "Satisfies the Substrate requirement when using Meridian Substitute.",
       "category": "System",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -8304,7 +8304,7 @@
     {
       "id": "com.ichitaso.killbackground10",
       "name": "KillBackground10",
-      "latest": "1.1.1",
+      "latest": "1.1.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.ichitaso.killbackground10/",
       "shortDescription": "Kill background apps with style for iOS 10 & 11!",
@@ -9013,7 +9013,7 @@
     {
       "id": "team.midnight.meridian-bootstrap",
       "name": "Meridian Bootstrap",
-      "latest": "1.0-3",
+      "latest": "1.0-5",
       "repository": "The Midnight Repo",
       "url": "http://cydia.saurik.com/package/team.midnight.meridian-bootstrap/",
       "shortDescription": "boot. for your strap. 'yo.",
@@ -13009,6 +13009,40 @@
       ]
     },
     {
+      "id": "com.spark.snowboard",
+      "name": "Snowboard",
+      "latest": "1.0",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.spark.snowboard/",
+      "shortDescription": "Snowboard theming engine",
+      "category": "Tweaks",
+      "author": "Spark & Dennis D. Bednarz",
+      "commercial": false,
+      "date": "2018-09-19T04:13:11Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0",
+          "iOSVersion": "10.3.1",
+          "repository": "repo.chariz.io",
+          "date": "2018-10-04T20:51:19Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "org.fwdr.sonus",
       "name": "Sonus",
       "latest": "3.0.2-3",
@@ -13444,10 +13478,10 @@
     {
       "id": "com.saurik.substrate.safemode",
       "name": "Substrate Safe Mode",
-      "latest": "0.9.6001",
+      "latest": "420.0.0-4",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/com.saurik.substrate.safemode/",
-      "shortDescription": "safe mode safety extension (safe)",
+      "shortDescription": "A safe safety safemode extension (safe).",
       "category": "Tweaks",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -13903,39 +13937,6 @@
       ]
     },
     {
-      "id": "com.alexzielenski.tinybar",
-      "name": "TinyBar",
-      "latest": "0.1.4-2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.alexzielenski.tinybar/",
-      "shortDescription": "Thins notification banners down to size!",
-      "category": "Tweaks",
-      "author": "Alex Zielenski",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "0.1.4-2",
-          "iOSVersion": "10.3.1",
-          "repository": "BigBoss",
-          "date": "2018-08-23T13:43:45Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.alexzielenski.updatedtinybar",
       "name": "TinyBar",
       "latest": "0.2.0",
@@ -13955,6 +13956,39 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.alexzielenski.tinybar",
+      "name": "TinyBar",
+      "latest": "0.1.4-2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.alexzielenski.tinybar/",
+      "shortDescription": "Thins notification banners down to size!",
+      "category": "Tweaks",
+      "author": "Alex Zielenski",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.1.4-2",
+          "iOSVersion": "10.3.1",
+          "repository": "BigBoss",
+          "date": "2018-08-23T13:43:45Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
