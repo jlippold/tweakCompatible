@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Jailbreak community driven compatibilty checker">
+    <meta name="author" content="Jed Lippold">
+    
+    <title>Tweak Compatibility Checker</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="index.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123323859-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-123323859-1');
+    </script>
+
+    <!-- Icon crap -->
+    <link rel="apple-touch-icon" sizes="120x120" href="/tweakCompatible/icons/apple-touch-icon.png?v=ng9gGmK7Qd">
+    <link rel="icon" type="image/png" sizes="32x32" href="/tweakCompatible/icons/favicon-32x32.png?v=ng9gGmK7Qd">
+    <link rel="icon" type="image/png" sizes="16x16" href="/tweakCompatible/icons/favicon-16x16.png?v=ng9gGmK7Qd">
+    <link rel="manifest" href="/tweakCompatible/icons/site.webmanifest?v=ng9gGmK7Qd">
+    <link rel="mask-icon" href="/tweakCompatible/icons/safari-pinned-tab.svg?v=ng9gGmK7Qd" color="#5bbad5">
+    <link rel="shortcut icon" href="/tweakCompatible/icons/favicon.ico?v=ng9gGmK7Qd">
+    <meta name="apple-mobile-web-app-title" content="tweakCompatible">
+    <meta name="application-name" content="tweakCompatible">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/tweakCompatible/icons/browserconfig.xml?v=ng9gGmK7Qd">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+    <div id="app">
+        <tweaklist></tweaklist>        
+    </div>
+
+    <template id="tweaklist-template">
+        <div>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-header">
+                    <div class="hidden-md hidden-lg hidden-sm">
+                        <a href="http://repo.jed.bz" target=_blank class="pull-right" style="margin-top: 8px; margin-right: 10px">
+                            <span style="color: white; font-size: 1.5em">
+                                <i class="fa fa-plus"></i>
+                            </span>
+                        </a>
+                        
+                        <button type="button" class="pull-right" data-toggle="modal" data-target="#donate" style="margin-top: 7px; margin-right: 10px; background-color: transparent; border: none">
+                            <span style="color: white; font-size: 1.5em">
+                                <i class="fa fa-coffee"></i>
+                            </span>
+                        </button>
+
+                        <a href="https://github.com/jlippold/tweakCompatible" class="pull-right" style="margin-top: 8px; margin-right: 10px">
+                            <span style="color: white; font-size: 1.5em;">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <a class="navbar-brand" href="index.html">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        TweakCompatible
+                    </a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="http://repo.jed.bz" target="_blank">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                Add Tweak
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/jlippold/tweakCompatible">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                Source Code
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#donate" data-toggle="modal" data-target="#donate">
+                                <i class="fa fa-coffee" aria-hidden="true"></i>
+                                Buy me a coffee
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-fluid main">
+                <div class="alert alert-info" role="alert" style="cursor: pointer" onclick="window.location.href='http://cydia.saurik.com/package/bz.jed.tweakcompatible/'">
+                    Click here to install the full application on your jailbroken iOS device
+                </div>
+                <div class="row">
+                    <form onsubmit="return false">
+                        <div class="col-xs-8 col-sm-8 col-md-8">
+                            <div class="form-group">
+                                <label>Search</label>
+                                <input type="test" class="form-control" v-model="searchDebounce" />
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-4 col-md-4">
+                            <div class="form-group">
+                                <label>iOS</label>
+                                <select class="form-control" v-model="data.iOSVersionIndex" v-on:change="fetch()">
+                                    <option v-for="(iOSVersion, index) in data.iOSVersions" v-bind:value="index"  >
+                                        {{iOSVersion}}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-8 col-sm-8 col-md-8">
+                            <div class="form-group">
+                                <label>Filter</label>
+                                <select class="form-control" v-model="data.filter" v-on:change="fetch()">
+                                    <option value="">All</option>
+                                    <option value="Working">Working</option>
+                                    <option value="Likely working">Likely working</option>
+                                    <option value="Not working">Not working</option>
+                                    <option value="Unknown">Unknown</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-4 col-sm-4 col-md-4">
+                            <div class="form-group">
+                                <label>Sort By</label>
+                                <select class="form-control" v-model="data.sort" v-on:change="fetch()">
+                                    <option value="">Recent</option>
+                                    <option value="Top">Most Reviewed</option>
+                                    <option value="Name">Alphabetical</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 packages">
+
+                        <div v-for="(package, index) in filteredPackages" class="row-fluid packages">
+                            <div v-for="version in package.versions">
+                                <div v-if="version.current" class="media package" style="padding: 10px 0;">
+                                    <div class="media-left media-middle" style="">
+                                        <span v-if="version.outcome.calculatedStatus == 'Working'" style="font-size: 2em; width: 36px; color: #5cb85c" class="glyphicon glyphicon-ok media-object"></span>
+                                        <span v-if="version.outcome.calculatedStatus == 'Not working'" style="font-size: 2em; width: 36px; color: #d9534f" class="glyphicon glyphicon-remove media-object"></span>
+                                        <span v-if="version.outcome.calculatedStatus == 'Likely working'" style="font-size: 2em; width: 36px; color: #f0ad4e" class="glyphicon glyphicon-time media-object"></span>
+                                        <span v-if="version.outcome.calculatedStatus == 'Unknown'" style="font-size: 2em; width: 36px; color: #f0ad4e" class="glyphicon glyphicon-question-sign media-object"></span>
+                                    </div>
+                                    <div class="media-body">
+                                        
+                                        <a v-if="data.isCydiaRequest" v-bind:href="'package.html#!/' + package.id + '/details/' + version.tweakVersion">
+                                            <h4 class="media-heading">{{ package.name }} v.{{package.latest}}</h4>
+                                        </a>
+                                        <a v-else v-bind:href="'package.html#!/' + package.id + '/details/' + version.tweakVersion">
+                                            <h4 class="media-heading">{{ package.name }} v.{{package.latest}}</h4>
+                                        </a>
+
+                                        <p>
+                                            <span class="label pull-right" style="font-size: 0.9em" v-bind:class="version.classObject">
+                                                {{ version.outcome.calculatedStatus }}
+                                            </span>
+                                            <span v-if="relativeDate(package.date) != ''" class="label label-default" style="font-size: 0.8em">{{relativeDate(package.date)}}</span>
+                                             {{ package.shortDescription }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="donate" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Thank you!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                If you dig this app, and want to buy me a coffee check out my Paypal or bitcoin: <br /><br />
+                            </p>
+
+                            <h4>
+                                <i class="fa fa-btc" aria-hidden="true"></i>
+                                Bitcoin
+                            </h4>
+
+                            <form class="text-center">
+                                <img src="btc.png" class="img-responsive"> <br />
+                                <input type="text" onFocus="this.select()" class="form-control" readonly name="msg" value="1AoWrn4PqueYBrYuwW58xJW64znNebvmyh">
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-info pull-left" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=jedlippold@gmail.com&item_name=TweakCompatible&item_number=Thanks+for+the+app&currency_code=USD">
+                                <i class="fa fa-paypal" aria-hidden="true"></i>
+                                Use Paypal
+                            </a>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">No Thanks</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </template>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/async/2.6.0/async.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    
+
+    <script src="common.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
