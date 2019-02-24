@@ -3088,7 +3088,7 @@
     {
       "id": "mobilesubstrate",
       "name": "Cydia Substrate",
-      "latest": "0.9.7031",
+      "latest": "0.9.7020",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/mobilesubstrate/",
       "shortDescription": "powerful code insertion platform",
@@ -3457,7 +3457,7 @@
     {
       "id": "dpkg",
       "name": "Debian Packager",
-      "latest": "1.18.25-6",
+      "latest": "1.18.25-5",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/dpkg/",
       "shortDescription": "package maintainance tools from Debian",
@@ -4271,10 +4271,10 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.6.1-25",
+      "latest": "3.6.1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
+      "shortDescription": "File Manager for iOS. Supports iOS 7+",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -5443,10 +5443,10 @@
     {
       "id": "com.vitataf.homegesture",
       "name": "Home Gesture",
-      "latest": "2.1.0",
+      "latest": "1.8.2",
       "repository": "MidnightChips",
       "url": "http://cydia.saurik.com/package/com.vitataf.homegesture/",
-      "shortDescription": "Enable iPhone X HomeGestures on other devices. — # Get the iPhone X Experience without the ridiculous cost!",
+      "shortDescription": "Enable iPhone X home gesture on other devices.",
       "category": "Tweaks",
       "author": "VitaTaf",
       "commercial": false,
@@ -7731,22 +7731,22 @@
       ]
     },
     {
-      "id": "ncurses",
+      "id": "ncurses5-libs",
       "name": "New Curses",
-      "latest": "6.1-1",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/ncurses/",
+      "latest": "5.9-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:02:12Z",
+      "date": "2018-10-14T00:25:17Z",
       "versions": [
         {
-          "tweakVersion": "6.1-1",
+          "tweakVersion": "5.9-1",
           "iOSVersion": "12.1",
           "repository": "Bingner/Elucubratus",
-          "date": "2019-02-23T03:26:46Z",
+          "date": "2019-02-23T03:26:39Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7765,22 +7765,22 @@
       ]
     },
     {
-      "id": "ncurses5-libs",
+      "id": "ncurses",
       "name": "New Curses",
-      "latest": "5.9-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
+      "latest": "6.1-1",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/ncurses/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-14T00:25:17Z",
+      "date": "2018-03-04T19:02:12Z",
       "versions": [
         {
-          "tweakVersion": "5.9-1",
+          "tweakVersion": "6.1-1",
           "iOSVersion": "12.1",
           "repository": "Bingner/Elucubratus",
-          "date": "2019-02-23T03:26:39Z",
+          "date": "2019-02-23T03:26:46Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8583,7 +8583,7 @@
     {
       "id": "openssh",
       "name": "OpenSSH",
-      "latest": "7.9p1",
+      "latest": "7.9p1-3",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/openssh/",
       "shortDescription": "secure remote access between machines",
@@ -8616,10 +8616,10 @@
     {
       "id": "openssl",
       "name": "OpenSSL",
-      "latest": "1.0.2n-2",
+      "latest": "1.0.2q-1",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/openssl/",
-      "shortDescription": "SSL library and cryptographic tools",
+      "shortDescription": "OpenSSL tools",
       "category": "Security",
       "author": "(null)",
       "commercial": false,
@@ -10455,6 +10455,39 @@
       ]
     },
     {
+      "id": "org.fwdr.sonus",
+      "name": "Sonus",
+      "latest": "3.0.2-3",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.fwdr.sonus/",
+      "shortDescription": "A better & highly customizable volume hud.",
+      "category": "Tweaks",
+      "author": "ubik",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "3.0.2-3",
+          "iOSVersion": "12.1",
+          "repository": "BigBoss",
+          "date": "2019-02-24T03:38:34Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "org.s1ris.spinxi",
       "name": "SpinXI",
       "latest": "1.2",
@@ -11904,7 +11937,7 @@
     {
       "id": "jailbreak-resources",
       "name": "Unc0ver Jailbreak Resources",
-      "latest": "1.0~b4",
+      "latest": "1.0~b1",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/jailbreak-resources/",
       "shortDescription": "Resources used by KPPLess Jailbreaks",
