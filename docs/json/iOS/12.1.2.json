@@ -1376,6 +1376,26 @@
               "calculatedStatus": "Unknown"
             }
           }
+        },
+        {
+          "tweakVersion": "1.4.2-5",
+          "iOSVersion": "12.1.2",
+          "repository": "TIGI Software",
+          "date": "2019-02-24T13:08:16Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
         }
       ]
     },
@@ -13437,6 +13457,39 @@
       ]
     },
     {
+      "id": "com.officialscheduler.mterminal",
+      "name": "MTerminal",
+      "latest": "1.4-5",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.officialscheduler.mterminal/",
+      "shortDescription": "A MobileTerminal fork",
+      "category": "Utilities",
+      "author": "lordscotland",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.4-5",
+          "iOSVersion": "12.1.2",
+          "repository": "BigBoss",
+          "date": "2019-02-23T05:27:26Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "mterminal",
       "name": "MTerminal",
       "latest": "1.4-6",
@@ -13459,39 +13512,6 @@
             "good": 3,
             "bad": 0,
             "total": 3,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.officialscheduler.mterminal",
-      "name": "MTerminal",
-      "latest": "1.4-5",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.officialscheduler.mterminal/",
-      "shortDescription": "A MobileTerminal fork",
-      "category": "Utilities",
-      "author": "lordscotland",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.4-5",
-          "iOSVersion": "12.1.2",
-          "repository": "BigBoss",
-          "date": "2019-02-23T05:27:26Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -13775,22 +13795,22 @@
       ]
     },
     {
-      "id": "ncurses",
+      "id": "ncurses5-libs",
       "name": "New Curses",
-      "latest": "6.1-1",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/ncurses/",
+      "latest": "5.9-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:02:12Z",
+      "date": "2018-10-14T00:25:17Z",
       "versions": [
         {
-          "tweakVersion": "6.1-1",
+          "tweakVersion": "5.9-1",
           "iOSVersion": "12.1.2",
           "repository": "Bingner/Elucubratus",
-          "date": "2019-02-24T03:42:39Z",
+          "date": "2019-02-24T03:42:31Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -13809,22 +13829,22 @@
       ]
     },
     {
-      "id": "ncurses5-libs",
+      "id": "ncurses",
       "name": "New Curses",
-      "latest": "5.9-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
+      "latest": "6.1-1",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/ncurses/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-14T00:25:17Z",
+      "date": "2018-03-04T19:02:12Z",
       "versions": [
         {
-          "tweakVersion": "5.9-1",
+          "tweakVersion": "6.1-1",
           "iOSVersion": "12.1.2",
           "repository": "Bingner/Elucubratus",
-          "date": "2019-02-24T03:42:31Z",
+          "date": "2019-02-24T03:42:39Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -19153,22 +19173,22 @@
       ]
     },
     {
-      "id": "com.spicat.transparentcamerabar",
+      "id": "org.thebigboss.transparentcamerabar",
       "name": "TransparentCameraBar",
-      "latest": "1.8",
-      "repository": "Spica T Repo",
-      "url": "http://cydia.saurik.com/package/com.spicat.transparentcamerabar/",
+      "latest": "1.7.6",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.transparentcamerabar/",
       "shortDescription": "Set opacity, hide and shrink camera bars.",
       "category": "Tweaks",
-      "author": "SpicaT",
+      "author": "PoomSmart",
       "commercial": false,
-      "date": "2018-07-27T06:41:33Z",
+      "date": "2018-05-06T04:51:31Z",
       "versions": [
         {
-          "tweakVersion": "1.8",
+          "tweakVersion": "1.7.6",
           "iOSVersion": "12.1.2",
-          "repository": "Spica T Repo",
-          "date": "2019-02-23T14:41:14Z",
+          "repository": "BigBoss",
+          "date": "2019-02-24T09:44:41Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -19187,22 +19207,22 @@
       ]
     },
     {
-      "id": "org.thebigboss.transparentcamerabar",
+      "id": "com.spicat.transparentcamerabar",
       "name": "TransparentCameraBar",
-      "latest": "1.7.6",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.transparentcamerabar/",
+      "latest": "1.8",
+      "repository": "Spica T Repo",
+      "url": "http://cydia.saurik.com/package/com.spicat.transparentcamerabar/",
       "shortDescription": "Set opacity, hide and shrink camera bars.",
       "category": "Tweaks",
-      "author": "PoomSmart",
+      "author": "SpicaT",
       "commercial": false,
-      "date": "2018-05-06T04:51:31Z",
+      "date": "2018-07-27T06:41:33Z",
       "versions": [
         {
-          "tweakVersion": "1.7.6",
+          "tweakVersion": "1.8",
           "iOSVersion": "12.1.2",
-          "repository": "BigBoss",
-          "date": "2019-02-24T09:44:41Z",
+          "repository": "Spica T Repo",
+          "date": "2019-02-23T14:41:14Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -19868,40 +19888,6 @@
       ]
     },
     {
-      "id": "com.ruler225.videohud",
-      "name": "VideoHUD",
-      "latest": "2.3",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.ruler225.videohud/",
-      "shortDescription": "iOS 11 video player HUD used systemwide!",
-      "category": "Tweaks",
-      "author": "Youssef Mikhail",
-      "commercial": false,
-      "date": "2018-03-11T13:46:33Z",
-      "versions": [
-        {
-          "tweakVersion": "2.3",
-          "iOSVersion": "12.1.2",
-          "repository": "BigBoss",
-          "date": "2019-02-22T23:20:19Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 7,
-            "bad": 0,
-            "total": 7,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.yourepo.kiiimo.videohud",
       "name": "VideoHUD",
       "latest": "1.3-1+debug",
@@ -19924,6 +19910,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.ruler225.videohud",
+      "name": "VideoHUD",
+      "latest": "2.3",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.ruler225.videohud/",
+      "shortDescription": "iOS 11 video player HUD used systemwide!",
+      "category": "Tweaks",
+      "author": "Youssef Mikhail",
+      "commercial": false,
+      "date": "2018-03-11T13:46:33Z",
+      "versions": [
+        {
+          "tweakVersion": "2.3",
+          "iOSVersion": "12.1.2",
+          "repository": "BigBoss",
+          "date": "2019-02-22T23:20:19Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 7,
+            "bad": 0,
+            "total": 7,
             "arch32": {
               "total": 0,
               "good": 0,
