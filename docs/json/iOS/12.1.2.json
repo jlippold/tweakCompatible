@@ -1143,9 +1143,9 @@
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
-            "good": 1,
+            "good": 2,
             "bad": 0,
-            "total": 1,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -3601,7 +3601,7 @@
     {
       "id": "coreutils",
       "name": "Core Utilities",
-      "latest": "8.30-2",
+      "latest": "8.30",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/coreutils/",
       "shortDescription": "core set of Unix shell utilities from GNU",
@@ -3939,10 +3939,10 @@
     {
       "id": "cydia",
       "name": "Cydia Installer",
-      "latest": "1.1.32~b12",
+      "latest": "2.1",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia/",
-      "shortDescription": "graphical iPhone front-end for APT",
+      "shortDescription": "Base scripts and tools to set up Cydia-compatible virtual dependencies",
       "category": "Packaging",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -3972,10 +3972,10 @@
     {
       "id": "mobilesubstrate",
       "name": "Cydia Substrate",
-      "latest": "0.9.7031",
+      "latest": "99.2",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/mobilesubstrate/",
-      "shortDescription": "powerful code insertion platform",
+      "shortDescription": "Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute",
       "category": "System",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -4273,7 +4273,7 @@
     {
       "id": "darwintools",
       "name": "Darwin Tools",
-      "latest": "1-6",
+      "latest": "1-7",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/darwintools/",
       "shortDescription": "startupfiletool, sw_vers",
@@ -4374,10 +4374,10 @@
     {
       "id": "dpkg",
       "name": "Debian Packager",
-      "latest": "1.18.25-6",
+      "latest": "1.19.4-1",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/dpkg/",
-      "shortDescription": "package maintainance tools from Debian",
+      "shortDescription": "package maintenance tools from Debian",
       "category": "Packaging",
       "author": "(null)",
       "commercial": false,
@@ -9438,6 +9438,39 @@
       ]
     },
     {
+      "id": "com.officialscheduler.mterminal",
+      "name": "MTerminal",
+      "latest": "1.4-5",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.officialscheduler.mterminal/",
+      "shortDescription": "A MobileTerminal fork",
+      "category": "Utilities",
+      "author": "lordscotland",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.4-5",
+          "iOSVersion": "12.1.2",
+          "repository": "BigBoss",
+          "date": "2019-02-23T05:27:26Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "mterminal",
       "name": "MTerminal",
       "latest": "1.4-6",
@@ -9460,39 +9493,6 @@
             "good": 3,
             "bad": 0,
             "total": 3,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.officialscheduler.mterminal",
-      "name": "MTerminal",
-      "latest": "1.4-5",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.officialscheduler.mterminal/",
-      "shortDescription": "A MobileTerminal fork",
-      "category": "Utilities",
-      "author": "lordscotland",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.4-5",
-          "iOSVersion": "12.1.2",
-          "repository": "BigBoss",
-          "date": "2019-02-23T05:27:26Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -10533,7 +10533,7 @@
     {
       "id": "openssh",
       "name": "OpenSSH",
-      "latest": "7.9p1-3",
+      "latest": "7.9p1",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/openssh/",
       "shortDescription": "secure remote access between machines",
@@ -11178,10 +11178,10 @@
     {
       "id": "me.alfhaily.rocket",
       "name": "Rocket for Instagram",
-      "latest": "3.0.17",
+      "latest": "3.3.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/me.alfhaily.rocket/",
-      "shortDescription": "posts and view stories anonymously and do much more",
+      "shortDescription": "Save posts and view stories anonymously and do much more",
       "category": "Tweaks",
       "author": "Majd Alfhaily",
       "commercial": false,
@@ -13071,7 +13071,7 @@
     {
       "id": "system-cmds",
       "name": "system-cmds",
-      "latest": "790.30.1-2",
+      "latest": "790-2",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/system-cmds/",
       "shortDescription": "iostat, login, passwd, sync, sysctl",
@@ -13845,7 +13845,7 @@
     {
       "id": "uikittools",
       "name": "UIKit Tools",
-      "latest": "1.1.13-4",
+      "latest": "1.1.12-coolstar2",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/uikittools/",
       "shortDescription": "UIKit/GraphicsServices command line access",
@@ -14067,22 +14067,22 @@
       ]
     },
     {
-      "id": "com.yourepo.ahmedbafkir.wadarkmode",
+      "id": "com.ahmedbafkir.wadarkmode",
       "name": "WADarkMode",
       "latest": "1.6",
-      "repository": "AhmedBafkir Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.ahmedbafkir.wadarkmode/",
-      "shortDescription": "WADarkMode - Dark Mode For WhatsApp !!",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.ahmedbafkir.wadarkmode/",
+      "shortDescription": "Dark Mode for WhatsApp!!",
       "category": "Tweaks",
-      "author": "AhmedBafkir",
+      "author": "Ahmed Bafkir",
       "commercial": false,
-      "date": "2019-02-23T12:33:47Z",
+      "date": "2018-03-30T11:47:15Z",
       "versions": [
         {
           "tweakVersion": "1.6",
           "iOSVersion": "12.1.2",
-          "repository": "AhmedBafkir Source - YouRepo",
-          "date": "2019-02-23T12:33:47Z",
+          "repository": "BigBoss",
+          "date": "2019-02-23T13:30:21Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -14101,22 +14101,22 @@
       ]
     },
     {
-      "id": "com.ahmedbafkir.wadarkmode",
+      "id": "com.yourepo.ahmedbafkir.wadarkmode",
       "name": "WADarkMode",
       "latest": "1.6",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.ahmedbafkir.wadarkmode/",
-      "shortDescription": "Dark Mode for WhatsApp!!",
+      "repository": "AhmedBafkir Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.ahmedbafkir.wadarkmode/",
+      "shortDescription": "WADarkMode - Dark Mode For WhatsApp !!",
       "category": "Tweaks",
-      "author": "Ahmed Bafkir",
+      "author": "AhmedBafkir",
       "commercial": false,
-      "date": "2018-03-30T11:47:15Z",
+      "date": "2019-02-23T12:33:47Z",
       "versions": [
         {
           "tweakVersion": "1.6",
           "iOSVersion": "12.1.2",
-          "repository": "BigBoss",
-          "date": "2019-02-23T13:30:21Z",
+          "repository": "AhmedBafkir Source - YouRepo",
+          "date": "2019-02-23T12:33:47Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
