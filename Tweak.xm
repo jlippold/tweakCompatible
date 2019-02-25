@@ -676,7 +676,7 @@ static void fullList() {
 		userInfo = @{
 			@"deviceId" : deviceId, 
 			@"iOSVersion" : systemVersion,
-			@"tweakCompatVersion": @"0.1.0",
+			@"tweakCompatVersion": @"0.1.1",
 			@"packageIndexed": @(packageExists),
 			@"packageVersionIndexed": @(versionExists),
 			@"packageStatus": packageStatus,
