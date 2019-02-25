@@ -19,29 +19,31 @@
 
 Package *package;
 
-UIView *overlay;
-UIView *miniOverlay;
-UITextView *miniTextView;
-UIImageView *miniImageView;
-UIScrollView *scrollView;
-UIPageControl *pageControl;
 NSMutableDictionary *all_packages;
+UIBarButtonItem *btnStatus;
 
 NSString *workingURL = nil;
 NSString *notWorkingURL = nil;
 NSString *tweakURL = nil;
+NSString *detailedStatus;
+
+UIColor *redColor;
+UIColor *greenColor;
+UIColor *blueColor;
+UIColor *yellowColor;
+UIColor *backgroundColor;
+UIColor *navigationBarColor;
+UIColor *titleColor;
 
 //settings
-BOOL darkMode;
-BOOL startMinimized;
 BOOL useIcons;
 BOOL hideUnknown;
 NSString *overrideVersion;
+NSMutableDictionary *allItems;
+
 
 static void loadPrefs() {
 	NSMutableDictionary *settings = [[NSMutableDictionary alloc] initWithContentsOfFile:SETTINGS_PATH];
-	darkMode = [settings objectForKey:@"dark"] ? [[settings objectForKey:@"dark"] boolValue] : NO;
-	startMinimized = [settings objectForKey:@"mini"] ? [[settings objectForKey:@"mini"] boolValue] : NO;
 	useIcons = [settings objectForKey:@"showIcon"] ? [[settings objectForKey:@"showIcon"] boolValue] : YES;
 	hideUnknown = [settings objectForKey:@"hideUnknown"] ? [[settings objectForKey:@"hideUnknown"] boolValue] : NO;
 	overrideVersion = [settings objectForKey:@"iOSVersion"] ? [settings objectForKey:@"iOSVersion"] : @"";
@@ -167,7 +169,6 @@ static void fullList() {
 		[cell.contentView addSubview:iv];	
 
 
-
 }
 
 
@@ -279,7 +280,7 @@ static void fullList() {
 		UIWebView *uiWebView = [[[UIWebView alloc] initWithFrame: tableView.frame] autorelease];
 		uiWebView.delegate = self;
 		uiWebView.scrollView.contentInset = UIEdgeInsetsMake(0,0,120,0);
-
+		webViewController.title = @"tweakCompatible";
 		[uiWebView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"https://jlippold.github.io/tweakCompatible/#cydia"]]];
 		[webViewController.view addSubview: uiWebView];
 		
@@ -294,150 +295,77 @@ static void fullList() {
 
 %hook CYPackageController 
 
-%new - (void)scrollViewDidScroll:(UIScrollView *)sv {
-    float fractionalPage = scrollView.contentOffset.x / scrollView.frame.size.width;
-    NSInteger page = lround(fractionalPage);
-    pageControl.currentPage = page;
-}
-
 - (void)applyRightButton {
 	%orig;
 
 	if (self.rightButton && !self.isLoading) {
 		package = MSHookIvar<Package *>(self, "package_");	
-
-		if ([self.view viewWithTag:987] == nil) {
-			[self performSelector:@selector(addToolbar)];	
-			[self performSelector:@selector(pullPackageInfo)];	
-		}
+		[self performSelector:@selector(createToolbar)];	
+		[self performSelector:@selector(pullPackageInfo)];	
 	}
 }
 
-%new - (void)addToolbar {
-	overlay = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height - 160, [[UIScreen mainScreen] bounds].size.width, 160)];
+- (void)viewWillAppear:(BOOL)animated {
+	%orig;
+    [self.navigationController setToolbarHidden:NO animated:NO];
+}
 
-	overlay.tag = 987;
-	overlay.hidden = YES;
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.navigationController setToolbarHidden:YES animated:NO];
+}
 
-	miniOverlay = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height - 80, [[UIScreen mainScreen] bounds].size.width, 80)];
-	
-	if (darkMode) {
-		overlay.backgroundColor = [UIColor colorWithRed:0.18 green:0.20 blue:0.20 alpha:1.0];
-		miniOverlay.backgroundColor = [UIColor colorWithRed:0.18 green:0.20 blue:0.20 alpha:1.0];
-	} else {
-		overlay.backgroundColor = [UIColor whiteColor];
-		miniOverlay.backgroundColor = [UIColor whiteColor];
-	}
-	
-	miniTextView = [[UITextView alloc] init];
-	miniTextView.text = @"";	 	
-	miniTextView.editable = NO;
-	miniTextView.backgroundColor = [UIColor clearColor];
-	[miniTextView setUserInteractionEnabled:NO];
-	[miniTextView setFont:[UIFont fontWithName:@"Helvetica" size:14]];
-	miniTextView.frame = CGRectMake(20, -2, [[UIScreen mainScreen] bounds].size.width, 80);
-	miniTextView.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);
-	[miniOverlay addSubview:miniTextView];
+%new - (void)createToolbar {
 
-	NSBundle *bundle = [[[NSBundle alloc] initWithPath:RESOURCE_PATH] autorelease];
-	miniImageView = [[UIImageView alloc] init];
-	miniImageView.image = [UIImage imageWithContentsOfFile:[bundle pathForResource:@"unknown" ofType:@"png"]];
-	miniImageView.frame = CGRectMake(4, 4, 24, 24);
-	[miniOverlay addSubview:miniImageView];
+	redColor = [UIColor colorWithRed:0.894 green:0.302 blue:0.259 alpha:1];
+	greenColor = [UIColor colorWithRed:0.224 green:0.792 blue:0.459 alpha:1];
+	blueColor = [UIColor colorWithRed:0.227 green:0.6 blue:0.847 alpha:1];
+	yellowColor = [UIColor colorWithRed:0.941 green:0.765 blue:0.188 alpha:1];
+	backgroundColor = [UIColor colorWithRed:0.953 green:0.949 blue:0.969 alpha:1];
+	navigationBarColor = [UIColor colorWithRed:0.969 green:0.969 blue:0.976 alpha:1];
+	titleColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1];
 
-	miniOverlay.hidden = YES;
+	if (NO) {
+        titleColor = [UIColor colorWithRed:0.937 green:0.937 blue:0.969 alpha:1.0];
+        navigationBarColor = [UIColor colorWithRed:0.122 green:0.137 blue:0.173 alpha:1.0];
+        backgroundColor = [UIColor colorWithRed:0.169 green:0.184 blue:0.22 alpha:1.0];
+        
+        redColor = [UIColor colorWithRed:0.616 green:0.043 blue:0.157 alpha:1.0];
+        blueColor = [UIColor colorWithRed:0.137 green:0.6 blue:0.984 alpha:1.0];
+        greenColor = [UIColor colorWithRed:0.016 green:0.341 blue:0.341 alpha:1.0];
+        yellowColor = [UIColor colorWithRed:0.871 green:0.651 blue:0.11 alpha:1.0];
+    } 
+    
+	self.navigationController.toolbar.translucent = YES;
+	self.navigationController.toolbar.backgroundColor = self.navigationController.navigationBar.backgroundColor;
+	self.navigationController.toolbar.tintColor = self.navigationController.navigationBar.tintColor;
+    self.navigationController.toolbar.barTintColor = self.navigationController.navigationBar.barTintColor;
+    
+	[self.navigationController setToolbarHidden:NO animated:NO];
+    
+    UIBarButtonItem *search = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(_loadInfoBtn:)];
+	UIBarButtonItem *submit = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(_addReview:)];
+    btnStatus = [[UIBarButtonItem alloc] initWithTitle:@"Unknown" style: UIBarButtonItemStyleBordered target:self action:@selector(_showDetails:)];
 
-	UISwipeGestureRecognizer *swipeUp = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(_show:)];
-	swipeUp.direction = UISwipeGestureRecognizerDirectionUp;
-	[miniOverlay addGestureRecognizer:swipeUp];
+	submit.tintColor = blueColor;
+	search.tintColor = blueColor;
+	btnStatus.tintColor = titleColor;
 
-	UITapGestureRecognizer *singleFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_show:)];
-	[miniOverlay addGestureRecognizer:singleFingerTap];
-
-	UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(_hide:)];
-	swipeDown.direction = UISwipeGestureRecognizerDirectionDown;
-	[overlay addGestureRecognizer:swipeDown];
-	
-
-	UIBarButtonItem *flex = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil ];
-
-	UIToolbar *bar = [[UIToolbar alloc] init];
-	[bar setBackgroundImage:[UIImage new] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
-
-	bar.clipsToBounds = YES;
-	bar.frame = CGRectMake(0, -4, [[UIScreen mainScreen] bounds].size.width, 40);
-	
-	UIBarButtonItem *tweakWorking = [[UIBarButtonItem alloc] initWithTitle:@"Works" style:UIBarButtonItemStylePlain target:self action:@selector(_markWorking:)];
-	UIBarButtonItem *tweakNotWorking = [[UIBarButtonItem alloc] initWithTitle:@"Broken" style:UIBarButtonItemStylePlain target:self action:@selector(_markNotWorking:)];
-	UIBarButtonItem *tweakInfo = [[UIBarButtonItem alloc] initWithTitle:@"Info" style:UIBarButtonItemStylePlain target:self action:@selector(_loadInfo:)];
-	UIBarButtonItem *tweakHide = [[UIBarButtonItem alloc] initWithTitle:@"Hide" style:UIBarButtonItemStylePlain target:self action:@selector(_hide:)];
-	
-	if (darkMode) {
-		UIColor *dark = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];
-		miniTextView.textColor = dark;
-		[tweakWorking setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
-		[tweakNotWorking setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
-		[tweakInfo setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
-		[tweakHide setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: dark, NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
-	}
-
-	NSArray *btn = [NSArray arrayWithObjects: tweakWorking, flex, tweakNotWorking, flex, tweakInfo, nil];
-	[bar setItems:btn animated:NO];
-
-	self.webView.scrollView.contentInset = UIEdgeInsetsMake(85,0,160,0);
-
-	scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 22, [[UIScreen mainScreen] bounds].size.width, 90)];
-	scrollView.pagingEnabled = YES;
-	scrollView.showsHorizontalScrollIndicator = NO;
-	scrollView.delegate = self;
-
-	UITapGestureRecognizer *singleFingerTap2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_hide:)];
-	[scrollView addGestureRecognizer:singleFingerTap2];
-
-	pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 97, [[UIScreen mainScreen] bounds].size.width, 10)];
-
-	if (darkMode) {
-		pageControl.pageIndicatorTintColor = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];
-		pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
-	} else {
-		pageControl.pageIndicatorTintColor = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];;
-		pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
-	}
-	pageControl.currentPage = 0;
-	pageControl.hidden = YES;
-	
-	[overlay addSubview:scrollView];
-	[overlay addSubview:bar];
-	[overlay addSubview:pageControl];
-
-	UIView *topBorder = [UIView new];
-
-	topBorder.backgroundColor = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];;
-	topBorder.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 1);
-	[overlay addSubview:topBorder];
-
-	UIView *miniTopBorder = [UIView new];
-
-	miniTopBorder.backgroundColor = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];;
-	miniTopBorder.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 1);
-	[miniOverlay addSubview:miniTopBorder];
-
-	[self.view addSubview:overlay];
-	[self.view addSubview:miniOverlay];
+    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+	UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithTitle:@" " style: UIBarButtonItemStyleBordered target:self action:nil];
+    self.toolbarItems = [NSArray arrayWithObjects:btnStatus, flexibleSpace, search, fixedSpace, submit, nil];
+ 
 }
 
 %new - (void)_hide:(UIBarButtonItem *)sender {
-	overlay.hidden = YES;
-	miniOverlay.hidden = NO;
+	[self.navigationController setToolbarHidden:YES animated:NO];
 }
 
 %new - (void)_show:(UIBarButtonItem *)sender {
-	overlay.hidden = NO;
-	miniOverlay.hidden = YES;
+	[self.navigationController setToolbarHidden:NO animated:NO];
 }
 
 
-%new - (void)_markWorking:(UIBarButtonItem *)sender {
+%new - (void)_markWorking {
 	if (workingURL != nil) {
 		NSURL *url = [NSURL URLWithString:workingURL];
 		[self.webView loadRequest:[NSURLRequest requestWithURL:url]];
@@ -447,7 +375,7 @@ static void fullList() {
 	}
 }
 
-%new - (void)_markNotWorking:(UIBarButtonItem *)sender {
+%new - (void)_markNotWorking {
 	if (notWorkingURL != nil) {
 		NSURL *url = [NSURL URLWithString:notWorkingURL];
 		[self.webView loadRequest:[NSURLRequest requestWithURL:url]];
@@ -457,7 +385,16 @@ static void fullList() {
 	}
 }
 
-%new - (void)_loadInfo:(UIBarButtonItem *)sender {
+%new - (void)_loadInfoBtn:(UIBarButtonItem *)sender {
+	if (tweakURL != nil) {
+		NSURL *url = [NSURL URLWithString:tweakURL];
+		[self.webView loadRequest:[NSURLRequest requestWithURL:url]];
+	} else {
+		[self performSelector:@selector(showAlert:) 
+			withObject:@"There is no additional information available for this tweak"];
+	}
+}
+%new - (void)_loadInfoBtn {
 	if (tweakURL != nil) {
 		NSURL *url = [NSURL URLWithString:tweakURL];
 		[self.webView loadRequest:[NSURLRequest requestWithURL:url]];
@@ -467,46 +404,85 @@ static void fullList() {
 	}
 }
 
-
-%new - (void)addLabels:(NSData *)data foriOSVersions:(NSMutableArray *)allIOSVersions {
-	scrollView.contentSize = CGSizeMake([[UIScreen mainScreen] bounds].size.width * [allIOSVersions count], scrollView.frame.size.height);
-	scrollView.backgroundColor = [UIColor clearColor];
-
-	pageControl.numberOfPages = scrollView.contentSize.width/scrollView.frame.size.width;
-	if (pageControl.numberOfPages > 1) {
-		pageControl.hidden = NO;
+%new - (void)_versions {
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"tweakCompatible"
+                                                                   message:@"Status against other major iOS versions"
+                                                            preferredStyle:UIAlertControllerStyleActionSheet];
+    
+	for (NSString *iosVersion in [allItems allKeys]) {
+		UIAlertAction *version = [UIAlertAction actionWithTitle:[NSString stringWithFormat:@"iOS %@: %@", iosVersion, allItems[iosVersion]]
+																		style:UIAlertActionStyleDefault
+																	handler:^(UIAlertAction * action) {}];
+		[alert addAction:version];
 	}
-	int i = 0;
-	for (i = 0; i < [allIOSVersions count]; i++) {
-		NSString *iOSVersion = [allIOSVersions objectAtIndex:i];
-		UITextView *textView = [[UITextView alloc] init];
-		textView.text = iOSVersion;	 
-		textView.tag = i+300;
-		textView.editable = NO;
-		textView.backgroundColor = [UIColor clearColor];
-		if (darkMode) {
-			textView.textColor = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0];
-		}
-		[textView setUserInteractionEnabled:NO];
-		[textView setFont:[UIFont fontWithName:@"Helvetica" size:14]];
-		textView.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width * i, 0, [[UIScreen mainScreen] bounds].size.width, 80);
-		textView.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);
-
-		UIView *indicator = [UIView new];
-		indicator.backgroundColor = [UIColor grayColor];
-		indicator.frame = CGRectMake(([[UIScreen mainScreen] bounds].size.width * i) + 10, 88, [[UIScreen mainScreen] bounds].size.width - 20, 1);
-		indicator.tag = i+400;
-		
-		[scrollView addSubview:textView];
-		[scrollView addSubview:indicator];
-	}
-
-
-
 	
+	UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Close"
+                                                            style:UIAlertActionStyleDestructive
+                                                          handler:^(UIAlertAction * action) {}];
+	[alert addAction:cancel];
+	[self.navigationController presentViewController:alert animated:YES completion:nil];
+}
+
+
+%new - (void)_showDetails:(UIBarButtonItem *)sender {
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Status"
+                                                                   message:detailedStatus
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *versions = [UIAlertAction actionWithTitle:[NSString stringWithFormat:@"Show Other Versions (%lu)", (unsigned long)[[allItems allKeys] count]]
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {
+		[self performSelector:@selector(_versions)];	
+	}];
+    UIAlertAction *reviews = [UIAlertAction actionWithTitle:@"Show Reviews"
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {
+		[self performSelector:@selector(_loadInfoBtn)];	
+	}];
+	UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Close"
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+	if ([[allItems allKeys] count] > 1) {
+		[alert addAction:versions];
+	}
+	if (tweakURL) {
+		[alert addAction:reviews];
+	}
+	[alert addAction:ok];
+	[self.navigationController presentViewController:alert animated:YES completion:nil];
+
+}
+
+%new - (void)_addReview:(UIBarButtonItem *)sender {
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Submit Review"
+                                                                   message:@""
+                                                            preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *working = [UIAlertAction actionWithTitle:@"Working"
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {
+		[self performSelector:@selector(_markWorking)];	
+	}];
+    UIAlertAction *notworking = [UIAlertAction actionWithTitle:@"Not working"
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {
+		[self performSelector:@selector(_markNotWorking)];	
+	}];
+	UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel"
+                                                            style:UIAlertActionStyleDestructive
+                                                          handler:^(UIAlertAction * action) {}];
+	[alert addAction:working];
+	[alert addAction:notworking];
+	[alert addAction:cancel];
+	[self.navigationController presentViewController:alert animated:YES completion:nil];
+
 }
 
 %new - (void)pullPackageInfo {
+
+	detailedStatus = [@"A matching version of this tweak for this iOS version could not be found. "
+					"Please submit a review if you choose to install." retain];
+
 	if (!package.id) {
 		return;
 	}
@@ -524,7 +500,7 @@ static void fullList() {
 	
 	NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
 
-	NSURL *url =  [NSURL URLWithString:[NSString 
+	NSURL *url = [NSURL URLWithString:[NSString 
 									stringWithFormat:@"https://jlippold.github.io/tweakCompatible/json/packages/%@.json", 
 									package.id]];
 
@@ -548,11 +524,6 @@ static void fullList() {
 		}
 	}
 	
-	[self performSelector:@selector(addLabels:foriOSVersions:) 
-									withObject:data 
-									withObject:allIOSVersions];
-
-
 	BOOL packageInstalled = NO;
 	if (package.installed) {
 		packageInstalled = YES;
@@ -587,14 +558,13 @@ static void fullList() {
 
 	int i = 0;
 	NSDictionary *userInfo;
-	
-	miniTextView.text = [NSString stringWithFormat:@"TweakCompatible %@ Status: Unknown", overrideVersion];
-	
+	allItems = [[[NSMutableDictionary alloc] init] retain]; 
+
 	for (i = [allIOSVersions count] - 1; i >= 0; i--) {
 		
 		foundVersion = nil;
 		NSString *iOSVersion = [allIOSVersions objectAtIndex:i];
-		
+
 		// NSLog(@"tweakCompat iOSVersion: %@", iOSVersion);
 		NSString *packageStatus = @"Unknown";
 		NSString *packageStatusExplaination = @"This tweak has not been reviewed. Please submit a review if you choose to install.";
@@ -681,53 +651,25 @@ static void fullList() {
 			}
 		}
 
+		if (!allItems[iOSVersion]) {
+			allItems[iOSVersion] = packageStatus; 
+		}
 		
-		NSString *desc = [NSString stringWithFormat:@"iOS %@ %@: %@", iOSVersion, packageStatus, packageStatusExplaination];
-		//NSLog(@"tweakCompat: %@", desc);
-		UITextView *thisLabel = [self.view viewWithTag:i+300];
-
-		NSMutableAttributedString *attString=[[NSMutableAttributedString alloc] initWithString:desc];
-
-		NSRange boldRange = [desc rangeOfString:[NSString stringWithFormat:@"iOS %@ %@", iOSVersion, packageStatus]];
-		NSRange regularRange = [desc rangeOfString:packageStatusExplaination];
-
-		[attString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Helvetica-Bold" size:14.0] range:boldRange];
-		[attString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Helvetica" size:14.0] range:regularRange];
-	
-		UIView *indicator = [self.view viewWithTag:i+400];
-		if ([packageStatus isEqualToString:@"Working"]) {
-			UIColor *green = [UIColor colorWithRed:0.16 green:0.65 blue:0.27 alpha:1.0];
-			indicator.backgroundColor = green;
-    		[attString addAttribute:NSForegroundColorAttributeName value:green range:boldRange];
-		} else if ([packageStatus isEqualToString:@"Not working"]) {
-			UIColor *red = [UIColor colorWithRed:0.86 green:0.21 blue:0.27 alpha:1.0];
-			indicator.backgroundColor = red;
-    		[attString addAttribute:NSForegroundColorAttributeName value:red range:boldRange];
-		} else if ([packageStatus isEqualToString:@"Likely working"]) {
-			UIColor *yellow = [UIColor colorWithRed:1.00 green:0.76 blue:0.03 alpha:1.0];
-			indicator.backgroundColor = yellow;
-    		[attString addAttribute:NSForegroundColorAttributeName value:yellow range:boldRange];
-		} else {
-			if (darkMode) {
-				[attString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0] range:boldRange];
-			}
-		}
-
-		if (darkMode) {
-			[attString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:1.0] range:regularRange];
-		}
-
-		[thisLabel setAttributedText:attString];
-
 		//Mini status
 		if (foundVersion && [overrideVersion isEqualToString:iOSVersion]) {
-			miniTextView.text = [NSString stringWithFormat:@"TweakCompatible %@ Status: %@", overrideVersion, packageStatus];
 			
-			NSBundle *bundle = [[[NSBundle alloc] initWithPath:RESOURCE_PATH] autorelease];
-			NSString *status = packageStatus;
-			status = [[status stringByReplacingOccurrencesOfString:@" " withString:@""] lowercaseString];
-			NSString *imagePath = [bundle pathForResource:status ofType:@"png"];
-			miniImageView.image = [UIImage imageWithContentsOfFile:imagePath];
+			btnStatus.title = packageStatus;
+		
+			detailedStatus = [[NSString stringWithFormat:@"iOS %@ %@: %@", iOSVersion, packageStatus, packageStatusExplaination] retain];;
+			if ([packageStatus isEqualToString:@"Working"]) {
+				btnStatus.tintColor = greenColor;
+			}
+			if ([packageStatus isEqualToString:@"Likely working"]) {
+				btnStatus.tintColor = yellowColor;
+			}
+			if ([packageStatus isEqualToString:@"Not working"]) {
+				btnStatus.tintColor = redColor;
+			}
 		}
 
 		//build a dict with all found properties
@@ -754,6 +696,8 @@ static void fullList() {
 			@"author": packageAuthor,
 			@"url": packageUrl
 		};
+
+
 	}
 
 
@@ -804,14 +748,7 @@ static void fullList() {
 		notWorkingURL = [[NSString stringWithFormat:@"%@submit.html#!/%@/notworking/%@", 
 			baseURI, userInfo[@"packageId"], userInfoBase64] retain];
 	}
-
-	if (startMinimized) {
-		overlay.hidden = YES;
-		miniOverlay.hidden = NO;
-	} else {
-		overlay.hidden = NO;
-		miniOverlay.hidden = YES;
-	}
+	
 }
 
 

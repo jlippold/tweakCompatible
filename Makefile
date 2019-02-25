@@ -12,7 +12,7 @@ tweakCompatible_FRAMEWORKS = UIKit
 include $(THEOS_MAKE_PATH)/tweak.mk
 
 after-install::
-	install.exec "killall Cydia; sleep 0.5; activator send com.saurik.Cydia"
+	install.exec "killall Cydia; sleep 0.5; open com.saurik.Cydia"
 
 SUBPROJECTS += tweakcompatible_prefs
 include $(THEOS_MAKE_PATH)/aggregate.mk
