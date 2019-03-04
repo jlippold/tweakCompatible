@@ -150,25 +150,32 @@ static void fullList() {
 			}
 		}
 
-		UIImageView *iv = [[[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:imagePath]] autorelease];
-		//NSLog(@"height: %ld", (long)cell.bounds.size.height);
-		//NSLog(@"%@", NSStringFromClass(cell));
+		UIImageView *iv;
+		UIImage *icon = [UIImage imageWithContentsOfFile:imagePath];
+		if ((iv = [cell viewWithTag:2727])) {
+			iv.image = icon;
+		} 
 
-		if ([imagePath isEqualToString:[bundle pathForResource:@"unknown" ofType:@"png"]] && hideUnknown) {
-			return;
+		else if ((iv = [[[UIImageView alloc] initWithImage:icon] autorelease])) {
+
+			iv.tag = 2727;
+			//NSLog(@"height: %ld", (long)cell.bounds.size.height);
+			//NSLog(@"%@", NSStringFromClass(cell));
+
+			if ([imagePath isEqualToString:[bundle pathForResource:@"unknown" ofType:@"png"]] && hideUnknown) {
+				return;
+			}
+
+			if ((long)cell.bounds.size.height == 38) { //search view
+				iv.frame = CGRectMake(16,16,16,16);
+			} else {
+				iv.frame = CGRectMake(28,28,16,16);
+			}
+			
+			iv.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin;
+			iv.contentMode = UIViewContentModeScaleAspectFit;
+			[cell.contentView addSubview:iv];	
 		}
-
-        if ((long)cell.bounds.size.height == 38) { //search view
-			iv.frame = CGRectMake(16,16,16,16);
-		} else {
-			iv.frame = CGRectMake(28,28,16,16);
-		}
-		
-		iv.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-		iv.contentMode = UIViewContentModeScaleAspectFit;
-		[cell.contentView addSubview:iv];	
-
-
 }
 
 
