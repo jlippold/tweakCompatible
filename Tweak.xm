@@ -127,7 +127,7 @@ static void fullList() {
 			return;
 		}
 		
-		NSBundle *bundle = [[[NSBundle alloc] initWithPath:RESOURCE_PATH] autorelease];
+		NSBundle *bundle = [[NSBundle alloc] initWithPath:RESOURCE_PATH];
 		NSString *imagePath = [bundle pathForResource:@"unknown" ofType:@"png"];
 		NSString *packageId = [NSString stringWithFormat:@"%@", package.id];
 		
@@ -150,25 +150,32 @@ static void fullList() {
 			}
 		}
 
-		UIImageView *iv = [[[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:imagePath]] autorelease];
-		//NSLog(@"height: %ld", (long)cell.bounds.size.height);
-		//NSLog(@"%@", NSStringFromClass(cell));
+		UIImageView *iv;
+		UIImage *icon = [UIImage imageWithContentsOfFile:imagePath];
+		if ((iv = [cell viewWithTag:2727])) {
+			iv.image = icon;
+		} 
 
-		if ([imagePath isEqualToString:[bundle pathForResource:@"unknown" ofType:@"png"]] && hideUnknown) {
-			return;
+		else if ((iv = [[UIImageView alloc] initWithImage:icon])) {
+
+			iv.tag = 2727;
+			//NSLog(@"height: %ld", (long)cell.bounds.size.height);
+			//NSLog(@"%@", NSStringFromClass(cell));
+
+			if ([imagePath isEqualToString:[bundle pathForResource:@"unknown" ofType:@"png"]] && hideUnknown) {
+				return;
+			}
+
+			if ((long)cell.bounds.size.height == 38) { //search view
+				iv.frame = CGRectMake(16,16,16,16);
+			} else {
+				iv.frame = CGRectMake(28,28,16,16);
+			}
+			
+			iv.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin;
+			iv.contentMode = UIViewContentModeScaleAspectFit;
+			[cell.contentView addSubview:iv];	
 		}
-
-        if ((long)cell.bounds.size.height == 38) { //search view
-			iv.frame = CGRectMake(16,16,16,16);
-		} else {
-			iv.frame = CGRectMake(28,28,16,16);
-		}
-		
-		iv.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-		iv.contentMode = UIViewContentModeScaleAspectFit;
-		[cell.contentView addSubview:iv];	
-
-
 }
 
 
@@ -190,7 +197,7 @@ static void fullList() {
 		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tweakCompat"];
 		
 		if (cell == nil) {
-			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"tweakCompat"] autorelease];
+			cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"tweakCompat"];
 
 			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 			cell.textLabel.text = @"Tweak Compatible";
@@ -198,7 +205,7 @@ static void fullList() {
 			cell.detailTextLabel.textColor = [UIColor grayColor];
 			[cell.textLabel setFont:[UIFont fontWithName:@"Helvetica" size:18]];
 			
-			NSBundle *bundle = [[[NSBundle alloc] initWithPath:RESOURCE_PATH] autorelease];
+			NSBundle *bundle = [[NSBundle alloc] initWithPath:RESOURCE_PATH];
 			NSString *path = [bundle pathForResource:@"working" ofType:@"png"];
 			UIImage *theImage = [UIImage imageWithContentsOfFile:path];
 			cell.imageView.image = theImage;
@@ -230,8 +237,8 @@ static void fullList() {
 		//HBLogDebug(@"PackageName: %@", packageName);
 		if (!package) {
 			url = [url stringByReplacingOccurrencesOfString:@"/package.html" withString:@"/cydia.html"];
-			UIViewController *webViewController = [[UIViewController alloc] autorelease];
-			UIWebView *uiWebView = [[[UIWebView alloc] initWithFrame: webView.frame] autorelease];
+			UIViewController *webViewController = [[UIViewController alloc] init];
+			UIWebView *uiWebView = [[UIWebView alloc] initWithFrame: webView.frame];
 			uiWebView.scrollView.contentInset = UIEdgeInsetsMake(0,0,120,0);
 			[uiWebView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: url]]];
 			[webViewController.view addSubview: uiWebView];
@@ -239,7 +246,7 @@ static void fullList() {
 			
 			[self.navigationController pushViewController: webViewController animated:YES];
 		} else {
-			CYPackageController *view = [[[%c(CYPackageController) alloc] initWithDatabase:database forPackage:[package id] withReferrer:@""] autorelease];
+			CYPackageController *view = [[%c(CYPackageController) alloc] initWithDatabase:database forPackage:[package id] withReferrer:@""];
 			[view setDelegate:self.delegate];
 			[[self navigationController] pushViewController:view animated:YES];
 		}
@@ -276,8 +283,8 @@ static void fullList() {
 	if (indexPath.section == 0 && indexPath.row == 1) {
 		[tableView deselectRowAtIndexPath:indexPath animated:YES];
 
-		UIViewController *webViewController = [[UIViewController alloc] autorelease];
-		UIWebView *uiWebView = [[[UIWebView alloc] initWithFrame: tableView.frame] autorelease];
+		UIViewController *webViewController = [[UIViewController alloc] init];
+		UIWebView *uiWebView = [[UIWebView alloc] initWithFrame: tableView.frame];
 		uiWebView.delegate = self;
 		uiWebView.scrollView.contentInset = UIEdgeInsetsMake(0,0,120,0);
 		webViewController.title = @"tweakCompatible";

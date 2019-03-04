@@ -5,6 +5,7 @@ tweakCompatible_prefs_FILES = JTCRootListController.m
 tweakCompatible_prefs_INSTALL_PATH = /Library/PreferenceBundles
 tweakCompatible_prefs_FRAMEWORKS = UIKit
 tweakCompatible_prefs_PRIVATE_FRAMEWORKS = Preferences
+tweakCompatible_prefs_CFLAGS += -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/bundle.mk
 
