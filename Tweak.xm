@@ -324,17 +324,6 @@ static void fullList() {
 	navigationBarColor = [UIColor colorWithRed:0.969 green:0.969 blue:0.976 alpha:1];
 	titleColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1];
 
-	if (NO) {
-        titleColor = [UIColor colorWithRed:0.937 green:0.937 blue:0.969 alpha:1.0];
-        navigationBarColor = [UIColor colorWithRed:0.122 green:0.137 blue:0.173 alpha:1.0];
-        backgroundColor = [UIColor colorWithRed:0.169 green:0.184 blue:0.22 alpha:1.0];
-        
-        redColor = [UIColor colorWithRed:0.616 green:0.043 blue:0.157 alpha:1.0];
-        blueColor = [UIColor colorWithRed:0.137 green:0.6 blue:0.984 alpha:1.0];
-        greenColor = [UIColor colorWithRed:0.016 green:0.341 blue:0.341 alpha:1.0];
-        yellowColor = [UIColor colorWithRed:0.871 green:0.651 blue:0.11 alpha:1.0];
-    } 
-    
 	self.navigationController.toolbar.translucent = YES;
 	self.navigationController.toolbar.backgroundColor = self.navigationController.navigationBar.backgroundColor;
 	self.navigationController.toolbar.tintColor = self.navigationController.navigationBar.tintColor;
@@ -345,14 +334,18 @@ static void fullList() {
     UIBarButtonItem *search = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(_loadInfoBtn:)];
 	UIBarButtonItem *submit = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(_addReview:)];
     btnStatus = [[UIBarButtonItem alloc] initWithTitle:@"Unknown" style: UIBarButtonItemStyleBordered target:self action:@selector(_showDetails:)];
+	UIBarButtonItem *info = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(_showDetails:)];
 
+	info.tintColor = blueColor;
 	submit.tintColor = blueColor;
 	search.tintColor = blueColor;
 	btnStatus.tintColor = titleColor;
 
     UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
-	UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithTitle:@" " style: UIBarButtonItemStyleBordered target:self action:nil];
-    self.toolbarItems = [NSArray arrayWithObjects:btnStatus, flexibleSpace, search, fixedSpace, submit, nil];
+	//UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithTitle:@" " style: UIBarButtonItemStyleBordered target:self action:nil];
+	UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:self action:nil];
+	fixedSpace.width = 22;
+    self.toolbarItems = [NSArray arrayWithObjects:info, btnStatus, flexibleSpace, search, fixedSpace, submit, nil];
  
 }
 
@@ -676,7 +669,7 @@ static void fullList() {
 		userInfo = @{
 			@"deviceId" : deviceId, 
 			@"iOSVersion" : systemVersion,
-			@"tweakCompatVersion": @"0.1.1",
+			@"tweakCompatVersion": @"0.1.2",
 			@"packageIndexed": @(packageExists),
 			@"packageVersionIndexed": @(versionExists),
 			@"packageStatus": packageStatus,
