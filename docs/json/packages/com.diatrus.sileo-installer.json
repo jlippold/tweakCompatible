@@ -1,10 +1,10 @@
 {
   "id": "com.diatrus.sileo-installer",
   "name": "Sileo for unc0ver",
-  "latest": "0.9-4",
+  "latest": "1.0",
   "repository": "Diatrus Sileo",
   "url": "http://cydia.saurik.com/package/com.diatrus.sileo-installer/",
-  "shortDescription": "Safely install official Sileo on unc0ver. Run the command \"installsileo\" over ssh or MTerminal to install, and \"removesileo\" to uninstall. For it to work properly, rejailbreak with Reload System Daemons turned on after installing.",
+  "shortDescription": "Safely install official Sileo on unc0ver. Run the command \"installsileo\" over ssh or MTerminal to install, and \"removesileo\" to uninstall. For it to work properly, rejailbreak with Reload System Daemons turned on before installing.",
   "category": "Utilities",
   "author": "Diatrus",
   "commercial": false,
@@ -117,6 +117,37 @@
           "date": "2019-03-03T09:44:34Z",
           "userName": "appledeej",
           "issueNumber": 71388,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "1.0",
+      "iOSVersion": "12.1.1",
+      "repository": "Sileo for unc0ver",
+      "date": "2019-03-04T07:52:27Z",
+      "outcome": {
+        "calculatedStatus": "Not working",
+        "percentage": 0,
+        "good": 0,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "not working",
+          "device": "iPhone10,6",
+          "issues": "",
+          "date": "2019-03-04T07:52:27Z",
+          "userName": "gena3ekiller",
+          "issueNumber": 71943,
           "arch32": false
         }
       ]
