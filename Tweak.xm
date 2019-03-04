@@ -322,7 +322,7 @@ static void fullList() {
 	yellowColor = [UIColor colorWithRed:0.941 green:0.765 blue:0.188 alpha:1];
 	backgroundColor = [UIColor colorWithRed:0.953 green:0.949 blue:0.969 alpha:1];
 	navigationBarColor = [UIColor colorWithRed:0.969 green:0.969 blue:0.976 alpha:1];
-	titleColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1];
+	titleColor = self.navigationController.navigationBar.tintColor;
 
 	self.navigationController.toolbar.translucent = YES;
 	self.navigationController.toolbar.backgroundColor = self.navigationController.navigationBar.backgroundColor;
