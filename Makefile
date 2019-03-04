@@ -8,6 +8,7 @@ include $(THEOS)/makefiles/bundle.mk
 
 tweakCompatible_FILES = Tweak.xm
 tweakCompatible_FRAMEWORKS = UIKit
+tweakCompatible_CFLAGS += -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 
