@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Add icon to the package listings with compatiblity status</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>bz.jed.tweakcompatible.prefbundle</string>
+			<key>key</key>
+			<string>showIcon</string>
+			<key>label</key>
+			<string>Add Icons</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enter iOS version to be used to match results. Leave blank for system default.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>bz.jed.tweakcompatible.prefbundle</string>
+			<key>isDecimalPad</key>
+			<true/>
+			<key>key</key>
+			<string>iOSVersion</string>
+			<key>label</key>
+			<string>iOS Version:</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Hide question icon on unknown packages</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>bz.jed.tweakcompatible.prefbundle</string>
+			<key>key</key>
+			<string>hideUnknown</string>
+			<key>label</key>
+			<string>Hide Unknown</string>
+		</dict>
+
+
+	</array>
+	<key>title</key>
+	<string>TweakCompatible</string>
+</dict>
+</plist>
