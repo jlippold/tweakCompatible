@@ -458,11 +458,11 @@
       "repository": "subdiox's Repo",
       "date": "2019-02-28T12:35:00Z",
       "outcome": {
-        "calculatedStatus": "Working",
-        "percentage": 100,
+        "calculatedStatus": "Likely working",
+        "percentage": 50,
         "good": 1,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -479,6 +479,15 @@
           "date": "2019-02-28T14:38:15Z",
           "userName": "Enkros",
           "issueNumber": 69415,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone8,4",
+          "issues": "Has a bundled sudo command which will conflict with your sudo. If you force dpkg to uninstall that dependency without uninstalling Slices, it will not go into safe mode. However, slices is still unstable and conflicts with Zenith/Apex",
+          "date": "2019-03-04T01:41:18Z",
+          "userName": "chexo3",
+          "issueNumber": 71797,
           "arch32": false
         }
       ]
