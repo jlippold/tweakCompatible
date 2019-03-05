@@ -228,6 +228,7 @@ static void fullList() {
 %new - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
 	NSString *url = [[request URL] absoluteString];
 	//HBLogDebug(@"URL: %@",url);
+
 	if ([url containsString:@"/tweakCompatible/package.html"]) {
 
 		NSString *packageName = [url stringByReplacingOccurrencesOfString:@"https://jlippold.github.io/tweakCompatible/package.html#!/" withString:@""];
@@ -258,21 +259,6 @@ static void fullList() {
 		UIApplication *application = [UIApplication sharedApplication];
 		[application openURL:[request URL] options:@{} completionHandler:nil];
 
-/*
-		NSString *href = [url stringByReplacingOccurrencesOfString:@"tweakcompat://repo/?" withString:@""];
-
-		UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"tweakCompatible" 
-			message:@"The repo address will be copied to the clipboard" preferredStyle:UIAlertControllerStyleAlert];
-		UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Add source" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
-			UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-			pasteboard.string = href;
-            [self performSelector:@selector(showAddSourcePrompt)];	
-        }];
-		UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:nil];
-		[alert addAction:ok];
-		[alert addAction:cancel];
-		[self presentViewController:alert animated:YES completion:nil];
-*/
 		return NO;
 	}
 	
