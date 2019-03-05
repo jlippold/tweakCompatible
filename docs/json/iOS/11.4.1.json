@@ -974,6 +974,26 @@
               "calculatedStatus": "Unknown"
             }
           }
+        },
+        {
+          "tweakVersion": "2.1",
+          "iOSVersion": "11.4.1",
+          "repository": "BigBoss",
+          "date": "2019-03-05T23:11:53Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
         }
       ]
     },
@@ -1712,7 +1732,7 @@
     {
       "id": "apt7",
       "name": "APT 0.7 Strict",
-      "latest": "0-2",
+      "latest": "0.7.25.3-9",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/apt7/",
       "shortDescription": "the advanced packaging tool from Debian",
@@ -5691,6 +5711,39 @@
       ]
     },
     {
+      "id": "ru.domo.cocoatop",
+      "name": "CocoaTop",
+      "latest": "2.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
+      "shortDescription": "Process Viewer for iOS GUI",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0.1",
+          "iOSVersion": "11.4.1",
+          "repository": "BigBoss",
+          "date": "2019-02-01T10:42:53Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2",
@@ -5711,39 +5764,6 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ru.domo.cocoatop",
-      "name": "CocoaTop",
-      "latest": "2.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
-      "shortDescription": "Process Viewer for iOS GUI",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0.1",
-          "iOSVersion": "11.4.1",
-          "repository": "BigBoss",
-          "date": "2019-02-01T10:42:53Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -9655,7 +9675,7 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.6.4-2",
+      "latest": "3.6.4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
       "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
@@ -16777,22 +16797,22 @@
       ]
     },
     {
-      "id": "ncurses",
+      "id": "ncurses5-libs",
       "name": "New Curses",
-      "latest": "6.1-1",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/ncurses/",
+      "latest": "5.9-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:02:12Z",
+      "date": "2018-10-14T00:25:17Z",
       "versions": [
         {
-          "tweakVersion": "6.1-1",
+          "tweakVersion": "5.9-1",
           "iOSVersion": "11.4.1",
           "repository": "Bingner/Elucubratus",
-          "date": "2019-02-02T20:10:59Z",
+          "date": "2019-02-02T20:11:09Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -16811,22 +16831,22 @@
       ]
     },
     {
-      "id": "ncurses5-libs",
+      "id": "ncurses",
       "name": "New Curses",
-      "latest": "5.9-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
+      "latest": "6.1-1",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/ncurses/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-14T00:25:17Z",
+      "date": "2018-03-04T19:02:12Z",
       "versions": [
         {
-          "tweakVersion": "5.9-1",
+          "tweakVersion": "6.1-1",
           "iOSVersion": "11.4.1",
           "repository": "Bingner/Elucubratus",
-          "date": "2019-02-02T20:11:09Z",
+          "date": "2019-02-02T20:10:59Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -17493,22 +17513,22 @@
       ]
     },
     {
-      "id": "com.adamseiter.nolargetitles",
+      "id": "org.coolstar.nolargetitles",
       "name": "NoLargeTitles",
-      "latest": "1.1",
-      "repository": "SEITERSEITER's Repo",
-      "url": "http://cydia.saurik.com/package/com.adamseiter.nolargetitles/",
-      "shortDescription": "Removes ugly large titles from apps.",
+      "latest": "1.0-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.coolstar.nolargetitles/",
+      "shortDescription": "Remove the large titles system-wide on iOS 11",
       "category": "Tweaks",
-      "author": "Adam Seiter",
+      "author": "CoolStar",
       "commercial": false,
-      "date": "2018-03-01T19:59:25Z",
+      "date": "2018-03-08T05:57:18Z",
       "versions": [
         {
-          "tweakVersion": "1.1",
+          "tweakVersion": "1.0-1",
           "iOSVersion": "11.4.1",
-          "repository": "eXqusic's Repo",
-          "date": "2019-02-23T16:30:08Z",
+          "repository": "BigBoss",
+          "date": "2019-02-05T23:26:47Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -17527,22 +17547,22 @@
       ]
     },
     {
-      "id": "org.coolstar.nolargetitles",
+      "id": "com.adamseiter.nolargetitles",
       "name": "NoLargeTitles",
-      "latest": "1.0-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.coolstar.nolargetitles/",
-      "shortDescription": "Remove the large titles system-wide on iOS 11",
+      "latest": "1.1",
+      "repository": "SEITERSEITER's Repo",
+      "url": "http://cydia.saurik.com/package/com.adamseiter.nolargetitles/",
+      "shortDescription": "Removes ugly large titles from apps.",
       "category": "Tweaks",
-      "author": "CoolStar",
+      "author": "Adam Seiter",
       "commercial": false,
-      "date": "2018-03-08T05:57:18Z",
+      "date": "2018-03-01T19:59:25Z",
       "versions": [
         {
-          "tweakVersion": "1.0-1",
+          "tweakVersion": "1.1",
           "iOSVersion": "11.4.1",
-          "repository": "BigBoss",
-          "date": "2019-02-05T23:26:47Z",
+          "repository": "eXqusic's Repo",
+          "date": "2019-02-23T16:30:08Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -22065,10 +22085,10 @@
     {
       "id": "net.midkin.smartvolumecontrol2",
       "name": "SmartVolumeControl2",
-      "latest": "2.5.1",
+      "latest": "3.0",
       "repository": "midkin's repo",
       "url": "http://cydia.saurik.com/package/net.midkin.smartvolumecontrol2/",
-      "shortDescription": "iOS Most Advanced Volume Controller.",
+      "shortDescription": "iOS's most advanced volume controller.",
       "category": "Tweaks",
       "author": "midkin",
       "commercial": false,
@@ -25211,7 +25231,7 @@
     {
       "id": "unzip",
       "name": "unzip",
-      "latest": "6.0-1",
+      "latest": "5.52-6",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/unzip/",
       "shortDescription": "de-compesses files in zip format",
@@ -26646,7 +26666,7 @@
     {
       "id": "zip",
       "name": "zip",
-      "latest": "2.32-1",
+      "latest": "2.32-6",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/zip/",
       "shortDescription": "standard Windows compression tool",
