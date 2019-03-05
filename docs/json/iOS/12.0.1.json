@@ -70,7 +70,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.13~beta2",
+      "latest": "1.9.13~beta3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -6160,22 +6160,21 @@
       ]
     },
     {
-      "id": "com.jeremd10.fiveicondockxi",
+      "id": "me.gmoran.fiveicondockxi",
       "name": "FiveIconDockXI",
-      "latest": "1.0",
-      "repository": "JeremD10's Repo",
-      "url": "http://cydia.saurik.com/package/com.jeremd10.fiveicondockxi/",
-      "shortDescription": "Permet d'ajouter 5 icons dans le dock",
-      "category": "Tweaks iOS 11",
-      "author": "Jeremd10",
+      "latest": "0.0.1-20",
+      "repository": "GMoran Beta Software",
+      "url": "http://cydia.saurik.com/package/me.gmoran.fiveicondockxi/",
+      "shortDescription": "Five icon dock for iOS 11.",
+      "category": "Tweaks",
+      "author": "Guillermo Moran",
       "commercial": false,
-      "date": "2019-02-25T00:44:54Z",
       "versions": [
         {
-          "tweakVersion": "1.0",
+          "tweakVersion": "0.0.1-20",
           "iOSVersion": "12.0.1",
-          "repository": "JeremD10's Repo",
-          "date": "2019-02-25T00:44:54Z",
+          "repository": "GMoran Beta Software",
+          "date": "2019-02-23T02:16:06Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6194,21 +6193,22 @@
       ]
     },
     {
-      "id": "me.gmoran.fiveicondockxi",
+      "id": "com.jeremd10.fiveicondockxi",
       "name": "FiveIconDockXI",
-      "latest": "0.0.1-20",
-      "repository": "GMoran Beta Software",
-      "url": "http://cydia.saurik.com/package/me.gmoran.fiveicondockxi/",
-      "shortDescription": "Five icon dock for iOS 11.",
-      "category": "Tweaks",
-      "author": "Guillermo Moran",
+      "latest": "1.0",
+      "repository": "JeremD10's Repo",
+      "url": "http://cydia.saurik.com/package/com.jeremd10.fiveicondockxi/",
+      "shortDescription": "Permet d'ajouter 5 icons dans le dock",
+      "category": "Tweaks iOS 11",
+      "author": "Jeremd10",
       "commercial": false,
+      "date": "2019-02-25T00:44:54Z",
       "versions": [
         {
-          "tweakVersion": "0.0.1-20",
+          "tweakVersion": "1.0",
           "iOSVersion": "12.0.1",
-          "repository": "GMoran Beta Software",
-          "date": "2019-02-23T02:16:06Z",
+          "repository": "JeremD10's Repo",
+          "date": "2019-02-25T00:44:54Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9404,40 +9404,6 @@
       ]
     },
     {
-      "id": "com.ipodhacks142.localiapstore",
-      "name": "LocalIAPStore",
-      "latest": "1.4-2",
-      "repository": "iPodHacks142's Repo",
-      "url": "http://cydia.saurik.com/package/com.ipodhacks142.localiapstore/",
-      "shortDescription": "Get In-App purchases free on iOS 5 - iOS 11.",
-      "category": "Tweaks",
-      "author": "iPodHacks142",
-      "commercial": false,
-      "date": "2019-02-06T17:38:42Z",
-      "versions": [
-        {
-          "tweakVersion": "1.4-2",
-          "iOSVersion": "12.0.1",
-          "repository": "iPodHacks142's Repo",
-          "date": "2019-02-26T11:12:31Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.repo.xarold.com.localiapstore",
       "name": "LocalIAPStore",
       "latest": "1.5",
@@ -9458,6 +9424,40 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.ipodhacks142.localiapstore",
+      "name": "LocalIAPStore",
+      "latest": "1.4-2",
+      "repository": "iPodHacks142's Repo",
+      "url": "http://cydia.saurik.com/package/com.ipodhacks142.localiapstore/",
+      "shortDescription": "Get In-App purchases free on iOS 5 - iOS 11.",
+      "category": "Tweaks",
+      "author": "iPodHacks142",
+      "commercial": false,
+      "date": "2019-02-06T17:38:42Z",
+      "versions": [
+        {
+          "tweakVersion": "1.4-2",
+          "iOSVersion": "12.0.1",
+          "repository": "iPodHacks142's Repo",
+          "date": "2019-02-26T11:12:31Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -10762,10 +10762,10 @@
     {
       "id": "com.thecasle.nine",
       "name": "Nine",
-      "latest": "0.2.0-1",
+      "latest": "0.2.4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.thecasle.nine/",
-      "shortDescription": "Reworks the Notification Center",
+      "shortDescription": "iOS nine styled Notification Center and lock screen",
       "category": "Tweaks",
       "author": "Jake Kaslewicz",
       "commercial": false,
@@ -10780,6 +10780,26 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "0.2.4",
+          "iOSVersion": "12.0.1",
+          "repository": "the casle's beta repo",
+          "date": "2019-03-05T05:28:56Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -14094,7 +14114,7 @@
     {
       "id": "com.spark.snowboard",
       "name": "Snowboard",
-      "latest": "1.0.1",
+      "latest": "1.0.4-1",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.spark.snowboard/",
       "shortDescription": "Snowboard theming engine",
@@ -14519,7 +14539,7 @@
     {
       "id": "com.ioscreatix.sugarcane",
       "name": "SugarCane",
-      "latest": "1.0.0",
+      "latest": "1.0.0-1+debug",
       "repository": "iOS Creatix",
       "url": "http://cydia.saurik.com/package/com.ioscreatix.sugarcane/",
       "shortDescription": "Get percentages for the sliders in the Control Center on iOS 11",
@@ -14587,7 +14607,7 @@
     {
       "id": "org.thebigboss.swipeformore",
       "name": "SwipeForMore",
-      "latest": "1.1.7",
+      "latest": "1.1.9",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.swipeformore/",
       "shortDescription": "Manage packages via swipe.",
@@ -14775,7 +14795,7 @@
     {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "2.0.0-1219+debug",
+      "latest": "2.0.0-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
       "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
@@ -16305,7 +16325,7 @@
     {
       "id": "com.malcolmhall.wifipasswords",
       "name": "WiFi Passwords",
-      "latest": "3.0.1",
+      "latest": "11.0-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.malcolmhall.wifipasswords/",
       "shortDescription": "shows previously entered wifi passwords",
