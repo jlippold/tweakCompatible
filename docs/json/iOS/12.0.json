@@ -138,7 +138,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.13~beta2",
+      "latest": "1.9.13~beta3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -600,7 +600,7 @@
     {
       "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
-      "latest": "1.0r-101",
+      "latest": "1.0r-92",
       "repository": "beta.unlimapps.com",
       "url": "https://beta.unlimapps.com/",
       "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
@@ -1098,7 +1098,7 @@
     {
       "id": "com.kayfam.autoapollo",
       "name": "AutoApollo",
-      "latest": "1.0.1",
+      "latest": "1.0.3",
       "repository": "Sn Repo",
       "url": "http://cydia.saurik.com/package/com.kayfam.autoapollo/",
       "shortDescription": "Open \"reddit.com\" links in the Apollo app using libOpener.",
@@ -4432,10 +4432,10 @@
     {
       "id": "dpkg",
       "name": "Debian Packager",
-      "latest": "1.19.4-1",
+      "latest": "1.18.25-9",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/dpkg/",
-      "shortDescription": "package maintenance tools from Debian",
+      "shortDescription": "package maintainance tools from Debian",
       "category": "Packaging",
       "author": "(null)",
       "commercial": false,
@@ -4472,6 +4472,40 @@
             "good": 1,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "debianutils",
+      "name": "Debian Utilities",
+      "latest": "4.8.6-1",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/debianutils/",
+      "shortDescription": "pretty much just run-parts. yep? run-parts",
+      "category": "Utilities",
+      "author": "(null)",
+      "commercial": false,
+      "date": "2018-03-04T19:01:20Z",
+      "versions": [
+        {
+          "tweakVersion": "4.8.6-1",
+          "iOSVersion": "12.0",
+          "repository": "Bingner/Elucubratus",
+          "date": "2019-03-05T21:12:15Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -5608,7 +5642,7 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.6.4",
+      "latest": "3.6.4-2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
       "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
@@ -6329,22 +6363,22 @@
       ]
     },
     {
-      "id": "com.cabralcole.forceinpicture",
+      "id": "com.spicat.forceinpicture",
       "name": "ForceInPicture",
-      "latest": "0.0.1-2",
-      "repository": "apt.thebigboss.org",
-      "url": "http://cydia.saurik.com/package/com.cabralcole.forceinpicture/",
-      "shortDescription": "\"Programmatically\" enable picture in picture feature.",
+      "latest": "1.1",
+      "repository": "Spica T Repo",
+      "url": "http://cydia.saurik.com/package/com.spicat.forceinpicture/",
+      "shortDescription": "Enable picture in picture feature with no crashes.",
       "category": "Tweaks",
-      "author": "cole cabral @ca13ra1",
+      "author": "SpicaT",
       "commercial": false,
-      "date": "2018-03-01T20:00:33Z",
+      "date": "2018-07-18T14:45:11Z",
       "versions": [
         {
-          "tweakVersion": "0.0.1-2",
+          "tweakVersion": "1.1",
           "iOSVersion": "12.0",
-          "repository": "BigBoss",
-          "date": "2019-02-25T16:56:10Z",
+          "repository": "Spica T Repo",
+          "date": "2019-02-24T00:10:08Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6363,22 +6397,22 @@
       ]
     },
     {
-      "id": "com.spicat.forceinpicture",
+      "id": "com.cabralcole.forceinpicture",
       "name": "ForceInPicture",
-      "latest": "1.1",
-      "repository": "Spica T Repo",
-      "url": "http://cydia.saurik.com/package/com.spicat.forceinpicture/",
-      "shortDescription": "Enable picture in picture feature with no crashes.",
+      "latest": "0.0.1-2",
+      "repository": "apt.thebigboss.org",
+      "url": "http://cydia.saurik.com/package/com.cabralcole.forceinpicture/",
+      "shortDescription": "\"Programmatically\" enable picture in picture feature.",
       "category": "Tweaks",
-      "author": "SpicaT",
+      "author": "cole cabral @ca13ra1",
       "commercial": false,
-      "date": "2018-07-18T14:45:11Z",
+      "date": "2018-03-01T20:00:33Z",
       "versions": [
         {
-          "tweakVersion": "1.1",
+          "tweakVersion": "0.0.1-2",
           "iOSVersion": "12.0",
-          "repository": "Spica T Repo",
-          "date": "2019-02-24T00:10:08Z",
+          "repository": "BigBoss",
+          "date": "2019-02-25T16:56:10Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -11116,40 +11150,6 @@
       ]
     },
     {
-      "id": "com.jakeashacks.realcc",
-      "name": "RealCC",
-      "latest": "1.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.jakeashacks.realcc/",
-      "shortDescription": "Actually disable Wi-Fi from the iOS 11 CC",
-      "category": "Tweaks",
-      "author": "Jake James",
-      "commercial": false,
-      "date": "2018-07-11T02:33:10Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.1",
-          "iOSVersion": "12.0",
-          "repository": "BigBoss",
-          "date": "2019-02-23T02:29:24Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 5,
-            "bad": 0,
-            "total": 5,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.subdiox.realcc",
       "name": "RealCC",
       "latest": "0.0.4",
@@ -11172,6 +11172,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.jakeashacks.realcc",
+      "name": "RealCC",
+      "latest": "1.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.jakeashacks.realcc/",
+      "shortDescription": "Actually disable Wi-Fi from the iOS 11 CC",
+      "category": "Tweaks",
+      "author": "Jake James",
+      "commercial": false,
+      "date": "2018-07-11T02:33:10Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.1",
+          "iOSVersion": "12.0",
+          "repository": "BigBoss",
+          "date": "2019-02-23T02:29:24Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 5,
+            "bad": 0,
+            "total": 5,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -11218,22 +11252,22 @@
       ]
     },
     {
-      "id": "com.spicat.recordpause",
+      "id": "org.thebigboss.recordpause",
       "name": "RecordPause",
-      "latest": "1.3.1",
-      "repository": "Spica T Repo",
-      "url": "http://cydia.saurik.com/package/com.spicat.recordpause/",
+      "latest": "1.2.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.recordpause/",
       "shortDescription": "Pause/resume video recording.",
       "category": "Tweaks",
-      "author": "SpicaT",
+      "author": "PoomSmart",
       "commercial": false,
-      "date": "2018-07-22T00:19:36Z",
+      "date": "2018-03-02T14:55:42Z",
       "versions": [
         {
-          "tweakVersion": "1.3.1",
+          "tweakVersion": "1.2.2",
           "iOSVersion": "12.0",
-          "repository": "Spica T Repo",
-          "date": "2019-03-03T07:05:35Z",
+          "repository": "BigBoss",
+          "date": "2019-03-05T00:40:00Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -11252,22 +11286,22 @@
       ]
     },
     {
-      "id": "org.thebigboss.recordpause",
+      "id": "com.spicat.recordpause",
       "name": "RecordPause",
-      "latest": "1.2.2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.recordpause/",
+      "latest": "1.3.1",
+      "repository": "Spica T Repo",
+      "url": "http://cydia.saurik.com/package/com.spicat.recordpause/",
       "shortDescription": "Pause/resume video recording.",
       "category": "Tweaks",
-      "author": "PoomSmart",
+      "author": "SpicaT",
       "commercial": false,
-      "date": "2018-03-02T14:55:42Z",
+      "date": "2018-07-22T00:19:36Z",
       "versions": [
         {
-          "tweakVersion": "1.2.2",
+          "tweakVersion": "1.3.1",
           "iOSVersion": "12.0",
-          "repository": "BigBoss",
-          "date": "2019-03-05T00:40:00Z",
+          "repository": "Spica T Repo",
+          "date": "2019-03-03T07:05:35Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
