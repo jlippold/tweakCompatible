@@ -480,8 +480,8 @@ static void fullList() {
 
 %new - (void)pullPackageInfo {
 
-	detailedStatus = [@"A matching version of this tweak for this iOS version could not be found. "
-					"Please submit a review if you choose to install." retain];
+	detailedStatus = @"A matching version of this tweak for this iOS version could not be found. "
+					"Please submit a review if you choose to install.";
 
 	if (!package.id) {
 		return;
@@ -558,7 +558,7 @@ static void fullList() {
 
 	int i = 0;
 	NSDictionary *userInfo;
-	allItems = [[[NSMutableDictionary alloc] init] retain]; 
+	allItems = [[NSMutableDictionary alloc] init]; 
 
 	for (i = [allIOSVersions count] - 1; i >= 0; i--) {
 		
@@ -660,7 +660,7 @@ static void fullList() {
 			
 			btnStatus.title = packageStatus;
 		
-			detailedStatus = [[NSString stringWithFormat:@"iOS %@ %@: %@", iOSVersion, packageStatus, packageStatusExplaination] retain];;
+			detailedStatus = [NSString stringWithFormat:@"iOS %@ %@: %@", iOSVersion, packageStatus, packageStatusExplaination];
 			if ([packageStatus isEqualToString:@"Working"]) {
 				btnStatus.tintColor = greenColor;
 			}
@@ -735,18 +735,18 @@ static void fullList() {
 	
 	NSString *baseURI = @"https://jlippold.github.io/tweakCompatible/";
 	if (showViewPackage) {
-		tweakURL = [[NSString stringWithFormat:@"%@cydia.html#!/%@/details/%@", 
-				baseURI, userInfo[@"packageId"], userInfo[@"packageVersion"]] retain];
+		tweakURL = [NSString stringWithFormat:@"%@cydia.html#!/%@/details/%@", 
+				baseURI, userInfo[@"packageId"], userInfo[@"packageVersion"]];
 	}
 
 	if (showAddWorkingReview) {
-		workingURL = [[NSString stringWithFormat:@"%@submit.html#!/%@/working/%@", 
-				baseURI, userInfo[@"packageId"], userInfoBase64] retain];
+		workingURL = [NSString stringWithFormat:@"%@submit.html#!/%@/working/%@", 
+				baseURI, userInfo[@"packageId"], userInfoBase64];
 	}
 
 	if (showAddNotWorkingReview) {
-		notWorkingURL = [[NSString stringWithFormat:@"%@submit.html#!/%@/notworking/%@", 
-			baseURI, userInfo[@"packageId"], userInfoBase64] retain];
+		notWorkingURL = [NSString stringWithFormat:@"%@submit.html#!/%@/notworking/%@", 
+			baseURI, userInfo[@"packageId"], userInfoBase64];
 	}
 	
 }
