@@ -406,6 +406,7 @@ static void fullList() {
                                                             style:UIAlertActionStyleDestructive
                                                           handler:^(UIAlertAction * action) {}];
 	[alert addAction:cancel];
+	alert.popoverPresentationController.sourceView = self.view;
 	[self.navigationController presentViewController:alert animated:YES completion:nil];
 }
 
@@ -435,6 +436,7 @@ static void fullList() {
 		[alert addAction:reviews];
 	}
 	[alert addAction:ok];
+	alert.popoverPresentationController.sourceView = self.view;
 	[self.navigationController presentViewController:alert animated:YES completion:nil];
 
 }
@@ -460,6 +462,7 @@ static void fullList() {
 	[alert addAction:working];
 	[alert addAction:notworking];
 	[alert addAction:cancel];
+	alert.popoverPresentationController.sourceView = self.view;
 	[self.navigationController presentViewController:alert animated:YES completion:nil];
 
 }
@@ -662,7 +665,7 @@ static void fullList() {
 		userInfo = @{
 			@"deviceId" : deviceId, 
 			@"iOSVersion" : systemVersion,
-			@"tweakCompatVersion": @"0.1.2",
+			@"tweakCompatVersion": @"0.1.4",
 			@"packageIndexed": @(packageExists),
 			@"packageVersionIndexed": @(versionExists),
 			@"packageStatus": packageStatus,
@@ -743,6 +746,7 @@ static void fullList() {
 	message:message preferredStyle:UIAlertControllerStyleAlert];
 	UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
 	[alert addAction:ok];
+	alert.popoverPresentationController.sourceView = self.view;
 	[self presentViewController:alert animated:YES completion:nil];
 }
 %end
