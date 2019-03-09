@@ -446,9 +446,9 @@
       "outcome": {
         "calculatedStatus": "Working",
         "percentage": 100,
-        "good": 1,
+        "good": 2,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -465,6 +465,15 @@
           "date": "2019-02-23T17:25:43Z",
           "userName": "paramores",
           "issueNumber": 62536,
+          "arch32": false
+        },
+        {
+          "status": "partial",
+          "device": "iPhone9,2",
+          "issues": "Opening menu is slightly broken due to IOS12 changes where holding space on keyboard opens cursor selection. Holding dictation button works but overrides stock functionality of opening keyboard picker menu.",
+          "date": "2019-03-09T09:00:18Z",
+          "userName": "TC-Checker",
+          "issueNumber": 75337,
           "arch32": false
         }
       ]
