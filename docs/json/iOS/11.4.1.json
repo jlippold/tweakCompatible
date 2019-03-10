@@ -328,11 +328,11 @@
           "repository": "rpetrich repo",
           "date": "2019-03-05T09:00:42Z",
           "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 50,
+            "calculatedStatus": "Not working",
+            "percentage": 33,
             "good": 1,
             "bad": 0,
-            "total": 2,
+            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -1168,40 +1168,6 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.uaupdatetools",
-      "name": "App Admin",
-      "latest": "1.0r-101",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.uaupdatetools/",
-      "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
-      "category": "System",
-      "author": "UnlimApps Inc.",
-      "commercial": false,
-      "date": "2019-02-23T01:40:48Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0r-101",
-          "iOSVersion": "11.4.1",
-          "repository": "(null)",
-          "date": "2019-02-23T01:40:48Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
       "latest": "1.0r-101",
@@ -1243,6 +1209,40 @@
             "good": 0,
             "bad": 0,
             "total": 3,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.repo.xarold.com.uaupdatetools",
+      "name": "App Admin",
+      "latest": "1.0r-101",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.uaupdatetools/",
+      "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
+      "category": "System",
+      "author": "UnlimApps Inc.",
+      "commercial": false,
+      "date": "2019-02-23T01:40:48Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0r-101",
+          "iOSVersion": "11.4.1",
+          "repository": "(null)",
+          "date": "2019-02-23T01:40:48Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -8785,80 +8785,6 @@
       ]
     },
     {
-      "id": "com.ahmedbafkir.dleasy",
-      "name": "DLEasy",
-      "latest": "1.4.3",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.ahmedbafkir.dleasy/",
-      "shortDescription": "Download images & videos from social apps easily!",
-      "category": "Tweaks",
-      "author": "Ahmed Bafkir",
-      "commercial": false,
-      "date": "2019-01-23T22:07:44Z",
-      "versions": [
-        {
-          "tweakVersion": "1.2",
-          "iOSVersion": "11.4.1",
-          "repository": "BigBoss",
-          "date": "2019-02-02T21:55:10Z",
-          "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 66,
-            "good": 2,
-            "bad": 0,
-            "total": 3,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        },
-        {
-          "tweakVersion": "1.4",
-          "iOSVersion": "11.4.1",
-          "repository": "BigBoss",
-          "date": "2019-02-18T19:13:16Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        },
-        {
-          "tweakVersion": "1.4.3",
-          "iOSVersion": "11.4.1",
-          "repository": "BigBoss",
-          "date": "2019-03-03T05:23:39Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.yourepo.ahmedbafkir.dleasy",
       "name": "DLEasy",
       "latest": "1.4.3",
@@ -8915,6 +8841,80 @@
           "iOSVersion": "11.4.1",
           "repository": "(null)",
           "date": "2019-03-08T14:06:28Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.ahmedbafkir.dleasy",
+      "name": "DLEasy",
+      "latest": "1.4.3",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.ahmedbafkir.dleasy/",
+      "shortDescription": "Download images & videos from social apps easily!",
+      "category": "Tweaks",
+      "author": "Ahmed Bafkir",
+      "commercial": false,
+      "date": "2019-01-23T22:07:44Z",
+      "versions": [
+        {
+          "tweakVersion": "1.2",
+          "iOSVersion": "11.4.1",
+          "repository": "BigBoss",
+          "date": "2019-02-02T21:55:10Z",
+          "outcome": {
+            "calculatedStatus": "Likely working",
+            "percentage": 66,
+            "good": 2,
+            "bad": 0,
+            "total": 3,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.4",
+          "iOSVersion": "11.4.1",
+          "repository": "BigBoss",
+          "date": "2019-02-18T19:13:16Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.4.3",
+          "iOSVersion": "11.4.1",
+          "repository": "BigBoss",
+          "date": "2019-03-03T05:23:39Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10638,7 +10638,7 @@
     {
       "id": "com.tigisoftware.filza64bit",
       "name": "Filza File Manager (64-bit only)",
-      "latest": "3.6.5-2",
+      "latest": "3.6.5-4",
       "repository": "tigisoftware.com",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza64bit/",
       "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+. This special version only supports 64-bit devices",
