@@ -3558,7 +3558,7 @@
     {
       "id": "apt1.4",
       "name": "APT Strict",
-      "latest": "0",
+      "latest": "1.4.8-3",
       "repository": "Bingner/Elucubratus",
       "url": "http://cydia.saurik.com/package/apt1.4/",
       "shortDescription": "the advanced packaging tool from Debian",
@@ -3592,7 +3592,7 @@
     {
       "id": "libapt",
       "name": "APT Strict (lib)",
-      "latest": "0",
+      "latest": "1.4.8-7",
       "repository": "Bingner/Elucubratus",
       "url": "http://cydia.saurik.com/package/libapt/",
       "shortDescription": "the advanced packaging library from Debian",
@@ -5098,7 +5098,7 @@
     {
       "id": "base",
       "name": "Base Structure",
-      "latest": "1-4",
+      "latest": "1-5",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/base/",
       "shortDescription": "underlying system directory structure",
@@ -5697,7 +5697,7 @@
     {
       "id": "berkeleydb",
       "name": "Berkeley DB",
-      "latest": "6.2.23-2",
+      "latest": "6.2.32-1",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/berkeleydb/",
       "shortDescription": "Oracle's embeddable database engine",
@@ -7133,7 +7133,7 @@
     {
       "id": "bash",
       "name": "Bourne-Again SHell",
-      "latest": "4.4.18-1",
+      "latest": "4.4.23-2",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/bash/",
       "shortDescription": "the best shell ever written by Brian Fox",
@@ -8017,7 +8017,7 @@
     {
       "id": "bzip2",
       "name": "bzip2",
-      "latest": "1.0.6-2",
+      "latest": "1.0.6-1",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/bzip2/",
       "shortDescription": "compression that's slightly better than gzip",
@@ -8792,6 +8792,26 @@
           "iOSVersion": "12.1.2",
           "repository": "dpkg9510's Repo",
           "date": "2019-03-05T10:04:59Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.0.1",
+          "iOSVersion": "12.1.2",
+          "repository": "dpkg9510's Repo",
+          "date": "2019-03-10T18:41:09Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -11922,22 +11942,22 @@
       ]
     },
     {
-      "id": "com.itweakios.ccpatch10",
+      "id": "com.yourepo.aumenjoyllc.commcenterpatchforios7-12",
       "name": "CommCenter patch for iOS 7/8/9/10",
-      "latest": "3.0",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.itweakios.ccpatch10/",
+      "latest": "3.1",
+      "repository": "AumenjoyLLC Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.aumenjoyllc.commcenterpatchforios7-12/",
       "shortDescription": "Patches CommCenter to allow carrier bundle editing and customization.",
       "category": "Tweaks",
-      "author": "joe012594",
+      "author": "iTweakiOS",
       "commercial": false,
-      "date": "2018-12-23T20:45:10Z",
+      "date": "2019-02-26T00:37:10Z",
       "versions": [
         {
-          "tweakVersion": "3.0",
+          "tweakVersion": "3.1",
           "iOSVersion": "12.1.2",
-          "repository": "(null)",
-          "date": "2019-02-27T12:30:07Z",
+          "repository": "AumenjoyLLC Source - YouRepo",
+          "date": "2019-02-28T01:07:05Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -11956,22 +11976,22 @@
       ]
     },
     {
-      "id": "com.yourepo.aumenjoyllc.commcenterpatchforios7-12",
+      "id": "com.itweakios.ccpatch10",
       "name": "CommCenter patch for iOS 7/8/9/10",
-      "latest": "3.1",
-      "repository": "AumenjoyLLC Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.aumenjoyllc.commcenterpatchforios7-12/",
+      "latest": "3.0",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.itweakios.ccpatch10/",
       "shortDescription": "Patches CommCenter to allow carrier bundle editing and customization.",
       "category": "Tweaks",
-      "author": "iTweakiOS",
+      "author": "joe012594",
       "commercial": false,
-      "date": "2019-02-26T00:37:10Z",
+      "date": "2018-12-23T20:45:10Z",
       "versions": [
         {
-          "tweakVersion": "3.1",
+          "tweakVersion": "3.0",
           "iOSVersion": "12.1.2",
-          "repository": "AumenjoyLLC Source - YouRepo",
-          "date": "2019-02-28T01:07:05Z",
+          "repository": "(null)",
+          "date": "2019-02-27T12:30:07Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -32114,7 +32134,7 @@
     {
       "id": "ca.btraas.musiclove",
       "name": "MusicLove",
-      "latest": "0.1.2",
+      "latest": "0.2.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/ca.btraas.musiclove/",
       "shortDescription": "Adds a heart indicator for songs you've \"loved\"",
@@ -52930,22 +52950,22 @@
       ]
     },
     {
-      "id": "lzma",
+      "id": "xz",
       "name": "XZ Utils",
-      "latest": "4.32.7-2",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/lzma/",
+      "latest": "5.2.4-4",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/xz/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:03:45Z",
+      "date": "2018-10-24T08:16:57Z",
       "versions": [
         {
-          "tweakVersion": "4.32.7-2",
+          "tweakVersion": "5.2.4-4",
           "iOSVersion": "12.1.2",
           "repository": "Bingner/Elucubratus",
-          "date": "2019-02-24T03:42:14Z",
+          "date": "2019-02-24T03:44:22Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -52964,22 +52984,22 @@
       ]
     },
     {
-      "id": "xz",
+      "id": "lzma",
       "name": "XZ Utils",
-      "latest": "5.2.4-4",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/xz/",
+      "latest": "4.32.7-2",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/lzma/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-24T08:16:57Z",
+      "date": "2018-03-04T19:03:45Z",
       "versions": [
         {
-          "tweakVersion": "5.2.4-4",
+          "tweakVersion": "4.32.7-2",
           "iOSVersion": "12.1.2",
           "repository": "Bingner/Elucubratus",
-          "date": "2019-02-24T03:44:22Z",
+          "date": "2019-02-24T03:42:14Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
