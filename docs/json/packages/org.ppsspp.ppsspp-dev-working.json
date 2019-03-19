@@ -446,11 +446,11 @@
       "repository": "PPSSPP Repo",
       "date": "2019-02-24T14:58:55Z",
       "outcome": {
-        "calculatedStatus": "Not working",
-        "percentage": 0,
-        "good": 0,
+        "calculatedStatus": "Likely working",
+        "percentage": 66,
+        "good": 2,
         "bad": 0,
-        "total": 1,
+        "total": 3,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -467,6 +467,24 @@
           "date": "2019-02-24T14:58:55Z",
           "userName": "H1deMe",
           "issueNumber": 64638,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone9,1",
+          "issues": "Marked as not working but it worked for me on 2 different devices. They both are on iOS 12.1.1 b3. iPad Mini 4 played Crisis Core at full speed and iPhone 7 played Castlevania X with no issues. ",
+          "date": "2019-03-14T04:37:10Z",
+          "userName": "gallop420",
+          "issueNumber": 77298,
+          "arch32": false
+        },
+        {
+          "status": "partial",
+          "device": "iPad6,11",
+          "issues": "",
+          "date": "2019-03-19T04:32:33Z",
+          "userName": "youp0214",
+          "issueNumber": 79047,
           "arch32": false
         }
       ]
@@ -498,6 +516,37 @@
           "date": "2019-03-06T08:41:27Z",
           "userName": "915633650",
           "issueNumber": 73640,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0v1.6.3-456-g6d0ed4ad0",
+      "iOSVersion": "12.1",
+      "repository": "PPSSPP Repo",
+      "date": "2019-03-18T20:07:13Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPod7,1",
+          "issues": "",
+          "date": "2019-03-18T20:07:13Z",
+          "userName": "arjanvlek",
+          "issueNumber": 78958,
           "arch32": false
         }
       ]

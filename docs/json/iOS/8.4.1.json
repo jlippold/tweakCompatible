@@ -3,7 +3,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.13~beta2",
+      "latest": "1.9.13~beta3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -224,10 +224,10 @@
     {
       "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
-      "latest": "1.0r-101",
+      "latest": "1.0r-61",
       "repository": "beta.unlimapps.com",
       "url": "https://beta.unlimapps.com/",
-      "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
+      "shortDescription": "Downgrade apps to any previous version! No AppSync needed!!!",
       "category": "System",
       "author": "UnlimApps Inc.",
       "commercial": false,
@@ -277,10 +277,10 @@
     {
       "id": "com.iphonecake.appcake2",
       "name": "AppCake",
-      "latest": "5.5.8.1",
+      "latest": "5.6.0.2",
       "repository": "AppCake",
       "url": "http://iphonecake.com/forum/",
-      "shortDescription": "The new AppCake 5.5.8.1! Introducing Direct Download/Install!  Require AppSync to be installed ***",
+      "shortDescription": "The new AppCake 5.6.0.1! Introducing Direct Download/Install!  Require AppSync to be installed ***",
       "category": "Utilities",
       "author": "Mickael liang",
       "commercial": false,
@@ -342,10 +342,10 @@
     {
       "id": "com.saurik.afc2d",
       "name": "Apple File Conduit \"2\"",
-      "latest": "2.0.2",
+      "latest": "1.2",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/com.saurik.afc2d/",
-      "shortDescription": "allow full access to file-system over USB",
+      "shortDescription": "allow full file-system access over USB",
       "category": "System",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -805,10 +805,10 @@
     {
       "id": "com.bytafont.bytafonttm",
       "name": "BytaFont Tweak Mode",
-      "latest": "1.1.7",
+      "latest": "3.6",
       "repository": "BytaFont",
       "url": "http://repo.bytafont.com/latest/",
-      "shortDescription": "BytaFont Tweak Mode",
+      "shortDescription": "BytaFont Tweak Mode for BytaFont 3.",
       "category": "Tweaks",
       "author": "BytaFont.com",
       "commercial": false,
@@ -1072,7 +1072,7 @@
     {
       "id": "com.skylerk99.chargepulse",
       "name": "ChargePulse",
-      "latest": "0.2r",
+      "latest": "0.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.skylerk99.chargepulse/",
       "shortDescription": "Status bar battery pulsates while charging.",
@@ -1471,6 +1471,26 @@
               "calculatedStatus": "Working"
             }
           }
+        },
+        {
+          "tweakVersion": "1.16.0-1",
+          "iOSVersion": "8.4.1",
+          "repository": "BigBoss",
+          "date": "2019-03-14T20:47:11Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
         }
       ]
     },
@@ -1490,6 +1510,40 @@
           "iOSVersion": "8.4.1",
           "repository": "BigBoss",
           "date": "2018-04-18T18:56:31Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.maximehip.customdia",
+      "name": "CustomDia",
+      "latest": "1.4",
+      "repository": "apt.thebigboss.org",
+      "url": "http://cydia.saurik.com/package/com.maximehip.customdia/",
+      "shortDescription": "usability tweaks for Cydia app.",
+      "category": "Tweaks",
+      "author": "maximehip",
+      "commercial": false,
+      "date": "2018-03-02T07:08:00Z",
+      "versions": [
+        {
+          "tweakVersion": "1.4",
+          "iOSVersion": "8.4.1",
+          "repository": "BigBoss",
+          "date": "2019-03-14T20:46:56Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1576,10 +1630,10 @@
     {
       "id": "cydia",
       "name": "Cydia Installer",
-      "latest": "2.0",
+      "latest": "1.1.32~b12",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia/",
-      "shortDescription": "Base scripts and tools to set up Cydia-compatible virtual dependencies",
+      "shortDescription": "graphical iPhone front-end for APT",
       "category": "Packaging",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -1609,10 +1663,10 @@
     {
       "id": "mobilesubstrate",
       "name": "Cydia Substrate",
-      "latest": "99.0",
+      "latest": "0.9.7032",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/mobilesubstrate/",
-      "shortDescription": "Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute",
+      "shortDescription": "powerful code insertion platform",
       "category": "System",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -1642,7 +1696,7 @@
     {
       "id": "cydia-lproj",
       "name": "Cydia Translations",
-      "latest": "1.1.12",
+      "latest": "1.1.32~b1",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia-lproj/",
       "shortDescription": "languages and translations for Cydia",
@@ -1688,6 +1742,39 @@
           "iOSVersion": "8.4.1",
           "repository": "BigBoss",
           "date": "2018-04-18T13:48:42Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.thebigboss.detailedbatteryusage",
+      "name": "DetailedBatteryUsage",
+      "latest": "1.1.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.detailedbatteryusage/",
+      "shortDescription": "unlock hidden battery usage menu",
+      "category": "Tweaks",
+      "author": "Hamza Sood",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.1.1",
+          "iOSVersion": "8.4.1",
+          "repository": "BigBoss",
+          "date": "2019-03-14T20:46:17Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1840,12 +1927,46 @@
       ]
     },
     {
+      "id": "org.thebigboss.eclipse2",
+      "name": "Eclipse 2 (iOS 8)",
+      "latest": "2.4.1-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.eclipse2/",
+      "shortDescription": "System-wide Night Mode and more",
+      "category": "Tweaks",
+      "author": "Guillermo Moran (@fr0st)",
+      "commercial": false,
+      "date": "2019-03-14T20:46:40Z",
+      "versions": [
+        {
+          "tweakVersion": "2.4.1-1",
+          "iOSVersion": "8.4.1",
+          "repository": "BigBoss",
+          "date": "2019-03-14T20:46:40Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.ps.emojifontmanager",
       "name": "EmojiFontManager [Beta]",
-      "latest": "0.0.3",
+      "latest": "0.0.5f",
       "repository": "PoomSmart's Repo",
       "url": "http://poomsmart.github.io/repo/",
-      "shortDescription": "Emoji font override and management",
+      "shortDescription": "Emoji font override and management.",
       "category": "Tweaks",
       "author": "PoomSmart",
       "commercial": false,
@@ -2035,7 +2156,7 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.5.2-4",
+      "latest": "3.6.4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
       "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
@@ -2067,6 +2188,26 @@
           "iOSVersion": "8.4.1",
           "repository": "BigBoss",
           "date": "2018-04-18T03:55:58Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        },
+        {
+          "tweakVersion": "3.6.4",
+          "iOSVersion": "8.4.1",
+          "repository": "BigBoss",
+          "date": "2019-03-14T20:47:44Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2120,7 +2261,7 @@
     {
       "id": "com.a3tweaks.flipswitch",
       "name": "Flipswitch",
-      "latest": "1.0.16~beta2",
+      "latest": "1.0.16~beta3",
       "repository": "rpetrich repo",
       "url": "http://cydia.saurik.com/package/com.a3tweaks.flipswitch/",
       "shortDescription": "Centralized toggle system for iOS",
@@ -2520,7 +2661,7 @@
     {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
-      "latest": "7.7.0",
+      "latest": "7.7.2",
       "repository": "Karen's Repo",
       "url": "http://ib-soft.net/icleaner",
       "shortDescription": "The first real iOS system cleaner & optimizer",
@@ -2638,7 +2779,7 @@
     {
       "id": "com.chpwn.iconsupport",
       "name": "IconSupport",
-      "latest": "1.11.0-1",
+      "latest": "1.11.1",
       "repository": "apt.thebigboss.org",
       "url": "http://cydia.saurik.com/package/com.chpwn.iconsupport/",
       "shortDescription": "Support library for safe icon tweaks.",
@@ -2885,6 +3026,73 @@
           "iOSVersion": "8.4.1",
           "repository": "BigBoss",
           "date": "2018-04-18T19:03:38Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.officialscheduler.mterminal",
+      "name": "MTerminal",
+      "latest": "1.4-5",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.officialscheduler.mterminal/",
+      "shortDescription": "A MobileTerminal fork",
+      "category": "Utilities",
+      "author": "lordscotland",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.4-5",
+          "iOSVersion": "8.4.1",
+          "repository": "BigBoss",
+          "date": "2019-03-14T20:48:01Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "jp.ashikase.multiiconmover",
+      "name": "MultiIconMover",
+      "latest": "1.2.0-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/jp.ashikase.multiiconmover/",
+      "shortDescription": "Move multiple SpringBoard icons at a time.",
+      "category": "System",
+      "author": "Lance Fetters (ashikase)",
+      "commercial": false,
+      "date": "2018-07-19T00:44:28Z",
+      "versions": [
+        {
+          "tweakVersion": "1.2.0-1",
+          "iOSVersion": "8.4.1",
+          "repository": "BigBoss",
+          "date": "2019-03-14T20:48:15Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3341,6 +3549,39 @@
       ]
     },
     {
+      "id": "com.dpkgdan.powertap",
+      "name": "Power Tap",
+      "latest": "1.1.3-3",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.dpkgdan.powertap/",
+      "shortDescription": "tap powerdown knob to reboot, respring, safe mode",
+      "category": "Tweaks",
+      "author": "Dan Saba",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.1.3-3",
+          "iOSVersion": "8.4.1",
+          "repository": "BigBoss",
+          "date": "2019-03-14T20:48:35Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.clezz.powerdown",
       "name": "PowerDown",
       "latest": "1.0.5",
@@ -3643,7 +3884,7 @@
     {
       "id": "com.rpetrich.rocketbootstrap",
       "name": "RocketBootstrap",
-      "latest": "1.0.6",
+      "latest": "1.0.7~beta1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.rpetrich.rocketbootstrap/",
       "shortDescription": "Support library allowing tweaks to communicate with sandboxed processes",
@@ -3942,7 +4183,7 @@
     {
       "id": "com.cydiageek.smoothkeyboard",
       "name": "SmoothKeyBoard",
-      "latest": "1.0.8",
+      "latest": "1.0.9",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.cydiageek.smoothkeyboard/",
       "shortDescription": "Sleek and Smoother the KeyBoard on the HomeScreen!",
@@ -4041,9 +4282,43 @@
       ]
     },
     {
+      "id": "com.officialscheduler.sshconnect",
+      "name": "SSH Connect",
+      "latest": "1.3-3",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.officialscheduler.sshconnect/",
+      "shortDescription": "toggle SSH & view network interfaces in Settings",
+      "category": "Tweaks",
+      "author": "lordscotland",
+      "commercial": false,
+      "date": "2018-07-08T21:52:03Z",
+      "versions": [
+        {
+          "tweakVersion": "1.3-3",
+          "iOSVersion": "8.4.1",
+          "repository": "BigBoss",
+          "date": "2019-03-14T20:49:56Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "org.coolstar.stash933",
       "name": "Stashing for iOS 9.2 - 9.3.5",
-      "latest": "1.5.0",
+      "latest": "1.5.1",
       "repository": "CoolStar's Repo",
       "url": "https://coolstar.org/publicrepo/",
       "shortDescription": "Stash 3rd party components to make more space for them!",
@@ -4243,7 +4518,7 @@
     {
       "id": "com.saurik.substrate.safemode",
       "name": "Substrate Safe Mode",
-      "latest": "0.9.6001",
+      "latest": "0.9.6001.1",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/com.saurik.substrate.safemode/",
       "shortDescription": "safe mode safety extension (safe)",
@@ -4308,7 +4583,7 @@
     {
       "id": "org.thebigboss.swipeformore",
       "name": "SwipeForMore",
-      "latest": "1.1.9",
+      "latest": "1.1.7",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.swipeformore/",
       "shortDescription": "Manage packages via swipe.",
@@ -4604,7 +4879,7 @@
     {
       "id": "bz.jed.tweakcompatible",
       "name": "tweakCompatible",
-      "latest": "0.1.0",
+      "latest": "0.1.4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/bz.jed.tweakcompatible/",
       "shortDescription": "Adds a way to check tweak compatibility in cydia",
@@ -4777,10 +5052,10 @@
     {
       "id": "com.fidele007.universalmute",
       "name": "Universal Mute",
-      "latest": "1.1.1",
+      "latest": "1.1.2",
       "repository": "fidele007 Repo",
       "url": "http://fidele007.github.io/",
-      "shortDescription": "Mute media volume when ringer muted",
+      "shortDescription": "Mute the media volume when the ringer is muted.",
       "category": "Tweaks",
       "author": "fidele007",
       "commercial": false,

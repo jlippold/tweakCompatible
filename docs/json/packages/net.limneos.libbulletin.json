@@ -1,10 +1,10 @@
 {
   "id": "net.limneos.libbulletin",
   "name": "libbulletin",
-  "latest": "0.1-145",
+  "latest": "0.1-146-trevor",
   "repository": "BigBoss",
   "url": "http://cydia.saurik.com/package/net.limneos.libbulletin/",
-  "shortDescription": "Simple library that displays bulletins",
+  "shortDescription": "Modified version of libbulletin that fixes a nasty crash on iOS 12",
   "category": "Development",
   "author": "Elias Limneos",
   "commercial": false,
@@ -992,9 +992,9 @@
       "outcome": {
         "calculatedStatus": "Working",
         "percentage": 100,
-        "good": 2,
+        "good": 3,
         "bad": 0,
-        "total": 2,
+        "total": 3,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -1020,6 +1020,15 @@
           "date": "2019-03-05T15:56:49Z",
           "userName": "viseniv",
           "issueNumber": 73021,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone10,6",
+          "issues": "",
+          "date": "2019-03-18T07:32:55Z",
+          "userName": "Nixuge",
+          "issueNumber": 78738,
           "arch32": false
         }
       ]
@@ -1144,6 +1153,99 @@
           "date": "2019-03-05T18:35:54Z",
           "userName": "DarkZone-World",
           "issueNumber": 73176,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.1-145",
+      "iOSVersion": "11.4.1",
+      "repository": "BigBoss",
+      "date": "2019-03-08T15:17:25Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone8,1",
+          "issues": "",
+          "date": "2019-03-08T15:16:01Z",
+          "userName": "fazlul101",
+          "issueNumber": 74926,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.1-145",
+      "iOSVersion": "11.2.5",
+      "repository": "BigBoss",
+      "date": "2019-03-09T04:33:12Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone8,1",
+          "issues": "",
+          "date": "2019-03-09T04:33:12Z",
+          "userName": "parisphan",
+          "issueNumber": 75235,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.1-146-trevor",
+      "iOSVersion": "12.0.1",
+      "repository": "Trevor Schmitt's Repo",
+      "date": "2019-03-19T03:04:07Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone9,3",
+          "issues": "",
+          "date": "2019-03-19T03:04:07Z",
+          "userName": "BitGrub",
+          "issueNumber": 79035,
           "arch32": false
         }
       ]
