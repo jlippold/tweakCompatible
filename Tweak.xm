@@ -70,6 +70,10 @@ static void fullList() {
 			[NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse* response, NSData* data, NSError* error) {
 			if (data) {
 				NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+
+				if (!all_packages) {
+					all_packages = [[NSMutableDictionary alloc] init];
+				}
 				for (id package in json[@"packages"]) {
 					NSString *packageId = [NSString stringWithFormat:@"%@", [package objectForKey:@"id"]];
 					NSData *packageData = [NSJSONSerialization dataWithJSONObject:package options:kNilOptions error:nil];
@@ -119,7 +123,7 @@ static void fullList() {
 		Database *database = MSHookIvar<Database *>(self, "database_");
 		Package *package([database packageWithName:[[self packageAtIndexPath:indexPath] id]]);
 
-		if (!package || !cell) {
+		if (!package || !cell || !all_packages) {
 			return;
 		}
 
@@ -665,7 +669,7 @@ static void fullList() {
 		userInfo = @{
 			@"deviceId" : deviceId, 
 			@"iOSVersion" : systemVersion,
-			@"tweakCompatVersion": @"0.1.4",
+			@"tweakCompatVersion": @"0.1.5",
 			@"packageIndexed": @(packageExists),
 			@"packageVersionIndexed": @(versionExists),
 			@"packageStatus": packageStatus,
