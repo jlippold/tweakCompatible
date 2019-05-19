@@ -1,0 +1,125 @@
+{
+  "id": "syslogcmdline",
+  "name": "Syslog Commandline",
+  "latest": "1.0",
+  "repository": "BigBoss",
+  "url": "http://cydia.saurik.com/package/syslogcmdline/",
+  "shortDescription": "Enable/disable syslog via cmd line. syslogon to enable, syslogoff to disable. Log to /var/log/syslog",
+  "category": "System",
+  "author": "BigBoss",
+  "commercial": false,
+  "date": "2018-07-12T13:16:42Z",
+  "versions": [
+    {
+      "tweakVersion": "1.0",
+      "iOSVersion": "11.3.1",
+      "repository": "BigBoss",
+      "date": "2018-07-12T13:16:42Z",
+      "outcome": {
+        "calculatedStatus": "Not working",
+        "percentage": 0,
+        "good": 0,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "not working",
+          "device": "iPhone8,1",
+          "issues": "„Bad CPU type in executable“",
+          "date": "2018-07-12T13:16:42Z",
+          "userName": "bloerwald",
+          "issueNumber": 24210,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "1.0",
+      "iOSVersion": "12.1.1",
+      "repository": "BigBoss",
+      "date": "2019-03-08T22:02:55Z",
+      "outcome": {
+        "calculatedStatus": "Not working",
+        "percentage": 33,
+        "good": 1,
+        "bad": 0,
+        "total": 3,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone9,3",
+          "issues": "",
+          "date": "2019-03-08T22:02:55Z",
+          "userName": "xIzaiah",
+          "issueNumber": 75124,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPad5,3",
+          "issues": "Always reports „Bad CPU type in executable“ ",
+          "date": "2019-03-12T05:23:29Z",
+          "userName": "Haeckli",
+          "issueNumber": 76651,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone9,2",
+          "issues": "Bad cpu type",
+          "date": "2019-04-17T17:29:19Z",
+          "userName": "Roverworld212",
+          "issueNumber": 84707,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "1.0",
+      "iOSVersion": "12.1",
+      "repository": "BigBoss",
+      "date": "2019-05-01T07:56:06Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone9,3",
+          "issues": "",
+          "date": "2019-05-01T07:56:06Z",
+          "userName": "audris42",
+          "issueNumber": 86255,
+          "arch32": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "tweak.issue.importer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node tools/index.js",
+    "rebuild": "node tools/index.js rebuild",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "compare-versions": "^3.1.0",
+    "fs-extra": "^5.0.0",
+    "github": "^13.0.1",
+    "joi": "^13.0.2",
+    "npm": "^5.10.0"
+  }
+}
