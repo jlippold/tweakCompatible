@@ -5759,17 +5759,17 @@
       "repository": "rpetrich repo",
       "date": "2019-05-10T16:48:36Z",
       "outcome": {
-        "calculatedStatus": "Working",
-        "percentage": 100,
+        "calculatedStatus": "Likely working",
+        "percentage": 50,
         "good": 1,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
-          "total": 1,
+          "total": 2,
           "good": 1,
           "bad": 0,
-          "percentage": 100,
-          "calculatedStatus": "Working"
+          "percentage": 50,
+          "calculatedStatus": "Likely working"
         }
       },
       "users": [
@@ -5780,6 +5780,15 @@
           "date": "2019-05-10T16:48:36Z",
           "userName": "adehartawan",
           "issueNumber": 87651,
+          "arch32": true
+        },
+        {
+          "status": "not working",
+          "device": "iPhone5,4",
+          "issues": "Ver 1.9.13~beta5 not working on iOS 10.3.3 running on iPhone 5c. Error messages says 'Activator files corrupt '. ",
+          "date": "2019-05-10T10:40:14Z",
+          "userName": "gamma-577",
+          "issueNumber": 87617,
           "arch32": true
         }
       ]
