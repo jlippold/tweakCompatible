@@ -3614,7 +3614,7 @@
     {
       "id": "com.cokepokes.appstoreplusplus",
       "name": "AppStore++",
-      "latest": "0.9",
+      "latest": "0.7-6",
       "repository": "cokepokes.github.io",
       "url": "http://cydia.saurik.com/package/com.cokepokes.appstoreplusplus/",
       "shortDescription": "Allows you to downgrade/upgrade apps in the AppStore on iOS 11-12.1.2",
@@ -4337,7 +4337,7 @@
     {
       "id": "ch.mdaus.artsy",
       "name": "Artsy",
-      "latest": "2.0~Beta.7",
+      "latest": "2.0~Beta.8",
       "repository": "Maxwell Dausch's Repo",
       "url": "http://cydia.saurik.com/package/ch.mdaus.artsy/",
       "shortDescription": "Color your music stuff",
@@ -5723,7 +5723,7 @@
     {
       "id": "com.cpdigitaldarkroom.barmoji",
       "name": "Barmoji",
-      "latest": "1.8.1",
+      "latest": "1.8",
       "repository": "CP Digital Darkroom Beta Repo",
       "url": "http://beta.cpdigitaldarkroom.com/",
       "shortDescription": "Quick emoji access for iPhone X",
@@ -12231,39 +12231,6 @@
       ]
     },
     {
-      "id": "ru.domo.cocoatop",
-      "name": "CocoaTop",
-      "latest": "2.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
-      "shortDescription": "Process Viewer for iOS GUI",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0.1",
-          "iOSVersion": "12.1",
-          "repository": "BigBoss",
-          "date": "2019-02-23T11:30:21Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2",
@@ -12286,6 +12253,39 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.domo.cocoatop",
+      "name": "CocoaTop",
+      "latest": "2.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
+      "shortDescription": "Process Viewer for iOS GUI",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0.1",
+          "iOSVersion": "12.1",
+          "repository": "BigBoss",
+          "date": "2019-02-23T11:30:21Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -14443,7 +14443,7 @@
     {
       "id": "se.nosskirneh.customlockscreenduration",
       "name": "CustomLockscreenDuration",
-      "latest": "1.4.1",
+      "latest": "1.4.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/se.nosskirneh.customlockscreenduration/",
       "shortDescription": "Customize time for sleep on lockscreen",
@@ -36345,7 +36345,7 @@
     {
       "id": "com.idevicehacked.miscsettings",
       "name": "MiscSettings",
-      "latest": "2.4.1",
+      "latest": "2.3.8",
       "repository": "iDevice Hacked Repo",
       "url": "http://cydia.saurik.com/package/com.idevicehacked.miscsettings/",
       "shortDescription": "So far has 60+ Miscellaneous toggles!",
@@ -38550,7 +38550,7 @@
     {
       "id": "com.rango.newnowplaying",
       "name": "NewNowPlaying",
-      "latest": "1.1",
+      "latest": "1.2.1",
       "repository": "Dynastic Repo",
       "url": "http://cydia.saurik.com/package/com.rango.newnowplaying/",
       "shortDescription": "A new Spotify experience — NewNowPlaying enables a new and modern looking Now Playing UI in the Spotify application by setting the song/album cover as the background.",
@@ -48350,6 +48350,26 @@
               "calculatedStatus": "Unknown"
             }
           }
+        },
+        {
+          "tweakVersion": "1.0",
+          "iOSVersion": "12.1",
+          "repository": "Nepeta",
+          "date": "2019-05-09T12:51:35Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
         }
       ]
     },
@@ -49720,10 +49740,10 @@
     {
       "id": "com.squ1dd13.sizefinder",
       "name": "SizeFinder",
-      "latest": "1.0",
+      "latest": "2.1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.squ1dd13.sizefinder/",
-      "shortDescription": "Show app size instead of delete button",
+      "shortDescription": "Add app size to delete button",
       "category": "Tweaks",
       "author": "Squ1dd13",
       "commercial": false,
@@ -57538,7 +57558,7 @@
     {
       "id": "com.spark.vesta",
       "name": "Vesta",
-      "latest": "1.0.3",
+      "latest": "1.0.2",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.spark.vesta/",
       "shortDescription": "App Drawer",
