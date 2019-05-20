@@ -1,7 +1,7 @@
 {
   "id": "com.spark.notchless",
   "name": "Notchless [Members Plus]",
-  "latest": "2.1.0",
+  "latest": "2.1.1",
   "repository": "Spark's Beta Repo",
   "url": "http://cydia.saurik.com/package/com.spark.notchless/",
   "shortDescription": "Blacks out the back of the status bar to hide the 'Notch'",
@@ -584,6 +584,37 @@
           "date": "2019-04-24T04:50:51Z",
           "userName": "MerkD814",
           "issueNumber": 85399,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "2.1.1",
+      "iOSVersion": "12.1.2",
+      "repository": "SparkDev",
+      "date": "2019-05-10T18:48:49Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "partial",
+          "device": "iPhone10,3",
+          "issues": "Everything works except hiding on lock and home screen. Toggling these puts you in respring loop until you delete preference file.",
+          "date": "2019-05-10T18:48:49Z",
+          "userName": "civicsr2cool",
+          "issueNumber": 87656,
           "arch32": false
         }
       ]
