@@ -1,10 +1,10 @@
 {
   "id": "mobilesubstrate",
   "name": "Cydia Substrate",
-  "latest": "0.9.7033",
+  "latest": "99.2",
   "repository": "Cydia/Telesphoreo",
   "url": "http://cydia.saurik.com/package/mobilesubstrate/",
-  "shortDescription": "powerful code insertion platform",
+  "shortDescription": "Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute",
   "category": "System",
   "author": "Jay Freeman (saurik)",
   "commercial": false,
@@ -2983,10 +2983,10 @@
       "date": "2019-05-27T11:00:14Z",
       "outcome": {
         "calculatedStatus": "Likely working",
-        "percentage": 66,
+        "percentage": 50,
         "good": 2,
         "bad": 0,
-        "total": 3,
+        "total": 4,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -3021,6 +3021,15 @@
           "date": "2019-06-01T01:07:25Z",
           "userName": "Abdelkader0007",
           "issueNumber": 89465,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone10,6",
+          "issues": "Causes cydia to crash on every load",
+          "date": "2019-06-12T09:13:10Z",
+          "userName": "tempus2016",
+          "issueNumber": 90042,
           "arch32": false
         }
       ]
