@@ -2492,10 +2492,10 @@
     {
       "id": "apt",
       "name": "APT 0.6 Transitional",
-      "latest": "1.8.0",
+      "latest": "0-2",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/apt/",
-      "shortDescription": "the advanced packaging tool from Debian",
+      "shortDescription": "any advanced packaging tool from Debian",
       "category": "Packaging",
       "author": "(null)",
       "commercial": false,
@@ -4039,7 +4039,7 @@
     {
       "id": "base",
       "name": "Base Structure",
-      "latest": "1-4",
+      "latest": "1-5",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/base/",
       "shortDescription": "underlying system directory structure",
@@ -9983,7 +9983,7 @@
     {
       "id": "me.tomt000.copylog",
       "name": "CopyLog",
-      "latest": "1.1.5",
+      "latest": "1.2",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/me.tomt000.copylog/",
       "shortDescription": "Clipboard history manager for iOS!",
@@ -10165,7 +10165,7 @@
     {
       "id": "coreutils",
       "name": "Core Utilities",
-      "latest": "8.30",
+      "latest": "8.30-2",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/coreutils/",
       "shortDescription": "core set of Unix shell utilities from GNU",
@@ -10199,7 +10199,7 @@
     {
       "id": "coreutils-bin",
       "name": "Core Utilities (/bin)",
-      "latest": "8.30",
+      "latest": "8.30-3",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/coreutils-bin/",
       "shortDescription": "just the /bin folder from GNU coreutils",
@@ -11135,10 +11135,10 @@
     {
       "id": "mobilesubstrate",
       "name": "Cydia Substrate",
-      "latest": "99.2",
+      "latest": "0.9.7033",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/mobilesubstrate/",
-      "shortDescription": "Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute",
+      "shortDescription": "powerful code insertion platform",
       "category": "System",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -11174,6 +11174,26 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "0.9.7033",
+          "iOSVersion": "12.0",
+          "repository": "(null)",
+          "date": "2019-06-17T12:04:23Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -11976,7 +11996,7 @@
     {
       "id": "darwintools",
       "name": "Darwin Tools",
-      "latest": "1-7",
+      "latest": "1-6",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/darwintools/",
       "shortDescription": "startupfiletool, sw_vers",
@@ -12552,7 +12572,7 @@
     {
       "id": "diffutils",
       "name": "Diff Utilities",
-      "latest": "3.7",
+      "latest": "3.6-1",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/diffutils/",
       "shortDescription": "compare two files for differences",
@@ -12942,40 +12962,6 @@
       ]
     },
     {
-      "id": "com.yourepo.ahmedbafkir.dleasy",
-      "name": "DLEasy",
-      "latest": "2.1.1",
-      "repository": "AhmedBafkir Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.ahmedbafkir.dleasy/",
-      "shortDescription": "Download images & videos from social apps easily!",
-      "category": "Tweaks",
-      "author": "AhmedBafkir",
-      "commercial": false,
-      "date": "2019-02-02T01:17:26Z",
-      "versions": [
-        {
-          "tweakVersion": "1.4.3",
-          "iOSVersion": "12.0",
-          "repository": "AhmedBafkir Source - YouRepo",
-          "date": "2019-03-06T21:35:53Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.ahmedbafkir.dleasy",
       "name": "DLEasy",
       "latest": "2.0.1",
@@ -12998,6 +12984,40 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.yourepo.ahmedbafkir.dleasy",
+      "name": "DLEasy",
+      "latest": "2.1.1",
+      "repository": "AhmedBafkir Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.ahmedbafkir.dleasy/",
+      "shortDescription": "Download images & videos from social apps easily!",
+      "category": "Tweaks",
+      "author": "AhmedBafkir",
+      "commercial": false,
+      "date": "2019-02-02T01:17:26Z",
+      "versions": [
+        {
+          "tweakVersion": "1.4.3",
+          "iOSVersion": "12.0",
+          "repository": "AhmedBafkir Source - YouRepo",
+          "date": "2019-03-06T21:35:53Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -13396,7 +13416,7 @@
     {
       "id": "com.skitty.dune",
       "name": "Dune",
-      "latest": "1.1.1",
+      "latest": "1.1.2",
       "repository": "Skitty's Repo",
       "url": "http://cydia.saurik.com/package/com.skitty.dune/",
       "shortDescription": "A free, open-source iOS dark mode.",
@@ -16904,7 +16924,7 @@
     {
       "id": "gettext",
       "name": "gettext",
-      "latest": "0.17-7",
+      "latest": "0.19.8-1",
       "repository": "Bingner/Elucubratus",
       "url": "http://cydia.saurik.com/package/gettext/",
       "shortDescription": "internationalization helper for strings",
@@ -17161,10 +17181,10 @@
     {
       "id": "gnupg",
       "name": "GNU Privacy Guard",
-      "latest": "1.4.23",
+      "latest": "2.2.11-2",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/gnupg/",
-      "shortDescription": "older encryption compatible with OpenPGP",
+      "shortDescription": "GNU privacy guard - a free PGP replacement",
       "category": "Security",
       "author": "(null)",
       "commercial": false,
@@ -17505,7 +17525,7 @@
     {
       "id": "grep",
       "name": "grep",
-      "latest": "3.3",
+      "latest": "3.1-1",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/grep/",
       "shortDescription": "searches files for regular expressions",
@@ -17743,7 +17763,7 @@
     {
       "id": "gzip",
       "name": "gzip",
-      "latest": "1.10",
+      "latest": "1.9-1",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/gzip/",
       "shortDescription": "the standard Unix compression algorithm",
@@ -20928,10 +20948,10 @@
     {
       "id": "com.ps.letmeblock",
       "name": "LetMeBlock",
-      "latest": "0.0.6.8",
+      "latest": "0.0.1",
       "repository": "PoomSmart's Repo",
       "url": "http://cydia.saurik.com/package/com.ps.letmeblock/",
-      "shortDescription": "Make mDNSResponder care more about /etc/hosts",
+      "shortDescription": "Make mDNSResponder care about /etc/hosts",
       "category": "Tweaks",
       "author": "PoomSmart",
       "commercial": false,
@@ -23258,7 +23278,7 @@
     {
       "id": "com.kingpuffdaddi.lowpowerdnd",
       "name": "LowPowerDND",
-      "latest": "1.1.1",
+      "latest": "1.1.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.kingpuffdaddi.lowpowerdnd/",
       "shortDescription": "Enable Low Power Mode, when enabling DND",
@@ -25861,7 +25881,7 @@
     {
       "id": "nano",
       "name": "nano",
-      "latest": "2.2.6-6",
+      "latest": "3.2-1",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/nano/",
       "shortDescription": "completely free, modern clone of Pico",
@@ -26264,22 +26284,22 @@
       ]
     },
     {
-      "id": "ncurses",
+      "id": "ncurses5-libs",
       "name": "New Curses",
-      "latest": "6.1-1",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/ncurses/",
+      "latest": "5.9-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:02:12Z",
+      "date": "2018-10-14T00:25:17Z",
       "versions": [
         {
-          "tweakVersion": "6.1-1",
+          "tweakVersion": "5.9-1",
           "iOSVersion": "12.0",
           "repository": "Bingner/Elucubratus",
-          "date": "2019-03-19T23:14:18Z",
+          "date": "2019-03-19T22:42:05Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -26298,22 +26318,22 @@
       ]
     },
     {
-      "id": "ncurses5-libs",
+      "id": "ncurses",
       "name": "New Curses",
-      "latest": "5.9-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
+      "latest": "6.1-1",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/ncurses/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-14T00:25:17Z",
+      "date": "2018-03-04T19:02:12Z",
       "versions": [
         {
-          "tweakVersion": "5.9-1",
+          "tweakVersion": "6.1-1",
           "iOSVersion": "12.0",
           "repository": "Bingner/Elucubratus",
-          "date": "2019-03-19T22:42:05Z",
+          "date": "2019-03-19T23:14:18Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -26996,7 +27016,7 @@
     {
       "id": "com.laughingquoll.noctis12",
       "name": "Noctis12",
-      "latest": "1.6.6",
+      "latest": "1.7",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.laughingquoll.noctis12/",
       "shortDescription": "Noctis12 - System Wide Dark Mode for iOS",
@@ -27732,10 +27752,10 @@
     {
       "id": "com.c1d3r.notchification",
       "name": "Notchification",
-      "latest": "1.6",
+      "latest": "1.4.2",
       "repository": "C1d3r Repo",
       "url": "http://cydia.saurik.com/package/com.c1d3r.notchification/",
-      "shortDescription": "Beautiful animated notifications for all device",
+      "shortDescription": "Beautiful animated notifications for all device;",
       "category": "System",
       "author": "c1d3r",
       "commercial": false,
@@ -32622,7 +32642,7 @@
     {
       "id": "com.creaturecoding.shuffle",
       "name": "shuffle",
-      "latest": "1.0.4",
+      "latest": "0.8.0b",
       "repository": "CreatureSurvive's Repo",
       "url": "http://cydia.saurik.com/package/com.creaturecoding.shuffle/",
       "shortDescription": "Mix up your preferences",
@@ -33008,10 +33028,10 @@
     {
       "id": "com.xcxiao.simplelsios10",
       "name": "SimpleLSiOS10",
-      "latest": "1.5.1",
+      "latest": "1.5.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.xcxiao.simplelsios10/",
-      "shortDescription": "Simple lockscreen for iOS 10/11 devices.",
+      "shortDescription": "Simple lockscreen for iOS 10/11/12 devices.",
       "category": "Tweaks",
       "author": "XCXiao",
       "commercial": false,
@@ -40626,22 +40646,22 @@
       ]
     },
     {
-      "id": "lzma",
+      "id": "xz",
       "name": "XZ Utils",
-      "latest": "5.2.4-1",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/lzma/",
+      "latest": "5.2.4-4",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/xz/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:03:45Z",
+      "date": "2018-10-24T08:16:57Z",
       "versions": [
         {
-          "tweakVersion": "4.32.7-2",
+          "tweakVersion": "5.2.4-4",
           "iOSVersion": "12.0",
           "repository": "Bingner/Elucubratus",
-          "date": "2019-03-19T22:49:37Z",
+          "date": "2019-03-19T22:49:12Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -40660,22 +40680,22 @@
       ]
     },
     {
-      "id": "xz",
+      "id": "lzma",
       "name": "XZ Utils",
-      "latest": "5.2.4-4",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/xz/",
+      "latest": "4.32.7-2",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/lzma/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-24T08:16:57Z",
+      "date": "2018-03-04T19:03:45Z",
       "versions": [
         {
-          "tweakVersion": "5.2.4-4",
+          "tweakVersion": "4.32.7-2",
           "iOSVersion": "12.0",
           "repository": "Bingner/Elucubratus",
-          "date": "2019-03-19T22:49:12Z",
+          "date": "2019-03-19T22:49:37Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
