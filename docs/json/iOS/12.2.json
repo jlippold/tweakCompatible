@@ -360,10 +360,10 @@
     {
       "id": "com.tigisoftware.appdatamanager",
       "name": "Apps Manager",
-      "latest": "1.5.0-12",
+      "latest": "1.4.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.appdatamanager/",
-      "shortDescription": "This tool provides the way to WIPE, BACKUP, RESTORE AppData for installed Apps",
+      "shortDescription": "tool to WIPE, BACKUP, RESTORE AppData for installed Apps",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -373,6 +373,26 @@
           "iOSVersion": "12.2",
           "repository": "tigisoftware.com",
           "date": "2019-07-12T20:11:14Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.4.2",
+          "iOSVersion": "12.2",
+          "repository": "BigBoss",
+          "date": "2019-07-16T12:32:58Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4229,40 +4249,6 @@
       ]
     },
     {
-      "id": "com.matchstic.reprovision",
-      "name": "ReProvision",
-      "latest": "0.4.2",
-      "repository": "Matchstic",
-      "url": "http://cydia.saurik.com/package/com.matchstic.reprovision/",
-      "shortDescription": "Re-sign applications on your device",
-      "category": "System",
-      "author": "Matt Clarke",
-      "commercial": false,
-      "date": "2018-08-12T19:47:47Z",
-      "versions": [
-        {
-          "tweakVersion": "0.4.2",
-          "iOSVersion": "12.2",
-          "repository": "repo.incendo.ws",
-          "date": "2019-07-12T23:32:02Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 3,
-            "bad": 0,
-            "total": 3,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.cydia.kiimo.reprovision",
       "name": "ReProvision",
       "latest": "0.4.2",
@@ -4285,6 +4271,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.matchstic.reprovision",
+      "name": "ReProvision",
+      "latest": "0.4.2",
+      "repository": "Matchstic",
+      "url": "http://cydia.saurik.com/package/com.matchstic.reprovision/",
+      "shortDescription": "Re-sign applications on your device",
+      "category": "System",
+      "author": "Matt Clarke",
+      "commercial": false,
+      "date": "2018-08-12T19:47:47Z",
+      "versions": [
+        {
+          "tweakVersion": "0.4.2",
+          "iOSVersion": "12.2",
+          "repository": "repo.incendo.ws",
+          "date": "2019-07-12T23:32:02Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 3,
+            "bad": 0,
+            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
