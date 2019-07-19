@@ -1014,7 +1014,7 @@
     {
       "id": "ws.hbang.common",
       "name": "Cephei",
-      "latest": "1.13.1-3",
+      "latest": "1.13.1-2",
       "repository": "HASHBANG Productions",
       "url": "http://cydia.hbang.ws/",
       "shortDescription": "Support library for tweaks",
@@ -2647,10 +2647,10 @@
     {
       "id": "net.limneos.libbulletin",
       "name": "libbulletin",
-      "latest": "0.1-147",
+      "latest": "0.1-147-trevor",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/net.limneos.libbulletin/",
-      "shortDescription": "Simple library that displays bulletins",
+      "shortDescription": "Modified version of libbulletin that fixes a nasty crash on iOS 12",
       "category": "Development",
       "author": "Elias Limneos",
       "commercial": false,
@@ -3965,6 +3965,40 @@
           "iOSVersion": "12.1.4",
           "repository": "BigBoss",
           "date": "2019-07-15T22:04:39Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.noisyflake.shylabels",
+      "name": "Shy Labels",
+      "latest": "1.1.1",
+      "repository": "NoisyFlake",
+      "url": "http://cydia.saurik.com/package/com.noisyflake.shylabels/",
+      "shortDescription": "Hide app labels when not scrolling",
+      "category": "Tweaks",
+      "author": "NoisyFlake",
+      "commercial": false,
+      "date": "2019-03-22T08:18:37Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1.1",
+          "iOSVersion": "12.1.4",
+          "repository": "Packix",
+          "date": "2019-07-19T15:28:28Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
