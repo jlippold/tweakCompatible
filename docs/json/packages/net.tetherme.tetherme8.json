@@ -1,10 +1,10 @@
 {
   "id": "net.tetherme.tetherme8",
   "name": "TetherMe for iOS 10/9/8",
-  "latest": "1.2.3~arm64e-1",
+  "latest": "1.2.2-1",
   "repository": "BigBoss",
   "url": "http://cydia.saurik.com/package/net.tetherme.tetherme8/",
-  "shortDescription": "Dynamically enables native tethering for iOS8+ devices.  This should work on any carrier without the need for customized bundles or preferences.",
+  "shortDescription": "Dynamically enables native tethering iOS8+",
   "category": "Tweaks",
   "author": "Sam Bingner",
   "commercial": true,
@@ -1479,11 +1479,11 @@
       "repository": "BigBoss",
       "date": "2019-08-20T16:04:21Z",
       "outcome": {
-        "calculatedStatus": "Working",
-        "percentage": 100,
+        "calculatedStatus": "Likely working",
+        "percentage": 50,
         "good": 1,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -1500,6 +1500,15 @@
           "date": "2019-08-20T16:04:21Z",
           "userName": "rmtr26",
           "issueNumber": 95933,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone11,6",
+          "issues": "Not working A12 12.4",
+          "date": "2019-09-22T23:33:39Z",
+          "userName": "ghackt",
+          "issueNumber": 100606,
           "arch32": false
         }
       ]
