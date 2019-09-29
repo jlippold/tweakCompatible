@@ -1,0 +1,45 @@
+{
+  "id": "gsed",
+  "name": "gsed",
+  "latest": "4.3",
+  "repository": "cydia.radare.org",
+  "url": "http://cydia.saurik.com/package/gsed/",
+  "shortDescription": "minimalistic interactive raw editor",
+  "category": "user/shell",
+  "author": "(null)",
+  "commercial": false,
+  "date": "2018-08-30T12:10:00Z",
+  "versions": [
+    {
+      "tweakVersion": "4.3",
+      "iOSVersion": "11.2.1",
+      "repository": "cydia.radare.org",
+      "date": "2018-08-30T12:10:00Z",
+      "outcome": {
+        "calculatedStatus": "Not working",
+        "percentage": 0,
+        "good": 0,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "not working",
+          "device": "iPad6,11",
+          "issues": "It does not work on 64: -sh: /usr/bin/gsed: Bad CPU type in executable May be it works on 32. ",
+          "date": "2018-08-30T12:10:00Z",
+          "userName": "danieladanieladanieladaniela",
+          "issueNumber": 48156,
+          "arch32": false
+        }
+      ]
+    }
+  ]
+}

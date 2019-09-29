@@ -1,0 +1,917 @@
+{
+  "id": "me.nepeta.begonecia-11",
+  "name": "BegoneCIA (iOS 11)",
+  "latest": "0.2.1-2",
+  "repository": "Nepeta",
+  "url": "http://cydia.saurik.com/package/me.nepeta.begonecia-11/",
+  "shortDescription": "CC toggle to disable microphone, camera and GPS.",
+  "category": "Tweaks",
+  "author": "Nepeta",
+  "commercial": false,
+  "date": "2018-12-29T15:41:09Z",
+  "versions": [
+    {
+      "tweakVersion": "0.1.0",
+      "iOSVersion": "11.3.1",
+      "repository": "Nepeta",
+      "date": "2018-12-29T15:41:09Z",
+      "outcome": {
+        "calculatedStatus": "Likely working",
+        "percentage": 60,
+        "good": 3,
+        "bad": 0,
+        "total": 5,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone10,5",
+          "issues": "",
+          "date": "2018-12-29T15:41:09Z",
+          "userName": "ZerOneX",
+          "issueNumber": 56777,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone10,6",
+          "issues": "Bootloop",
+          "date": "2018-12-29T16:53:49Z",
+          "userName": "jiddy87",
+          "issueNumber": 56780,
+          "arch32": false
+        },
+        {
+          "status": "partial",
+          "device": "iPhone10,4",
+          "issues": "Camera protection is working fine, but not microfone and gps. Tested with Siri, “hey Siri” is still working fine as the location when I ask how’s the weather",
+          "date": "2018-12-29T20:06:38Z",
+          "userName": "PaulolifeBR",
+          "issueNumber": 56786,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone9,3",
+          "issues": "THIS IS AWESOME WORKS GREAT!!!",
+          "date": "2018-12-30T03:01:41Z",
+          "userName": "Duckscreen",
+          "issueNumber": 56791,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone7,2",
+          "issues": "Respring loop",
+          "date": "2018-12-30T12:53:19Z",
+          "userName": "anthony6116",
+          "issueNumber": 56797,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.1.0",
+      "iOSVersion": "11.4",
+      "repository": "Nepeta",
+      "date": "2019-01-01T18:42:26Z",
+      "outcome": {
+        "calculatedStatus": "Not working",
+        "percentage": 0,
+        "good": 0,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "not working",
+          "device": "iPhone10,6",
+          "issues": "",
+          "date": "2019-01-01T18:42:26Z",
+          "userName": "DeadlySkull",
+          "issueNumber": 56922,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.1.1",
+      "iOSVersion": "11.3.1",
+      "repository": "Nepeta",
+      "date": "2019-01-02T15:55:26Z",
+      "outcome": {
+        "calculatedStatus": "Not working",
+        "percentage": 0,
+        "good": 0,
+        "bad": 0,
+        "total": 2,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "not working",
+          "device": "iPhone10,4",
+          "issues": "Boot loop (respring works ok, but LDRestart and re-jailbreak is broken). It’s probably a incompatibility with other tweaks.",
+          "date": "2019-01-02T15:55:26Z",
+          "userName": "PaulolifeBR",
+          "issueNumber": 56972,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone10,2",
+          "issues": "Stuck in respring then reboots",
+          "date": "2019-01-03T23:04:07Z",
+          "userName": "buitim",
+          "issueNumber": 57037,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.0",
+      "iOSVersion": "11.3.1",
+      "repository": "Nepeta",
+      "date": "2019-01-11T04:27:31Z",
+      "outcome": {
+        "calculatedStatus": "Not working",
+        "percentage": 25,
+        "good": 1,
+        "bad": 0,
+        "total": 4,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone10,2",
+          "issues": "",
+          "date": "2019-01-11T04:27:31Z",
+          "userName": "buitim",
+          "issueNumber": 57225,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPad7,3",
+          "issues": "iPad Pro (11.5) Unc0ver 2.1.0 - Substrate. This tweak caused a lot of freezes (can only be fixed by rebooting) and Safe Mode resprings (upon opening any app)... almost restored RootFS but thankfully I was able to fix it. ",
+          "date": "2019-01-08T18:26:22Z",
+          "userName": "hero3210",
+          "issueNumber": 57165,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone10,6",
+          "issues": "Still respring loop",
+          "date": "2019-01-05T16:32:48Z",
+          "userName": "jiddy87",
+          "issueNumber": 57087,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone10,6",
+          "issues": "Boot loop",
+          "date": "2019-01-12T22:58:58Z",
+          "userName": "Virrefirre",
+          "issueNumber": 57275,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1",
+      "iOSVersion": "11.3.1",
+      "repository": "Nepeta",
+      "date": "2019-01-17T07:34:51Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone10,2",
+          "issues": "",
+          "date": "2019-01-17T07:34:51Z",
+          "userName": "buitim",
+          "issueNumber": 57503,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1",
+      "iOSVersion": "12.1.2",
+      "repository": "Nepeta",
+      "date": "2019-02-24T21:40:38Z",
+      "outcome": {
+        "calculatedStatus": "Likely working",
+        "percentage": 75,
+        "good": 3,
+        "bad": 0,
+        "total": 4,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone8,4",
+          "issues": "",
+          "date": "2019-02-24T21:40:38Z",
+          "userName": "Weediee",
+          "issueNumber": 65457,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone9,3",
+          "issues": "",
+          "date": "2019-02-26T20:01:46Z",
+          "userName": "aizoule",
+          "issueNumber": 67974,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone9,3",
+          "issues": "Does what it says but broke the jailbreak for me, had to safe mode uninstall it and delete preferences before my phone would jailbreak successfully ",
+          "date": "2019-04-03T04:09:44Z",
+          "userName": "mrpras",
+          "issueNumber": 82588,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone8,4",
+          "issues": "",
+          "date": "2019-04-12T20:08:27Z",
+          "userName": "midjih",
+          "issueNumber": 84019,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1",
+      "iOSVersion": "12.1.1",
+      "repository": "Nepeta",
+      "date": "2019-02-27T04:16:45Z",
+      "outcome": {
+        "calculatedStatus": "Likely working",
+        "percentage": 70,
+        "good": 7,
+        "bad": 0,
+        "total": 10,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone8,4",
+          "issues": "",
+          "date": "2019-02-27T04:16:45Z",
+          "userName": "Meus-Artis",
+          "issueNumber": 68278,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone8,1",
+          "issues": "",
+          "date": "2019-03-02T06:07:28Z",
+          "userName": "kurtbain250",
+          "issueNumber": 70620,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPad5,4",
+          "issues": "whatsapp has access to camera. ipad air 2 ",
+          "date": "2019-03-02T14:24:55Z",
+          "userName": "toxicoman666",
+          "issueNumber": 70794,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone9,1",
+          "issues": "",
+          "date": "2019-03-05T17:12:15Z",
+          "userName": "thesatanicbostonian",
+          "issueNumber": 73129,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone10,1",
+          "issues": "",
+          "date": "2019-03-05T22:25:43Z",
+          "userName": "Wumpotamus",
+          "issueNumber": 73374,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone9,1",
+          "issues": "",
+          "date": "2019-03-06T14:57:12Z",
+          "userName": "BenSanzone",
+          "issueNumber": 73779,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone6,1",
+          "issues": "",
+          "date": "2019-03-11T16:05:45Z",
+          "userName": "Fiaccus",
+          "issueNumber": 76432,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone9,3",
+          "issues": "Hey Siri working ",
+          "date": "2019-04-13T21:31:50Z",
+          "userName": "ChapChap",
+          "issueNumber": 84299,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone7,2",
+          "issues": "",
+          "date": "2019-04-18T22:54:58Z",
+          "userName": "Jaylen9421",
+          "issueNumber": 84862,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone9,4",
+          "issues": "No Effect ",
+          "date": "2019-04-22T20:57:44Z",
+          "userName": "goodguy1963",
+          "issueNumber": 85260,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1",
+      "iOSVersion": "12.0.1",
+      "repository": "Nepeta",
+      "date": "2019-02-27T10:58:11Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone10,6",
+          "issues": "",
+          "date": "2019-02-27T10:58:11Z",
+          "userName": "Dokiin",
+          "issueNumber": 68531,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1",
+      "iOSVersion": "12.1",
+      "repository": "Nepeta",
+      "date": "2019-03-05T08:08:09Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone10,6",
+          "issues": "",
+          "date": "2019-03-05T08:08:09Z",
+          "userName": "KobeKey",
+          "issueNumber": 72826,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1",
+      "iOSVersion": "12.0",
+      "repository": "Nepeta",
+      "date": "2019-03-09T20:44:37Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 2,
+        "bad": 0,
+        "total": 2,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone10,4",
+          "issues": "",
+          "date": "2019-03-09T20:44:37Z",
+          "userName": "jompi44",
+          "issueNumber": 75553,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone10,4",
+          "issues": "",
+          "date": "2019-03-14T02:35:19Z",
+          "userName": "LudnicaKiller",
+          "issueNumber": 77259,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1",
+      "iOSVersion": "11.4.1",
+      "repository": "Nepeta",
+      "date": "2019-03-21T05:15:44Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone7,2",
+          "issues": "",
+          "date": "2019-03-21T05:15:44Z",
+          "userName": "smknmofo",
+          "issueNumber": 79652,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1-1",
+      "iOSVersion": "12.1.2",
+      "repository": "Nepeta",
+      "date": "2019-04-23T17:18:38Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 3,
+        "bad": 0,
+        "total": 3,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone9,1",
+          "issues": "",
+          "date": "2019-04-23T17:18:38Z",
+          "userName": "icen1",
+          "issueNumber": 85329,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone10,6",
+          "issues": "",
+          "date": "2019-04-23T17:12:20Z",
+          "userName": "NovaVFX",
+          "issueNumber": 85325,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone10,2",
+          "issues": "Works perfect!",
+          "date": "2019-04-28T09:34:22Z",
+          "userName": "eddietech101",
+          "issueNumber": 85756,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1-1",
+      "iOSVersion": "12.1.1",
+      "repository": "Nepeta",
+      "date": "2019-04-24T19:54:08Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone7,2",
+          "issues": "",
+          "date": "2019-04-24T19:54:08Z",
+          "userName": "Jaylen9421",
+          "issueNumber": 85438,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1-1",
+      "iOSVersion": "11.3.1",
+      "repository": "Nepeta",
+      "date": "2019-04-29T05:22:36Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone9,2",
+          "issues": "",
+          "date": "2019-04-29T05:22:36Z",
+          "userName": "AppleTweaker420",
+          "issueNumber": 85915,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1-2",
+      "iOSVersion": "12.1.2",
+      "repository": "Nepeta",
+      "date": "2019-05-01T00:26:21Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 2,
+        "bad": 0,
+        "total": 2,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone8,1",
+          "issues": "",
+          "date": "2019-05-01T00:26:21Z",
+          "userName": "ItzKyfry",
+          "issueNumber": 86161,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone9,3",
+          "issues": "",
+          "date": "2019-05-01T13:52:58Z",
+          "userName": "aizoule",
+          "issueNumber": 86334,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1-2",
+      "iOSVersion": "12.1.1",
+      "repository": "Nepeta",
+      "date": "2019-05-01T06:42:48Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 2,
+        "bad": 0,
+        "total": 2,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone10,4",
+          "issues": "",
+          "date": "2019-05-01T06:42:48Z",
+          "userName": "ehoeve786",
+          "issueNumber": 86204,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone11,8",
+          "issues": "",
+          "date": "2019-08-28T15:23:32Z",
+          "userName": "filoh",
+          "issueNumber": 98103,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1-2",
+      "iOSVersion": "11.3.1",
+      "repository": "Nepeta",
+      "date": "2019-05-07T04:26:03Z",
+      "outcome": {
+        "calculatedStatus": "Likely working",
+        "percentage": 75,
+        "good": 3,
+        "bad": 0,
+        "total": 4,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "not working",
+          "device": "iPhone7,2",
+          "issues": "respring loop (iPhone 6)",
+          "date": "2019-05-07T04:26:03Z",
+          "userName": "iamMseyed",
+          "issueNumber": 87221,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone10,2",
+          "issues": "",
+          "date": "2019-05-22T06:29:00Z",
+          "userName": "buitim",
+          "issueNumber": 88806,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone9,3",
+          "issues": "",
+          "date": "2019-05-28T06:41:18Z",
+          "userName": "BrandonYeo",
+          "issueNumber": 89159,
+          "arch32": false
+        },
+        {
+          "status": "working",
+          "device": "iPhone7,1",
+          "issues": "",
+          "date": "2019-06-09T18:26:55Z",
+          "userName": "kurtbain250",
+          "issueNumber": 89888,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1-2",
+      "iOSVersion": "12.0.1",
+      "repository": "Nepeta",
+      "date": "2019-05-21T07:48:06Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPod7,1",
+          "issues": "",
+          "date": "2019-05-21T07:48:06Z",
+          "userName": "playhappyy",
+          "issueNumber": 88711,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1-2",
+      "iOSVersion": "12.2",
+      "repository": "Nepeta",
+      "date": "2019-07-24T15:52:15Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone9,3",
+          "issues": "",
+          "date": "2019-07-24T15:52:15Z",
+          "userName": "Skodal99",
+          "issueNumber": 92619,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1-2",
+      "iOSVersion": "12.1.4",
+      "repository": "repo.nepeta.me",
+      "date": "2019-07-29T21:35:22Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone7,1",
+          "issues": "",
+          "date": "2019-07-29T21:35:22Z",
+          "userName": "1poo",
+          "issueNumber": 93065,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.2.1-2",
+      "iOSVersion": "12.4",
+      "repository": "Nepeta",
+      "date": "2019-08-19T05:50:13Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone10,5",
+          "issues": "",
+          "date": "2019-08-19T05:50:13Z",
+          "userName": "jmd-aKBar",
+          "issueNumber": 94599,
+          "arch32": false
+        }
+      ]
+    }
+  ]
+}
