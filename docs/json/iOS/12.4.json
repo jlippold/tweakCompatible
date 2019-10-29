@@ -1774,7 +1774,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.12",
+      "latest": "1.9.13~beta5",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -23110,6 +23110,40 @@
       ]
     },
     {
+      "id": "cydia.kiiimo.org.cocoatop64",
+      "name": "CocoaTop",
+      "latest": "2.0.2",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/cydia.kiiimo.org.cocoatop64/",
+      "shortDescription": "Process Viewer for iOS GUI (64-bit)",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "date": "2019-07-31T23:15:46Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0.2",
+          "iOSVersion": "12.4",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-09-25T08:35:18Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2",
@@ -23185,40 +23219,6 @@
             "good": 0,
             "bad": 0,
             "total": 6,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "cydia.kiiimo.org.cocoatop64",
-      "name": "CocoaTop",
-      "latest": "2.0.2",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/cydia.kiiimo.org.cocoatop64/",
-      "shortDescription": "Process Viewer for iOS GUI (64-bit)",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "date": "2019-07-31T23:15:46Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0.2",
-          "iOSVersion": "12.4",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-09-25T08:35:18Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -27283,22 +27283,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.cydelete12",
+      "id": "com.level3tjg.cydelete12",
       "name": "CyDelete12",
-      "latest": "1.0",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.cydelete12/",
-      "shortDescription": "Delete Cydia apps just like normal applications\r",
-      "category": "iOS 12",
+      "latest": "1.1",
+      "repository": "level3tjg",
+      "url": "http://cydia.saurik.com/package/com.level3tjg.cydelete12/",
+      "shortDescription": "Delete Cydia apps just like normal applications",
+      "category": "Tweaks",
       "author": "level3tjg",
       "commercial": false,
-      "date": "2019-08-24T15:16:24Z",
+      "date": "2019-04-05T11:28:28Z",
       "versions": [
         {
-          "tweakVersion": "1.0",
+          "tweakVersion": "1.1",
           "iOSVersion": "12.4",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-08-24T15:16:24Z",
+          "repository": "level3tjg",
+          "date": "2019-08-30T18:27:20Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -27317,22 +27317,22 @@
       ]
     },
     {
-      "id": "com.level3tjg.cydelete12",
+      "id": "org.cydia.kiimo.cydelete12",
       "name": "CyDelete12",
-      "latest": "1.1",
-      "repository": "level3tjg",
-      "url": "http://cydia.saurik.com/package/com.level3tjg.cydelete12/",
-      "shortDescription": "Delete Cydia apps just like normal applications",
-      "category": "Tweaks",
+      "latest": "1.0",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.cydelete12/",
+      "shortDescription": "Delete Cydia apps just like normal applications\r",
+      "category": "iOS 12",
       "author": "level3tjg",
       "commercial": false,
-      "date": "2019-04-05T11:28:28Z",
+      "date": "2019-08-24T15:16:24Z",
       "versions": [
         {
-          "tweakVersion": "1.1",
+          "tweakVersion": "1.0",
           "iOSVersion": "12.4",
-          "repository": "level3tjg",
-          "date": "2019-08-30T18:27:20Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-08-24T15:16:24Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -38804,6 +38804,59 @@
       ]
     },
     {
+      "id": "com.tigisoftware.filza",
+      "name": "Filza File Manager",
+      "latest": "3.6.4",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
+      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
+      "category": "Utilities",
+      "author": "TIGI Software",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "3.6.4",
+          "iOSVersion": "12.4",
+          "repository": "BigBoss",
+          "date": "2019-08-18T18:45:13Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 11,
+            "bad": 0,
+            "total": 11,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "3.7.0-18",
+          "iOSVersion": "12.4",
+          "repository": "tigisoftware.com",
+          "date": "2019-08-20T00:44:46Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 83,
+            "good": 5,
+            "bad": 0,
+            "total": 6,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "ru.rejail.filza",
       "name": "Filza File Manager",
       "latest": "3.7.0-18k",
@@ -38846,59 +38899,6 @@
             "good": 1,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.tigisoftware.filza",
-      "name": "Filza File Manager",
-      "latest": "3.6.4",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
-      "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
-      "category": "Utilities",
-      "author": "TIGI Software",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "3.6.4",
-          "iOSVersion": "12.4",
-          "repository": "BigBoss",
-          "date": "2019-08-18T18:45:13Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 11,
-            "bad": 0,
-            "total": 11,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        },
-        {
-          "tweakVersion": "3.7.0-18",
-          "iOSVersion": "12.4",
-          "repository": "tigisoftware.com",
-          "date": "2019-08-20T00:44:46Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 83,
-            "good": 5,
-            "bad": 0,
-            "total": 6,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -59491,40 +59491,6 @@
       ]
     },
     {
-      "id": "co.xrepo.mokadam.localiapstore",
-      "name": "LocaliAPStore",
-      "latest": "1.4-2",
-      "repository": "Ahmad Mokadam",
-      "url": "http://cydia.saurik.com/package/co.xrepo.mokadam.localiapstore/",
-      "shortDescription": "تسمح لك شراء من داخل بعض التطبيقات والالعاب وتحتاج تحميل اداة inapp purchases 10&11 لتتمكن من شراء",
-      "category": "i0S11",
-      "author": "LocaliAPStore",
-      "commercial": false,
-      "date": "2019-09-04T14:19:57Z",
-      "versions": [
-        {
-          "tweakVersion": "1.4-2",
-          "iOSVersion": "12.4",
-          "repository": "Ahmad Mokadam",
-          "date": "2019-09-04T14:19:57Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.repo.xarold.com.localiapstore",
       "name": "LocalIAPStore",
       "latest": "1.4-2",
@@ -59595,6 +59561,40 @@
           "iOSVersion": "12.4",
           "repository": "AppleYardim.Org",
           "date": "2019-09-28T17:13:44Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "co.xrepo.mokadam.localiapstore",
+      "name": "LocaliAPStore",
+      "latest": "1.4-2",
+      "repository": "Ahmad Mokadam",
+      "url": "http://cydia.saurik.com/package/co.xrepo.mokadam.localiapstore/",
+      "shortDescription": "تسمح لك شراء من داخل بعض التطبيقات والالعاب وتحتاج تحميل اداة inapp purchases 10&11 لتتمكن من شراء",
+      "category": "i0S11",
+      "author": "LocaliAPStore",
+      "commercial": false,
+      "date": "2019-09-04T14:19:57Z",
+      "versions": [
+        {
+          "tweakVersion": "1.4-2",
+          "iOSVersion": "12.4",
+          "repository": "Ahmad Mokadam",
+          "date": "2019-09-04T14:19:57Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -80250,6 +80250,40 @@
       ]
     },
     {
+      "id": "com.jamsoftonline.provenance",
+      "name": "Provenance",
+      "latest": "1.1.6-1",
+      "repository": "beta.unlimapps.com",
+      "url": "http://cydia.saurik.com/package/com.jamsoftonline.provenance/",
+      "shortDescription": "An iOS Frontend for multiple emulators, currently supporting Sega Genesis, Game Gear/Master System, Sega CD, SNES, NES, GB/GBC and GBA.",
+      "category": "Utilities",
+      "author": "jasarien",
+      "commercial": false,
+      "date": "2018-03-01T14:09:18Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1.6-1",
+          "iOSVersion": "12.4",
+          "repository": "UnlimApps",
+          "date": "2019-10-29T09:01:59Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.provenance.provenance",
       "name": "Provenance",
       "latest": "1.5-2",
@@ -81409,74 +81443,6 @@
       ]
     },
     {
-      "id": "com.ipr.ios4qarmicsansfont",
-      "name": "Qarmic Sans Font",
-      "latest": "2.2",
-      "repository": "ModMyi (Archive)",
-      "url": "http://cydia.saurik.com/package/com.ipr.ios4qarmicsansfont/",
-      "shortDescription": "BytaFont font by iPhoneRuler.net",
-      "category": "Fonts",
-      "author": "iPhoneRuler.net",
-      "commercial": false,
-      "date": "2019-09-21T04:10:33Z",
-      "versions": [
-        {
-          "tweakVersion": "2.2",
-          "iOSVersion": "12.4",
-          "repository": "ModMyi (Archive)",
-          "date": "2019-09-21T04:10:33Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.bytafont3.qarmicsans",
-      "name": "Qarmic Sans Font",
-      "latest": "3.0",
-      "repository": "ModMyi (Archive)",
-      "url": "http://cydia.saurik.com/package/com.bytafont3.qarmicsans/",
-      "shortDescription": "Font for BytaFont 3 by BytaFont.com",
-      "category": "Fonts (BytaFont 3)",
-      "author": "BytaFont.com",
-      "commercial": false,
-      "date": "2019-08-20T02:12:58Z",
-      "versions": [
-        {
-          "tweakVersion": "3.0",
-          "iOSVersion": "12.4",
-          "repository": "ModMyi (Archive)",
-          "date": "2019-08-28T15:58:32Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.bytafont2.qarmicsans",
       "name": "Qarmic Sans Font",
       "latest": "1.6",
@@ -81561,6 +81527,74 @@
           "iOSVersion": "12.4",
           "repository": "ModMyi (Archive)",
           "date": "2019-08-28T15:58:20Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.ipr.ios4qarmicsansfont",
+      "name": "Qarmic Sans Font",
+      "latest": "2.2",
+      "repository": "ModMyi (Archive)",
+      "url": "http://cydia.saurik.com/package/com.ipr.ios4qarmicsansfont/",
+      "shortDescription": "BytaFont font by iPhoneRuler.net",
+      "category": "Fonts",
+      "author": "iPhoneRuler.net",
+      "commercial": false,
+      "date": "2019-09-21T04:10:33Z",
+      "versions": [
+        {
+          "tweakVersion": "2.2",
+          "iOSVersion": "12.4",
+          "repository": "ModMyi (Archive)",
+          "date": "2019-09-21T04:10:33Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.bytafont3.qarmicsans",
+      "name": "Qarmic Sans Font",
+      "latest": "3.0",
+      "repository": "ModMyi (Archive)",
+      "url": "http://cydia.saurik.com/package/com.bytafont3.qarmicsans/",
+      "shortDescription": "Font for BytaFont 3 by BytaFont.com",
+      "category": "Fonts (BytaFont 3)",
+      "author": "BytaFont.com",
+      "commercial": false,
+      "date": "2019-08-20T02:12:58Z",
+      "versions": [
+        {
+          "tweakVersion": "3.0",
+          "iOSVersion": "12.4",
+          "repository": "ModMyi (Archive)",
+          "date": "2019-08-28T15:58:32Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -91018,22 +91052,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.sleepertweaks",
+      "id": "org.packix.sleeper",
       "name": "Sleeper",
-      "latest": "5.0.0",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.sleepertweaks/",
-      "shortDescription": "Sleeper (developer version).\r",
-      "category": "iOS 12",
+      "latest": "5.0.1",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/org.packix.sleeper/",
+      "shortDescription": "Set custom snooze times and skip alarms with the Clock app using Sleeper!",
+      "category": "Tweaks",
       "author": "Joshua Seltzer",
-      "commercial": false,
-      "date": "2019-10-05T20:17:30Z",
+      "commercial": true,
+      "date": "2019-04-04T21:14:25Z",
       "versions": [
         {
-          "tweakVersion": "5.0.0",
+          "tweakVersion": "5.0.1",
           "iOSVersion": "12.4",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-10-05T20:17:30Z",
+          "repository": "Packix",
+          "date": "2019-08-23T22:05:45Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -91052,22 +91086,22 @@
       ]
     },
     {
-      "id": "org.packix.sleeper",
+      "id": "org.cydia.kiimo.sleepertweaks",
       "name": "Sleeper",
-      "latest": "5.0.1",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/org.packix.sleeper/",
-      "shortDescription": "Set custom snooze times and skip alarms with the Clock app using Sleeper!",
-      "category": "Tweaks",
+      "latest": "5.0.0",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.sleepertweaks/",
+      "shortDescription": "Sleeper (developer version).\r",
+      "category": "iOS 12",
       "author": "Joshua Seltzer",
-      "commercial": true,
-      "date": "2019-04-04T21:14:25Z",
+      "commercial": false,
+      "date": "2019-10-05T20:17:30Z",
       "versions": [
         {
-          "tweakVersion": "5.0.1",
+          "tweakVersion": "5.0.0",
           "iOSVersion": "12.4",
-          "repository": "Packix",
-          "date": "2019-08-23T22:05:45Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-10-05T20:17:30Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -92367,39 +92401,6 @@
       ]
     },
     {
-      "id": "com.jontelang.snapper2",
-      "name": "Snapper 2",
-      "latest": "1.2.6",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.jontelang.snapper2/",
-      "shortDescription": "Pin screenshots on the screen.",
-      "category": "Tweaks",
-      "author": "Jonathan Winger Lang",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "1.4.2",
-          "iOSVersion": "12.4",
-          "repository": "BigBoss",
-          "date": "2019-08-19T04:31:42Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.jontelang.snapper2.packix",
       "name": "Snapper 2",
       "latest": "2.2.3",
@@ -92476,6 +92477,39 @@
           "iOSVersion": "12.4",
           "repository": "Packix",
           "date": "2019-10-13T22:55:41Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.jontelang.snapper2",
+      "name": "Snapper 2",
+      "latest": "1.2.6",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.jontelang.snapper2/",
+      "shortDescription": "Pin screenshots on the screen.",
+      "category": "Tweaks",
+      "author": "Jonathan Winger Lang",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "1.4.2",
+          "iOSVersion": "12.4",
+          "repository": "BigBoss",
+          "date": "2019-08-19T04:31:42Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -94546,22 +94580,22 @@
       ]
     },
     {
-      "id": "com.arab-cydia.spotilife",
+      "id": "com.ilovemyjuliotweaks.spotilife",
       "name": "Spotilife",
-      "latest": "0.9-1",
-      "repository": "A Arab-Cydia™  ✨🌙",
-      "url": "http://cydia.saurik.com/package/com.arab-cydia.spotilife/",
-      "shortDescription": "عدد غير محدود من التخطي وإزالة الإعلانات لتطبيق Spotify",
-      "category": "Tweak ",
-      "author": "julioverne",
+      "latest": "1.0.0",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.ilovemyjuliotweaks.spotilife/",
+      "shortDescription": "Spotify hacked to allow many new features but NOT downloading.",
+      "category": "Tweaks",
+      "author": "JulioVerne",
       "commercial": false,
-      "date": "2019-08-26T23:27:38Z",
+      "date": "2019-10-16T02:58:07Z",
       "versions": [
         {
-          "tweakVersion": "0.9-1",
+          "tweakVersion": "1.0.0",
           "iOSVersion": "12.4",
-          "repository": "A Arab-Cydia™  ✨🌙",
-          "date": "2019-08-26T23:27:38Z",
+          "repository": "(null)",
+          "date": "2019-10-16T02:58:07Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -94580,22 +94614,22 @@
       ]
     },
     {
-      "id": "com.ilovemyjuliotweaks.spotilife",
+      "id": "com.arab-cydia.spotilife",
       "name": "Spotilife",
-      "latest": "1.0.0",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.ilovemyjuliotweaks.spotilife/",
-      "shortDescription": "Spotify hacked to allow many new features but NOT downloading.",
-      "category": "Tweaks",
-      "author": "JulioVerne",
+      "latest": "0.9-1",
+      "repository": "A Arab-Cydia™  ✨🌙",
+      "url": "http://cydia.saurik.com/package/com.arab-cydia.spotilife/",
+      "shortDescription": "عدد غير محدود من التخطي وإزالة الإعلانات لتطبيق Spotify",
+      "category": "Tweak ",
+      "author": "julioverne",
       "commercial": false,
-      "date": "2019-10-16T02:58:07Z",
+      "date": "2019-08-26T23:27:38Z",
       "versions": [
         {
-          "tweakVersion": "1.0.0",
+          "tweakVersion": "0.9-1",
           "iOSVersion": "12.4",
-          "repository": "(null)",
-          "date": "2019-10-16T02:58:07Z",
+          "repository": "A Arab-Cydia™  ✨🌙",
+          "date": "2019-08-26T23:27:38Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -97504,40 +97538,6 @@
       ]
     },
     {
-      "id": "com.repo.xarold.com.swipeselection-pro",
-      "name": "SwipeSelection Pro",
-      "latest": "1.0.3-1",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.swipeselection-pro/",
-      "shortDescription": "Swipe along the keyboard to move cursor & select text.",
-      "category": "Tweaks",
-      "author": "iKy1e (Kyle Howells)",
-      "commercial": false,
-      "date": "2019-08-20T20:04:20Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.3-1",
-          "iOSVersion": "12.4",
-          "repository": "(null)",
-          "date": "2019-08-20T20:04:20Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "vn.ftios.swipeselection",
       "name": "SwipeSelection Pro",
       "latest": "1.0.3-1",
@@ -97593,6 +97593,40 @@
             "good": 4,
             "bad": 0,
             "total": 5,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.repo.xarold.com.swipeselection-pro",
+      "name": "SwipeSelection Pro",
+      "latest": "1.0.3-1",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.repo.xarold.com.swipeselection-pro/",
+      "shortDescription": "Swipe along the keyboard to move cursor & select text.",
+      "category": "Tweaks",
+      "author": "iKy1e (Kyle Howells)",
+      "commercial": false,
+      "date": "2019-08-20T20:04:20Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.3-1",
+          "iOSVersion": "12.4",
+          "repository": "(null)",
+          "date": "2019-08-20T20:04:20Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -105709,22 +105743,21 @@
       ]
     },
     {
-      "id": "ru.rejail.veexillum",
+      "id": "com.macciti.veexillum",
       "name": "Veexillum",
       "latest": "2.7",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.veexillum/",
-      "shortDescription": "Тема для WinterBoard",
-      "category": "Themes",
+      "repository": "ZodTTD & MacCiti (Archive)",
+      "url": "http://cydia.saurik.com/package/com.macciti.veexillum/",
+      "shortDescription": "True Simplicity",
+      "category": "Themes (SpringBoard)",
       "author": "veerklempt",
-      "commercial": false,
-      "date": "2019-08-21T16:49:50Z",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "2.7",
           "iOSVersion": "12.4",
-          "repository": "ReJail Repo",
-          "date": "2019-08-21T16:49:50Z",
+          "repository": "ZodTTD & MacCiti (Archive)",
+          "date": "2019-08-19T02:59:38Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -105743,21 +105776,22 @@
       ]
     },
     {
-      "id": "com.macciti.veexillum",
+      "id": "ru.rejail.veexillum",
       "name": "Veexillum",
       "latest": "2.7",
-      "repository": "ZodTTD & MacCiti (Archive)",
-      "url": "http://cydia.saurik.com/package/com.macciti.veexillum/",
-      "shortDescription": "True Simplicity",
-      "category": "Themes (SpringBoard)",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.veexillum/",
+      "shortDescription": "Тема для WinterBoard",
+      "category": "Themes",
       "author": "veerklempt",
-      "commercial": true,
+      "commercial": false,
+      "date": "2019-08-21T16:49:50Z",
       "versions": [
         {
           "tweakVersion": "2.7",
           "iOSVersion": "12.4",
-          "repository": "ZodTTD & MacCiti (Archive)",
-          "date": "2019-08-19T02:59:38Z",
+          "repository": "ReJail Repo",
+          "date": "2019-08-21T16:49:50Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
