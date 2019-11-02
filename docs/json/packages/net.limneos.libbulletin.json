@@ -1,10 +1,10 @@
 {
   "id": "net.limneos.libbulletin",
   "name": "libbulletin",
-  "latest": "0.1-147-trevor",
+  "latest": "0.1-148",
   "repository": "BigBoss",
   "url": "http://cydia.saurik.com/package/net.limneos.libbulletin/",
-  "shortDescription": "Modified version of libbulletin that fixes a nasty crash on iOS 12",
+  "shortDescription": "Simple library that displays bulletins",
   "category": "Development",
   "author": "Elias Limneos",
   "commercial": false,
@@ -1895,11 +1895,11 @@
       "repository": "BigBoss",
       "date": "2019-09-26T23:29:12Z",
       "outcome": {
-        "calculatedStatus": "Working",
-        "percentage": 100,
+        "calculatedStatus": "Likely working",
+        "percentage": 66,
         "good": 2,
         "bad": 0,
-        "total": 2,
+        "total": 3,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -1925,6 +1925,15 @@
           "date": "2019-10-01T11:28:23Z",
           "userName": "fillupontacos",
           "issueNumber": 101427,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone7,1",
+          "issues": "Causes freezing followed by reboot! So if you’re experiencing that remove this shit!",
+          "date": "2019-11-02T13:26:05Z",
+          "userName": "soum91",
+          "issueNumber": 103665,
           "arch32": false
         }
       ]
