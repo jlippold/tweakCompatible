@@ -11583,39 +11583,6 @@
       ]
     },
     {
-      "id": "com.officialscheduler.mterminal",
-      "name": "MTerminal",
-      "latest": "1.4-5",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.officialscheduler.mterminal/",
-      "shortDescription": "A MobileTerminal fork",
-      "category": "Utilities",
-      "author": "lordscotland",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.4-5",
-          "iOSVersion": "13.2.2",
-          "repository": "BigBoss",
-          "date": "2019-11-13T06:43:49Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "mterminal",
       "name": "MTerminal",
       "latest": "1.4-6",
@@ -11638,6 +11605,39 @@
             "good": 2,
             "bad": 0,
             "total": 3,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.officialscheduler.mterminal",
+      "name": "MTerminal",
+      "latest": "1.4-5",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.officialscheduler.mterminal/",
+      "shortDescription": "A MobileTerminal fork",
+      "category": "Utilities",
+      "author": "lordscotland",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.4-5",
+          "iOSVersion": "13.2.2",
+          "repository": "BigBoss",
+          "date": "2019-11-13T06:43:49Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -13726,21 +13726,22 @@
       ]
     },
     {
-      "id": "com.dave1482.powerapp",
+      "id": "com.dave1482.powerappbeta",
       "name": "PowerApp",
-      "latest": "4.4.0",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.dave1482.powerapp/",
-      "shortDescription": "Reboot, Shutdown, Respring, and more easily —  Supports iOS 3.0-iOS 12.4+",
+      "latest": "5.0-beta0731190015",
+      "repository": "beta.dave1482.com",
+      "url": "http://cydia.saurik.com/package/com.dave1482.powerappbeta/",
+      "shortDescription": "Reboot, Shutdown, Respring, go into Safemode",
       "category": "Utilities",
       "author": "Dave1482",
       "commercial": false,
+      "date": "2019-03-25T15:43:27Z",
       "versions": [
         {
-          "tweakVersion": "4.4.0",
+          "tweakVersion": "5.0-beta0731190015",
           "iOSVersion": "13.2.2",
-          "repository": "Dynastic Repo",
-          "date": "2019-11-10T22:11:11Z",
+          "repository": "Dave1482 Beta Repo",
+          "date": "2019-11-12T15:52:08Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -13759,22 +13760,21 @@
       ]
     },
     {
-      "id": "com.dave1482.powerappbeta",
+      "id": "com.dave1482.powerapp",
       "name": "PowerApp",
-      "latest": "5.0-beta0731190015",
-      "repository": "beta.dave1482.com",
-      "url": "http://cydia.saurik.com/package/com.dave1482.powerappbeta/",
-      "shortDescription": "Reboot, Shutdown, Respring, go into Safemode",
+      "latest": "4.4.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.dave1482.powerapp/",
+      "shortDescription": "Reboot, Shutdown, Respring, and more easily —  Supports iOS 3.0-iOS 12.4+",
       "category": "Utilities",
       "author": "Dave1482",
       "commercial": false,
-      "date": "2019-03-25T15:43:27Z",
       "versions": [
         {
-          "tweakVersion": "5.0-beta0731190015",
+          "tweakVersion": "4.4.0",
           "iOSVersion": "13.2.2",
-          "repository": "Dave1482 Beta Repo",
-          "date": "2019-11-12T15:52:08Z",
+          "repository": "Dynastic Repo",
+          "date": "2019-11-10T22:11:11Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -19696,11 +19696,11 @@
           "repository": "BigBoss",
           "date": "2019-11-10T21:00:45Z",
           "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 80,
+            "calculatedStatus": "Likely working",
+            "percentage": 66,
             "good": 4,
             "bad": 0,
-            "total": 5,
+            "total": 6,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -19983,22 +19983,22 @@
       ]
     },
     {
-      "id": "xz",
+      "id": "lzma",
       "name": "XZ Utils",
-      "latest": "5.2.4-4",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/xz/",
+      "latest": "4.32.7-2",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/lzma/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-24T08:16:57Z",
+      "date": "2018-03-04T19:03:45Z",
       "versions": [
         {
-          "tweakVersion": "5.2.4-4",
+          "tweakVersion": "4.32.7-2",
           "iOSVersion": "13.2.2",
           "repository": "apt.bingner.com",
-          "date": "2019-11-11T09:02:51Z",
+          "date": "2019-11-11T09:02:24Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -20017,22 +20017,22 @@
       ]
     },
     {
-      "id": "lzma",
+      "id": "xz",
       "name": "XZ Utils",
-      "latest": "4.32.7-2",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/lzma/",
+      "latest": "5.2.4-4",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/xz/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:03:45Z",
+      "date": "2018-10-24T08:16:57Z",
       "versions": [
         {
-          "tweakVersion": "4.32.7-2",
+          "tweakVersion": "5.2.4-4",
           "iOSVersion": "13.2.2",
           "repository": "apt.bingner.com",
-          "date": "2019-11-11T09:02:24Z",
+          "date": "2019-11-11T09:02:51Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
