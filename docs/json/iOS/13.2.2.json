@@ -121,10 +121,10 @@
           "date": "2019-11-11T04:34:54Z",
           "outcome": {
             "calculatedStatus": "Likely working",
-            "percentage": 50,
-            "good": 1,
+            "percentage": 66,
+            "good": 2,
             "bad": 0,
-            "total": 2,
+            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -5302,40 +5302,6 @@
       ]
     },
     {
-      "id": "ru.rejail.cocoatop64",
-      "name": "CocoaTop",
-      "latest": "2.0.2",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.cocoatop64/",
-      "shortDescription": "GUI Process Viewer для iOS (64-bit)",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "date": "2019-11-10T20:52:59Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0.2",
-          "iOSVersion": "13.2.2",
-          "repository": "ReJail Repo",
-          "date": "2019-11-10T20:52:59Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2",
@@ -5409,6 +5375,40 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.rejail.cocoatop64",
+      "name": "CocoaTop",
+      "latest": "2.0.2",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.cocoatop64/",
+      "shortDescription": "GUI Process Viewer для iOS (64-bit)",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "date": "2019-11-10T20:52:59Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0.2",
+          "iOSVersion": "13.2.2",
+          "repository": "ReJail Repo",
+          "date": "2019-11-10T20:52:59Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -24235,6 +24235,39 @@
       ]
     },
     {
+      "id": "co.dynastic.tsssaver",
+      "name": "TSS Saver",
+      "latest": "1.2.0",
+      "repository": "nullpixel's Repo",
+      "url": "https://repo.nullpixel.uk/",
+      "shortDescription": "A one-click tool to save blobs using TSSsaver.1conan.com",
+      "category": "Utilities",
+      "author": "nullpixel",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.2.0",
+          "iOSVersion": "13.2.2",
+          "repository": "nullpixel's Repo",
+          "date": "2019-11-11T06:21:57Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 4,
+            "bad": 0,
+            "total": 4,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "cydia.kiiimo.org.tsssaver",
       "name": "TSS Saver",
       "latest": "1.2.0",
@@ -24257,39 +24290,6 @@
             "good": 1,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "co.dynastic.tsssaver",
-      "name": "TSS Saver",
-      "latest": "1.2.0",
-      "repository": "nullpixel's Repo",
-      "url": "https://repo.nullpixel.uk/",
-      "shortDescription": "A one-click tool to save blobs using TSSsaver.1conan.com",
-      "category": "Utilities",
-      "author": "nullpixel",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.2.0",
-          "iOSVersion": "13.2.2",
-          "repository": "nullpixel's Repo",
-          "date": "2019-11-11T06:21:57Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 4,
-            "bad": 0,
-            "total": 4,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -26101,22 +26101,22 @@
       ]
     },
     {
-      "id": "xz",
+      "id": "lzma",
       "name": "XZ Utils",
-      "latest": "5.2.4-4",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/xz/",
+      "latest": "4.32.7-2",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/lzma/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-24T08:16:57Z",
+      "date": "2018-03-04T19:03:45Z",
       "versions": [
         {
-          "tweakVersion": "5.2.4-4",
+          "tweakVersion": "4.32.7-2",
           "iOSVersion": "13.2.2",
           "repository": "apt.bingner.com",
-          "date": "2019-11-11T09:02:51Z",
+          "date": "2019-11-11T09:02:24Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -26135,22 +26135,22 @@
       ]
     },
     {
-      "id": "lzma",
+      "id": "xz",
       "name": "XZ Utils",
-      "latest": "4.32.7-2",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/lzma/",
+      "latest": "5.2.4-4",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/xz/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:03:45Z",
+      "date": "2018-10-24T08:16:57Z",
       "versions": [
         {
-          "tweakVersion": "4.32.7-2",
+          "tweakVersion": "5.2.4-4",
           "iOSVersion": "13.2.2",
           "repository": "apt.bingner.com",
-          "date": "2019-11-11T09:02:24Z",
+          "date": "2019-11-11T09:02:51Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -26542,7 +26542,7 @@
     {
       "id": "com.muirey03.zenith",
       "name": "Zenith",
-      "latest": "1.2.1",
+      "latest": "1.2.2",
       "repository": "repo.chariz.io",
       "url": "http://cydia.saurik.com/package/com.muirey03.zenith/",
       "shortDescription": "Organisation Done Right",
@@ -26556,6 +26556,26 @@
           "iOSVersion": "13.2.2",
           "repository": "Packix",
           "date": "2019-11-14T15:26:55Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.2.2",
+          "iOSVersion": "13.2.2",
+          "repository": "Packix",
+          "date": "2019-11-16T12:38:38Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
