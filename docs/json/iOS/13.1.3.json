@@ -1648,7 +1648,7 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.7.2",
+      "latest": "3.7.3-16",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
       "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
@@ -1889,10 +1889,10 @@
     {
       "id": "com.icraze.gestures13",
       "name": "Gestures13",
-      "latest": "1.0.1",
+      "latest": "1.1",
       "repository": "iCraze's Repo",
       "url": "http://cydia.saurik.com/package/com.icraze.gestures13/",
-      "shortDescription": "Swipe To Open/Clear Notifications Quicker And Easier.",
+      "shortDescription": "Enable iPhone X Gestures On All Devices! (iOS 13)",
       "category": "Tweaks",
       "author": "iCraze",
       "commercial": false,
@@ -1923,7 +1923,7 @@
     {
       "id": "com.kurrt.gump",
       "name": "Gump",
-      "latest": "0.0.2",
+      "latest": "0.0.4",
       "repository": "Kurrt's Repo",
       "url": "http://cydia.saurik.com/package/com.kurrt.gump/",
       "shortDescription": "Keep apps and music alive through resprings.",
@@ -2079,7 +2079,7 @@
     {
       "id": "me.kritanta.homeplus",
       "name": "HomePlus Beta",
-      "latest": "0.2.2",
+      "latest": "0.4.1-beta",
       "repository": "Kritanta",
       "url": "http://cydia.saurik.com/package/me.kritanta.homeplus/",
       "shortDescription": "Dynamic, live homescreen layout with an intuitive UI",
@@ -2964,22 +2964,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.noctis13",
+      "id": "com.laughingquoll.noctis13",
       "name": "Noctis Neo",
-      "latest": "1.1",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.noctis13/",
+      "latest": "1.2",
+      "repository": "Chariz",
+      "url": "http://cydia.saurik.com/package/com.laughingquoll.noctis13/",
       "shortDescription": "Dark mode, your way.",
-      "category": "Supports iOS 13",
+      "category": "Tweaks",
       "author": "LaughingQuoll",
-      "commercial": false,
-      "date": "2019-11-12T15:51:23Z",
+      "commercial": true,
+      "date": "2019-11-11T16:37:42Z",
       "versions": [
         {
-          "tweakVersion": "1.1",
+          "tweakVersion": "1.2",
           "iOSVersion": "13.1.3",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-11-12T15:51:23Z",
+          "repository": "Chariz",
+          "date": "2019-11-25T20:59:51Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2998,22 +2998,22 @@
       ]
     },
     {
-      "id": "com.laughingquoll.noctis13",
+      "id": "org.cydia.kiimo.noctis13",
       "name": "Noctis Neo",
-      "latest": "1.2",
-      "repository": "Chariz",
-      "url": "http://cydia.saurik.com/package/com.laughingquoll.noctis13/",
+      "latest": "1.1",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.noctis13/",
       "shortDescription": "Dark mode, your way.",
-      "category": "Tweaks",
+      "category": "Supports iOS 13",
       "author": "LaughingQuoll",
-      "commercial": true,
-      "date": "2019-11-11T16:37:42Z",
+      "commercial": false,
+      "date": "2019-11-12T15:51:23Z",
       "versions": [
         {
-          "tweakVersion": "1.2",
+          "tweakVersion": "1.1",
           "iOSVersion": "13.1.3",
-          "repository": "Chariz",
-          "date": "2019-11-25T20:59:51Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-11-12T15:51:23Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3272,7 +3272,7 @@
       "latest": "0.1.11",
       "repository": "Nepeta",
       "url": "http://cydia.saurik.com/package/me.nepeta.relocate/",
-      "shortDescription": "Minimalist GPS spoofer (free) (If you can't see the depiction, please use Cydia or Zebra).",
+      "shortDescription": "Minimalist GPS spoofer (free)",
       "category": "Tweaks",
       "author": "Nepeta",
       "commercial": false,
@@ -3688,6 +3688,40 @@
           "iOSVersion": "13.1.3",
           "repository": "BigBoss",
           "date": "2019-11-16T07:34:26Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "u.blanxd.sshoncc",
+      "name": "SSH Toggle and Port",
+      "latest": "1.3.5",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/u.blanxd.sshoncc/",
+      "shortDescription": "OpenSSH toggle in CC and port changer in Settings",
+      "category": "Addons (ControlCenter)",
+      "author": "BlanxdH",
+      "commercial": false,
+      "date": "2018-05-15T02:55:45Z",
+      "versions": [
+        {
+          "tweakVersion": "1.3.5",
+          "iOSVersion": "13.1.3",
+          "repository": "BigBoss",
+          "date": "2019-11-26T19:16:18Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4297,7 +4331,7 @@
     {
       "id": "xyz.willy.zebra",
       "name": "Zebra (BETA)",
-      "latest": "1.0~beta23-1",
+      "latest": "1.0~beta23",
       "repository": "xTM3x Repo",
       "url": "http://cydia.saurik.com/package/xyz.willy.zebra/",
       "shortDescription": "A Useful Package Manager",
