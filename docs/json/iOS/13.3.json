@@ -4323,7 +4323,7 @@
     {
       "id": "me.kritanta.homeplus",
       "name": "HomePlus Beta",
-      "latest": "0.4.1-beta",
+      "latest": "0.4.3-beta",
       "repository": "Kritanta",
       "url": "http://cydia.saurik.com/package/me.kritanta.homeplus/",
       "shortDescription": "Dynamic, live homescreen layout with an intuitive UI",
@@ -4421,6 +4421,26 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "0.4.3-beta",
+          "iOSVersion": "13.3",
+          "repository": "Kritanta",
+          "date": "2019-11-27T07:20:23Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -5069,22 +5089,21 @@
       ]
     },
     {
-      "id": "me.nepeta.libcolorpicker",
+      "id": "org.thebigboss.libcolorpicker",
       "name": "libcolorpicker",
-      "latest": "1.6.2-3",
-      "repository": "Nepeta",
-      "url": "http://cydia.saurik.com/package/me.nepeta.libcolorpicker/",
-      "shortDescription": "libcolorpicker with arm64e (A12) support",
-      "category": "System",
-      "author": "Bailey Seymour",
+      "latest": "1.6.5",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.libcolorpicker/",
+      "shortDescription": "color picker library for developers",
+      "category": "Development",
+      "author": "PixelFire",
       "commercial": false,
-      "date": "2019-04-23T12:35:57Z",
       "versions": [
         {
-          "tweakVersion": "1.6.2-3",
+          "tweakVersion": "1.6.5",
           "iOSVersion": "13.3",
           "repository": "BigBoss",
-          "date": "2019-11-25T13:27:49Z",
+          "date": "2019-11-23T16:42:25Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5103,21 +5122,22 @@
       ]
     },
     {
-      "id": "org.thebigboss.libcolorpicker",
+      "id": "me.nepeta.libcolorpicker",
       "name": "libcolorpicker",
-      "latest": "1.6.5",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.libcolorpicker/",
-      "shortDescription": "color picker library for developers",
-      "category": "Development",
-      "author": "PixelFire",
+      "latest": "1.6.2-3",
+      "repository": "Nepeta",
+      "url": "http://cydia.saurik.com/package/me.nepeta.libcolorpicker/",
+      "shortDescription": "libcolorpicker with arm64e (A12) support",
+      "category": "System",
+      "author": "Bailey Seymour",
       "commercial": false,
+      "date": "2019-04-23T12:35:57Z",
       "versions": [
         {
-          "tweakVersion": "1.6.5",
+          "tweakVersion": "1.6.2-3",
           "iOSVersion": "13.3",
           "repository": "BigBoss",
-          "date": "2019-11-23T16:42:25Z",
+          "date": "2019-11-25T13:27:49Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
