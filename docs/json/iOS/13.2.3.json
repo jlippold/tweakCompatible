@@ -3323,6 +3323,40 @@
       ]
     },
     {
+      "id": "coreutils-bin",
+      "name": "Core Utilities (/bin)",
+      "latest": "8.31-1",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/coreutils-bin/",
+      "shortDescription": "just the /bin folder from GNU coreutils",
+      "category": "Utilities",
+      "author": "(null)",
+      "commercial": false,
+      "date": "2018-03-04T19:00:39Z",
+      "versions": [
+        {
+          "tweakVersion": "8.31-1",
+          "iOSVersion": "13.2.3",
+          "repository": "apt.bingner.com",
+          "date": "2019-11-30T20:06:16Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.laughingquoll.cowbell",
       "name": "Cowbell",
       "latest": "1.2.1",
@@ -3951,6 +3985,40 @@
           "iOSVersion": "13.2.3",
           "repository": "Dynastic Repo",
           "date": "2019-11-20T18:16:31Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "darwintools",
+      "name": "Darwin Tools",
+      "latest": "1.1-1",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/darwintools/",
+      "shortDescription": "startupfiletool, sw_vers",
+      "category": "Administration",
+      "author": "(null)",
+      "commercial": false,
+      "date": "2018-03-04T19:01:02Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1-1",
+          "iOSVersion": "13.2.3",
+          "repository": "apt.bingner.com",
+          "date": "2019-11-30T20:06:32Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -16122,22 +16190,22 @@
       ]
     },
     {
-      "id": "lzma",
+      "id": "xz",
       "name": "XZ Utils",
-      "latest": "4.32.7-2",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/lzma/",
+      "latest": "5.2.4-4",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/xz/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:03:45Z",
+      "date": "2018-10-24T08:16:57Z",
       "versions": [
         {
-          "tweakVersion": "4.32.7-2",
+          "tweakVersion": "5.2.4-4",
           "iOSVersion": "13.2.3",
-          "repository": "Bingner/Elucubratus",
-          "date": "2019-11-22T02:43:44Z",
+          "repository": "apt.bingner.com",
+          "date": "2019-11-19T13:58:06Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -16156,22 +16224,22 @@
       ]
     },
     {
-      "id": "xz",
+      "id": "lzma",
       "name": "XZ Utils",
-      "latest": "5.2.4-4",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/xz/",
+      "latest": "4.32.7-2",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/lzma/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-24T08:16:57Z",
+      "date": "2018-03-04T19:03:45Z",
       "versions": [
         {
-          "tweakVersion": "5.2.4-4",
+          "tweakVersion": "4.32.7-2",
           "iOSVersion": "13.2.3",
-          "repository": "apt.bingner.com",
-          "date": "2019-11-19T13:58:06Z",
+          "repository": "Bingner/Elucubratus",
+          "date": "2019-11-22T02:43:44Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
