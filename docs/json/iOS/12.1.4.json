@@ -975,7 +975,7 @@
     {
       "id": "applist",
       "name": "AppList",
-      "latest": "1.5.14",
+      "latest": "1.5.15~beta1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/applist/",
       "shortDescription": "Allow extensions to read the list of installed apps",
@@ -3123,7 +3123,7 @@
     {
       "id": "com.creaturecoding.bubbles",
       "name": "bubbles",
-      "latest": "0.4.0",
+      "latest": "0.5.3",
       "repository": "CreatureSurvive's Repo",
       "url": "http://cydia.saurik.com/package/com.creaturecoding.bubbles/",
       "shortDescription": "Make your Messages pop!",
@@ -4985,9 +4985,43 @@
       ]
     },
     {
+      "id": "com.saurik.substrate",
+      "name": "Cydia Substrate",
+      "latest": "0.9.7033",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.saurik.substrate/",
+      "shortDescription": "powerful code insertion platform",
+      "category": "System",
+      "author": "Jay Freeman (saurik)",
+      "commercial": false,
+      "date": "2019-09-08T20:11:22Z",
+      "versions": [
+        {
+          "tweakVersion": "0.9.7033",
+          "iOSVersion": "12.1.4",
+          "repository": "(null)",
+          "date": "2019-11-09T20:46:43Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "mobilesubstrate",
       "name": "Cydia Substrate",
-      "latest": "0.9.7100~b3",
+      "latest": "0.9.7100~b4",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/mobilesubstrate/",
       "shortDescription": "powerful code insertion platform",
@@ -5020,40 +5054,6 @@
           "iOSVersion": "12.1.4",
           "repository": "(null)",
           "date": "2019-11-12T05:51:48Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.saurik.substrate",
-      "name": "Cydia Substrate",
-      "latest": "0.9.7033",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.saurik.substrate/",
-      "shortDescription": "powerful code insertion platform",
-      "category": "System",
-      "author": "Jay Freeman (saurik)",
-      "commercial": false,
-      "date": "2019-09-08T20:11:22Z",
-      "versions": [
-        {
-          "tweakVersion": "0.9.7033",
-          "iOSVersion": "12.1.4",
-          "repository": "(null)",
-          "date": "2019-11-09T20:46:43Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6456,7 +6456,7 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.7.3-16",
+      "latest": "3.7.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
       "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
@@ -8582,7 +8582,7 @@
     {
       "id": "com.unlimapps.gramplus",
       "name": "Instagram ++",
-      "latest": "1.8r-294",
+      "latest": "1.8r-295",
       "repository": "beta.unlimapps.com",
       "url": "http://beta.unlimapps.com/",
       "shortDescription": "Download & Copy Instagram media",
@@ -8669,7 +8669,7 @@
     {
       "id": "me.apptapp.installer",
       "name": "Installer",
-      "latest": "5.0b12 (Installierte Version: 5.0b12)",
+      "latest": "5.0b12",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/me.apptapp.installer/",
       "shortDescription": "A modern package manager built specifically for iOS!",
@@ -9637,22 +9637,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.beta",
+      "id": "com.ryleyangus.libertylite.beta",
       "name": "Liberty Lite (Beta)",
       "latest": "0.2.12",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.beta/",
+      "repository": "Ryley's Repo",
+      "url": "http://cydia.saurik.com/package/com.ryleyangus.libertylite.beta/",
       "shortDescription": "A general purpose jailbreak detection bypass patch. Configure the Liberty Lite entry in the Settings app to block (most) apps from detecting your jailbreak. Disabling Substrate/Substitute is not currently supported. Support for both arm64e and armv7 has been enabled in this beta version.",
-      "category": "iOS 12",
+      "category": "Tweaks",
       "author": "Ryley Angus",
       "commercial": false,
-      "date": "2019-07-20T06:59:21Z",
+      "date": "2019-03-07T13:25:37Z",
       "versions": [
         {
           "tweakVersion": "0.2.12",
           "iOSVersion": "12.1.4",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-09-09T04:55:59Z",
+          "repository": "Ryley's Repo",
+          "date": "2019-07-11T23:10:59Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9671,22 +9671,22 @@
       ]
     },
     {
-      "id": "com.ryleyangus.libertylite.beta",
+      "id": "org.cydia.kiimo.beta",
       "name": "Liberty Lite (Beta)",
       "latest": "0.2.12",
-      "repository": "Ryley's Repo",
-      "url": "http://cydia.saurik.com/package/com.ryleyangus.libertylite.beta/",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.beta/",
       "shortDescription": "A general purpose jailbreak detection bypass patch. Configure the Liberty Lite entry in the Settings app to block (most) apps from detecting your jailbreak. Disabling Substrate/Substitute is not currently supported. Support for both arm64e and armv7 has been enabled in this beta version.",
-      "category": "Tweaks",
+      "category": "iOS 12",
       "author": "Ryley Angus",
       "commercial": false,
-      "date": "2019-03-07T13:25:37Z",
+      "date": "2019-07-20T06:59:21Z",
       "versions": [
         {
           "tweakVersion": "0.2.12",
           "iOSVersion": "12.1.4",
-          "repository": "Ryley's Repo",
-          "date": "2019-07-11T23:10:59Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-09-09T04:55:59Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9843,7 +9843,7 @@
     {
       "id": "com.spark.libsparkapplist",
       "name": "libSparkAppList",
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "repository": "Spark's Beta Repo",
       "url": "http://cydia.saurik.com/package/com.spark.libsparkapplist/",
       "shortDescription": "AppList alternative",
@@ -10323,7 +10323,7 @@
     {
       "id": "com.junesiphone.lockpluspro",
       "name": "LockPlus Pro",
-      "latest": "1.6.9.5",
+      "latest": "1.6.9.6",
       "repository": "junesiphone.com",
       "url": "http://cydia.saurik.com/package/com.junesiphone.lockpluspro/",
       "shortDescription": "The ultimate lock screen tweak!",
@@ -12035,7 +12035,7 @@
     {
       "id": "com.c1d3r.notchification",
       "name": "Notchification",
-      "latest": "2.0~b8",
+      "latest": "2.0.1",
       "repository": "C1d3r Repo",
       "url": "http://cydia.saurik.com/package/com.c1d3r.notchification/",
       "shortDescription": "Beautiful animated notifications for all device",
@@ -13520,7 +13520,7 @@
       "latest": "0.1.11",
       "repository": "Nepeta",
       "url": "http://cydia.saurik.com/package/me.nepeta.relocate/",
-      "shortDescription": "Minimalist GPS spoofer (free)",
+      "shortDescription": "Minimalist GPS spoofer (free) (If you can't see the depiction, please use Cydia or Zebra).",
       "category": "Tweaks",
       "author": "Nepeta",
       "commercial": false,
@@ -13687,7 +13687,7 @@
     {
       "id": "com.matchstic.reprovision",
       "name": "ReProvision",
-      "latest": "0.5~experimental7-1",
+      "latest": "0.5~experimental8",
       "repository": "Matchstic",
       "url": "http://cydia.saurik.com/package/com.matchstic.reprovision/",
       "shortDescription": "Re-sign applications on your device",
@@ -14017,7 +14017,7 @@
     {
       "id": "com.rpetrich.rocketbootstrap",
       "name": "RocketBootstrap",
-      "latest": "1.0.6",
+      "latest": "1.0.7~beta5",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.rpetrich.rocketbootstrap/",
       "shortDescription": "Support library allowing tweaks to communicate with sandboxed processes",
@@ -14541,7 +14541,7 @@
     {
       "id": "com.creaturecoding.shuffle",
       "name": "shuffle",
-      "latest": "1.0.4",
+      "latest": "0.8.0b",
       "repository": "CreatureSurvive's Repo",
       "url": "http://cydia.saurik.com/package/com.creaturecoding.shuffle/",
       "shortDescription": "Mix up your preferences",
@@ -15259,7 +15259,7 @@
     {
       "id": "com.spark.snowboard",
       "name": "Snowboard",
-      "latest": "1.2.72~Beta1",
+      "latest": "1.2.74~Beta1",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.spark.snowboard/",
       "shortDescription": "Snowboard theming engine",
@@ -15477,7 +15477,7 @@
       "latest": "3.0.1",
       "repository": "Dynastic Repo",
       "url": "http://cydia.saurik.com/package/com.spos/",
-      "shortDescription": "Enhance your Spotify Experience with Spos for Spotify.",
+      "shortDescription": "Make Your Spotify Experience Even Better! — ### Library Additions",
       "category": "Tweaks",
       "author": "aesthyrica",
       "commercial": false,
@@ -15556,6 +15556,39 @@
           "iOSVersion": "12.1.4",
           "repository": "BigBoss",
           "date": "2019-07-21T14:19:33Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.wizages.springchanger",
+      "name": "SpringChanger",
+      "latest": "0.3",
+      "repository": "apt.thebigboss.org",
+      "url": "http://cydia.saurik.com/package/com.wizages.springchanger/",
+      "shortDescription": "change colors of respring screen",
+      "category": "Tweaks",
+      "author": "wizages",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.3",
+          "iOSVersion": "12.1.4",
+          "repository": "BigBoss",
+          "date": "2019-12-02T12:21:10Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -17532,10 +17565,10 @@
     {
       "id": "com.matchstic.xenhtml",
       "name": "Xen HTML",
-      "latest": "1.1~beta3",
+      "latest": "1.0.1~release",
       "repository": "xenpublic.incendo.ws",
       "url": "http://cydia.saurik.com/package/com.matchstic.xenhtml/",
-      "shortDescription": "Unified HTML rendering; lockscreen and homescreen",
+      "shortDescription": "Unified HTML widgets; lockscreen and homescreen",
       "category": "System",
       "author": "Matt Clarke",
       "commercial": false,
@@ -17918,7 +17951,7 @@
     {
       "id": "xyz.willy.zebra",
       "name": "Zebra (BETA)",
-      "latest": "1.0~beta29-4",
+      "latest": "1.0~beta30",
       "repository": "xTM3x Repo",
       "url": "http://cydia.saurik.com/package/xyz.willy.zebra/",
       "shortDescription": "A Useful Package Manager",
