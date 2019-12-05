@@ -450,10 +450,10 @@
     {
       "id": "com.tigisoftware.appdatamanager",
       "name": "Apps Manager",
-      "latest": "1.5.1-10",
+      "latest": "1.4.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.appdatamanager/",
-      "shortDescription": "This tool provides the way to WIPE, BACKUP, RESTORE AppData for installed Apps",
+      "shortDescription": "tool to WIPE, BACKUP, RESTORE AppData for installed Apps",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -5949,6 +5949,40 @@
       ]
     },
     {
+      "id": "me.nepeta.libcolorpicker",
+      "name": "libcolorpicker",
+      "latest": "1.6.2-3",
+      "repository": "Nepeta",
+      "url": "http://cydia.saurik.com/package/me.nepeta.libcolorpicker/",
+      "shortDescription": "libcolorpicker with arm64e (A12) support",
+      "category": "System",
+      "author": "Bailey Seymour",
+      "commercial": false,
+      "date": "2019-04-23T12:35:57Z",
+      "versions": [
+        {
+          "tweakVersion": "1.6.2-3",
+          "iOSVersion": "13.3",
+          "repository": "BigBoss",
+          "date": "2019-11-25T13:27:49Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "org.thebigboss.libcolorpicker",
       "name": "libcolorpicker",
       "latest": "1.6.6",
@@ -5984,40 +6018,6 @@
           "iOSVersion": "13.3",
           "repository": "BigBoss",
           "date": "2019-11-27T21:56:35Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "me.nepeta.libcolorpicker",
-      "name": "libcolorpicker",
-      "latest": "1.6.2-3",
-      "repository": "Nepeta",
-      "url": "http://cydia.saurik.com/package/me.nepeta.libcolorpicker/",
-      "shortDescription": "libcolorpicker with arm64e (A12) support",
-      "category": "System",
-      "author": "Bailey Seymour",
-      "commercial": false,
-      "date": "2019-04-23T12:35:57Z",
-      "versions": [
-        {
-          "tweakVersion": "1.6.2-3",
-          "iOSVersion": "13.3",
-          "repository": "BigBoss",
-          "date": "2019-11-25T13:27:49Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6675,7 +6675,7 @@
     {
       "id": "com.kingpuffdaddi.lowpowerdnd",
       "name": "LowPowerDND",
-      "latest": "1.1.2",
+      "latest": "1.1.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.kingpuffdaddi.lowpowerdnd/",
       "shortDescription": "Enable Low Power Mode, when enabling DND",
@@ -6912,10 +6912,10 @@
     {
       "id": "me.nepeta.mitsuhainfinity",
       "name": "Mitsuha Infinity",
-      "latest": "0.2",
+      "latest": "0.1.7-2",
       "repository": "Nepeta",
       "url": "http://cydia.saurik.com/package/me.nepeta.mitsuhainfinity/",
-      "shortDescription": "Audio visualizer for iOS",
+      "shortDescription": "Audio visualizer for iOS (If you can't see the depiction, please use Cydia or Zebra).",
       "category": "Tweaks",
       "author": "c0ldra1n & Nepeta",
       "commercial": false,
@@ -8105,10 +8105,10 @@
           "date": "2019-11-17T07:02:28Z",
           "outcome": {
             "calculatedStatus": "Likely working",
-            "percentage": 66,
-            "good": 2,
+            "percentage": 75,
+            "good": 3,
             "bad": 0,
-            "total": 3,
+            "total": 4,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -8958,22 +8958,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.shadow",
+      "id": "me.jjolano.shadow",
       "name": "Shadow",
       "latest": "2.0.20",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.shadow/",
+      "repository": "jjolano's iOS Tweaks",
+      "url": "http://cydia.saurik.com/package/me.jjolano.shadow/",
       "shortDescription": "A lightweight general jailbreak detection bypass.",
-      "category": "iOS 12",
+      "category": "Tweaks",
       "author": "jjolano",
       "commercial": false,
-      "date": "2019-11-25T13:27:19Z",
+      "date": "2019-06-13T18:40:51Z",
       "versions": [
         {
           "tweakVersion": "2.0.20",
           "iOSVersion": "13.3",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-11-25T13:27:19Z",
+          "repository": "jjolano's iOS Tweaks",
+          "date": "2019-11-12T21:00:48Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -8992,22 +8992,22 @@
       ]
     },
     {
-      "id": "me.jjolano.shadow",
+      "id": "org.cydia.kiimo.shadow",
       "name": "Shadow",
       "latest": "2.0.20",
-      "repository": "jjolano's iOS Tweaks",
-      "url": "http://cydia.saurik.com/package/me.jjolano.shadow/",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.shadow/",
       "shortDescription": "A lightweight general jailbreak detection bypass.",
-      "category": "Tweaks",
+      "category": "iOS 12",
       "author": "jjolano",
       "commercial": false,
-      "date": "2019-06-13T18:40:51Z",
+      "date": "2019-11-25T13:27:19Z",
       "versions": [
         {
           "tweakVersion": "2.0.20",
           "iOSVersion": "13.3",
-          "repository": "jjolano's iOS Tweaks",
-          "date": "2019-11-12T21:00:48Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-11-25T13:27:19Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -9798,10 +9798,10 @@
     {
       "id": "com.ioscreatix.sugarcane",
       "name": "SugarCane",
-      "latest": "1.2-3+debug",
+      "latest": "1.0.0",
       "repository": "iOS Creatix",
       "url": "http://cydia.saurik.com/package/com.ioscreatix.sugarcane/",
-      "shortDescription": "Get percentages for the sliders in the Control Center on iOS 13",
+      "shortDescription": "Get percentages for the sliders in the Control Center on iOS 11",
       "category": "Tweaks",
       "author": "iOS Creatix",
       "commercial": false,
