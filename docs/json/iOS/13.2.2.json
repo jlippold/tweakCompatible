@@ -1878,7 +1878,7 @@
     {
       "id": "applist",
       "name": "AppList",
-      "latest": "1.5.15~beta1",
+      "latest": "1.5.14",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/applist/",
       "shortDescription": "Allow extensions to read the list of installed apps",
@@ -5241,6 +5241,39 @@
       ]
     },
     {
+      "id": "org.thebigboss.blurrybadges",
+      "name": "BlurryBadges",
+      "latest": "1.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.blurrybadges/",
+      "shortDescription": "Add customizable blur to SpringBoard icon badges.",
+      "category": "Tweaks",
+      "author": "PoomSmart",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.1",
+          "iOSVersion": "13.2.2",
+          "repository": "BigBoss",
+          "date": "2019-11-24T19:56:33Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.spicat.blurrybadges",
       "name": "BlurryBadges",
       "latest": "1.2.4",
@@ -5261,39 +5294,6 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "org.thebigboss.blurrybadges",
-      "name": "BlurryBadges",
-      "latest": "1.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.blurrybadges/",
-      "shortDescription": "Add customizable blur to SpringBoard icon badges.",
-      "category": "Tweaks",
-      "author": "PoomSmart",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.1",
-          "iOSVersion": "13.2.2",
-          "repository": "BigBoss",
-          "date": "2019-11-24T19:56:33Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -8183,25 +8183,26 @@
       ]
     },
     {
-      "id": "ru.domo.cocoatop",
+      "id": "ru.rejail.cocoatop64",
       "name": "CocoaTop",
-      "latest": "2.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
-      "shortDescription": "Process Viewer for iOS GUI",
+      "latest": "2.0.2",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.cocoatop64/",
+      "shortDescription": "GUI Process Viewer для iOS (64-bit)",
       "category": "Utilities",
       "author": "Domo",
       "commercial": false,
+      "date": "2019-11-10T20:52:59Z",
       "versions": [
         {
-          "tweakVersion": "2.0.1",
+          "tweakVersion": "2.0.2",
           "iOSVersion": "13.2.2",
-          "repository": "BigBoss",
-          "date": "2019-11-10T17:52:03Z",
+          "repository": "ReJail Repo",
+          "date": "2019-11-10T20:52:59Z",
           "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -8270,26 +8271,25 @@
       ]
     },
     {
-      "id": "ru.rejail.cocoatop64",
+      "id": "ru.domo.cocoatop",
       "name": "CocoaTop",
-      "latest": "2.0.2",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.cocoatop64/",
-      "shortDescription": "GUI Process Viewer для iOS (64-bit)",
+      "latest": "2.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
+      "shortDescription": "Process Viewer for iOS GUI",
       "category": "Utilities",
       "author": "Domo",
       "commercial": false,
-      "date": "2019-11-10T20:52:59Z",
       "versions": [
         {
-          "tweakVersion": "2.0.2",
+          "tweakVersion": "2.0.1",
           "iOSVersion": "13.2.2",
-          "repository": "ReJail Repo",
-          "date": "2019-11-10T20:52:59Z",
+          "repository": "BigBoss",
+          "date": "2019-11-10T17:52:03Z",
           "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -12550,6 +12550,39 @@
       ]
     },
     {
+      "id": "com.ps.emojifontmanager",
+      "name": "EmojiFontManager [Beta]",
+      "latest": "0.0.7.1",
+      "repository": "PoomSmart's Repo",
+      "url": "http://poomsmart.github.io/repo/",
+      "shortDescription": "Emoji font override and management.",
+      "category": "Tweaks",
+      "author": "PoomSmart",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.0.7.1",
+          "iOSVersion": "13.2.2",
+          "repository": "PoomSmart's Repo",
+          "date": "2019-12-06T02:00:14Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.fidele007.emojikey",
       "name": "EmojiKey",
       "latest": "1.4",
@@ -16687,6 +16720,40 @@
       ]
     },
     {
+      "id": "com.hackyouriphone.haptickeys",
+      "name": "HapticKeys",
+      "latest": "3.0",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.haptickeys/",
+      "shortDescription": "Haptic feedback for keyboard touches",
+      "category": "HYI - Tweaks",
+      "author": "colecabral",
+      "commercial": false,
+      "date": "2019-11-22T22:19:52Z",
+      "versions": [
+        {
+          "tweakVersion": "3.0",
+          "iOSVersion": "13.2.2",
+          "repository": "(null)",
+          "date": "2019-11-22T22:19:52Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.cc.haptickeys",
       "name": "HapticKeys",
       "latest": "3.0",
@@ -16729,40 +16796,6 @@
             "good": 2,
             "bad": 0,
             "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.hackyouriphone.haptickeys",
-      "name": "HapticKeys",
-      "latest": "3.0",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.haptickeys/",
-      "shortDescription": "Haptic feedback for keyboard touches",
-      "category": "HYI - Tweaks",
-      "author": "colecabral",
-      "commercial": false,
-      "date": "2019-11-22T22:19:52Z",
-      "versions": [
-        {
-          "tweakVersion": "3.0",
-          "iOSVersion": "13.2.2",
-          "repository": "(null)",
-          "date": "2019-11-22T22:19:52Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -20202,7 +20235,7 @@
     {
       "id": "com.miracoz.kindastock",
       "name": "kindaStock [beta]",
-      "latest": "0.5.2",
+      "latest": "0.6",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.miracoz.kindastock/",
       "shortDescription": "A theme for iOS. Clean, familiar, yet new. Work in progress.",
@@ -21220,7 +21253,7 @@
     {
       "id": "com.ryleyangus.libertylite",
       "name": "Liberty Lite",
-      "latest": "0.2.10 (Kurulmuş Sürüm: 0.2.10)",
+      "latest": "0.2.10",
       "repository": "Ryley's Repo",
       "url": "http://cydia.saurik.com/package/com.ryleyangus.libertylite/",
       "shortDescription": "A (lite) general purpose jailbreak detection bypass patch. Use the Liberty entry in the Settings app to block (most) apps from detecting your jailbreak. Disabling Substrate/Substitute is not supported, so certain apps (PayPal, HSBC HK) will still be problematic.",
@@ -21491,10 +21524,10 @@
     {
       "id": "me.nepeta.libnepeta",
       "name": "libnepeta",
-      "latest": "0.1.1-1+debug",
+      "latest": "0.1.1",
       "repository": "Nepeta",
       "url": "http://cydia.saurik.com/package/me.nepeta.libnepeta/",
-      "shortDescription": "Nepeta's color utils",
+      "shortDescription": "Nepeta's color utils (If you can't see the depiction, please use Cydia or Zebra).",
       "category": "Development",
       "author": "Nepeta",
       "commercial": false,
@@ -22848,7 +22881,7 @@
     {
       "id": "com.navidmx.lotusdark",
       "name": "Lotus Dark",
-      "latest": "1.0.8",
+      "latest": "1.0.9",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.navidmx.lotusdark/",
       "shortDescription": "A dark alternative to Lotus",
@@ -23938,10 +23971,10 @@
     {
       "id": "me.nepeta.mitsuhainfinity",
       "name": "Mitsuha Infinity",
-      "latest": "0.1.7-2",
+      "latest": "0.2",
       "repository": "Nepeta",
       "url": "http://cydia.saurik.com/package/me.nepeta.mitsuhainfinity/",
-      "shortDescription": "Audio visualizer for iOS (If you can't see the depiction, please use Cydia or Zebra).",
+      "shortDescription": "Audio visualizer for iOS",
       "category": "Tweaks",
       "author": "c0ldra1n & Nepeta",
       "commercial": false,
@@ -24437,39 +24470,6 @@
       ]
     },
     {
-      "id": "com.officialscheduler.mterminal",
-      "name": "MTerminal",
-      "latest": "1.4-5",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.officialscheduler.mterminal/",
-      "shortDescription": "A MobileTerminal fork",
-      "category": "Utilities",
-      "author": "lordscotland",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.4-5",
-          "iOSVersion": "13.2.2",
-          "repository": "BigBoss",
-          "date": "2019-11-13T06:43:49Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "mterminal",
       "name": "MTerminal",
       "latest": "1.4-6",
@@ -24492,6 +24492,39 @@
             "good": 6,
             "bad": 0,
             "total": 9,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.officialscheduler.mterminal",
+      "name": "MTerminal",
+      "latest": "1.4-5",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.officialscheduler.mterminal/",
+      "shortDescription": "A MobileTerminal fork",
+      "category": "Utilities",
+      "author": "lordscotland",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.4-5",
+          "iOSVersion": "13.2.2",
+          "repository": "BigBoss",
+          "date": "2019-11-13T06:43:49Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -25134,22 +25167,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.newcam",
+      "id": "com.yourepo.jbrownllama.newcam",
       "name": "NewCam",
       "latest": "0.0.1",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.newcam/",
+      "repository": "Jbrownllama Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.jbrownllama.newcam/",
       "shortDescription": "******ONLY WORKS ON iOS 13******",
-      "category": "Supports iOS 13",
+      "category": "Tweaks",
       "author": "Llama",
       "commercial": false,
-      "date": "2019-11-30T16:16:45Z",
+      "date": "2019-11-16T13:16:34Z",
       "versions": [
         {
           "tweakVersion": "0.0.1",
           "iOSVersion": "13.2.2",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-11-30T16:16:45Z",
+          "repository": "Jbrownllama Source - YouRepo",
+          "date": "2019-11-18T03:34:06Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -25168,22 +25201,22 @@
       ]
     },
     {
-      "id": "com.yourepo.jbrownllama.newcam",
+      "id": "org.cydia.kiimo.newcam",
       "name": "NewCam",
       "latest": "0.0.1",
-      "repository": "Jbrownllama Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.jbrownllama.newcam/",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.newcam/",
       "shortDescription": "******ONLY WORKS ON iOS 13******",
-      "category": "Tweaks",
+      "category": "Supports iOS 13",
       "author": "Llama",
       "commercial": false,
-      "date": "2019-11-16T13:16:34Z",
+      "date": "2019-11-30T16:16:45Z",
       "versions": [
         {
           "tweakVersion": "0.0.1",
           "iOSVersion": "13.2.2",
-          "repository": "Jbrownllama Source - YouRepo",
-          "date": "2019-11-18T03:34:06Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-11-30T16:16:45Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -29313,39 +29346,6 @@
       ]
     },
     {
-      "id": "com.dave1482.powerapp",
-      "name": "PowerApp",
-      "latest": "4.4.0",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.dave1482.powerapp/",
-      "shortDescription": "Reboot, Shutdown, Respring, and more easily —  Supports iOS 3.0-iOS 12.4+",
-      "category": "Utilities",
-      "author": "Dave1482",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "4.4.0",
-          "iOSVersion": "13.2.2",
-          "repository": "Dynastic Repo",
-          "date": "2019-11-10T22:11:11Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.dave1482.powerappbeta",
       "name": "PowerApp",
       "latest": "5.0-beta0731190015",
@@ -29368,6 +29368,39 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.dave1482.powerapp",
+      "name": "PowerApp",
+      "latest": "4.4.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.dave1482.powerapp/",
+      "shortDescription": "Reboot, Shutdown, Respring, and more easily —  Supports iOS 3.0-iOS 12.4+",
+      "category": "Utilities",
+      "author": "Dave1482",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "4.4.0",
+          "iOSVersion": "13.2.2",
+          "repository": "Dynastic Repo",
+          "date": "2019-11-10T22:11:11Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -34247,40 +34280,6 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.snowboard",
-      "name": "SnowBoard",
-      "latest": "1.2.66~Beta1",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.snowboard/",
-      "shortDescription": "Snowboard theming engine",
-      "category": "Supports iOS 13",
-      "author": "Spark & Dennis D. Bednarz",
-      "commercial": false,
-      "date": "2019-11-23T21:08:29Z",
-      "versions": [
-        {
-          "tweakVersion": "1.2.66~Beta1",
-          "iOSVersion": "13.2.2",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-11-23T21:08:29Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.spark.snowboard",
       "name": "Snowboard",
       "latest": "1.2.74~Beta1",
@@ -34603,6 +34602,40 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.cydia.kiimo.snowboard",
+      "name": "SnowBoard",
+      "latest": "1.2.66~Beta1",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.snowboard/",
+      "shortDescription": "Snowboard theming engine",
+      "category": "Supports iOS 13",
+      "author": "Spark & Dennis D. Bednarz",
+      "commercial": false,
+      "date": "2019-11-23T21:08:29Z",
+      "versions": [
+        {
+          "tweakVersion": "1.2.66~Beta1",
+          "iOSVersion": "13.2.2",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-11-23T21:08:29Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -36586,7 +36619,7 @@
     {
       "id": "com.kabiroberai.supercharge",
       "name": "Supercharge Preview",
-      "latest": "1.0.0~preview1",
+      "latest": "1.0.0~preview1.1",
       "repository": "Supercharge Repo",
       "url": "http://cydia.saurik.com/package/com.kabiroberai.supercharge/",
       "shortDescription": "Supercharge preview for jailbroken devices",
@@ -38495,39 +38528,6 @@
       ]
     },
     {
-      "id": "co.dynastic.tsssaver",
-      "name": "TSS Saver",
-      "latest": "1.2.0",
-      "repository": "nullpixel's Repo",
-      "url": "https://repo.nullpixel.uk/",
-      "shortDescription": "A one-click tool to save blobs using TSSsaver.1conan.com",
-      "category": "Utilities",
-      "author": "nullpixel",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.2.0",
-          "iOSVersion": "13.2.2",
-          "repository": "nullpixel's Repo",
-          "date": "2019-11-11T06:21:57Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 6,
-            "bad": 0,
-            "total": 6,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "cydia.kiiimo.org.tsssaver",
       "name": "TSS Saver",
       "latest": "1.2.0",
@@ -38550,6 +38550,39 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "co.dynastic.tsssaver",
+      "name": "TSS Saver",
+      "latest": "1.2.0",
+      "repository": "nullpixel's Repo",
+      "url": "https://repo.nullpixel.uk/",
+      "shortDescription": "A one-click tool to save blobs using TSSsaver.1conan.com",
+      "category": "Utilities",
+      "author": "nullpixel",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.2.0",
+          "iOSVersion": "13.2.2",
+          "repository": "nullpixel's Repo",
+          "date": "2019-11-11T06:21:57Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 6,
+            "bad": 0,
+            "total": 6,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -41144,22 +41177,22 @@
       ]
     },
     {
-      "id": "xz",
+      "id": "lzma",
       "name": "XZ Utils",
-      "latest": "5.2.4-4",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/xz/",
+      "latest": "4.32.7-2",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/lzma/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-24T08:16:57Z",
+      "date": "2018-03-04T19:03:45Z",
       "versions": [
         {
-          "tweakVersion": "5.2.4-4",
+          "tweakVersion": "4.32.7-2",
           "iOSVersion": "13.2.2",
           "repository": "apt.bingner.com",
-          "date": "2019-11-11T09:02:51Z",
+          "date": "2019-11-11T09:02:24Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -41178,22 +41211,22 @@
       ]
     },
     {
-      "id": "lzma",
+      "id": "xz",
       "name": "XZ Utils",
-      "latest": "4.32.7-2",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/lzma/",
+      "latest": "5.2.4-4",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/xz/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:03:45Z",
+      "date": "2018-10-24T08:16:57Z",
       "versions": [
         {
-          "tweakVersion": "4.32.7-2",
+          "tweakVersion": "5.2.4-4",
           "iOSVersion": "13.2.2",
           "repository": "apt.bingner.com",
-          "date": "2019-11-11T09:02:24Z",
+          "date": "2019-11-11T09:02:51Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
