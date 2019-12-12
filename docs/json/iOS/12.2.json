@@ -1449,7 +1449,7 @@
     {
       "id": "org.thebigboss.anilaunch",
       "name": "Anilaunch",
-      "latest": "1.1.9",
+      "latest": "1.1.10",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.anilaunch/",
       "shortDescription": "Animate icons on various actions.",
@@ -4390,7 +4390,7 @@
     {
       "id": "me.nepeta.axon",
       "name": "Axon",
-      "latest": "0.2.4",
+      "latest": "0.2.3",
       "repository": "Nepeta",
       "url": "http://cydia.saurik.com/package/me.nepeta.axon/",
       "shortDescription": "Priority Hub for iOS 11 and 12",
@@ -5018,7 +5018,7 @@
     {
       "id": "com.gilshahar7.batterynotch",
       "name": "BatteryNotch",
-      "latest": "1.5.2",
+      "latest": "1.5.3",
       "repository": "iOS Creatix",
       "url": "http://cydia.saurik.com/package/com.gilshahar7.batterynotch/",
       "shortDescription": "Represent battery around the notch",
@@ -5805,7 +5805,7 @@
     {
       "id": "net.limneos.bioprotectxs",
       "name": "BioProtect XS (iOS 12)",
-      "latest": "4.3-29 (Installierte Version: 4.3-29)",
+      "latest": "4.3-85",
       "repository": "limneos.net",
       "url": "http://cydia.saurik.com/package/net.limneos.bioprotectxs/",
       "shortDescription": "Protect your apps with Touch/Face ID!",
@@ -7384,7 +7384,7 @@
     {
       "id": "net.limneos.callbarxs",
       "name": "CallBar XS (iOS 12)",
-      "latest": "2.3-34",
+      "latest": "2.3-75",
       "repository": "limneos.net",
       "url": "http://cydia.saurik.com/package/net.limneos.callbarxs/",
       "shortDescription": "Don't let incoming calls interrupt you!",
@@ -7538,6 +7538,26 @@
           "iOSVersion": "12.2",
           "repository": "Limneos Repo",
           "date": "2019-12-10T03:01:03Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "2.3-75",
+          "iOSVersion": "12.2",
+          "repository": "Limneos Repo",
+          "date": "2019-12-12T00:09:14Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -12045,10 +12065,10 @@
     {
       "id": "mobilesubstrate",
       "name": "Cydia Substrate",
-      "latest": "0.9.7100~b4",
+      "latest": "99.2",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/mobilesubstrate/",
-      "shortDescription": "powerful code insertion platform",
+      "shortDescription": "Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute",
       "category": "System",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -14074,10 +14094,10 @@
     {
       "id": "org.thebigboss.dismissprogress",
       "name": "DismissProgress",
-      "latest": "1.0.4",
+      "latest": "1.0.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.dismissprogress/",
-      "shortDescription": "Dismiss installation window without closing cydia.",
+      "shortDescription": "Dismiss Cydia'a installation window without closing cydia.",
       "category": "Tweaks",
       "author": "PoomSmart",
       "commercial": false,
@@ -29391,6 +29411,40 @@
       ]
     },
     {
+      "id": "ncurses5-libs",
+      "name": "New Curses",
+      "latest": "5.9-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
+      "shortDescription": "feature-complete terminal library",
+      "category": "System",
+      "author": "(null)",
+      "commercial": false,
+      "date": "2018-10-14T00:25:17Z",
+      "versions": [
+        {
+          "tweakVersion": "5.9-1",
+          "iOSVersion": "12.2",
+          "repository": "Bingner/Elucubratus",
+          "date": "2019-07-23T22:37:30Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "ncurses",
       "name": "New Curses",
       "latest": "6.1-1",
@@ -29427,40 +29481,6 @@
           "iOSVersion": "12.2",
           "repository": "test.apt.bingner.com",
           "date": "2019-12-05T05:31:52Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ncurses5-libs",
-      "name": "New Curses",
-      "latest": "5.9-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
-      "shortDescription": "feature-complete terminal library",
-      "category": "System",
-      "author": "(null)",
-      "commercial": false,
-      "date": "2018-10-14T00:25:17Z",
-      "versions": [
-        {
-          "tweakVersion": "5.9-1",
-          "iOSVersion": "12.2",
-          "repository": "Bingner/Elucubratus",
-          "date": "2019-07-23T22:37:30Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -35548,6 +35568,40 @@
       ]
     },
     {
+      "id": "org.cydia.kiimo.reprovision",
+      "name": "ReProvision",
+      "latest": "0.4.2",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.reprovision/",
+      "shortDescription": "Re-sign applications on your device",
+      "category": "System",
+      "author": "Matt Clarke",
+      "commercial": false,
+      "date": "2019-07-16T12:33:13Z",
+      "versions": [
+        {
+          "tweakVersion": "0.4.2",
+          "iOSVersion": "12.2",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-07-16T12:33:13Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.matchstic.reprovision",
       "name": "ReProvision",
       "latest": "0.5~experimental8",
@@ -35744,40 +35798,6 @@
           "iOSVersion": "12.2",
           "repository": "Matchstic",
           "date": "2019-11-28T23:01:38Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "org.cydia.kiimo.reprovision",
-      "name": "ReProvision",
-      "latest": "0.4.2",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.reprovision/",
-      "shortDescription": "Re-sign applications on your device",
-      "category": "System",
-      "author": "Matt Clarke",
-      "commercial": false,
-      "date": "2019-07-16T12:33:13Z",
-      "versions": [
-        {
-          "tweakVersion": "0.4.2",
-          "iOSVersion": "12.2",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-07-16T12:33:13Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -38366,10 +38386,10 @@
     {
       "id": "com.xcxiao.simplels2",
       "name": "SimpleLS 2",
-      "latest": "1.2.3-b1-1+debug",
+      "latest": "1.2.2",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.xcxiao.simplels2/",
-      "shortDescription": "SimpleLS",
+      "shortDescription": "SimpleLS, more than a simple clock.",
       "category": "Tweaks",
       "author": "XCXiao",
       "commercial": false,
@@ -46354,7 +46374,7 @@
     {
       "id": "com.fouadraheb.watusi",
       "name": "Watusi 2 for WhatsApp",
-      "latest": "1.2.22",
+      "latest": "1.2.23",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.fouadraheb.watusi/",
       "shortDescription": "The all-in-one tweak for WhatsApp Messenger",
@@ -48482,40 +48502,6 @@
       ]
     },
     {
-      "id": "com.yourepo.jpet26.youtubetools",
-      "name": "YouTube Tools",
-      "latest": "2.0",
-      "repository": "jpet26 Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.jpet26.youtubetools/",
-      "shortDescription": "Essential toolbox for YouTube app.",
-      "category": "Tweaks",
-      "author": "Justin Petkovic",
-      "commercial": false,
-      "date": "2019-05-25T17:07:36Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0",
-          "iOSVersion": "12.2",
-          "repository": "jpet26 Source - YouRepo",
-          "date": "2019-07-19T16:30:21Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.justinpetkovic.youtubetools",
       "name": "YouTube Tools",
       "latest": "3.0-1",
@@ -48611,6 +48597,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.yourepo.jpet26.youtubetools",
+      "name": "YouTube Tools",
+      "latest": "2.0",
+      "repository": "jpet26 Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.jpet26.youtubetools/",
+      "shortDescription": "Essential toolbox for YouTube app.",
+      "category": "Tweaks",
+      "author": "Justin Petkovic",
+      "commercial": false,
+      "date": "2019-05-25T17:07:36Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0",
+          "iOSVersion": "12.2",
+          "repository": "jpet26 Source - YouRepo",
+          "date": "2019-07-19T16:30:21Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
