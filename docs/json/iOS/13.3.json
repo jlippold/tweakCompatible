@@ -674,10 +674,10 @@
     {
       "id": "com.tigisoftware.appdatamanager",
       "name": "Apps Manager",
-      "latest": "1.4.2",
+      "latest": "1.5.1-10",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.appdatamanager/",
-      "shortDescription": "tool to WIPE, BACKUP, RESTORE AppData for installed Apps",
+      "shortDescription": "This tool provides the way to WIPE, BACKUP, RESTORE AppData for installed Apps",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -687,40 +687,6 @@
           "iOSVersion": "13.3",
           "repository": "TIGI Software",
           "date": "2019-11-15T13:28:48Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.cokepokes.appstoreplusplus",
-      "name": "AppStore++",
-      "latest": "0.9.7",
-      "repository": "cokepokes.github.io",
-      "url": "http://cydia.saurik.com/package/com.cokepokes.appstoreplusplus/",
-      "shortDescription": "Allows you to downgrade/upgrade apps in the AppStore on iOS 11-12.2",
-      "category": "Tweaks",
-      "author": "CokePokes",
-      "commercial": false,
-      "date": "2018-07-23T02:27:18Z",
-      "versions": [
-        {
-          "tweakVersion": "0.9.7",
-          "iOSVersion": "13.3",
-          "repository": "CokePokes",
-          "date": "2019-11-12T20:21:27Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -755,6 +721,40 @@
           "iOSVersion": "13.3",
           "repository": "(null)",
           "date": "2019-11-27T23:37:22Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.cokepokes.appstoreplusplus",
+      "name": "AppStore++",
+      "latest": "0.9.7",
+      "repository": "cokepokes.github.io",
+      "url": "http://cydia.saurik.com/package/com.cokepokes.appstoreplusplus/",
+      "shortDescription": "Allows you to downgrade/upgrade apps in the AppStore on iOS 11-12.2",
+      "category": "Tweaks",
+      "author": "CokePokes",
+      "commercial": false,
+      "date": "2018-07-23T02:27:18Z",
+      "versions": [
+        {
+          "tweakVersion": "0.9.7",
+          "iOSVersion": "13.3",
+          "repository": "CokePokes",
+          "date": "2019-11-12T20:21:27Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1223,10 +1223,10 @@
     {
       "id": "me.nepeta.axon",
       "name": "Axon",
-      "latest": "0.2.3",
+      "latest": "0.1.9",
       "repository": "Nepeta",
       "url": "http://cydia.saurik.com/package/me.nepeta.axon/",
-      "shortDescription": "Priority Hub for iOS 11 and 12",
+      "shortDescription": "Priority Hub for iOS 11 and 12 (If you can't see the depiction, please use Cydia or Zebra).",
       "category": "Tweaks",
       "author": "Nepeta",
       "commercial": false,
@@ -6019,11 +6019,11 @@
           "repository": "Packix",
           "date": "2019-12-11T18:58:19Z",
           "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
+            "calculatedStatus": "Likely working",
+            "percentage": 50,
+            "good": 1,
             "bad": 0,
-            "total": 1,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -7655,6 +7655,40 @@
       ]
     },
     {
+      "id": "me.nepeta.libcolorpicker",
+      "name": "libcolorpicker",
+      "latest": "1.6.2-3",
+      "repository": "Nepeta",
+      "url": "http://cydia.saurik.com/package/me.nepeta.libcolorpicker/",
+      "shortDescription": "libcolorpicker with arm64e (A12) support",
+      "category": "System",
+      "author": "Bailey Seymour",
+      "commercial": false,
+      "date": "2019-04-23T12:35:57Z",
+      "versions": [
+        {
+          "tweakVersion": "1.6.2-3",
+          "iOSVersion": "13.3",
+          "repository": "BigBoss",
+          "date": "2019-11-25T13:27:49Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "org.thebigboss.libcolorpicker",
       "name": "libcolorpicker",
       "latest": "1.6.6",
@@ -7690,40 +7724,6 @@
           "iOSVersion": "13.3",
           "repository": "BigBoss",
           "date": "2019-11-27T21:56:35Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "me.nepeta.libcolorpicker",
-      "name": "libcolorpicker",
-      "latest": "1.6.2-3",
-      "repository": "Nepeta",
-      "url": "http://cydia.saurik.com/package/me.nepeta.libcolorpicker/",
-      "shortDescription": "libcolorpicker with arm64e (A12) support",
-      "category": "System",
-      "author": "Bailey Seymour",
-      "commercial": false,
-      "date": "2019-04-23T12:35:57Z",
-      "versions": [
-        {
-          "tweakVersion": "1.6.2-3",
-          "iOSVersion": "13.3",
-          "repository": "BigBoss",
-          "date": "2019-11-25T13:27:49Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9092,22 +9092,22 @@
       ]
     },
     {
-      "id": "ncurses5-libs",
+      "id": "ncurses",
       "name": "New Curses",
-      "latest": "5.9-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
+      "latest": "6.1-1",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/ncurses/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-14T00:25:17Z",
+      "date": "2018-03-04T19:02:12Z",
       "versions": [
         {
-          "tweakVersion": "5.9-1",
+          "tweakVersion": "6.1-1",
           "iOSVersion": "13.3",
           "repository": "apt.bingner.com",
-          "date": "2019-12-11T14:44:26Z",
+          "date": "2019-12-11T14:44:35Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9126,22 +9126,22 @@
       ]
     },
     {
-      "id": "ncurses",
+      "id": "ncurses5-libs",
       "name": "New Curses",
-      "latest": "6.1-1",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/ncurses/",
+      "latest": "5.9-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:02:12Z",
+      "date": "2018-10-14T00:25:17Z",
       "versions": [
         {
-          "tweakVersion": "6.1-1",
+          "tweakVersion": "5.9-1",
           "iOSVersion": "13.3",
           "repository": "apt.bingner.com",
-          "date": "2019-12-11T14:44:35Z",
+          "date": "2019-12-11T14:44:26Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -11598,22 +11598,22 @@
       ]
     },
     {
-      "id": "me.jjolano.shadow",
+      "id": "org.cydia.kiimo.shadow",
       "name": "Shadow",
       "latest": "2.0.20",
-      "repository": "jjolano's iOS Tweaks",
-      "url": "http://cydia.saurik.com/package/me.jjolano.shadow/",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.shadow/",
       "shortDescription": "A lightweight general jailbreak detection bypass.",
-      "category": "Tweaks",
+      "category": "iOS 12",
       "author": "jjolano",
       "commercial": false,
-      "date": "2019-06-13T18:40:51Z",
+      "date": "2019-11-25T13:27:19Z",
       "versions": [
         {
           "tweakVersion": "2.0.20",
           "iOSVersion": "13.3",
-          "repository": "jjolano's iOS Tweaks",
-          "date": "2019-11-12T21:00:48Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-11-25T13:27:19Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -11632,22 +11632,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.shadow",
+      "id": "me.jjolano.shadow",
       "name": "Shadow",
       "latest": "2.0.20",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.shadow/",
+      "repository": "jjolano's iOS Tweaks",
+      "url": "http://cydia.saurik.com/package/me.jjolano.shadow/",
       "shortDescription": "A lightweight general jailbreak detection bypass.",
-      "category": "iOS 12",
+      "category": "Tweaks",
       "author": "jjolano",
       "commercial": false,
-      "date": "2019-11-25T13:27:19Z",
+      "date": "2019-06-13T18:40:51Z",
       "versions": [
         {
           "tweakVersion": "2.0.20",
           "iOSVersion": "13.3",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-11-25T13:27:19Z",
+          "repository": "jjolano's iOS Tweaks",
+          "date": "2019-11-12T21:00:48Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -14522,22 +14522,22 @@
       ]
     },
     {
-      "id": "lzma",
+      "id": "xz",
       "name": "XZ Utils",
-      "latest": "4.32.7-2",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/lzma/",
+      "latest": "5.2.4-4",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/xz/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:03:45Z",
+      "date": "2018-10-24T08:16:57Z",
       "versions": [
         {
-          "tweakVersion": "4.32.7-2",
+          "tweakVersion": "5.2.4-4",
           "iOSVersion": "13.3",
           "repository": "apt.bingner.com",
-          "date": "2019-12-11T14:42:53Z",
+          "date": "2019-12-11T14:43:18Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -14556,22 +14556,22 @@
       ]
     },
     {
-      "id": "xz",
+      "id": "lzma",
       "name": "XZ Utils",
-      "latest": "5.2.4-4",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/xz/",
+      "latest": "4.32.7-2",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/lzma/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-24T08:16:57Z",
+      "date": "2018-03-04T19:03:45Z",
       "versions": [
         {
-          "tweakVersion": "5.2.4-4",
+          "tweakVersion": "4.32.7-2",
           "iOSVersion": "13.3",
           "repository": "apt.bingner.com",
-          "date": "2019-12-11T14:43:18Z",
+          "date": "2019-12-11T14:42:53Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
