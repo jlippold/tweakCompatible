@@ -2492,7 +2492,7 @@
     {
       "id": "com.ichitaso.autobrightness11",
       "name": "AutoBrightnessToggle (CCSupport)",
-      "latest": "0.1-4-1",
+      "latest": "0.1-4",
       "repository": "ichitaso repository",
       "url": "http://cydia.saurik.com/package/com.ichitaso.autobrightness11/",
       "shortDescription": "Turn on / off Auto-Brightness from the control center.",
@@ -2627,7 +2627,7 @@
     {
       "id": "me.autotouch.autotouch.ios8",
       "name": "AutoTouch",
-      "latest": "5.2.4",
+      "latest": "6.0.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/me.autotouch.autotouch.ios8/",
       "shortDescription": "Record and playback touch operations, play macro scripts automatically.",
@@ -6358,6 +6358,39 @@
       ]
     },
     {
+      "id": "ru.domo.cocoatop",
+      "name": "CocoaTop",
+      "latest": "2.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
+      "shortDescription": "Process Viewer for iOS GUI",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0.1",
+          "iOSVersion": "13.2.3",
+          "repository": "BigBoss",
+          "date": "2019-11-19T11:59:07Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2",
@@ -6400,39 +6433,6 @@
             "good": 2,
             "bad": 0,
             "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ru.domo.cocoatop",
-      "name": "CocoaTop",
-      "latest": "2.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
-      "shortDescription": "Process Viewer for iOS GUI",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0.1",
-          "iOSVersion": "13.2.3",
-          "repository": "BigBoss",
-          "date": "2019-11-19T11:59:07Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -9215,6 +9215,40 @@
       ]
     },
     {
+      "id": "com.suricate.dropspremium",
+      "name": "dropspremium",
+      "latest": "1.0.0",
+      "repository": "https://suricate-dev.github.io/cydia-repo/",
+      "url": "http://cydia.saurik.com/package/com.suricate.dropspremium/",
+      "shortDescription": "A patch that enables all premium features in Drops app.",
+      "category": "Tweaks",
+      "author": "Suricate-dev",
+      "commercial": false,
+      "date": "2019-12-15T14:30:50Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.0",
+          "iOSVersion": "13.2.3",
+          "repository": "https://suricate-dev.github.io/cydia-repo/",
+          "date": "2019-12-15T14:30:50Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.imkpatil.easyeditalarms",
       "name": "EasyEditAlarms",
       "latest": "1.1",
@@ -10367,6 +10401,40 @@
       ]
     },
     {
+      "id": "ru.rejail.filza",
+      "name": "Filza File Manager",
+      "latest": "3.7.3-16k",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.filza/",
+      "shortDescription": "Файловый менеджер для iOS",
+      "category": "Utilities",
+      "author": "TIGI Software",
+      "commercial": false,
+      "date": "2019-08-20T10:06:45Z",
+      "versions": [
+        {
+          "tweakVersion": "3.7.3-16k",
+          "iOSVersion": "13.2.3",
+          "repository": "ReJail Repo",
+          "date": "2019-12-02T21:42:10Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
       "latest": "3.7.2",
@@ -10422,40 +10490,6 @@
           "iOSVersion": "13.2.3",
           "repository": "tigisoftware.com",
           "date": "2019-12-09T23:45:23Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ru.rejail.filza",
-      "name": "Filza File Manager",
-      "latest": "3.7.3-16k",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.filza/",
-      "shortDescription": "Файловый менеджер для iOS",
-      "category": "Utilities",
-      "author": "TIGI Software",
-      "commercial": false,
-      "date": "2019-08-20T10:06:45Z",
-      "versions": [
-        {
-          "tweakVersion": "3.7.3-16k",
-          "iOSVersion": "13.2.3",
-          "repository": "ReJail Repo",
-          "date": "2019-12-02T21:42:10Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -11301,60 +11335,6 @@
       ]
     },
     {
-      "id": "com.p2kdev.floatingdockplus13",
-      "name": "FloatingDockPlus13",
-      "latest": "1.1.2",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.p2kdev.floatingdockplus13/",
-      "shortDescription": "Use your Dock like a PRO!",
-      "category": "Tweaks",
-      "author": "P2KDev",
-      "commercial": true,
-      "date": "2019-11-18T20:26:39Z",
-      "versions": [
-        {
-          "tweakVersion": "1.1",
-          "iOSVersion": "13.2.3",
-          "repository": "Packix",
-          "date": "2019-11-24T18:05:01Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        },
-        {
-          "tweakVersion": "1.1.2",
-          "iOSVersion": "13.2.3",
-          "repository": "Packix",
-          "date": "2019-12-01T00:52:07Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.cydia.kiimo.floatingdockplus13",
       "name": "FloatingDockPlus13",
       "latest": "1.1.2",
@@ -11391,6 +11371,60 @@
           "iOSVersion": "13.2.3",
           "repository": "A kiiimo Repository ",
           "date": "2019-12-02T12:02:36Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.p2kdev.floatingdockplus13",
+      "name": "FloatingDockPlus13",
+      "latest": "1.1.2",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.p2kdev.floatingdockplus13/",
+      "shortDescription": "Use your Dock like a PRO!",
+      "category": "Tweaks",
+      "author": "P2KDev",
+      "commercial": true,
+      "date": "2019-11-18T20:26:39Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1",
+          "iOSVersion": "13.2.3",
+          "repository": "Packix",
+          "date": "2019-11-24T18:05:01Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.1.2",
+          "iOSVersion": "13.2.3",
+          "repository": "Packix",
+          "date": "2019-12-01T00:52:07Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -14112,7 +14146,7 @@
     {
       "id": "com.ichitaso.icontweak",
       "name": "IconTweak",
-      "latest": "1.0.5",
+      "latest": "1.0.6",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.ichitaso.icontweak/",
       "shortDescription": "Swipe icons to show control menu and more!",
@@ -16171,40 +16205,6 @@
       ]
     },
     {
-      "id": "com.ryleyangus.libertylite.beta",
-      "name": "Liberty Lite (Beta)",
-      "latest": "0.2.12",
-      "repository": "Ryley's Repo",
-      "url": "http://cydia.saurik.com/package/com.ryleyangus.libertylite.beta/",
-      "shortDescription": "A general purpose jailbreak detection bypass patch. Configure the Liberty Lite entry in the Settings app to block (most) apps from detecting your jailbreak. Disabling Substrate/Substitute is not currently supported. Support for both arm64e and armv7 has been enabled in this beta version.",
-      "category": "Tweaks",
-      "author": "Ryley Angus",
-      "commercial": false,
-      "date": "2019-03-07T13:25:37Z",
-      "versions": [
-        {
-          "tweakVersion": "0.2.12",
-          "iOSVersion": "13.2.3",
-          "repository": "Ryley's Repo",
-          "date": "2019-11-19T07:56:08Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.cydia.kiimo.beta",
       "name": "Liberty Lite (Beta)",
       "latest": "0.2.12",
@@ -16227,6 +16227,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.ryleyangus.libertylite.beta",
+      "name": "Liberty Lite (Beta)",
+      "latest": "0.2.12",
+      "repository": "Ryley's Repo",
+      "url": "http://cydia.saurik.com/package/com.ryleyangus.libertylite.beta/",
+      "shortDescription": "A general purpose jailbreak detection bypass patch. Configure the Liberty Lite entry in the Settings app to block (most) apps from detecting your jailbreak. Disabling Substrate/Substitute is not currently supported. Support for both arm64e and armv7 has been enabled in this beta version.",
+      "category": "Tweaks",
+      "author": "Ryley Angus",
+      "commercial": false,
+      "date": "2019-03-07T13:25:37Z",
+      "versions": [
+        {
+          "tweakVersion": "0.2.12",
+          "iOSVersion": "13.2.3",
+          "repository": "Ryley's Repo",
+          "date": "2019-11-19T07:56:08Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -16397,10 +16431,10 @@
     {
       "id": "me.nepeta.libnepeta",
       "name": "libnepeta",
-      "latest": "0.1.1",
+      "latest": "0.1.1-1+debug",
       "repository": "Nepeta",
       "url": "http://cydia.saurik.com/package/me.nepeta.libnepeta/",
-      "shortDescription": "Nepeta's color utils (If you can't see the depiction, please use Cydia or Zebra).",
+      "shortDescription": "Nepeta's color utils",
       "category": "Development",
       "author": "Nepeta",
       "commercial": false,
@@ -17516,7 +17550,7 @@
     {
       "id": "me.conorthedev.lockwidgets",
       "name": "LockWidgets",
-      "latest": "1.1",
+      "latest": "1.1.1",
       "repository": "Dynastic Repo",
       "url": "http://cydia.saurik.com/package/me.conorthedev.lockwidgets/",
       "shortDescription": "Add your favourite widgets to your lockscreen — The widgets feature on iOS is something we all take for granted, easy access to information from apps we all use day to day, on one swipe to the left on our home or lock screen.",
@@ -22172,6 +22206,40 @@
       ]
     },
     {
+      "id": "ru.rejail.realcc",
+      "name": "RealCC",
+      "latest": "1.0.2",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.realcc/",
+      "shortDescription": "Полное отключение Wi-fi и Bluetooth из ПУ",
+      "category": "Tweaks",
+      "author": "Jake James",
+      "commercial": false,
+      "date": "2019-12-03T10:08:58Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.2",
+          "iOSVersion": "13.2.3",
+          "repository": "ReJail Repo",
+          "date": "2019-12-03T10:08:58Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.jakeashacks.realcc",
       "name": "RealCC",
       "latest": "1.0.2",
@@ -22208,40 +22276,6 @@
           "iOSVersion": "13.2.3",
           "repository": "BigBoss",
           "date": "2019-11-21T05:54:52Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ru.rejail.realcc",
-      "name": "RealCC",
-      "latest": "1.0.2",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.realcc/",
-      "shortDescription": "Полное отключение Wi-fi и Bluetooth из ПУ",
-      "category": "Tweaks",
-      "author": "Jake James",
-      "commercial": false,
-      "date": "2019-12-03T10:08:58Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.2",
-          "iOSVersion": "13.2.3",
-          "repository": "ReJail Repo",
-          "date": "2019-12-03T10:08:58Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -26451,10 +26485,10 @@
     {
       "id": "com.cpdigitaldarkroom.taptapflip",
       "name": "TapTapFlip",
-      "latest": "1.5",
+      "latest": "1.3.3",
       "repository": "apt.thebigboss.org",
       "url": "http://cydia.saurik.com/package/com.cpdigitaldarkroom.taptapflip/",
-      "shortDescription": "Double tap to flip camera",
+      "shortDescription": "Two taps to flip camera!",
       "category": "Tweaks",
       "author": "CP Digital Darkroom",
       "commercial": false,
@@ -29018,22 +29052,22 @@
       ]
     },
     {
-      "id": "lzma",
+      "id": "xz",
       "name": "XZ Utils",
-      "latest": "4.32.7-2",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/lzma/",
+      "latest": "5.2.4-4",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/xz/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:03:45Z",
+      "date": "2018-10-24T08:16:57Z",
       "versions": [
         {
-          "tweakVersion": "4.32.7-2",
+          "tweakVersion": "5.2.4-4",
           "iOSVersion": "13.2.3",
-          "repository": "Bingner/Elucubratus",
-          "date": "2019-11-22T02:43:44Z",
+          "repository": "apt.bingner.com",
+          "date": "2019-11-19T13:58:06Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -29052,22 +29086,22 @@
       ]
     },
     {
-      "id": "xz",
+      "id": "lzma",
       "name": "XZ Utils",
-      "latest": "5.2.4-4",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/xz/",
+      "latest": "4.32.7-2",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/lzma/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-24T08:16:57Z",
+      "date": "2018-03-04T19:03:45Z",
       "versions": [
         {
-          "tweakVersion": "5.2.4-4",
+          "tweakVersion": "4.32.7-2",
           "iOSVersion": "13.2.3",
-          "repository": "apt.bingner.com",
-          "date": "2019-11-19T13:58:06Z",
+          "repository": "Bingner/Elucubratus",
+          "date": "2019-11-22T02:43:44Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -29187,39 +29221,6 @@
       ]
     },
     {
-      "id": "com.justinpetkovic.youtubetools",
-      "name": "YouTube Tools",
-      "latest": "3.0-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.justinpetkovic.youtubetools/",
-      "shortDescription": "Essential toolbox for YouTube app.",
-      "category": "Tweaks",
-      "author": "Justin Petkovic",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "3.0-1",
-          "iOSVersion": "13.2.3",
-          "repository": "Electra's iOS Utilities",
-          "date": "2019-12-09T21:28:43Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.yourepo.jpet26.youtubetools1",
       "name": "YouTube Tools",
       "latest": "4.0",
@@ -29240,6 +29241,39 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.justinpetkovic.youtubetools",
+      "name": "YouTube Tools",
+      "latest": "3.0-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.justinpetkovic.youtubetools/",
+      "shortDescription": "Essential toolbox for YouTube app.",
+      "category": "Tweaks",
+      "author": "Justin Petkovic",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "3.0-1",
+          "iOSVersion": "13.2.3",
+          "repository": "Electra's iOS Utilities",
+          "date": "2019-12-09T21:28:43Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
