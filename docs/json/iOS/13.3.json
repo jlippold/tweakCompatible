@@ -1,22 +1,22 @@
 {
   "packages": [
     {
-      "id": "com.level3tjg.1vigilate",
+      "id": "com.hackyouriphone.1vigilate",
       "name": "1vigilate",
       "latest": "0.0.2",
-      "repository": "level3tjg",
-      "url": "http://cydia.saurik.com/package/com.level3tjg.1vigilate/",
-      "shortDescription": "Make Palert work on iOS 11 - 13",
-      "category": "Tweaks",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.1vigilate/",
+      "shortDescription": "Make PAlert work on iOS11-13",
+      "category": "HYI - Tweaks",
       "author": "level3tjg",
       "commercial": false,
-      "date": "2019-11-24T03:24:50Z",
+      "date": "2019-11-27T23:39:07Z",
       "versions": [
         {
           "tweakVersion": "0.0.2",
           "iOSVersion": "13.3",
-          "repository": "level3tjg",
-          "date": "2020-01-01T05:31:23Z",
+          "repository": "(null)",
+          "date": "2019-11-27T23:39:07Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -35,22 +35,22 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.1vigilate",
+      "id": "com.level3tjg.1vigilate",
       "name": "1vigilate",
       "latest": "0.0.2",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.1vigilate/",
-      "shortDescription": "Make PAlert work on iOS11-13",
-      "category": "HYI - Tweaks",
+      "repository": "level3tjg",
+      "url": "http://cydia.saurik.com/package/com.level3tjg.1vigilate/",
+      "shortDescription": "Make Palert work on iOS 11 - 13",
+      "category": "Tweaks",
       "author": "level3tjg",
       "commercial": false,
-      "date": "2019-11-27T23:39:07Z",
+      "date": "2019-11-24T03:24:50Z",
       "versions": [
         {
           "tweakVersion": "0.0.2",
           "iOSVersion": "13.3",
-          "repository": "(null)",
-          "date": "2019-11-27T23:39:07Z",
+          "repository": "level3tjg",
+          "date": "2020-01-01T05:31:23Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -923,7 +923,7 @@
             "percentage": 0,
             "good": 0,
             "bad": 0,
-            "total": 1,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -11192,7 +11192,7 @@
     {
       "id": "com.brandonplank.flapp",
       "name": "Flappy Bird",
-      "latest": "1.5",
+      "latest": "1.6",
       "repository": "Brandon's Repo",
       "url": "http://cydia.saurik.com/package/com.brandonplank.flapp/",
       "shortDescription": "A Flappy Bird clone that runs on the latest iOS",
@@ -18708,6 +18708,40 @@
       ]
     },
     {
+      "id": "ncurses5-libs",
+      "name": "New Curses",
+      "latest": "5.9-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
+      "shortDescription": "feature-complete terminal library",
+      "category": "System",
+      "author": "(null)",
+      "commercial": false,
+      "date": "2018-10-14T00:25:17Z",
+      "versions": [
+        {
+          "tweakVersion": "5.9-1",
+          "iOSVersion": "13.3",
+          "repository": "apt.bingner.com",
+          "date": "2019-12-11T14:44:26Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "ncurses",
       "name": "New Curses",
       "latest": "6.1+20181013-1",
@@ -18744,40 +18778,6 @@
           "iOSVersion": "13.3",
           "repository": "apt.bingner.com",
           "date": "2019-12-29T03:53:10Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ncurses5-libs",
-      "name": "New Curses",
-      "latest": "5.9-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
-      "shortDescription": "feature-complete terminal library",
-      "category": "System",
-      "author": "(null)",
-      "commercial": false,
-      "date": "2018-10-14T00:25:17Z",
-      "versions": [
-        {
-          "tweakVersion": "5.9-1",
-          "iOSVersion": "13.3",
-          "repository": "apt.bingner.com",
-          "date": "2019-12-11T14:44:26Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -24098,40 +24098,6 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.shadow",
-      "name": "Shadow",
-      "latest": "2.0.20",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.shadow/",
-      "shortDescription": "A lightweight general jailbreak detection bypass.",
-      "category": "iOS 12",
-      "author": "jjolano",
-      "commercial": false,
-      "date": "2019-11-25T13:27:19Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0.20",
-          "iOSVersion": "13.3",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-11-25T13:27:19Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "me.jjolano.shadow",
       "name": "Shadow",
       "latest": "2.0.20",
@@ -24154,6 +24120,40 @@
             "good": 1,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.cydia.kiimo.shadow",
+      "name": "Shadow",
+      "latest": "2.0.20",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.shadow/",
+      "shortDescription": "A lightweight general jailbreak detection bypass.",
+      "category": "iOS 12",
+      "author": "jjolano",
+      "commercial": false,
+      "date": "2019-11-25T13:27:19Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0.20",
+          "iOSVersion": "13.3",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-11-25T13:27:19Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -24535,7 +24535,7 @@
       "latest": "1.0",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.sileoicon.tyamlodesign/",
-      "shortDescription": "Cydia inspired icon for Sileo",
+      "shortDescription": "Cydia inspired iCon for Sileo",
       "category": "Themes",
       "author": "TyamloDesign",
       "commercial": false,
