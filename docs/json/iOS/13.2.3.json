@@ -1694,10 +1694,10 @@
     {
       "id": "co.bananastudios.wolfram",
       "name": "Aporeo",
-      "latest": "2.4",
+      "latest": "3.0beta2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/co.bananastudios.wolfram/",
-      "shortDescription": "A Fast Charging solution for iOS!",
+      "shortDescription": "A Fast Charging solution for iOS",
       "category": "Tweaks",
       "author": "Cornelius Koetting",
       "commercial": false,
@@ -13162,7 +13162,7 @@
     {
       "id": "com.blackhole.gesto13",
       "name": "Gesto for iOS 13",
-      "latest": "1.0.1",
+      "latest": "1.0",
       "repository": "Dynastic Repo",
       "url": "http://cydia.saurik.com/package/com.blackhole.gesto13/",
       "shortDescription": "True Multitasking  — See Gesto (cydia://package/com.blackhole.Gesto) for iOS 11/12 compatibility",
@@ -13202,6 +13202,26 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.0",
+          "iOSVersion": "13.2.3",
+          "repository": "Dynastic Repo",
+          "date": "2019-12-22T23:28:46Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -15205,6 +15225,40 @@
       ]
     },
     {
+      "id": "ru.rejail.icleanerpro",
+      "name": "iCleaner Pro",
+      "latest": "7.7.5k",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.icleanerpro/",
+      "shortDescription": "Утилита iCleanerPro аналог CCleaner для PC",
+      "category": "Utilities",
+      "author": "Ivano Bilenchi",
+      "commercial": false,
+      "date": "2019-08-18T23:40:59Z",
+      "versions": [
+        {
+          "tweakVersion": "7.7.5k",
+          "iOSVersion": "13.2.3",
+          "repository": "ReJail Repo",
+          "date": "2019-12-14T15:37:07Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
       "latest": "7.8.0~beta2",
@@ -15266,40 +15320,6 @@
             "good": 3,
             "bad": 0,
             "total": 3,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ru.rejail.icleanerpro",
-      "name": "iCleaner Pro",
-      "latest": "7.7.5k",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.icleanerpro/",
-      "shortDescription": "Утилита iCleanerPro аналог CCleaner для PC",
-      "category": "Utilities",
-      "author": "Ivano Bilenchi",
-      "commercial": false,
-      "date": "2019-08-18T23:40:59Z",
-      "versions": [
-        {
-          "tweakVersion": "7.7.5k",
-          "iOSVersion": "13.2.3",
-          "repository": "ReJail Repo",
-          "date": "2019-12-14T15:37:07Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -20727,22 +20747,22 @@
       ]
     },
     {
-      "id": "ncurses",
+      "id": "ncurses5-libs",
       "name": "New Curses",
-      "latest": "6.1+20181013-1",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/ncurses/",
+      "latest": "5.9-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:02:12Z",
+      "date": "2018-10-14T00:25:17Z",
       "versions": [
         {
-          "tweakVersion": "6.1-1",
+          "tweakVersion": "5.9-1",
           "iOSVersion": "13.2.3",
           "repository": "Bingner/Elucubratus",
-          "date": "2019-11-21T23:20:48Z",
+          "date": "2019-11-21T23:21:01Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -20761,22 +20781,22 @@
       ]
     },
     {
-      "id": "ncurses5-libs",
+      "id": "ncurses",
       "name": "New Curses",
-      "latest": "5.9-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
+      "latest": "6.1+20181013-1",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/ncurses/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-14T00:25:17Z",
+      "date": "2018-03-04T19:02:12Z",
       "versions": [
         {
-          "tweakVersion": "5.9-1",
+          "tweakVersion": "6.1-1",
           "iOSVersion": "13.2.3",
           "repository": "Bingner/Elucubratus",
-          "date": "2019-11-21T23:21:01Z",
+          "date": "2019-11-21T23:20:48Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -24283,6 +24303,40 @@
       ]
     },
     {
+      "id": "ru.rejail.realcc",
+      "name": "RealCC",
+      "latest": "1.0.2",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.realcc/",
+      "shortDescription": "Полное отключение Wi-fi и Bluetooth из ПУ",
+      "category": "Tweaks",
+      "author": "Jake James",
+      "commercial": false,
+      "date": "2019-12-03T10:08:58Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.2",
+          "iOSVersion": "13.2.3",
+          "repository": "ReJail Repo",
+          "date": "2019-12-03T10:08:58Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.jakeashacks.realcc",
       "name": "RealCC",
       "latest": "1.0.2",
@@ -24319,40 +24373,6 @@
           "iOSVersion": "13.2.3",
           "repository": "BigBoss",
           "date": "2019-11-21T05:54:52Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ru.rejail.realcc",
-      "name": "RealCC",
-      "latest": "1.0.2",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.realcc/",
-      "shortDescription": "Полное отключение Wi-fi и Bluetooth из ПУ",
-      "category": "Tweaks",
-      "author": "Jake James",
-      "commercial": false,
-      "date": "2019-12-03T10:08:58Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.2",
-          "iOSVersion": "13.2.3",
-          "repository": "ReJail Repo",
-          "date": "2019-12-03T10:08:58Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -28381,7 +28401,7 @@
     {
       "id": "com.samgisaninja.successionrestore",
       "name": "Succession [beta]",
-      "latest": "1.4.6",
+      "latest": "1.4.5",
       "repository": "Samg_is_a_Ninja Repo",
       "url": "http://cydia.saurik.com/package/com.samgisaninja.successionrestore/",
       "shortDescription": "Restore without updating via rootfilesystem DMG",
@@ -32216,39 +32236,6 @@
       ]
     },
     {
-      "id": "com.justinpetkovic.youtubetools",
-      "name": "YouTube Tools",
-      "latest": "3.0-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.justinpetkovic.youtubetools/",
-      "shortDescription": "Essential toolbox for YouTube app.",
-      "category": "Tweaks",
-      "author": "Justin Petkovic",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "3.0-1",
-          "iOSVersion": "13.2.3",
-          "repository": "Electra's iOS Utilities",
-          "date": "2019-12-09T21:28:43Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.yourepo.jpet26.youtubetools1",
       "name": "YouTube Tools",
       "latest": "4.0",
@@ -32269,6 +32256,39 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.justinpetkovic.youtubetools",
+      "name": "YouTube Tools",
+      "latest": "3.0-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.justinpetkovic.youtubetools/",
+      "shortDescription": "Essential toolbox for YouTube app.",
+      "category": "Tweaks",
+      "author": "Justin Petkovic",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "3.0-1",
+          "iOSVersion": "13.2.3",
+          "repository": "Electra's iOS Utilities",
+          "date": "2019-12-09T21:28:43Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
