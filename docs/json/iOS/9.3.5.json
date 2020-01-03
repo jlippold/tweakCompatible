@@ -878,7 +878,7 @@
     {
       "id": "applist",
       "name": "AppList",
-      "latest": "1.5.15~beta1",
+      "latest": "1.5.14",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/applist/",
       "shortDescription": "Allow extensions to read the list of installed apps",
@@ -1037,7 +1037,7 @@
     {
       "id": "apt",
       "name": "APT 0.6 Transitional",
-      "latest": "1.8.2-3",
+      "latest": "1.8.2-5",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/apt/",
       "shortDescription": "the advanced packaging tool from Debian",
@@ -1294,7 +1294,7 @@
     {
       "id": "me.autotouch.autotouch.ios8",
       "name": "AutoTouch",
-      "latest": "5.2.4",
+      "latest": "6.0.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/me.autotouch.autotouch.ios8/",
       "shortDescription": "Record and playback touch operations, play macro scripts automatically.",
@@ -2434,7 +2434,7 @@
     {
       "id": "me.alfhaily.cercube",
       "name": "Cercube for YouTube",
-      "latest": "5.1.2",
+      "latest": "5.1.3",
       "repository": "Alfhaily APT",
       "url": "https://apt.alfhaily.me/",
       "shortDescription": "Download YouTube videos and more!",
@@ -3211,10 +3211,10 @@
     {
       "id": "cydia",
       "name": "Cydia Installer",
-      "latest": "1.1.32~b23",
+      "latest": "2.1",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia/",
-      "shortDescription": "graphical iPhone front-end for APT",
+      "shortDescription": "Required for Cydia/Sileo to work",
       "category": "Packaging",
       "author": "Jay Freeman (saurik)",
       "commercial": false,
@@ -3277,7 +3277,7 @@
     {
       "id": "cydia-lproj",
       "name": "Cydia Translations",
-      "latest": "1.1.32~b1",
+      "latest": "1.9.3~b6",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia-lproj/",
       "shortDescription": "languages and translations for Cydia",
@@ -4050,7 +4050,7 @@
     {
       "id": "org.herf.flux",
       "name": "f.lux",
-      "latest": "0.9988",
+      "latest": "0.9989",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/org.herf.flux/",
       "shortDescription": "warms colors at night to match indoor lighting",
@@ -4534,6 +4534,26 @@
           "iOSVersion": "9.3.5",
           "repository": "TIGI Software",
           "date": "2019-05-25T07:14:14Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 1,
+              "good": 1,
+              "bad": 0,
+              "percentage": 100,
+              "calculatedStatus": "Working"
+            }
+          }
+        },
+        {
+          "tweakVersion": "3.7.2",
+          "iOSVersion": "9.3.5",
+          "repository": "BigBoss",
+          "date": "2019-12-25T11:14:15Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5523,7 +5543,7 @@
     {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
-      "latest": "7.7.5",
+      "latest": "7.8.0~beta2",
       "repository": "Karen's Repo",
       "url": "http://ib-soft.net/icleaner",
       "shortDescription": "The first real iOS system cleaner & optimizer",
@@ -5992,7 +6012,7 @@
     {
       "id": "org.thebigboss.libcolorpicker",
       "name": "libcolorpicker",
-      "latest": "1.6.6",
+      "latest": "1.6.7",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.libcolorpicker/",
       "shortDescription": "color picker library for developers",
@@ -6568,7 +6588,7 @@
     {
       "id": "ncurses",
       "name": "New Curses",
-      "latest": "6.1-1",
+      "latest": "6.1+20181013-1",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/ncurses/",
       "shortDescription": "feature-complete terminal library",
@@ -6636,7 +6656,7 @@
     {
       "id": "ws.hbang.newterm2",
       "name": "NewTerm 2",
-      "latest": "2.3",
+      "latest": "2.4",
       "repository": "cydia.hbang.ws",
       "url": "https://cydia.hbang.ws/",
       "shortDescription": "A powerful terminal app for iOS",
@@ -8102,7 +8122,7 @@
     {
       "id": "com.matchstic.reprovision",
       "name": "ReProvision",
-      "latest": "0.5~experimental8",
+      "latest": "0.5~release",
       "repository": "Matchstic",
       "url": "http://cydia.saurik.com/package/com.matchstic.reprovision/",
       "shortDescription": "Re-sign applications on your device",
@@ -8480,7 +8500,7 @@
     {
       "id": "com.opa334.safariplus",
       "name": "Safari Plus",
-      "latest": "1.7.8-2",
+      "latest": "1.7.9-2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.opa334.safariplus/",
       "shortDescription": "Various enhancements to Safari!",
@@ -8756,7 +8776,7 @@
     {
       "id": "org.packix.sleeper",
       "name": "Sleeper",
-      "latest": "5.0.1",
+      "latest": "6.0.0",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/org.packix.sleeper/",
       "shortDescription": "Set custom snooze times and skip alarms with the Clock app using Sleeper!",
@@ -8790,7 +8810,7 @@
     {
       "id": "jp.r-plus.slidecut",
       "name": "SlideCut",
-      "latest": "0.5",
+      "latest": "0.6",
       "repository": "apt.thebigboss.org",
       "url": "http://cydia.saurik.com/package/jp.r-plus.slidecut/",
       "shortDescription": "Slide shortcut via space key.",
@@ -8892,7 +8912,7 @@
     {
       "id": "org.thebigboss.smoothcursor",
       "name": "SmoothCursor",
-      "latest": "1.1.3",
+      "latest": "1.1.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.smoothcursor/",
       "shortDescription": "Office 2013-styled cursor animation.",
@@ -9897,7 +9917,7 @@
     {
       "id": "com.unlimapps.uasharedtools",
       "name": "uasharedtools",
-      "latest": "2.1r-66",
+      "latest": "2.2r-94",
       "repository": "beta.unlimapps.com",
       "url": "http://beta.unlimapps.com/",
       "shortDescription": "shared tools for unlimapps tweaks",
@@ -9964,10 +9984,10 @@
     {
       "id": "com.merdok.unlocksound7",
       "name": "UnlockSound",
-      "latest": "1.2.9",
+      "latest": "1.2.11",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.merdok.unlocksound7/",
-      "shortDescription": "Unlock Sound on iOS7/8/9/10/11/12",
+      "shortDescription": "Unlock Sound on iOS 7 - 13",
       "category": "Tweaks",
       "author": "merdok",
       "commercial": false,
