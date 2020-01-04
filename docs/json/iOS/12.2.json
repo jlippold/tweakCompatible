@@ -3128,7 +3128,7 @@
     {
       "id": "libapt-pkg5.0",
       "name": "APT 1.4 Strict (libapt-pkg)",
-      "latest": "1.8.2-6",
+      "latest": "1.8.2-2",
       "repository": "Bingner/Elucubratus",
       "url": "http://cydia.saurik.com/package/libapt-pkg5.0/",
       "shortDescription": "the advanced packaging library from Debian",
@@ -3222,6 +3222,26 @@
           "iOSVersion": "12.2",
           "repository": "Diatrus/Altum",
           "date": "2019-12-26T01:51:35Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.8.2-2",
+          "iOSVersion": "12.2",
+          "repository": "test.apt.bingner.com",
+          "date": "2020-01-04T10:41:04Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -49844,40 +49864,6 @@
       ]
     },
     {
-      "id": "com.yourepo.jpet26.youtubetools",
-      "name": "YouTube Tools",
-      "latest": "2.0",
-      "repository": "jpet26 Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.jpet26.youtubetools/",
-      "shortDescription": "Essential toolbox for YouTube app.",
-      "category": "Tweaks",
-      "author": "Justin Petkovic",
-      "commercial": false,
-      "date": "2019-05-25T17:07:36Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0",
-          "iOSVersion": "12.2",
-          "repository": "jpet26 Source - YouRepo",
-          "date": "2019-07-19T16:30:21Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.justinpetkovic.youtubetools",
       "name": "YouTube Tools",
       "latest": "3.0-1",
@@ -49939,6 +49925,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.yourepo.jpet26.youtubetools",
+      "name": "YouTube Tools",
+      "latest": "2.0",
+      "repository": "jpet26 Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.jpet26.youtubetools/",
+      "shortDescription": "Essential toolbox for YouTube app.",
+      "category": "Tweaks",
+      "author": "Justin Petkovic",
+      "commercial": false,
+      "date": "2019-05-25T17:07:36Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0",
+          "iOSVersion": "12.2",
+          "repository": "jpet26 Source - YouRepo",
+          "date": "2019-07-19T16:30:21Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
