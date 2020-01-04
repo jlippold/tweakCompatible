@@ -10094,7 +10094,7 @@
     {
       "id": "libapt",
       "name": "APT Strict (lib)",
-      "latest": "1.8.2-6",
+      "latest": "1.8.2-2",
       "repository": "Bingner/Elucubratus",
       "url": "http://cydia.saurik.com/package/libapt/",
       "shortDescription": "the advanced packaging library from Debian",
@@ -12555,6 +12555,40 @@
       ]
     },
     {
+      "id": "ru.rejail.autotouch",
+      "name": "AutoTouch",
+      "latest": "5.1.5k",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.autotouch/",
+      "shortDescription": "Автокликер для iOS",
+      "category": "Utilities",
+      "author": "Kent Krantz",
+      "commercial": false,
+      "date": "2019-08-19T00:11:01Z",
+      "versions": [
+        {
+          "tweakVersion": "5.1.5k",
+          "iOSVersion": "12.4",
+          "repository": "ReJail Repo",
+          "date": "2019-08-19T00:11:01Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "me.autotouch.autotouch.ios8",
       "name": "AutoTouch",
       "latest": "5.1.2-7",
@@ -12630,40 +12664,6 @@
           "iOSVersion": "12.4",
           "repository": "AutoTouch Beta",
           "date": "2019-10-14T22:10:52Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ru.rejail.autotouch",
-      "name": "AutoTouch",
-      "latest": "5.1.5k",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.autotouch/",
-      "shortDescription": "Автокликер для iOS",
-      "category": "Utilities",
-      "author": "Kent Krantz",
-      "commercial": false,
-      "date": "2019-08-19T00:11:01Z",
-      "versions": [
-        {
-          "tweakVersion": "5.1.5k",
-          "iOSVersion": "12.4",
-          "repository": "ReJail Repo",
-          "date": "2019-08-19T00:11:01Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -31102,73 +31102,6 @@
       ]
     },
     {
-      "id": "ru.domo.cocoatop",
-      "name": "CocoaTop",
-      "latest": "2.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
-      "shortDescription": "Process Viewer for iOS GUI",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0.1",
-          "iOSVersion": "12.4",
-          "repository": "BigBoss",
-          "date": "2019-08-19T09:47:08Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 6,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ru.rejail.cocoatop64",
-      "name": "CocoaTop",
-      "latest": "2.0.2",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.cocoatop64/",
-      "shortDescription": "GUI Process Viewer для iOS (64-bit)",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "date": "2019-11-10T20:52:59Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0.2",
-          "iOSVersion": "12.4",
-          "repository": "ReJail Repo",
-          "date": "2019-11-18T04:13:33Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2-1+debug",
@@ -31245,6 +31178,73 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.domo.cocoatop",
+      "name": "CocoaTop",
+      "latest": "2.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
+      "shortDescription": "Process Viewer for iOS GUI",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0.1",
+          "iOSVersion": "12.4",
+          "repository": "BigBoss",
+          "date": "2019-08-19T09:47:08Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 6,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.rejail.cocoatop64",
+      "name": "CocoaTop",
+      "latest": "2.0.2",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.cocoatop64/",
+      "shortDescription": "GUI Process Viewer для iOS (64-bit)",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "date": "2019-11-10T20:52:59Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0.2",
+          "iOSVersion": "12.4",
+          "repository": "ReJail Repo",
+          "date": "2019-11-18T04:13:33Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -37713,40 +37713,6 @@
       ]
     },
     {
-      "id": "com.yourepo.mohadu31.cydown",
-      "name": "CyDown",
-      "latest": "6.9.7",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.yourepo.mohadu31.cydown/",
-      "shortDescription": "Cydia Download Manager & Extra Features!",
-      "category": "iOS12",
-      "author": "julioverne",
-      "commercial": false,
-      "date": "2019-07-23T20:10:51Z",
-      "versions": [
-        {
-          "tweakVersion": "6.9.7",
-          "iOSVersion": "12.4",
-          "repository": "(null)",
-          "date": "2019-09-02T18:11:07Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "ru.rejail.cydown",
       "name": "CyDown",
       "latest": "7.0.1",
@@ -37783,6 +37749,40 @@
           "iOSVersion": "12.4",
           "repository": "ReJail Repo",
           "date": "2019-11-15T10:50:02Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.yourepo.mohadu31.cydown",
+      "name": "CyDown",
+      "latest": "6.9.7",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.yourepo.mohadu31.cydown/",
+      "shortDescription": "Cydia Download Manager & Extra Features!",
+      "category": "iOS12",
+      "author": "julioverne",
+      "commercial": false,
+      "date": "2019-07-23T20:10:51Z",
+      "versions": [
+        {
+          "tweakVersion": "6.9.7",
+          "iOSVersion": "12.4",
+          "repository": "(null)",
+          "date": "2019-09-02T18:11:07Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -42784,60 +42784,6 @@
       ]
     },
     {
-      "id": "com.ahmedbafkir.dleasy",
-      "name": "DLEasy",
-      "latest": "1.5.2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.ahmedbafkir.dleasy/",
-      "shortDescription": "Download images & videos from social apps easily!",
-      "category": "Tweaks",
-      "author": "Ahmed Bafkir",
-      "commercial": false,
-      "date": "2019-01-23T22:07:44Z",
-      "versions": [
-        {
-          "tweakVersion": "1.4.3",
-          "iOSVersion": "12.4",
-          "repository": "(null)",
-          "date": "2019-08-28T03:28:40Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        },
-        {
-          "tweakVersion": "1.5.2",
-          "iOSVersion": "12.4",
-          "repository": "subdiox's Repo",
-          "date": "2019-09-16T16:40:11Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "me.ahmedbafkir.dleasy",
       "name": "DLEasy",
       "latest": "2.8.0",
@@ -42938,6 +42884,60 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.ahmedbafkir.dleasy",
+      "name": "DLEasy",
+      "latest": "1.5.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.ahmedbafkir.dleasy/",
+      "shortDescription": "Download images & videos from social apps easily!",
+      "category": "Tweaks",
+      "author": "Ahmed Bafkir",
+      "commercial": false,
+      "date": "2019-01-23T22:07:44Z",
+      "versions": [
+        {
+          "tweakVersion": "1.4.3",
+          "iOSVersion": "12.4",
+          "repository": "(null)",
+          "date": "2019-08-28T03:28:40Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.5.2",
+          "iOSVersion": "12.4",
+          "repository": "subdiox's Repo",
+          "date": "2019-09-16T16:40:11Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -64740,6 +64740,60 @@
       ]
     },
     {
+      "id": "ru.rejail.icleanerpro",
+      "name": "iCleaner Pro",
+      "latest": "7.7.5k",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.icleanerpro/",
+      "shortDescription": "Утилита iCleanerPro аналог CCleaner для PC",
+      "category": "Utilities",
+      "author": "Ivano Bilenchi",
+      "commercial": false,
+      "date": "2019-08-18T23:40:59Z",
+      "versions": [
+        {
+          "tweakVersion": "7.7.5",
+          "iOSVersion": "12.4",
+          "repository": "ReJail Repo",
+          "date": "2019-08-18T23:40:59Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "7.7.5k",
+          "iOSVersion": "12.4",
+          "repository": "ReJail Repo",
+          "date": "2019-09-13T12:48:57Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
       "latest": "7.8.0~beta1",
@@ -64795,60 +64849,6 @@
           "iOSVersion": "12.4",
           "repository": "Ivano Bilenchi's Beta Repo",
           "date": "2020-01-01T16:46:32Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ru.rejail.icleanerpro",
-      "name": "iCleaner Pro",
-      "latest": "7.7.5k",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.icleanerpro/",
-      "shortDescription": "Утилита iCleanerPro аналог CCleaner для PC",
-      "category": "Utilities",
-      "author": "Ivano Bilenchi",
-      "commercial": false,
-      "date": "2019-08-18T23:40:59Z",
-      "versions": [
-        {
-          "tweakVersion": "7.7.5",
-          "iOSVersion": "12.4",
-          "repository": "ReJail Repo",
-          "date": "2019-08-18T23:40:59Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        },
-        {
-          "tweakVersion": "7.7.5k",
-          "iOSVersion": "12.4",
-          "repository": "ReJail Repo",
-          "date": "2019-09-13T12:48:57Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -76617,9 +76617,9 @@
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
-            "good": 1,
+            "good": 2,
             "bad": 0,
-            "total": 1,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -90663,6 +90663,40 @@
       ]
     },
     {
+      "id": "ru.rejail.noctis12",
+      "name": "Noctis12",
+      "latest": "1.7.3",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/ru.rejail.noctis12/",
+      "shortDescription": "Темный режим для всей системы",
+      "category": "Tweaks",
+      "author": "LaughingQuoll",
+      "commercial": false,
+      "date": "2019-02-24T02:00:52Z",
+      "versions": [
+        {
+          "tweakVersion": "1.7.3",
+          "iOSVersion": "12.4",
+          "repository": "ReJail Repo",
+          "date": "2019-08-20T05:52:27Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.laughingquoll.noctis12",
       "name": "Noctis12",
       "latest": "1.8.9.4",
@@ -90859,40 +90893,6 @@
           "iOSVersion": "12.4",
           "repository": "Packix",
           "date": "2019-11-08T20:11:56Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ru.rejail.noctis12",
-      "name": "Noctis12",
-      "latest": "1.7.3",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/ru.rejail.noctis12/",
-      "shortDescription": "Темный режим для всей системы",
-      "category": "Tweaks",
-      "author": "LaughingQuoll",
-      "commercial": false,
-      "date": "2019-02-24T02:00:52Z",
-      "versions": [
-        {
-          "tweakVersion": "1.7.3",
-          "iOSVersion": "12.4",
-          "repository": "ReJail Repo",
-          "date": "2019-08-20T05:52:27Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -105008,56 +105008,22 @@
       ]
     },
     {
-      "id": "com.bytafont2.qarmicsans",
+      "id": "com.ipr.ios4qarmicsansfont",
       "name": "Qarmic Sans Font",
-      "latest": "1.6",
+      "latest": "2.2",
       "repository": "ModMyi (Archive)",
-      "url": "http://cydia.saurik.com/package/com.bytafont2.qarmicsans/",
-      "shortDescription": "Font by BytaFont.com",
-      "category": "Fonts (BytaFont 2)",
-      "author": "BytaFont.com",
+      "url": "http://cydia.saurik.com/package/com.ipr.ios4qarmicsansfont/",
+      "shortDescription": "BytaFont font by iPhoneRuler.net",
+      "category": "Fonts",
+      "author": "iPhoneRuler.net",
       "commercial": false,
-      "date": "2019-09-21T04:10:20Z",
+      "date": "2019-09-21T04:10:33Z",
       "versions": [
         {
-          "tweakVersion": "1.6",
+          "tweakVersion": "2.2",
           "iOSVersion": "12.4",
           "repository": "ModMyi (Archive)",
-          "date": "2019-09-21T04:10:20Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.bytafonttm.qarmicsans",
-      "name": "Qarmic Sans Font",
-      "latest": "1.0",
-      "repository": "ModMyi (Archive)",
-      "url": "http://cydia.saurik.com/package/com.bytafonttm.qarmicsans/",
-      "shortDescription": "Tweak Mode font by BytaFont.com",
-      "category": "Fonts (BytaFont Tweak Mode)",
-      "author": "BytaFont.com",
-      "commercial": false,
-      "date": "2019-09-21T04:10:11Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0",
-          "iOSVersion": "12.4",
-          "repository": "ModMyi (Archive)",
-          "date": "2019-09-21T04:10:11Z",
+          "date": "2019-09-21T04:10:33Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -105110,22 +105076,22 @@
       ]
     },
     {
-      "id": "com.ipr.ios4qarmicsansfont",
+      "id": "com.bytafont3.qarmicsans",
       "name": "Qarmic Sans Font",
-      "latest": "2.2",
+      "latest": "3.0",
       "repository": "ModMyi (Archive)",
-      "url": "http://cydia.saurik.com/package/com.ipr.ios4qarmicsansfont/",
-      "shortDescription": "BytaFont font by iPhoneRuler.net",
-      "category": "Fonts",
-      "author": "iPhoneRuler.net",
+      "url": "http://cydia.saurik.com/package/com.bytafont3.qarmicsans/",
+      "shortDescription": "Font for BytaFont 3 by BytaFont.com",
+      "category": "Fonts (BytaFont 3)",
+      "author": "BytaFont.com",
       "commercial": false,
-      "date": "2019-09-21T04:10:33Z",
+      "date": "2019-08-20T02:12:58Z",
       "versions": [
         {
-          "tweakVersion": "2.2",
+          "tweakVersion": "3.0",
           "iOSVersion": "12.4",
           "repository": "ModMyi (Archive)",
-          "date": "2019-09-21T04:10:33Z",
+          "date": "2019-08-28T15:58:32Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -105144,22 +105110,56 @@
       ]
     },
     {
-      "id": "com.bytafont3.qarmicsans",
+      "id": "com.bytafonttm.qarmicsans",
       "name": "Qarmic Sans Font",
-      "latest": "3.0",
+      "latest": "1.0",
       "repository": "ModMyi (Archive)",
-      "url": "http://cydia.saurik.com/package/com.bytafont3.qarmicsans/",
-      "shortDescription": "Font for BytaFont 3 by BytaFont.com",
-      "category": "Fonts (BytaFont 3)",
+      "url": "http://cydia.saurik.com/package/com.bytafonttm.qarmicsans/",
+      "shortDescription": "Tweak Mode font by BytaFont.com",
+      "category": "Fonts (BytaFont Tweak Mode)",
       "author": "BytaFont.com",
       "commercial": false,
-      "date": "2019-08-20T02:12:58Z",
+      "date": "2019-09-21T04:10:11Z",
       "versions": [
         {
-          "tweakVersion": "3.0",
+          "tweakVersion": "1.0",
           "iOSVersion": "12.4",
           "repository": "ModMyi (Archive)",
-          "date": "2019-08-28T15:58:32Z",
+          "date": "2019-09-21T04:10:11Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.bytafont2.qarmicsans",
+      "name": "Qarmic Sans Font",
+      "latest": "1.6",
+      "repository": "ModMyi (Archive)",
+      "url": "http://cydia.saurik.com/package/com.bytafont2.qarmicsans/",
+      "shortDescription": "Font by BytaFont.com",
+      "category": "Fonts (BytaFont 2)",
+      "author": "BytaFont.com",
+      "commercial": false,
+      "date": "2019-09-21T04:10:20Z",
+      "versions": [
+        {
+          "tweakVersion": "1.6",
+          "iOSVersion": "12.4",
+          "repository": "ModMyi (Archive)",
+          "date": "2019-09-21T04:10:20Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -108205,40 +108205,6 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.reprovision",
-      "name": "ReProvision",
-      "latest": "0.4.2",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.reprovision/",
-      "shortDescription": "Re-sign applications on your device",
-      "category": "System",
-      "author": "Matt Clarke",
-      "commercial": false,
-      "date": "2019-07-16T12:33:13Z",
-      "versions": [
-        {
-          "tweakVersion": "0.4.2",
-          "iOSVersion": "12.4",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-08-19T20:27:07Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.matchstic.reprovision",
       "name": "ReProvision",
       "latest": "0.5~experimental8",
@@ -108521,6 +108487,40 @@
             "good": 6,
             "bad": 0,
             "total": 6,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.cydia.kiimo.reprovision",
+      "name": "ReProvision",
+      "latest": "0.4.2",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.reprovision/",
+      "shortDescription": "Re-sign applications on your device",
+      "category": "System",
+      "author": "Matt Clarke",
+      "commercial": false,
+      "date": "2019-07-16T12:33:13Z",
+      "versions": [
+        {
+          "tweakVersion": "0.4.2",
+          "iOSVersion": "12.4",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-08-19T20:27:07Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
