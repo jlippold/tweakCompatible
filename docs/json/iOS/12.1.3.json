@@ -306,10 +306,10 @@
     {
       "id": "me.nepeta.axon",
       "name": "Axon",
-      "latest": "0.2.4",
+      "latest": "0.3.0-nocephie",
       "repository": "Nepeta",
       "url": "http://cydia.saurik.com/package/me.nepeta.axon/",
-      "shortDescription": "Priority Hub for iOS 11 and 12",
+      "shortDescription": "Priority Hub for iOS 11+",
       "category": "Tweaks",
       "author": "Nepeta",
       "commercial": false,
@@ -544,7 +544,7 @@
     {
       "id": "com.leftyfl1p.carplay",
       "name": "CarBridge",
-      "latest": "1.0.9.3",
+      "latest": "1.0.9.4",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.leftyfl1p.carplay/",
       "shortDescription": "Open any app in CarPlay!",
@@ -612,7 +612,7 @@
     {
       "id": "com.jailbreak365.safeccmodules",
       "name": "CCModules (Safe, Uses Silo)",
-      "latest": "1.5",
+      "latest": "1.5-1",
       "repository": "jailbreak365's Repo",
       "url": "http://cydia.saurik.com/package/com.jailbreak365.safeccmodules/",
       "shortDescription": "More control center modules for iOS 11/12/13",
@@ -947,7 +947,7 @@
     {
       "id": "mobilesubstrate",
       "name": "Cydia Substrate",
-      "latest": "0.9.7100~b3",
+      "latest": "0.9.7100~b6",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/mobilesubstrate/",
       "shortDescription": "powerful code insertion platform",
@@ -1994,7 +1994,7 @@
     {
       "id": "com.matchstic.reprovision",
       "name": "ReProvision",
-      "latest": "0.5~experimental8",
+      "latest": "0.5~release",
       "repository": "Matchstic",
       "url": "http://cydia.saurik.com/package/com.matchstic.reprovision/",
       "shortDescription": "Re-sign applications on your device",
@@ -2284,21 +2284,22 @@
       ]
     },
     {
-      "id": "xyz.xninja.systeminfo",
+      "id": "ru.rejail.systeminfo",
       "name": "System Info",
-      "latest": "2.0.0-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
-      "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
+      "latest": "2.2.1-10+debug",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.systeminfo/",
+      "shortDescription": "Расширенные сведения о системе",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
+      "date": "2019-08-19T18:47:56Z",
       "versions": [
         {
-          "tweakVersion": "2.0.0-1",
+          "tweakVersion": "2.2.1-10+debug",
           "iOSVersion": "12.1.3",
-          "repository": "BigBoss",
-          "date": "2019-07-21T17:08:32Z",
+          "repository": "ReJail Repo",
+          "date": "2019-09-08T15:59:40Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2317,22 +2318,21 @@
       ]
     },
     {
-      "id": "ru.rejail.systeminfo",
+      "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "2.2.1-10+debug",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.systeminfo/",
-      "shortDescription": "Расширенные сведения о системе",
+      "latest": "2.3.2-6+debug",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
+      "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
-      "date": "2019-08-19T18:47:56Z",
       "versions": [
         {
-          "tweakVersion": "2.2.1-10+debug",
+          "tweakVersion": "2.0.0-1",
           "iOSVersion": "12.1.3",
-          "repository": "ReJail Repo",
-          "date": "2019-09-08T15:59:40Z",
+          "repository": "BigBoss",
+          "date": "2019-07-21T17:08:32Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2556,7 +2556,7 @@
     {
       "id": "applebetas.ios.tweak.willow",
       "name": "Ultrasound",
-      "latest": "1.2.10 (Versione Installata: 1.2.9)",
+      "latest": "1.2.10",
       "repository": "Dynastic Repo",
       "url": "http://cydia.saurik.com/package/applebetas.ios.tweak.willow/",
       "shortDescription": "The volume HUD you deserve. — Supports iOS 11 to 13.",
@@ -2746,7 +2746,7 @@
     {
       "id": "xyz.willy.zebra",
       "name": "Zebra (BETA)",
-      "latest": "1.0~beta33-1",
+      "latest": "1.0.4",
       "repository": "xTM3x Repo",
       "url": "http://cydia.saurik.com/package/xyz.willy.zebra/",
       "shortDescription": "A Useful Package Manager",
@@ -2760,6 +2760,26 @@
           "iOSVersion": "12.1.3",
           "repository": "(null)",
           "date": "2019-12-14T16:11:15Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.0.4",
+          "iOSVersion": "12.1.3",
+          "repository": "Sorgente Locale",
+          "date": "2020-01-07T22:20:03Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
