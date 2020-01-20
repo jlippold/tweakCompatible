@@ -3295,10 +3295,10 @@
     {
       "id": "me.nepeta.axon",
       "name": "Axon",
-      "latest": "0.3.1",
+      "latest": "0.5.1",
       "repository": "Nepeta",
       "url": "http://cydia.saurik.com/package/me.nepeta.axon/",
-      "shortDescription": "Priority Hub for iOS 11 and 12",
+      "shortDescription": "Priority Hub for iOS 11+",
       "category": "Tweaks",
       "author": "Nepeta",
       "commercial": false,
@@ -6677,7 +6677,7 @@
     {
       "id": "me.alfhaily.cercube",
       "name": "Cercube for YouTube",
-      "latest": "5.1.5",
+      "latest": "5.1.6",
       "repository": "Alfhaily APT",
       "url": "https://apt.alfhaily.me/",
       "shortDescription": "Download YouTube videos and more!",
@@ -10258,22 +10258,22 @@
       ]
     },
     {
-      "id": "com.ahmedbafkir.dleasy",
+      "id": "me.ahmedbafkir.dleasy",
       "name": "DLEasy",
-      "latest": "1.5.2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.ahmedbafkir.dleasy/",
+      "latest": "2.8.6",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/me.ahmedbafkir.dleasy/",
       "shortDescription": "Download images & videos from social apps easily!",
       "category": "Tweaks",
-      "author": "Ahmed Bafkir",
-      "commercial": false,
-      "date": "2019-01-23T22:07:44Z",
+      "author": "AhmedBafkir",
+      "commercial": true,
+      "date": "2019-06-19T16:10:38Z",
       "versions": [
         {
-          "tweakVersion": "1.5.2",
+          "tweakVersion": "2.8.0",
           "iOSVersion": "13.2.3",
-          "repository": "subdiox's Repo",
-          "date": "2019-12-01T23:00:59Z",
+          "repository": "Packix",
+          "date": "2019-11-19T11:28:48Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10292,22 +10292,22 @@
       ]
     },
     {
-      "id": "me.ahmedbafkir.dleasy",
+      "id": "com.ahmedbafkir.dleasy",
       "name": "DLEasy",
-      "latest": "2.8.5-1",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/me.ahmedbafkir.dleasy/",
+      "latest": "1.5.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.ahmedbafkir.dleasy/",
       "shortDescription": "Download images & videos from social apps easily!",
       "category": "Tweaks",
-      "author": "AhmedBafkir",
-      "commercial": true,
-      "date": "2019-06-19T16:10:38Z",
+      "author": "Ahmed Bafkir",
+      "commercial": false,
+      "date": "2019-01-23T22:07:44Z",
       "versions": [
         {
-          "tweakVersion": "2.8.0",
+          "tweakVersion": "1.5.2",
           "iOSVersion": "13.2.3",
-          "repository": "Packix",
-          "date": "2019-11-19T11:28:48Z",
+          "repository": "subdiox's Repo",
+          "date": "2019-12-01T23:00:59Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -12000,40 +12000,6 @@
       ]
     },
     {
-      "id": "ru.rejail.filza",
-      "name": "Filza File Manager",
-      "latest": "3.7.3-16k",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.filza/",
-      "shortDescription": "Файловый менеджер для iOS",
-      "category": "Utilities",
-      "author": "TIGI Software",
-      "commercial": false,
-      "date": "2019-08-20T10:06:45Z",
-      "versions": [
-        {
-          "tweakVersion": "3.7.3-16k",
-          "iOSVersion": "13.2.3",
-          "repository": "ReJail Repo",
-          "date": "2019-12-02T21:42:10Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
       "latest": "3.7.3-16",
@@ -12089,6 +12055,40 @@
           "iOSVersion": "13.2.3",
           "repository": "tigisoftware.com",
           "date": "2019-12-09T23:45:23Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.rejail.filza",
+      "name": "Filza File Manager",
+      "latest": "3.7.3-16k",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.filza/",
+      "shortDescription": "Файловый менеджер для iOS",
+      "category": "Utilities",
+      "author": "TIGI Software",
+      "commercial": false,
+      "date": "2019-08-20T10:06:45Z",
+      "versions": [
+        {
+          "tweakVersion": "3.7.3-16k",
+          "iOSVersion": "13.2.3",
+          "repository": "ReJail Repo",
+          "date": "2019-12-02T21:42:10Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -13130,6 +13130,60 @@
       ]
     },
     {
+      "id": "org.cydia.kiimo.floatingdockplus13",
+      "name": "FloatingDockPlus13",
+      "latest": "1.1.2",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.floatingdockplus13/",
+      "shortDescription": "Use your Dock like a PRO!",
+      "category": "Supports iOS 13",
+      "author": "P2KDev",
+      "commercial": false,
+      "date": "2019-12-01T23:02:40Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.3",
+          "iOSVersion": "13.2.3",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-12-01T23:02:40Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.1.2",
+          "iOSVersion": "13.2.3",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-12-02T12:02:36Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.p2kdev.floatingdockplus13",
       "name": "FloatingDockPlus13",
       "latest": "1.1.5",
@@ -13206,60 +13260,6 @@
           "iOSVersion": "13.2.3",
           "repository": "Packix",
           "date": "2020-01-12T14:49:41Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "org.cydia.kiimo.floatingdockplus13",
-      "name": "FloatingDockPlus13",
-      "latest": "1.1.2",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.floatingdockplus13/",
-      "shortDescription": "Use your Dock like a PRO!",
-      "category": "Supports iOS 13",
-      "author": "P2KDev",
-      "commercial": false,
-      "date": "2019-12-01T23:02:40Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.3",
-          "iOSVersion": "13.2.3",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-12-01T23:02:40Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        },
-        {
-          "tweakVersion": "1.1.2",
-          "iOSVersion": "13.2.3",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-12-02T12:02:36Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -16135,40 +16135,6 @@
       ]
     },
     {
-      "id": "ru.rejail.icleanerpro",
-      "name": "iCleaner Pro",
-      "latest": "7.7.5k",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.icleanerpro/",
-      "shortDescription": "Утилита iCleanerPro аналог CCleaner для PC",
-      "category": "Utilities",
-      "author": "Ivano Bilenchi",
-      "commercial": false,
-      "date": "2019-08-18T23:40:59Z",
-      "versions": [
-        {
-          "tweakVersion": "7.7.5k",
-          "iOSVersion": "13.2.3",
-          "repository": "ReJail Repo",
-          "date": "2019-12-14T15:37:07Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
       "latest": "7.8.0",
@@ -16250,6 +16216,40 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.rejail.icleanerpro",
+      "name": "iCleaner Pro",
+      "latest": "7.7.5k",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.icleanerpro/",
+      "shortDescription": "Утилита iCleanerPro аналог CCleaner для PC",
+      "category": "Utilities",
+      "author": "Ivano Bilenchi",
+      "commercial": false,
+      "date": "2019-08-18T23:40:59Z",
+      "versions": [
+        {
+          "tweakVersion": "7.7.5k",
+          "iOSVersion": "13.2.3",
+          "repository": "ReJail Repo",
+          "date": "2019-12-14T15:37:07Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -17374,7 +17374,7 @@
     {
       "id": "com.kadir1009.karatheme",
       "name": "Kara",
-      "latest": "1.3.2",
+      "latest": "2.0.0",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.kadir1009.karatheme/",
       "shortDescription": "Dark theme for dark lovers.",
@@ -22151,6 +22151,40 @@
       ]
     },
     {
+      "id": "ncurses5-libs",
+      "name": "New Curses",
+      "latest": "5.9-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
+      "shortDescription": "feature-complete terminal library",
+      "category": "System",
+      "author": "(null)",
+      "commercial": false,
+      "date": "2018-10-14T00:25:17Z",
+      "versions": [
+        {
+          "tweakVersion": "5.9-1",
+          "iOSVersion": "13.2.3",
+          "repository": "Bingner/Elucubratus",
+          "date": "2019-11-21T23:21:01Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "ncurses",
       "name": "New Curses",
       "latest": "6.1+20181013-1",
@@ -22193,40 +22227,6 @@
             "good": 2,
             "bad": 0,
             "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ncurses5-libs",
-      "name": "New Curses",
-      "latest": "5.9-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
-      "shortDescription": "feature-complete terminal library",
-      "category": "System",
-      "author": "(null)",
-      "commercial": false,
-      "date": "2018-10-14T00:25:17Z",
-      "versions": [
-        {
-          "tweakVersion": "5.9-1",
-          "iOSVersion": "13.2.3",
-          "repository": "Bingner/Elucubratus",
-          "date": "2019-11-21T23:21:01Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -24229,22 +24229,22 @@
       ]
     },
     {
-      "id": "oreodark",
+      "id": "com.yourepo.theprestigext.oreodark",
       "name": "Oreo Dark",
       "latest": "1.4",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/oreodark/",
+      "repository": "Prestige XT - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.theprestigext.oreodark/",
       "shortDescription": "Dark & Ultra Dark Icons for iOS",
       "category": "Themes",
       "author": "@theprestigext",
       "commercial": false,
-      "date": "2019-12-19T12:06:14Z",
+      "date": "2020-01-12T14:50:34Z",
       "versions": [
         {
           "tweakVersion": "1.4",
           "iOSVersion": "13.2.3",
-          "repository": "Packix",
-          "date": "2019-12-19T12:06:14Z",
+          "repository": "Prestige XT - YouRepo",
+          "date": "2020-01-12T14:50:34Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -24263,22 +24263,22 @@
       ]
     },
     {
-      "id": "com.yourepo.theprestigext.oreodark",
+      "id": "oreodark",
       "name": "Oreo Dark",
       "latest": "1.4",
-      "repository": "Prestige XT - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.theprestigext.oreodark/",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/oreodark/",
       "shortDescription": "Dark & Ultra Dark Icons for iOS",
       "category": "Themes",
       "author": "@theprestigext",
       "commercial": false,
-      "date": "2020-01-12T14:50:34Z",
+      "date": "2019-12-19T12:06:14Z",
       "versions": [
         {
           "tweakVersion": "1.4",
           "iOSVersion": "13.2.3",
-          "repository": "Prestige XT - YouRepo",
-          "date": "2020-01-12T14:50:34Z",
+          "repository": "Packix",
+          "date": "2019-12-19T12:06:14Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -26927,7 +26927,7 @@
     {
       "id": "com.lema.michael.rhino",
       "name": "Rhino",
-      "latest": "1.8.2",
+      "latest": "1.9",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.lema.michael.rhino/",
       "shortDescription": "Download Instagram Live Videos and more",
@@ -28501,7 +28501,7 @@
     {
       "id": "com.laughingquoll.siliqua2",
       "name": "Siliqua 2",
-      "latest": "2.4",
+      "latest": "2.5.1",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.laughingquoll.siliqua2/",
       "shortDescription": "AirPods Gestures and New Features",
@@ -29380,6 +29380,26 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.2.78~Beta1",
+          "iOSVersion": "13.2.3",
+          "repository": "SparkDev",
+          "date": "2020-01-20T01:01:19Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -35119,7 +35139,7 @@
     {
       "id": "xyz.willy.zebra",
       "name": "Zebra (BETA)",
-      "latest": "1.0.5",
+      "latest": "1.0.6 (Versione Installata: 1.0.5)",
       "repository": "xTM3x Repo",
       "url": "http://cydia.saurik.com/package/xyz.willy.zebra/",
       "shortDescription": "A Useful Package Manager",
@@ -35333,7 +35353,7 @@
     {
       "id": "com.muirey03.zenith",
       "name": "Zenith",
-      "latest": "1.2.4",
+      "latest": "1.2.4-2",
       "repository": "repo.chariz.io",
       "url": "http://cydia.saurik.com/package/com.muirey03.zenith/",
       "shortDescription": "Organisation Done Right",
