@@ -3262,11 +3262,11 @@
       "repository": "BigBoss",
       "date": "2019-12-15T22:04:24Z",
       "outcome": {
-        "calculatedStatus": "Likely working",
-        "percentage": 50,
+        "calculatedStatus": "Not working",
+        "percentage": 40,
         "good": 2,
         "bad": 0,
-        "total": 4,
+        "total": 5,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -3310,6 +3310,15 @@
           "date": "2020-01-25T00:02:50Z",
           "userName": "josito801",
           "issueNumber": 114013,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPad6,8",
+          "issues": "iPad Pro v13.3 causes infinite loop of Springboard restarts, resulting in safe mode. This gives a very limited window of time to open Cydia and remove the tweak because Springboard will crash even while in safe mode.",
+          "date": "2020-01-25T20:29:35Z",
+          "userName": "sietec",
+          "issueNumber": 114096,
           "arch32": false
         }
       ]
