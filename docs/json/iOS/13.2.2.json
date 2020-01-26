@@ -2261,7 +2261,7 @@
     {
       "id": "applist",
       "name": "AppList",
-      "latest": "1.5.14",
+      "latest": "1.5.15~beta1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/applist/",
       "shortDescription": "Allow extensions to read the list of installed apps",
@@ -3152,22 +3152,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.assistantplus",
+      "id": "org.zaid.assistantplus",
       "name": "Assistant+",
-      "latest": "2.0.1",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.assistantplus/",
+      "latest": "2.0.4",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/org.zaid.assistantplus/",
       "shortDescription": "Assign commands to trigger Activator events from Siri, set up custom replies for Siri,  create powerful Capture Group Commands, and use and create plugins for Siri using the Assistant+ plugin framework for more advanced use cases",
-      "category": "iOS 12",
+      "category": "Tweaks",
       "author": "Zaid Elkurdi",
-      "commercial": false,
-      "date": "2019-12-02T21:12:08Z",
+      "commercial": true,
+      "date": "2019-07-12T01:56:37Z",
       "versions": [
         {
-          "tweakVersion": "2.0.1",
+          "tweakVersion": "2.0.4",
           "iOSVersion": "13.2.2",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-12-02T21:12:08Z",
+          "repository": "Packix",
+          "date": "2019-12-02T21:11:47Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -3186,22 +3186,22 @@
       ]
     },
     {
-      "id": "org.zaid.assistantplus",
+      "id": "org.cydia.kiimo.assistantplus",
       "name": "Assistant+",
-      "latest": "2.0.4",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/org.zaid.assistantplus/",
+      "latest": "2.0.1",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.assistantplus/",
       "shortDescription": "Assign commands to trigger Activator events from Siri, set up custom replies for Siri,  create powerful Capture Group Commands, and use and create plugins for Siri using the Assistant+ plugin framework for more advanced use cases",
-      "category": "Tweaks",
+      "category": "iOS 12",
       "author": "Zaid Elkurdi",
-      "commercial": true,
-      "date": "2019-07-12T01:56:37Z",
+      "commercial": false,
+      "date": "2019-12-02T21:12:08Z",
       "versions": [
         {
-          "tweakVersion": "2.0.4",
+          "tweakVersion": "2.0.1",
           "iOSVersion": "13.2.2",
-          "repository": "Packix",
-          "date": "2019-12-02T21:11:47Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-12-02T21:12:08Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -6809,7 +6809,7 @@
     {
       "id": "com.cydiageek.byehomebottombarx",
       "name": "ByeHomeBottomBarX",
-      "latest": "1.1",
+      "latest": "1.2",
       "repository": "apt.thebigboss.org",
       "url": "http://cydia.saurik.com/package/com.cydiageek.byehomebottombarx/",
       "shortDescription": "Remove/Fade Away the Ugly Home Bottom Bar of the iPhone X!",
@@ -8293,7 +8293,7 @@
       "latest": "1.5-1",
       "repository": "jailbreak365's Repo",
       "url": "http://cydia.saurik.com/package/com.jailbreak365.safeccmodules/",
-      "shortDescription": "More control center modules for iOS 11/12/13",
+      "shortDescription": "Control center modules for iOS 11/12/13. New in v1.5-1: Fix for Tiny Volume and Silent Mode modules causing issues.",
       "category": "Tweaks",
       "author": "jailbreak365",
       "commercial": false,
@@ -8608,10 +8608,10 @@
     {
       "id": "ws.hbang.common",
       "name": "Cephei",
-      "latest": "1.12",
+      "latest": "1.14",
       "repository": "HASHBANG Productions",
       "url": "http://cydia.hbang.ws/",
-      "shortDescription": "Support library for tweak settings",
+      "shortDescription": "Support library for tweaks",
       "category": "Development",
       "author": "HASHBANG Productions",
       "commercial": false,
@@ -9551,22 +9551,42 @@
       ]
     },
     {
-      "id": "ru.rejail.cocoatop64",
+      "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.cocoatop64/",
-      "shortDescription": "GUI Process Viewer для iOS (64-bit)",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop64/",
+      "shortDescription": "Process Viewer for iOS GUI (64-bit)",
       "category": "Utilities",
       "author": "Domo",
       "commercial": false,
-      "date": "2019-11-10T20:52:59Z",
+      "date": "2018-03-13T11:14:04Z",
       "versions": [
+        {
+          "tweakVersion": "2.0.2-1+debug",
+          "iOSVersion": "13.2.2",
+          "repository": "(null)",
+          "date": "2019-11-13T17:38:58Z",
+          "outcome": {
+            "calculatedStatus": "Likely working",
+            "percentage": 75,
+            "good": 3,
+            "bad": 0,
+            "total": 4,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
         {
           "tweakVersion": "2.0.2",
           "iOSVersion": "13.2.2",
-          "repository": "ReJail Repo",
-          "date": "2019-11-10T20:52:59Z",
+          "repository": "(null)",
+          "date": "2019-11-16T12:51:23Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9618,42 +9638,22 @@
       ]
     },
     {
-      "id": "ru.domo.cocoatop64",
+      "id": "ru.rejail.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop64/",
-      "shortDescription": "Process Viewer for iOS GUI (64-bit)",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.cocoatop64/",
+      "shortDescription": "GUI Process Viewer для iOS (64-bit)",
       "category": "Utilities",
       "author": "Domo",
       "commercial": false,
-      "date": "2018-03-13T11:14:04Z",
+      "date": "2019-11-10T20:52:59Z",
       "versions": [
-        {
-          "tweakVersion": "2.0.2-1+debug",
-          "iOSVersion": "13.2.2",
-          "repository": "(null)",
-          "date": "2019-11-13T17:38:58Z",
-          "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 75,
-            "good": 3,
-            "bad": 0,
-            "total": 4,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        },
         {
           "tweakVersion": "2.0.2",
           "iOSVersion": "13.2.2",
-          "repository": "(null)",
-          "date": "2019-11-16T12:51:23Z",
+          "repository": "ReJail Repo",
+          "date": "2019-11-10T20:52:59Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10104,7 +10104,7 @@
     {
       "id": "com.mrgcgamer.colormenotifs",
       "name": "ColorMeNotifs",
-      "latest": "1.1.1",
+      "latest": "1.2.1",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.mrgcgamer.colormenotifs/",
       "shortDescription": "Brings colors to your notifications!",
@@ -10226,7 +10226,7 @@
     {
       "id": "com.bengiannis.complications",
       "name": "Complications",
-      "latest": "2.0",
+      "latest": "2.1",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.bengiannis.complications/",
       "shortDescription": "watchOS widgets on your lock screen",
@@ -11419,7 +11419,7 @@
             "percentage": 0,
             "good": 0,
             "bad": 0,
-            "total": 1,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -11849,6 +11849,40 @@
       ]
     },
     {
+      "id": "com.r333d.cylinder-ios13",
+      "name": "Cylinder",
+      "latest": "1.0.8-iOS13",
+      "repository": "IPG's Beta Cydia Repo",
+      "url": "http://cydia.saurik.com/package/com.r333d.cylinder-ios13/",
+      "shortDescription": "Make your icons dance",
+      "category": "Tweaks",
+      "author": "Reed Weichler / Devvix",
+      "commercial": false,
+      "date": "2019-11-17T20:51:31Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.8-iOS13",
+          "iOSVersion": "13.2.2",
+          "repository": "IPG's Beta Cydia Repo",
+          "date": "2019-11-17T20:51:31Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 83,
+            "good": 5,
+            "bad": 0,
+            "total": 6,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.r333d.cylinder",
       "name": "Cylinder",
       "latest": "1.1",
@@ -11910,40 +11944,6 @@
             "good": 7,
             "bad": 0,
             "total": 7,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.r333d.cylinder-ios13",
-      "name": "Cylinder",
-      "latest": "1.0.8-iOS13",
-      "repository": "IPG's Beta Cydia Repo",
-      "url": "http://cydia.saurik.com/package/com.r333d.cylinder-ios13/",
-      "shortDescription": "Make your icons dance",
-      "category": "Tweaks",
-      "author": "Reed Weichler / Devvix",
-      "commercial": false,
-      "date": "2019-11-17T20:51:31Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.8-iOS13",
-          "iOSVersion": "13.2.2",
-          "repository": "IPG's Beta Cydia Repo",
-          "date": "2019-11-17T20:51:31Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 83,
-            "good": 5,
-            "bad": 0,
-            "total": 6,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -12452,22 +12452,22 @@
       ]
     },
     {
-      "id": "cydia.kiiimo.org.dateinstatusbar",
+      "id": "info.rpdev.dateinstatusbar",
       "name": "Date In Statusbar",
       "latest": "0.9.1-2",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/cydia.kiiimo.org.dateinstatusbar/",
-      "shortDescription": "عرض التاريخ ب جانب الساعة!",
-      "category": "iOS 11.3x",
-      "author": "Kiiimo",
+      "repository": "Red Panda Dev Repo",
+      "url": "http://cydia.saurik.com/package/info.rpdev.dateinstatusbar/",
+      "shortDescription": "Adds current date to statusbar",
+      "category": "Tweaks",
+      "author": "Redpandadev",
       "commercial": false,
-      "date": "2019-08-25T17:30:46Z",
+      "date": "2018-02-28T11:28:43Z",
       "versions": [
         {
           "tweakVersion": "0.9.1-2",
           "iOSVersion": "13.2.2",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-12-09T22:46:35Z",
+          "repository": "Red Panda Dev Repo",
+          "date": "2019-11-11T15:19:33Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -12486,22 +12486,22 @@
       ]
     },
     {
-      "id": "info.rpdev.dateinstatusbar",
+      "id": "cydia.kiiimo.org.dateinstatusbar",
       "name": "Date In Statusbar",
       "latest": "0.9.1-2",
-      "repository": "Red Panda Dev Repo",
-      "url": "http://cydia.saurik.com/package/info.rpdev.dateinstatusbar/",
-      "shortDescription": "Adds current date to statusbar",
-      "category": "Tweaks",
-      "author": "Redpandadev",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/cydia.kiiimo.org.dateinstatusbar/",
+      "shortDescription": "عرض التاريخ ب جانب الساعة!",
+      "category": "iOS 11.3x",
+      "author": "Kiiimo",
       "commercial": false,
-      "date": "2018-02-28T11:28:43Z",
+      "date": "2019-08-25T17:30:46Z",
       "versions": [
         {
           "tweakVersion": "0.9.1-2",
           "iOSVersion": "13.2.2",
-          "repository": "Red Panda Dev Repo",
-          "date": "2019-11-11T15:19:33Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-12-09T22:46:35Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -12844,22 +12844,22 @@
       ]
     },
     {
-      "id": "fun.tylerd3v.delta",
+      "id": "com.dta.delta",
       "name": "Delta",
       "latest": "1.1",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/fun.tylerd3v.delta/",
-      "shortDescription": "Multi-Console Emulator for iOS!",
-      "category": "Emulators",
-      "author": "TylerD3V",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.dta.delta/",
+      "shortDescription": "Delta Emulator is an iOS multi-system emulator.",
+      "category": "dta-apps",
+      "author": "Riley Testut",
       "commercial": false,
-      "date": "2019-12-10T18:51:50Z",
+      "date": "2019-11-10T23:12:16Z",
       "versions": [
         {
           "tweakVersion": "1.1",
           "iOSVersion": "13.2.2",
-          "repository": "Packix",
-          "date": "2019-12-10T18:51:50Z",
+          "repository": "(null)",
+          "date": "2019-11-10T23:12:16Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -12878,22 +12878,22 @@
       ]
     },
     {
-      "id": "com.dta.delta",
+      "id": "fun.tylerd3v.delta",
       "name": "Delta",
       "latest": "1.1",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.dta.delta/",
-      "shortDescription": "Delta Emulator is an iOS multi-system emulator.",
-      "category": "dta-apps",
-      "author": "Riley Testut",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/fun.tylerd3v.delta/",
+      "shortDescription": "Multi-Console Emulator for iOS!",
+      "category": "Emulators",
+      "author": "TylerD3V",
       "commercial": false,
-      "date": "2019-11-10T23:12:16Z",
+      "date": "2019-12-10T18:51:50Z",
       "versions": [
         {
           "tweakVersion": "1.1",
           "iOSVersion": "13.2.2",
-          "repository": "(null)",
-          "date": "2019-11-10T23:12:16Z",
+          "repository": "Packix",
+          "date": "2019-12-10T18:51:50Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -15946,7 +15946,7 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.7.3-16",
+      "latest": "3.7.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
       "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
@@ -19377,6 +19377,40 @@
       ]
     },
     {
+      "id": "com.hackyouriphone.haptickeys",
+      "name": "HapticKeys",
+      "latest": "3.0",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.haptickeys/",
+      "shortDescription": "Haptic feedback for keyboard touches",
+      "category": "HYI - Tweaks",
+      "author": "colecabral",
+      "commercial": false,
+      "date": "2019-11-22T22:19:52Z",
+      "versions": [
+        {
+          "tweakVersion": "3.0",
+          "iOSVersion": "13.2.2",
+          "repository": "(null)",
+          "date": "2019-11-22T22:19:52Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.cc.haptickeys",
       "name": "HapticKeys",
       "latest": "3.9",
@@ -19419,40 +19453,6 @@
             "good": 2,
             "bad": 0,
             "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.hackyouriphone.haptickeys",
-      "name": "HapticKeys",
-      "latest": "3.0",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.haptickeys/",
-      "shortDescription": "Haptic feedback for keyboard touches",
-      "category": "HYI - Tweaks",
-      "author": "colecabral",
-      "commercial": false,
-      "date": "2019-11-22T22:19:52Z",
-      "versions": [
-        {
-          "tweakVersion": "3.0",
-          "iOSVersion": "13.2.2",
-          "repository": "(null)",
-          "date": "2019-11-22T22:19:52Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -20085,10 +20085,10 @@
     {
       "id": "ca.menushka.hideyourapps",
       "name": "HideYourApps",
-      "latest": "1.2.1",
+      "latest": "1.3.0",
       "repository": "repo.menushka.ca",
       "url": "http://cydia.saurik.com/package/ca.menushka.hideyourapps/",
-      "shortDescription": "Hide apps from your Home screen — Supports iOS 11 and 12.",
+      "shortDescription": "Hide apps on your springboard",
       "category": "Tweaks",
       "author": "Menushka Weeratunga",
       "commercial": false,
@@ -22532,40 +22532,6 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.jellyfish",
-      "name": "Jellyfish",
-      "latest": "1.3.3",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.jellyfish/",
-      "shortDescription": "Modernize your Lock screen. — Inspired by the watchOS Motion face, Jellyfish aims to make your Lock screen more modern, more beautiful, and more useful.",
-      "category": "HYI - Tweaks",
-      "author": "Justin Proulx and AppleBetas",
-      "commercial": false,
-      "date": "2019-03-26T04:41:05Z",
-      "versions": [
-        {
-          "tweakVersion": "1.3.3",
-          "iOSVersion": "13.2.2",
-          "repository": "(null)",
-          "date": "2019-11-22T22:20:35Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "xyz.royalapps.jellyfish",
       "name": "Jellyfish",
       "latest": "1.3.3",
@@ -22608,6 +22574,40 @@
             "good": 6,
             "bad": 0,
             "total": 7,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.hackyouriphone.jellyfish",
+      "name": "Jellyfish",
+      "latest": "1.3.3",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.jellyfish/",
+      "shortDescription": "Modernize your Lock screen. — Inspired by the watchOS Motion face, Jellyfish aims to make your Lock screen more modern, more beautiful, and more useful.",
+      "category": "HYI - Tweaks",
+      "author": "Justin Proulx and AppleBetas",
+      "commercial": false,
+      "date": "2019-03-26T04:41:05Z",
+      "versions": [
+        {
+          "tweakVersion": "1.3.3",
+          "iOSVersion": "13.2.2",
+          "repository": "(null)",
+          "date": "2019-11-22T22:20:35Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -24073,40 +24073,6 @@
       ]
     },
     {
-      "id": "me.nepeta.libcolorpicker",
-      "name": "libcolorpicker",
-      "latest": "1.6.2-3",
-      "repository": "Nepeta",
-      "url": "http://cydia.saurik.com/package/me.nepeta.libcolorpicker/",
-      "shortDescription": "libcolorpicker with arm64e (A12) support",
-      "category": "System",
-      "author": "Bailey Seymour",
-      "commercial": false,
-      "date": "2019-04-23T12:35:57Z",
-      "versions": [
-        {
-          "tweakVersion": "1.6.2-3",
-          "iOSVersion": "13.2.2",
-          "repository": "BigBoss",
-          "date": "2019-11-11T23:53:04Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.thebigboss.libcolorpicker",
       "name": "libcolorpicker",
       "latest": "1.6.7",
@@ -24202,6 +24168,40 @@
           "iOSVersion": "13.2.2",
           "repository": "BigBoss",
           "date": "2020-01-11T02:36:52Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "me.nepeta.libcolorpicker",
+      "name": "libcolorpicker",
+      "latest": "1.6.2-3",
+      "repository": "Nepeta",
+      "url": "http://cydia.saurik.com/package/me.nepeta.libcolorpicker/",
+      "shortDescription": "libcolorpicker with arm64e (A12) support",
+      "category": "System",
+      "author": "Bailey Seymour",
+      "commercial": false,
+      "date": "2019-04-23T12:35:57Z",
+      "versions": [
+        {
+          "tweakVersion": "1.6.2-3",
+          "iOSVersion": "13.2.2",
+          "repository": "BigBoss",
+          "date": "2019-11-11T23:53:04Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -25956,7 +25956,7 @@
     {
       "id": "com.ichitaso.locationservicecc",
       "name": "LocationService (CCSupport)",
-      "latest": "0.1-4",
+      "latest": "0.1-4-1",
       "repository": "ichitaso repository",
       "url": "http://cydia.saurik.com/package/com.ichitaso.locationservicecc/",
       "shortDescription": "Turn on / off LocationService from the control center.",
@@ -26112,7 +26112,7 @@
     {
       "id": "com.junesiphone.lockpluspro",
       "name": "LockPlus Pro",
-      "latest": "1.7.2",
+      "latest": "1.7.3",
       "repository": "junesiphone.com",
       "url": "http://cydia.saurik.com/package/com.junesiphone.lockpluspro/",
       "shortDescription": "The ultimate lock screen tweak!",
@@ -28167,6 +28167,39 @@
       ]
     },
     {
+      "id": "com.officialscheduler.mterminal",
+      "name": "MTerminal",
+      "latest": "1.4-5",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.officialscheduler.mterminal/",
+      "shortDescription": "A MobileTerminal fork",
+      "category": "Utilities",
+      "author": "lordscotland",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.4-5",
+          "iOSVersion": "13.2.2",
+          "repository": "BigBoss",
+          "date": "2019-11-13T06:43:49Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "mterminal",
       "name": "MTerminal",
       "latest": "1.4-6",
@@ -28189,39 +28222,6 @@
             "good": 6,
             "bad": 0,
             "total": 9,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.officialscheduler.mterminal",
-      "name": "MTerminal",
-      "latest": "1.4-5",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.officialscheduler.mterminal/",
-      "shortDescription": "A MobileTerminal fork",
-      "category": "Utilities",
-      "author": "lordscotland",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.4-5",
-          "iOSVersion": "13.2.2",
-          "repository": "BigBoss",
-          "date": "2019-11-13T06:43:49Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -28830,22 +28830,22 @@
       ]
     },
     {
-      "id": "ncurses5-libs",
+      "id": "ncurses",
       "name": "New Curses",
-      "latest": "5.9-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
+      "latest": "6.1+20181013-1",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/ncurses/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-14T00:25:17Z",
+      "date": "2018-03-04T19:02:12Z",
       "versions": [
         {
-          "tweakVersion": "5.9-1",
+          "tweakVersion": "6.1-1",
           "iOSVersion": "13.2.2",
           "repository": "apt.bingner.com",
-          "date": "2019-11-11T06:39:17Z",
+          "date": "2019-11-11T18:53:48Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -28864,22 +28864,22 @@
       ]
     },
     {
-      "id": "ncurses",
+      "id": "ncurses5-libs",
       "name": "New Curses",
-      "latest": "6.1+20181013-1",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/ncurses/",
+      "latest": "5.9-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:02:12Z",
+      "date": "2018-10-14T00:25:17Z",
       "versions": [
         {
-          "tweakVersion": "6.1-1",
+          "tweakVersion": "5.9-1",
           "iOSVersion": "13.2.2",
           "repository": "apt.bingner.com",
-          "date": "2019-11-11T18:53:48Z",
+          "date": "2019-11-11T06:39:17Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -28932,22 +28932,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.newcam",
+      "id": "com.yourepo.jbrownllama.newcam",
       "name": "NewCam",
       "latest": "0.0.1",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.newcam/",
+      "repository": "Jbrownllama Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.jbrownllama.newcam/",
       "shortDescription": "******ONLY WORKS ON iOS 13******",
-      "category": "Supports iOS 13",
+      "category": "Tweaks",
       "author": "Llama",
       "commercial": false,
-      "date": "2019-11-30T16:16:45Z",
+      "date": "2019-11-16T13:16:34Z",
       "versions": [
         {
           "tweakVersion": "0.0.1",
           "iOSVersion": "13.2.2",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-11-30T16:16:45Z",
+          "repository": "Jbrownllama Source - YouRepo",
+          "date": "2019-11-18T03:34:06Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -28966,22 +28966,22 @@
       ]
     },
     {
-      "id": "com.yourepo.jbrownllama.newcam",
+      "id": "org.cydia.kiimo.newcam",
       "name": "NewCam",
       "latest": "0.0.1",
-      "repository": "Jbrownllama Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.jbrownllama.newcam/",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.newcam/",
       "shortDescription": "******ONLY WORKS ON iOS 13******",
-      "category": "Tweaks",
+      "category": "Supports iOS 13",
       "author": "Llama",
       "commercial": false,
-      "date": "2019-11-16T13:16:34Z",
+      "date": "2019-11-30T16:16:45Z",
       "versions": [
         {
           "tweakVersion": "0.0.1",
           "iOSVersion": "13.2.2",
-          "repository": "Jbrownllama Source - YouRepo",
-          "date": "2019-11-18T03:34:06Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-11-30T16:16:45Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -29359,7 +29359,7 @@
     {
       "id": "com.niceios.nicebarx",
       "name": "NiceBarX",
-      "latest": "3.0.0.2-24",
+      "latest": "3.0.0.2-39",
       "repository": "NiceiOS",
       "url": "http://cydia.saurik.com/package/com.niceios.nicebarx/",
       "shortDescription": "适用于iOS11 iOS12",
@@ -30346,22 +30346,22 @@
       ]
     },
     {
-      "id": "com.yourepo.i0s-tweak3r-betas.nolockscreencam",
+      "id": "com.i0stweak3r.nolockscreencam",
       "name": "NoLockScreenCam",
       "latest": "1.0.5-2",
-      "repository": "i0s-tweak3r-betas Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.i0s-tweak3r-betas.nolockscreencam/",
-      "shortDescription": "Options to disable access to camera and photos from the lockscreen. Tested and working iOS 7-12.1.2 No resprings needed except for iOS 7, and Quick Action button on iPhone X, Xs, Xr etc.",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.i0stweak3r.nolockscreencam/",
+      "shortDescription": "Disable Lockscreen camera/photo access.",
       "category": "Tweaks",
       "author": "i0s_tweak3r",
       "commercial": false,
-      "date": "2019-08-20T03:23:49Z",
+      "date": "2018-02-28T08:00:11Z",
       "versions": [
         {
           "tweakVersion": "1.0.5-2",
           "iOSVersion": "13.2.2",
-          "repository": "i0s-tweak3r-betas Source - YouRepo",
-          "date": "2019-11-11T06:15:48Z",
+          "repository": "BigBoss",
+          "date": "2019-11-14T23:34:02Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -30380,22 +30380,22 @@
       ]
     },
     {
-      "id": "com.i0stweak3r.nolockscreencam",
+      "id": "com.yourepo.i0s-tweak3r-betas.nolockscreencam",
       "name": "NoLockScreenCam",
       "latest": "1.0.5-2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.i0stweak3r.nolockscreencam/",
-      "shortDescription": "Disable Lockscreen camera/photo access.",
+      "repository": "i0s-tweak3r-betas Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.i0s-tweak3r-betas.nolockscreencam/",
+      "shortDescription": "Options to disable access to camera and photos from the lockscreen. Tested and working iOS 7-12.1.2 No resprings needed except for iOS 7, and Quick Action button on iPhone X, Xs, Xr etc.",
       "category": "Tweaks",
       "author": "i0s_tweak3r",
       "commercial": false,
-      "date": "2018-02-28T08:00:11Z",
+      "date": "2019-08-20T03:23:49Z",
       "versions": [
         {
           "tweakVersion": "1.0.5-2",
           "iOSVersion": "13.2.2",
-          "repository": "BigBoss",
-          "date": "2019-11-14T23:34:02Z",
+          "repository": "i0s-tweak3r-betas Source - YouRepo",
+          "date": "2019-11-11T06:15:48Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -31616,22 +31616,22 @@
       ]
     },
     {
-      "id": "com.daveapps.nottoday13",
+      "id": "org.cydia.kiimo.nottoday13",
       "name": "NotToday13",
-      "latest": "1.1",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.daveapps.nottoday13/",
+      "latest": "1",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.nottoday13/",
       "shortDescription": "Disables Today View on iOS 13",
-      "category": "Tweaks",
+      "category": "Supports iOS 13",
       "author": "Dave van Wijk",
       "commercial": false,
-      "date": "2019-12-02T22:33:36Z",
+      "date": "2019-12-03T03:35:17Z",
       "versions": [
         {
-          "tweakVersion": "1.1",
+          "tweakVersion": "1",
           "iOSVersion": "13.2.2",
-          "repository": "(null)",
-          "date": "2019-12-11T23:59:32Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-12-03T03:35:17Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -31650,22 +31650,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.nottoday13",
+      "id": "com.daveapps.nottoday13",
       "name": "NotToday13",
-      "latest": "1",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.nottoday13/",
+      "latest": "1.1",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.daveapps.nottoday13/",
       "shortDescription": "Disables Today View on iOS 13",
-      "category": "Supports iOS 13",
+      "category": "Tweaks",
       "author": "Dave van Wijk",
       "commercial": false,
-      "date": "2019-12-03T03:35:17Z",
+      "date": "2019-12-02T22:33:36Z",
       "versions": [
         {
-          "tweakVersion": "1",
+          "tweakVersion": "1.1",
           "iOSVersion": "13.2.2",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-12-03T03:35:17Z",
+          "repository": "(null)",
+          "date": "2019-12-11T23:59:32Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -33028,22 +33028,22 @@
       ]
     },
     {
-      "id": "com.i0sa.phonecaller2",
+      "id": "com.i0sa.phonecaller",
       "name": "PhoneCaller",
-      "latest": "2.0.1",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.i0sa.phonecaller2/",
+      "latest": "1.6.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.i0sa.phonecaller/",
       "shortDescription": "Find out who's calling before answering",
       "category": "Tweaks",
-      "author": "Osama",
+      "author": "Osama Muhammed",
       "commercial": true,
-      "date": "2019-08-20T18:44:21Z",
+      "date": "2018-03-03T08:40:51Z",
       "versions": [
         {
-          "tweakVersion": "2.0.1",
+          "tweakVersion": "1.6.1",
           "iOSVersion": "13.2.2",
-          "repository": "Packix",
-          "date": "2019-11-10T23:34:49Z",
+          "repository": "BigBoss",
+          "date": "2019-11-15T18:02:49Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -33062,22 +33062,22 @@
       ]
     },
     {
-      "id": "com.i0sa.phonecaller",
+      "id": "com.i0sa.phonecaller2",
       "name": "PhoneCaller",
-      "latest": "1.6.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.i0sa.phonecaller/",
+      "latest": "2.0.1",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.i0sa.phonecaller2/",
       "shortDescription": "Find out who's calling before answering",
       "category": "Tweaks",
-      "author": "Osama Muhammed",
+      "author": "Osama",
       "commercial": true,
-      "date": "2018-03-03T08:40:51Z",
+      "date": "2019-08-20T18:44:21Z",
       "versions": [
         {
-          "tweakVersion": "1.6.1",
+          "tweakVersion": "2.0.1",
           "iOSVersion": "13.2.2",
-          "repository": "BigBoss",
-          "date": "2019-11-15T18:02:49Z",
+          "repository": "Packix",
+          "date": "2019-11-10T23:34:49Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -33200,7 +33200,7 @@
     {
       "id": "com.fpt.photomanager12",
       "name": "PhotoManager (iOS 12)",
-      "latest": "1.1.0",
+      "latest": "1.1.2-3+debug",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.fpt.photomanager12/",
       "shortDescription": "Add many features to the photos app.",
@@ -34099,7 +34099,7 @@
     {
       "id": "preferenceloader",
       "name": "PreferenceLoader",
-      "latest": "2.2.3-3",
+      "latest": "2.2.4~beta1",
       "repository": "rpetrich repo",
       "url": "http://cydia.saurik.com/package/preferenceloader/",
       "shortDescription": "load preferences in style",
@@ -35917,7 +35917,7 @@
     {
       "id": "com.rpetrich.rocketbootstrap",
       "name": "RocketBootstrap",
-      "latest": "1.0.6",
+      "latest": "1.0.7~beta3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.rpetrich.rocketbootstrap/",
       "shortDescription": "Support library allowing tweaks to communicate with sandboxed processes",
@@ -37348,6 +37348,40 @@
       ]
     },
     {
+      "id": "me.jjolano.shadow",
+      "name": "Shadow",
+      "latest": "2.0.20",
+      "repository": "jjolano's iOS Tweaks",
+      "url": "http://cydia.saurik.com/package/me.jjolano.shadow/",
+      "shortDescription": "A lightweight general jailbreak detection bypass.",
+      "category": "Tweaks",
+      "author": "jjolano",
+      "commercial": false,
+      "date": "2019-06-13T18:40:51Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0.20",
+          "iOSVersion": "13.2.2",
+          "repository": "jjolano's iOS Tweaks",
+          "date": "2019-11-12T20:25:20Z",
+          "outcome": {
+            "calculatedStatus": "Likely working",
+            "percentage": 75,
+            "good": 3,
+            "bad": 0,
+            "total": 4,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.shadow.unalkuru",
       "name": "Shadow",
       "latest": "9.9.1",
@@ -37390,40 +37424,6 @@
             "good": 1,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "me.jjolano.shadow",
-      "name": "Shadow",
-      "latest": "2.0.20",
-      "repository": "jjolano's iOS Tweaks",
-      "url": "http://cydia.saurik.com/package/me.jjolano.shadow/",
-      "shortDescription": "A lightweight general jailbreak detection bypass.",
-      "category": "Tweaks",
-      "author": "jjolano",
-      "commercial": false,
-      "date": "2019-06-13T18:40:51Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0.20",
-          "iOSVersion": "13.2.2",
-          "repository": "jjolano's iOS Tweaks",
-          "date": "2019-11-12T20:25:20Z",
-          "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 75,
-            "good": 3,
-            "bad": 0,
-            "total": 4,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -39510,7 +39510,7 @@
     {
       "id": "com.spark.snowboard",
       "name": "Snowboard",
-      "latest": "1.2.82~Beta1",
+      "latest": "1.2.83~Beta1",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.spark.snowboard/",
       "shortDescription": "Snowboard theming engine",
@@ -41933,7 +41933,7 @@
     {
       "id": "com.samgisaninja.successionrestore",
       "name": "Succession [beta]",
-      "latest": "1.4.7",
+      "latest": "1.4.8",
       "repository": "Samg_is_a_Ninja Repo",
       "url": "http://cydia.saurik.com/package/com.samgisaninja.successionrestore/",
       "shortDescription": "Restore without updating via rootfilesystem DMG",
@@ -42021,7 +42021,7 @@
     {
       "id": "com.manolz.sugarcane",
       "name": "SugarCane12",
-      "latest": "1.0.0",
+      "latest": "1.0.0-1+debug",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.manolz.sugarcane/",
       "shortDescription": "Get percentages for the sliders in the Control Center on iOS 12",
@@ -43175,7 +43175,7 @@
     {
       "id": "jp.ashikase.techsupport",
       "name": "TechSupport Framework",
-      "latest": "1.5.0.1-2",
+      "latest": "1.5.0.1-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/jp.ashikase.techsupport/",
       "shortDescription": "Framework to assist in providing feedback to developers.",
@@ -43296,10 +43296,10 @@
     {
       "id": "net.tetherme.tetherme8",
       "name": "TetherMe for iOS 10/9/8",
-      "latest": "1.2.3~rc4",
+      "latest": "1.2.2-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/net.tetherme.tetherme8/",
-      "shortDescription": "Dynamically enables native tethering for iOS8+ devices.  This should work on any carrier without the need for customized bundles or preferences.",
+      "shortDescription": "Dynamically enables native tethering iOS8+",
       "category": "Tweaks",
       "author": "Sam Bingner",
       "commercial": true,
@@ -44275,6 +44275,39 @@
       ]
     },
     {
+      "id": "co.dynastic.tsssaver",
+      "name": "TSS Saver",
+      "latest": "1.2.0",
+      "repository": "nullpixel's Repo",
+      "url": "https://repo.nullpixel.uk/",
+      "shortDescription": "A one-click tool to save blobs using TSSsaver.1conan.com",
+      "category": "Utilities",
+      "author": "nullpixel",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.2.0",
+          "iOSVersion": "13.2.2",
+          "repository": "nullpixel's Repo",
+          "date": "2019-11-11T06:21:57Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 6,
+            "bad": 0,
+            "total": 6,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "cydia.kiiimo.org.tsssaver",
       "name": "TSS Saver",
       "latest": "1.2.0",
@@ -44297,39 +44330,6 @@
             "good": 1,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "co.dynastic.tsssaver",
-      "name": "TSS Saver",
-      "latest": "1.2.0",
-      "repository": "nullpixel's Repo",
-      "url": "https://repo.nullpixel.uk/",
-      "shortDescription": "A one-click tool to save blobs using TSSsaver.1conan.com",
-      "category": "Utilities",
-      "author": "nullpixel",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.2.0",
-          "iOSVersion": "13.2.2",
-          "repository": "nullpixel's Repo",
-          "date": "2019-11-11T06:21:57Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 6,
-            "bad": 0,
-            "total": 6,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -47739,39 +47739,6 @@
       ]
     },
     {
-      "id": "com.justinpetkovic.youtubetools",
-      "name": "YouTube Tools",
-      "latest": "3.0-1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.justinpetkovic.youtubetools/",
-      "shortDescription": "Essential toolbox for YouTube app.",
-      "category": "Tweaks",
-      "author": "Justin Petkovic",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "3.0-1",
-          "iOSVersion": "13.2.2",
-          "repository": "Electra's iOS Utilities",
-          "date": "2019-12-07T14:09:21Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.yourepo.jpet26.youtubetools1",
       "name": "YouTube Tools",
       "latest": "4.0",
@@ -47794,6 +47761,39 @@
             "good": 5,
             "bad": 0,
             "total": 5,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.justinpetkovic.youtubetools",
+      "name": "YouTube Tools",
+      "latest": "3.0-1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.justinpetkovic.youtubetools/",
+      "shortDescription": "Essential toolbox for YouTube app.",
+      "category": "Tweaks",
+      "author": "Justin Petkovic",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "3.0-1",
+          "iOSVersion": "13.2.2",
+          "repository": "Electra's iOS Utilities",
+          "date": "2019-12-07T14:09:21Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
