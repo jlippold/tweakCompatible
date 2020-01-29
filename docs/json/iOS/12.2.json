@@ -1085,10 +1085,10 @@
     {
       "id": "com.fouadraheb.alarmgroups",
       "name": "AlarmGroups",
-      "latest": "1.0",
+      "latest": "2.0.3",
       "repository": "Fouad's Repo",
       "url": "http://cydia.saurik.com/package/com.fouadraheb.alarmgroups/",
-      "shortDescription": "Create Alarm Groups in Clock app",
+      "shortDescription": "Generate and Group Alarms in Clock app",
       "category": "Tweaks",
       "author": "Fouad Raheb",
       "commercial": false,
@@ -2155,6 +2155,40 @@
       ]
     },
     {
+      "id": "com.shiarahmed.uaupdatetools",
+      "name": "App Admin",
+      "latest": "1.0r-102",
+      "repository": "Shiar's Repo",
+      "url": "http://cydia.saurik.com/package/com.shiarahmed.uaupdatetools/",
+      "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
+      "category": "System",
+      "author": "UnlimApps Inc.",
+      "commercial": false,
+      "date": "2019-03-07T09:16:38Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0r-102",
+          "iOSVersion": "12.2",
+          "repository": "Shiar's Repo",
+          "date": "2019-07-13T17:49:57Z",
+          "outcome": {
+            "calculatedStatus": "Likely working",
+            "percentage": 50,
+            "good": 1,
+            "bad": 0,
+            "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.unlimapps.uaupdatetools",
       "name": "App Admin",
       "latest": "1.0r-102",
@@ -2196,40 +2230,6 @@
             "good": 0,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.shiarahmed.uaupdatetools",
-      "name": "App Admin",
-      "latest": "1.0r-102",
-      "repository": "Shiar's Repo",
-      "url": "http://cydia.saurik.com/package/com.shiarahmed.uaupdatetools/",
-      "shortDescription": "Downgrade iOS apps to any previous version! No AppSync needed!!!",
-      "category": "System",
-      "author": "UnlimApps Inc.",
-      "commercial": false,
-      "date": "2019-03-07T09:16:38Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0r-102",
-          "iOSVersion": "12.2",
-          "repository": "Shiar's Repo",
-          "date": "2019-07-13T17:49:57Z",
-          "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 50,
-            "good": 1,
-            "bad": 0,
-            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -2538,10 +2538,10 @@
     {
       "id": "com.tigisoftware.appdatamanager",
       "name": "Apps Manager",
-      "latest": "1.4.2",
+      "latest": "1.5.1-10",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.appdatamanager/",
-      "shortDescription": "tool to WIPE, BACKUP, RESTORE AppData for installed Apps",
+      "shortDescription": "This tool provides the way to WIPE, BACKUP, RESTORE AppData for installed Apps",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -2994,7 +2994,7 @@
     {
       "id": "apt-key",
       "name": "APT (apt-key)",
-      "latest": "1.8.2-2",
+      "latest": "1.8.2-1",
       "repository": "Bingner/Elucubratus",
       "url": "http://cydia.saurik.com/package/apt-key/",
       "shortDescription": "repository encryption key management tool",
@@ -3108,7 +3108,7 @@
     {
       "id": "apt",
       "name": "APT 0.6 Transitional",
-      "latest": "1.8.2-5",
+      "latest": "1.8.2-3",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/apt/",
       "shortDescription": "the advanced packaging tool from Debian",
@@ -3236,7 +3236,7 @@
     {
       "id": "libapt-pkg5.0",
       "name": "APT 1.4 Strict (libapt-pkg)",
-      "latest": "1.8.2-2",
+      "latest": "1.8.2-1",
       "repository": "Bingner/Elucubratus",
       "url": "http://cydia.saurik.com/package/libapt-pkg5.0/",
       "shortDescription": "the advanced packaging library from Debian",
@@ -3458,7 +3458,7 @@
     {
       "id": "libapt",
       "name": "APT Strict (lib)",
-      "latest": "1.8.2-2",
+      "latest": "1.8.2-1",
       "repository": "Bingner/Elucubratus",
       "url": "http://cydia.saurik.com/package/libapt/",
       "shortDescription": "the advanced packaging library from Debian",
@@ -5293,10 +5293,10 @@
     {
       "id": "com.rbt.batterylife",
       "name": "BatteryLife",
-      "latest": "1.7.0",
+      "latest": "1.8.0~b23",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.rbt.batterylife/",
-      "shortDescription": "Displays useful information about battery health",
+      "shortDescription": "Displays useful information about your device's battery health [b1] Completely replaced the main app with the official App Store version. Please report ANY bugs and missing languages to batterylife1.8.x@rbtdigital.com. Thank you very much! [b2] Several fixes. [b3] Possible fix for iOS 8 crash. General bug fixes. [b4] iOS 8 bug fixes. [b5] Updated app a lot. [b6] See b5. [b7] See b6. [b8] App is now compatible with iOS 11. [b9] Bugfixes. [b10] Fix for missing app icon. [b11] Possible fix for the status bar options. [b12] Fix for b11. [b13] Bugfixes. [b14] Bugfixes. [b15] Bugfixes. [b16] Fixed settings not opening. Fixed ads not disappearing. General bugfixes. [b17] Quick crashfix. [b18] Bugfixes & updated translations. Automatically saves battery stat history without the need to open the app. [b19] Bugfixes. [b20] Fixes for iOS 9 and 10. [b21] Fixed temperature unit in app. Changed App Icon to distinguish from the App Store version. [b22] Bugfixes. Should be close to final now. [b23] Preliminary iOS 12 support",
       "category": "Utilities",
       "author": "rbt",
       "commercial": false,
@@ -11280,7 +11280,7 @@
     {
       "id": "com.4nni3.coolcc",
       "name": "CoolCC",
-      "latest": "1:3.4",
+      "latest": "3.4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.4nni3.coolcc/",
       "shortDescription": "Makes ControlCenter cool.",
@@ -11368,7 +11368,7 @@
     {
       "id": "com.iarrays.copic2",
       "name": "Copic 2",
-      "latest": "1.0.12-beta-5",
+      "latest": "1.0.12-beta-6",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.iarrays.copic2/",
       "shortDescription": "The new Copic 2 is totally redesigned, optimized and rebuild from the scratch. Now brings the ability to display the Contact pictures everywhere on your iPhone.Integrates seamlessly with stock Contacts, FaceTime, Mail, Messages and Phone apps. The best part of this tweak is it also integrates with WhatsApp & infamous tweak Recents 2 too. Also integrates with locks screen and Notification Center. Brings ability to turn on or off monograms or show rounded or rectangular images and many more features.",
@@ -12694,6 +12694,40 @@
       ]
     },
     {
+      "id": "cydia-dark",
+      "name": "Cydia Installer",
+      "latest": "1.9.3~b6",
+      "repository": "Diatrus/Misceo",
+      "url": "http://cydia.saurik.com/package/cydia-dark/",
+      "shortDescription": "graphical iPhone front-end for APT",
+      "category": "Packaging",
+      "author": "Jay Freeman (saurik)",
+      "commercial": false,
+      "date": "2019-05-04T19:09:58Z",
+      "versions": [
+        {
+          "tweakVersion": "1.9.3~b6",
+          "iOSVersion": "12.2",
+          "repository": "Diatrus/Altum",
+          "date": "2019-12-26T01:51:01Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "cydia",
       "name": "Cydia Installer",
       "latest": "1.1.32~b23",
@@ -12829,40 +12863,6 @@
           "iOSVersion": "12.2",
           "repository": "Diatrus/Altum",
           "date": "2019-12-26T01:51:24Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "cydia-dark",
-      "name": "Cydia Installer",
-      "latest": "1.9.3~b6",
-      "repository": "Diatrus/Misceo",
-      "url": "http://cydia.saurik.com/package/cydia-dark/",
-      "shortDescription": "graphical iPhone front-end for APT",
-      "category": "Packaging",
-      "author": "Jay Freeman (saurik)",
-      "commercial": false,
-      "date": "2019-05-04T19:09:58Z",
-      "versions": [
-        {
-          "tweakVersion": "1.9.3~b6",
-          "iOSVersion": "12.2",
-          "repository": "Diatrus/Altum",
-          "date": "2019-12-26T01:51:01Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -13870,22 +13870,22 @@
       ]
     },
     {
-      "id": "org.coolstar.cctools",
+      "id": "odcctools",
       "name": "Darwin CC Tools",
-      "latest": "895",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.coolstar.cctools/",
-      "shortDescription": "tools to work with mach-o files",
+      "latest": "927.0.2-1",
+      "repository": "Cydia/Telesphoreo",
+      "url": "http://cydia.saurik.com/package/odcctools/",
+      "shortDescription": "linker and assembler for the iPhone",
       "category": "Development",
-      "author": "CoolStar",
+      "author": "(null)",
       "commercial": false,
-      "date": "2018-06-07T19:23:50Z",
+      "date": "2018-07-20T18:21:05Z",
       "versions": [
         {
-          "tweakVersion": "895",
+          "tweakVersion": "895-3",
           "iOSVersion": "12.2",
-          "repository": "BigBoss",
-          "date": "2019-08-21T16:36:36Z",
+          "repository": "apt.bingner.com",
+          "date": "2019-10-23T16:52:59Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -13904,22 +13904,22 @@
       ]
     },
     {
-      "id": "odcctools",
+      "id": "org.coolstar.cctools",
       "name": "Darwin CC Tools",
-      "latest": "927.0.2-1",
-      "repository": "Cydia/Telesphoreo",
-      "url": "http://cydia.saurik.com/package/odcctools/",
-      "shortDescription": "linker and assembler for the iPhone",
+      "latest": "895",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.coolstar.cctools/",
+      "shortDescription": "tools to work with mach-o files",
       "category": "Development",
-      "author": "(null)",
+      "author": "CoolStar",
       "commercial": false,
-      "date": "2018-07-20T18:21:05Z",
+      "date": "2018-06-07T19:23:50Z",
       "versions": [
         {
-          "tweakVersion": "895-3",
+          "tweakVersion": "895",
           "iOSVersion": "12.2",
-          "repository": "apt.bingner.com",
-          "date": "2019-10-23T16:52:59Z",
+          "repository": "BigBoss",
+          "date": "2019-08-21T16:36:36Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -14184,7 +14184,7 @@
     {
       "id": "net.tateu.debkeeper12",
       "name": "DebKeeper12",
-      "latest": "1.0.5",
+      "latest": "1.0.6",
       "repository": "tateu's repo",
       "url": "http://cydia.saurik.com/package/net.tateu.debkeeper12/",
       "shortDescription": "Disable deletion of deb files in Cydia, Sileo and Zebra.",
@@ -15146,10 +15146,10 @@
     {
       "id": "org.thebigboss.dismissprogress",
       "name": "DismissProgress",
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.dismissprogress/",
-      "shortDescription": "Dismiss Cydia'a installation window without closing cydia.",
+      "shortDescription": "Dismiss installation window without closing cydia.",
       "category": "Tweaks",
       "author": "PoomSmart",
       "commercial": false,
@@ -19058,7 +19058,7 @@
     {
       "id": "flex3beta",
       "name": "Flex 3 Beta",
-      "latest": "1:3~Beta86",
+      "latest": "3~Beta86",
       "repository": "Delta",
       "url": "http://getdelta.co/",
       "shortDescription": "Develop your own tweaks and share them on the Flex Community Cloud",
@@ -21137,40 +21137,6 @@
       ]
     },
     {
-      "id": "com.yourepo.cydiageek.gyration",
-      "name": "Gyration",
-      "latest": "1.0.1",
-      "repository": "CydiaGeek Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.cydiageek.gyration/",
-      "shortDescription": "The Tweak Enables the Rotation All Over the Applications and HomeScreen on System Wide & More!",
-      "category": "Tweaks",
-      "author": "CydiaGeek",
-      "commercial": false,
-      "date": "2018-04-22T08:17:55Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.1",
-          "iOSVersion": "12.2",
-          "repository": "CydiaGeek Source - YouRepo",
-          "date": "2019-10-06T16:21:41Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.cydiageek.gyration",
       "name": "Gyration",
       "latest": "1.0.7",
@@ -21191,6 +21157,40 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.yourepo.cydiageek.gyration",
+      "name": "Gyration",
+      "latest": "1.0.1",
+      "repository": "CydiaGeek Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.cydiageek.gyration/",
+      "shortDescription": "The Tweak Enables the Rotation All Over the Applications and HomeScreen on System Wide & More!",
+      "category": "Tweaks",
+      "author": "CydiaGeek",
+      "commercial": false,
+      "date": "2018-04-22T08:17:55Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.1",
+          "iOSVersion": "12.2",
+          "repository": "CydiaGeek Source - YouRepo",
+          "date": "2019-10-06T16:21:41Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -24856,7 +24856,7 @@
       "latest": "0.2.1",
       "repository": "Nepeta",
       "url": "http://cydia.saurik.com/package/me.nepeta.konban/",
-      "shortDescription": "Replaces the \"Today\" view with an app of your choice.",
+      "shortDescription": "Replaces the \"Today\" view with an app of your choice. (If you can't see the depiction, please use Cydia or Zebra).",
       "category": "Tweaks",
       "author": "Nepeta",
       "commercial": false,
@@ -25386,22 +25386,22 @@
       ]
     },
     {
-      "id": "ld64",
-      "name": "ld64",
-      "latest": "450.3-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ld64/",
-      "shortDescription": "64bit iOS linker",
+      "id": "org.coolstar.ld64",
+      "name": "LD64",
+      "latest": "274.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.coolstar.ld64/",
+      "shortDescription": "linker for building on iOS",
       "category": "Development",
-      "author": "(null)",
+      "author": "CoolStar",
       "commercial": false,
-      "date": "2018-10-16T11:24:56Z",
+      "date": "2018-07-12T20:22:30Z",
       "versions": [
         {
-          "tweakVersion": "274.2-3",
+          "tweakVersion": "274.2",
           "iOSVersion": "12.2",
-          "repository": "apt.bingner.com",
-          "date": "2019-10-23T16:54:40Z",
+          "repository": "BigBoss",
+          "date": "2019-08-21T16:39:48Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -25420,22 +25420,22 @@
       ]
     },
     {
-      "id": "org.coolstar.ld64",
-      "name": "LD64",
-      "latest": "274.2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.coolstar.ld64/",
-      "shortDescription": "linker for building on iOS",
+      "id": "ld64",
+      "name": "ld64",
+      "latest": "450.3-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ld64/",
+      "shortDescription": "64bit iOS linker",
       "category": "Development",
-      "author": "CoolStar",
+      "author": "(null)",
       "commercial": false,
-      "date": "2018-07-12T20:22:30Z",
+      "date": "2018-10-16T11:24:56Z",
       "versions": [
         {
-          "tweakVersion": "274.2",
+          "tweakVersion": "274.2-3",
           "iOSVersion": "12.2",
-          "repository": "BigBoss",
-          "date": "2019-08-21T16:39:48Z",
+          "repository": "apt.bingner.com",
+          "date": "2019-10-23T16:54:40Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -25953,6 +25953,40 @@
       ]
     },
     {
+      "id": "me.nepeta.libcolorpicker",
+      "name": "libcolorpicker",
+      "latest": "1.6.2-3",
+      "repository": "Nepeta",
+      "url": "http://cydia.saurik.com/package/me.nepeta.libcolorpicker/",
+      "shortDescription": "libcolorpicker with arm64e (A12) support",
+      "category": "System",
+      "author": "Bailey Seymour",
+      "commercial": false,
+      "date": "2019-04-23T12:35:57Z",
+      "versions": [
+        {
+          "tweakVersion": "1.6.2-3",
+          "iOSVersion": "12.2",
+          "repository": "BigBoss",
+          "date": "2019-07-23T22:31:52Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "org.thebigboss.libcolorpicker",
       "name": "libcolorpicker",
       "latest": "1.6.7",
@@ -26048,40 +26082,6 @@
           "iOSVersion": "12.2",
           "repository": "BigBoss",
           "date": "2020-01-04T22:46:51Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "me.nepeta.libcolorpicker",
-      "name": "libcolorpicker",
-      "latest": "1.6.2-3",
-      "repository": "Nepeta",
-      "url": "http://cydia.saurik.com/package/me.nepeta.libcolorpicker/",
-      "shortDescription": "libcolorpicker with arm64e (A12) support",
-      "category": "System",
-      "author": "Bailey Seymour",
-      "commercial": false,
-      "date": "2019-04-23T12:35:57Z",
-      "versions": [
-        {
-          "tweakVersion": "1.6.2-3",
-          "iOSVersion": "12.2",
-          "repository": "BigBoss",
-          "date": "2019-07-23T22:31:52Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -26506,7 +26506,7 @@
     {
       "id": "com.ryleyangus.libertylite.beta",
       "name": "Liberty Lite (Beta)",
-      "latest": "0.2.12",
+      "latest": "0.2.12-z",
       "repository": "Ryley's Repo",
       "url": "http://cydia.saurik.com/package/com.ryleyangus.libertylite.beta/",
       "shortDescription": "A general purpose jailbreak detection bypass patch. Configure the Liberty Lite entry in the Settings app to block (most) apps from detecting your jailbreak. Disabling Substrate/Substitute is not currently supported. Support for both arm64e and armv7 has been enabled in this beta version.",
@@ -34257,7 +34257,7 @@
     {
       "id": "openssh",
       "name": "OpenSSH",
-      "latest": "6.7p1-13",
+      "latest": "8.1-1",
       "repository": "Electra's iOS Utilities",
       "url": "http://cydia.saurik.com/package/openssh/",
       "shortDescription": "secure remote access between machines",
@@ -35931,7 +35931,7 @@
     {
       "id": "org.ppsspp.ppsspp-dev-latest",
       "name": "PPSSPP (Dev-Latest)",
-      "latest": "0v1.6.3-456-g6d0ed4ad0",
+      "latest": "0v1.9.3-234-g3bd0b3fa7",
       "repository": "PPSSPP Repo",
       "url": "http://cydia.saurik.com/package/org.ppsspp.ppsspp-dev-latest/",
       "shortDescription": "A PSP emulator",
@@ -37688,40 +37688,6 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.reprovision",
-      "name": "ReProvision",
-      "latest": "0.4.2",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.reprovision/",
-      "shortDescription": "Re-sign applications on your device",
-      "category": "System",
-      "author": "Matt Clarke",
-      "commercial": false,
-      "date": "2019-07-16T12:33:13Z",
-      "versions": [
-        {
-          "tweakVersion": "0.4.2",
-          "iOSVersion": "12.2",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-07-16T12:33:13Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.matchstic.reprovision",
       "name": "ReProvision",
       "latest": "0.5.1~EOL",
@@ -37958,6 +37924,40 @@
           "iOSVersion": "12.2",
           "repository": "repo.incendo.ws",
           "date": "2020-01-27T04:30:11Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.cydia.kiimo.reprovision",
+      "name": "ReProvision",
+      "latest": "0.4.2",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.reprovision/",
+      "shortDescription": "Re-sign applications on your device",
+      "category": "System",
+      "author": "Matt Clarke",
+      "commercial": false,
+      "date": "2019-07-16T12:33:13Z",
+      "versions": [
+        {
+          "tweakVersion": "0.4.2",
+          "iOSVersion": "12.2",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-07-16T12:33:13Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -38233,6 +38233,40 @@
       ]
     },
     {
+      "id": "cydia.kiiimo.org.rocket",
+      "name": "Rocket for Instagram",
+      "latest": "3.3.5k",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/cydia.kiiimo.org.rocket/",
+      "shortDescription": "Save posts and view stories anonymously and do much more",
+      "category": "iOS 12",
+      "author": "Majd Alfhaily",
+      "commercial": false,
+      "date": "2019-07-26T14:51:33Z",
+      "versions": [
+        {
+          "tweakVersion": "3.3.5k",
+          "iOSVersion": "12.2",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-07-26T14:51:33Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "me.alfhaily.rocket",
       "name": "Rocket for Instagram",
       "latest": "3.6.9",
@@ -38409,40 +38443,6 @@
           "iOSVersion": "12.2",
           "repository": "Alfhaily APT",
           "date": "2020-01-27T04:29:21Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "cydia.kiiimo.org.rocket",
-      "name": "Rocket for Instagram",
-      "latest": "3.3.5k",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/cydia.kiiimo.org.rocket/",
-      "shortDescription": "Save posts and view stories anonymously and do much more",
-      "category": "iOS 12",
-      "author": "Majd Alfhaily",
-      "commercial": false,
-      "date": "2019-07-26T14:51:33Z",
-      "versions": [
-        {
-          "tweakVersion": "3.3.5k",
-          "iOSVersion": "12.2",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-07-26T14:51:33Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -41564,7 +41564,7 @@
     {
       "id": "com.zyb.smartvpn",
       "name": "SmartVPN",
-      "latest": "0.0.6-6",
+      "latest": "0.8.0-3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.zyb.smartvpn/",
       "shortDescription": "auto start/close VPN for special app list",
@@ -41981,7 +41981,7 @@
     {
       "id": "com.spark.snowboard",
       "name": "Snowboard",
-      "latest": "1.2.83~Beta1",
+      "latest": "1.2.86~Beta2",
       "repository": "(null)",
       "url": "http://cydia.saurik.com/package/com.spark.snowboard/",
       "shortDescription": "Snowboard theming engine",
@@ -42477,7 +42477,7 @@
     {
       "id": "com.spark.snowboard.effects",
       "name": "SnowBoard Icon Effects Extension",
-      "latest": "1.0.22~Beta1",
+      "latest": "1.0.32~Beta2",
       "repository": "SparkDev",
       "url": "http://cydia.saurik.com/package/com.spark.snowboard.effects/",
       "shortDescription": "Icon Effects for SnowBoard",
@@ -42591,7 +42591,7 @@
     {
       "id": "com.spark.snowboard.masks",
       "name": "SnowBoard Icon Masks Extension",
-      "latest": "1.0.13~Beta1",
+      "latest": "1.0.14~Beta2",
       "repository": "SparkDev",
       "url": "http://cydia.saurik.com/package/com.spark.snowboard.masks/",
       "shortDescription": "Icon masks for SnowBoard",
@@ -42745,6 +42745,26 @@
           "iOSVersion": "12.2",
           "repository": "SparkDev",
           "date": "2020-01-25T08:15:07Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.0.14~Beta2",
+          "iOSVersion": "12.2",
+          "repository": "SparkDev",
+          "date": "2020-01-29T13:04:12Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -45020,10 +45040,10 @@
     {
       "id": "org.thebigboss.swipeformore",
       "name": "SwipeForMore",
-      "latest": "1.1.10",
+      "latest": "1.1.7",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.swipeformore/",
-      "shortDescription": "Manage Cydia packages via swipe.",
+      "shortDescription": "Manage packages via swipe.",
       "category": "Tweaks",
       "author": "PoomSmart",
       "commercial": false,
@@ -45417,10 +45437,10 @@
     {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
-      "latest": "2.0.0-1",
+      "latest": "2.3.2-8+debug",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/xyz.xninja.systeminfo/",
-      "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save shsh, battery info etc",
+      "shortDescription": "System information in Settings.app > General > About, and other sections. Set boot-nonce,save shsh2,battery info etc.",
       "category": "Tweaks",
       "author": "ARX8x",
       "commercial": false,
@@ -47021,6 +47041,39 @@
       ]
     },
     {
+      "id": "co.dynastic.tsssaver",
+      "name": "TSS Saver",
+      "latest": "1.2.0",
+      "repository": "nullpixel's Repo",
+      "url": "https://repo.nullpixel.uk/",
+      "shortDescription": "A one-click tool to save blobs using TSSsaver.1conan.com",
+      "category": "Utilities",
+      "author": "nullpixel",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.2.0",
+          "iOSVersion": "12.2",
+          "repository": "nullpixel's Repo",
+          "date": "2019-07-14T13:23:41Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 4,
+            "bad": 0,
+            "total": 4,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.iarrays.tsssaver",
       "name": "TSS Saver",
       "latest": "1.0-beta-4",
@@ -47103,39 +47156,6 @@
             "good": 1,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "co.dynastic.tsssaver",
-      "name": "TSS Saver",
-      "latest": "1.2.0",
-      "repository": "nullpixel's Repo",
-      "url": "https://repo.nullpixel.uk/",
-      "shortDescription": "A one-click tool to save blobs using TSSsaver.1conan.com",
-      "category": "Utilities",
-      "author": "nullpixel",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.2.0",
-          "iOSVersion": "12.2",
-          "repository": "nullpixel's Repo",
-          "date": "2019-07-14T13:23:41Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 4,
-            "bad": 0,
-            "total": 4,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -50671,7 +50691,7 @@
       "latest": "0.0~beta1",
       "repository": "julioverne's Repo",
       "url": "http://cydia.saurik.com/package/com.julioverne.wishdia/",
-      "shortDescription": "Wish List For Cydia",
+      "shortDescription": "Add a wishlist to Cydia works on iOS 7-13",
       "category": "Tweaks",
       "author": "julioverne",
       "commercial": false,
@@ -51412,40 +51432,6 @@
       ]
     },
     {
-      "id": "com.yourepo.jpet26.youtubetools",
-      "name": "YouTube Tools",
-      "latest": "2.0",
-      "repository": "jpet26 Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.jpet26.youtubetools/",
-      "shortDescription": "Essential toolbox for YouTube app.",
-      "category": "Tweaks",
-      "author": "Justin Petkovic",
-      "commercial": false,
-      "date": "2019-05-25T17:07:36Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0",
-          "iOSVersion": "12.2",
-          "repository": "jpet26 Source - YouRepo",
-          "date": "2019-07-19T16:30:21Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.justinpetkovic.youtubetools",
       "name": "YouTube Tools",
       "latest": "3.0-1",
@@ -51507,6 +51493,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.yourepo.jpet26.youtubetools",
+      "name": "YouTube Tools",
+      "latest": "2.0",
+      "repository": "jpet26 Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.jpet26.youtubetools/",
+      "shortDescription": "Essential toolbox for YouTube app.",
+      "category": "Tweaks",
+      "author": "Justin Petkovic",
+      "commercial": false,
+      "date": "2019-05-25T17:07:36Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0",
+          "iOSVersion": "12.2",
+          "repository": "jpet26 Source - YouRepo",
+          "date": "2019-07-19T16:30:21Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
