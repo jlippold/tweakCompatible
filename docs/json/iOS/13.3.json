@@ -10442,7 +10442,7 @@
     {
       "id": "eu.rio-doro.carplayclassic",
       "name": "CarPlayClassic",
-      "latest": "1.0",
+      "latest": "0.9",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/eu.rio-doro.carplayclassic/",
       "shortDescription": "brings the iOS 12 carplay icons back to iOS 13+",
@@ -10456,6 +10456,26 @@
           "iOSVersion": "13.3",
           "repository": "Packix",
           "date": "2020-02-20T09:18:05Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "0.9",
+          "iOSVersion": "13.3",
+          "repository": "rio-doro beta repo",
+          "date": "2020-02-07T03:36:47Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -13038,60 +13058,6 @@
       ]
     },
     {
-      "id": "ru.domo.cocoatop64",
-      "name": "CocoaTop",
-      "latest": "2.0.2",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop64/",
-      "shortDescription": "Process Viewer for iOS GUI (64-bit)",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "date": "2018-03-13T11:14:04Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0.2-1+debug",
-          "iOSVersion": "13.3",
-          "repository": "NotMyTweaks Repo",
-          "date": "2019-12-18T21:28:14Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        },
-        {
-          "tweakVersion": "2.0.2",
-          "iOSVersion": "13.3",
-          "repository": "(null)",
-          "date": "2020-01-24T16:29:35Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "cydia.kiiimo.org.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2",
@@ -13145,6 +13111,60 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.domo.cocoatop64",
+      "name": "CocoaTop",
+      "latest": "2.0.2",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop64/",
+      "shortDescription": "Process Viewer for iOS GUI (64-bit)",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "date": "2018-03-13T11:14:04Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0.2-1+debug",
+          "iOSVersion": "13.3",
+          "repository": "NotMyTweaks Repo",
+          "date": "2019-12-18T21:28:14Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "2.0.2",
+          "iOSVersion": "13.3",
+          "repository": "(null)",
+          "date": "2020-01-24T16:29:35Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -17193,22 +17213,22 @@
       ]
     },
     {
-      "id": "com.dta.delta",
+      "id": "com.rileytestut.delta",
       "name": "Delta",
-      "latest": "1.1",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.dta.delta/",
-      "shortDescription": "Delta is an multi-emulator for playing GBA/GBC/NDS/N64/SNES games. Supports iOS 10-13",
-      "category": "dta-apps",
-      "author": "Riley Testut",
+      "latest": "1.1.1",
+      "repository": "Delta Repo",
+      "url": "http://cydia.saurik.com/package/com.rileytestut.delta/",
+      "shortDescription": "Delta Emulator by Rileytestut",
+      "category": "Emulators",
+      "author": "Rileytestut",
       "commercial": false,
-      "date": "2019-11-10T23:12:16Z",
+      "date": "2019-12-05T21:01:01Z",
       "versions": [
         {
-          "tweakVersion": "1.1",
+          "tweakVersion": "1.1.1",
           "iOSVersion": "13.3",
-          "repository": "Dylan's Repository",
-          "date": "2020-01-27T12:50:12Z",
+          "repository": "Delta Repo",
+          "date": "2020-01-18T12:21:25Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -17261,22 +17281,22 @@
       ]
     },
     {
-      "id": "com.rileytestut.delta",
+      "id": "com.dta.delta",
       "name": "Delta",
-      "latest": "1.1.1",
-      "repository": "Delta Repo",
-      "url": "http://cydia.saurik.com/package/com.rileytestut.delta/",
-      "shortDescription": "Delta Emulator by Rileytestut",
-      "category": "Emulators",
-      "author": "Rileytestut",
+      "latest": "1.1",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.dta.delta/",
+      "shortDescription": "Delta is an multi-emulator for playing GBA/GBC/NDS/N64/SNES games. Supports iOS 10-13",
+      "category": "dta-apps",
+      "author": "Riley Testut",
       "commercial": false,
-      "date": "2019-12-05T21:01:01Z",
+      "date": "2019-11-10T23:12:16Z",
       "versions": [
         {
-          "tweakVersion": "1.1.1",
+          "tweakVersion": "1.1",
           "iOSVersion": "13.3",
-          "repository": "Delta Repo",
-          "date": "2020-01-18T12:21:25Z",
+          "repository": "Dylan's Repository",
+          "date": "2020-01-27T12:50:12Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -47222,40 +47242,6 @@
       ]
     },
     {
-      "id": "me.jjolano.shadow",
-      "name": "Shadow",
-      "latest": "2.0.20",
-      "repository": "jjolano's iOS Tweaks",
-      "url": "http://cydia.saurik.com/package/me.jjolano.shadow/",
-      "shortDescription": "A lightweight general jailbreak detection bypass.",
-      "category": "Tweaks",
-      "author": "jjolano",
-      "commercial": false,
-      "date": "2019-06-13T18:40:51Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0.20",
-          "iOSVersion": "13.3",
-          "repository": "jjolano's iOS Tweaks",
-          "date": "2019-11-12T21:00:48Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 80,
-            "good": 4,
-            "bad": 0,
-            "total": 5,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.cydia.kiimo.shadow",
       "name": "Shadow",
       "latest": "2.0.20",
@@ -47278,6 +47264,40 @@
             "good": 1,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "me.jjolano.shadow",
+      "name": "Shadow",
+      "latest": "2.0.20",
+      "repository": "jjolano's iOS Tweaks",
+      "url": "http://cydia.saurik.com/package/me.jjolano.shadow/",
+      "shortDescription": "A lightweight general jailbreak detection bypass.",
+      "category": "Tweaks",
+      "author": "jjolano",
+      "commercial": false,
+      "date": "2019-06-13T18:40:51Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0.20",
+          "iOSVersion": "13.3",
+          "repository": "jjolano's iOS Tweaks",
+          "date": "2019-11-12T21:00:48Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 80,
+            "good": 4,
+            "bad": 0,
+            "total": 5,
             "arch32": {
               "total": 0,
               "good": 0,
