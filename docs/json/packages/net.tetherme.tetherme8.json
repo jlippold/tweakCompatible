@@ -1,10 +1,10 @@
 {
   "id": "net.tetherme.tetherme8",
   "name": "TetherMe for iOS 10/9/8",
-  "latest": "2.0",
+  "latest": "1.2.3~rc4",
   "repository": "BigBoss",
   "url": "http://cydia.saurik.com/package/net.tetherme.tetherme8/",
-  "shortDescription": "Dynamically enables native tethering iOS8+",
+  "shortDescription": "Dynamically enables native tethering for iOS8+ devices.  This should work on any carrier without the need for customized bundles or preferences.",
   "category": "Tweaks",
   "author": "Sam Bingner",
   "commercial": true,
@@ -1807,11 +1807,11 @@
       "repository": "TetherMe",
       "date": "2019-12-26T03:09:22Z",
       "outcome": {
-        "calculatedStatus": "Working",
-        "percentage": 100,
+        "calculatedStatus": "Likely working",
+        "percentage": 50,
         "good": 1,
         "bad": 0,
-        "total": 1,
+        "total": 2,
         "arch32": {
           "total": 0,
           "good": 0,
@@ -1828,6 +1828,15 @@
           "date": "2019-12-26T03:09:22Z",
           "userName": "seankowski",
           "issueNumber": 111812,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPhone11,8",
+          "issues": "The ability to enable sharing is greyed out. It also doesn’t show the native hotspot toggle.",
+          "date": "2020-02-16T05:34:32Z",
+          "userName": "jackharvest",
+          "issueNumber": 115674,
           "arch32": false
         }
       ]
