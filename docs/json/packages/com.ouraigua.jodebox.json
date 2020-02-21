@@ -1,10 +1,10 @@
 {
   "id": "com.ouraigua.jodebox",
   "name": "JODebox",
-  "latest": "3.0.7",
+  "latest": "4.0.0",
   "repository": "BigBoss",
   "url": "http://cydia.saurik.com/package/com.ouraigua.jodebox/",
-  "shortDescription": "iOS7 filesystem access from sandboxed applications.",
+  "shortDescription": "iOS file system access from sandboxed applications.",
   "category": "Development",
   "author": "Jalal Ouraigua",
   "commercial": false,
@@ -454,6 +454,37 @@
           "date": "2019-08-20T14:30:39Z",
           "userName": "tuannguyen2689",
           "issueNumber": 95865,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "4.0.0",
+      "iOSVersion": "13.3",
+      "repository": "Packix",
+      "date": "2020-02-21T18:10:12Z",
+      "outcome": {
+        "calculatedStatus": "Not working",
+        "percentage": 0,
+        "good": 0,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "not working",
+          "device": "iPhone10,6",
+          "issues": "Version 4.0.0 broke iPhone X on 13.3 with checkra1n.  Downgraded to 3.7.0",
+          "date": "2020-02-21T18:10:12Z",
+          "userName": "ss1777",
+          "issueNumber": 117042,
           "arch32": false
         }
       ]
