@@ -2533,7 +2533,7 @@
     {
       "id": "applist",
       "name": "AppList",
-      "latest": "1.5.15~beta1",
+      "latest": "1.5.14",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/applist/",
       "shortDescription": "Allow extensions to read the list of installed apps",
@@ -6255,7 +6255,7 @@
     {
       "id": "net.limneos.bioprotectxs",
       "name": "BioProtect XS (iOS 12)",
-      "latest": "4.4-3+debug",
+      "latest": "4.4-2",
       "repository": "limneos.net",
       "url": "http://cydia.saurik.com/package/net.limneos.bioprotectxs/",
       "shortDescription": "Protect your apps with Touch/Face ID!",
@@ -10617,39 +10617,6 @@
       ]
     },
     {
-      "id": "org.thebigboss.colorbadges",
-      "name": "ColorBadges",
-      "latest": "1.3.2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.colorbadges/",
-      "shortDescription": "Colorize your badges",
-      "category": "Tweaks",
-      "author": "David Goldman",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "1.3.2",
-          "iOSVersion": "12.2",
-          "repository": "BigBoss",
-          "date": "2019-07-23T20:13:48Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "cydia.kiiimo.org.colorbadges",
       "name": "ColorBadges",
       "latest": "1.2.0",
@@ -10672,6 +10639,39 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.thebigboss.colorbadges",
+      "name": "ColorBadges",
+      "latest": "1.3.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.colorbadges/",
+      "shortDescription": "Colorize your badges",
+      "category": "Tweaks",
+      "author": "David Goldman",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "1.3.2",
+          "iOSVersion": "12.2",
+          "repository": "BigBoss",
+          "date": "2019-07-23T20:13:48Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -11698,11 +11698,11 @@
           "repository": "Packix",
           "date": "2020-01-07T00:43:01Z",
           "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
+            "calculatedStatus": "Likely working",
+            "percentage": 50,
             "good": 1,
             "bad": 0,
-            "total": 1,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -12305,7 +12305,7 @@
       "latest": "1.17.2",
       "repository": "Revulate's Repo",
       "url": "http://cydia.saurik.com/package/com.spark.crash-reporter/",
-      "shortDescription": "Send useful crash info to developers.",
+      "shortDescription": "CrashReporter is an iOS app for viewing the details of a crash, determining the possible cause of said crash, and reporting this information to the developer(s) responsible.",
       "category": "System",
       "author": "Lance Fetters (ashikase)",
       "commercial": false,
@@ -13851,7 +13851,7 @@
     {
       "id": "com.patrick.darkkeysxii",
       "name": "DarkKeysXII",
-      "latest": "1.1.5",
+      "latest": "1.1.6",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.patrick.darkkeysxii/",
       "shortDescription": "The keyboard you know. Colors you prefer. — A tweak for the stock iOS keyboard, giving a stealthy, true black look across the operating system.",
@@ -20058,22 +20058,22 @@
       ]
     },
     {
-      "id": "com.spicat.forceinpicture",
+      "id": "com.cabralcole.forceinpicture",
       "name": "ForceInPicture",
-      "latest": "1.1",
-      "repository": "Spica T Repo",
-      "url": "http://cydia.saurik.com/package/com.spicat.forceinpicture/",
-      "shortDescription": "Enable picture in picture feature with no crashes.",
+      "latest": "0.0.1-2",
+      "repository": "apt.thebigboss.org",
+      "url": "http://cydia.saurik.com/package/com.cabralcole.forceinpicture/",
+      "shortDescription": "\"Programmatically\" enable picture in picture feature.",
       "category": "Tweaks",
-      "author": "SpicaT",
+      "author": "cole cabral @ca13ra1",
       "commercial": false,
-      "date": "2018-07-18T14:45:11Z",
+      "date": "2018-03-01T20:00:33Z",
       "versions": [
         {
-          "tweakVersion": "1.1",
+          "tweakVersion": "0.0.1-2",
           "iOSVersion": "12.2",
-          "repository": "Spica T Repo",
-          "date": "2019-07-19T06:54:11Z",
+          "repository": "BigBoss",
+          "date": "2019-08-05T05:22:04Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -20092,22 +20092,22 @@
       ]
     },
     {
-      "id": "com.cabralcole.forceinpicture",
+      "id": "com.spicat.forceinpicture",
       "name": "ForceInPicture",
-      "latest": "0.0.1-2",
-      "repository": "apt.thebigboss.org",
-      "url": "http://cydia.saurik.com/package/com.cabralcole.forceinpicture/",
-      "shortDescription": "\"Programmatically\" enable picture in picture feature.",
+      "latest": "1.1",
+      "repository": "Spica T Repo",
+      "url": "http://cydia.saurik.com/package/com.spicat.forceinpicture/",
+      "shortDescription": "Enable picture in picture feature with no crashes.",
       "category": "Tweaks",
-      "author": "cole cabral @ca13ra1",
+      "author": "SpicaT",
       "commercial": false,
-      "date": "2018-03-01T20:00:33Z",
+      "date": "2018-07-18T14:45:11Z",
       "versions": [
         {
-          "tweakVersion": "0.0.1-2",
+          "tweakVersion": "1.1",
           "iOSVersion": "12.2",
-          "repository": "BigBoss",
-          "date": "2019-08-05T05:22:04Z",
+          "repository": "Spica T Repo",
+          "date": "2019-07-19T06:54:11Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -22601,7 +22601,7 @@
     {
       "id": "com.itaysoft.icaughtuxii",
       "name": "iCaughtU 12",
-      "latest": "1.2.0",
+      "latest": "2.0.0-179+debug",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.itaysoft.icaughtuxii/",
       "shortDescription": "The most complete tweak to enhance the security of your Device",
@@ -25229,22 +25229,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.konban",
+      "id": "me.nepeta.konban",
       "name": "Konban",
-      "latest": "0.1.1k1",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.konban/",
-      "shortDescription": "Replaces the \"Today\" view with an app of your choice.",
-      "category": "iOS 12",
+      "latest": "0.2.1",
+      "repository": "Nepeta",
+      "url": "http://cydia.saurik.com/package/me.nepeta.konban/",
+      "shortDescription": "Replaces the \"Today\" view with an app of your choice. (If you can't see the depiction, please use Cydia or Zebra).",
+      "category": "Tweaks",
       "author": "Nepeta",
       "commercial": false,
-      "date": "2019-07-16T22:39:41Z",
+      "date": "2019-04-20T17:58:36Z",
       "versions": [
         {
-          "tweakVersion": "0.1.1k1",
+          "tweakVersion": "0.2.1",
           "iOSVersion": "12.2",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-07-16T22:39:41Z",
+          "repository": "Nepeta",
+          "date": "2019-07-31T22:34:34Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -25263,22 +25263,22 @@
       ]
     },
     {
-      "id": "me.nepeta.konban",
+      "id": "org.cydia.kiimo.konban",
       "name": "Konban",
-      "latest": "0.2.1",
-      "repository": "Nepeta",
-      "url": "http://cydia.saurik.com/package/me.nepeta.konban/",
-      "shortDescription": "Replaces the \"Today\" view with an app of your choice. (If you can't see the depiction, please use Cydia or Zebra).",
-      "category": "Tweaks",
+      "latest": "0.1.1k1",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.konban/",
+      "shortDescription": "Replaces the \"Today\" view with an app of your choice.",
+      "category": "iOS 12",
       "author": "Nepeta",
       "commercial": false,
-      "date": "2019-04-20T17:58:36Z",
+      "date": "2019-07-16T22:39:41Z",
       "versions": [
         {
-          "tweakVersion": "0.2.1",
+          "tweakVersion": "0.1.1k1",
           "iOSVersion": "12.2",
-          "repository": "Nepeta",
-          "date": "2019-07-31T22:34:34Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-07-16T22:39:41Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -25798,22 +25798,22 @@
       ]
     },
     {
-      "id": "org.coolstar.ld64",
-      "name": "LD64",
-      "latest": "274.2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.coolstar.ld64/",
-      "shortDescription": "linker for building on iOS",
+      "id": "ld64",
+      "name": "ld64",
+      "latest": "450.3-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ld64/",
+      "shortDescription": "64bit iOS linker",
       "category": "Development",
-      "author": "CoolStar",
+      "author": "(null)",
       "commercial": false,
-      "date": "2018-07-12T20:22:30Z",
+      "date": "2018-10-16T11:24:56Z",
       "versions": [
         {
-          "tweakVersion": "274.2",
+          "tweakVersion": "274.2-3",
           "iOSVersion": "12.2",
-          "repository": "BigBoss",
-          "date": "2019-08-21T16:39:48Z",
+          "repository": "apt.bingner.com",
+          "date": "2019-10-23T16:54:40Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -25832,22 +25832,22 @@
       ]
     },
     {
-      "id": "ld64",
-      "name": "ld64",
-      "latest": "450.3-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ld64/",
-      "shortDescription": "64bit iOS linker",
+      "id": "org.coolstar.ld64",
+      "name": "LD64",
+      "latest": "274.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.coolstar.ld64/",
+      "shortDescription": "linker for building on iOS",
       "category": "Development",
-      "author": "(null)",
+      "author": "CoolStar",
       "commercial": false,
-      "date": "2018-10-16T11:24:56Z",
+      "date": "2018-07-12T20:22:30Z",
       "versions": [
         {
-          "tweakVersion": "274.2-3",
+          "tweakVersion": "274.2",
           "iOSVersion": "12.2",
-          "repository": "apt.bingner.com",
-          "date": "2019-10-23T16:54:40Z",
+          "repository": "BigBoss",
+          "date": "2019-08-21T16:39:48Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -26848,40 +26848,6 @@
       ]
     },
     {
-      "id": "com.s3ud.alshaman.libertylite",
-      "name": "Liberty Lite",
-      "latest": "0.2.10",
-      "repository": "Saud Al.Shaman ♕",
-      "url": "http://cydia.saurik.com/package/com.s3ud.alshaman.libertylite/",
-      "shortDescription": "A (lite) general purpose jailbreak detection bypass patch. Use the Liberty entry in the Settings app to block (most) apps from detecting your jailbreak. Disabling Substrate/Substitute is not supported, so certain apps (PayPal, HSBC HK) will still be problematic.",
-      "category": "Tweaks",
-      "author": "Ryley Angus",
-      "commercial": false,
-      "date": "2019-07-17T07:03:44Z",
-      "versions": [
-        {
-          "tweakVersion": "0.2.10",
-          "iOSVersion": "12.2",
-          "repository": "Saud Al.Shaman ♕",
-          "date": "2019-07-17T07:03:44Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.ryleyangus.libertylite",
       "name": "Liberty Lite",
       "latest": "0.2.10",
@@ -26904,6 +26870,40 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.s3ud.alshaman.libertylite",
+      "name": "Liberty Lite",
+      "latest": "0.2.10",
+      "repository": "Saud Al.Shaman ♕",
+      "url": "http://cydia.saurik.com/package/com.s3ud.alshaman.libertylite/",
+      "shortDescription": "A (lite) general purpose jailbreak detection bypass patch. Use the Liberty entry in the Settings app to block (most) apps from detecting your jailbreak. Disabling Substrate/Substitute is not supported, so certain apps (PayPal, HSBC HK) will still be problematic.",
+      "category": "Tweaks",
+      "author": "Ryley Angus",
+      "commercial": false,
+      "date": "2019-07-17T07:03:44Z",
+      "versions": [
+        {
+          "tweakVersion": "0.2.10",
+          "iOSVersion": "12.2",
+          "repository": "Saud Al.Shaman ♕",
+          "date": "2019-07-17T07:03:44Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -31629,40 +31629,6 @@
       ]
     },
     {
-      "id": "ncurses5-libs",
-      "name": "New Curses",
-      "latest": "5.9-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
-      "shortDescription": "feature-complete terminal library",
-      "category": "System",
-      "author": "(null)",
-      "commercial": false,
-      "date": "2018-10-14T00:25:17Z",
-      "versions": [
-        {
-          "tweakVersion": "5.9-1",
-          "iOSVersion": "12.2",
-          "repository": "Bingner/Elucubratus",
-          "date": "2019-07-23T22:37:30Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "ncurses",
       "name": "New Curses",
       "latest": "6.1+20181013-1",
@@ -31699,6 +31665,40 @@
           "iOSVersion": "12.2",
           "repository": "test.apt.bingner.com",
           "date": "2019-12-05T05:31:52Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ncurses5-libs",
+      "name": "New Curses",
+      "latest": "5.9-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
+      "shortDescription": "feature-complete terminal library",
+      "category": "System",
+      "author": "(null)",
+      "commercial": false,
+      "date": "2018-10-14T00:25:17Z",
+      "versions": [
+        {
+          "tweakVersion": "5.9-1",
+          "iOSVersion": "12.2",
+          "repository": "Bingner/Elucubratus",
+          "date": "2019-07-23T22:37:30Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -32062,7 +32062,7 @@
     {
       "id": "com.eason.carplay.ios11",
       "name": "NGXPlay11",
-      "latest": "2.1-10",
+      "latest": "2.1-3",
       "repository": "easonwu",
       "url": "http://cydia.saurik.com/package/com.eason.carplay.ios11/",
       "shortDescription": "Let your iPhone run any app in carplay.",
@@ -33954,7 +33954,7 @@
     {
       "id": "com.c1d3r.notchification",
       "name": "Notchification",
-      "latest": "2.0.2-3",
+      "latest": "2.1-1",
       "repository": "C1d3r Repo",
       "url": "http://cydia.saurik.com/package/com.c1d3r.notchification/",
       "shortDescription": "Beautiful animated notifications for all device",
@@ -34464,22 +34464,22 @@
       ]
     },
     {
-      "id": "com.yourepo.exfoliate.nudekeysios12",
+      "id": "com.orangebananaspy.nudekeysios12",
       "name": "NudeKeys (iOS 12)",
-      "latest": "eta1.0",
-      "repository": "Exfoliate Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.exfoliate.nudekeysios12/",
-      "shortDescription": "Strip those sexy keys! But now supported for iOS 12! This is not a modified version of NudeKeys in anyway, it’s the direct DEB from OBS twitter. All credit goes to him",
+      "latest": "1.0.0~b8",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.orangebananaspy.nudekeysios12/",
+      "shortDescription": "Strip those sexy keys!",
       "category": "Tweaks",
       "author": "Orangebananaspy",
       "commercial": false,
-      "date": "2019-03-14T03:58:12Z",
+      "date": "2019-03-07T05:51:01Z",
       "versions": [
         {
-          "tweakVersion": "eta1.0",
+          "tweakVersion": "1.0.0~b8",
           "iOSVersion": "12.2",
-          "repository": "Exfoliate Source - YouRepo",
-          "date": "2019-08-01T06:24:44Z",
+          "repository": "Orangebananaspy",
+          "date": "2019-07-23T14:30:27Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -34498,22 +34498,22 @@
       ]
     },
     {
-      "id": "com.orangebananaspy.nudekeysios12",
+      "id": "com.yourepo.exfoliate.nudekeysios12",
       "name": "NudeKeys (iOS 12)",
-      "latest": "1.0.0~b8",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.orangebananaspy.nudekeysios12/",
-      "shortDescription": "Strip those sexy keys!",
+      "latest": "eta1.0",
+      "repository": "Exfoliate Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.exfoliate.nudekeysios12/",
+      "shortDescription": "Strip those sexy keys! But now supported for iOS 12! This is not a modified version of NudeKeys in anyway, it’s the direct DEB from OBS twitter. All credit goes to him",
       "category": "Tweaks",
       "author": "Orangebananaspy",
       "commercial": false,
-      "date": "2019-03-07T05:51:01Z",
+      "date": "2019-03-14T03:58:12Z",
       "versions": [
         {
-          "tweakVersion": "1.0.0~b8",
+          "tweakVersion": "eta1.0",
           "iOSVersion": "12.2",
-          "repository": "Orangebananaspy",
-          "date": "2019-07-23T14:30:27Z",
+          "repository": "Exfoliate Source - YouRepo",
+          "date": "2019-08-01T06:24:44Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -35966,7 +35966,7 @@
     {
       "id": "com.ichitaso.pokegols",
       "name": "PokeGo LS GIF",
-      "latest": "1.0-7",
+      "latest": "1.0-9",
       "repository": "apt.thebigboss.org",
       "url": "http://cydia.saurik.com/package/com.ichitaso.pokegols/",
       "shortDescription": "PokeGO Team gif Lock Screen animation!",
@@ -38889,40 +38889,6 @@
       ]
     },
     {
-      "id": "cydia.kiiimo.org.rocket",
-      "name": "Rocket for Instagram",
-      "latest": "3.3.5k",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/cydia.kiiimo.org.rocket/",
-      "shortDescription": "Save posts and view stories anonymously and do much more",
-      "category": "iOS 12",
-      "author": "Majd Alfhaily",
-      "commercial": false,
-      "date": "2019-07-26T14:51:33Z",
-      "versions": [
-        {
-          "tweakVersion": "3.3.5k",
-          "iOSVersion": "12.2",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-07-26T14:51:33Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "me.alfhaily.rocket",
       "name": "Rocket for Instagram",
       "latest": "3.6.11",
@@ -39099,6 +39065,40 @@
           "iOSVersion": "12.2",
           "repository": "Alfhaily APT",
           "date": "2020-01-27T04:29:21Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cydia.kiiimo.org.rocket",
+      "name": "Rocket for Instagram",
+      "latest": "3.3.5k",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/cydia.kiiimo.org.rocket/",
+      "shortDescription": "Save posts and view stories anonymously and do much more",
+      "category": "iOS 12",
+      "author": "Majd Alfhaily",
+      "commercial": false,
+      "date": "2019-07-26T14:51:33Z",
+      "versions": [
+        {
+          "tweakVersion": "3.3.5k",
+          "iOSVersion": "12.2",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-07-26T14:51:33Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -41017,7 +41017,7 @@
     {
       "id": "com.ichitaso.shuttersoundswitch",
       "name": "ShutterSoundSwitch",
-      "latest": "1.0.2",
+      "latest": "1.0.4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.ichitaso.shuttersoundswitch/",
       "shortDescription": "Extension of the Shutter Sound and ScreenShot, Photos app",
@@ -44014,10 +44014,10 @@
     {
       "id": "com.spos",
       "name": "Spos",
-      "latest": "3.1.4",
+      "latest": "8.5.49",
       "repository": "Dynastic Repo",
       "url": "http://cydia.saurik.com/package/com.spos/",
-      "shortDescription": "This tweak lets you Enhance & Expand Functionalities in the Spotify App. — #### Instructions",
+      "shortDescription": "Sposify is a tweak which adds various enhancements to the Spotify application on iOS.",
       "category": "Tweaks",
       "author": "aesthyrica",
       "commercial": false,
@@ -44982,40 +44982,6 @@
       ]
     },
     {
-      "id": "com.ex.libsubstitute",
-      "name": "Substitute",
-      "latest": "0.1.0-coolstar",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/com.ex.libsubstitute/",
-      "shortDescription": "Substrate substitute for code substitution (library only)",
-      "category": "System",
-      "author": "comex",
-      "commercial": false,
-      "date": "2018-03-01T01:00:32Z",
-      "versions": [
-        {
-          "tweakVersion": "0.1.0-coolstar",
-          "iOSVersion": "12.2",
-          "repository": "Electra's iOS Utilities",
-          "date": "2019-07-23T00:05:10Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.ex.substitute",
       "name": "Substitute",
       "latest": "0.1.5",
@@ -45112,6 +45078,40 @@
           "iOSVersion": "12.2",
           "repository": "apt.bingner.com",
           "date": "2020-01-04T22:47:53Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.ex.libsubstitute",
+      "name": "Substitute",
+      "latest": "0.1.0-coolstar",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/com.ex.libsubstitute/",
+      "shortDescription": "Substrate substitute for code substitution (library only)",
+      "category": "System",
+      "author": "comex",
+      "commercial": false,
+      "date": "2018-03-01T01:00:32Z",
+      "versions": [
+        {
+          "tweakVersion": "0.1.0-coolstar",
+          "iOSVersion": "12.2",
+          "repository": "Electra's iOS Utilities",
+          "date": "2019-07-23T00:05:10Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -47271,22 +47271,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.tinybanners",
+      "id": "com.donbytyqi.tinybanners",
       "name": "TinyBanners",
-      "latest": "0.3.1",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.tinybanners/",
-      "shortDescription": "TinyBanners\r",
-      "category": "iOS 12",
+      "latest": "0.5.3",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.donbytyqi.tinybanners/",
+      "shortDescription": "Unobtrusive yet useful notification banners!",
+      "category": "Tweaks",
       "author": "Don",
-      "commercial": false,
-      "date": "2019-07-30T05:45:36Z",
+      "commercial": true,
+      "date": "2019-03-21T07:14:10Z",
       "versions": [
         {
           "tweakVersion": "0.3.1",
           "iOSVersion": "12.2",
-          "repository": "A kiiimo Repository ",
-          "date": "2019-07-30T05:45:36Z",
+          "repository": "Packix",
+          "date": "2019-07-13T09:23:26Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -47305,22 +47305,22 @@
       ]
     },
     {
-      "id": "com.donbytyqi.tinybanners",
+      "id": "org.cydia.kiimo.tinybanners",
       "name": "TinyBanners",
-      "latest": "0.5.3",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.donbytyqi.tinybanners/",
-      "shortDescription": "Unobtrusive yet useful notification banners!",
-      "category": "Tweaks",
+      "latest": "0.3.1",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.tinybanners/",
+      "shortDescription": "TinyBanners\r",
+      "category": "iOS 12",
       "author": "Don",
-      "commercial": true,
-      "date": "2019-03-21T07:14:10Z",
+      "commercial": false,
+      "date": "2019-07-30T05:45:36Z",
       "versions": [
         {
           "tweakVersion": "0.3.1",
           "iOSVersion": "12.2",
-          "repository": "Packix",
-          "date": "2019-07-13T09:23:26Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2019-07-30T05:45:36Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -52358,6 +52358,40 @@
       ]
     },
     {
+      "id": "com.yourepo.jpet26.youtubetools",
+      "name": "YouTube Tools",
+      "latest": "2.0",
+      "repository": "jpet26 Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.jpet26.youtubetools/",
+      "shortDescription": "Essential toolbox for YouTube app.",
+      "category": "Tweaks",
+      "author": "Justin Petkovic",
+      "commercial": false,
+      "date": "2019-05-25T17:07:36Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0",
+          "iOSVersion": "12.2",
+          "repository": "jpet26 Source - YouRepo",
+          "date": "2019-07-19T16:30:21Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.justinpetkovic.youtubetools",
       "name": "YouTube Tools",
       "latest": "3.0-1",
@@ -52453,40 +52487,6 @@
             "good": 1,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.yourepo.jpet26.youtubetools",
-      "name": "YouTube Tools",
-      "latest": "2.0",
-      "repository": "jpet26 Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.jpet26.youtubetools/",
-      "shortDescription": "Essential toolbox for YouTube app.",
-      "category": "Tweaks",
-      "author": "Justin Petkovic",
-      "commercial": false,
-      "date": "2019-05-25T17:07:36Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0",
-          "iOSVersion": "12.2",
-          "repository": "jpet26 Source - YouRepo",
-          "date": "2019-07-19T16:30:21Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
