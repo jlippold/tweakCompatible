@@ -427,7 +427,7 @@
     {
       "id": "applist",
       "name": "AppList",
-      "latest": "1.5.15~beta1",
+      "latest": "1.5.14",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/applist/",
       "shortDescription": "Allow extensions to read the list of installed apps",
@@ -460,10 +460,10 @@
     {
       "id": "com.tigisoftware.appdatamanager",
       "name": "Apps Manager",
-      "latest": "1.5.1-10",
+      "latest": "1.4.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.appdatamanager/",
-      "shortDescription": "This tool provides the way to WIPE, BACKUP, RESTORE AppData for installed Apps",
+      "shortDescription": "tool to WIPE, BACKUP, RESTORE AppData for installed Apps",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -1093,7 +1093,7 @@
     {
       "id": "net.limneos.bioprotectxs",
       "name": "BioProtect XS (iOS 12)",
-      "latest": "4.4-3+debug",
+      "latest": "4.4-2",
       "repository": "limneos.net",
       "url": "http://cydia.saurik.com/package/net.limneos.bioprotectxs/",
       "shortDescription": "Protect your apps with Touch/Face ID!",
@@ -3123,6 +3123,40 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.gh.fastx",
+      "name": "FastX",
+      "latest": "1.5.2",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.gh.fastx/",
+      "shortDescription": "iphone will be so fast",
+      "category": "Tweaks",
+      "author": "u1",
+      "commercial": true,
+      "date": "2020-02-19T19:58:58Z",
+      "versions": [
+        {
+          "tweakVersion": "1.5.2",
+          "iOSVersion": "13.2",
+          "repository": "Packix",
+          "date": "2020-03-14T21:52:52Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -7077,7 +7111,7 @@
     {
       "id": "com.ichitaso.shuttersoundswitch",
       "name": "ShutterSoundSwitch",
-      "latest": "1.0.2",
+      "latest": "1.0.4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.ichitaso.shuttersoundswitch/",
       "shortDescription": "Extension of the Shutter Sound and ScreenShot, Photos app",
