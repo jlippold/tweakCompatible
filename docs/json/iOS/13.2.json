@@ -460,10 +460,10 @@
     {
       "id": "com.tigisoftware.appdatamanager",
       "name": "Apps Manager",
-      "latest": "1.4.2",
+      "latest": "1.5.1-10",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.appdatamanager/",
-      "shortDescription": "tool to WIPE, BACKUP, RESTORE AppData for installed Apps",
+      "shortDescription": "This tool provides the way to WIPE, BACKUP, RESTORE AppData for installed Apps",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -2270,6 +2270,40 @@
           "iOSVersion": "13.2",
           "repository": "Packix",
           "date": "2020-03-10T13:36:19Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.megadev.coronacounter",
+      "name": "CoronaCount",
+      "latest": "1",
+      "repository": "Megadev",
+      "url": "http://cydia.saurik.com/package/com.megadev.coronacounter/",
+      "shortDescription": "Shows Corona cases in statusbar",
+      "category": "Tweaks",
+      "author": "MegaDev",
+      "commercial": false,
+      "date": "2020-03-16T21:08:58Z",
+      "versions": [
+        {
+          "tweakVersion": "1",
+          "iOSVersion": "13.2",
+          "repository": "Megadev",
+          "date": "2020-03-21T02:51:46Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9567,7 +9601,7 @@
     {
       "id": "xyz.willy.zebra",
       "name": "Zebra (BETA)",
-      "latest": "1.0.7",
+      "latest": "1.1~beta2-1",
       "repository": "xTM3x Repo",
       "url": "http://cydia.saurik.com/package/xyz.willy.zebra/",
       "shortDescription": "A Useful Package Manager",
