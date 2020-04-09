@@ -1627,7 +1627,7 @@
     {
       "id": "jp.soh.aod",
       "name": "AOD",
-      "latest": "6.0",
+      "latest": "6.2",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/jp.soh.aod/",
       "shortDescription": "Cool Always-On Display Tweak",
@@ -2212,7 +2212,7 @@
     {
       "id": "com.cokepokes.appstoreplusplus",
       "name": "AppStore++",
-      "latest": "0.9.9-3",
+      "latest": "0.9.9-4",
       "repository": "cokepokes.github.io",
       "url": "http://cydia.saurik.com/package/com.cokepokes.appstoreplusplus/",
       "shortDescription": "Allows you to downgrade/upgrade apps in the AppStore on iOS 11-13.3.1",
@@ -6214,40 +6214,6 @@
       ]
     },
     {
-      "id": "com.falcon.central",
-      "name": "Central",
-      "latest": "1.0.3",
-      "repository": "OpenPack Repository",
-      "url": "http://cydia.saurik.com/package/com.falcon.central/",
-      "shortDescription": "Center the last row of icons on your home screen",
-      "category": "Tweaks",
-      "author": "Falcon & Kritanta",
-      "commercial": false,
-      "date": "2020-02-19T16:44:52Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.1",
-          "iOSVersion": "13.3.1",
-          "repository": "OpenPack Repository",
-          "date": "2020-02-20T21:43:17Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.twickd.jake.central",
       "name": "Central",
       "latest": "1.0.6",
@@ -6284,6 +6250,40 @@
           "iOSVersion": "13.3.1",
           "repository": "Twickd",
           "date": "2020-04-01T23:16:13Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.falcon.central",
+      "name": "Central",
+      "latest": "1.0.3",
+      "repository": "OpenPack Repository",
+      "url": "http://cydia.saurik.com/package/com.falcon.central/",
+      "shortDescription": "Center the last row of icons on your home screen",
+      "category": "Tweaks",
+      "author": "Falcon & Kritanta",
+      "commercial": false,
+      "date": "2020-02-19T16:44:52Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.1",
+          "iOSVersion": "13.3.1",
+          "repository": "OpenPack Repository",
+          "date": "2020-02-20T21:43:17Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7201,39 +7201,6 @@
       ]
     },
     {
-      "id": "ru.domo.cocoatop",
-      "name": "CocoaTop",
-      "latest": "2.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
-      "shortDescription": "Process Viewer for iOS GUI",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0.1",
-          "iOSVersion": "13.3.1",
-          "repository": "BigBoss",
-          "date": "2020-03-20T23:42:46Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2-1+debug",
@@ -7274,6 +7241,39 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.domo.cocoatop",
+      "name": "CocoaTop",
+      "latest": "2.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
+      "shortDescription": "Process Viewer for iOS GUI",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0.1",
+          "iOSVersion": "13.3.1",
+          "repository": "BigBoss",
+          "date": "2020-03-20T23:42:46Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -11712,22 +11712,22 @@
       ]
     },
     {
-      "id": "ru.rejail.filza",
+      "id": "com.trappledestek.filza",
       "name": "Filza File Manager",
-      "latest": "3.7.3-16k",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.filza/",
-      "shortDescription": "Файловый менеджер для iOS",
-      "category": "Utilities",
+      "latest": "3.7.4-12k",
+      "repository": "TRappleDestek Türkiye",
+      "url": "http://cydia.saurik.com/package/com.trappledestek.filza/",
+      "shortDescription": "iOS için en iyi dosya yöneticisi.",
+      "category": "AD - TR Tweak",
       "author": "TIGI Software",
       "commercial": false,
-      "date": "2019-08-20T10:06:45Z",
+      "date": "2020-03-19T17:41:57Z",
       "versions": [
         {
-          "tweakVersion": "3.7.3-16k",
+          "tweakVersion": "3.7.4-12k",
           "iOSVersion": "13.3.1",
-          "repository": "ReJail Repo",
-          "date": "2020-02-19T15:10:27Z",
+          "repository": "TRappleDestek Türkiye",
+          "date": "2020-03-19T17:41:57Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -11819,22 +11819,22 @@
       ]
     },
     {
-      "id": "com.trappledestek.filza",
+      "id": "ru.rejail.filza",
       "name": "Filza File Manager",
-      "latest": "3.7.4-12k",
-      "repository": "TRappleDestek Türkiye",
-      "url": "http://cydia.saurik.com/package/com.trappledestek.filza/",
-      "shortDescription": "iOS için en iyi dosya yöneticisi.",
-      "category": "AD - TR Tweak",
+      "latest": "3.7.3-16k",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.filza/",
+      "shortDescription": "Файловый менеджер для iOS",
+      "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
-      "date": "2020-03-19T17:41:57Z",
+      "date": "2019-08-20T10:06:45Z",
       "versions": [
         {
-          "tweakVersion": "3.7.4-12k",
+          "tweakVersion": "3.7.3-16k",
           "iOSVersion": "13.3.1",
-          "repository": "TRappleDestek Türkiye",
-          "date": "2020-03-19T17:41:57Z",
+          "repository": "ReJail Repo",
+          "date": "2020-02-19T15:10:27Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -12576,7 +12576,7 @@
     {
       "id": "kr.xsf1re.flyjb",
       "name": "FlyJB",
-      "latest": "0.2.4~beta7",
+      "latest": "0.2.4~beta8",
       "repository": "XsF1re's Repo",
       "url": "http://cydia.saurik.com/package/kr.xsf1re.flyjb/",
       "shortDescription": "You can HIDE Doing jailbreak your iDevice.",
@@ -12830,6 +12830,26 @@
           "iOSVersion": "13.3.1",
           "repository": "(null)",
           "date": "2020-04-04T17:09:55Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "0.2.4~beta8",
+          "iOSVersion": "13.3.1",
+          "repository": "(null)",
+          "date": "2020-04-09T17:03:16Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -15316,7 +15336,7 @@
     {
       "id": "com.unlimapps.gramplus",
       "name": "Instagram ++",
-      "latest": "1.8r-301",
+      "latest": "1.8r-305",
       "repository": "beta.unlimapps.com",
       "url": "http://beta.unlimapps.com/",
       "shortDescription": "Download & Copy Instagram media",
@@ -17568,6 +17588,40 @@
       ]
     },
     {
+      "id": "com.pxcex.localiapstore13",
+      "name": "LocalIAPStore13",
+      "latest": "0.0.2",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.pxcex.localiapstore13/",
+      "shortDescription": "Free In-App Purchases include app IOS 13 bypass Lock iCloud (bypass verify Passcode, Touch ID or Face ID).  No options to configure!",
+      "category": "Tweaks",
+      "author": "pxcex",
+      "commercial": false,
+      "date": "2019-11-20T23:25:08Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0.2",
+          "iOSVersion": "13.3.1",
+          "repository": "(null)",
+          "date": "2020-02-13T10:55:40Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.yourepo.tuemptyios-smurf.localiapstore13",
       "name": "LocalIAPStore13",
       "latest": "0.0.2",
@@ -17604,40 +17658,6 @@
           "iOSVersion": "13.3.1",
           "repository": "Smurf 's Tweaks - YouRepo",
           "date": "2020-03-01T04:52:30Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.pxcex.localiapstore13",
-      "name": "LocalIAPStore13",
-      "latest": "0.0.2",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.pxcex.localiapstore13/",
-      "shortDescription": "Free In-App Purchases include app IOS 13 bypass Lock iCloud (bypass verify Passcode, Touch ID or Face ID).  No options to configure!",
-      "category": "Tweaks",
-      "author": "pxcex",
-      "commercial": false,
-      "date": "2019-11-20T23:25:08Z",
-      "versions": [
-        {
-          "tweakVersion": "0.0.2",
-          "iOSVersion": "13.3.1",
-          "repository": "(null)",
-          "date": "2020-02-13T10:55:40Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -19710,40 +19730,6 @@
       ]
     },
     {
-      "id": "ncurses",
-      "name": "New Curses",
-      "latest": "6.1+20181013-1",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/ncurses/",
-      "shortDescription": "feature-complete terminal library",
-      "category": "System",
-      "author": "(null)",
-      "commercial": false,
-      "date": "2018-03-04T19:02:12Z",
-      "versions": [
-        {
-          "tweakVersion": "6.1+20181013-1",
-          "iOSVersion": "13.3.1",
-          "repository": "apt.bingner.com",
-          "date": "2020-01-28T00:01:38Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "ncurses5-libs",
       "name": "New Curses",
       "latest": "5.9-1",
@@ -19766,6 +19752,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ncurses",
+      "name": "New Curses",
+      "latest": "6.1+20181013-1",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/ncurses/",
+      "shortDescription": "feature-complete terminal library",
+      "category": "System",
+      "author": "(null)",
+      "commercial": false,
+      "date": "2018-03-04T19:02:12Z",
+      "versions": [
+        {
+          "tweakVersion": "6.1+20181013-1",
+          "iOSVersion": "13.3.1",
+          "repository": "apt.bingner.com",
+          "date": "2020-01-28T00:01:38Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -21033,7 +21053,7 @@
     {
       "id": "com.c1d3r.notchification",
       "name": "Notchification",
-      "latest": "2.0.2-3",
+      "latest": "2.1-1",
       "repository": "C1d3r Repo",
       "url": "http://cydia.saurik.com/package/com.c1d3r.notchification/",
       "shortDescription": "Beautiful animated notifications for all device",
@@ -22380,10 +22400,10 @@
     {
       "id": "com.dave1482.powerapp",
       "name": "PowerApp",
-      "latest": "5.0",
+      "latest": "4.1.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.dave1482.powerapp/",
-      "shortDescription": "Reboot, Shutdown, Respring, and more, easily! —  Supports iOS 3.0-iOS 13.3.1+",
+      "shortDescription": "Reboot, Shutdown, Respring, go into Safemode",
       "category": "Utilities",
       "author": "Dave1482",
       "commercial": false,
@@ -22859,7 +22879,7 @@
     {
       "id": "com.laughingquoll.prysm",
       "name": "Prysm Beta 9",
-      "latest": "1.5.2",
+      "latest": "1.6",
       "repository": "Local Repository",
       "url": "http://cydia.saurik.com/package/com.laughingquoll.prysm/",
       "shortDescription": "Your control center, reimagined.",
@@ -23832,7 +23852,7 @@
     {
       "id": "com.lema.michael.rhino",
       "name": "Rhino",
-      "latest": "2.0.2",
+      "latest": "2.1.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.lema.michael.rhino/",
       "shortDescription": "Download Instagram Live Videos and more",
@@ -27577,7 +27597,7 @@
     {
       "id": "com.samgisaninja.successionrestore",
       "name": "Succession [beta]",
-      "latest": "1.4.12-b5",
+      "latest": "1.4.12-1",
       "repository": "Samg_is_a_Ninja Repo",
       "url": "http://cydia.saurik.com/package/com.samgisaninja.successionrestore/",
       "shortDescription": "Restore without updating via rootfilesystem DMG",
