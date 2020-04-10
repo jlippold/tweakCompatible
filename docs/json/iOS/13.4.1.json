@@ -1086,7 +1086,7 @@
     {
       "id": "cydia",
       "name": "Cydia Installer",
-      "latest": "1.1.32~b25",
+      "latest": "1.1.32",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia/",
       "shortDescription": "graphical iPhone front-end for APT",
@@ -4046,7 +4046,7 @@
       "latest": "1.1.5~release",
       "repository": "xenpublic.incendo.ws",
       "url": "http://cydia.saurik.com/package/com.matchstic.xenhtml/",
-      "shortDescription": "Unified HTML widgets; lockscreen and homescreen",
+      "shortDescription": "Unified HTML rendering; lockscreen and homescreen",
       "category": "System",
       "author": "Matt Clarke",
       "commercial": false,
@@ -4091,6 +4091,40 @@
           "iOSVersion": "13.4.1",
           "repository": "JunesiPhone",
           "date": "2020-04-09T03:15:14Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.platykor.yobun",
+      "name": "Yobun",
+      "latest": "2.5.1",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.platykor.yobun/",
+      "shortDescription": "Fast Cache-Clean-Respring & more,in settings.",
+      "category": "Tweaks",
+      "author": "Plat-Ykor",
+      "commercial": false,
+      "date": "2019-12-05T23:25:32Z",
+      "versions": [
+        {
+          "tweakVersion": "2.5.1",
+          "iOSVersion": "13.4.1",
+          "repository": "BigBoss",
+          "date": "2020-04-10T04:17:32Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
