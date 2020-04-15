@@ -5592,7 +5592,7 @@
     {
       "id": "com.cokepokes.appstoreplusplus",
       "name": "AppStore++",
-      "latest": "0.9.9-8",
+      "latest": "0.9.9-5",
       "repository": "cokepokes.github.io",
       "url": "http://cydia.saurik.com/package/com.cokepokes.appstoreplusplus/",
       "shortDescription": "Allows you to downgrade/upgrade apps in the AppStore on iOS 11-13.3.1",
@@ -24799,6 +24799,39 @@
       ]
     },
     {
+      "id": "com.r333d.cylinder",
+      "name": "Cylinder",
+      "latest": "1.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.r333d.cylinder/",
+      "shortDescription": "Make your icons dance",
+      "category": "Tweaks",
+      "author": "Reed Weichler",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.1",
+          "iOSVersion": "13.3",
+          "repository": "BigBoss",
+          "date": "2019-11-22T20:33:23Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 5,
+            "bad": 0,
+            "total": 5,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.r333d.cylinder-ios13",
       "name": "Cylinder",
       "latest": "1.0.8-iOS13",
@@ -24821,39 +24854,6 @@
             "good": 0,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.r333d.cylinder",
-      "name": "Cylinder",
-      "latest": "1.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.r333d.cylinder/",
-      "shortDescription": "Make your icons dance",
-      "category": "Tweaks",
-      "author": "Reed Weichler",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.1",
-          "iOSVersion": "13.3",
-          "repository": "BigBoss",
-          "date": "2019-11-22T20:33:23Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 5,
-            "bad": 0,
-            "total": 5,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -26834,56 +26834,22 @@
       ]
     },
     {
-      "id": "com.dta.delta",
+      "id": "com.rileytestut.delta",
       "name": "Delta",
-      "latest": "1.1",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.dta.delta/",
-      "shortDescription": "Delta is an multi-emulator for playing GBA/GBC/NDS/N64/SNES games. Supports iOS 10-13",
-      "category": "dta-apps",
-      "author": "Riley Testut",
+      "latest": "1.1.1",
+      "repository": "Delta Repo",
+      "url": "http://cydia.saurik.com/package/com.rileytestut.delta/",
+      "shortDescription": "Delta Emulator by Rileytestut",
+      "category": "Emulators",
+      "author": "Rileytestut",
       "commercial": false,
-      "date": "2019-11-10T23:12:16Z",
+      "date": "2019-12-05T21:01:01Z",
       "versions": [
         {
-          "tweakVersion": "1.1",
+          "tweakVersion": "1.1.1",
           "iOSVersion": "13.3",
-          "repository": "Dylan's Repository",
-          "date": "2020-01-27T12:50:12Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.rileytestut.delta.beta",
-      "name": "Delta",
-      "latest": "1.2b",
-      "repository": "Dylan Elmbark's Repo",
-      "url": "http://cydia.saurik.com/package/com.rileytestut.delta.beta/",
-      "shortDescription": "Delta is an multi-emulator for playing GBA/GBC/NDS/N64/SNES/ games. Supports iOS 12-13",
-      "category": "Games",
-      "author": "Riley Testut",
-      "commercial": false,
-      "date": "2020-03-19T06:47:28Z",
-      "versions": [
-        {
-          "tweakVersion": "1.2b",
-          "iOSVersion": "13.3",
-          "repository": "Dylan Elmbark's Repo",
-          "date": "2020-03-19T06:47:28Z",
+          "repository": "Delta Repo",
+          "date": "2020-01-18T12:21:25Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -26936,22 +26902,56 @@
       ]
     },
     {
-      "id": "com.rileytestut.delta",
+      "id": "com.rileytestut.delta.beta",
       "name": "Delta",
-      "latest": "1.1.1",
-      "repository": "Delta Repo",
-      "url": "http://cydia.saurik.com/package/com.rileytestut.delta/",
-      "shortDescription": "Delta Emulator by Rileytestut",
-      "category": "Emulators",
-      "author": "Rileytestut",
+      "latest": "1.2b",
+      "repository": "Dylan Elmbark's Repo",
+      "url": "http://cydia.saurik.com/package/com.rileytestut.delta.beta/",
+      "shortDescription": "Delta is an multi-emulator for playing GBA/GBC/NDS/N64/SNES/ games. Supports iOS 12-13",
+      "category": "Games",
+      "author": "Riley Testut",
       "commercial": false,
-      "date": "2019-12-05T21:01:01Z",
+      "date": "2020-03-19T06:47:28Z",
       "versions": [
         {
-          "tweakVersion": "1.1.1",
+          "tweakVersion": "1.2b",
           "iOSVersion": "13.3",
-          "repository": "Delta Repo",
-          "date": "2020-01-18T12:21:25Z",
+          "repository": "Dylan Elmbark's Repo",
+          "date": "2020-03-19T06:47:28Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.dta.delta",
+      "name": "Delta",
+      "latest": "1.1",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.dta.delta/",
+      "shortDescription": "Delta is an multi-emulator for playing GBA/GBC/NDS/N64/SNES games. Supports iOS 10-13",
+      "category": "dta-apps",
+      "author": "Riley Testut",
+      "commercial": false,
+      "date": "2019-11-10T23:12:16Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1",
+          "iOSVersion": "13.3",
+          "repository": "Dylan's Repository",
+          "date": "2020-01-27T12:50:12Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -32693,40 +32693,6 @@
       ]
     },
     {
-      "id": "ru.rejail.filza",
-      "name": "Filza File Manager",
-      "latest": "3.7.3-16k",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.filza/",
-      "shortDescription": "Файловый менеджер для iOS",
-      "category": "Utilities",
-      "author": "TIGI Software",
-      "commercial": false,
-      "date": "2019-08-20T10:06:45Z",
-      "versions": [
-        {
-          "tweakVersion": "3.7.3-16k",
-          "iOSVersion": "13.3",
-          "repository": "ReJail Repo",
-          "date": "2020-02-20T11:51:26Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.yourepo.m29.filzafilemanager",
       "name": "Filza File Manager",
       "latest": "3.7.4-12",
@@ -32922,6 +32888,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.rejail.filza",
+      "name": "Filza File Manager",
+      "latest": "3.7.3-16k",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.filza/",
+      "shortDescription": "Файловый менеджер для iOS",
+      "category": "Utilities",
+      "author": "TIGI Software",
+      "commercial": false,
+      "date": "2019-08-20T10:06:45Z",
+      "versions": [
+        {
+          "tweakVersion": "3.7.3-16k",
+          "iOSVersion": "13.3",
+          "repository": "ReJail Repo",
+          "date": "2020-02-20T11:51:26Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -42963,6 +42963,40 @@
       ]
     },
     {
+      "id": "com.yourepo.m29.inds",
+      "name": "iNDS",
+      "latest": "1.5.3.2",
+      "repository": "M29 Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.m29.inds/",
+      "shortDescription": "Nintendo DS on your iDevice!",
+      "category": "Games",
+      "author": "Will Cobb (miniroo321)",
+      "commercial": false,
+      "date": "2019-02-24T05:58:20Z",
+      "versions": [
+        {
+          "tweakVersion": "1.5.3.2",
+          "iOSVersion": "13.3",
+          "repository": "M29 Source - YouRepo",
+          "date": "2020-03-23T19:43:57Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "net.nerd.inds",
       "name": "iNDS",
       "latest": "1.10.7",
@@ -42999,40 +43033,6 @@
           "iOSVersion": "13.3",
           "repository": "(null)",
           "date": "2020-03-11T23:34:47Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.yourepo.m29.inds",
-      "name": "iNDS",
-      "latest": "1.5.3.2",
-      "repository": "M29 Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.m29.inds/",
-      "shortDescription": "Nintendo DS on your iDevice!",
-      "category": "Games",
-      "author": "Will Cobb (miniroo321)",
-      "commercial": false,
-      "date": "2019-02-24T05:58:20Z",
-      "versions": [
-        {
-          "tweakVersion": "1.5.3.2",
-          "iOSVersion": "13.3",
-          "repository": "M29 Source - YouRepo",
-          "date": "2020-03-23T19:43:57Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -57528,40 +57528,6 @@
       ]
     },
     {
-      "id": "me.sethstephens.newgridswitcher",
-      "name": "NewGridSwitcher",
-      "latest": "1.1.0",
-      "repository": "Relative's Repo",
-      "url": "http://cydia.saurik.com/package/me.sethstephens.newgridswitcher/",
-      "shortDescription": "A grid switcher on iOS 11 and above",
-      "category": "Tweaks",
-      "author": "relative",
-      "commercial": false,
-      "date": "2019-03-09T05:27:34Z",
-      "versions": [
-        {
-          "tweakVersion": "1.1.0",
-          "iOSVersion": "13.3",
-          "repository": "BigBoss",
-          "date": "2019-12-14T04:00:54Z",
-          "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 50,
-            "good": 2,
-            "bad": 0,
-            "total": 4,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.cydia.kiimo.newgridswitcher",
       "name": "NewGridSwitcher",
       "latest": "1.0.1",
@@ -57584,6 +57550,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "me.sethstephens.newgridswitcher",
+      "name": "NewGridSwitcher",
+      "latest": "1.1.0",
+      "repository": "Relative's Repo",
+      "url": "http://cydia.saurik.com/package/me.sethstephens.newgridswitcher/",
+      "shortDescription": "A grid switcher on iOS 11 and above",
+      "category": "Tweaks",
+      "author": "relative",
+      "commercial": false,
+      "date": "2019-03-09T05:27:34Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1.0",
+          "iOSVersion": "13.3",
+          "repository": "BigBoss",
+          "date": "2019-12-14T04:00:54Z",
+          "outcome": {
+            "calculatedStatus": "Likely working",
+            "percentage": 50,
+            "good": 2,
+            "bad": 0,
+            "total": 4,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -68486,40 +68486,6 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.redditnoads",
-      "name": "Reddit No Ads",
-      "latest": "0.0.2",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.redditnoads/",
-      "shortDescription": "Removes \"PROMOTED\" posts from from the official Reddit app.",
-      "category": "HYI - Tweaks",
-      "author": "kemmis",
-      "commercial": false,
-      "date": "2020-03-05T19:07:05Z",
-      "versions": [
-        {
-          "tweakVersion": "0.0.2",
-          "iOSVersion": "13.3",
-          "repository": "(null)",
-          "date": "2020-03-05T19:07:05Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.yadkin.redditnoads",
       "name": "Reddit No Ads",
       "latest": "0.0.2",
@@ -68542,6 +68508,40 @@
             "good": 3,
             "bad": 0,
             "total": 3,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.hackyouriphone.redditnoads",
+      "name": "Reddit No Ads",
+      "latest": "0.0.2",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.redditnoads/",
+      "shortDescription": "Removes \"PROMOTED\" posts from from the official Reddit app.",
+      "category": "HYI - Tweaks",
+      "author": "kemmis",
+      "commercial": false,
+      "date": "2020-03-05T19:07:05Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0.2",
+          "iOSVersion": "13.3",
+          "repository": "(null)",
+          "date": "2020-03-05T19:07:05Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -73688,40 +73688,6 @@
       ]
     },
     {
-      "id": "me.jjolano.shadow",
-      "name": "Shadow",
-      "latest": "2.0.20",
-      "repository": "jjolano's iOS Tweaks",
-      "url": "http://cydia.saurik.com/package/me.jjolano.shadow/",
-      "shortDescription": "A lightweight general jailbreak detection bypass.",
-      "category": "Tweaks",
-      "author": "jjolano",
-      "commercial": false,
-      "date": "2019-06-13T18:40:51Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0.20",
-          "iOSVersion": "13.3",
-          "repository": "jjolano's iOS Tweaks",
-          "date": "2019-11-12T21:00:48Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 85,
-            "good": 6,
-            "bad": 0,
-            "total": 7,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.cydia.kiimo.shadow",
       "name": "Shadow",
       "latest": "2.0.20",
@@ -73744,6 +73710,40 @@
             "good": 2,
             "bad": 0,
             "total": 3,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "me.jjolano.shadow",
+      "name": "Shadow",
+      "latest": "2.0.20",
+      "repository": "jjolano's iOS Tweaks",
+      "url": "http://cydia.saurik.com/package/me.jjolano.shadow/",
+      "shortDescription": "A lightweight general jailbreak detection bypass.",
+      "category": "Tweaks",
+      "author": "jjolano",
+      "commercial": false,
+      "date": "2019-06-13T18:40:51Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0.20",
+          "iOSVersion": "13.3",
+          "repository": "jjolano's iOS Tweaks",
+          "date": "2019-11-12T21:00:48Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 85,
+            "good": 6,
+            "bad": 0,
+            "total": 7,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -77763,6 +77763,40 @@
       ]
     },
     {
+      "id": "com.modmyi.snowboard",
+      "name": "Snowboard",
+      "latest": "1.0",
+      "repository": "ModMyi (Archive)",
+      "url": "http://cydia.saurik.com/package/com.modmyi.snowboard/",
+      "shortDescription": "This is a snowboard theme. Includes lockscreen, background, sliders, and battery images. There is an icon pack to go with it called \"Snowboard Icon Pack\" but I put them separate so the theme could be used without the icons if you choose to do so. Screenshots are with the icon pack installed as well. Please send any icon requests to the name above and if you like what you see please donate through PayPal to bayer603bobby@bellsouth.net.",
+      "category": "Themes (SpringBoard)",
+      "author": "Bobby  Bayer",
+      "commercial": false,
+      "date": "2020-02-16T18:48:48Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0",
+          "iOSVersion": "13.3",
+          "repository": "ModMyi (Archive)",
+          "date": "2020-02-16T18:48:48Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.spark.snowboard",
       "name": "Snowboard",
       "latest": "1.2.87~Beta2",
@@ -78005,40 +78039,6 @@
             "good": 21,
             "bad": 0,
             "total": 21,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.modmyi.snowboard",
-      "name": "Snowboard",
-      "latest": "1.0",
-      "repository": "ModMyi (Archive)",
-      "url": "http://cydia.saurik.com/package/com.modmyi.snowboard/",
-      "shortDescription": "This is a snowboard theme. Includes lockscreen, background, sliders, and battery images. There is an icon pack to go with it called \"Snowboard Icon Pack\" but I put them separate so the theme could be used without the icons if you choose to do so. Screenshots are with the icon pack installed as well. Please send any icon requests to the name above and if you like what you see please donate through PayPal to bayer603bobby@bellsouth.net.",
-      "category": "Themes (SpringBoard)",
-      "author": "Bobby  Bayer",
-      "commercial": false,
-      "date": "2020-02-16T18:48:48Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0",
-          "iOSVersion": "13.3",
-          "repository": "ModMyi (Archive)",
-          "date": "2020-02-16T18:48:48Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -78767,39 +78767,6 @@
       ]
     },
     {
-      "id": "com.idevicelover.socialdownloader",
-      "name": "Social Downloader",
-      "latest": "4.0",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.idevicelover.socialdownloader/",
-      "shortDescription": "downloads videos in social apps",
-      "category": "Tweaks",
-      "author": "elias",
-      "commercial": true,
-      "versions": [
-        {
-          "tweakVersion": "4.0",
-          "iOSVersion": "13.3",
-          "repository": "BigBoss",
-          "date": "2019-12-19T07:28:35Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.elias.socialdownloader",
       "name": "Social Downloader",
       "latest": "1.2-1",
@@ -78876,6 +78843,39 @@
           "iOSVersion": "13.3",
           "repository": "Packix",
           "date": "2020-04-08T23:55:36Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.idevicelover.socialdownloader",
+      "name": "Social Downloader",
+      "latest": "4.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.idevicelover.socialdownloader/",
+      "shortDescription": "downloads videos in social apps",
+      "category": "Tweaks",
+      "author": "elias",
+      "commercial": true,
+      "versions": [
+        {
+          "tweakVersion": "4.0",
+          "iOSVersion": "13.3",
+          "repository": "BigBoss",
+          "date": "2019-12-19T07:28:35Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -89531,40 +89531,6 @@
       ]
     },
     {
-      "id": "com.arab-crack.comahmedbafkirwadarkmode",
-      "name": "WADarkMode",
-      "latest": "3.1",
-      "repository": "Arab-Crack",
-      "url": "http://cydia.saurik.com/package/com.arab-crack.comahmedbafkirwadarkmode/",
-      "shortDescription": "Dark Mode For WhatsApp !!",
-      "category": "Tweaks",
-      "author": "AhmedBafkir",
-      "commercial": false,
-      "date": "2020-02-28T12:04:47Z",
-      "versions": [
-        {
-          "tweakVersion": "3.1",
-          "iOSVersion": "13.3",
-          "repository": "Arab-Crack",
-          "date": "2020-02-28T12:04:47Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.ahmedbafkir.wadarkmode",
       "name": "WADarkMode",
       "latest": "2.0",
@@ -89587,6 +89553,40 @@
             "good": 0,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.arab-crack.comahmedbafkirwadarkmode",
+      "name": "WADarkMode",
+      "latest": "3.1",
+      "repository": "Arab-Crack",
+      "url": "http://cydia.saurik.com/package/com.arab-crack.comahmedbafkirwadarkmode/",
+      "shortDescription": "Dark Mode For WhatsApp !!",
+      "category": "Tweaks",
+      "author": "AhmedBafkir",
+      "commercial": false,
+      "date": "2020-02-28T12:04:47Z",
+      "versions": [
+        {
+          "tweakVersion": "3.1",
+          "iOSVersion": "13.3",
+          "repository": "Arab-Crack",
+          "date": "2020-02-28T12:04:47Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
