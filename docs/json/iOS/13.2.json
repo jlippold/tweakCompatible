@@ -932,10 +932,10 @@
     {
       "id": "me.nepeta.axon",
       "name": "Axon",
-      "latest": "1.0",
+      "latest": "0.5.1",
       "repository": "Nepeta",
       "url": "http://cydia.saurik.com/package/me.nepeta.axon/",
-      "shortDescription": "Priority Hub for iOS 11 and 12",
+      "shortDescription": "Priority Hub for iOS 11+",
       "category": "Tweaks",
       "author": "Nepeta",
       "commercial": false,
@@ -3975,7 +3975,7 @@
     {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
-      "latest": "3.7.4-14",
+      "latest": "3.7.4-15",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza/",
       "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+",
@@ -4028,7 +4028,7 @@
     {
       "id": "com.tigisoftware.filza64bit",
       "name": "Filza File Manager (64-bit only)",
-      "latest": "3.7.4-14",
+      "latest": "3.7.4-15",
       "repository": "tigisoftware.com",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.filza64bit/",
       "shortDescription": "File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+. This special version only supports 64-bit devices",
@@ -7094,22 +7094,22 @@
       ]
     },
     {
-      "id": "ncurses5-libs",
+      "id": "ncurses",
       "name": "New Curses",
-      "latest": "5.9-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
+      "latest": "6.1+20181013-1",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/ncurses/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-14T00:25:17Z",
+      "date": "2018-03-04T19:02:12Z",
       "versions": [
         {
-          "tweakVersion": "5.9-1",
+          "tweakVersion": "6.1+20181013-1",
           "iOSVersion": "13.2",
           "repository": "apt.bingner.com",
-          "date": "2020-04-21T08:11:59Z",
+          "date": "2020-03-08T05:34:20Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7128,22 +7128,22 @@
       ]
     },
     {
-      "id": "ncurses",
+      "id": "ncurses5-libs",
       "name": "New Curses",
-      "latest": "6.1+20181013-1",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/ncurses/",
+      "latest": "5.9-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:02:12Z",
+      "date": "2018-10-14T00:25:17Z",
       "versions": [
         {
-          "tweakVersion": "6.1+20181013-1",
+          "tweakVersion": "5.9-1",
           "iOSVersion": "13.2",
           "repository": "apt.bingner.com",
-          "date": "2020-03-08T05:34:20Z",
+          "date": "2020-04-21T08:11:59Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7468,6 +7468,40 @@
           "iOSVersion": "13.2",
           "repository": "Baw Repo",
           "date": "2020-03-06T02:22:13Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.mrblackhat.noytno",
+      "name": "NoYTNo",
+      "latest": "0.7~beta",
+      "repository": "MrBlackHat's Repo",
+      "url": "http://cydia.saurik.com/package/com.mrblackhat.noytno/",
+      "shortDescription": "NoYTNo - Say No to try YTPremium, Install YTMusic and Try YTMusic.",
+      "category": "Tweaks",
+      "author": "MrBlackHat",
+      "commercial": false,
+      "date": "2020-03-06T18:31:21Z",
+      "versions": [
+        {
+          "tweakVersion": "0.7~beta",
+          "iOSVersion": "13.2",
+          "repository": "MrBlackHat's Repo",
+          "date": "2020-04-24T20:43:24Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
