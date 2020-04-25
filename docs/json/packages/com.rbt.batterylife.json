@@ -3405,9 +3405,9 @@
       "repository": "BigBoss",
       "date": "2020-04-20T10:45:43Z",
       "outcome": {
-        "calculatedStatus": "Not working",
-        "percentage": 33,
-        "good": 1,
+        "calculatedStatus": "Likely working",
+        "percentage": 66,
+        "good": 2,
         "bad": 0,
         "total": 3,
         "arch32": {
@@ -3438,12 +3438,12 @@
           "arch32": false
         },
         {
-          "status": "not working",
+          "status": "partial",
           "device": "iPhone8,4",
-          "issues": "respring loop. be sure you have ssh or else be prepared to restore rootfs",
-          "date": "2020-04-23T00:14:46Z",
+          "issues": "app works BUT first disable the dylib with iCleaner/ssh or else you get into respring loop",
+          "date": "2020-04-25T11:07:24Z",
           "userName": "mailinglists35",
-          "issueNumber": 122256,
+          "issueNumber": 122411,
           "arch32": false
         }
       ]
