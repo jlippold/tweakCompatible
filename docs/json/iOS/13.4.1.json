@@ -828,7 +828,7 @@
     {
       "id": "com.cokepokes.appstoreplusplus",
       "name": "AppStore++",
-      "latest": "0.9.9-9",
+      "latest": "0.9.9-10",
       "repository": "cokepokes.github.io",
       "url": "http://cydia.saurik.com/package/com.cokepokes.appstoreplusplus/",
       "shortDescription": "Allows you to downgrade/upgrade apps in the AppStore on iOS 11-13.3.1",
@@ -888,6 +888,26 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "0.9.9-10",
+          "iOSVersion": "13.4.1",
+          "repository": "cokepokes.github.io",
+          "date": "2020-04-29T13:55:02Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -2223,7 +2243,7 @@
     {
       "id": "net.limneos.callbarxs",
       "name": "CallBar XS (iOS 12)",
-      "latest": "3.0-28",
+      "latest": "3.1-163",
       "repository": "limneos.net",
       "url": "http://cydia.saurik.com/package/net.limneos.callbarxs/",
       "shortDescription": "Don't let incoming calls interrupt you!",
@@ -2412,10 +2432,10 @@
     {
       "id": "com.mtac.ctf",
       "name": "CaptureTheFlag",
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "repository": "MTAC's Repo",
       "url": "http://cydia.saurik.com/package/com.mtac.ctf/",
-      "shortDescription": "Stop the Sindhi string bug from freezing your device",
+      "shortDescription": "Stop text buffer bugs from crashing your device",
       "category": "Tweaks",
       "author": "MTAC",
       "commercial": false,
@@ -6252,22 +6272,22 @@
       ]
     },
     {
-      "id": "com.lpane.googlemapsdefault",
+      "id": "com.yourepo.keysrepo.googlemapsdefault",
       "name": "GoogleMapsDefault",
       "latest": "0.0.1",
-      "repository": "dankprius' Repo",
-      "url": "http://cydia.saurik.com/package/com.lpane.googlemapsdefault/",
-      "shortDescription": "An awesome MobileSubstrate tweak!",
+      "repository": "keysrepo Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.keysrepo.googlemapsdefault/",
+      "shortDescription": "Open addresses and links in Google Maps as the default",
       "category": "Tweaks",
       "author": "lpane",
       "commercial": false,
-      "date": "2020-04-19T18:05:05Z",
+      "date": "2020-04-02T18:50:39Z",
       "versions": [
         {
           "tweakVersion": "0.0.1",
           "iOSVersion": "13.4.1",
-          "repository": "dankprius' Repo",
-          "date": "2020-04-19T18:05:05Z",
+          "repository": "keysrepo Source - YouRepo",
+          "date": "2020-04-11T20:29:00Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6286,22 +6306,22 @@
       ]
     },
     {
-      "id": "com.yourepo.keysrepo.googlemapsdefault",
+      "id": "com.lpane.googlemapsdefault",
       "name": "GoogleMapsDefault",
       "latest": "0.0.1",
-      "repository": "keysrepo Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.keysrepo.googlemapsdefault/",
-      "shortDescription": "Open addresses and links in Google Maps as the default",
+      "repository": "dankprius' Repo",
+      "url": "http://cydia.saurik.com/package/com.lpane.googlemapsdefault/",
+      "shortDescription": "An awesome MobileSubstrate tweak!",
       "category": "Tweaks",
       "author": "lpane",
       "commercial": false,
-      "date": "2020-04-02T18:50:39Z",
+      "date": "2020-04-19T18:05:05Z",
       "versions": [
         {
           "tweakVersion": "0.0.1",
           "iOSVersion": "13.4.1",
-          "repository": "keysrepo Source - YouRepo",
-          "date": "2020-04-11T20:29:00Z",
+          "repository": "dankprius' Repo",
+          "date": "2020-04-19T18:05:05Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6965,7 +6985,7 @@
     {
       "id": "com.yourepo.iconomatic.iconomatic",
       "name": "IconOmatic",
-      "latest": "2.4.3-1",
+      "latest": "2.4.5-1",
       "repository": "iconomatic Source",
       "url": "http://cydia.saurik.com/package/com.yourepo.iconomatic.iconomatic/",
       "shortDescription": "iconomatic beta 0.3 now a APP. a App icon \"IconOmaticApp\" should be installed on your home screen which works hand and hand with the tweak. This is providing us with a better user interface for working with themes. lots to be done but enjoy the first release of iconomatic App",
@@ -8155,7 +8175,7 @@
     {
       "id": "ldid",
       "name": "Link Identity Editor",
-      "latest": "2.1.2+24497ae-1",
+      "latest": "2.1.2+g5420cb5-1",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/ldid/",
       "shortDescription": "pseudo-codesign Mach-O files",
@@ -8275,40 +8295,6 @@
       ]
     },
     {
-      "id": "com.pxcex.localiapstore13",
-      "name": "LocalIAPStore13",
-      "latest": "0.0.2",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.pxcex.localiapstore13/",
-      "shortDescription": "Free In-App Purchases include app IOS 13 bypass Lock iCloud (bypass verify Passcode, Touch ID or Face ID).  No options to configure!",
-      "category": "Tweaks",
-      "author": "pxcex",
-      "commercial": false,
-      "date": "2019-11-20T23:25:08Z",
-      "versions": [
-        {
-          "tweakVersion": "0.0.2",
-          "iOSVersion": "13.4.1",
-          "repository": "Sources Installées",
-          "date": "2020-04-17T10:15:41Z",
-          "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 50,
-            "good": 1,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.cydia.kiimo.localiapstore13",
       "name": "LocalIAPStore13",
       "latest": "0.0.2",
@@ -8331,6 +8317,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.pxcex.localiapstore13",
+      "name": "LocalIAPStore13",
+      "latest": "0.0.2",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.pxcex.localiapstore13/",
+      "shortDescription": "Free In-App Purchases include app IOS 13 bypass Lock iCloud (bypass verify Passcode, Touch ID or Face ID).  No options to configure!",
+      "category": "Tweaks",
+      "author": "pxcex",
+      "commercial": false,
+      "date": "2019-11-20T23:25:08Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0.2",
+          "iOSVersion": "13.4.1",
+          "repository": "Sources Installées",
+          "date": "2020-04-17T10:15:41Z",
+          "outcome": {
+            "calculatedStatus": "Likely working",
+            "percentage": 50,
+            "good": 1,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -11861,40 +11881,6 @@
       ]
     },
     {
-      "id": "com.yourepo.cydiageek.smootheaders11",
-      "name": "Smootheaders11",
-      "latest": "1.0.1",
-      "repository": "CydiaGeek Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.cydiageek.smootheaders11/",
-      "shortDescription": "Hide the Headers Content View from the Today View and the Notifications/Notification Center on iOS 11!",
-      "category": "Tweaks",
-      "author": "CydiaGeek",
-      "commercial": false,
-      "date": "2018-04-07T20:32:54Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.1",
-          "iOSVersion": "13.4.1",
-          "repository": "CydiaGeek Source",
-          "date": "2020-04-08T05:57:36Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.cydiageek.smootheaders11",
       "name": "Smootheaders11",
       "latest": "1.1.0",
@@ -11915,6 +11901,40 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.yourepo.cydiageek.smootheaders11",
+      "name": "Smootheaders11",
+      "latest": "1.0.1",
+      "repository": "CydiaGeek Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.cydiageek.smootheaders11/",
+      "shortDescription": "Hide the Headers Content View from the Today View and the Notifications/Notification Center on iOS 11!",
+      "category": "Tweaks",
+      "author": "CydiaGeek",
+      "commercial": false,
+      "date": "2018-04-07T20:32:54Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.1",
+          "iOSVersion": "13.4.1",
+          "repository": "CydiaGeek Source",
+          "date": "2020-04-08T05:57:36Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
