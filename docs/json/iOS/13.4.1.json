@@ -3337,6 +3337,39 @@
       ]
     },
     {
+      "id": "ru.domo.cocoatop",
+      "name": "CocoaTop",
+      "latest": "2.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
+      "shortDescription": "Process Viewer for iOS GUI",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0.1",
+          "iOSVersion": "13.4.1",
+          "repository": "BigBoss",
+          "date": "2020-04-17T00:25:19Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2-1+debug",
@@ -3359,39 +3392,6 @@
             "good": 2,
             "bad": 0,
             "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ru.domo.cocoatop",
-      "name": "CocoaTop",
-      "latest": "2.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
-      "shortDescription": "Process Viewer for iOS GUI",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0.1",
-          "iOSVersion": "13.4.1",
-          "repository": "BigBoss",
-          "date": "2020-04-17T00:25:19Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -4500,10 +4500,10 @@
     {
       "id": "org.thebigboss.dismissprogress",
       "name": "DismissProgress",
-      "latest": "1.0.3",
+      "latest": "1.1.1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/org.thebigboss.dismissprogress/",
-      "shortDescription": "Dismiss Cydia'a installation window without closing cydia.",
+      "shortDescription": "Dismiss installation window without closing cydia.",
       "category": "Tweaks",
       "author": "PoomSmart",
       "commercial": false,
@@ -4533,6 +4533,26 @@
           "iOSVersion": "13.4.1",
           "repository": "BigBoss",
           "date": "2020-04-27T11:13:18Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.1.1",
+          "iOSVersion": "13.4.1",
+          "repository": "PoomSmart's Repo",
+          "date": "2020-05-01T17:01:19Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -12764,7 +12784,7 @@
     {
       "id": "com.springtomize.st5",
       "name": "Springtomize 5",
-      "latest": "5.1.4",
+      "latest": "5.1.5",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.springtomize.st5/",
       "shortDescription": "Customize your device like never before.",
