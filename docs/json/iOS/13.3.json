@@ -4928,7 +4928,7 @@
     {
       "id": "me.liuming.apphider",
       "name": "App Hider(应用隐藏) - Make Apps disappeared from SpringBoard",
-      "latest": "1.9.5",
+      "latest": "1.9.8",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/me.liuming.apphider/",
       "shortDescription": "Hide your Apps from SpringBoard",
@@ -5968,6 +5968,40 @@
       ]
     },
     {
+      "id": "com.hackyouriphone.appstoreplusplus",
+      "name": "AppStore++",
+      "latest": "0.9.6",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.appstoreplusplus/",
+      "shortDescription": "Allows you to downgrade/upgrade apps in the AppStore on iOS 11-12.2",
+      "category": "HYI - Tweaks",
+      "author": "CokePokes",
+      "commercial": false,
+      "date": "2019-11-27T23:37:22Z",
+      "versions": [
+        {
+          "tweakVersion": "0.9.6",
+          "iOSVersion": "13.3",
+          "repository": "(null)",
+          "date": "2019-11-27T23:37:22Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.cokepokes.appstoreplusplus",
       "name": "AppStore++",
       "latest": "0.9.10",
@@ -6284,40 +6318,6 @@
           "iOSVersion": "13.3",
           "repository": "CokePokes",
           "date": "2020-05-04T22:37:31Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.hackyouriphone.appstoreplusplus",
-      "name": "AppStore++",
-      "latest": "0.9.6",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.appstoreplusplus/",
-      "shortDescription": "Allows you to downgrade/upgrade apps in the AppStore on iOS 11-12.2",
-      "category": "HYI - Tweaks",
-      "author": "CokePokes",
-      "commercial": false,
-      "date": "2019-11-27T23:37:22Z",
-      "versions": [
-        {
-          "tweakVersion": "0.9.6",
-          "iOSVersion": "13.3",
-          "repository": "(null)",
-          "date": "2019-11-27T23:37:22Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -21373,60 +21373,6 @@
       ]
     },
     {
-      "id": "ru.domo.cocoatop64",
-      "name": "CocoaTop",
-      "latest": "2.0.2-1+debug",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop64/",
-      "shortDescription": "Process Viewer for iOS GUI (64-bit)",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "date": "2018-03-13T11:14:04Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0.2-1+debug",
-          "iOSVersion": "13.3",
-          "repository": "NotMyTweaks Repo",
-          "date": "2019-12-18T21:28:14Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 5,
-            "bad": 0,
-            "total": 5,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        },
-        {
-          "tweakVersion": "2.0.2",
-          "iOSVersion": "13.3",
-          "repository": "(null)",
-          "date": "2020-01-24T16:29:35Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "ru.domo.cocoatop",
       "name": "CocoaTop",
       "latest": "2.0.1",
@@ -21476,6 +21422,60 @@
           "iOSVersion": "13.3",
           "repository": "A kiiimo Repository ",
           "date": "2019-11-13T19:54:27Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.domo.cocoatop64",
+      "name": "CocoaTop",
+      "latest": "2.0.2-1+debug",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop64/",
+      "shortDescription": "Process Viewer for iOS GUI (64-bit)",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "date": "2018-03-13T11:14:04Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0.2-1+debug",
+          "iOSVersion": "13.3",
+          "repository": "NotMyTweaks Repo",
+          "date": "2019-12-18T21:28:14Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 5,
+            "bad": 0,
+            "total": 5,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "2.0.2",
+          "iOSVersion": "13.3",
+          "repository": "(null)",
+          "date": "2020-01-24T16:29:35Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -26529,40 +26529,6 @@
       ]
     },
     {
-      "id": "co.xrepo.musclenerd.cydown",
-      "name": "CyDown",
-      "latest": "6.9.7",
-      "repository": "MuscleNerd",
-      "url": "http://cydia.saurik.com/package/co.xrepo.musclenerd.cydown/",
-      "shortDescription": "Cydia DownloaCydia Gestionnaire de téléchargement et fonctionnalités supplémentaires!",
-      "category": "MuscleNerdIcon",
-      "author": "julioverne",
-      "commercial": false,
-      "date": "2020-05-01T06:53:28Z",
-      "versions": [
-        {
-          "tweakVersion": "6.9.7",
-          "iOSVersion": "13.3",
-          "repository": "MuscleNerd",
-          "date": "2020-05-01T06:53:28Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "cydia.kiiimo.org.cydown",
       "name": "CyDown",
       "latest": "7.0.9",
@@ -26605,6 +26571,40 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "co.xrepo.musclenerd.cydown",
+      "name": "CyDown",
+      "latest": "6.9.7",
+      "repository": "MuscleNerd",
+      "url": "http://cydia.saurik.com/package/co.xrepo.musclenerd.cydown/",
+      "shortDescription": "Cydia DownloaCydia Gestionnaire de téléchargement et fonctionnalités supplémentaires!",
+      "category": "MuscleNerdIcon",
+      "author": "julioverne",
+      "commercial": false,
+      "date": "2020-05-01T06:53:28Z",
+      "versions": [
+        {
+          "tweakVersion": "6.9.7",
+          "iOSVersion": "13.3",
+          "repository": "MuscleNerd",
+          "date": "2020-05-01T06:53:28Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -28085,22 +28085,22 @@
       ]
     },
     {
-      "id": "cydia.kiiimo.org.dateinstatusbar",
-      "name": "Date In Statusbar",
-      "latest": "0.9.1-2",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/cydia.kiiimo.org.dateinstatusbar/",
-      "shortDescription": "عرض التاريخ ب جانب الساعة!",
-      "category": "iOS 11.3x",
-      "author": "Kiiimo",
+      "id": "com.matrixdevteam.dateinstatusbar",
+      "name": "Date In StatusBar",
+      "latest": "1.0.1",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.matrixdevteam.dateinstatusbar/",
+      "shortDescription": "Adds current date to the status bar",
+      "category": "Tweaks",
+      "author": "MatrixDevTeam",
       "commercial": false,
-      "date": "2019-08-25T17:30:46Z",
+      "date": "2018-07-07T22:08:02Z",
       "versions": [
         {
-          "tweakVersion": "0.9.1-2",
+          "tweakVersion": "1.0.1",
           "iOSVersion": "13.3",
-          "repository": "A kiiimo Repository ",
-          "date": "2020-01-09T06:27:09Z",
+          "repository": "(null)",
+          "date": "2020-03-17T23:26:10Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -28119,22 +28119,22 @@
       ]
     },
     {
-      "id": "com.matrixdevteam.dateinstatusbar",
-      "name": "Date In StatusBar",
-      "latest": "1.0.1",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.matrixdevteam.dateinstatusbar/",
-      "shortDescription": "Adds current date to the status bar",
-      "category": "Tweaks",
-      "author": "MatrixDevTeam",
+      "id": "cydia.kiiimo.org.dateinstatusbar",
+      "name": "Date In Statusbar",
+      "latest": "0.9.1-2",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/cydia.kiiimo.org.dateinstatusbar/",
+      "shortDescription": "عرض التاريخ ب جانب الساعة!",
+      "category": "iOS 11.3x",
+      "author": "Kiiimo",
       "commercial": false,
-      "date": "2018-07-07T22:08:02Z",
+      "date": "2019-08-25T17:30:46Z",
       "versions": [
         {
-          "tweakVersion": "1.0.1",
+          "tweakVersion": "0.9.1-2",
           "iOSVersion": "13.3",
-          "repository": "(null)",
-          "date": "2020-03-17T23:26:10Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2020-01-09T06:27:09Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -28810,22 +28810,22 @@
       ]
     },
     {
-      "id": "com.iarrays.deletecontact",
+      "id": "com.iarrays.deletecontact10",
       "name": "Delete Contact",
-      "latest": "1.5.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.iarrays.deletecontact/",
-      "shortDescription": "single or multi-delete contacts; trash icon",
-      "category": "Tweaks",
+      "latest": "1.5.1-beta-5",
+      "repository": "IArrays",
+      "url": "http://cydia.saurik.com/package/com.iarrays.deletecontact10/",
+      "shortDescription": "Now supports iOS 10 and also iPhone 7 & 7 Plus and iPad Air & iPad Air 2. Delete Contact allows to delete contacts from your address book. This little tweak adds a trash icon to Contact and Mobile Phone application's contacts screen. And also it allows group delete of contacts and works with all your iDevices.",
+      "category": "Utilities",
       "author": "IArrays",
       "commercial": false,
-      "date": "2018-03-01T05:43:58Z",
+      "date": "2018-03-16T18:10:35Z",
       "versions": [
         {
-          "tweakVersion": "1.5.1",
+          "tweakVersion": "1.5.1-beta-5",
           "iOSVersion": "13.3",
-          "repository": "BigBoss",
-          "date": "2020-02-28T22:30:32Z",
+          "repository": "IArrays",
+          "date": "2020-04-09T16:16:59Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -28844,22 +28844,22 @@
       ]
     },
     {
-      "id": "com.iarrays.deletecontact10",
+      "id": "com.iarrays.deletecontact",
       "name": "Delete Contact",
-      "latest": "1.5.1-beta-5",
-      "repository": "IArrays",
-      "url": "http://cydia.saurik.com/package/com.iarrays.deletecontact10/",
-      "shortDescription": "Now supports iOS 10 and also iPhone 7 & 7 Plus and iPad Air & iPad Air 2. Delete Contact allows to delete contacts from your address book. This little tweak adds a trash icon to Contact and Mobile Phone application's contacts screen. And also it allows group delete of contacts and works with all your iDevices.",
-      "category": "Utilities",
+      "latest": "1.5.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.iarrays.deletecontact/",
+      "shortDescription": "single or multi-delete contacts; trash icon",
+      "category": "Tweaks",
       "author": "IArrays",
       "commercial": false,
-      "date": "2018-03-16T18:10:35Z",
+      "date": "2018-03-01T05:43:58Z",
       "versions": [
         {
-          "tweakVersion": "1.5.1-beta-5",
+          "tweakVersion": "1.5.1",
           "iOSVersion": "13.3",
-          "repository": "IArrays",
-          "date": "2020-04-09T16:16:59Z",
+          "repository": "BigBoss",
+          "date": "2020-02-28T22:30:32Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -62425,40 +62425,6 @@
       ]
     },
     {
-      "id": "me.sethstephens.newgridswitcher",
-      "name": "NewGridSwitcher",
-      "latest": "1.1.0",
-      "repository": "Relative's Repo",
-      "url": "http://cydia.saurik.com/package/me.sethstephens.newgridswitcher/",
-      "shortDescription": "A grid switcher on iOS 11 and above",
-      "category": "Tweaks",
-      "author": "relative",
-      "commercial": false,
-      "date": "2019-03-09T05:27:34Z",
-      "versions": [
-        {
-          "tweakVersion": "1.1.0",
-          "iOSVersion": "13.3",
-          "repository": "BigBoss",
-          "date": "2019-12-14T04:00:54Z",
-          "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 60,
-            "good": 3,
-            "bad": 0,
-            "total": 5,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.cydia.kiimo.newgridswitcher",
       "name": "NewGridSwitcher",
       "latest": "1.0.1",
@@ -62481,6 +62447,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "me.sethstephens.newgridswitcher",
+      "name": "NewGridSwitcher",
+      "latest": "1.1.0",
+      "repository": "Relative's Repo",
+      "url": "http://cydia.saurik.com/package/me.sethstephens.newgridswitcher/",
+      "shortDescription": "A grid switcher on iOS 11 and above",
+      "category": "Tweaks",
+      "author": "relative",
+      "commercial": false,
+      "date": "2019-03-09T05:27:34Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1.0",
+          "iOSVersion": "13.3",
+          "repository": "BigBoss",
+          "date": "2019-12-14T04:00:54Z",
+          "outcome": {
+            "calculatedStatus": "Likely working",
+            "percentage": 60,
+            "good": 3,
+            "bad": 0,
+            "total": 5,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -68598,22 +68598,22 @@
       ]
     },
     {
-      "id": "com.twickd.ubik.oriental",
+      "id": "hi.my.name.is.ubik.oriental",
       "name": "Oriental",
       "latest": "1.0.0",
-      "repository": "Twickd",
-      "url": "http://cydia.saurik.com/package/com.twickd.ubik.oriental/",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/hi.my.name.is.ubik.oriental/",
       "shortDescription": "To rotate or not.",
       "category": "Tweaks",
       "author": "ubik",
       "commercial": false,
-      "date": "2020-01-20T09:47:40Z",
+      "date": "2019-12-06T16:03:57Z",
       "versions": [
         {
           "tweakVersion": "1.0.0",
           "iOSVersion": "13.3",
-          "repository": "Twickd",
-          "date": "2020-02-17T02:59:12Z",
+          "repository": "Packix",
+          "date": "2019-12-06T16:03:57Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -68632,22 +68632,22 @@
       ]
     },
     {
-      "id": "hi.my.name.is.ubik.oriental",
+      "id": "com.twickd.ubik.oriental",
       "name": "Oriental",
       "latest": "1.0.0",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/hi.my.name.is.ubik.oriental/",
+      "repository": "Twickd",
+      "url": "http://cydia.saurik.com/package/com.twickd.ubik.oriental/",
       "shortDescription": "To rotate or not.",
       "category": "Tweaks",
       "author": "ubik",
       "commercial": false,
-      "date": "2019-12-06T16:03:57Z",
+      "date": "2020-01-20T09:47:40Z",
       "versions": [
         {
           "tweakVersion": "1.0.0",
           "iOSVersion": "13.3",
-          "repository": "Packix",
-          "date": "2019-12-06T16:03:57Z",
+          "repository": "Twickd",
+          "date": "2020-02-17T02:59:12Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -69128,21 +69128,22 @@
       ]
     },
     {
-      "id": "org.thebigboss.palert",
+      "id": "com.hackyouriphone.palert",
       "name": "Palert",
       "latest": "1.1.0-2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/org.thebigboss.palert/",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.palert/",
       "shortDescription": "tvOS style alerts",
-      "category": "Tweaks",
+      "category": "HYI - Tweaks",
       "author": "Integeritis",
-      "commercial": true,
+      "commercial": false,
+      "date": "2019-11-27T23:40:04Z",
       "versions": [
         {
           "tweakVersion": "1.1.0-2",
           "iOSVersion": "13.3",
-          "repository": "BigBoss",
-          "date": "2020-01-01T05:32:31Z",
+          "repository": "(null)",
+          "date": "2019-11-27T23:40:04Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -69161,22 +69162,21 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.palert",
+      "id": "org.thebigboss.palert",
       "name": "Palert",
       "latest": "1.1.0-2",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.palert/",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.palert/",
       "shortDescription": "tvOS style alerts",
-      "category": "HYI - Tweaks",
+      "category": "Tweaks",
       "author": "Integeritis",
-      "commercial": false,
-      "date": "2019-11-27T23:40:04Z",
+      "commercial": true,
       "versions": [
         {
           "tweakVersion": "1.1.0-2",
           "iOSVersion": "13.3",
-          "repository": "(null)",
-          "date": "2019-11-27T23:40:04Z",
+          "repository": "BigBoss",
+          "date": "2020-01-01T05:32:31Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -83976,6 +83976,40 @@
       ]
     },
     {
+      "id": "com.modmyi.snowboard",
+      "name": "Snowboard",
+      "latest": "1.0",
+      "repository": "ModMyi (Archive)",
+      "url": "http://cydia.saurik.com/package/com.modmyi.snowboard/",
+      "shortDescription": "This is a snowboard theme. Includes lockscreen, background, sliders, and battery images. There is an icon pack to go with it called \"Snowboard Icon Pack\" but I put them separate so the theme could be used without the icons if you choose to do so. Screenshots are with the icon pack installed as well. Please send any icon requests to the name above and if you like what you see please donate through PayPal to bayer603bobby@bellsouth.net.",
+      "category": "Themes (SpringBoard)",
+      "author": "Bobby  Bayer",
+      "commercial": false,
+      "date": "2020-02-16T18:48:48Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0",
+          "iOSVersion": "13.3",
+          "repository": "ModMyi (Archive)",
+          "date": "2020-02-16T18:48:48Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.spark.snowboard",
       "name": "Snowboard",
       "latest": "1.2.87~Beta2",
@@ -84218,40 +84252,6 @@
             "good": 21,
             "bad": 0,
             "total": 21,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.modmyi.snowboard",
-      "name": "Snowboard",
-      "latest": "1.0",
-      "repository": "ModMyi (Archive)",
-      "url": "http://cydia.saurik.com/package/com.modmyi.snowboard/",
-      "shortDescription": "This is a snowboard theme. Includes lockscreen, background, sliders, and battery images. There is an icon pack to go with it called \"Snowboard Icon Pack\" but I put them separate so the theme could be used without the icons if you choose to do so. Screenshots are with the icon pack installed as well. Please send any icon requests to the name above and if you like what you see please donate through PayPal to bayer603bobby@bellsouth.net.",
-      "category": "Themes (SpringBoard)",
-      "author": "Bobby  Bayer",
-      "commercial": false,
-      "date": "2020-02-16T18:48:48Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0",
-          "iOSVersion": "13.3",
-          "repository": "ModMyi (Archive)",
-          "date": "2020-02-16T18:48:48Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -91622,6 +91622,39 @@
             "good": 3,
             "bad": 0,
             "total": 3,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.clezz.touchr",
+      "name": "Touchr",
+      "latest": "1.0.3",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.clezz.touchr/",
+      "shortDescription": "TouchID gestures / TouchID 手势",
+      "category": "Tweaks",
+      "author": "Ma Jun",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.0.3",
+          "iOSVersion": "13.3",
+          "repository": "BigBoss",
+          "date": "2020-05-07T03:28:19Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -99420,40 +99453,6 @@
       ]
     },
     {
-      "id": "xz",
-      "name": "XZ Utils",
-      "latest": "5.2.4-4",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/xz/",
-      "shortDescription": "slower, but better, compression algorithm",
-      "category": "Archiving",
-      "author": "(null)",
-      "commercial": false,
-      "date": "2018-10-24T08:16:57Z",
-      "versions": [
-        {
-          "tweakVersion": "5.2.4-4",
-          "iOSVersion": "13.3",
-          "repository": "apt.bingner.com",
-          "date": "2019-12-11T14:43:18Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 3,
-            "bad": 0,
-            "total": 3,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "lzma",
       "name": "XZ Utils",
       "latest": "4.32.7-2",
@@ -99476,6 +99475,40 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "xz",
+      "name": "XZ Utils",
+      "latest": "5.2.4-4",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/xz/",
+      "shortDescription": "slower, but better, compression algorithm",
+      "category": "Archiving",
+      "author": "(null)",
+      "commercial": false,
+      "date": "2018-10-24T08:16:57Z",
+      "versions": [
+        {
+          "tweakVersion": "5.2.4-4",
+          "iOSVersion": "13.3",
+          "repository": "apt.bingner.com",
+          "date": "2019-12-11T14:43:18Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 3,
+            "bad": 0,
+            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
