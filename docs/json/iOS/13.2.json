@@ -3482,7 +3482,7 @@
     {
       "id": "com.patrick.darkkeysxii",
       "name": "DarkKeysXII",
-      "latest": "1.1.8",
+      "latest": "1.1.7",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.patrick.darkkeysxii/",
       "shortDescription": "The keyboard you know. Colors you prefer. — A tweak for the stock iOS keyboard, giving a stealthy, true black look across the operating system.",
@@ -3772,6 +3772,39 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.creatix.deleteforever",
+      "name": "DeleteForever",
+      "latest": "0.0.1-57",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.creatix.deleteforever/",
+      "shortDescription": "\"Delete Permanently\" option for Photos.",
+      "category": "Tweaks",
+      "author": "Creatix",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "0.0.1-57",
+          "iOSVersion": "13.2",
+          "repository": "BigBoss",
+          "date": "2020-05-20T21:00:35Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -6721,22 +6754,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.beta",
+      "id": "com.ryleyangus.libertylite.beta",
       "name": "Liberty Lite (Beta)",
       "latest": "0.2.12",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.beta/",
+      "repository": "Ryley's Repo",
+      "url": "http://cydia.saurik.com/package/com.ryleyangus.libertylite.beta/",
       "shortDescription": "A general purpose jailbreak detection bypass patch. Configure the Liberty Lite entry in the Settings app to block (most) apps from detecting your jailbreak. Disabling Substrate/Substitute is not currently supported. Support for both arm64e and armv7 has been enabled in this beta version.",
-      "category": "iOS 12",
+      "category": "Tweaks",
       "author": "Ryley Angus",
       "commercial": false,
-      "date": "2019-07-20T06:59:21Z",
+      "date": "2019-03-07T13:25:37Z",
       "versions": [
         {
           "tweakVersion": "0.2.12",
           "iOSVersion": "13.2",
-          "repository": "A kiiimo Repository ",
-          "date": "2020-03-24T04:15:16Z",
+          "repository": "Ryley's Repo",
+          "date": "2019-11-20T05:43:32Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6755,22 +6788,22 @@
       ]
     },
     {
-      "id": "com.ryleyangus.libertylite.beta",
+      "id": "org.cydia.kiimo.beta",
       "name": "Liberty Lite (Beta)",
       "latest": "0.2.12",
-      "repository": "Ryley's Repo",
-      "url": "http://cydia.saurik.com/package/com.ryleyangus.libertylite.beta/",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.beta/",
       "shortDescription": "A general purpose jailbreak detection bypass patch. Configure the Liberty Lite entry in the Settings app to block (most) apps from detecting your jailbreak. Disabling Substrate/Substitute is not currently supported. Support for both arm64e and armv7 has been enabled in this beta version.",
-      "category": "Tweaks",
+      "category": "iOS 12",
       "author": "Ryley Angus",
       "commercial": false,
-      "date": "2019-03-07T13:25:37Z",
+      "date": "2019-07-20T06:59:21Z",
       "versions": [
         {
           "tweakVersion": "0.2.12",
           "iOSVersion": "13.2",
-          "repository": "Ryley's Repo",
-          "date": "2019-11-20T05:43:32Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2020-03-24T04:15:16Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7049,10 +7082,10 @@
     {
       "id": "com.spark.libsparkapplist",
       "name": "libSparkAppList",
-      "latest": "1.0.9",
+      "latest": "1.0.8",
       "repository": "Spark's Beta Repo",
       "url": "http://cydia.saurik.com/package/com.spark.libsparkapplist/",
-      "shortDescription": "A super simple library to list applications in tweaks/applications. — This is libSparkAppList, a super simple AppList style alternative library for developers - designed for iOS 11/12/13.",
+      "shortDescription": "AppList alternative",
       "category": "System",
       "author": "Spark",
       "commercial": false,
@@ -7900,22 +7933,22 @@
       ]
     },
     {
-      "id": "ncurses5-libs",
+      "id": "ncurses",
       "name": "New Curses",
-      "latest": "5.9-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
+      "latest": "6.1+20181013-1",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/ncurses/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-14T00:25:17Z",
+      "date": "2018-03-04T19:02:12Z",
       "versions": [
         {
-          "tweakVersion": "5.9-1",
+          "tweakVersion": "6.1+20181013-1",
           "iOSVersion": "13.2",
           "repository": "apt.bingner.com",
-          "date": "2020-04-21T08:11:59Z",
+          "date": "2020-03-08T05:34:20Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7934,22 +7967,22 @@
       ]
     },
     {
-      "id": "ncurses",
+      "id": "ncurses5-libs",
       "name": "New Curses",
-      "latest": "6.1+20181013-1",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/ncurses/",
+      "latest": "5.9-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:02:12Z",
+      "date": "2018-10-14T00:25:17Z",
       "versions": [
         {
-          "tweakVersion": "6.1+20181013-1",
+          "tweakVersion": "5.9-1",
           "iOSVersion": "13.2",
           "repository": "apt.bingner.com",
-          "date": "2020-03-08T05:34:20Z",
+          "date": "2020-04-21T08:11:59Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9108,7 +9141,7 @@
       "latest": "0.1.0",
       "repository": "Nepeta",
       "url": "http://cydia.saurik.com/package/me.nepeta.relocateapp/",
-      "shortDescription": "Application for Relocate",
+      "shortDescription": "Application for Relocate (If you can't see the depiction, please use Cydia or Zebra).",
       "category": "Utilities",
       "author": "Nepeta",
       "commercial": false,
@@ -9854,7 +9887,7 @@
     {
       "id": "com.creaturecoding.shuffle",
       "name": "shuffle",
-      "latest": "1.2.8",
+      "latest": "1.2.2",
       "repository": "CreatureSurvive's Repo",
       "url": "http://cydia.saurik.com/package/com.creaturecoding.shuffle/",
       "shortDescription": "Mix up your preferences",
@@ -12528,7 +12561,7 @@
     {
       "id": "xyz.willy.zebra",
       "name": "Zebra (BETA)",
-      "latest": "1.1.9",
+      "latest": "1.1.7",
       "repository": "xTM3x Repo",
       "url": "http://cydia.saurik.com/package/xyz.willy.zebra/",
       "shortDescription": "A Useful Package Manager",
