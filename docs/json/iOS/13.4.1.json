@@ -1072,7 +1072,7 @@
     {
       "id": "com.adamseiter.animationsbefastplus",
       "name": "AnimationsBeFastPlus",
-      "latest": "4.5",
+      "latest": "4.8",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.adamseiter.animationsbefastplus/",
       "shortDescription": "Speed up animations everywhere! Apps and Springboard!",
@@ -1109,7 +1109,7 @@
       "latest": "1.2-32",
       "repository": "limneos.net",
       "url": "http://cydia.saurik.com/package/net.limneos.answeringmachinex/",
-      "shortDescription": "AnsweringMachine XS (iOS 11/12/13)",
+      "shortDescription": "Receive voicemails on device!",
       "category": "Tweaks",
       "author": "Elias Limneos",
       "commercial": false,
@@ -1524,10 +1524,10 @@
     {
       "id": "com.tigisoftware.appdatamanager",
       "name": "Apps Manager",
-      "latest": "1.5.3",
+      "latest": "1.5.3-2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.appdatamanager/",
-      "shortDescription": "tool to WIPE, BACKUP, RESTORE AppData for installed Apps",
+      "shortDescription": "This tool provides the way to WIPE, BACKUP, RESTORE AppData for installed Apps",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -2896,6 +2896,39 @@
       ]
     },
     {
+      "id": "com.cpdigitaldarkroom.barmoji",
+      "name": "Barmoji",
+      "latest": "2020.3",
+      "repository": "CP Digital Darkroom Beta Repo",
+      "url": "http://beta.cpdigitaldarkroom.com/",
+      "shortDescription": "Quick Emoji Access Bar",
+      "category": "Tweaks",
+      "author": "CP Digital Darkroom",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2020.3",
+          "iOSVersion": "13.4.1",
+          "repository": "CP Digital Darkroom Repo",
+          "date": "2020-04-13T10:11:35Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "org.cydia.kiimo.barmoji",
       "name": "Barmoji",
       "latest": "2020.3",
@@ -2916,39 +2949,6 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.cpdigitaldarkroom.barmoji",
-      "name": "Barmoji",
-      "latest": "2020.3",
-      "repository": "CP Digital Darkroom Beta Repo",
-      "url": "http://beta.cpdigitaldarkroom.com/",
-      "shortDescription": "Quick Emoji Access Bar",
-      "category": "Tweaks",
-      "author": "CP Digital Darkroom",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2020.3",
-          "iOSVersion": "13.4.1",
-          "repository": "CP Digital Darkroom Repo",
-          "date": "2020-04-13T10:11:35Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -5285,40 +5285,6 @@
       ]
     },
     {
-      "id": "ru.rejail.cercube",
-      "name": "Cercube for YouTube",
-      "latest": "5.1.18k",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.cercube/",
-      "shortDescription": "Загрузка видео на YouTube и многое другое",
-      "category": "Tweaks",
-      "author": "Majd Alfhaily",
-      "commercial": false,
-      "date": "2019-08-20T05:52:02Z",
-      "versions": [
-        {
-          "tweakVersion": "5.1.18k",
-          "iOSVersion": "13.4.1",
-          "repository": "ReJail Repo",
-          "date": "2020-05-09T08:06:33Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "me.alfhaily.cercube",
       "name": "Cercube for YouTube",
       "latest": "5.1.18",
@@ -5380,6 +5346,40 @@
             "good": 3,
             "bad": 0,
             "total": 4,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.rejail.cercube",
+      "name": "Cercube for YouTube",
+      "latest": "5.1.18k",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.cercube/",
+      "shortDescription": "Загрузка видео на YouTube и многое другое",
+      "category": "Tweaks",
+      "author": "Majd Alfhaily",
+      "commercial": false,
+      "date": "2019-08-20T05:52:02Z",
+      "versions": [
+        {
+          "tweakVersion": "5.1.18k",
+          "iOSVersion": "13.4.1",
+          "repository": "ReJail Repo",
+          "date": "2020-05-09T08:06:33Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -6674,7 +6674,7 @@
     {
       "id": "com.noisyflake.cozybadges",
       "name": "CozyBadges",
-      "latest": "1.2.0",
+      "latest": "1.2.1",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.noisyflake.cozybadges/",
       "shortDescription": "A cozy place for your badges",
@@ -10427,7 +10427,7 @@
     {
       "id": "com.blackhole.gesto13",
       "name": "Gesto for iOS 13",
-      "latest": "1.1.2",
+      "latest": "1.1.3",
       "repository": "Dynastic Repo",
       "url": "http://cydia.saurik.com/package/com.blackhole.gesto13/",
       "shortDescription": "True Multitasking  — See Gesto (cydia://package/com.blackhole.Gesto) for iOS 11/12 compatibility",
@@ -10461,6 +10461,26 @@
           "iOSVersion": "13.4.1",
           "repository": "Dynastic Repo",
           "date": "2020-06-01T06:41:35Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.1.3",
+          "iOSVersion": "13.4.1",
+          "repository": "Dynastic Repo",
+          "date": "2020-06-02T02:42:16Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10890,22 +10910,22 @@
       ]
     },
     {
-      "id": "com.lpane.googlemapsdefault",
+      "id": "com.yourepo.keysrepo.googlemapsdefault",
       "name": "GoogleMapsDefault",
       "latest": "0.0.1",
-      "repository": "dankprius' Repo",
-      "url": "http://cydia.saurik.com/package/com.lpane.googlemapsdefault/",
-      "shortDescription": "An awesome MobileSubstrate tweak!",
+      "repository": "keysrepo Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.keysrepo.googlemapsdefault/",
+      "shortDescription": "Open addresses and links in Google Maps as the default",
       "category": "Tweaks",
       "author": "lpane",
       "commercial": false,
-      "date": "2020-04-19T18:05:05Z",
+      "date": "2020-04-02T18:50:39Z",
       "versions": [
         {
           "tweakVersion": "0.0.1",
           "iOSVersion": "13.4.1",
-          "repository": "dankprius' Repo",
-          "date": "2020-04-19T18:05:05Z",
+          "repository": "keysrepo Source - YouRepo",
+          "date": "2020-04-11T20:29:00Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -10924,22 +10944,22 @@
       ]
     },
     {
-      "id": "com.yourepo.keysrepo.googlemapsdefault",
+      "id": "com.lpane.googlemapsdefault",
       "name": "GoogleMapsDefault",
       "latest": "0.0.1",
-      "repository": "keysrepo Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.keysrepo.googlemapsdefault/",
-      "shortDescription": "Open addresses and links in Google Maps as the default",
+      "repository": "dankprius' Repo",
+      "url": "http://cydia.saurik.com/package/com.lpane.googlemapsdefault/",
+      "shortDescription": "An awesome MobileSubstrate tweak!",
       "category": "Tweaks",
       "author": "lpane",
       "commercial": false,
-      "date": "2020-04-02T18:50:39Z",
+      "date": "2020-04-19T18:05:05Z",
       "versions": [
         {
           "tweakVersion": "0.0.1",
           "iOSVersion": "13.4.1",
-          "repository": "keysrepo Source - YouRepo",
-          "date": "2020-04-11T20:29:00Z",
+          "repository": "dankprius' Repo",
+          "date": "2020-04-19T18:05:05Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -11863,7 +11883,7 @@
     {
       "id": "com.exile90.icleanerpro",
       "name": "iCleaner Pro",
-      "latest": "7.8.3~beta1",
+      "latest": "7.8.2",
       "repository": "Karen's Repo",
       "url": "http://ib-soft.net/icleaner",
       "shortDescription": "The first real iOS system cleaner & optimizer",
@@ -13950,40 +13970,6 @@
       ]
     },
     {
-      "id": "com.pxcex.localiapstore13",
-      "name": "LocalIAPStore13",
-      "latest": "0.0.2",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.pxcex.localiapstore13/",
-      "shortDescription": "Free In-App Purchases include app IOS 13 bypass Lock iCloud (bypass verify Passcode, Touch ID or Face ID).  No options to configure!",
-      "category": "Tweaks",
-      "author": "pxcex",
-      "commercial": false,
-      "date": "2019-11-20T23:25:08Z",
-      "versions": [
-        {
-          "tweakVersion": "0.0.2",
-          "iOSVersion": "13.4.1",
-          "repository": "Sources Installées",
-          "date": "2020-04-17T10:15:41Z",
-          "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 66,
-            "good": 2,
-            "bad": 0,
-            "total": 3,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.cydia.kiimo.localiapstore13",
       "name": "LocalIAPStore13",
       "latest": "0.0.2",
@@ -14006,6 +13992,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.pxcex.localiapstore13",
+      "name": "LocalIAPStore13",
+      "latest": "0.0.2",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.pxcex.localiapstore13/",
+      "shortDescription": "Free In-App Purchases include app IOS 13 bypass Lock iCloud (bypass verify Passcode, Touch ID or Face ID).  No options to configure!",
+      "category": "Tweaks",
+      "author": "pxcex",
+      "commercial": false,
+      "date": "2019-11-20T23:25:08Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0.2",
+          "iOSVersion": "13.4.1",
+          "repository": "Sources Installées",
+          "date": "2020-04-17T10:15:41Z",
+          "outcome": {
+            "calculatedStatus": "Likely working",
+            "percentage": 66,
+            "good": 2,
+            "bad": 0,
+            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -16471,7 +16491,7 @@
     {
       "id": "com.julioverne.ntspeed",
       "name": "NtSpeed",
-      "latest": "0.1",
+      "latest": "0.2~beta7",
       "repository": "ipad_kid's repo",
       "url": "http://ipadkid.cf/",
       "shortDescription": "See Active Traffic Network Speed",
@@ -19127,7 +19147,7 @@
     {
       "id": "com.creaturecoding.shuffle",
       "name": "shuffle",
-      "latest": "1.2.8",
+      "latest": "0.8.0b",
       "repository": "CreatureSurvive's Repo",
       "url": "http://cydia.saurik.com/package/com.creaturecoding.shuffle/",
       "shortDescription": "Mix up your preferences",
@@ -22222,10 +22242,10 @@
     {
       "id": "com.haoict.twitternoads",
       "name": "Twitter No Ads",
-      "latest": "1.2.0",
+      "latest": "0.0.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.haoict.twitternoads/",
-      "shortDescription": "Free & Open Source Tweak for Twitter",
+      "shortDescription": "Hide \"Promoted\" post for Twitter app",
       "category": "Tweaks",
       "author": "Hao Nguyen",
       "commercial": false,
