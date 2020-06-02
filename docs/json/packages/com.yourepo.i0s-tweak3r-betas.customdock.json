@@ -1,10 +1,10 @@
 {
   "id": "com.yourepo.i0s-tweak3r-betas.customdock",
   "name": "CustomDock",
-  "latest": "1.0.2-1",
+  "latest": "1.0.3-1",
   "repository": "i0s-tweak3r-betas Source - YouRepo",
   "url": "http://cydia.saurik.com/package/com.yourepo.i0s-tweak3r-betas.customdock/",
-  "shortDescription": "Simple tweak with sliders to adjust dock height, offset of icons inside, and opacity. All devices supported. Tested on 9.3.3, 10.0.1 11.1.2 and 11.3.1",
+  "shortDescription": "Simple tweak with sliders to adjust dock height, offset of icons inside, and opacity. All devices supported (iPad not so much). Supports iOS 9 - 13.5 Updated for A12 and A13 devices, iOS 13, as well as added alternate method for dock height that changes the size of the dock.",
   "category": "Tweaks",
   "author": "i0s_tweak3r",
   "commercial": false,
@@ -108,6 +108,37 @@
           "date": "2019-02-10T17:14:38Z",
           "userName": "ON3i11",
           "issueNumber": 59146,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "1.0.3-1",
+      "iOSVersion": "13.5",
+      "repository": "i0s-tweak3r-betas Source - YouRepo",
+      "date": "2020-06-02T12:09:18Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "partial",
+          "device": "iPhone8,1",
+          "issues": "To make dock fully disappear it needs to be set to 0.1 or 0.2 transparency. For some reason setting it all the way to 0.0 doesn’t do anything. Other than that all the other features seem to work.",
+          "date": "2020-06-02T12:09:18Z",
+          "userName": "ON3i11",
+          "issueNumber": 126577,
           "arch32": false
         }
       ]
