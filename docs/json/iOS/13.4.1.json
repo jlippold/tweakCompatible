@@ -3314,21 +3314,22 @@
       ]
     },
     {
-      "id": "com.aaronash.barrel",
+      "id": "org.mr.barrel",
       "name": "Barrel",
-      "latest": "1.9.0.2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.aaronash.barrel/",
+      "latest": "1.9.0.1k",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.barrel/",
       "shortDescription": "3D and other effects on icon pages! A jailbreaking classic.",
       "category": "Tweaks",
       "author": "Aaron Ash (Charybdis)",
-      "commercial": true,
+      "commercial": false,
+      "date": "2020-06-07T00:48:30Z",
       "versions": [
         {
-          "tweakVersion": "1.9.0.2",
+          "tweakVersion": "1.9.0.1k",
           "iOSVersion": "13.4.1",
-          "repository": "BigBoss",
-          "date": "2020-06-08T00:12:32Z",
+          "repository": "MainRepo",
+          "date": "2020-06-07T00:48:30Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3347,22 +3348,21 @@
       ]
     },
     {
-      "id": "org.mr.barrel",
+      "id": "com.aaronash.barrel",
       "name": "Barrel",
-      "latest": "1.9.0.1k",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.barrel/",
+      "latest": "1.9.0.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.aaronash.barrel/",
       "shortDescription": "3D and other effects on icon pages! A jailbreaking classic.",
       "category": "Tweaks",
       "author": "Aaron Ash (Charybdis)",
-      "commercial": false,
-      "date": "2020-06-07T00:48:30Z",
+      "commercial": true,
       "versions": [
         {
-          "tweakVersion": "1.9.0.1k",
+          "tweakVersion": "1.9.0.2",
           "iOSVersion": "13.4.1",
-          "repository": "MainRepo",
-          "date": "2020-06-07T00:48:30Z",
+          "repository": "BigBoss",
+          "date": "2020-06-08T00:12:32Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6725,39 +6725,6 @@
       ]
     },
     {
-      "id": "ru.domo.cocoatop",
-      "name": "CocoaTop",
-      "latest": "2.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
-      "shortDescription": "Process Viewer for iOS GUI",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0.1",
-          "iOSVersion": "13.4.1",
-          "repository": "BigBoss",
-          "date": "2020-04-17T00:25:19Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2",
@@ -6780,6 +6747,39 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.domo.cocoatop",
+      "name": "CocoaTop",
+      "latest": "2.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
+      "shortDescription": "Process Viewer for iOS GUI",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0.1",
+          "iOSVersion": "13.4.1",
+          "repository": "BigBoss",
+          "date": "2020-04-17T00:25:19Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -10639,6 +10639,40 @@
       ]
     },
     {
+      "id": "ru.rejail.filza",
+      "name": "Filza File Manager",
+      "latest": "3.7.6-4k",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.filza/",
+      "shortDescription": "Файловый менеджер для iOS",
+      "category": "Utilities",
+      "author": "TIGI Software",
+      "commercial": false,
+      "date": "2019-08-20T10:06:45Z",
+      "versions": [
+        {
+          "tweakVersion": "3.7.4-14k",
+          "iOSVersion": "13.4.1",
+          "repository": "ReJail Repo",
+          "date": "2020-05-09T08:41:32Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
       "latest": "3.7.6-20",
@@ -10694,40 +10728,6 @@
           "iOSVersion": "13.4.1",
           "repository": "BigBoss",
           "date": "2020-05-24T20:19:07Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ru.rejail.filza",
-      "name": "Filza File Manager",
-      "latest": "3.7.6-4k",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.filza/",
-      "shortDescription": "Файловый менеджер для iOS",
-      "category": "Utilities",
-      "author": "TIGI Software",
-      "commercial": false,
-      "date": "2019-08-20T10:06:45Z",
-      "versions": [
-        {
-          "tweakVersion": "3.7.4-14k",
-          "iOSVersion": "13.4.1",
-          "repository": "ReJail Repo",
-          "date": "2020-05-09T08:41:32Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -16586,40 +16586,6 @@
       ]
     },
     {
-      "id": "org.mr.magmaevo",
-      "name": "Magma Evo",
-      "latest": "2.0.3",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.magmaevo/",
-      "shortDescription": "Redefine your Control Center",
-      "category": "Tweaks",
-      "author": "NoisyFlake",
-      "commercial": false,
-      "date": "2020-06-05T10:17:22Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0.3",
-          "iOSVersion": "13.4.1",
-          "repository": "MainRepo",
-          "date": "2020-06-08T17:07:38Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.noisyflake.magmaevo",
       "name": "Magma Evo",
       "latest": "2.0.3",
@@ -16656,6 +16622,40 @@
           "iOSVersion": "13.4.1",
           "repository": "(null)",
           "date": "2020-04-16T21:30:10Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.mr.magmaevo",
+      "name": "Magma Evo",
+      "latest": "2.0.3",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.magmaevo/",
+      "shortDescription": "Redefine your Control Center",
+      "category": "Tweaks",
+      "author": "NoisyFlake",
+      "commercial": false,
+      "date": "2020-06-05T10:17:22Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0.3",
+          "iOSVersion": "13.4.1",
+          "repository": "MainRepo",
+          "date": "2020-06-08T17:07:38Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -19293,22 +19293,22 @@
       ]
     },
     {
-      "id": "com.twickd.ubik.oriental",
+      "id": "com.yourepo.keysrepo.oriental",
       "name": "Oriental",
       "latest": "1.0.0",
-      "repository": "Twickd",
-      "url": "http://cydia.saurik.com/package/com.twickd.ubik.oriental/",
-      "shortDescription": "To rotate or not.",
+      "repository": "keysrepo Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.keysrepo.oriental/",
+      "shortDescription": "Asks if you want to lock orientation when rotating the device.",
       "category": "Tweaks",
       "author": "ubik",
       "commercial": false,
-      "date": "2020-01-20T09:47:40Z",
+      "date": "2020-04-02T18:27:06Z",
       "versions": [
         {
           "tweakVersion": "1.0.0",
           "iOSVersion": "13.4.1",
-          "repository": "Twickd",
-          "date": "2020-06-07T15:08:31Z",
+          "repository": "keysrepo Source - YouRepo",
+          "date": "2020-04-11T22:32:56Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -19327,22 +19327,22 @@
       ]
     },
     {
-      "id": "com.yourepo.keysrepo.oriental",
+      "id": "com.twickd.ubik.oriental",
       "name": "Oriental",
       "latest": "1.0.0",
-      "repository": "keysrepo Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.keysrepo.oriental/",
-      "shortDescription": "Asks if you want to lock orientation when rotating the device.",
+      "repository": "Twickd",
+      "url": "http://cydia.saurik.com/package/com.twickd.ubik.oriental/",
+      "shortDescription": "To rotate or not.",
       "category": "Tweaks",
       "author": "ubik",
       "commercial": false,
-      "date": "2020-04-02T18:27:06Z",
+      "date": "2020-01-20T09:47:40Z",
       "versions": [
         {
           "tweakVersion": "1.0.0",
           "iOSVersion": "13.4.1",
-          "repository": "keysrepo Source - YouRepo",
-          "date": "2020-04-11T22:32:56Z",
+          "repository": "Twickd",
+          "date": "2020-06-07T15:08:31Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -20228,6 +20228,40 @@
           "iOSVersion": "13.4.1",
           "repository": "ichitaso repository",
           "date": "2020-04-20T10:37:20Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "beta.simalary.powersettings",
+      "name": "PowerSettings",
+      "latest": "1.0",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/beta.simalary.powersettings/",
+      "shortDescription": "Add power options right in Settings.app",
+      "category": "Tweaks",
+      "author": "Simalary (Chris)",
+      "commercial": false,
+      "date": "2020-06-08T17:53:41Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0",
+          "iOSVersion": "13.4.1",
+          "repository": "Packix",
+          "date": "2020-06-08T17:53:41Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -23000,40 +23034,6 @@
       ]
     },
     {
-      "id": "com.cydiageek.smootheaders11",
-      "name": "Smootheaders11",
-      "latest": "1.1.0",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.cydiageek.smootheaders11/",
-      "shortDescription": "Hide/Make Smaller the Headers Content View from Today View/Notifications/NC on iOS 11/12!",
-      "category": "Tweaks",
-      "author": "CydiaGeek",
-      "commercial": false,
-      "date": "2018-05-16T22:44:25Z",
-      "versions": [
-        {
-          "tweakVersion": "1.1.0",
-          "iOSVersion": "13.4.1",
-          "repository": "BigBoss",
-          "date": "2020-04-08T07:25:38Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.yourepo.cydiageek.smootheaders11",
       "name": "Smootheaders11",
       "latest": "1.0.1",
@@ -23054,6 +23054,40 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.cydiageek.smootheaders11",
+      "name": "Smootheaders11",
+      "latest": "1.1.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.cydiageek.smootheaders11/",
+      "shortDescription": "Hide/Make Smaller the Headers Content View from Today View/Notifications/NC on iOS 11/12!",
+      "category": "Tweaks",
+      "author": "CydiaGeek",
+      "commercial": false,
+      "date": "2018-05-16T22:44:25Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1.0",
+          "iOSVersion": "13.4.1",
+          "repository": "BigBoss",
+          "date": "2020-04-08T07:25:38Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
