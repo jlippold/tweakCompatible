@@ -691,7 +691,7 @@
     {
       "id": "com.yuosaf01.addsource",
       "name": "addsource",
-      "latest": "2.3.1",
+      "latest": "2.4",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.yuosaf01.addsource/",
       "shortDescription": "Add the copied URL to Cydia sources automatically",
@@ -2932,7 +2932,7 @@
     {
       "id": "me.autotouch.autotouch.ios8",
       "name": "AutoTouch",
-      "latest": "7.0.5",
+      "latest": "6.1.2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/me.autotouch.autotouch.ios8/",
       "shortDescription": "Record and playback touch operations, play macro scripts automatically.",
@@ -3484,21 +3484,22 @@
       ]
     },
     {
-      "id": "com.aaronash.barrel",
+      "id": "org.mr.barrel",
       "name": "Barrel",
-      "latest": "1.9.0.2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.aaronash.barrel/",
+      "latest": "1.9.0.1k",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.barrel/",
       "shortDescription": "3D and other effects on icon pages! A jailbreaking classic.",
       "category": "Tweaks",
       "author": "Aaron Ash (Charybdis)",
-      "commercial": true,
+      "commercial": false,
+      "date": "2020-06-07T00:48:30Z",
       "versions": [
         {
-          "tweakVersion": "1.9.0.2",
+          "tweakVersion": "1.9.0.1k",
           "iOSVersion": "13.4.1",
-          "repository": "BigBoss",
-          "date": "2020-06-08T00:12:32Z",
+          "repository": "MainRepo",
+          "date": "2020-06-07T00:48:30Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3517,22 +3518,21 @@
       ]
     },
     {
-      "id": "org.mr.barrel",
+      "id": "com.aaronash.barrel",
       "name": "Barrel",
-      "latest": "1.9.0.1k",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.barrel/",
+      "latest": "1.9.0.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.aaronash.barrel/",
       "shortDescription": "3D and other effects on icon pages! A jailbreaking classic.",
       "category": "Tweaks",
       "author": "Aaron Ash (Charybdis)",
-      "commercial": false,
-      "date": "2020-06-07T00:48:30Z",
+      "commercial": true,
       "versions": [
         {
-          "tweakVersion": "1.9.0.1k",
+          "tweakVersion": "1.9.0.2",
           "iOSVersion": "13.4.1",
-          "repository": "MainRepo",
-          "date": "2020-06-07T00:48:30Z",
+          "repository": "BigBoss",
+          "date": "2020-06-08T00:12:32Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6963,39 +6963,6 @@
       ]
     },
     {
-      "id": "ru.domo.cocoatop",
-      "name": "CocoaTop",
-      "latest": "2.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
-      "shortDescription": "Process Viewer for iOS GUI",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0.1",
-          "iOSVersion": "13.4.1",
-          "repository": "BigBoss",
-          "date": "2020-04-17T00:25:19Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2",
@@ -7018,6 +6985,39 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.domo.cocoatop",
+      "name": "CocoaTop",
+      "latest": "2.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
+      "shortDescription": "Process Viewer for iOS GUI",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0.1",
+          "iOSVersion": "13.4.1",
+          "repository": "BigBoss",
+          "date": "2020-04-17T00:25:19Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -7200,22 +7200,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.colorbanners3",
+      "id": "com.golddavid.colorbanners3",
       "name": "ColorBanners 3 (iOS 13)",
-      "latest": "1.0.1",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.colorbanners3/",
+      "latest": "1.0.3",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.golddavid.colorbanners3/",
       "shortDescription": "Spruce up your notifications",
-      "category": "Supports iOS 13",
+      "category": "Tweaks",
       "author": "David Goldman",
-      "commercial": false,
-      "date": "2020-06-03T22:33:00Z",
+      "commercial": true,
+      "date": "2019-11-27T17:22:21Z",
       "versions": [
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "13.4.1",
-          "repository": "A kiiimo Repository ",
-          "date": "2020-06-03T22:33:00Z",
+          "repository": "Packix",
+          "date": "2020-04-09T02:59:00Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7234,22 +7234,22 @@
       ]
     },
     {
-      "id": "com.golddavid.colorbanners3",
+      "id": "org.cydia.kiimo.colorbanners3",
       "name": "ColorBanners 3 (iOS 13)",
-      "latest": "1.0.3",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.golddavid.colorbanners3/",
+      "latest": "1.0.1",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.colorbanners3/",
       "shortDescription": "Spruce up your notifications",
-      "category": "Tweaks",
+      "category": "Supports iOS 13",
       "author": "David Goldman",
-      "commercial": true,
-      "date": "2019-11-27T17:22:21Z",
+      "commercial": false,
+      "date": "2020-06-03T22:33:00Z",
       "versions": [
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "13.4.1",
-          "repository": "Packix",
-          "date": "2020-04-09T02:59:00Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2020-06-03T22:33:00Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -9187,6 +9187,39 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.thebigboss.detailedbatteryusage",
+      "name": "DetailedBatteryUsage",
+      "latest": "1.1.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.detailedbatteryusage/",
+      "shortDescription": "unlock hidden battery usage menu",
+      "category": "Tweaks",
+      "author": "Hamza Sood",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.1.1",
+          "iOSVersion": "13.4.1",
+          "repository": "BigBoss",
+          "date": "2020-06-10T10:20:46Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -13012,22 +13045,22 @@
       ]
     },
     {
-      "id": "com.yourepo.keysrepo.googlemapsdefault",
+      "id": "com.lpane.googlemapsdefault",
       "name": "GoogleMapsDefault",
       "latest": "0.0.1",
-      "repository": "keysrepo Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.keysrepo.googlemapsdefault/",
-      "shortDescription": "Open addresses and links in Google Maps as the default",
+      "repository": "dankprius' Repo",
+      "url": "http://cydia.saurik.com/package/com.lpane.googlemapsdefault/",
+      "shortDescription": "An awesome MobileSubstrate tweak!",
       "category": "Tweaks",
       "author": "lpane",
       "commercial": false,
-      "date": "2020-04-02T18:50:39Z",
+      "date": "2020-04-19T18:05:05Z",
       "versions": [
         {
           "tweakVersion": "0.0.1",
           "iOSVersion": "13.4.1",
-          "repository": "keysrepo Source - YouRepo",
-          "date": "2020-04-11T20:29:00Z",
+          "repository": "dankprius' Repo",
+          "date": "2020-04-19T18:05:05Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -13046,22 +13079,22 @@
       ]
     },
     {
-      "id": "com.lpane.googlemapsdefault",
+      "id": "com.yourepo.keysrepo.googlemapsdefault",
       "name": "GoogleMapsDefault",
       "latest": "0.0.1",
-      "repository": "dankprius' Repo",
-      "url": "http://cydia.saurik.com/package/com.lpane.googlemapsdefault/",
-      "shortDescription": "An awesome MobileSubstrate tweak!",
+      "repository": "keysrepo Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.keysrepo.googlemapsdefault/",
+      "shortDescription": "Open addresses and links in Google Maps as the default",
       "category": "Tweaks",
       "author": "lpane",
       "commercial": false,
-      "date": "2020-04-19T18:05:05Z",
+      "date": "2020-04-02T18:50:39Z",
       "versions": [
         {
           "tweakVersion": "0.0.1",
           "iOSVersion": "13.4.1",
-          "repository": "dankprius' Repo",
-          "date": "2020-04-19T18:05:05Z",
+          "repository": "keysrepo Source - YouRepo",
+          "date": "2020-04-11T20:29:00Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -17088,6 +17121,40 @@
       ]
     },
     {
+      "id": "org.mr.magmaevo",
+      "name": "Magma Evo",
+      "latest": "2.0.3",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.magmaevo/",
+      "shortDescription": "Redefine your Control Center",
+      "category": "Tweaks",
+      "author": "NoisyFlake",
+      "commercial": false,
+      "date": "2020-06-05T10:17:22Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0.3",
+          "iOSVersion": "13.4.1",
+          "repository": "MainRepo",
+          "date": "2020-06-08T17:07:38Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.noisyflake.magmaevo",
       "name": "Magma Evo",
       "latest": "2.0.3",
@@ -17124,40 +17191,6 @@
           "iOSVersion": "13.4.1",
           "repository": "(null)",
           "date": "2020-04-16T21:30:10Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "org.mr.magmaevo",
-      "name": "Magma Evo",
-      "latest": "2.0.3",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.magmaevo/",
-      "shortDescription": "Redefine your Control Center",
-      "category": "Tweaks",
-      "author": "NoisyFlake",
-      "commercial": false,
-      "date": "2020-06-05T10:17:22Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0.3",
-          "iOSVersion": "13.4.1",
-          "repository": "MainRepo",
-          "date": "2020-06-08T17:07:38Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -19512,22 +19545,22 @@
       ]
     },
     {
-      "id": "com.lacertosusrepo.nowplayingicon",
+      "id": "com.twickd.lacertosusdeus.nowplayingicon",
       "name": "NowPlayingIcon",
-      "latest": "1.2",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.lacertosusrepo.nowplayingicon/",
+      "latest": "1.1",
+      "repository": "Twickd",
+      "url": "http://cydia.saurik.com/package/com.twickd.lacertosusdeus.nowplayingicon/",
       "shortDescription": "Showoff the music's artwork on the app...",
       "category": "Tweaks",
       "author": "LacertosusDeus",
       "commercial": false,
-      "date": "2020-05-29T07:19:20Z",
+      "date": "2020-05-26T03:09:44Z",
       "versions": [
         {
-          "tweakVersion": "1.2",
+          "tweakVersion": "1.1",
           "iOSVersion": "13.4.1",
-          "repository": "Packix",
-          "date": "2020-06-10T01:00:16Z",
+          "repository": "Twickd",
+          "date": "2020-05-13T12:04:49Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -19546,22 +19579,22 @@
       ]
     },
     {
-      "id": "com.twickd.lacertosusdeus.nowplayingicon",
+      "id": "com.lacertosusrepo.nowplayingicon",
       "name": "NowPlayingIcon",
-      "latest": "1.1",
-      "repository": "Twickd",
-      "url": "http://cydia.saurik.com/package/com.twickd.lacertosusdeus.nowplayingicon/",
+      "latest": "1.2",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.lacertosusrepo.nowplayingicon/",
       "shortDescription": "Showoff the music's artwork on the app...",
       "category": "Tweaks",
       "author": "LacertosusDeus",
       "commercial": false,
-      "date": "2020-05-26T03:09:44Z",
+      "date": "2020-05-29T07:19:20Z",
       "versions": [
         {
-          "tweakVersion": "1.1",
+          "tweakVersion": "1.2",
           "iOSVersion": "13.4.1",
-          "repository": "Twickd",
-          "date": "2020-05-13T12:04:49Z",
+          "repository": "Packix",
+          "date": "2020-06-10T01:00:16Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -21309,22 +21342,22 @@
       ]
     },
     {
-      "id": "com.haoict.redditnoads",
+      "id": "com.yadkin.redditnoads",
       "name": "Reddit No Ads",
-      "latest": "0.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.haoict.redditnoads/",
-      "shortDescription": "Hide \"Promoted\" post for Reddit app",
+      "latest": "0.0.2",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.yadkin.redditnoads/",
+      "shortDescription": "Removes \"PROMOTED\" posts from from the official Reddit app.",
       "category": "Tweaks",
-      "author": "Hao Nguyen",
+      "author": "kemmis",
       "commercial": false,
-      "date": "2020-04-09T00:08:03Z",
+      "date": "2018-10-23T17:24:55Z",
       "versions": [
         {
-          "tweakVersion": "0.0.1",
+          "tweakVersion": "0.0.2",
           "iOSVersion": "13.4.1",
-          "repository": "BigBoss",
-          "date": "2020-04-09T00:08:03Z",
+          "repository": "cydia.kemmis.info",
+          "date": "2020-06-04T10:53:36Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -21343,22 +21376,22 @@
       ]
     },
     {
-      "id": "com.yadkin.redditnoads",
+      "id": "com.haoict.redditnoads",
       "name": "Reddit No Ads",
-      "latest": "0.0.2",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.yadkin.redditnoads/",
-      "shortDescription": "Removes \"PROMOTED\" posts from from the official Reddit app.",
+      "latest": "0.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.haoict.redditnoads/",
+      "shortDescription": "Hide \"Promoted\" post for Reddit app",
       "category": "Tweaks",
-      "author": "kemmis",
+      "author": "Hao Nguyen",
       "commercial": false,
-      "date": "2018-10-23T17:24:55Z",
+      "date": "2020-04-09T00:08:03Z",
       "versions": [
         {
-          "tweakVersion": "0.0.2",
+          "tweakVersion": "0.0.1",
           "iOSVersion": "13.4.1",
-          "repository": "cydia.kemmis.info",
-          "date": "2020-06-04T10:53:36Z",
+          "repository": "BigBoss",
+          "date": "2020-04-09T00:08:03Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -25660,6 +25693,40 @@
       ]
     },
     {
+      "id": "org.mr.systeminfo",
+      "name": "System Info",
+      "latest": "2.7.2-1",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.systeminfo/",
+      "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save SHSH, battery info etc",
+      "category": "Tweaks",
+      "author": "ARX8x",
+      "commercial": false,
+      "date": "2020-06-05T10:56:34Z",
+      "versions": [
+        {
+          "tweakVersion": "2.7.2-1",
+          "iOSVersion": "13.4.1",
+          "repository": "MainRepo",
+          "date": "2020-06-10T00:03:53Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "xyz.xninja.systeminfo",
       "name": "System Info",
       "latest": "2.7.2-1",
@@ -25715,40 +25782,6 @@
           "iOSVersion": "13.4.1",
           "repository": "(null)",
           "date": "2020-06-04T10:58:28Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "org.mr.systeminfo",
-      "name": "System Info",
-      "latest": "2.7.2-1",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.systeminfo/",
-      "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save SHSH, battery info etc",
-      "category": "Tweaks",
-      "author": "ARX8x",
-      "commercial": false,
-      "date": "2020-06-05T10:56:34Z",
-      "versions": [
-        {
-          "tweakVersion": "2.7.2-1",
-          "iOSVersion": "13.4.1",
-          "repository": "MainRepo",
-          "date": "2020-06-10T00:03:53Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
