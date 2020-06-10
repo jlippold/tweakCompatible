@@ -3504,22 +3504,21 @@
       ]
     },
     {
-      "id": "org.mr.barrel",
+      "id": "com.aaronash.barrel",
       "name": "Barrel",
-      "latest": "1.9.0.1k",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.barrel/",
+      "latest": "1.9.0.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.aaronash.barrel/",
       "shortDescription": "3D and other effects on icon pages! A jailbreaking classic.",
       "category": "Tweaks",
       "author": "Aaron Ash (Charybdis)",
-      "commercial": false,
-      "date": "2020-06-07T00:48:30Z",
+      "commercial": true,
       "versions": [
         {
-          "tweakVersion": "1.9.0.1k",
+          "tweakVersion": "1.9.0.2",
           "iOSVersion": "13.4.1",
-          "repository": "MainRepo",
-          "date": "2020-06-07T00:48:30Z",
+          "repository": "BigBoss",
+          "date": "2020-06-08T00:12:32Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3538,21 +3537,22 @@
       ]
     },
     {
-      "id": "com.aaronash.barrel",
+      "id": "org.mr.barrel",
       "name": "Barrel",
-      "latest": "1.9.0.2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.aaronash.barrel/",
+      "latest": "1.9.0.1k",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.barrel/",
       "shortDescription": "3D and other effects on icon pages! A jailbreaking classic.",
       "category": "Tweaks",
       "author": "Aaron Ash (Charybdis)",
-      "commercial": true,
+      "commercial": false,
+      "date": "2020-06-07T00:48:30Z",
       "versions": [
         {
-          "tweakVersion": "1.9.0.2",
+          "tweakVersion": "1.9.0.1k",
           "iOSVersion": "13.4.1",
-          "repository": "BigBoss",
-          "date": "2020-06-08T00:12:32Z",
+          "repository": "MainRepo",
+          "date": "2020-06-07T00:48:30Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -16782,40 +16782,6 @@
       ]
     },
     {
-      "id": "com.pxcex.localiapstore13",
-      "name": "LocalIAPStore13",
-      "latest": "0.0.2",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.pxcex.localiapstore13/",
-      "shortDescription": "Free In-App Purchases include app IOS 13 bypass Lock iCloud (bypass verify Passcode, Touch ID or Face ID).  No options to configure!",
-      "category": "Tweaks",
-      "author": "pxcex",
-      "commercial": false,
-      "date": "2019-11-20T23:25:08Z",
-      "versions": [
-        {
-          "tweakVersion": "0.0.2",
-          "iOSVersion": "13.4.1",
-          "repository": "Sources Installées",
-          "date": "2020-04-17T10:15:41Z",
-          "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 66,
-            "good": 2,
-            "bad": 0,
-            "total": 3,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.cydia.kiimo.localiapstore13",
       "name": "LocalIAPStore13",
       "latest": "0.0.2",
@@ -16838,6 +16804,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.pxcex.localiapstore13",
+      "name": "LocalIAPStore13",
+      "latest": "0.0.2",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.pxcex.localiapstore13/",
+      "shortDescription": "Free In-App Purchases include app IOS 13 bypass Lock iCloud (bypass verify Passcode, Touch ID or Face ID).  No options to configure!",
+      "category": "Tweaks",
+      "author": "pxcex",
+      "commercial": false,
+      "date": "2019-11-20T23:25:08Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0.2",
+          "iOSVersion": "13.4.1",
+          "repository": "Sources Installées",
+          "date": "2020-04-17T10:15:41Z",
+          "outcome": {
+            "calculatedStatus": "Likely working",
+            "percentage": 66,
+            "good": 2,
+            "bad": 0,
+            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -17103,6 +17103,40 @@
           "iOSVersion": "13.4.1",
           "repository": "SparkDev",
           "date": "2020-05-16T06:42:05Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "me.jjolano.lowpowercharging",
+      "name": "LowPowerCharging",
+      "latest": "0.0.2",
+      "repository": "jjolano's iOS Tweaks",
+      "url": "http://cydia.saurik.com/package/me.jjolano.lowpowercharging/",
+      "shortDescription": "Enables Low Power Mode automatically when charging.",
+      "category": "Tweaks",
+      "author": "jjolano",
+      "commercial": false,
+      "date": "2019-08-20T15:13:03Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0.2",
+          "iOSVersion": "13.4.1",
+          "repository": "jjolano's iOS Tweaks",
+          "date": "2020-06-10T12:36:11Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
