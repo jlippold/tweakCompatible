@@ -734,7 +734,7 @@
     {
       "id": "libactivator",
       "name": "Activator",
-      "latest": "1.9.13~rc3",
+      "latest": "1.9.13~beta12",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/libactivator/",
       "shortDescription": "Centralized gestures, button and shortcut management for iOS",
@@ -10804,40 +10804,6 @@
       ]
     },
     {
-      "id": "org.mr.c3rcub3",
-      "name": "Cercube for YouTube",
-      "latest": "5.1.18k",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.c3rcub3/",
-      "shortDescription": "Cercube not only gives you the features that are missing from YouTube, but it also gives you full control over the app.",
-      "category": "Tweaks",
-      "author": "Majd Alfhaily",
-      "commercial": false,
-      "date": "2020-06-05T10:57:20Z",
-      "versions": [
-        {
-          "tweakVersion": "5.1.18k",
-          "iOSVersion": "13.5",
-          "repository": "MainRepo",
-          "date": "2020-06-05T10:57:20Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "me.alfhaily.cercube",
       "name": "Cercube for YouTube",
       "latest": "5.1.18",
@@ -10887,6 +10853,40 @@
           "iOSVersion": "13.5",
           "repository": "ReJail Repo",
           "date": "2020-05-24T03:25:32Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.mr.c3rcub3",
+      "name": "Cercube for YouTube",
+      "latest": "5.1.18k",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.c3rcub3/",
+      "shortDescription": "Cercube not only gives you the features that are missing from YouTube, but it also gives you full control over the app.",
+      "category": "Tweaks",
+      "author": "Majd Alfhaily",
+      "commercial": false,
+      "date": "2020-06-05T10:57:20Z",
+      "versions": [
+        {
+          "tweakVersion": "5.1.18k",
+          "iOSVersion": "13.5",
+          "repository": "MainRepo",
+          "date": "2020-06-05T10:57:20Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -11778,6 +11778,39 @@
       ]
     },
     {
+      "id": "ru.domo.cocoatop",
+      "name": "CocoaTop",
+      "latest": "2.0.1",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
+      "shortDescription": "Process Viewer for iOS GUI",
+      "category": "Utilities",
+      "author": "Domo",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2.0.1",
+          "iOSVersion": "13.5",
+          "repository": "BigBoss",
+          "date": "2020-05-24T18:05:00Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "ru.domo.cocoatop64",
       "name": "CocoaTop",
       "latest": "2.0.2",
@@ -11820,39 +11853,6 @@
             "good": 1,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "ru.domo.cocoatop",
-      "name": "CocoaTop",
-      "latest": "2.0.1",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
-      "shortDescription": "Process Viewer for iOS GUI",
-      "category": "Utilities",
-      "author": "Domo",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2.0.1",
-          "iOSVersion": "13.5",
-          "repository": "BigBoss",
-          "date": "2020-05-24T18:05:00Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -15570,22 +15570,22 @@
       ]
     },
     {
-      "id": "com.rileytestut.delta.beta.65yd56kapc",
+      "id": "com.rileytestut.delta",
       "name": "Delta",
-      "latest": "1.2b2",
-      "repository": "Dylan Elmbark's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/com.rileytestut.delta.beta.65yd56kapc/",
-      "shortDescription": "Delta is an multi-emulator for playing GBA/GBC/NDS/N64/SNES/NES games. Supports iOS 12-13",
-      "category": "Games",
-      "author": "Riley Testut",
+      "latest": "1.1.1",
+      "repository": "Delta Repo",
+      "url": "http://cydia.saurik.com/package/com.rileytestut.delta/",
+      "shortDescription": "Delta Emulator by Rileytestut",
+      "category": "Emulators",
+      "author": "Rileytestut",
       "commercial": false,
-      "date": "2020-05-29T05:41:43Z",
+      "date": "2019-12-05T21:01:01Z",
       "versions": [
         {
-          "tweakVersion": "1.2b2",
+          "tweakVersion": "1.1.1",
           "iOSVersion": "13.5",
-          "repository": "Dylan Elmbark's iOS Utilities",
-          "date": "2020-05-29T05:41:43Z",
+          "repository": "Delta Repo",
+          "date": "2020-06-02T16:44:51Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -15604,22 +15604,22 @@
       ]
     },
     {
-      "id": "com.rileytestut.delta",
+      "id": "com.rileytestut.delta.beta.65yd56kapc",
       "name": "Delta",
-      "latest": "1.1.1",
-      "repository": "Delta Repo",
-      "url": "http://cydia.saurik.com/package/com.rileytestut.delta/",
-      "shortDescription": "Delta Emulator by Rileytestut",
-      "category": "Emulators",
-      "author": "Rileytestut",
+      "latest": "1.2b2",
+      "repository": "Dylan Elmbark's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/com.rileytestut.delta.beta.65yd56kapc/",
+      "shortDescription": "Delta is an multi-emulator for playing GBA/GBC/NDS/N64/SNES/NES games. Supports iOS 12-13",
+      "category": "Games",
+      "author": "Riley Testut",
       "commercial": false,
-      "date": "2019-12-05T21:01:01Z",
+      "date": "2020-05-29T05:41:43Z",
       "versions": [
         {
-          "tweakVersion": "1.1.1",
+          "tweakVersion": "1.2b2",
           "iOSVersion": "13.5",
-          "repository": "Delta Repo",
-          "date": "2020-06-02T16:44:51Z",
+          "repository": "Dylan Elmbark's iOS Utilities",
+          "date": "2020-05-29T05:41:43Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -28656,40 +28656,6 @@
       ]
     },
     {
-      "id": "com.ryleyangus.libertylite.beta",
-      "name": "Liberty Lite (Beta)",
-      "latest": "0.2.12",
-      "repository": "Ryley's Repo",
-      "url": "http://cydia.saurik.com/package/com.ryleyangus.libertylite.beta/",
-      "shortDescription": "A general purpose jailbreak detection bypass patch. Configure the Liberty Lite entry in the Settings app to block (most) apps from detecting your jailbreak. Disabling Substrate/Substitute is not currently supported. Support for both arm64e and armv7 has been enabled in this beta version.",
-      "category": "Tweaks",
-      "author": "Ryley Angus",
-      "commercial": false,
-      "date": "2019-03-07T13:25:37Z",
-      "versions": [
-        {
-          "tweakVersion": "0.2.12",
-          "iOSVersion": "13.5",
-          "repository": "Ryley's Repo",
-          "date": "2020-05-28T13:51:52Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 5,
-            "bad": 0,
-            "total": 5,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.cydia.kiimo.beta",
       "name": "Liberty Lite (Beta)",
       "latest": "0.2.12",
@@ -28712,6 +28678,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.ryleyangus.libertylite.beta",
+      "name": "Liberty Lite (Beta)",
+      "latest": "0.2.12",
+      "repository": "Ryley's Repo",
+      "url": "http://cydia.saurik.com/package/com.ryleyangus.libertylite.beta/",
+      "shortDescription": "A general purpose jailbreak detection bypass patch. Configure the Liberty Lite entry in the Settings app to block (most) apps from detecting your jailbreak. Disabling Substrate/Substitute is not currently supported. Support for both arm64e and armv7 has been enabled in this beta version.",
+      "category": "Tweaks",
+      "author": "Ryley Angus",
+      "commercial": false,
+      "date": "2019-03-07T13:25:37Z",
+      "versions": [
+        {
+          "tweakVersion": "0.2.12",
+          "iOSVersion": "13.5",
+          "repository": "Ryley's Repo",
+          "date": "2020-05-28T13:51:52Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 5,
+            "bad": 0,
+            "total": 5,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -30773,6 +30773,40 @@
       ]
     },
     {
+      "id": "org.mr.magmaevo",
+      "name": "Magma Evo",
+      "latest": "2.0.3",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.magmaevo/",
+      "shortDescription": "Redefine your Control Center",
+      "category": "Tweaks",
+      "author": "NoisyFlake",
+      "commercial": false,
+      "date": "2020-06-05T10:17:22Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0.1",
+          "iOSVersion": "13.5",
+          "repository": "MainRepo",
+          "date": "2020-06-05T10:17:22Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.hackyouriphone.magmaevo",
       "name": "Magma Evo",
       "latest": "2.0.1",
@@ -30849,40 +30883,6 @@
             "good": 2,
             "bad": 0,
             "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "org.mr.magmaevo",
-      "name": "Magma Evo",
-      "latest": "2.0.3",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.magmaevo/",
-      "shortDescription": "Redefine your Control Center",
-      "category": "Tweaks",
-      "author": "NoisyFlake",
-      "commercial": false,
-      "date": "2020-06-05T10:17:22Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0.1",
-          "iOSVersion": "13.5",
-          "repository": "MainRepo",
-          "date": "2020-06-05T10:17:22Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -50636,22 +50636,22 @@
       ]
     },
     {
-      "id": "com.laughingquoll.watermelon",
+      "id": "org.mr.watermelon",
       "name": "Watermelon",
-      "latest": "1.3.9",
-      "repository": "Chariz",
-      "url": "http://cydia.saurik.com/package/com.laughingquoll.watermelon/",
+      "latest": "1.4",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.watermelon/",
       "shortDescription": "WatchOS style lockscreen widgets.",
       "category": "Tweaks",
       "author": "LaughingQuoll",
-      "commercial": true,
-      "date": "2019-12-04T19:09:06Z",
+      "commercial": false,
+      "date": "2020-06-07T04:49:26Z",
       "versions": [
         {
-          "tweakVersion": "1.3.9",
+          "tweakVersion": "1.4",
           "iOSVersion": "13.5",
-          "repository": "repo.chariz.com",
-          "date": "2020-06-02T03:44:13Z",
+          "repository": "MainRepo",
+          "date": "2020-06-07T04:49:26Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -50670,22 +50670,22 @@
       ]
     },
     {
-      "id": "org.mr.watermelon",
+      "id": "com.laughingquoll.watermelon",
       "name": "Watermelon",
-      "latest": "1.4",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.watermelon/",
+      "latest": "1.3.9",
+      "repository": "Chariz",
+      "url": "http://cydia.saurik.com/package/com.laughingquoll.watermelon/",
       "shortDescription": "WatchOS style lockscreen widgets.",
       "category": "Tweaks",
       "author": "LaughingQuoll",
-      "commercial": false,
-      "date": "2020-06-07T04:49:26Z",
+      "commercial": true,
+      "date": "2019-12-04T19:09:06Z",
       "versions": [
         {
-          "tweakVersion": "1.4",
+          "tweakVersion": "1.3.9",
           "iOSVersion": "13.5",
-          "repository": "MainRepo",
-          "date": "2020-06-07T04:49:26Z",
+          "repository": "repo.chariz.com",
+          "date": "2020-06-02T03:44:13Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -51078,6 +51078,40 @@
           "iOSVersion": "13.5",
           "repository": "apt.bingner.com",
           "date": "2020-06-08T23:34:35Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.thebigboss.whomadeit",
+      "name": "WhoMadeIt",
+      "latest": "1.0.0",
+      "repository": "apt.thebigboss.org",
+      "url": "http://cydia.saurik.com/package/org.thebigboss.whomadeit/",
+      "shortDescription": "Show the author of Cydia package in list",
+      "category": "Tweaks",
+      "author": "PoomSmart",
+      "commercial": false,
+      "date": "2018-03-31T21:11:09Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.0",
+          "iOSVersion": "13.5",
+          "repository": "BigBoss",
+          "date": "2020-06-12T02:49:49Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -52125,22 +52159,22 @@
       ]
     },
     {
-      "id": "lzma",
+      "id": "xz",
       "name": "XZ Utils",
-      "latest": "4.32.7-2",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/lzma/",
+      "latest": "5.2.4-4",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/xz/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:03:45Z",
+      "date": "2018-10-24T08:16:57Z",
       "versions": [
         {
-          "tweakVersion": "4.32.7-2",
+          "tweakVersion": "5.2.4-4",
           "iOSVersion": "13.5",
           "repository": "apt.bingner.com",
-          "date": "2020-05-29T04:37:10Z",
+          "date": "2020-05-29T04:37:38Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -52159,22 +52193,22 @@
       ]
     },
     {
-      "id": "xz",
+      "id": "lzma",
       "name": "XZ Utils",
-      "latest": "5.2.4-4",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/xz/",
+      "latest": "4.32.7-2",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/lzma/",
       "shortDescription": "slower, but better, compression algorithm",
       "category": "Archiving",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-24T08:16:57Z",
+      "date": "2018-03-04T19:03:45Z",
       "versions": [
         {
-          "tweakVersion": "5.2.4-4",
+          "tweakVersion": "4.32.7-2",
           "iOSVersion": "13.5",
           "repository": "apt.bingner.com",
-          "date": "2020-05-29T04:37:38Z",
+          "date": "2020-05-29T04:37:10Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
