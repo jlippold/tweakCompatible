@@ -1735,7 +1735,7 @@
     {
       "id": "applist",
       "name": "AppList",
-      "latest": "1.5.16~beta1",
+      "latest": "1.5.16",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/applist/",
       "shortDescription": "Allow extensions to read the list of installed apps",
@@ -3471,6 +3471,39 @@
       ]
     },
     {
+      "id": "com.cpdigitaldarkroom.barmoji",
+      "name": "Barmoji",
+      "latest": "2020.3.1",
+      "repository": "CP Digital Darkroom Beta Repo",
+      "url": "http://beta.cpdigitaldarkroom.com/",
+      "shortDescription": "Quick Emoji Access Bar",
+      "category": "Tweaks",
+      "author": "CP Digital Darkroom",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "2020.3",
+          "iOSVersion": "13.4.1",
+          "repository": "CP Digital Darkroom Repo",
+          "date": "2020-04-13T10:11:35Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "org.cydia.kiimo.barmoji",
       "name": "Barmoji",
       "latest": "2020.3",
@@ -3491,39 +3524,6 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.cpdigitaldarkroom.barmoji",
-      "name": "Barmoji",
-      "latest": "2020.3.1",
-      "repository": "CP Digital Darkroom Beta Repo",
-      "url": "http://beta.cpdigitaldarkroom.com/",
-      "shortDescription": "Quick Emoji Access Bar",
-      "category": "Tweaks",
-      "author": "CP Digital Darkroom",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "2020.3",
-          "iOSVersion": "13.4.1",
-          "repository": "CP Digital Darkroom Repo",
-          "date": "2020-04-13T10:11:35Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -5768,7 +5768,7 @@
     {
       "id": "com.ryannair05.cask",
       "name": "Cask 2",
-      "latest": "1.1.0",
+      "latest": "1.1.2",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.ryannair05.cask/",
       "shortDescription": "Animated table scrolling",
@@ -7209,10 +7209,10 @@
     {
       "id": "ru.domo.cocoatop",
       "name": "CocoaTop",
-      "latest": "2.0.1",
+      "latest": "2.1.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/ru.domo.cocoatop/",
-      "shortDescription": "Process Viewer for iOS GUI",
+      "shortDescription": "iOS13+ GUI for monitoring processes",
       "category": "Utilities",
       "author": "Domo",
       "commercial": false,
@@ -7342,22 +7342,22 @@
       ]
     },
     {
-      "id": "org.mr.colorbadges",
+      "id": "com.golddavid.colorbadges-new",
       "name": "ColorBadges (Packix)",
       "latest": "1.4.5",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.colorbadges/",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.golddavid.colorbadges-new/",
       "shortDescription": "Colorize your badges",
       "category": "Tweaks",
       "author": "David Goldman",
-      "commercial": false,
-      "date": "2020-06-11T00:23:02Z",
+      "commercial": true,
+      "date": "2019-03-02T20:20:52Z",
       "versions": [
         {
-          "tweakVersion": "1.4.5",
+          "tweakVersion": "1.4.4",
           "iOSVersion": "13.4.1",
-          "repository": "MainRepo",
-          "date": "2020-06-11T00:23:02Z",
+          "repository": "Packix",
+          "date": "2020-04-09T02:58:47Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7410,22 +7410,22 @@
       ]
     },
     {
-      "id": "com.golddavid.colorbadges-new",
+      "id": "org.mr.colorbadges",
       "name": "ColorBadges (Packix)",
       "latest": "1.4.5",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.golddavid.colorbadges-new/",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.colorbadges/",
       "shortDescription": "Colorize your badges",
       "category": "Tweaks",
       "author": "David Goldman",
-      "commercial": true,
-      "date": "2019-03-02T20:20:52Z",
+      "commercial": false,
+      "date": "2020-06-11T00:23:02Z",
       "versions": [
         {
-          "tweakVersion": "1.4.4",
+          "tweakVersion": "1.4.5",
           "iOSVersion": "13.4.1",
-          "repository": "Packix",
-          "date": "2020-04-09T02:58:47Z",
+          "repository": "MainRepo",
+          "date": "2020-06-11T00:23:02Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7478,22 +7478,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.colorbanners3",
+      "id": "com.golddavid.colorbanners3",
       "name": "ColorBanners 3 (iOS 13)",
-      "latest": "1.0.1",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.colorbanners3/",
+      "latest": "1.0.3",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.golddavid.colorbanners3/",
       "shortDescription": "Spruce up your notifications",
-      "category": "Supports iOS 13",
+      "category": "Tweaks",
       "author": "David Goldman",
-      "commercial": false,
-      "date": "2020-06-03T22:33:00Z",
+      "commercial": true,
+      "date": "2019-11-27T17:22:21Z",
       "versions": [
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "13.4.1",
-          "repository": "A kiiimo Repository ",
-          "date": "2020-06-03T22:33:00Z",
+          "repository": "Packix",
+          "date": "2020-04-09T02:59:00Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7512,22 +7512,22 @@
       ]
     },
     {
-      "id": "com.golddavid.colorbanners3",
+      "id": "org.cydia.kiimo.colorbanners3",
       "name": "ColorBanners 3 (iOS 13)",
-      "latest": "1.0.3",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.golddavid.colorbanners3/",
+      "latest": "1.0.1",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.colorbanners3/",
       "shortDescription": "Spruce up your notifications",
-      "category": "Tweaks",
+      "category": "Supports iOS 13",
       "author": "David Goldman",
-      "commercial": true,
-      "date": "2019-11-27T17:22:21Z",
+      "commercial": false,
+      "date": "2020-06-03T22:33:00Z",
       "versions": [
         {
           "tweakVersion": "1.0.1",
           "iOSVersion": "13.4.1",
-          "repository": "Packix",
-          "date": "2020-04-09T02:59:00Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2020-06-03T22:33:00Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -7614,40 +7614,6 @@
       ]
     },
     {
-      "id": "ru.rj.colorflow5",
-      "name": "ColorFlow 5 (iOS 13)",
-      "latest": "1.0.4",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rj.colorflow5/",
-      "shortDescription": "Окраска музыкального плеера",
-      "category": "Tweaks",
-      "author": "David Goldman",
-      "commercial": false,
-      "date": "2020-05-09T08:37:11Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.4",
-          "iOSVersion": "13.4.1",
-          "repository": "ReJail Repo",
-          "date": "2020-05-09T08:37:11Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.golddavid.colorflow5",
       "name": "ColorFlow 5 (iOS 13)",
       "latest": "1.0.6",
@@ -7690,6 +7656,40 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.rj.colorflow5",
+      "name": "ColorFlow 5 (iOS 13)",
+      "latest": "1.0.4",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rj.colorflow5/",
+      "shortDescription": "Окраска музыкального плеера",
+      "category": "Tweaks",
+      "author": "David Goldman",
+      "commercial": false,
+      "date": "2020-05-09T08:37:11Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.4",
+          "iOSVersion": "13.4.1",
+          "repository": "ReJail Repo",
+          "date": "2020-05-09T08:37:11Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -7994,22 +7994,22 @@
       ]
     },
     {
-      "id": "org.mr.complications",
+      "id": "com.bengiannis.complications",
       "name": "Complications",
       "latest": "3.3.1",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.complications/",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.bengiannis.complications/",
       "shortDescription": "watchOS widgets on your lock screen",
       "category": "Tweaks",
       "author": "Ben Giannis",
-      "commercial": false,
-      "date": "2020-06-05T23:54:41Z",
+      "commercial": true,
+      "date": "2019-12-13T01:46:28Z",
       "versions": [
         {
-          "tweakVersion": "3.3.1",
+          "tweakVersion": "3.0",
           "iOSVersion": "13.4.1",
-          "repository": "MainRepo",
-          "date": "2020-06-05T23:54:41Z",
+          "repository": "Packix",
+          "date": "2020-04-19T09:48:55Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8028,22 +8028,22 @@
       ]
     },
     {
-      "id": "com.bengiannis.complications",
+      "id": "org.mr.complications",
       "name": "Complications",
       "latest": "3.3.1",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.bengiannis.complications/",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.complications/",
       "shortDescription": "watchOS widgets on your lock screen",
       "category": "Tweaks",
       "author": "Ben Giannis",
-      "commercial": true,
-      "date": "2019-12-13T01:46:28Z",
+      "commercial": false,
+      "date": "2020-06-05T23:54:41Z",
       "versions": [
         {
-          "tweakVersion": "3.0",
+          "tweakVersion": "3.3.1",
           "iOSVersion": "13.4.1",
-          "repository": "Packix",
-          "date": "2020-04-19T09:48:55Z",
+          "repository": "MainRepo",
+          "date": "2020-06-05T23:54:41Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8761,7 +8761,7 @@
     {
       "id": "cydia",
       "name": "Cydia Installer",
-      "latest": "1.1.34",
+      "latest": "1.1.35",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia/",
       "shortDescription": "graphical iPhone front-end for APT",
@@ -10583,6 +10583,40 @@
           "iOSVersion": "13.4.1",
           "repository": "CreatureCoding",
           "date": "2020-04-09T03:00:29Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "io.securarepo.edge",
+      "name": "Edge",
+      "latest": "2.4.3",
+      "repository": "Secura Repo",
+      "url": "http://cydia.saurik.com/package/io.securarepo.edge/",
+      "shortDescription": "Bring Colour to Your Device",
+      "category": "Tweaks",
+      "author": "Various",
+      "commercial": false,
+      "date": "2019-05-24T22:50:21Z",
+      "versions": [
+        {
+          "tweakVersion": "2.4.3",
+          "iOSVersion": "13.4.1",
+          "repository": "Secura Repo",
+          "date": "2020-06-13T00:07:17Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -13451,22 +13485,22 @@
       ]
     },
     {
-      "id": "com.lpane.googlemapsdefault",
+      "id": "com.yourepo.keysrepo.googlemapsdefault",
       "name": "GoogleMapsDefault",
       "latest": "0.0.1",
-      "repository": "dankprius' Repo",
-      "url": "http://cydia.saurik.com/package/com.lpane.googlemapsdefault/",
-      "shortDescription": "An awesome MobileSubstrate tweak!",
+      "repository": "keysrepo Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.keysrepo.googlemapsdefault/",
+      "shortDescription": "Open addresses and links in Google Maps as the default",
       "category": "Tweaks",
       "author": "lpane",
       "commercial": false,
-      "date": "2020-04-19T18:05:05Z",
+      "date": "2020-04-02T18:50:39Z",
       "versions": [
         {
           "tweakVersion": "0.0.1",
           "iOSVersion": "13.4.1",
-          "repository": "dankprius' Repo",
-          "date": "2020-04-19T18:05:05Z",
+          "repository": "keysrepo Source - YouRepo",
+          "date": "2020-04-11T20:29:00Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -13485,22 +13519,22 @@
       ]
     },
     {
-      "id": "com.yourepo.keysrepo.googlemapsdefault",
+      "id": "com.lpane.googlemapsdefault",
       "name": "GoogleMapsDefault",
       "latest": "0.0.1",
-      "repository": "keysrepo Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.keysrepo.googlemapsdefault/",
-      "shortDescription": "Open addresses and links in Google Maps as the default",
+      "repository": "dankprius' Repo",
+      "url": "http://cydia.saurik.com/package/com.lpane.googlemapsdefault/",
+      "shortDescription": "An awesome MobileSubstrate tweak!",
       "category": "Tweaks",
       "author": "lpane",
       "commercial": false,
-      "date": "2020-04-02T18:50:39Z",
+      "date": "2020-04-19T18:05:05Z",
       "versions": [
         {
           "tweakVersion": "0.0.1",
           "iOSVersion": "13.4.1",
-          "repository": "keysrepo Source - YouRepo",
-          "date": "2020-04-11T20:29:00Z",
+          "repository": "dankprius' Repo",
+          "date": "2020-04-19T18:05:05Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -15803,7 +15837,7 @@
     {
       "id": "hi.my.name.is.ubik.kalm",
       "name": "Kalm",
-      "latest": "1.4.2",
+      "latest": "1.4.3",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/hi.my.name.is.ubik.kalm/",
       "shortDescription": "A beautiful first sight.",
@@ -15937,7 +15971,7 @@
     {
       "id": "jp.akusio.kernbypass",
       "name": "KernBypass",
-      "latest": "0.0.3",
+      "latest": "0.0.3-26+debug",
       "repository": "akusio repo",
       "url": "http://cydia.saurik.com/package/jp.akusio.kernbypass/",
       "shortDescription": "kernel level jailbreak detection bypass.",
@@ -16810,7 +16844,7 @@
     {
       "id": "com.cokepokes.libnotifications",
       "name": "libnotifications",
-      "latest": "0.3",
+      "latest": "0.3-1",
       "repository": "cokepokes.github.io",
       "url": "http://cydia.saurik.com/package/com.cokepokes.libnotifications/",
       "shortDescription": "App notification library.",
@@ -17188,40 +17222,6 @@
       ]
     },
     {
-      "id": "com.pxcex.localiapstore13",
-      "name": "LocalIAPStore13",
-      "latest": "0.0.2",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.pxcex.localiapstore13/",
-      "shortDescription": "Free In-App Purchases include app IOS 13 bypass Lock iCloud (bypass verify Passcode, Touch ID or Face ID).  No options to configure!",
-      "category": "Tweaks",
-      "author": "pxcex",
-      "commercial": false,
-      "date": "2019-11-20T23:25:08Z",
-      "versions": [
-        {
-          "tweakVersion": "0.0.2",
-          "iOSVersion": "13.4.1",
-          "repository": "Sources Installées",
-          "date": "2020-04-17T10:15:41Z",
-          "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 66,
-            "good": 2,
-            "bad": 0,
-            "total": 3,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.cydia.kiimo.localiapstore13",
       "name": "LocalIAPStore13",
       "latest": "0.0.2",
@@ -17244,6 +17244,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.pxcex.localiapstore13",
+      "name": "LocalIAPStore13",
+      "latest": "0.0.2",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.pxcex.localiapstore13/",
+      "shortDescription": "Free In-App Purchases include app IOS 13 bypass Lock iCloud (bypass verify Passcode, Touch ID or Face ID).  No options to configure!",
+      "category": "Tweaks",
+      "author": "pxcex",
+      "commercial": false,
+      "date": "2019-11-20T23:25:08Z",
+      "versions": [
+        {
+          "tweakVersion": "0.0.2",
+          "iOSVersion": "13.4.1",
+          "repository": "Sources Installées",
+          "date": "2020-04-17T10:15:41Z",
+          "outcome": {
+            "calculatedStatus": "Likely working",
+            "percentage": 66,
+            "good": 2,
+            "bad": 0,
+            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -20141,22 +20175,22 @@
       ]
     },
     {
-      "id": "com.lacertosusrepo.nowplayingicon",
+      "id": "com.twickd.lacertosusdeus.nowplayingicon",
       "name": "NowPlayingIcon",
-      "latest": "1.2",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.lacertosusrepo.nowplayingicon/",
+      "latest": "1.1",
+      "repository": "Twickd",
+      "url": "http://cydia.saurik.com/package/com.twickd.lacertosusdeus.nowplayingicon/",
       "shortDescription": "Showoff the music's artwork on the app...",
       "category": "Tweaks",
       "author": "LacertosusDeus",
       "commercial": false,
-      "date": "2020-05-29T07:19:20Z",
+      "date": "2020-05-26T03:09:44Z",
       "versions": [
         {
-          "tweakVersion": "1.2",
+          "tweakVersion": "1.1",
           "iOSVersion": "13.4.1",
-          "repository": "Packix",
-          "date": "2020-06-10T01:00:16Z",
+          "repository": "Twickd",
+          "date": "2020-05-13T12:04:49Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -20175,22 +20209,22 @@
       ]
     },
     {
-      "id": "com.twickd.lacertosusdeus.nowplayingicon",
+      "id": "com.lacertosusrepo.nowplayingicon",
       "name": "NowPlayingIcon",
-      "latest": "1.1",
-      "repository": "Twickd",
-      "url": "http://cydia.saurik.com/package/com.twickd.lacertosusdeus.nowplayingicon/",
+      "latest": "1.2",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.lacertosusrepo.nowplayingicon/",
       "shortDescription": "Showoff the music's artwork on the app...",
       "category": "Tweaks",
       "author": "LacertosusDeus",
       "commercial": false,
-      "date": "2020-05-26T03:09:44Z",
+      "date": "2020-05-29T07:19:20Z",
       "versions": [
         {
-          "tweakVersion": "1.1",
+          "tweakVersion": "1.2",
           "iOSVersion": "13.4.1",
-          "repository": "Twickd",
-          "date": "2020-05-13T12:04:49Z",
+          "repository": "Packix",
+          "date": "2020-06-10T01:00:16Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -24441,40 +24475,6 @@
       ]
     },
     {
-      "id": "com.cydiageek.smootheaders11",
-      "name": "Smootheaders11",
-      "latest": "1.1.0",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.cydiageek.smootheaders11/",
-      "shortDescription": "Hide/Make Smaller the Headers Content View from Today View/Notifications/NC on iOS 11/12!",
-      "category": "Tweaks",
-      "author": "CydiaGeek",
-      "commercial": false,
-      "date": "2018-05-16T22:44:25Z",
-      "versions": [
-        {
-          "tweakVersion": "1.1.0",
-          "iOSVersion": "13.4.1",
-          "repository": "BigBoss",
-          "date": "2020-04-08T07:25:38Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.yourepo.cydiageek.smootheaders11",
       "name": "Smootheaders11",
       "latest": "1.0.1",
@@ -24495,6 +24495,40 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.cydiageek.smootheaders11",
+      "name": "Smootheaders11",
+      "latest": "1.1.0",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.cydiageek.smootheaders11/",
+      "shortDescription": "Hide/Make Smaller the Headers Content View from Today View/Notifications/NC on iOS 11/12!",
+      "category": "Tweaks",
+      "author": "CydiaGeek",
+      "commercial": false,
+      "date": "2018-05-16T22:44:25Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1.0",
+          "iOSVersion": "13.4.1",
+          "repository": "BigBoss",
+          "date": "2020-04-08T07:25:38Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -25893,7 +25927,7 @@
     {
       "id": "com.ex.substitute",
       "name": "Substitute",
-      "latest": "0.1.9",
+      "latest": "0.1.14",
       "repository": "Bingner/Elucubratus",
       "url": "http://cydia.saurik.com/package/com.ex.substitute/",
       "shortDescription": "Substrate substitute for code substitution",
@@ -26423,6 +26457,40 @@
       ]
     },
     {
+      "id": "org.cydia.kiimo.switchus",
+      "name": "Switchus",
+      "latest": "1.5.1",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.switchus/",
+      "shortDescription": "Customize the App Switcher like never before !",
+      "category": "Supports iOS 13",
+      "author": "SynnyG",
+      "commercial": false,
+      "date": "2020-06-11T08:52:22Z",
+      "versions": [
+        {
+          "tweakVersion": "1.5.1",
+          "iOSVersion": "13.4.1",
+          "repository": "A kiiimo Repository ",
+          "date": "2020-06-11T08:52:22Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.synnyg.switchus",
       "name": "Switchus",
       "latest": "1.5.1",
@@ -26457,22 +26525,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.switchus",
-      "name": "Switchus",
-      "latest": "1.5.1",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.switchus/",
-      "shortDescription": "Customize the App Switcher like never before !",
-      "category": "Supports iOS 13",
-      "author": "SynnyG",
+      "id": "org.mr.systeminfo",
+      "name": "System Info",
+      "latest": "2.7.2-1",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.systeminfo/",
+      "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save SHSH, battery info etc",
+      "category": "Tweaks",
+      "author": "ARX8x",
       "commercial": false,
-      "date": "2020-06-11T08:52:22Z",
+      "date": "2020-06-05T10:56:34Z",
       "versions": [
         {
-          "tweakVersion": "1.5.1",
+          "tweakVersion": "2.7.2-1",
           "iOSVersion": "13.4.1",
-          "repository": "A kiiimo Repository ",
-          "date": "2020-06-11T08:52:22Z",
+          "repository": "MainRepo",
+          "date": "2020-06-10T00:03:53Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -26564,40 +26632,6 @@
       ]
     },
     {
-      "id": "org.mr.systeminfo",
-      "name": "System Info",
-      "latest": "2.7.2-1",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.systeminfo/",
-      "shortDescription": "System information in Settings app > General > About, and other sections. Set boot-nonce, save SHSH, battery info etc",
-      "category": "Tweaks",
-      "author": "ARX8x",
-      "commercial": false,
-      "date": "2020-06-05T10:56:34Z",
-      "versions": [
-        {
-          "tweakVersion": "2.7.2-1",
-          "iOSVersion": "13.4.1",
-          "repository": "MainRepo",
-          "date": "2020-06-10T00:03:53Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "dev.eskimo.t9dialer",
       "name": "T9Dialer",
       "latest": "1.10.1",
@@ -26634,10 +26668,10 @@
     {
       "id": "com.sharedroutine.tactful",
       "name": "Tactful",
-      "latest": "1.3-4",
+      "latest": "1.2-1",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.sharedroutine.tactful/",
-      "shortDescription": "3D Functionality for Cydia (iOS 13.x)",
+      "shortDescription": "3D Touch Support for Cydia",
       "category": "Tweaks",
       "author": "sharedRoutine",
       "commercial": false,
@@ -30114,7 +30148,7 @@
     {
       "id": "xyz.willy.zebra",
       "name": "Zebra (BETA)",
-      "latest": "1.2~beta1b",
+      "latest": "1.1.10",
       "repository": "xTM3x Repo",
       "url": "http://cydia.saurik.com/package/xyz.willy.zebra/",
       "shortDescription": "A Useful Package Manager",
