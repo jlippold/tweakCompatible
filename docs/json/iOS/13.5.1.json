@@ -363,7 +363,7 @@
     {
       "id": "applist",
       "name": "AppList",
-      "latest": "1.5.16~beta1",
+      "latest": "1.5.16",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/applist/",
       "shortDescription": "Allow extensions to read the list of installed apps",
@@ -990,7 +990,7 @@
     {
       "id": "cydia",
       "name": "Cydia Installer",
-      "latest": "1.1.34",
+      "latest": "1.1.35",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia/",
       "shortDescription": "graphical iPhone front-end for APT",
@@ -1434,10 +1434,10 @@
     {
       "id": "com.gilshahar7.exacttime",
       "name": "ExactTime",
-      "latest": "1.8",
+      "latest": "2.0",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.gilshahar7.exacttime/",
-      "shortDescription": "Shows the exact time of a notification.",
+      "shortDescription": "Shows the exact time of notifications, messages, calls and emails",
       "category": "Tweaks",
       "author": "gilshahar7",
       "commercial": false,
@@ -1461,26 +1461,12 @@
               "calculatedStatus": "Unknown"
             }
           }
-        }
-      ]
-    },
-    {
-      "id": "com.platykor.fastls",
-      "name": "Fast-LS",
-      "latest": "2.6.2",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.platykor.fastls/",
-      "shortDescription": "Fast lock device & Battery save 🔋",
-      "category": "Tweaks",
-      "author": "Plat-Ykor",
-      "commercial": false,
-      "date": "2020-05-16T16:40:30Z",
-      "versions": [
+        },
         {
-          "tweakVersion": "2.6.2",
+          "tweakVersion": "2.0",
           "iOSVersion": "13.5.1",
           "repository": "Packix",
-          "date": "2020-06-03T04:27:52Z",
+          "date": "2020-06-13T00:01:53Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1515,6 +1501,40 @@
           "iOSVersion": "13.5.1",
           "repository": "BigBoss",
           "date": "2020-06-02T01:59:38Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.platykor.fastls",
+      "name": "Fast-LS",
+      "latest": "2.6.2",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.platykor.fastls/",
+      "shortDescription": "Fast lock device & Battery save 🔋",
+      "category": "Tweaks",
+      "author": "Plat-Ykor",
+      "commercial": false,
+      "date": "2020-05-16T16:40:30Z",
+      "versions": [
+        {
+          "tweakVersion": "2.6.2",
+          "iOSVersion": "13.5.1",
+          "repository": "Packix",
+          "date": "2020-06-03T04:27:52Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1813,10 +1833,10 @@
     {
       "id": "com.wizage.gif2ani2",
       "name": "Gif2Ani V2",
-      "latest": "2.1",
+      "latest": "2.1.1",
       "repository": "Wizage's Repo",
       "url": "http://cydia.saurik.com/package/com.wizage.gif2ani2/",
-      "shortDescription": "iOS Respring animations from any gif you want! — Set any gif you would like as a respring logo. Convert existing springy packs and movies to gifs. Does not require anemone.",
+      "shortDescription": "iOS Respring animations from any gif you want!",
       "category": "Tweaks",
       "author": "wizages",
       "commercial": false,
@@ -2596,7 +2616,7 @@
     {
       "id": "com.foxfort.libfoxfortutils",
       "name": "libfoxfortutils",
-      "latest": "1.0.20",
+      "latest": "1.0.22",
       "repository": "Packix",
       "url": "http://cydia.saurik.com/package/com.foxfort.libfoxfortutils/",
       "shortDescription": "Basic utilities for Foxfort tweaks",
