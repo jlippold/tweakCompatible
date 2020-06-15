@@ -1,10 +1,10 @@
 {
   "id": "jp.akusio.kernbypass",
   "name": "KernBypass",
-  "latest": "0.0.3-26+debug",
+  "latest": "0.0.7-1",
   "repository": "akusio repo",
   "url": "http://cydia.saurik.com/package/jp.akusio.kernbypass/",
-  "shortDescription": "kernel level jailbreak detection bypass.",
+  "shortDescription": "修复iOS13.5上发烫问题",
   "category": "System",
   "author": "akusio",
   "commercial": false,
@@ -321,6 +321,37 @@
           "date": "2020-06-12T03:34:29Z",
           "userName": "SlashNephy",
           "issueNumber": 127811,
+          "arch32": false
+        }
+      ]
+    },
+    {
+      "tweakVersion": "0.0.7-1",
+      "iOSVersion": "13.5",
+      "repository": "(null)",
+      "date": "2020-06-15T21:44:48Z",
+      "outcome": {
+        "calculatedStatus": "Working",
+        "percentage": 100,
+        "good": 1,
+        "bad": 0,
+        "total": 1,
+        "arch32": {
+          "total": 0,
+          "good": 0,
+          "bad": 0,
+          "percentage": 0,
+          "calculatedStatus": "Unknown"
+        }
+      },
+      "users": [
+        {
+          "status": "working",
+          "device": "iPhone9,3",
+          "issues": "",
+          "date": "2020-06-15T21:44:48Z",
+          "userName": "kanuay",
+          "issueNumber": 128238,
           "arch32": false
         }
       ]
