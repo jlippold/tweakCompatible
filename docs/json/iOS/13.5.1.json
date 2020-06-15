@@ -396,10 +396,10 @@
     {
       "id": "com.tigisoftware.appdatamanager",
       "name": "Apps Manager",
-      "latest": "1.5.3-2",
+      "latest": "1.5.3",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.appdatamanager/",
-      "shortDescription": "This tool provides the way to WIPE, BACKUP, RESTORE AppData for installed Apps",
+      "shortDescription": "tool to WIPE, BACKUP, RESTORE AppData for installed Apps",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -990,7 +990,7 @@
     {
       "id": "cydia",
       "name": "Cydia Installer",
-      "latest": "1.1.35",
+      "latest": "1.1.33",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/cydia/",
       "shortDescription": "graphical iPhone front-end for APT",
@@ -2926,6 +2926,40 @@
       ]
     },
     {
+      "id": "me.conorthedev.lockwidgets",
+      "name": "LockWidgets",
+      "latest": "2.0.1",
+      "repository": "Dynastic Repo",
+      "url": "http://cydia.saurik.com/package/me.conorthedev.lockwidgets/",
+      "shortDescription": "Access your favourite widgets, directly on your lockscreen — Introducing LockWidgets by ConorTheDev",
+      "category": "Tweaks",
+      "author": "ConorTheDev",
+      "commercial": false,
+      "date": "2019-11-20T20:34:01Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0.1",
+          "iOSVersion": "13.5.1",
+          "repository": "Dynastic Repo",
+          "date": "2020-06-15T08:48:38Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "lz4",
       "name": "LZ4",
       "latest": "1.7.5-1",
@@ -3028,22 +3062,22 @@
       ]
     },
     {
-      "id": "ncurses",
+      "id": "ncurses5-libs",
       "name": "New Curses",
-      "latest": "6.1+20181013-1",
-      "repository": "Electra's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/ncurses/",
+      "latest": "5.9-1",
+      "repository": "Bingner/Elucubratus",
+      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-03-04T19:02:12Z",
+      "date": "2018-10-14T00:25:17Z",
       "versions": [
         {
-          "tweakVersion": "6.1+20181013-1",
+          "tweakVersion": "5.9-1",
           "iOSVersion": "13.5.1",
           "repository": "apt.bingner.com",
-          "date": "2020-06-02T01:49:35Z",
+          "date": "2020-06-02T01:49:44Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -3062,22 +3096,22 @@
       ]
     },
     {
-      "id": "ncurses5-libs",
+      "id": "ncurses",
       "name": "New Curses",
-      "latest": "5.9-1",
-      "repository": "Bingner/Elucubratus",
-      "url": "http://cydia.saurik.com/package/ncurses5-libs/",
+      "latest": "6.1+20181013-1",
+      "repository": "Electra's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/ncurses/",
       "shortDescription": "feature-complete terminal library",
       "category": "System",
       "author": "(null)",
       "commercial": false,
-      "date": "2018-10-14T00:25:17Z",
+      "date": "2018-03-04T19:02:12Z",
       "versions": [
         {
-          "tweakVersion": "5.9-1",
+          "tweakVersion": "6.1+20181013-1",
           "iOSVersion": "13.5.1",
           "repository": "apt.bingner.com",
-          "date": "2020-06-02T01:49:44Z",
+          "date": "2020-06-02T01:49:35Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -4625,7 +4659,7 @@
     {
       "id": "uikittools",
       "name": "UIKit Tools",
-      "latest": "1.1.17-1",
+      "latest": "1.1.15-2",
       "repository": "Cydia/Telesphoreo",
       "url": "http://cydia.saurik.com/package/uikittools/",
       "shortDescription": "UIKit/GraphicsServices command line access",
