@@ -723,7 +723,7 @@
     {
       "id": "com.rpgfarm.a-bypass",
       "name": "A-Bypass",
-      "latest": "1.0.8",
+      "latest": "1.0.9",
       "repository": "Baw Repo",
       "url": "http://cydia.saurik.com/package/com.rpgfarm.a-bypass/",
       "shortDescription": "Super Jailbreak detection bypass!",
@@ -757,6 +757,26 @@
           "iOSVersion": "13.5",
           "repository": "MERONA Repo",
           "date": "2020-06-16T13:21:44Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.0.9",
+          "iOSVersion": "13.5",
+          "repository": "MERONA Repo",
+          "date": "2020-06-22T12:28:28Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1098,22 +1118,22 @@
       ]
     },
     {
-      "id": "org.mr.actionbar",
+      "id": "com.restiveconch.actionbar",
       "name": "ActionBar",
       "latest": "1.3.7",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.actionbar/",
-      "shortDescription": "Undo, redo, select all, copy, cut and paste actions on bottom of keyboard.",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.restiveconch.actionbar/",
+      "shortDescription": "Undo, redo, select all, copy, cut and paste actions on keyboard.",
       "category": "Tweaks",
       "author": "RestiveConch",
-      "commercial": false,
-      "date": "2020-06-03T18:29:35Z",
+      "commercial": true,
+      "date": "2019-04-08T19:16:04Z",
       "versions": [
         {
           "tweakVersion": "1.3.7",
           "iOSVersion": "13.5",
-          "repository": "MainRepo",
-          "date": "2020-06-03T18:29:35Z",
+          "repository": "Packix",
+          "date": "2020-05-26T08:24:06Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -1132,22 +1152,22 @@
       ]
     },
     {
-      "id": "com.restiveconch.actionbar",
+      "id": "org.mr.actionbar",
       "name": "ActionBar",
       "latest": "1.3.7",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.restiveconch.actionbar/",
-      "shortDescription": "Undo, redo, select all, copy, cut and paste actions on keyboard.",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.actionbar/",
+      "shortDescription": "Undo, redo, select all, copy, cut and paste actions on bottom of keyboard.",
       "category": "Tweaks",
       "author": "RestiveConch",
-      "commercial": true,
-      "date": "2019-04-08T19:16:04Z",
+      "commercial": false,
+      "date": "2020-06-03T18:29:35Z",
       "versions": [
         {
           "tweakVersion": "1.3.7",
           "iOSVersion": "13.5",
-          "repository": "Packix",
-          "date": "2020-05-26T08:24:06Z",
+          "repository": "MainRepo",
+          "date": "2020-06-03T18:29:35Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -2228,40 +2248,6 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.airpay",
-      "name": "AirPay",
-      "latest": "1.0",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.airpay/",
-      "shortDescription": "Reimagined your Apple Pay",
-      "category": "HYI - Tweaks",
-      "author": "Dylan West",
-      "commercial": false,
-      "date": "2020-05-24T03:24:56Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0",
-          "iOSVersion": "13.5",
-          "repository": "(null)",
-          "date": "2020-05-24T03:24:56Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.twickd.dylan-west.airpay",
       "name": "AirPay",
       "latest": "1.0",
@@ -2284,6 +2270,40 @@
             "good": 1,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.hackyouriphone.airpay",
+      "name": "AirPay",
+      "latest": "1.0",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.airpay/",
+      "shortDescription": "Reimagined your Apple Pay",
+      "category": "HYI - Tweaks",
+      "author": "Dylan West",
+      "commercial": false,
+      "date": "2020-05-24T03:24:56Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0",
+          "iOSVersion": "13.5",
+          "repository": "(null)",
+          "date": "2020-05-24T03:24:56Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -2967,40 +2987,6 @@
       ]
     },
     {
-      "id": "net.myclassic.alpha",
-      "name": "AltStore",
-      "latest": "1.4a1",
-      "repository": "A Classic ",
-      "url": "http://cydia.saurik.com/package/net.myclassic.alpha/",
-      "shortDescription": "متجر للاجهزة التي تملك جلبريك بدون الحاجة للكمبيوتر للتثبيت",
-      "category": "Tweaks",
-      "author": "Riley Testut",
-      "commercial": false,
-      "date": "2020-06-04T22:41:04Z",
-      "versions": [
-        {
-          "tweakVersion": "1.4a1",
-          "iOSVersion": "13.5",
-          "repository": "A Classic ",
-          "date": "2020-06-04T22:41:04Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.rileytestut.altstore.alpha.jailbroken",
       "name": "AltStore",
       "latest": "1.4a4",
@@ -3043,6 +3029,40 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "net.myclassic.alpha",
+      "name": "AltStore",
+      "latest": "1.4a1",
+      "repository": "A Classic ",
+      "url": "http://cydia.saurik.com/package/net.myclassic.alpha/",
+      "shortDescription": "متجر للاجهزة التي تملك جلبريك بدون الحاجة للكمبيوتر للتثبيت",
+      "category": "Tweaks",
+      "author": "Riley Testut",
+      "commercial": false,
+      "date": "2020-06-04T22:41:04Z",
+      "versions": [
+        {
+          "tweakVersion": "1.4a1",
+          "iOSVersion": "13.5",
+          "repository": "A Classic ",
+          "date": "2020-06-04T22:41:04Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -4888,40 +4908,6 @@
       ]
     },
     {
-      "id": "net.myclassic.appstoreplusplus",
-      "name": "AppStore++",
-      "latest": "0.9.10",
-      "repository": "A Classic ",
-      "url": "http://cydia.saurik.com/package/net.myclassic.appstoreplusplus/",
-      "shortDescription": "Allows you to downgrade/upgrade apps in the AppStore on iOS 11-13.3.1",
-      "category": "Tweaks",
-      "author": "CokePokes",
-      "commercial": false,
-      "date": "2020-06-15T07:36:19Z",
-      "versions": [
-        {
-          "tweakVersion": "0.9.10",
-          "iOSVersion": "13.5",
-          "repository": "A Classic ",
-          "date": "2020-06-15T07:36:19Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.cokepokes.appstoreplusplus",
       "name": "AppStore++",
       "latest": "0.9.11",
@@ -5030,6 +5016,40 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "net.myclassic.appstoreplusplus",
+      "name": "AppStore++",
+      "latest": "0.9.10",
+      "repository": "A Classic ",
+      "url": "http://cydia.saurik.com/package/net.myclassic.appstoreplusplus/",
+      "shortDescription": "Allows you to downgrade/upgrade apps in the AppStore on iOS 11-13.3.1",
+      "category": "Tweaks",
+      "author": "CokePokes",
+      "commercial": false,
+      "date": "2020-06-15T07:36:19Z",
+      "versions": [
+        {
+          "tweakVersion": "0.9.10",
+          "iOSVersion": "13.5",
+          "repository": "A Classic ",
+          "date": "2020-06-15T07:36:19Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -5219,6 +5239,40 @@
       ]
     },
     {
+      "id": "com.yourepo.daydream.april",
+      "name": "April",
+      "latest": "1.0.0",
+      "repository": "Daydream Source - YouRepo",
+      "url": "http://cydia.saurik.com/package/com.yourepo.daydream.april/",
+      "shortDescription": "Make your lockscreen unique.",
+      "category": "Tweaks",
+      "author": "Daydream",
+      "commercial": false,
+      "date": "2020-05-29T23:38:00Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.0",
+          "iOSVersion": "13.5",
+          "repository": "Daydream Source - YouRepo",
+          "date": "2020-05-29T23:38:00Z",
+          "outcome": {
+            "calculatedStatus": "Likely working",
+            "percentage": 50,
+            "good": 1,
+            "bad": 0,
+            "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.twickd.julius.april",
       "name": "April",
       "latest": "2.0.4",
@@ -5261,40 +5315,6 @@
             "good": 1,
             "bad": 0,
             "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.yourepo.daydream.april",
-      "name": "April",
-      "latest": "1.0.0",
-      "repository": "Daydream Source - YouRepo",
-      "url": "http://cydia.saurik.com/package/com.yourepo.daydream.april/",
-      "shortDescription": "Make your lockscreen unique.",
-      "category": "Tweaks",
-      "author": "Daydream",
-      "commercial": false,
-      "date": "2020-05-29T23:38:00Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.0",
-          "iOSVersion": "13.5",
-          "repository": "Daydream Source - YouRepo",
-          "date": "2020-05-29T23:38:00Z",
-          "outcome": {
-            "calculatedStatus": "Likely working",
-            "percentage": 50,
-            "good": 1,
-            "bad": 0,
-            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -5633,22 +5653,22 @@
       ]
     },
     {
-      "id": "com.phoenix-dev.ares",
+      "id": "org.cydia.kiimo.ares",
       "name": "Ares",
       "latest": "1.0",
-      "repository": "Dynastic Repo",
-      "url": "http://cydia.saurik.com/package/com.phoenix-dev.ares/",
-      "shortDescription": "Siri - the way it should have been! — Ares modifies your Siri experience completely. It is a highly customizable tweak that lets you use Siri in an unobtrusive manner. Keep doing what you love on your iPhone whilst asking Siri questions!",
-      "category": "Tweaks",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.ares/",
+      "shortDescription": "Siri - the way it should be!",
+      "category": "Supports iOS 13",
       "author": "Phoenix Dev",
-      "commercial": true,
-      "date": "2020-06-03T02:22:13Z",
+      "commercial": false,
+      "date": "2020-06-03T19:03:50Z",
       "versions": [
         {
           "tweakVersion": "1.0",
           "iOSVersion": "13.5",
-          "repository": "Dynastic Repo",
-          "date": "2020-06-03T02:22:13Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2020-06-03T19:03:50Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -5667,22 +5687,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.ares",
+      "id": "com.phoenix-dev.ares",
       "name": "Ares",
       "latest": "1.0",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.ares/",
-      "shortDescription": "Siri - the way it should be!",
-      "category": "Supports iOS 13",
+      "repository": "Dynastic Repo",
+      "url": "http://cydia.saurik.com/package/com.phoenix-dev.ares/",
+      "shortDescription": "Siri - the way it should have been! — Ares modifies your Siri experience completely. It is a highly customizable tweak that lets you use Siri in an unobtrusive manner. Keep doing what you love on your iPhone whilst asking Siri questions!",
+      "category": "Tweaks",
       "author": "Phoenix Dev",
-      "commercial": false,
-      "date": "2020-06-03T19:03:50Z",
+      "commercial": true,
+      "date": "2020-06-03T02:22:13Z",
       "versions": [
         {
           "tweakVersion": "1.0",
           "iOSVersion": "13.5",
-          "repository": "A kiiimo Repository ",
-          "date": "2020-06-03T19:03:50Z",
+          "repository": "Dynastic Repo",
+          "date": "2020-06-03T02:22:13Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -6176,6 +6196,40 @@
       ]
     },
     {
+      "id": "me.conorthedev.audiosnapshotserver",
+      "name": "AudioSnapshotServer",
+      "latest": "2.0",
+      "repository": "repo.conorthedev.me",
+      "url": "http://cydia.saurik.com/package/me.conorthedev.audiosnapshotserver/",
+      "shortDescription": "A modified iOS mediaserverd hook to serve snapshots of current audio buffer via TCP/IP",
+      "category": "Tweaks",
+      "author": "ConorTheDev <con0r.b@protonmail.com>, Nepeta",
+      "commercial": false,
+      "date": "2020-02-23T23:40:54Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0",
+          "iOSVersion": "13.5",
+          "repository": "ConorTheDev's Repo",
+          "date": "2020-05-25T23:32:55Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.ryannair05.audiosnapshotserver",
       "name": "AudioSnapshotServer",
       "latest": "2.1",
@@ -6212,40 +6266,6 @@
           "iOSVersion": "13.5",
           "repository": "Packix",
           "date": "2020-06-19T00:46:52Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "me.conorthedev.audiosnapshotserver",
-      "name": "AudioSnapshotServer",
-      "latest": "2.0",
-      "repository": "repo.conorthedev.me",
-      "url": "http://cydia.saurik.com/package/me.conorthedev.audiosnapshotserver/",
-      "shortDescription": "A modified iOS mediaserverd hook to serve snapshots of current audio buffer via TCP/IP",
-      "category": "Tweaks",
-      "author": "ConorTheDev <con0r.b@protonmail.com>, Nepeta",
-      "commercial": false,
-      "date": "2020-02-23T23:40:54Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0",
-          "iOSVersion": "13.5",
-          "repository": "ConorTheDev's Repo",
-          "date": "2020-05-25T23:32:55Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -8085,40 +8105,6 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.barmoji",
-      "name": "Barmoji",
-      "latest": "2020.3",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.barmoji/",
-      "shortDescription": "Quick Emoji Access Bar",
-      "category": "Supports iOS 13",
-      "author": "CP Digital Darkroom",
-      "commercial": false,
-      "date": "2020-02-19T02:35:57Z",
-      "versions": [
-        {
-          "tweakVersion": "2020.3",
-          "iOSVersion": "13.5",
-          "repository": "A kiiimo Repository ",
-          "date": "2020-05-29T21:48:22Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.cpdigitaldarkroom.barmoji",
       "name": "Barmoji",
       "latest": "2020.5",
@@ -8198,6 +8184,40 @@
             "calculatedStatus": "Not working",
             "percentage": 0,
             "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.cydia.kiimo.barmoji",
+      "name": "Barmoji",
+      "latest": "2020.3",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.barmoji/",
+      "shortDescription": "Quick Emoji Access Bar",
+      "category": "Supports iOS 13",
+      "author": "CP Digital Darkroom",
+      "commercial": false,
+      "date": "2020-02-19T02:35:57Z",
+      "versions": [
+        {
+          "tweakVersion": "2020.3",
+          "iOSVersion": "13.5",
+          "repository": "A kiiimo Repository ",
+          "date": "2020-05-29T21:48:22Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -11554,22 +11574,22 @@
       ]
     },
     {
-      "id": "com.bytafont2.cweb",
+      "id": "com.ipr.cwebfont",
       "name": "C Web Font",
       "latest": "1.1",
       "repository": "ModMyi (Archive)",
-      "url": "http://cydia.saurik.com/package/com.bytafont2.cweb/",
-      "shortDescription": "Font by BytaFont.com",
-      "category": "Fonts (BytaFont 2)",
-      "author": "BytaFont.com",
+      "url": "http://cydia.saurik.com/package/com.ipr.cwebfont/",
+      "shortDescription": "Font package to use with FontSwap.",
+      "category": "Addons (FontSwap)",
+      "author": "iPhoneRuler",
       "commercial": false,
-      "date": "2020-02-18T15:07:16Z",
+      "date": "2020-02-18T15:07:26Z",
       "versions": [
         {
           "tweakVersion": "1.1",
           "iOSVersion": "13.5",
           "repository": "ModMyi (Archive)",
-          "date": "2020-06-16T05:10:58Z",
+          "date": "2020-06-16T05:11:15Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -11588,22 +11608,22 @@
       ]
     },
     {
-      "id": "com.ipr.cwebfont",
+      "id": "com.bytafont2.cweb",
       "name": "C Web Font",
       "latest": "1.1",
       "repository": "ModMyi (Archive)",
-      "url": "http://cydia.saurik.com/package/com.ipr.cwebfont/",
-      "shortDescription": "Font package to use with FontSwap.",
-      "category": "Addons (FontSwap)",
-      "author": "iPhoneRuler",
+      "url": "http://cydia.saurik.com/package/com.bytafont2.cweb/",
+      "shortDescription": "Font by BytaFont.com",
+      "category": "Fonts (BytaFont 2)",
+      "author": "BytaFont.com",
       "commercial": false,
-      "date": "2020-02-18T15:07:26Z",
+      "date": "2020-02-18T15:07:16Z",
       "versions": [
         {
           "tweakVersion": "1.1",
           "iOSVersion": "13.5",
           "repository": "ModMyi (Archive)",
-          "date": "2020-06-16T05:11:15Z",
+          "date": "2020-06-16T05:10:58Z",
           "outcome": {
             "calculatedStatus": "Not working",
             "percentage": 0,
@@ -11928,22 +11948,22 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.callassistbarios13",
+      "id": "com.hackyouriphone.callassistbarios13",
       "name": "Call Assist Bar (iOS13)",
       "latest": "1.0-0",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.callassistbarios13/",
-      "shortDescription": "incoming Call The game will not be interrupted.\r",
-      "category": "Supports iOS 13",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.callassistbarios13/",
+      "shortDescription": "incoming Call The game will not be interrupted.",
+      "category": "HYI - Tweaks",
       "author": "xybp888",
       "commercial": false,
-      "date": "2020-02-16T20:50:47Z",
+      "date": "2020-06-03T22:27:02Z",
       "versions": [
         {
           "tweakVersion": "1.0-0",
           "iOSVersion": "13.5",
-          "repository": "A kiiimo Repository ",
-          "date": "2020-06-07T15:15:03Z",
+          "repository": "(null)",
+          "date": "2020-06-03T22:27:02Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -11962,22 +11982,22 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.callassistbarios13",
+      "id": "org.cydia.kiimo.callassistbarios13",
       "name": "Call Assist Bar (iOS13)",
       "latest": "1.0-0",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.callassistbarios13/",
-      "shortDescription": "incoming Call The game will not be interrupted.",
-      "category": "HYI - Tweaks",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.callassistbarios13/",
+      "shortDescription": "incoming Call The game will not be interrupted.\r",
+      "category": "Supports iOS 13",
       "author": "xybp888",
       "commercial": false,
-      "date": "2020-06-03T22:27:02Z",
+      "date": "2020-02-16T20:50:47Z",
       "versions": [
         {
           "tweakVersion": "1.0-0",
           "iOSVersion": "13.5",
-          "repository": "(null)",
-          "date": "2020-06-03T22:27:02Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2020-06-07T15:15:03Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -18278,22 +18298,22 @@
       ]
     },
     {
-      "id": "net.myclassic.cydown",
+      "id": "cydia.kiiimo.org.cydown",
       "name": "CyDown",
       "latest": "7.1.0",
-      "repository": "A Classic ",
-      "url": "http://cydia.saurik.com/package/net.myclassic.cydown/",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/cydia.kiiimo.org.cydown/",
       "shortDescription": "Cydia Download Manager & Extra Features!",
-      "category": "Tweaks",
+      "category": "iOS 12",
       "author": "julioverne",
       "commercial": false,
-      "date": "2020-06-14T22:55:37Z",
+      "date": "2019-07-04T11:33:16Z",
       "versions": [
         {
           "tweakVersion": "7.1.0",
           "iOSVersion": "13.5",
-          "repository": "A Classic ",
-          "date": "2020-06-14T22:55:37Z",
+          "repository": "A kiiimo Repository ",
+          "date": "2020-05-26T22:31:54Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -18312,22 +18332,22 @@
       ]
     },
     {
-      "id": "cydia.kiiimo.org.cydown",
+      "id": "net.myclassic.cydown",
       "name": "CyDown",
       "latest": "7.1.0",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/cydia.kiiimo.org.cydown/",
+      "repository": "A Classic ",
+      "url": "http://cydia.saurik.com/package/net.myclassic.cydown/",
       "shortDescription": "Cydia Download Manager & Extra Features!",
-      "category": "iOS 12",
+      "category": "Tweaks",
       "author": "julioverne",
       "commercial": false,
-      "date": "2019-07-04T11:33:16Z",
+      "date": "2020-06-14T22:55:37Z",
       "versions": [
         {
           "tweakVersion": "7.1.0",
           "iOSVersion": "13.5",
-          "repository": "A kiiimo Repository ",
-          "date": "2020-05-26T22:31:54Z",
+          "repository": "A Classic ",
+          "date": "2020-06-14T22:55:37Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -19802,22 +19822,22 @@
       ]
     },
     {
-      "id": "com.rileytestut.delta.beta.65yd56kapc",
+      "id": "com.rileytestut.delta",
       "name": "Delta",
-      "latest": "1.2b2",
-      "repository": "Dylan Elmbark's iOS Utilities",
-      "url": "http://cydia.saurik.com/package/com.rileytestut.delta.beta.65yd56kapc/",
-      "shortDescription": "Delta is an multi-emulator for playing GBA/GBC/NDS/N64/SNES/NES games. Supports iOS 12-13",
-      "category": "Games",
-      "author": "Riley Testut",
+      "latest": "1.1.1",
+      "repository": "Delta Repo",
+      "url": "http://cydia.saurik.com/package/com.rileytestut.delta/",
+      "shortDescription": "Delta Emulator by Rileytestut",
+      "category": "Emulators",
+      "author": "Rileytestut",
       "commercial": false,
-      "date": "2020-05-29T05:41:43Z",
+      "date": "2019-12-05T21:01:01Z",
       "versions": [
         {
-          "tweakVersion": "1.2b2",
+          "tweakVersion": "1.1.1",
           "iOSVersion": "13.5",
-          "repository": "Dylan Elmbark's iOS Utilities",
-          "date": "2020-05-29T05:41:43Z",
+          "repository": "Delta Repo",
+          "date": "2020-06-02T16:44:51Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -19836,22 +19856,22 @@
       ]
     },
     {
-      "id": "com.rileytestut.delta",
+      "id": "com.rileytestut.delta.beta.65yd56kapc",
       "name": "Delta",
-      "latest": "1.1.1",
-      "repository": "Delta Repo",
-      "url": "http://cydia.saurik.com/package/com.rileytestut.delta/",
-      "shortDescription": "Delta Emulator by Rileytestut",
-      "category": "Emulators",
-      "author": "Rileytestut",
+      "latest": "1.2b2",
+      "repository": "Dylan Elmbark's iOS Utilities",
+      "url": "http://cydia.saurik.com/package/com.rileytestut.delta.beta.65yd56kapc/",
+      "shortDescription": "Delta is an multi-emulator for playing GBA/GBC/NDS/N64/SNES/NES games. Supports iOS 12-13",
+      "category": "Games",
+      "author": "Riley Testut",
       "commercial": false,
-      "date": "2019-12-05T21:01:01Z",
+      "date": "2020-05-29T05:41:43Z",
       "versions": [
         {
-          "tweakVersion": "1.1.1",
+          "tweakVersion": "1.2b2",
           "iOSVersion": "13.5",
-          "repository": "Delta Repo",
-          "date": "2020-06-02T16:44:51Z",
+          "repository": "Dylan Elmbark's iOS Utilities",
+          "date": "2020-05-29T05:41:43Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -21821,40 +21841,6 @@
       ]
     },
     {
-      "id": "com.conorthedev.dragspring",
-      "name": "Dragspring",
-      "latest": "1.2.1",
-      "repository": "ConorTheDev",
-      "url": "http://cydia.saurik.com/package/com.conorthedev.dragspring/",
-      "shortDescription": "Drag down from the top of settings to respring!",
-      "category": "Tweaks",
-      "author": "ConorTheDev",
-      "commercial": false,
-      "date": "2019-04-15T08:51:06Z",
-      "versions": [
-        {
-          "tweakVersion": "1.2.1",
-          "iOSVersion": "13.5",
-          "repository": "Packix",
-          "date": "2020-05-27T18:54:34Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 5,
-            "bad": 0,
-            "total": 5,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "me.conorthedev.dragspring",
       "name": "Dragspring",
       "latest": "2.1",
@@ -21877,6 +21863,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.conorthedev.dragspring",
+      "name": "Dragspring",
+      "latest": "1.2.1",
+      "repository": "ConorTheDev",
+      "url": "http://cydia.saurik.com/package/com.conorthedev.dragspring/",
+      "shortDescription": "Drag down from the top of settings to respring!",
+      "category": "Tweaks",
+      "author": "ConorTheDev",
+      "commercial": false,
+      "date": "2019-04-15T08:51:06Z",
+      "versions": [
+        {
+          "tweakVersion": "1.2.1",
+          "iOSVersion": "13.5",
+          "repository": "Packix",
+          "date": "2020-05-27T18:54:34Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 5,
+            "bad": 0,
+            "total": 5,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -22614,40 +22634,6 @@
       ]
     },
     {
-      "id": "org.cydia.kiimo.edge12",
-      "name": "Edge",
-      "latest": "1.0b3-3",
-      "repository": "A kiiimo Repository ",
-      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.edge12/",
-      "shortDescription": "Beta 3-1 - Better Preferences, Reduced Lag, Notchless Support and A12/A12X Support",
-      "category": "iOS 12",
-      "author": "Various",
-      "commercial": false,
-      "date": "2020-05-30T01:34:54Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0b3-3",
-          "iOSVersion": "13.5",
-          "repository": "A kiiimo Repository ",
-          "date": "2020-05-30T01:34:54Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "io.securarepo.edge",
       "name": "Edge",
       "latest": "2.4.3",
@@ -22670,6 +22656,40 @@
             "good": 2,
             "bad": 0,
             "total": 2,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "org.cydia.kiimo.edge12",
+      "name": "Edge",
+      "latest": "1.0b3-3",
+      "repository": "A kiiimo Repository ",
+      "url": "http://cydia.saurik.com/package/org.cydia.kiimo.edge12/",
+      "shortDescription": "Beta 3-1 - Better Preferences, Reduced Lag, Notchless Support and A12/A12X Support",
+      "category": "iOS 12",
+      "author": "Various",
+      "commercial": false,
+      "date": "2020-05-30T01:34:54Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0b3-3",
+          "iOSVersion": "13.5",
+          "repository": "A kiiimo Repository ",
+          "date": "2020-05-30T01:34:54Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -24233,40 +24253,6 @@
       ]
     },
     {
-      "id": "net.p0358.fbdarkmode",
-      "name": "FBDarkMode",
-      "latest": "1.0.1",
-      "repository": "p0358",
-      "url": "http://cydia.saurik.com/package/net.p0358.fbdarkmode/",
-      "shortDescription": "Enable dark mode in FB.",
-      "category": "Tweaks",
-      "author": "p0358",
-      "commercial": false,
-      "date": "2020-06-11T09:32:58Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.1",
-          "iOSVersion": "13.5",
-          "repository": "p0358",
-          "date": "2020-06-11T09:32:58Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 2,
-            "bad": 0,
-            "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "org.mr.fbdarkmode",
       "name": "FBDarkMode",
       "latest": "1.0.1a",
@@ -24289,6 +24275,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "net.p0358.fbdarkmode",
+      "name": "FBDarkMode",
+      "latest": "1.0.1",
+      "repository": "p0358",
+      "url": "http://cydia.saurik.com/package/net.p0358.fbdarkmode/",
+      "shortDescription": "Enable dark mode in FB.",
+      "category": "Tweaks",
+      "author": "p0358",
+      "commercial": false,
+      "date": "2020-06-11T09:32:58Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.1",
+          "iOSVersion": "13.5",
+          "repository": "p0358",
+          "date": "2020-06-11T09:32:58Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 2,
+            "bad": 0,
+            "total": 2,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -24681,40 +24701,6 @@
       ]
     },
     {
-      "id": "ru.rejail.filza",
-      "name": "Filza File Manager",
-      "latest": "3.7.6-4k",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rejail.filza/",
-      "shortDescription": "Файловый менеджер для iOS",
-      "category": "Utilities",
-      "author": "TIGI Software",
-      "commercial": false,
-      "date": "2019-08-20T10:06:45Z",
-      "versions": [
-        {
-          "tweakVersion": "3.7.6-4k",
-          "iOSVersion": "13.5",
-          "repository": "ReJail Repo",
-          "date": "2020-05-29T10:27:54Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.tigisoftware.filza",
       "name": "Filza File Manager",
       "latest": "3.7.7-2",
@@ -24870,6 +24856,40 @@
           "iOSVersion": "13.5",
           "repository": "tigisoftware.com",
           "date": "2020-06-20T21:25:07Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.rejail.filza",
+      "name": "Filza File Manager",
+      "latest": "3.7.6-4k",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rejail.filza/",
+      "shortDescription": "Файловый менеджер для iOS",
+      "category": "Utilities",
+      "author": "TIGI Software",
+      "commercial": false,
+      "date": "2019-08-20T10:06:45Z",
+      "versions": [
+        {
+          "tweakVersion": "3.7.6-4k",
+          "iOSVersion": "13.5",
+          "repository": "ReJail Repo",
+          "date": "2020-05-29T10:27:54Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -25805,22 +25825,22 @@
       ]
     },
     {
-      "id": "com.twickd.mtac.flaturl",
+      "id": "com.mtac.flaturl",
       "name": "FlatURL",
-      "latest": "1.0.0-16",
-      "repository": "Twickd",
-      "url": "http://cydia.saurik.com/package/com.twickd.mtac.flaturl/",
+      "latest": "1.0.0",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.mtac.flaturl/",
       "shortDescription": "Remove the background of Safari's URL bar",
       "category": "Tweaks",
       "author": "MTAC",
       "commercial": false,
-      "date": "2020-05-05T14:31:12Z",
+      "date": "2019-11-26T00:00:58Z",
       "versions": [
         {
-          "tweakVersion": "1.0.0-16",
+          "tweakVersion": "1.0.0",
           "iOSVersion": "13.5",
-          "repository": "Twickd",
-          "date": "2020-06-13T09:25:25Z",
+          "repository": "Packix",
+          "date": "2020-05-29T14:54:30Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -25839,22 +25859,22 @@
       ]
     },
     {
-      "id": "com.mtac.flaturl",
+      "id": "com.twickd.mtac.flaturl",
       "name": "FlatURL",
-      "latest": "1.0.0",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.mtac.flaturl/",
+      "latest": "1.0.0-16",
+      "repository": "Twickd",
+      "url": "http://cydia.saurik.com/package/com.twickd.mtac.flaturl/",
       "shortDescription": "Remove the background of Safari's URL bar",
       "category": "Tweaks",
       "author": "MTAC",
       "commercial": false,
-      "date": "2019-11-26T00:00:58Z",
+      "date": "2020-05-05T14:31:12Z",
       "versions": [
         {
-          "tweakVersion": "1.0.0",
+          "tweakVersion": "1.0.0-16",
           "iOSVersion": "13.5",
-          "repository": "Packix",
-          "date": "2020-05-29T14:54:30Z",
+          "repository": "Twickd",
+          "date": "2020-06-13T09:25:25Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -26357,40 +26377,6 @@
       ]
     },
     {
-      "id": "com.hackyouriphone.floatingdockplus13",
-      "name": "FloatingDockPlus13",
-      "latest": "1.1.7",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.hackyouriphone.floatingdockplus13/",
-      "shortDescription": "Use your Dock like a PRO!",
-      "category": "HYI - Tweaks",
-      "author": "P2KDev",
-      "commercial": false,
-      "date": "2020-05-29T12:48:39Z",
-      "versions": [
-        {
-          "tweakVersion": "1.1.7",
-          "iOSVersion": "13.5",
-          "repository": "(null)",
-          "date": "2020-05-29T12:48:39Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.p2kdev.floatingdockplus13",
       "name": "FloatingDockPlus13",
       "latest": "1.1.7",
@@ -26413,6 +26399,40 @@
             "good": 5,
             "bad": 0,
             "total": 5,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.hackyouriphone.floatingdockplus13",
+      "name": "FloatingDockPlus13",
+      "latest": "1.1.7",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.hackyouriphone.floatingdockplus13/",
+      "shortDescription": "Use your Dock like a PRO!",
+      "category": "HYI - Tweaks",
+      "author": "P2KDev",
+      "commercial": false,
+      "date": "2020-05-29T12:48:39Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1.7",
+          "iOSVersion": "13.5",
+          "repository": "(null)",
+          "date": "2020-05-29T12:48:39Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -34109,22 +34129,22 @@
       ]
     },
     {
-      "id": "org.mr.keyboardplus",
+      "id": "com.ryannair05.keyboardplus",
       "name": "Keyboard Plus",
-      "latest": "1.0.1-1",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.keyboardplus/",
-      "shortDescription": "Additional Keyboard Features.",
+      "latest": "1.0.1",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.ryannair05.keyboardplus/",
+      "shortDescription": "Additional Keyboard Features",
       "category": "Tweaks",
       "author": "Ryan Nair",
-      "commercial": false,
-      "date": "2020-06-08T00:53:06Z",
+      "commercial": true,
+      "date": "2020-03-24T12:30:39Z",
       "versions": [
         {
-          "tweakVersion": "1.0.1-1",
+          "tweakVersion": "1.0.1",
           "iOSVersion": "13.5",
-          "repository": "MainRepo",
-          "date": "2020-06-08T00:53:06Z",
+          "repository": "Packix",
+          "date": "2020-06-13T09:26:29Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -34143,22 +34163,22 @@
       ]
     },
     {
-      "id": "com.ryannair05.keyboardplus",
+      "id": "org.mr.keyboardplus",
       "name": "Keyboard Plus",
-      "latest": "1.0.1",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.ryannair05.keyboardplus/",
-      "shortDescription": "Additional Keyboard Features",
+      "latest": "1.0.1-1",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.keyboardplus/",
+      "shortDescription": "Additional Keyboard Features.",
       "category": "Tweaks",
       "author": "Ryan Nair",
-      "commercial": true,
-      "date": "2020-03-24T12:30:39Z",
+      "commercial": false,
+      "date": "2020-06-08T00:53:06Z",
       "versions": [
         {
-          "tweakVersion": "1.0.1",
+          "tweakVersion": "1.0.1-1",
           "iOSVersion": "13.5",
-          "repository": "Packix",
-          "date": "2020-06-13T09:26:29Z",
+          "repository": "MainRepo",
+          "date": "2020-06-08T00:53:06Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -38519,48 +38539,28 @@
       ]
     },
     {
-      "id": "com.noisyflake.magmaevo",
+      "id": "org.mr.magmaevo",
       "name": "Magma Evo",
       "latest": "2.0.3",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.noisyflake.magmaevo/",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.magmaevo/",
       "shortDescription": "Redefine your Control Center",
       "category": "Tweaks",
       "author": "NoisyFlake",
-      "commercial": true,
-      "date": "2020-01-19T02:08:10Z",
+      "commercial": false,
+      "date": "2020-06-05T10:17:22Z",
       "versions": [
         {
           "tweakVersion": "2.0.1",
           "iOSVersion": "13.5",
-          "repository": "Chariz",
-          "date": "2020-05-27T21:40:53Z",
+          "repository": "MainRepo",
+          "date": "2020-06-05T10:17:22Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
-            "good": 3,
+            "good": 1,
             "bad": 0,
-            "total": 3,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        },
-        {
-          "tweakVersion": "2.0.3",
-          "iOSVersion": "13.5",
-          "repository": "Chariz",
-          "date": "2020-06-07T02:03:43Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 3,
-            "bad": 0,
-            "total": 3,
+            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -38607,28 +38607,48 @@
       ]
     },
     {
-      "id": "org.mr.magmaevo",
+      "id": "com.noisyflake.magmaevo",
       "name": "Magma Evo",
       "latest": "2.0.3",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.magmaevo/",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.noisyflake.magmaevo/",
       "shortDescription": "Redefine your Control Center",
       "category": "Tweaks",
       "author": "NoisyFlake",
-      "commercial": false,
-      "date": "2020-06-05T10:17:22Z",
+      "commercial": true,
+      "date": "2020-01-19T02:08:10Z",
       "versions": [
         {
           "tweakVersion": "2.0.1",
           "iOSVersion": "13.5",
-          "repository": "MainRepo",
-          "date": "2020-06-05T10:17:22Z",
+          "repository": "Chariz",
+          "date": "2020-05-27T21:40:53Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
-            "good": 1,
+            "good": 3,
             "bad": 0,
-            "total": 1,
+            "total": 3,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "2.0.3",
+          "iOSVersion": "13.5",
+          "repository": "Chariz",
+          "date": "2020-06-07T02:03:43Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 3,
+            "bad": 0,
+            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -39529,60 +39549,6 @@
       ]
     },
     {
-      "id": "ru.rj.meltedcrayons",
-      "name": "MeltedCrayons",
-      "latest": "1.0.3b1-71+debug",
-      "repository": "ReJail Repo",
-      "url": "http://cydia.saurik.com/package/ru.rj.meltedcrayons/",
-      "shortDescription": "Разукрасьте вашу музыку в цвет обложки",
-      "category": "Tweaks",
-      "author": "bermudalocket",
-      "commercial": false,
-      "date": "2020-05-28T23:03:02Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0.5",
-          "iOSVersion": "13.5",
-          "repository": "ReJail Repo",
-          "date": "2020-05-28T23:03:02Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        },
-        {
-          "tweakVersion": "1.0.3b1-71+debug",
-          "iOSVersion": "13.5",
-          "repository": "ReJail Repo",
-          "date": "2020-05-24T05:28:07Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.twickd.bermudalocket.meltedcrayons",
       "name": "MeltedCrayons",
       "latest": "1.0.7",
@@ -39639,6 +39605,60 @@
           "iOSVersion": "13.5",
           "repository": "Twickd",
           "date": "2020-06-11T04:01:04Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ru.rj.meltedcrayons",
+      "name": "MeltedCrayons",
+      "latest": "1.0.3b1-71+debug",
+      "repository": "ReJail Repo",
+      "url": "http://cydia.saurik.com/package/ru.rj.meltedcrayons/",
+      "shortDescription": "Разукрасьте вашу музыку в цвет обложки",
+      "category": "Tweaks",
+      "author": "bermudalocket",
+      "commercial": false,
+      "date": "2020-05-28T23:03:02Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.5",
+          "iOSVersion": "13.5",
+          "repository": "ReJail Repo",
+          "date": "2020-05-28T23:03:02Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        },
+        {
+          "tweakVersion": "1.0.3b1-71+debug",
+          "iOSVersion": "13.5",
+          "repository": "ReJail Repo",
+          "date": "2020-05-24T05:28:07Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -41108,6 +41128,39 @@
       ]
     },
     {
+      "id": "com.officialscheduler.mterminal",
+      "name": "MTerminal",
+      "latest": "1.4-5",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.officialscheduler.mterminal/",
+      "shortDescription": "A MobileTerminal fork",
+      "category": "Utilities",
+      "author": "lordscotland",
+      "commercial": false,
+      "versions": [
+        {
+          "tweakVersion": "1.4-5",
+          "iOSVersion": "13.5",
+          "repository": "BigBoss",
+          "date": "2020-05-24T00:48:02Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "mterminal",
       "name": "MTerminal",
       "latest": "1.4-6",
@@ -41130,39 +41183,6 @@
             "good": 3,
             "bad": 0,
             "total": 3,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.officialscheduler.mterminal",
-      "name": "MTerminal",
-      "latest": "1.4-5",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.officialscheduler.mterminal/",
-      "shortDescription": "A MobileTerminal fork",
-      "category": "Utilities",
-      "author": "lordscotland",
-      "commercial": false,
-      "versions": [
-        {
-          "tweakVersion": "1.4-5",
-          "iOSVersion": "13.5",
-          "repository": "BigBoss",
-          "date": "2020-05-24T00:48:02Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -41729,22 +41749,22 @@
       ]
     },
     {
-      "id": "com.twickd.lacertosusdeus.navale",
+      "id": "com.lacertosusrepo.navale",
       "name": "Navale",
-      "latest": "2.2.4-1",
-      "repository": "Twickd",
-      "url": "http://cydia.saurik.com/package/com.twickd.lacertosusdeus.navale/",
+      "latest": "2.2.7",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.lacertosusrepo.navale/",
       "shortDescription": "Add a gradient to your dock...",
       "category": "Tweaks",
       "author": "LacertosusDeus",
       "commercial": false,
-      "date": "2020-04-08T16:34:36Z",
+      "date": "2018-08-17T05:59:49Z",
       "versions": [
         {
-          "tweakVersion": "2.2.4-1",
+          "tweakVersion": "2.2.7",
           "iOSVersion": "13.5",
-          "repository": "Twickd",
-          "date": "2020-05-26T10:24:14Z",
+          "repository": "Packix",
+          "date": "2020-06-05T01:20:11Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -41763,22 +41783,22 @@
       ]
     },
     {
-      "id": "com.lacertosusrepo.navale",
+      "id": "com.twickd.lacertosusdeus.navale",
       "name": "Navale",
-      "latest": "2.2.7",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.lacertosusrepo.navale/",
+      "latest": "2.2.4-1",
+      "repository": "Twickd",
+      "url": "http://cydia.saurik.com/package/com.twickd.lacertosusdeus.navale/",
       "shortDescription": "Add a gradient to your dock...",
       "category": "Tweaks",
       "author": "LacertosusDeus",
       "commercial": false,
-      "date": "2018-08-17T05:59:49Z",
+      "date": "2020-04-08T16:34:36Z",
       "versions": [
         {
-          "tweakVersion": "2.2.7",
+          "tweakVersion": "2.2.4-1",
           "iOSVersion": "13.5",
-          "repository": "Packix",
-          "date": "2020-06-05T01:20:11Z",
+          "repository": "Twickd",
+          "date": "2020-05-26T10:24:14Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -43831,6 +43851,40 @@
       ]
     },
     {
+      "id": "com.jakeashacks.nonotch",
+      "name": "noNotch",
+      "latest": "1.1.2",
+      "repository": "BigBoss",
+      "url": "http://cydia.saurik.com/package/com.jakeashacks.nonotch/",
+      "shortDescription": "Hides the notch on iPhone X",
+      "category": "Tweaks",
+      "author": "Jake James",
+      "commercial": false,
+      "date": "2018-07-11T03:32:54Z",
+      "versions": [
+        {
+          "tweakVersion": "1.1.2",
+          "iOSVersion": "13.5",
+          "repository": "BigBoss",
+          "date": "2020-05-24T05:27:47Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.nicho1asdev.nonotch",
       "name": "noNotch",
       "latest": "1.2-b9",
@@ -43867,40 +43921,6 @@
           "iOSVersion": "13.5",
           "repository": "nicho1asdev",
           "date": "2020-06-08T11:54:28Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.jakeashacks.nonotch",
-      "name": "noNotch",
-      "latest": "1.1.2",
-      "repository": "BigBoss",
-      "url": "http://cydia.saurik.com/package/com.jakeashacks.nonotch/",
-      "shortDescription": "Hides the notch on iPhone X",
-      "category": "Tweaks",
-      "author": "Jake James",
-      "commercial": false,
-      "date": "2018-07-11T03:32:54Z",
-      "versions": [
-        {
-          "tweakVersion": "1.1.2",
-          "iOSVersion": "13.5",
-          "repository": "BigBoss",
-          "date": "2020-05-24T05:27:47Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -43987,40 +44007,6 @@
       ]
     },
     {
-      "id": "com.appleenterprise.nopassafterrespring",
-      "name": "NoPassAfterRespring",
-      "latest": "2.0",
-      "repository": "Basepack",
-      "url": "http://cydia.saurik.com/package/com.appleenterprise.nopassafterrespring/",
-      "shortDescription": "Disables passcode after a respring",
-      "category": "Tweaks",
-      "author": "@_AppleExpert",
-      "commercial": false,
-      "date": "2020-06-12T02:43:33Z",
-      "versions": [
-        {
-          "tweakVersion": "2.0",
-          "iOSVersion": "13.5",
-          "repository": "Basepack",
-          "date": "2020-06-12T02:43:33Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.yourepo.appleenterprise.nopassafterrespring",
       "name": "NoPassAfterRespring",
       "latest": "3.0",
@@ -44077,6 +44063,40 @@
           "iOSVersion": "13.5",
           "repository": "AppleEnterprise Source - YouRepo",
           "date": "2020-06-15T08:45:33Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.appleenterprise.nopassafterrespring",
+      "name": "NoPassAfterRespring",
+      "latest": "2.0",
+      "repository": "Basepack",
+      "url": "http://cydia.saurik.com/package/com.appleenterprise.nopassafterrespring/",
+      "shortDescription": "Disables passcode after a respring",
+      "category": "Tweaks",
+      "author": "@_AppleExpert",
+      "commercial": false,
+      "date": "2020-06-12T02:43:33Z",
+      "versions": [
+        {
+          "tweakVersion": "2.0",
+          "iOSVersion": "13.5",
+          "repository": "Basepack",
+          "date": "2020-06-12T02:43:33Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -50239,40 +50259,6 @@
       ]
     },
     {
-      "id": "com.yourepo.mohadu31.reprovision",
-      "name": "ReProvision",
-      "latest": "0.5.2~EOL",
-      "repository": "(null)",
-      "url": "http://cydia.saurik.com/package/com.yourepo.mohadu31.reprovision/",
-      "shortDescription": "Re-sign applications on your device",
-      "category": "IOS13",
-      "author": "Matt Clarke",
-      "commercial": false,
-      "date": "2020-06-03T11:20:27Z",
-      "versions": [
-        {
-          "tweakVersion": "0.5.2~EOL",
-          "iOSVersion": "13.5",
-          "repository": "(null)",
-          "date": "2020-06-03T11:20:27Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.matchstic.reprovision",
       "name": "ReProvision",
       "latest": "0.5.2~EOL",
@@ -50309,6 +50295,40 @@
           "iOSVersion": "13.5",
           "repository": "Matchstic",
           "date": "2020-05-31T19:13:46Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.yourepo.mohadu31.reprovision",
+      "name": "ReProvision",
+      "latest": "0.5.2~EOL",
+      "repository": "(null)",
+      "url": "http://cydia.saurik.com/package/com.yourepo.mohadu31.reprovision/",
+      "shortDescription": "Re-sign applications on your device",
+      "category": "IOS13",
+      "author": "Matt Clarke",
+      "commercial": false,
+      "date": "2020-06-03T11:20:27Z",
+      "versions": [
+        {
+          "tweakVersion": "0.5.2~EOL",
+          "iOSVersion": "13.5",
+          "repository": "(null)",
+          "date": "2020-06-03T11:20:27Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -53588,6 +53608,40 @@
       ]
     },
     {
+      "id": "com.twickd.icraze.sleepsaver",
+      "name": "SleepSaver",
+      "latest": "1.2.0.1",
+      "repository": "Twickd",
+      "url": "http://cydia.saurik.com/package/com.twickd.icraze.sleepsaver/",
+      "shortDescription": "Bring fully customisable screensavers to your device!",
+      "category": "Tweaks",
+      "author": "iCraze",
+      "commercial": true,
+      "date": "2020-05-06T18:30:53Z",
+      "versions": [
+        {
+          "tweakVersion": "1.2.0.1",
+          "iOSVersion": "13.5",
+          "repository": "Twickd",
+          "date": "2020-06-12T15:37:12Z",
+          "outcome": {
+            "calculatedStatus": "Not working",
+            "percentage": 0,
+            "good": 0,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.icraze.sleepsaver",
       "name": "SleepSaver",
       "latest": "1.5",
@@ -53628,40 +53682,6 @@
             "calculatedStatus": "Working",
             "percentage": 100,
             "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "com.twickd.icraze.sleepsaver",
-      "name": "SleepSaver",
-      "latest": "1.2.0.1",
-      "repository": "Twickd",
-      "url": "http://cydia.saurik.com/package/com.twickd.icraze.sleepsaver/",
-      "shortDescription": "Bring fully customisable screensavers to your device!",
-      "category": "Tweaks",
-      "author": "iCraze",
-      "commercial": true,
-      "date": "2020-05-06T18:30:53Z",
-      "versions": [
-        {
-          "tweakVersion": "1.2.0.1",
-          "iOSVersion": "13.5",
-          "repository": "Twickd",
-          "date": "2020-06-12T15:37:12Z",
-          "outcome": {
-            "calculatedStatus": "Not working",
-            "percentage": 0,
-            "good": 0,
             "bad": 0,
             "total": 1,
             "arch32": {
@@ -61541,40 +61561,6 @@
       ]
     },
     {
-      "id": "com.nahtedetihw.vinyl",
-      "name": "Vinyl",
-      "latest": "1.0",
-      "repository": "Packix",
-      "url": "http://cydia.saurik.com/package/com.nahtedetihw.vinyl/",
-      "shortDescription": "Masq extension to look like a vinyl record!",
-      "category": "Tweaks (Masq Extensions)",
-      "author": "nahtedetihw ",
-      "commercial": false,
-      "date": "2020-06-11T15:52:56Z",
-      "versions": [
-        {
-          "tweakVersion": "1.0",
-          "iOSVersion": "13.5",
-          "repository": "Packix",
-          "date": "2020-06-11T15:52:56Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "me.lightmann.vinyl",
       "name": "Vinyl",
       "latest": "1.0.5",
@@ -61611,6 +61597,40 @@
           "iOSVersion": "13.5",
           "repository": "BigBoss",
           "date": "2020-06-10T19:01:25Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.nahtedetihw.vinyl",
+      "name": "Vinyl",
+      "latest": "1.0",
+      "repository": "Packix",
+      "url": "http://cydia.saurik.com/package/com.nahtedetihw.vinyl/",
+      "shortDescription": "Masq extension to look like a vinyl record!",
+      "category": "Tweaks (Masq Extensions)",
+      "author": "nahtedetihw ",
+      "commercial": false,
+      "date": "2020-06-11T15:52:56Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0",
+          "iOSVersion": "13.5",
+          "repository": "Packix",
+          "date": "2020-06-11T15:52:56Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
@@ -62387,6 +62407,40 @@
       ]
     },
     {
+      "id": "org.mr.watusitools",
+      "name": "WatusiTools",
+      "latest": "2.1.22k",
+      "repository": "MainRepo",
+      "url": "http://cydia.saurik.com/package/org.mr.watusitools/",
+      "shortDescription": "Library for Watusi and WhatsApp tweaks",
+      "category": "System",
+      "author": "Fouad Raheb",
+      "commercial": false,
+      "date": "2020-06-02T10:15:49Z",
+      "versions": [
+        {
+          "tweakVersion": "2.1.22k",
+          "iOSVersion": "13.5",
+          "repository": "MainRepo",
+          "date": "2020-06-02T10:15:49Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "com.f0u4d.watusitools",
       "name": "WatusiTools",
       "latest": "2.1.24",
@@ -62428,40 +62482,6 @@
             "good": 2,
             "bad": 0,
             "total": 2,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "org.mr.watusitools",
-      "name": "WatusiTools",
-      "latest": "2.1.22k",
-      "repository": "MainRepo",
-      "url": "http://cydia.saurik.com/package/org.mr.watusitools/",
-      "shortDescription": "Library for Watusi and WhatsApp tweaks",
-      "category": "System",
-      "author": "Fouad Raheb",
-      "commercial": false,
-      "date": "2020-06-02T10:15:49Z",
-      "versions": [
-        {
-          "tweakVersion": "2.1.22k",
-          "iOSVersion": "13.5",
-          "repository": "MainRepo",
-          "date": "2020-06-02T10:15:49Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 1,
-            "bad": 0,
-            "total": 1,
             "arch32": {
               "total": 0,
               "good": 0,
@@ -64716,40 +64736,6 @@
       ]
     },
     {
-      "id": "com.muirey03.zenith",
-      "name": "Zenith",
-      "latest": "1.2.5",
-      "repository": "repo.chariz.io",
-      "url": "http://cydia.saurik.com/package/com.muirey03.zenith/",
-      "shortDescription": "Organisation Done Right",
-      "category": "Tweaks",
-      "author": "Muirey03",
-      "commercial": true,
-      "date": "2018-12-01T17:36:59Z",
-      "versions": [
-        {
-          "tweakVersion": "1.2.5",
-          "iOSVersion": "13.5",
-          "repository": "Packix",
-          "date": "2020-05-27T03:58:42Z",
-          "outcome": {
-            "calculatedStatus": "Working",
-            "percentage": 100,
-            "good": 3,
-            "bad": 0,
-            "total": 3,
-            "arch32": {
-              "total": 0,
-              "good": 0,
-              "bad": 0,
-              "percentage": 0,
-              "calculatedStatus": "Unknown"
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "com.hackyouriphone.zenith",
       "name": "Zenith",
       "latest": "1.2.4-2",
@@ -64772,6 +64758,40 @@
             "good": 1,
             "bad": 0,
             "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.muirey03.zenith",
+      "name": "Zenith",
+      "latest": "1.2.5",
+      "repository": "repo.chariz.io",
+      "url": "http://cydia.saurik.com/package/com.muirey03.zenith/",
+      "shortDescription": "Organisation Done Right",
+      "category": "Tweaks",
+      "author": "Muirey03",
+      "commercial": true,
+      "date": "2018-12-01T17:36:59Z",
+      "versions": [
+        {
+          "tweakVersion": "1.2.5",
+          "iOSVersion": "13.5",
+          "repository": "Packix",
+          "date": "2020-05-27T03:58:42Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 3,
+            "bad": 0,
+            "total": 3,
             "arch32": {
               "total": 0,
               "good": 0,
