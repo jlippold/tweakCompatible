@@ -648,7 +648,7 @@
     {
       "id": "apt-key",
       "name": "APT (apt-key)",
-      "latest": "1.8.2-1",
+      "latest": "1.8.2.1-1",
       "repository": "Bingner/Elucubratus",
       "url": "http://cydia.saurik.com/package/apt-key/",
       "shortDescription": "repository encryption key management tool",
@@ -682,7 +682,7 @@
     {
       "id": "libapt",
       "name": "APT Strict (lib)",
-      "latest": "1.8.2-1",
+      "latest": "1.8.2.1-1",
       "repository": "Bingner/Elucubratus",
       "url": "http://cydia.saurik.com/package/libapt/",
       "shortDescription": "the advanced packaging library from Debian",
@@ -2855,6 +2855,40 @@
       ]
     },
     {
+      "id": "ca.menushka.hideyourapps",
+      "name": "HideYourApps",
+      "latest": "1.2.1",
+      "repository": "repo.menushka.ca",
+      "url": "http://cydia.saurik.com/package/ca.menushka.hideyourapps/",
+      "shortDescription": "Hide apps from your Home screen — Supports iOS 11 and 12.",
+      "category": "Tweaks",
+      "author": "Menushka Weeratunga",
+      "commercial": false,
+      "date": "2019-05-18T19:05:17Z",
+      "versions": [
+        {
+          "tweakVersion": "1.2.1",
+          "iOSVersion": "13.6",
+          "repository": "Dynastic Repo",
+          "date": "2020-08-12T09:43:58Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "me.kritanta.homepluspro",
       "name": "HomePlus Pro",
       "latest": "1.2.3-d",
@@ -4010,7 +4044,7 @@
     {
       "id": "preferenceloader",
       "name": "PreferenceLoader",
-      "latest": "2.2.4",
+      "latest": "2.2.5",
       "repository": "rpetrich repo",
       "url": "http://cydia.saurik.com/package/preferenceloader/",
       "shortDescription": "load preferences in style",
