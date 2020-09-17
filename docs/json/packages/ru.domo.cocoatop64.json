@@ -1750,9 +1750,9 @@
       "repository": "(null)",
       "date": "2020-07-21T15:34:33Z",
       "outcome": {
-        "calculatedStatus": "Working",
-        "percentage": 100,
-        "good": 2,
+        "calculatedStatus": "Likely working",
+        "percentage": 50,
+        "good": 1,
         "bad": 0,
         "total": 2,
         "arch32": {
@@ -1766,20 +1766,20 @@
       "users": [
         {
           "status": "working",
-          "device": "iPad7,2",
-          "issues": "",
-          "date": "2020-07-21T15:34:33Z",
-          "userName": "sietec",
-          "issueNumber": 130434,
-          "arch32": false
-        },
-        {
-          "status": "working",
           "device": "iPhone10,4",
           "issues": "",
           "date": "2020-07-12T05:58:14Z",
           "userName": "cloud3799",
           "issueNumber": 130061,
+          "arch32": false
+        },
+        {
+          "status": "not working",
+          "device": "iPad7,2",
+          "issues": "rotation causes clipping except in portrait mode...attempting to view ports in use or modules loaded with a binary causes an immediate segfault",
+          "date": "2020-09-14T18:24:59Z",
+          "userName": "sietec",
+          "issueNumber": 132306,
           "arch32": false
         }
       ]
