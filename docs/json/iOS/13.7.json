@@ -409,10 +409,10 @@
     {
       "id": "com.tigisoftware.appdatamanager",
       "name": "Apps Manager",
-      "latest": "1.5.3",
+      "latest": "1.6.0-2",
       "repository": "BigBoss",
       "url": "http://cydia.saurik.com/package/com.tigisoftware.appdatamanager/",
-      "shortDescription": "tool to WIPE, BACKUP, RESTORE AppData for installed Apps",
+      "shortDescription": "This tool provides the way to WIPE, BACKUP, RESTORE AppData for installed Apps",
       "category": "Utilities",
       "author": "TIGI Software",
       "commercial": false,
@@ -1696,7 +1696,7 @@
     {
       "id": "com.miro.easyyt",
       "name": "Easy YouTube",
-      "latest": "1.0",
+      "latest": "1.1",
       "repository": "MiRO92",
       "url": "http://cydia.saurik.com/package/com.miro.easyyt/",
       "shortDescription": "Ports VLC gestures to the YouTube app.",
@@ -2892,6 +2892,40 @@
           "iOSVersion": "13.7",
           "repository": "SparkDev",
           "date": "2020-09-30T09:48:31Z",
+          "outcome": {
+            "calculatedStatus": "Working",
+            "percentage": 100,
+            "good": 1,
+            "bad": 0,
+            "total": 1,
+            "arch32": {
+              "total": 0,
+              "good": 0,
+              "bad": 0,
+              "percentage": 0,
+              "calculatedStatus": "Unknown"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "com.spark.libsparkmessage",
+      "name": "libSparkMessage",
+      "latest": "1.0.0",
+      "repository": "SparkDev",
+      "url": "http://cydia.saurik.com/package/com.spark.libsparkmessage/",
+      "shortDescription": "Super lightweight IPC messaging library",
+      "category": "System",
+      "author": "Spark",
+      "commercial": false,
+      "date": "2019-12-15T22:12:01Z",
+      "versions": [
+        {
+          "tweakVersion": "1.0.0",
+          "iOSVersion": "13.7",
+          "repository": "SparkDev",
+          "date": "2020-10-04T16:54:46Z",
           "outcome": {
             "calculatedStatus": "Working",
             "percentage": 100,
