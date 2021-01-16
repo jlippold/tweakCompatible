@@ -1,3 +1,7 @@
+# DEPRECATED
+
+> Im no longer jailbroken, and I will no longer maintain this. If some one wants to take it over, hit me up. 
+
 ## Why was this made
 
 Previously when a new jailbreak was released, the community manages a large google spreadsheet. The old process is super time consuming and tedious to cross reference against your device.
